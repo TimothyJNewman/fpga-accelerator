@@ -6,10 +6,10 @@ Command Line: postsyn -a LIFCL -p LIFCL-40 -t CABGA256 -sp 7_High-Performance_1.
    Performance:      7_High-Performance_1.0V
 Reading input file 'Lattice_Project_1_impl_1.vm' ...
 Reading constraint file 'C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc' ...
-WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (95) : No port matched 'scl_io'.
-WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (96) : No port matched 'sda_io'.
-WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (97) : No port matched 'scl_io'.
-WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (98) : No port matched 'sda_io'.
+WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (96) : No port matched 'scl_io'.
+WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (97) : No port matched 'sda_io'.
+WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (98) : No port matched 'scl_io'.
+WARNING <1026001> - C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (99) : No port matched 'sda_io'.
 WARNING <1027013> - No port matched 'scl_io'.
 WARNING <1014301> - Can't resolve object 'scl_io' in constraint 'ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]'.
 WARNING <1027013> - No port matched 'sda_io'.
@@ -22,14 +22,18 @@ INFO <35811146> - Signal GSR_INST.GSROUT undriven or does not drive anything - c
 Starting design annotation....
 WARNING <70001944> - No master clock for
 	generated clock	create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 2 [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }] .
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {PLL_1_clkop_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 1 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] .
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {PLL_1_clkos_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 3 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }] .
  
 Constraint Summary:
-   Total number of constraints: 46
+   Total number of constraints: 49
    Total number of constraints dropped: 2
    Total number of constraints duplicated: 2
  
 Writing output file 'Lattice_Project_1_impl_1_syn.udb'.
 POSTSYN finished successfully.
-Total CPU Time: 3 secs 
+Total CPU Time: 4 secs 
 Total REAL Time: 4 secs 
 Peak Memory Usage: 152 MB

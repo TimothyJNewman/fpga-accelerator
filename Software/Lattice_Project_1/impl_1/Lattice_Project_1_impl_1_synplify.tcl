@@ -53,6 +53,7 @@ add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-acc
 add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v}
 add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v}
 add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v}
+add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v}
 #-- top module name
 set_option -top_module main
 set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1}
@@ -61,6 +62,7 @@ set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/
 set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2}
 set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1}
 set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2}
+set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1}
 
 #-- set result format/file last
 project -result_format "vm"

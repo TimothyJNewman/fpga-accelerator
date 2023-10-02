@@ -12,7 +12,7 @@ Hostname: DESKTOP-TOAOPO9
 
 Implementation : impl_1
 
-# Written on Mon Oct  2 07:15:28 2023
+# Written on Mon Oct  2 17:36:16 2023
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc"
@@ -34,29 +34,33 @@ Level     Clock                                                       Frequency 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                                      200.0 MHz     5.000         system       system_clkgroup           0    
                                                                                                                                               
-0 -       main|I2C_DPHY_1_clk_i_inferred_clock                        200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     292  
+0 -       PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     588  
                                                                                                                                               
-0 -       main|I2C_DPHY_2_clk_i_inferred_clock                        200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     292  
+0 -       main|DDR_MEM_1_sync_clk_i_inferred_clock                    200.0 MHz     5.000         inferred     Inferred_clkgroup_0_5     17   
                                                                                                                                               
-0 -       main|DDR_MEM_1_sync_clk_i_inferred_clock                    200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     17   
+0 -       DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     8    
                                                                                                                                               
-0 -       DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     8    
+0 -       main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     2    
+                                                                                                                                              
+0 -       main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     2    
 ==============================================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                            Clock     Source                                                                          Clock Pin                                                                  Non-clock Pin     Non-clock Pin
-Clock                                                       Load      Pin                                                                             Seq Example                                                                Seq Example       Comb Example 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                      0         -                                                                               -                                                                          -                 -            
-                                                                                                                                                                                                                                                                
-main|I2C_DPHY_1_clk_i_inferred_clock                        292       I2C_DPHY_1_clk_i.OUT[0](tri)                                                    -                                                                          -                 -            
-                                                                                                                                                                                                                                                                
-main|I2C_DPHY_2_clk_i_inferred_clock                        292       I2C_DPHY_2_clk_i.OUT[0](tri)                                                    -                                                                          -                 -            
-                                                                                                                                                                                                                                                                
-main|DDR_MEM_1_sync_clk_i_inferred_clock                    17        DDR_MEM_1_sync_clk_i.OUT[0](tri)                                                DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2.C     -                 -            
-                                                                                                                                                                                                                                                                
-DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     8         DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT(ECLKDIV)     DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[3:0].C                       -                 -            
-================================================================================================================================================================================================================================================================
+                                                            Clock     Source                                                                          Clock Pin                                                                                                            Non-clock Pin     Non-clock Pin
+Clock                                                       Load      Pin                                                                             Seq Example                                                                                                          Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      0         -                                                                               -                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                          
+PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      588       PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)                    -                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                          
+main|DDR_MEM_1_sync_clk_i_inferred_clock                    17        DDR_MEM_1_sync_clk_i.OUT[0](tri)                                                DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2.C                                               -                 -            
+                                                                                                                                                                                                                                                                                                          
+DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     8         DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT(ECLKDIV)     DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[3:0].C                                                                 -                 -            
+                                                                                                                                                                                                                                                                                                          
+main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  2         MIPI_DPHY_1_sync_clk_i.OUT[0](tri)                                              MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.clk_r.C            -                 -            
+                                                                                                                                                                                                                                                                                                          
+main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  2         MIPI_DPHY_2_sync_clk_i.OUT[0](tri)                                              MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER\.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER\.u_clock_divider.clk_r.C     -                 -            
+==========================================================================================================================================================================================================================================================================================================

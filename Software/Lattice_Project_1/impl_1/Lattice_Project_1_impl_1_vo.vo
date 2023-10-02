@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.1.200.1
 
 // backanno -o Lattice_Project_1_impl_1_vo.vo -sp 7_High-Performance_1.0V -w -neg -gui Lattice_Project_1_impl_1.udb 
-// Netlist created on Mon Oct  2 07:25:53 2023
-// Netlist written on Mon Oct  2 07:27:10 2023
+// Netlist created on Mon Oct  2 17:42:12 2023
+// Netlist written on Mon Oct  2 17:43:32 2023
 // Design is for device LIFCL-40
 // Design is for package CABGA256
 // Design is for performance grade 7_High-Performance_1.0V
@@ -12,13 +12,14 @@
 
 module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io, 
               I2C_DPHY_1_sda_io, I2C_DPHY_2_scl_io, I2C_DPHY_2_sda_io, 
-              DDR_MEM_1_cke_o, DDR_MEM_1_odt_o, DDR_MEM_1_wen_o, 
+              PLL_1_clki_i, DDR_MEM_1_cke_o, DDR_MEM_1_odt_o, DDR_MEM_1_wen_o, 
               DDR_MEM_1_rasn_o, DDR_MEM_1_casn_o, DDR_MEM_1_ba_o, 
               DDR_MEM_1_addr_o, DDR_MEM_1_csn_o, DDR_MEM_1_ck_o, 
               MIPI_DPHY_1_clk_p_io, MIPI_DPHY_1_clk_n_io, 
               MIPI_DPHY_1_data_p_io, MIPI_DPHY_1_data_n_io, 
               MIPI_DPHY_2_clk_p_io, MIPI_DPHY_2_clk_n_io, 
               MIPI_DPHY_2_data_p_io, MIPI_DPHY_2_data_n_io );
+  input  PLL_1_clki_i;
   output [0:0] DDR_MEM_1_cke_o;
   output [0:0] DDR_MEM_1_odt_o;
   output DDR_MEM_1_wen_o, DDR_MEM_1_rasn_o, DDR_MEM_1_casn_o;
@@ -38,9 +39,9 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
   inout  [3:0] MIPI_DPHY_2_data_p_io;
   inout  [3:0] MIPI_DPHY_2_data_n_io;
   wire   \DDR_MEM_1_cke_o_pad[0].gnd , 
-         \GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst 
+         \GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst 
          , 
-         \GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst 
+         \GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst 
          , \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqs_o_w , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqs_outen_n_w , 
@@ -102,9 +103,10 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[3] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[2] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[1] , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[0] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[0] , PLL_1_clkos_o, 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqs_bb_out_w , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqs_bb_out_w ;
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqs_bb_out_w , 
+         PLL_1_clkop_o, \PLL_1_inst.lscc_pll_inst.clki_w ;
 
 `pragma protect begin_protected
 `pragma protect version=1
@@ -118,93 +120,93 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-iC5W3dTkYatGt5kACKnf1w1Ht4Xg8q+x6jEKEx6SXUJtLKH/spKpbfK4z4CfMjo3
-Z0NVemN8wtw/O56H7PXyCEVzJ1LYCqo1CehCd8/JzyDmlPt7N5mzAd1a8L11/I6C
-mXVSBgoo/BNCI7/x1jNow4IWI3jfz7vNVesn6s7b9h2Yxx+6dx34tFvOpu6XwWvD
-L9oQRzFBTQJDKBaqs9+nzCZZiWzYn+uAxCpgRbFMg3qJ13l6kQFQ96eJ43zZew9d
-1Og0px1VJqzVI0lpXy2KIgXvKJlJbkHrd5/PwVgvHcgw7VTPkBWFVt4pZPBFlKWk
-jLBINpTsVAHXyYhTRA50OA==
+HTdzFpbOLpjuGC917xHtxj8u0CN5ETme059TEsjjGaoYHqWxM/bVWWaVZdYl0wI0
+lDXthLIR2ivtVfONl6iy33rBuz41un8yn+NrNg8ic10xsO+2bm51eF/IU6Fqk7DT
+NBKKyq/fMDOruYSQGMIMhmpFZX50GGLYzzF4WdYll3EtiaWWoGM5Zrvn7+jceQpe
+e12JLfbqbBFlcbVqS5u7oBjQxSYz6hLyfajCIEuj3Z5e4zEJ1ksehB/RCzMeh5V6
+Y2qyvICGYvHN/VgYfowuQTL44l0xrD2ZEdYUviYR39vMPy+YlRzdrV6C694ryavR
+o1fNv+y5m8ycR0bIULE7+Q==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-UdLrpcpOT4A8xF1cW7CtOHZyzNT6M2ONOTVurMpcv89KX3EkWn7QnJk6YYEoAFzS
-D73ZLr697dxPzyZkLX+4dW2HGrtDRTck0DZPfQVZFU1VceI9gQw0pBXcj4qqlelI
-1w/e2M5T8jmTlU57SWXwAeL50+VPdXE6RUxQGSchBRO++rr4tVe1QHucoWv4lRW5
-LscY2JPkxznccl+qtB8s+NA7ZQvkHPeTsaKiIZiHFdectf0vomHufFrq2b3Wmhc0
-6mNR0XdMLz9FFkyS4JD18AX66dJdXgJcEQYheYdlrhNi+G/BjP2I1YtOQOhrbGfX
-gvjfartTUPPgBUvVsfWiN4DtYBMvPEKIrkeLaSgA0VQxhHA/8ES7++onP9GrgWb6
-Io4KjEO+LAAHk4/aSkcymXHJO5ABF0pDNR3YgLbz39tvQ9X7OHK1t5GUnz/22R0n
-CKcyqwvtf96wfO4B1DJgfwQtOaAX/ASZMHkqTu8aAMyPjKjhueHE7Het9/DOyPQu
+vvqiqkwocuSrgFItl2yweuGS75ji6CxYWpwN28Nh2pu7pNr297+qVE+fEw0Gt4mp
+5iRK75gCiICQ4mgsECLqHTzTCmz2Fq4oVpV/iPcUmxbNcUbtDXEvBOz5AYXc+OzF
+r12FbdkI10DxfcHlbSwzxwpgUrVIgY7bsipm0IZnPLNrnDPy4ucx/vW6qPyd2dxe
+TvaD8clT2M5eerg8UtZO38cBahypE6UDF4Vzc2EQSAazEGOTW5pFbBh4gd3Wjutu
+cHplhaJfWhh34lHbeWXKbS8YhaRueR715mS4Zy/8yQut37YqUjhuYEZw8//apLhq
+jVaePkvjdWmR59vGnzXbC5KEkGmRqxM284odAU3uMpaCCXmz+/RdSi4a0lq7iX0G
+TaLEvxSU5L9hO4SIGOmKM5mSEwxvFg9T58jFMkpiaklsyFFUphNZnJs2fFnc1UBB
+mC+xq+C3CXA5msjrjC0T5uk0W8g3jor/wnqw+6lJadmK+uADsTy6QlZIYX2sZjrO
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-ZPtNAypipa2NeRvtOWDx0EiGWXlno4UZqCM6NrIjJS3oSrlpPLLx7JEMPvSyo9BV
-G5WVnJLYn9udKBqruaQN2bGoVUvmDPYcOfpSp12svVotFgbwPBl/mxKsYbgOSo1n
-cplkmAQIsTB/9+z7g3zNYQljNdnQKMzdMiaWEgfRE6LyU3cejvF1O1pBPj4/aU2W
-pUdNRTS+kCpi0evBVfevqv2cgM/NiECpGDgqeqX4dceXjddSmy3Ba85NrImOqPg0
-GkJ7+GqX4bt94hX2P8xBbnr1Ok8A7uJRwV7E6Sa9WOG7ghktoV4dlCj89faXIbxP
-WiSMktZ1lTWvvjSOy58URQ==
+ZiNmH5DqH6m5SX771GCrr96kzJk/HwoicaByj2R2K2Hh2osu8YjGrm/JkQ3pAj98
+6c42A2Z93NcZPtQVfJHVD2N39xtUWzJMfbjXeb2ToQ6Yml3KYltrdHlpGz0lAbLz
+GdfRo57R17so5RR+4n2KUPC1VudM+4eDdKx6JNYPfJo6+hO+Dx+njPxx6COGnnPw
+BdZLNJP1IyWX9QblfQTa3A5DwtF5fVtBslzqZBYUvV5ozTJQpX/0AYbSmL84K3Nk
+iwye2E4Kj5YUxBULt9lfsqg6clukwf12y7eW/4fkdSaR3IOC/qVrRTnDcL97QfbV
+HQrJvBrmarcYNPcXvE942g==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-Rh9/AyjQ5JxIxPQwtmcawKixYEn0FrB4PkaFFHMOuvKgLip8OvDV7/lG782CsT3E
-3aXbc/dlR51nHTP7yNI+CpIkGoOg8UP093SgBYt84IBACJ9gETkyl8ieImXi0bTP
-PkS53ZUdp+z0xAKnawcVm3I3cvOrwm385HEdk6xyPUU=
+nX3oSFSK14ciMXOLNk6D4IlBXPYPFERRYAgEqPPQcy0aZbytlscQzzAJAcSPUte6
+EoZrOWnPUwao6qK7AWcJ+IPXcU5nQfi1gFh7n9NkVNDrc3gsKX4w/NCrl6rXZUZH
+SUI2pCutGsVZ3TsCxzsHJ/dAdcPAEAumA/y0acUNST8=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-vLhZnUZZZblG6vFKf+wCcUeLgiAWpx5J4WuPNKsvP3b5TuDqpZCK5r8KDp8v3bSU
-QMYPg+irWvNs2dF9sExtzaPeE/9NHyhO0auQbpW/vCt1ZeG7dHkN3oTaCzqXQYe+
-DcscyUv0xkv3qZGassEMT8sRQz9gegOiZeDFAR34w2RQC+UXampGJCKYtbK0B1NP
-DpkcMKF3lME58YzeIVCngdGYN1seT31UsNTLgUZkPpdcA5zlX9r+bZ+ZCoHnbGH7
-6/sZcfT8+ZX9xlyXtdSEyMEtGSRg83qO6jOIR+8TaAtqPZFtcPFqS49HOsn4bgTh
-4viDl6A/avhBbMuRFXrMTw==
+cfBewoRyglrY7AAtOyw9r/qNbpNycGHmdjJ/wMXFdjKHzAJEkaZdJWAKCJ14eEWX
+g3yEQ1aWMlTzPou4cXaSAoRtVIZ5sdZIcEw+fu18U++zpNSwFvWZJKVHwRWXXirN
+8/V2j7juvSpHSUlxzSmw5gw5ZNZdwVVlgaM5kgYP8KcGHmqH6jxQgytDAIzeBRi3
+ajedw/YaxuKEYDEAZu/chulkypi1w7msbmjJbo9tKLjAdbZcDHq1DctWpMGY8pre
+IOes5Og4YeVJvmqDJ8R52q1Qws0/LSLJO0XEp6j2sSi/Sg6glwx6iZSTyS2UJ2xg
+EFjIJShnQGntbblQST3VlA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-UA/M+1h+OpSYE4k3RK3jjbDJusP8D/bJNCGxR5Z7jYF9rbLAdJflkHfDP4YJrrSX
-zg/+eGrLUlJclYXozKultXdt7AgNMOMCU5qNO7em8TfK9XdTatFpBI+jFC8GMv3F
-2O1yRFxg4HJWCmAuqP+qLoZU9duozBuoPHkXn/YeMPVvCFTi5symMqzHt3h9ahvy
-dd1pCKxF8zK8mbOSSaoh0VT2K6bU7u8/gFdzV85ZdpixHL4Isq/MyYLKr3vpBVF4
-6R0GAkz/0XvI+X9S7L5800SiH7Gfed5MjEL8zru1+sn+biejYqHkoSYOYV7+GzVW
-CanRVIbsX/weQD6ljFESdg==
+VOTQ4wRNZnopgtPhsBEd6w+h0VxQyoe1BPskZfwpNqYVn7nzZj0OjJI11PwZvNvH
+0yPO0f6qSYsS5Trxl0DoTWMUciaqOftPTbwFJjO9nf/uaKB6rhRZAvg6tzXx9eIL
+A5NocZnD7rdtEaff78DBnJHaqKAy87naeFvx331bpfxjv2vm1EFW03pDSx8dwFp/
+JxZsA7sEGcC/6Qa3+ELDLoAQqSr5VtpKfQXbGf7AMVISUK4+QRwzWTYqbGICskal
+BB4Il41dad30HvMgZjbAeFXJvgN3tn1AWQy0kk2ALPHOTFLk54mIZVTlVAd7VKVS
+KgXrqUZuh+nVRSjCQ8PiNQ==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=44, bytes=32)
 `pragma protect data_block
-q+Tc0YUVmdWGWmS5aHxQkXkROMZvBpBnM91vucEozzo=
+PF26/sGqu/DkC5OORGc/GJP3knS7kgYsLE1NqqgVe5k=
 
 `pragma protect end_protected
   DDR_MEM_1_cke_o_pad_0__SLICE_0 \DDR_MEM_1_cke_o_pad[0].SLICE_0 ( 
     .F0(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    GND_for_MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_NO_CIL_u_dphy_nocil_SLICE_1
+    GND_for_MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_CIL_u_dphy_cil_SLICE_1
      
-    \GND_for_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.SLICE_1 
+    \GND_for_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.SLICE_1 
     ( 
-    .F0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .F0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     );
 
-    GND_for_MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_NO_CIL_tx_SLICE_2
+    GND_for_MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_CIL_tx_SLICE_2
      
-    \GND_for_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.SLICE_2 
+    \GND_for_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.SLICE_2 
     ( 
-    .F0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .F0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     );
 
     DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQS_BLOCK_u_DQS_BB_IOL
@@ -623,8 +625,7 @@ q+Tc0YUVmdWGWmS5aHxQkXkROMZvBpBnM91vucEozzo=
     .CODE0(\DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[0] ));
   DDR_MEM_1_inst_lscc_ddr_mem_inst_u1_common_logic_u0_ECLKSYNC_ECLKSYNC_inst 
     \DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKSYNC.ECLKSYNC_inst 
-    ( .ECLKIN(\DDR_MEM_1_cke_o_pad[0].gnd ), 
-    .STOP(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    ( .ECLKIN(PLL_1_clkos_o), .STOP(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .ECLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w ));
   DDR_MEM_1_inst_lscc_ddr_mem_inst_u1_common_logic_u0_ECLKDIV_ECLKDIV_inst 
     \DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.ECLKDIV_inst 
@@ -772,33 +773,37 @@ q+Tc0YUVmdWGWmS5aHxQkXkROMZvBpBnM91vucEozzo=
     .DQSW270(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w )
     );
 
-    MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_NO_CIL_u_dphy_nocil_DPHY_inst
+    MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_CIL_u_dphy_cil_DPHY_inst
      
-    \MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst 
-    ( .BITCKEXT(VCC), 
-    .CLKREF(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    \MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst 
+    ( .BITCKEXT(VCC), .CLKREF(VCC), 
+    .PDDPHY(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .PDPLL(VCC), .SCCLKIN(VCC), .SCRSTNIN(VCC), .UED0THEN(VCC), 
+    .UFRXMODE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .PDDPHY(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .PDPLL(VCC), .SCCLKIN(VCC), .SCRSTNIN(VCC), 
-    .UED0THEN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .UFRXMODE(VCC), 
-    .UTXMDTX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .URXCKINE(VCC), .UTDIS(VCC), .UTXCKE(VCC), 
-    .UDE0D0TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXMDTX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE1D1TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .URXCKINE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE2D2TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTDIS(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE3D3TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXCKE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE4CKTN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UDE0D0TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE5D0RN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UDE1D1TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE6D1RN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UDE2D2TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UDE7D2RN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UDE3D3TN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .UDE4CKTN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .UDE5D0RN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .UDE6D1RN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .UDE7D2RN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , .UTXDHS0(VCC), .UTXDHS1(VCC), .UTXDHS2(VCC), .UTXDHS3(VCC), 
     .UTXDHS4(VCC), .UTXDHS5(VCC), .UTXDHS6(VCC), .UTXDHS7(VCC), .UTXDHS8(VCC), 
     .UTXDHS9(VCC), .UTXDHS10(VCC), .UTXDHS11(VCC), .UTXDHS12(VCC), 
@@ -807,68 +812,160 @@ q+Tc0YUVmdWGWmS5aHxQkXkROMZvBpBnM91vucEozzo=
     .UTXDHS21(VCC), .UTXDHS22(VCC), .UTXDHS23(VCC), .UTXDHS24(VCC), 
     .UTXDHS25(VCC), .UTXDHS26(VCC), .UTXDHS27(VCC), .UTXDHS28(VCC), 
     .UTXDHS29(VCC), .UTXDHS30(VCC), .UTXDHS31(VCC), 
-    .UTXENER(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXENER(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UTXRD0EN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXRD0EN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UTRD0SEN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTRD0SEN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UTXSKD0N(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .UTXTGE0(VCC), .UTXTGE1(VCC), .UTXTGE2(VCC), .UTXTGE3(VCC), 
-    .UTXULPSE(VCC), .UTXUPSEX(VCC), .UTXVDE(VCC), .UTXWVDHS0(VCC), 
-    .UTXWVDHS1(VCC), .UTXWVDHS2(VCC), .UTXWVDHS3(VCC), 
-    .U1ENTHEN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U1FRXMD(VCC), 
-    .U1FTXST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U1TDIS(VCC), .U1TREQ(VCC), 
-    .U1TDE0D3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXSKD0N(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U1TDE1CK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U1TDE2D0(VCC), .U1TDE3D1(VCC), .U1TDE4D2(VCC), .U1TDE5D3(VCC), 
-    .U1TDE6(VCC), .U1TDE7(VCC), .U1TXDHS0(VCC), .U1TXDHS1(VCC), .U1TXDHS2(VCC), 
-    .U1TXDHS3(VCC), .U1TXDHS4(VCC), .U1TXDHS5(VCC), .U1TXDHS6(VCC), 
-    .U1TXDHS7(VCC), .U1TXDHS8(VCC), .U1TXDHS9(VCC), .U1TXDHS10(VCC), 
-    .U1TXDHS11(VCC), .U1TXDHS12(VCC), .U1TXDHS13(VCC), .U1TXDHS14(VCC), 
-    .U1TXDHS15(VCC), .U1TXDHS16(VCC), .U1TXDHS17(VCC), .U1TXDHS18(VCC), 
-    .U1TXDHS19(VCC), .U1TXDHS20(VCC), .U1TXDHS21(VCC), .U1TXDHS22(VCC), 
-    .U1TXDHS23(VCC), .U1TXDHS24(VCC), .U1TXDHS25(VCC), .U1TXDHS26(VCC), 
-    .U1TXDHS27(VCC), .U1TXDHS28(VCC), .U1TXDHS29(VCC), .U1TXDHS30(VCC), 
-    .U1TXDHS31(VCC), .U1TXLPD(VCC), 
-    .U1TXREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXTGE0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U1TXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXTGE1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U1TXSK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U1TXTGE0(VCC), .U1TXTGE1(VCC), .U1TXTGE2(VCC), .U1TXTGE3(VCC), 
-    .U1TXUPSE(VCC), .U1TXUPSX(VCC), .U1TXVDE(VCC), .U1TXWVHS0(VCC), 
-    .U1TXWVHS1(VCC), .U1TXWVHS2(VCC), .U1TXWVHS3(VCC), 
-    .U2END2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U2FRXMD(VCC), .U2FTXST(VCC), .U2TDIS(VCC), .U2TREQ(VCC), .U2TDE0D0(VCC), 
-    .U2TDE1D1(VCC), .U2TDE2D2(VCC), .U2TDE3D3(VCC), .U2TDE4CK(VCC), 
-    .U2TDE5D0(VCC), .U2TDE6D1(VCC), .U2TDE7D2(VCC), .U2TXDHS0(VCC), 
-    .U2TXDHS1(VCC), .U2TXDHS2(VCC), .U2TXDHS3(VCC), .U2TXDHS4(VCC), 
-    .U2TXDHS5(VCC), .U2TXDHS6(VCC), .U2TXDHS7(VCC), .U2TXDHS8(VCC), 
-    .U2TXDHS9(VCC), .U2TXDHS10(VCC), .U2TXDHS11(VCC), .U2TXDHS12(VCC), 
-    .U2TXDHS13(VCC), .U2TXDHS14(VCC), .U2TXDHS15(VCC), .U2TXDHS16(VCC), 
-    .U2TXDHS17(VCC), .U2TXDHS18(VCC), .U2TXDHS19(VCC), .U2TXDHS20(VCC), 
-    .U2TXDHS21(VCC), .U2TXDHS22(VCC), .U2TXDHS23(VCC), .U2TXDHS24(VCC), 
-    .U2TXDHS25(VCC), .U2TXDHS26(VCC), .U2TXDHS27(VCC), .U2TXDHS28(VCC), 
-    .U2TXDHS29(VCC), .U2TXDHS30(VCC), .U2TXDHS31(VCC), .U2TPDTE(VCC), 
-    .U2TXREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXTGE2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U2TXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXTGE3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U2TXSKC(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U2TXTGE0(VCC), .U2TXTGE1(VCC), .U2TXTGE2(VCC), .U2TXTGE3(VCC), 
-    .U2TXUPSE(VCC), .U2TXUPSX(VCC), .U2TXVDE(VCC), .U2TXWVHS0(VCC), 
-    .U2TXWVHS1(VCC), .U2TXWVHS2(VCC), .U2TXWVHS3(VCC), 
-    .U3END3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U3FRXMD(VCC), .U3FTXST(VCC), .U3TDISD2(VCC), .U3TREQD2(VCC), 
-    .U3TDE0D3(VCC), .U3TDE1D0(VCC), .U3TDE2D1(VCC), .U3TDE3D2(VCC), 
-    .U3TDE4D3(VCC), .U3TDE5CK(VCC), 
-    .U3TDE6(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXULPSE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U3TDE7(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UTXUPSEX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .UTXVDE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .UTXWVDHS0(VCC), .UTXWVDHS1(VCC), .UTXWVDHS2(VCC), .UTXWVDHS3(VCC), 
+    .U1ENTHEN(VCC), 
+    .U1FRXMD(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1FTXST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDIS(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE0D3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE1CK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE2D0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE3D1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE4D2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE5D3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE6(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TDE7(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .U1TXDHS0(VCC), .U1TXDHS1(VCC), .U1TXDHS2(VCC), .U1TXDHS3(VCC), 
+    .U1TXDHS4(VCC), .U1TXDHS5(VCC), .U1TXDHS6(VCC), .U1TXDHS7(VCC), 
+    .U1TXDHS8(VCC), .U1TXDHS9(VCC), .U1TXDHS10(VCC), .U1TXDHS11(VCC), 
+    .U1TXDHS12(VCC), .U1TXDHS13(VCC), .U1TXDHS14(VCC), .U1TXDHS15(VCC), 
+    .U1TXDHS16(VCC), .U1TXDHS17(VCC), .U1TXDHS18(VCC), .U1TXDHS19(VCC), 
+    .U1TXDHS20(VCC), .U1TXDHS21(VCC), .U1TXDHS22(VCC), .U1TXDHS23(VCC), 
+    .U1TXDHS24(VCC), .U1TXDHS25(VCC), .U1TXDHS26(VCC), .U1TXDHS27(VCC), 
+    .U1TXDHS28(VCC), .U1TXDHS29(VCC), .U1TXDHS30(VCC), .U1TXDHS31(VCC), 
+    .U1TXLPD(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXSK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXTGE0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXTGE1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXTGE2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXTGE3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXUPSE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXUPSX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U1TXVDE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .U1TXWVHS0(VCC), .U1TXWVHS1(VCC), .U1TXWVHS2(VCC), .U1TXWVHS3(VCC), 
+    .U2END2(VCC), 
+    .U2FRXMD(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2FTXST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDIS(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE0D0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE1D1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE2D2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE3D3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE4CK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE5D0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE6D1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TDE7D2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .U2TXDHS0(VCC), .U2TXDHS1(VCC), .U2TXDHS2(VCC), .U2TXDHS3(VCC), 
+    .U2TXDHS4(VCC), .U2TXDHS5(VCC), .U2TXDHS6(VCC), .U2TXDHS7(VCC), 
+    .U2TXDHS8(VCC), .U2TXDHS9(VCC), .U2TXDHS10(VCC), .U2TXDHS11(VCC), 
+    .U2TXDHS12(VCC), .U2TXDHS13(VCC), .U2TXDHS14(VCC), .U2TXDHS15(VCC), 
+    .U2TXDHS16(VCC), .U2TXDHS17(VCC), .U2TXDHS18(VCC), .U2TXDHS19(VCC), 
+    .U2TXDHS20(VCC), .U2TXDHS21(VCC), .U2TXDHS22(VCC), .U2TXDHS23(VCC), 
+    .U2TXDHS24(VCC), .U2TXDHS25(VCC), .U2TXDHS26(VCC), .U2TXDHS27(VCC), 
+    .U2TXDHS28(VCC), .U2TXDHS29(VCC), .U2TXDHS30(VCC), .U2TXDHS31(VCC), 
+    .U2TPDTE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXSKC(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXTGE0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXTGE1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXTGE2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXTGE3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXUPSE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXUPSX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U2TXVDE(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .U2TXWVHS0(VCC), .U2TXWVHS1(VCC), .U2TXWVHS2(VCC), .U2TXWVHS3(VCC), 
+    .U3END3(VCC), 
+    .U3FRXMD(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3FTXST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDISD2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TREQD2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE0D3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE1D0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE2D1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE3D2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE4D3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE5CK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE6(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .U3TDE7(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , .U3TXDHS0(VCC), .U3TXDHS1(VCC), .U3TXDHS2(VCC), .U3TXDHS3(VCC), 
     .U3TXDHS4(VCC), .U3TXDHS5(VCC), .U3TXDHS6(VCC), .U3TXDHS7(VCC), 
     .U3TXDHS8(VCC), .U3TXDHS9(VCC), .U3TXDHS10(VCC), .U3TXDHS11(VCC), 
@@ -877,507 +974,648 @@ q+Tc0YUVmdWGWmS5aHxQkXkROMZvBpBnM91vucEozzo=
     .U3TXDHS20(VCC), .U3TXDHS21(VCC), .U3TXDHS22(VCC), .U3TXDHS23(VCC), 
     .U3TXDHS24(VCC), .U3TXDHS25(VCC), .U3TXDHS26(VCC), .U3TXDHS27(VCC), 
     .U3TXDHS28(VCC), .U3TXDHS29(VCC), .U3TXDHS30(VCC), .U3TXDHS31(VCC), 
-    .U3TXLPDT(VCC), 
-    .U3TXREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXLPDT(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U3TXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .U3TXSKC(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .U3TXTGE0(VCC), .U3TXTGE1(VCC), .U3TXTGE2(VCC), .U3TXTGE3(VCC), 
-    .U3TXULPS(VCC), .U3TXUPSX(VCC), .U3TXVD3(VCC), .U3TXWVHS0(VCC), 
-    .U3TXWVHS1(VCC), .U3TXWVHS2(VCC), .U3TXWVHS3(VCC), 
-    .UCENCK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UCTXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXSKC(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UCTXUPSC(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXTGE0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .UCTXUPSX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXTGE1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .SCANCLK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXTGE2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .SCANRST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .LMMICLK(VCC), 
-    .LMMIOFFSET0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXTGE3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIOFFSET1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXULPS(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIOFFSET2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXUPSX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIOFFSET3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .U3TXVD3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .U3TXWVHS0(VCC), .U3TXWVHS1(VCC), .U3TXWVHS2(VCC), .U3TXWVHS3(VCC), 
+    .UCENCK(VCC), 
+    .UCTXREQH(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIOFFSET4(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UCTXUPSC(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIREQUEST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .UCTXUPSX(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .SCANCLK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .SCANRST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , .LMMICLK(PLL_1_clkop_o), 
+    .LMMIOFFSET0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LMMIOFFSET1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LMMIOFFSET2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LMMIOFFSET3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LMMIOFFSET4(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LMMIREQUEST(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , .LMMIRESETN(VCC), 
-    .LMMIWDATA0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .LMMIWDATA0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIWDATA1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .LMMIWDATA1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIWDATA2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .LMMIWDATA2(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIWDATA3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .LMMIWDATA3(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LMMIWRRDN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .LMMIWRRDN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , 
-    .LTSTEN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .LTSTLANE0(VCC), 
-    .LTSTLANE1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
-    , .UTRNREQ(VCC), 
-    .OPCGLDCK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst )
+    .LTSTEN(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LTSTLANE0(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .LTSTLANE1(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .UTRNREQ(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
+    , 
+    .OPCGLDCK(\GND_sig_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst )
     , .CKN(MIPI_DPHY_1_clk_n_io), .CKP(MIPI_DPHY_1_clk_p_io), 
     .DN0(MIPI_DPHY_1_data_n_io[0]), .DN1(MIPI_DPHY_1_data_n_io[1]), 
     .DN2(MIPI_DPHY_1_data_n_io[2]), .DN3(MIPI_DPHY_1_data_n_io[3]), 
     .DP0(MIPI_DPHY_1_data_p_io[0]), .DP1(MIPI_DPHY_1_data_p_io[1]), 
     .DP2(MIPI_DPHY_1_data_p_io[2]), .DP3(MIPI_DPHY_1_data_p_io[3]));
 
-    MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_NO_CIL_tx_DPHY_inst
+    MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_CIL_tx_DPHY_inst
      
-    \MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst 
+    \MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst 
     ( .BITCKEXT(VCC), 
-    .CLKREF(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .CLKREF(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .PDDPHY(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .PDDPHY(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .PDPLL(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .PDPLL(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .SCCLKIN(VCC), .SCRSTNIN(VCC), .UED0THEN(VCC), 
+    .UFRXMODE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .SCCLKIN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .SCRSTNIN(VCC), 
-    .UED0THEN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .UFRXMODE(VCC), 
-    .UTXMDTX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .URXCKINE(VCC), .UTDIS(VCC), .UTXCKE(VCC), 
-    .UDE0D0TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXMDTX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE1D1TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .URXCKINE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE2D2TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTDIS(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE3D3TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXCKE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE4CKTN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE0D0TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE5D0RN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE1D1TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE6D1RN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE2D2TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UDE7D2RN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE3D3TN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE4CKTN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE5D0RN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE6D1RN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UDE7D2RN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXENER(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXRD0EN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTRD0SEN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXSKD0N(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .UTXTGE0(VCC), .UTXTGE1(VCC), .UTXTGE2(VCC), .UTXTGE3(VCC), 
-    .UTXULPSE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .UTXUPSEX(VCC), .UTXVDE(VCC), .UTXWVDHS0(VCC), 
-    .UTXWVDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXWVDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXENER(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UTXWVDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXRD0EN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1ENTHEN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U1FRXMD(VCC), 
-    .U1FTXST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U1TDIS(VCC), .U1TREQ(VCC), 
-    .U1TDE0D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTRD0SEN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE1CK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXSKD0N(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE2D0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXTGE0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE3D1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXTGE1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE4D2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXTGE2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE5D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXTGE3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXULPSE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TDE7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXUPSEX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXVDE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .UTXWVDHS0(VCC), 
+    .UTXWVDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXWVDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UTXWVDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .U1ENTHEN(VCC), 
+    .U1FRXMD(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1FTXST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDIS(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE0D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE1CK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE2D0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE3D1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE4D2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE5D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TDE7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXLPD(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXSK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U1TXTGE0(VCC), .U1TXTGE1(VCC), .U1TXTGE2(VCC), .U1TXTGE3(VCC), 
-    .U1TXUPSE(VCC), .U1TXUPSX(VCC), .U1TXVDE(VCC), .U1TXWVHS0(VCC), 
-    .U1TXWVHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXWVHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U1TXWVHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2END2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U2FRXMD(VCC), 
-    .U2FTXST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U2TDIS(VCC), .U2TREQ(VCC), .U2TDE0D0(VCC), .U2TDE1D1(VCC), 
-    .U2TDE2D2(VCC), .U2TDE3D3(VCC), 
-    .U2TDE4CK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TDE5D0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TDE6D1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TDE7D2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXLPD(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXSK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXTGE0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXTGE1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXTGE2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXTGE3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXUPSE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXUPSX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXVDE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .U1TXWVHS0(VCC), 
+    .U1TXWVHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXWVHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U1TXWVHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .U2END2(VCC), 
+    .U2FRXMD(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2FTXST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDIS(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE0D0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE1D1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE2D2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE3D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE4CK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE5D0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE6D1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TDE7D2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U2TPDTE(VCC), 
-    .U2TXREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXSKC(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U2TXTGE0(VCC), .U2TXTGE1(VCC), .U2TXTGE2(VCC), .U2TXTGE3(VCC), 
-    .U2TXUPSE(VCC), .U2TXUPSX(VCC), .U2TXVDE(VCC), .U2TXWVHS0(VCC), 
-    .U2TXWVHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXWVHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U2TXWVHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3END3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U3FRXMD(VCC), 
-    .U3FTXST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TDISD2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TREQD2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TDE0D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U3TDE1D0(VCC), .U3TDE2D1(VCC), .U3TDE3D2(VCC), .U3TDE4D3(VCC), 
-    .U3TDE5CK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TDE6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TDE7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TPDTE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXSKC(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXTGE0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXTGE1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXTGE2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXTGE3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXUPSE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXUPSX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXVDE(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .U2TXWVHS0(VCC), 
+    .U2TXWVHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXWVHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U2TXWVHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .U3END3(VCC), 
+    .U3FRXMD(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3FTXST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXLPDT(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TDISD2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TREQD2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TDE0D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXSKC(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .U3TXTGE0(VCC), .U3TXTGE1(VCC), .U3TXTGE2(VCC), .U3TXTGE3(VCC), 
-    .U3TXULPS(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TDE1D0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXUPSX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TDE2D1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXVD3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TDE3D2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TDE4D3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TDE5CK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TDE6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TDE7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS5(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS6(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS7(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS8(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS9(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS10(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS11(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS12(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS13(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS14(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS15(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS16(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS17(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS18(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS19(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS20(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS21(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS22(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS23(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS24(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS25(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS26(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS27(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS28(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS29(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS30(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXDHS31(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXLPDT(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXSKC(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXTGE0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXTGE1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXTGE2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXTGE3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXULPS(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXUPSX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .U3TXVD3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , .U3TXWVHS0(VCC), 
-    .U3TXWVHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TXWVHS1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXWVHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TXWVHS2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .U3TXWVHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .U3TXWVHS3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .UCENCK(VCC), 
+    .UCTXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UCENCK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UCTXUPSC(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UCTXREQH(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .UCTXUPSX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UCTXUPSC(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .SCANCLK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .UCTXUPSX(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .SCANRST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , .LMMICLK(PLL_1_clkop_o), 
+    .LMMIOFFSET0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .SCANCLK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIOFFSET1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .SCANRST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .LMMICLK(VCC), 
-    .LMMIOFFSET0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIOFFSET2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIOFFSET1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIOFFSET3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIOFFSET2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIOFFSET4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIOFFSET3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , 
-    .LMMIOFFSET4(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , 
-    .LMMIREQUEST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIREQUEST(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , .LMMIRESETN(VCC), 
-    .LMMIWDATA0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIWDATA0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIWDATA1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIWDATA1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIWDATA2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIWDATA2(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIWDATA3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIWDATA3(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LMMIWRRDN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LMMIWRRDN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LTSTEN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LTSTEN(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LTSTLANE0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LTSTLANE0(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , 
-    .LTSTLANE1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
-    , .UTRNREQ(VCC), 
-    .OPCGLDCK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst )
+    .LTSTLANE1(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .UTRNREQ(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
+    , 
+    .OPCGLDCK(\GND_sig_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst )
     , .CKN(MIPI_DPHY_2_clk_n_io), .CKP(MIPI_DPHY_2_clk_p_io), 
     .DN0(MIPI_DPHY_2_data_n_io[0]), .DN1(MIPI_DPHY_2_data_n_io[1]), 
     .DN2(MIPI_DPHY_2_data_n_io[2]), .DN3(MIPI_DPHY_2_data_n_io[3]), 
     .DP0(MIPI_DPHY_2_data_p_io[0]), .DP1(MIPI_DPHY_2_data_p_io[1]), 
     .DP2(MIPI_DPHY_2_data_p_io[2]), .DP3(MIPI_DPHY_2_data_p_io[3]));
+  PLL_1_clki_i PLL_1_clki_i_I( .PADDI(\PLL_1_inst.lscc_pll_inst.clki_w ), 
+    .PLL_1_clki_i(PLL_1_clki_i));
+  PLL_1_inst_lscc_pll_inst_gen_no_refclk_mon_u_PLL_PLL_inst 
+    \PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst ( 
+    .CIBDIR(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .CIBDSEL0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .CIBDSEL1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .CIBDSEL2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .CIBLDREG(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .CIBROT(\DDR_MEM_1_cke_o_pad[0].gnd ), .ENCLKOP(VCC), .ENCLKOS(VCC), 
+    .ENCLKOS2(VCC), .ENCLKOS3(VCC), .ENCLKOS4(VCC), .ENCLKOS5(VCC), 
+    .FBKCK(PLL_1_clkop_o), .LEGACY(VCC), .LMMICLK(VCC), 
+    .LMMIOFFSET0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIOFFSET1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIOFFSET2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIOFFSET3(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIOFFSET4(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIOFFSET5(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIOFFSET6(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIREQUEST(\DDR_MEM_1_cke_o_pad[0].gnd ), .LMMIRESETN(VCC), 
+    .LMMIWDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA4(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA5(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA6(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWDATA7(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .LMMIWRRDN(\DDR_MEM_1_cke_o_pad[0].gnd ), .PLLRESET(VCC), 
+    .REFCK(\PLL_1_inst.lscc_pll_inst.clki_w ), 
+    .STDBY(\DDR_MEM_1_cke_o_pad[0].gnd ), .PLLPDN(VCC), 
+    .ROTDEL(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .DIRDEL(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .ROTDELP1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYTEST0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYTEST1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYTEST2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYTEST3(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYTEST4(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .BINTEST0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .BINTEST1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .DIRDELP1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYACT0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYACT1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYACT2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYACT3(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .GRAYACT4(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .BINACT0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .BINACT1(\DDR_MEM_1_cke_o_pad[0].gnd ), .OPCGLDCK(VCC), .SCANRST(VCC), 
+    .SCANCLK(VCC), .CLKOP(PLL_1_clkop_o), .CLKOS(PLL_1_clkos_o));
   DDR_MEM_1_cke_o_0_ \DDR_MEM_1_cke_o[0]_I ( .PADDO(\DDR_MEM_1_cke_o_c[0] ), 
     .DDRMEM1ckeo0(DDR_MEM_1_cke_o[0]));
   DDR_MEM_1_odt_o_0_ \DDR_MEM_1_odt_o[0]_I ( .PADDO(\DDR_MEM_1_odt_o_c[0] ), 
@@ -1437,89 +1675,89 @@ q+Tc0YUVmdWGWmS5aHxQkXkROMZvBpBnM91vucEozzo=
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-pqvfSrbQzZKKHmCNbwm4BzqPBOhs8vfyfNbMJ2nbqfOMNG/QZBp6soVG4nopEBpx
-IpC7XH2JUmeuAxdksipCvRFGLeaI9f8Zr9pQV8W1ZbLdb9/ZFfNkz9D56NLebsvq
-d/ZO3GFvrf58a6UJCsv3Dq4CHItwRmwUwcuoOryOuve2vYlHGE9az60hXMnPGiOr
-Z/SIqHxCGzkvDSoBS+FMqjp9vqmTApEPK5VKxKR0JPcLrqxDCXCQNd7qz/dFFy7o
-3YzhcUn8IEQV/0PCo0TzwJUY0qcp/ggzvjP8Fnab0aoj7OpSc19O6wLFdf7+lxmh
-12dO9JFCoAAKEaP1aEtt+g==
+nmxoSvEljgQT1RGY+rw/SAq0F3nnhdk+VOajhM1FxweCzY7sHwf2fXhEsm47Dqzb
+Khh8hsgK7IqAlehAWtQqNKJLqdwlSjAZAkEh+qIVR7UlExbEuOR4WprGbEN9aD4F
+RybaO4KqYtuMiAntqwiu6QwggkdgYZtE88xbB0MBY22qO4PIqmem+uUj8yoX+YSU
+03I6an50Wes6weClpAqtQSZ946dR9iIlZLhiilzHro9sfl+ZDzgODGJ4hYnCHAwt
+h2Q2hwmb0nfRBQc7p2oisozgxUGHGkWtqcymIHt3YUkbIcOXKBxxJ36+GLS4SpkE
+lQR+XKAQOwfExYpiS7l4Kw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-SykEBHLC0/ib2FpqsDB2ajmTMlFKcSj127X0c5ZPxOZOoHaG8QvKjcGbwRS1i7Ik
-ishkOqL3CSk/sSfCjWNfiryyXB+9MYR2vccj4o13/dgoe3LiuCNpLi5RPOukRle/
-6U/0vNWZJQ6fwU+BqWxDIcVvmuPZwkTlVs9mZY6V2D6/i2GYzfUasG+Q6klrnpbL
-Z3NgQRsETAwJ84Bqtf3wBV4uYJIQvav4Cqlil0syfAqaOrAEPWPavPpodCMkLEZS
-6b+vgszvveeMQITJcHbxJI/GJqH8a1jDeII0Q8EgChLE6TWF9I+N5JM1/mQpsvnf
-orIOvM7nxy9iM1QdHg2/KsXDBbjNC5bEqypODPvUhIW9GcYB1p9QVK3ZghFxgbty
-sSsnnDT4dLIQcNO5j/z+SxOXIwV8cz6t0wSWFIqd2431svXs5OfcXtTQU4bTVLZs
-bNU/w6OeOhr9KWgmxlSBi5GIBd30VOLestkcLi7+sizBMk+PiH11s8J/0ATwI68N
+YVabNyCnFK5BTijoerrQa5P7kkeZRuGedhQVqKzelvYHahh1lyyAHOlDkwHCLWTh
+RvKnqhB20Gen0rhTeiGGcwksp+eP7UHPCK76XquF7U3sDBSt8fLK6l/8YwyEXe8Y
+eKF1KHlKAgHv6AecAtM6qufOVdwjTRk4zToH+8i08/GWt9lkCg/CUURpfqktxwmG
+Sr+9kKzdanKNwb4GLYUoKmhlImyL2+UdKSILm2EfWyWcILqGhFc6ZYSevPpxHgCs
+WKu4YMTAXDob0E3hiB+uJ/7wxy/IIUEOTYmCYa1Yyzm8DLt4WBifSCHWftE68s59
+Y6Oqku94AhPOgmklFNv8YeOGRBrxuzGFQ0fsFQlF76JrdAnSljyaVjcONYVL7V1q
+YSpNv+h9nWttkPv7F+ANxgS03BYBkxtyoRMrPsxsE7misWCgh3ygOlKuLp+MDyfK
+8KnCOQPnK22SBcQurZRZIILK1Sik5zcR0fZ0XGKMrMhBZo3WUmD7VjzehLFWck7h
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-JdlgDKWWpdWd1Cj3Bz/os5HfY4xM3k6M++G+nEbGcGTj6E3fv/EQ7bo2tX8O/MrV
-nILSScW+G5OI1/JUosR16Qtxsrc5wJnEYj5vydi79H9YlwkRwXNdw/xm4gGhhuAi
-Wy59NQitJg9F7ZA4B+p78n7utHWX3DbRnKy8UCuYYcs1SJuJbfMBxK3xy9zOFD+E
-Gd6q+LtaIUJsD8BaPwJrwYRjmyIO6C+VfTuZQo3KfuaX0vLRxixz/3VnlBCtoK+i
-IiRMTapZ/PloIGkb7tO3e99tM0nP9u0lqIv8XTrYprDNsxaXIbamwha3JC3IVKkG
-y4qEh5mtCSOEhdpJQvTb/Q==
+NDC3P/Yww55+F/FZ92/Y4es7ImB29gDEkB/BMUe4TamOkliLIRLfVjjNJf8REi4Z
+CY/hdah4K8V+U0L7ec05S8UFY7XQjTB4bvX3G7aK5AhrDxTNqv710CLWBZfx9HN+
+72jh0cuGZmgYYKc9FT7GcEQ4t6WRnXoGcGKW0QuIF9P3ydwAqQrzqDn2qJjV3RLH
+foAFXRUY14ui8j8SvtfHImmxe9Uji+NWT/sf9Eco8nxhE/fQELiVgey6UT5JSqz6
+f0JUKcShfsIsxUXgTCc+/bkRBc1L76q1R1yid2xp8DYZgA5pvp+/4gJPo9h757qP
+WoCBTaBShq/NN8T2VgOsnA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-dMtzq2UOg5Zv2CTXKafv5lsKC4WjjAnldmwQEYWCmQJZsrqgN46uC/tTNHtMKc2L
-1MNYu/ry15tbwA3euo4iwnjKJaePtyPX5zyOF/qUv40owk3Hj5KImfxruWH4X4Bk
-ePPh8ucUDBHAWFKcCF+KK26IUxXTKlaSjg5tEmiErm4=
+Ow1KCqNkAqcoi3REce7oIhnkUMi7dm06et7rQCj78gNjLO7wh5qh399JrmmoM4Ez
+cM6j0aN3v8dV1WvqsvOoNGHQMpzAnY2CWjGF7KLH3Ma7I9a+ON7EDl2NtpDIuoGr
+knELzfZ7gUOPusM02ZrcRJlmIYjAd6X6V3YpQeWarg0=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-v2/nlBjC6NGj+KF2Im7E98qK40hWXXq82KSQ8ikFpe+T2QkwXI/mOUAhWd2DvzcV
-XnunXYek2ttuaCZKd+FoHIm4TvvE2TIX5MFiE+3HYj+pCQuy+6XyCx1DieoxOVkz
-rfx7wMkwOZy2bTLkIJ2AJ7jUMeaSGOlky4mo2GRDMBBXcI3aEYyArTqBs+X5Bld7
-E5Hh3BE/+ntWGKmDk8Qp0+I3g5aErRY2jHbhWZAoYx3+hdxZ8R+ycsbWGWvYOsK/
-iiG9tDlzpZOoMPpMX5bN4X1X7v3zx0bZ/rSbLCmqpvnXA/ut6S0EZlyzC0aa91BQ
-GVoPJb05Qmi6Nmy1nD3Sdw==
+IRmJQ6g1kA1RR88zg1prOMlqSj8PsagqVFGz13KrMKs5ehyYdQKcBwhtLssZpJTz
+GOP0lIu0Hb9AUcFX54scwPY50Z9lCJPglapr1woCYNlTPl7emG74b8qKrdtIBMoH
+plWuHsZvnWyPHB/SjCJF/l1Z5OyQ92F92eLiEyDW5q5uwi4bJckKu/qmrtp7kLkv
+qYd29Dxv38xO0OkbFo3IeoTcdZ8/b5PRCgywzzHrizLxHhLuOSq7LJTa1hOjRk/P
+iz9F5knyOJt2GbNjOscVJTsGs2AKadd2XBwU9jcYED3jZv+TW5XxxVsIiJkeFJE8
+GlZ53GoNyKWbxYcI58xo2g==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-cazKm5k1OpiVVEm/UW61CNus38XRsyaPTgt+TUSJMW6VCTKFmgy29HagLvTet+ew
-OuUqj7imS2cEfQWICfrIa4Rimg8Mb6FaeNeWZ/w5qWRH0s3UvTXQCnStr4qJCqrl
-uOI9DJeKfip1Mhx/G+16f4+MMM4Qdy+DJUK+FDtcy2W2vVeL6zbnbM+eLS1XdivQ
-qgTowET1F4RG+oyNbhFqZjGKPPzYCcslghXz9I+tadHYNWwg7f6gNoyTvnQSJQNG
-6tCJxQGuWX6Mp2bkjdhXdo/97b+VP602TXcIQgOqA/5fn/qBAugb5yZ+l6UtWdp5
-VNZ6r2um5qiIqAf9TsFIpw==
+fwU8moPxcpkEi6W0xc/IeUZoqpBBFLgsmYyc2+2wYDAVg46EHi7L895t/ftSSI/z
+8sR43A7Qx16MvyJ32kSwJVq6Kko2GDW9TGWV+3DvUd+SQ+pgS2SBPoM9weT6P3Mm
+dfHDzu5GXxmGyBRLXTvxuHDi9p79VfPzQHc3+ZW83C87B6HVfABAEqs3qw5A+E2/
+K50vWbbYoSl46vvzgx9ax8vag5zgLXUvxw8xmm/SbridtXX4fbgyizHoN//uJDlr
+1kjUjedt9XrV/Xe3l9HNKcEOkjZIJ8rBM9BZTaw8g3f9kd52jDI41SaDXtSATRxd
+Vq089eFnu7Qcrz798Ay8NA==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=656)
 `pragma protect data_block
-ct3sT7DP/RENx4tB5b5ADvFMWg+k7N1ZjD44Ph3OgZYvs3G9PON6fxkuyLOK93n5
-X3YLSyR/hz/kHJtTXABW+FuLoWKwbMBIU+Eyiw4/hGB9cyrL+aVIIPqZVZXWv4Tu
-xJe0lMsd0tvMX+MsHpnFu2p64rcW61c5XvXDADIVuk8mjfuGAaqB4eSvc7lT1Ioh
-Hckw2FY8zOih2Wuprz3uC9XqRnYAfXCkaW/yuUfMwxHbcyHN6Hln1FZ8Jg2g5RES
-ryLPzOzObTcQ1NmMRrU9XRAiBdiRfW0FJe9jszqFpvNfu17uq+s8PNyeD8yw5YUe
-uFjruZnBqzT3O71Z8lZbpYNOI8mTOO3+MLWoGd/v6l99aJBHOK/jB02h2x3at7hc
-ohR9aX+sYsb5zYh5cf5wXriERf7AM0oB2X7EYzlJLIhVH/rW1en3/RfiUZ5uiRL3
-6xXQFmKmqzyhIIOjzXre1x8CftzwcgXgBkazduN5CYdfkmMT7u3P1+cKhJQMXYTx
-T4sK5+d25euayOPJTbOolfbh+RmN+92i3uLK6YPsi7ItcVu0UbU0Vf1RNA1ARHxZ
-MmacHu6k2ZNDCsA0P8DkiaH+FeHZTu9iwOmzsonFXYkLgh5OX3wqExhG89Kol6rz
-tgoi83I4mggt7a/f05BoIvUCNXHOXsBhnlpCTI+XSkHrxt5vqrU8OLLnnOKdiLeA
-qmWi9DlkR0kIR0qOjbrD9OFDITaVGyyMXXbEb7jKDuEoMCuWAHbGgxV3uo6DXSxG
-stXwXeS4SmM5Bo989a/QXJHW+eyJlJUgBt2wxLYIZPMMIUkgilyByZZS4tWOyoVZ
-kLi4J3w5NPcJh3sFgyVMl4Ned4qMOuoSJEytk0A1iJw=
+ZYtftt7E30QJxIxllAasIVnN+9AeySBpJaqtaNQ5bzSZDkVN4JOx3t0NidgZS8ae
+84U6Lx93vG9k5J6Yd3sgZLEbqTKkpz6zvR2l6uhraPIp24AgBbO8XFLTo45VD+/u
+2yLyAXWSb0IIyPavucKkcbfeoPzJNRvg0zHluz+B/cPKGORX/y+LbhZEvt3hedtj
+Et0JnF7LYz0kvvck/76DYWz1fjh9bBPAxz5TOa//+EFMAGfpvtlYFFSSgGxKi7hP
+HoSkov38FyaXwih9FqTBRJp2RKFf+u/2OASTSxhrmD+BAZUp1AR9RDa0NFf61olR
+cHrhgrpHoazv1yW7WYw9xzk4ldg39rQZ+QIIlS7iCrtfCfhDlOWvmntrhpR/ET8u
+rfauOLHqN94mrM7gnRgSkf4y5OZKxfHxjq3x/NAY+V7zRTpIqBYjbPifLOalBWBH
+TNAnh/1I8Y97B3bgpczNCZ0wvw7FcVUvDUlPWB+P7Ww4CA2Is2t+4K/m/T9vNYju
+/S/lYxaVRZ6BZ2IX9O170ee69h1e4pBdJLbjl8mF3F7t1WlHVZ217yXVlY5vxJpk
+3xEwbRAsNgmgjzUzoLJ233GB0k3GzdpOk5Cd445t0458Wjd2IbxO1FQUGsiScI7b
+ClYID4X5W2ji7aofi4jyBVwz1WkxIsBMjoxSG+1svWkVfqVBPgK/ldO97iVR1sXK
+cyFC7n2KRjbB1Pb2TITHUfnNQu+mGSoaOTX+Pq6H+6G2qcivW0ihoSLSRBKRabcE
+lZiL23Xi3CV1cerh3kkHDgxFF76pK+N2mEfkZKAIfmiYjkq10mgclBVh0+2OjAvP
+/G+iqLfneHIshsjEJIS9jVok3dmZXH/DG8aeiMhkVDo=
 
 `pragma protect end_protected
 endmodule
@@ -1547,12 +1785,12 @@ module gnd ( output PWR0 );
 endmodule
 
 module 
-  GND_for_MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_NO_CIL_u_dphy_nocil_SLICE_1
+  GND_for_MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_CIL_u_dphy_cil_SLICE_1
    ( output F0 );
   wire   GNDI;
 
   UALUT4 
-    \GND_for_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst 
+    \GND_for_MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst 
     ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -1562,12 +1800,12 @@ module
 endmodule
 
 module 
-  GND_for_MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_NO_CIL_tx_SLICE_2
+  GND_for_MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_CIL_tx_SLICE_2
    ( output F0 );
   wire   GNDI;
 
   UALUT4 
-    \GND_for_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst 
+    \GND_for_MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst 
     ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -3480,7 +3718,7 @@ module
 endmodule
 
 module 
-  MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_NO_CIL_u_dphy_nocil_DPHY_inst
+  MIPI_DPHY_1_inst_lscc_mipi_dphy_inst_RECEIVER_lscc_mipi_wrapper_rx_HARD_IP_CIL_u_dphy_cil_DPHY_inst
    ( input BITCKEXT, CLKREF, PDDPHY, PDPLL, SCCLKIN, SCRSTNIN, UED0THEN, 
     UFRXMODE, UTXMDTX, URXCKINE, UTDIS, UTXCKE, UDE0D0TN, UDE1D1TN, UDE2D2TN, 
     UDE3D3TN, UDE4CKTN, UDE5D0RN, UDE6D1RN, UDE7D2RN, UTXDHS0, UTXDHS1, 
@@ -3521,25 +3759,25 @@ module
     LMMIOFFSET3, LMMIOFFSET4, LMMIREQUEST, LMMIRESETN, LMMIWDATA0, LMMIWDATA1, 
     LMMIWDATA2, LMMIWDATA3, LMMIWRRDN, LTSTEN, LTSTLANE0, LTSTLANE1, UTRNREQ, 
     OPCGLDCK, inout CKN, CKP, DN0, DN1, DN2, DN3, DP0, DP1, DP2, DP3 );
-  wire   LMMICLK_NOTIN, LMMIRESETN_NOTIN, UDE0D0TN_dly, UTXCKE_dly, 
-         UDE1D1TN_dly, UDE2D2TN_dly, UDE3D3TN_dly, UDE4CKTN_dly, UDE5D0RN_dly, 
-         UDE6D1RN_dly, UDE7D2RN_dly, UTXENER_dly, UTXRD0EN_dly, UTXTGE0_dly, 
-         UTXTGE1_dly, UTXTGE2_dly, UTXTGE3_dly, UTXULPSE_dly, UTXVDE_dly, 
-         U1TDE0D3_dly, U1TDE1CK_dly, U1TDE2D0_dly, U1TDE3D1_dly, U1TDE4D2_dly, 
-         U1TDE5D3_dly, U1TDE6_dly, U1TDE7_dly, U1TXLPD_dly, U1TXTGE0_dly, 
-         U1TXTGE1_dly, U1TXTGE2_dly, U1TXTGE3_dly, U1TXUPSE_dly, U1TXVDE_dly, 
-         U2TDE0D0_dly, U2TDE1D1_dly, U2TDE2D2_dly, U2TDE3D3_dly, U2TDE4CK_dly, 
-         U2TDE5D0_dly, U2TDE6D1_dly, U2TDE7D2_dly, U2TPDTE_dly, U2TXTGE0_dly, 
-         U2TXTGE1_dly, U2TXTGE2_dly, U2TXTGE3_dly, U2TXUPSE_dly, U2TXVDE_dly, 
-         U3TDE0D3_dly, U3TDE1D0_dly, U3TDE2D1_dly, U3TDE3D2_dly, U3TDE4D3_dly, 
-         U3TDE5CK_dly, U3TDE6_dly, U3TDE7_dly, U3TXLPDT_dly, U3TXTGE0_dly, 
-         U3TXTGE1_dly, U3TXTGE2_dly, U3TXTGE3_dly, U3TXULPS_dly, U3TXVD3_dly, 
-         LMMIOFFSET0_dly, LMMICLK_dly, LMMIOFFSET1_dly, LMMIOFFSET2_dly, 
-         LMMIOFFSET3_dly, LMMIOFFSET4_dly, LMMIREQUEST_dly, LMMIWDATA0_dly, 
-         LMMIWDATA1_dly, LMMIWDATA2_dly, LMMIWDATA3_dly, LMMIWRRDN_dly;
+  wire   UDE0D0TN_dly, UTXCKE_dly, UDE1D1TN_dly, UDE2D2TN_dly, UDE3D3TN_dly, 
+         UDE4CKTN_dly, UDE5D0RN_dly, UDE6D1RN_dly, UDE7D2RN_dly, UTXENER_dly, 
+         UTXRD0EN_dly, UTXTGE0_dly, UTXTGE1_dly, UTXTGE2_dly, UTXTGE3_dly, 
+         UTXULPSE_dly, UTXVDE_dly, U1TDE0D3_dly, U1TDE1CK_dly, U1TDE2D0_dly, 
+         U1TDE3D1_dly, U1TDE4D2_dly, U1TDE5D3_dly, U1TDE6_dly, U1TDE7_dly, 
+         U1TXLPD_dly, U1TXTGE0_dly, U1TXTGE1_dly, U1TXTGE2_dly, U1TXTGE3_dly, 
+         U1TXUPSE_dly, U1TXVDE_dly, U2TDE0D0_dly, U2TDE1D1_dly, U2TDE2D2_dly, 
+         U2TDE3D3_dly, U2TDE4CK_dly, U2TDE5D0_dly, U2TDE6D1_dly, U2TDE7D2_dly, 
+         U2TPDTE_dly, U2TXTGE0_dly, U2TXTGE1_dly, U2TXTGE2_dly, U2TXTGE3_dly, 
+         U2TXUPSE_dly, U2TXVDE_dly, U3TDE0D3_dly, U3TDE1D0_dly, U3TDE2D1_dly, 
+         U3TDE3D2_dly, U3TDE4D3_dly, U3TDE5CK_dly, U3TDE6_dly, U3TDE7_dly, 
+         U3TXLPDT_dly, U3TXTGE0_dly, U3TXTGE1_dly, U3TXTGE2_dly, U3TXTGE3_dly, 
+         U3TXULPS_dly, U3TXVD3_dly, LMMIOFFSET0_dly, LMMICLK_dly, 
+         LMMIOFFSET1_dly, LMMIOFFSET2_dly, LMMIOFFSET3_dly, LMMIOFFSET4_dly, 
+         LMMIREQUEST_dly, LMMIWDATA0_dly, LMMIWDATA1_dly, LMMIWDATA2_dly, 
+         LMMIWDATA3_dly, LMMIWRRDN_dly;
 
   DPHY_CORE_B 
-    \MIPI_DPHY_1_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst 
+    \MIPI_DPHY_1_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst 
     ( .BITCKEXT(BITCKEXT), .CKN(CKN), .CKP(CKP), .CLKREF(CLKREF), .D0ACTIVE1(), 
     .D0ACTIVE0(), .D0BYTCNT9(), .D0BYTCNT8(), .D0BYTCNT7(), .D0BYTCNT6(), 
     .D0BYTCNT5(), .D0BYTCNT4(), .D0BYTCNT3(), .D0BYTCNT2(), .D0BYTCNT1(), 
@@ -3686,21 +3924,41 @@ module
     .U3TXWVHS0(U3TXWVHS0), .U3USAN(), .UCENCK(UCENCK), .UCRXCKAT(), 
     .UCRXUCKN(), .UCSSTT(), .UCTXREQH(UCTXREQH), .UCTXUPSC(UCTXUPSC), 
     .UCTXUPSX(UCTXUPSX), .UCUSAN(), .SCANCLK(SCANCLK), .SCANRST(SCANRST), 
-    .LMMICLK(LMMICLK_NOTIN), .LMMIOFFSET4(LMMIOFFSET4_dly), 
+    .LMMICLK(LMMICLK_dly), .LMMIOFFSET4(LMMIOFFSET4_dly), 
     .LMMIOFFSET3(LMMIOFFSET3_dly), .LMMIOFFSET2(LMMIOFFSET2_dly), 
     .LMMIOFFSET1(LMMIOFFSET1_dly), .LMMIOFFSET0(LMMIOFFSET0_dly), 
     .LMMIRDATA3(), .LMMIRDATA2(), .LMMIRDATA1(), .LMMIRDATA0(), 
     .LMMIRDATAVALID(), .LMMIREADY(), .LMMIREQUEST(LMMIREQUEST_dly), 
-    .LMMIRESETN(LMMIRESETN_NOTIN), .LMMIWDATA3(LMMIWDATA3_dly), 
+    .LMMIRESETN(LMMIRESETN), .LMMIWDATA3(LMMIWDATA3_dly), 
     .LMMIWDATA2(LMMIWDATA2_dly), .LMMIWDATA1(LMMIWDATA1_dly), 
     .LMMIWDATA0(LMMIWDATA0_dly), .LMMIWRRDN(LMMIWRRDN_dly), .LTSTEN(LTSTEN), 
     .LTSTLANE1(LTSTLANE1), .LTSTLANE0(LTSTLANE0), .URWDCKHS(), 
     .UTRNREQ(UTRNREQ), .UTWDCKHS(), .UCRXWCHS(), .OPCGLDCK(OPCGLDCK), 
     .CLKLBACT());
-  inverter LMMICLK_INVERTERIN( .I(LMMICLK_dly), .Z(LMMICLK_NOTIN));
-  inverter LMMIRESETN_INVERTERIN( .I(LMMIRESETN), .Z(LMMIRESETN_NOTIN));
 
   specify
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET0_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET1_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET2_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET3_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET4, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET4_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIREQUEST, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIREQUEST_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA0_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA1_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA2_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA3_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWRRDN, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWRRDN_dly);
     $width (posedge UTXCKE, 0:0:0);
     $width (negedge UTXCKE, 0:0:0);
     $width (posedge LMMICLK, 0:0:0);
@@ -3831,28 +4089,6 @@ module
       (negedge UTXCKE, U3TXULPS, 0:0:0, 0:0:0,,,, UTXCKE_dly, U3TXULPS_dly);
     $setuphold 
       (negedge UTXCKE, U3TXVD3, 0:0:0, 0:0:0,,,, UTXCKE_dly, U3TXVD3_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET0_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET1_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET2_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET3_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET4, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET4_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIREQUEST, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIREQUEST_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA0_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA1_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA2_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA3_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWRRDN, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWRRDN_dly);
   endspecify
 
 endmodule
@@ -4159,7 +4395,7 @@ module DPHY_CORE_B ( input BITCKEXT, inout CKN, CKP, input CLKREF, output
   defparam INST10.CONT_CLK_MODE = "ENABLED";
   defparam INST10.DESKEW_EN = "DISABLED";
   defparam INST10.DSI_CSI = "CSI2_APP";
-  defparam INST10.EN_CIL = "CIL_BYPASSED";
+  defparam INST10.EN_CIL = "CIL_ENABLED";
   defparam INST10.HSEL = "DISABLED";
   defparam INST10.LANE0_SEL = "LANE_0";
   defparam INST10.LOCK_BYP = "GATE_TXBYTECLKHS";
@@ -4180,14 +4416,14 @@ module DPHY_CORE_B ( input BITCKEXT, inout CKN, CKP, input CLKREF, output
   defparam INST10.U_PRG_HS_PREPARE = "0b00";
   defparam INST10.U_PRG_HS_TRAIL = "0b000000";
   defparam INST10.U_PRG_HS_ZERO = "0b000000";
-  defparam INST10.U_PRG_RXHS_SETTLE = "0b000001";
+  defparam INST10.U_PRG_RXHS_SETTLE = "0b000011";
   defparam INST10.UC_PRG_HS_TRAIL = "0b00000";
   defparam INST10.UC_PRG_HS_ZERO = "0b0000000";
-  defparam INST10.UC_PRG_RXHS_SETTLE = "0b000001";
+  defparam INST10.UC_PRG_RXHS_SETTLE = "0b000010";
 endmodule
 
 module 
-  MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_NO_CIL_tx_DPHY_inst
+  MIPI_DPHY_2_inst_lscc_mipi_dphy_inst_TRANSMITTER_lscc_mipi_wrapper_tx_HARD_IP_genblk1_u_DPHY_CIL_tx_DPHY_inst
    ( input BITCKEXT, CLKREF, PDDPHY, PDPLL, SCCLKIN, SCRSTNIN, UED0THEN, 
     UFRXMODE, UTXMDTX, URXCKINE, UTDIS, UTXCKE, UDE0D0TN, UDE1D1TN, UDE2D2TN, 
     UDE3D3TN, UDE4CKTN, UDE5D0RN, UDE6D1RN, UDE7D2RN, UTXDHS0, UTXDHS1, 
@@ -4228,25 +4464,25 @@ module
     LMMIOFFSET3, LMMIOFFSET4, LMMIREQUEST, LMMIRESETN, LMMIWDATA0, LMMIWDATA1, 
     LMMIWDATA2, LMMIWDATA3, LMMIWRRDN, LTSTEN, LTSTLANE0, LTSTLANE1, UTRNREQ, 
     OPCGLDCK, inout CKN, CKP, DN0, DN1, DN2, DN3, DP0, DP1, DP2, DP3 );
-  wire   LMMICLK_NOTIN, LMMIRESETN_NOTIN, UDE0D0TN_dly, UTXCKE_dly, 
-         UDE1D1TN_dly, UDE2D2TN_dly, UDE3D3TN_dly, UDE4CKTN_dly, UDE5D0RN_dly, 
-         UDE6D1RN_dly, UDE7D2RN_dly, UTXENER_dly, UTXRD0EN_dly, UTXTGE0_dly, 
-         UTXTGE1_dly, UTXTGE2_dly, UTXTGE3_dly, UTXULPSE_dly, UTXVDE_dly, 
-         U1TDE0D3_dly, U1TDE1CK_dly, U1TDE2D0_dly, U1TDE3D1_dly, U1TDE4D2_dly, 
-         U1TDE5D3_dly, U1TDE6_dly, U1TDE7_dly, U1TXLPD_dly, U1TXTGE0_dly, 
-         U1TXTGE1_dly, U1TXTGE2_dly, U1TXTGE3_dly, U1TXUPSE_dly, U1TXVDE_dly, 
-         U2TDE0D0_dly, U2TDE1D1_dly, U2TDE2D2_dly, U2TDE3D3_dly, U2TDE4CK_dly, 
-         U2TDE5D0_dly, U2TDE6D1_dly, U2TDE7D2_dly, U2TPDTE_dly, U2TXTGE0_dly, 
-         U2TXTGE1_dly, U2TXTGE2_dly, U2TXTGE3_dly, U2TXUPSE_dly, U2TXVDE_dly, 
-         U3TDE0D3_dly, U3TDE1D0_dly, U3TDE2D1_dly, U3TDE3D2_dly, U3TDE4D3_dly, 
-         U3TDE5CK_dly, U3TDE6_dly, U3TDE7_dly, U3TXLPDT_dly, U3TXTGE0_dly, 
-         U3TXTGE1_dly, U3TXTGE2_dly, U3TXTGE3_dly, U3TXULPS_dly, U3TXVD3_dly, 
+  wire   LMMIRESETN_NOTIN, UDE0D0TN_dly, UTXCKE_dly, UDE1D1TN_dly, 
+         UDE2D2TN_dly, UDE3D3TN_dly, UDE4CKTN_dly, UDE5D0RN_dly, UDE6D1RN_dly, 
+         UDE7D2RN_dly, UTXENER_dly, UTXRD0EN_dly, UTXTGE0_dly, UTXTGE1_dly, 
+         UTXTGE2_dly, UTXTGE3_dly, UTXULPSE_dly, UTXVDE_dly, U1TDE0D3_dly, 
+         U1TDE1CK_dly, U1TDE2D0_dly, U1TDE3D1_dly, U1TDE4D2_dly, U1TDE5D3_dly, 
+         U1TDE6_dly, U1TDE7_dly, U1TXLPD_dly, U1TXTGE0_dly, U1TXTGE1_dly, 
+         U1TXTGE2_dly, U1TXTGE3_dly, U1TXUPSE_dly, U1TXVDE_dly, U2TDE0D0_dly, 
+         U2TDE1D1_dly, U2TDE2D2_dly, U2TDE3D3_dly, U2TDE4CK_dly, U2TDE5D0_dly, 
+         U2TDE6D1_dly, U2TDE7D2_dly, U2TPDTE_dly, U2TXTGE0_dly, U2TXTGE1_dly, 
+         U2TXTGE2_dly, U2TXTGE3_dly, U2TXUPSE_dly, U2TXVDE_dly, U3TDE0D3_dly, 
+         U3TDE1D0_dly, U3TDE2D1_dly, U3TDE3D2_dly, U3TDE4D3_dly, U3TDE5CK_dly, 
+         U3TDE6_dly, U3TDE7_dly, U3TXLPDT_dly, U3TXTGE0_dly, U3TXTGE1_dly, 
+         U3TXTGE2_dly, U3TXTGE3_dly, U3TXULPS_dly, U3TXVD3_dly, 
          LMMIOFFSET0_dly, LMMICLK_dly, LMMIOFFSET1_dly, LMMIOFFSET2_dly, 
          LMMIOFFSET3_dly, LMMIOFFSET4_dly, LMMIREQUEST_dly, LMMIWDATA0_dly, 
          LMMIWDATA1_dly, LMMIWDATA2_dly, LMMIWDATA3_dly, LMMIWRRDN_dly;
 
   DPHY_CORE0004 
-    \MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst 
+    \MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst 
     ( .BITCKEXT(BITCKEXT), .CKN(CKN), .CKP(CKP), .CLKREF(CLKREF), .D0ACTIVE1(), 
     .D0ACTIVE0(), .D0BYTCNT9(), .D0BYTCNT8(), .D0BYTCNT7(), .D0BYTCNT6(), 
     .D0BYTCNT5(), .D0BYTCNT4(), .D0BYTCNT3(), .D0BYTCNT2(), .D0BYTCNT1(), 
@@ -4393,7 +4629,7 @@ module
     .U3TXWVHS0(U3TXWVHS0), .U3USAN(), .UCENCK(UCENCK), .UCRXCKAT(), 
     .UCRXUCKN(), .UCSSTT(), .UCTXREQH(UCTXREQH), .UCTXUPSC(UCTXUPSC), 
     .UCTXUPSX(UCTXUPSX), .UCUSAN(), .SCANCLK(SCANCLK), .SCANRST(SCANRST), 
-    .LMMICLK(LMMICLK_NOTIN), .LMMIOFFSET4(LMMIOFFSET4_dly), 
+    .LMMICLK(LMMICLK_dly), .LMMIOFFSET4(LMMIOFFSET4_dly), 
     .LMMIOFFSET3(LMMIOFFSET3_dly), .LMMIOFFSET2(LMMIOFFSET2_dly), 
     .LMMIOFFSET1(LMMIOFFSET1_dly), .LMMIOFFSET0(LMMIOFFSET0_dly), 
     .LMMIRDATA3(), .LMMIRDATA2(), .LMMIRDATA1(), .LMMIRDATA0(), 
@@ -4404,10 +4640,31 @@ module
     .LTSTLANE1(LTSTLANE1), .LTSTLANE0(LTSTLANE0), .URWDCKHS(), 
     .UTRNREQ(UTRNREQ), .UTWDCKHS(), .UCRXWCHS(), .OPCGLDCK(OPCGLDCK), 
     .CLKLBACT());
-  inverter LMMICLK_INVERTERIN( .I(LMMICLK_dly), .Z(LMMICLK_NOTIN));
   inverter LMMIRESETN_INVERTERIN( .I(LMMIRESETN), .Z(LMMIRESETN_NOTIN));
 
   specify
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET0_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET1_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET2_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET3_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIOFFSET4, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET4_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIREQUEST, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIREQUEST_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA0_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA1_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA2_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWDATA3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA3_dly);
+    $setuphold 
+      (posedge LMMICLK, LMMIWRRDN, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWRRDN_dly);
     $width (posedge UTXCKE, 0:0:0);
     $width (negedge UTXCKE, 0:0:0);
     $width (posedge LMMICLK, 0:0:0);
@@ -4538,28 +4795,6 @@ module
       (negedge UTXCKE, U3TXULPS, 0:0:0, 0:0:0,,,, UTXCKE_dly, U3TXULPS_dly);
     $setuphold 
       (negedge UTXCKE, U3TXVD3, 0:0:0, 0:0:0,,,, UTXCKE_dly, U3TXVD3_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET0_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET1_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET2_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET3_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIOFFSET4, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET4_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIREQUEST, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIREQUEST_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA0_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA1_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA2_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWDATA3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA3_dly);
-    $setuphold 
-      (negedge LMMICLK, LMMIWRRDN, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWRRDN_dly);
   endspecify
 
 endmodule
@@ -4866,7 +5101,7 @@ module DPHY_CORE0004 ( input BITCKEXT, inout CKN, CKP, input CLKREF, output
   defparam INST10.CONT_CLK_MODE = "ENABLED";
   defparam INST10.DESKEW_EN = "DISABLED";
   defparam INST10.DSI_CSI = "DSI_APP";
-  defparam INST10.EN_CIL = "CIL_BYPASSED";
+  defparam INST10.EN_CIL = "CIL_ENABLED";
   defparam INST10.HSEL = "DISABLED";
   defparam INST10.LANE0_SEL = "LANE_0";
   defparam INST10.LOCK_BYP = "GATE_TXBYTECLKHS";
@@ -4893,10 +5128,304 @@ module DPHY_CORE0004 ( input BITCKEXT, inout CKN, CKP, input CLKREF, output
   defparam INST10.UC_PRG_RXHS_SETTLE = "0b000001";
 endmodule
 
+module PLL_1_clki_i ( output PADDI, input PLL_1_clki_i );
+  wire   GNDI, VCCI;
+
+  DIFFIO18_CORE0005 \PLL_1_inst/lscc_pll_inst/genblk1.u0_BB ( .I(GNDI), 
+    .DOLP(GNDI), .B(PLL_1_clki_i), .O(PADDI), .INLP(), .T(VCCI), .INADC(), 
+    .HSRXEN(GNDI), .HSTXEN(GNDI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .Z(VCCI));
+
+  specify
+    (PLL_1_clki_i => PADDI) = (0:0:0,0:0:0);
+    $width (posedge PLL_1_clki_i, 0:0:0);
+    $width (negedge PLL_1_clki_i, 0:0:0);
+  endspecify
+
+endmodule
+
+module DIFFIO18_CORE0005 ( input I, DOLP, inout B, output O, INLP, input T, 
+    output INADC, input HSRXEN, HSTXEN );
+
+  DIFFIO18_CORE INST10( .I(I), .DOLP(DOLP), .B(B), .O(O), .INLP(INLP), .T(T), 
+    .INADC(INADC), .HSRXEN(HSRXEN), .HSTXEN(HSTXEN));
+  defparam INST10.PULLMODE = "NONE";
+  defparam INST10.MIPI = "DISABLED";
+  defparam INST10.ENADC_IN = "DISABLED";
+endmodule
+
+module PLL_1_inst_lscc_pll_inst_gen_no_refclk_mon_u_PLL_PLL_inst ( input 
+    CIBDIR, CIBDSEL0, CIBDSEL1, CIBDSEL2, CIBLDREG, CIBROT, ENCLKOP, ENCLKOS, 
+    ENCLKOS2, ENCLKOS3, ENCLKOS4, ENCLKOS5, FBKCK, LEGACY, LMMICLK, 
+    LMMIOFFSET0, LMMIOFFSET1, LMMIOFFSET2, LMMIOFFSET3, LMMIOFFSET4, 
+    LMMIOFFSET5, LMMIOFFSET6, LMMIREQUEST, LMMIRESETN, LMMIWDATA0, LMMIWDATA1, 
+    LMMIWDATA2, LMMIWDATA3, LMMIWDATA4, LMMIWDATA5, LMMIWDATA6, LMMIWDATA7, 
+    LMMIWRRDN, PLLRESET, REFCK, STDBY, PLLPDN, ROTDEL, DIRDEL, ROTDELP1, 
+    GRAYTEST0, GRAYTEST1, GRAYTEST2, GRAYTEST3, GRAYTEST4, BINTEST0, BINTEST1, 
+    DIRDELP1, GRAYACT0, GRAYACT1, GRAYACT2, GRAYACT3, GRAYACT4, BINACT0, 
+    BINACT1, OPCGLDCK, SCANRST, SCANCLK, output CLKOP, CLKOS );
+  wire   VCCI, LMMICLK_NOTIN, GNDI, LMMIOFFSET0_dly, LMMICLK_dly, 
+         LMMIOFFSET1_dly, LMMIOFFSET2_dly, LMMIOFFSET3_dly, LMMIOFFSET4_dly, 
+         LMMIOFFSET5_dly, LMMIOFFSET6_dly, LMMIREQUEST_dly, LMMIWDATA0_dly, 
+         LMMIWDATA1_dly, LMMIWDATA2_dly, LMMIWDATA3_dly, LMMIWDATA4_dly, 
+         LMMIWDATA5_dly, LMMIWDATA6_dly, LMMIWDATA7_dly, LMMIWRRDN_dly;
+
+  PLL_CORE_B \PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst ( 
+    .CIBDIR(CIBDIR), .CIBDSEL2(CIBDSEL2), .CIBDSEL1(CIBDSEL1), 
+    .CIBDSEL0(CIBDSEL0), .CIBLDREG(CIBLDREG), .CIBROT(CIBROT), .CLKOP(CLKOP), 
+    .CLKOS(CLKOS), .CLKOS2(), .CLKOS3(), .CLKOS4(), .CLKOS5(), .ENEXT(VCCI), 
+    .ENCLKOP(ENCLKOP), .ENCLKOS(ENCLKOS), .ENCLKOS2(ENCLKOS2), 
+    .ENCLKOS3(ENCLKOS3), .ENCLKOS4(ENCLKOS4), .ENCLKOS5(ENCLKOS5), 
+    .FBKCK(FBKCK), .INTFBK5(), .INTFBK4(), .INTFBK3(), .INTFBK2(), .INTFBK1(), 
+    .INTFBK0(), .INTLOCK(), .LEGACY(LEGACY), .LEGRDYN(), 
+    .LMMICLK(LMMICLK_NOTIN), .LMMIOFFSET6(LMMIOFFSET6_dly), 
+    .LMMIOFFSET5(LMMIOFFSET5_dly), .LMMIOFFSET4(LMMIOFFSET4_dly), 
+    .LMMIOFFSET3(LMMIOFFSET3_dly), .LMMIOFFSET2(LMMIOFFSET2_dly), 
+    .LMMIOFFSET1(LMMIOFFSET1_dly), .LMMIOFFSET0(LMMIOFFSET0_dly), 
+    .LMMIRDATA7(), .LMMIRDATA6(), .LMMIRDATA5(), .LMMIRDATA4(), .LMMIRDATA3(), 
+    .LMMIRDATA2(), .LMMIRDATA1(), .LMMIRDATA0(), .LMMIRDATAVALID(), 
+    .LMMIREADY(), .LMMIREQUEST(LMMIREQUEST_dly), .LMMIRESETN(LMMIRESETN), 
+    .LMMIWDATA7(LMMIWDATA7_dly), .LMMIWDATA6(LMMIWDATA6_dly), 
+    .LMMIWDATA5(LMMIWDATA5_dly), .LMMIWDATA4(LMMIWDATA4_dly), 
+    .LMMIWDATA3(LMMIWDATA3_dly), .LMMIWDATA2(LMMIWDATA2_dly), 
+    .LMMIWDATA1(LMMIWDATA1_dly), .LMMIWDATA0(LMMIWDATA0_dly), 
+    .LMMIWRRDN(LMMIWRRDN_dly), .LOCK(), .PFDDN(), .PFDUP(), 
+    .PLLRESET(PLLRESET), .REFCK(REFCK), .STDBY(STDBY), .ZRSEL3(GNDI), 
+    .REFMUXCK(), .PLLPDN(PLLPDN), .REGQA(), .REGQB(), .REGQB1(), .CLKOUTDL(), 
+    .ROTDEL(ROTDEL), .DIRDEL(DIRDEL), .ROTDELP1(ROTDELP1), 
+    .GRAYTEST4(GRAYTEST4), .GRAYTEST3(GRAYTEST3), .GRAYTEST2(GRAYTEST2), 
+    .GRAYTEST1(GRAYTEST1), .GRAYTEST0(GRAYTEST0), .BINTEST1(BINTEST1), 
+    .BINTEST0(BINTEST0), .DIRDELP1(DIRDELP1), .GRAYACT4(GRAYACT4), 
+    .GRAYACT3(GRAYACT3), .GRAYACT2(GRAYACT2), .GRAYACT1(GRAYACT1), 
+    .GRAYACT0(GRAYACT0), .BINACT1(BINACT1), .BINACT0(BINACT0), 
+    .OPCGLDCK(OPCGLDCK), .SCANRST(SCANRST), .SCANCLK(SCANCLK), 
+    .REFDETRESET(GNDI), .REFDETLOS());
+  vcc DRIVEVCC( .Z(VCCI));
+  inverter LMMICLK_INVERTERIN( .I(LMMICLK_dly), .Z(LMMICLK_NOTIN));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (FBKCK => CLKOP) = (0:0:0,0:0:0);
+    (FBKCK => CLKOS) = (0:0:0,0:0:0);
+    (REFCK => CLKOP) = (0:0:0,0:0:0);
+    (REFCK => CLKOS) = (0:0:0,0:0:0);
+    $width (posedge LMMICLK, 0:0:0);
+    $width (negedge LMMICLK, 0:0:0);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET0_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET1_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET2_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET3_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET4, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET4_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET5, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET5_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIOFFSET6, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIOFFSET6_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIREQUEST, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIREQUEST_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA0, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA0_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA1, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA1_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA2, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA2_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA3, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA3_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA4, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA4_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA5, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA5_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA6, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA6_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWDATA7, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWDATA7_dly);
+    $setuphold 
+      (negedge LMMICLK, LMMIWRRDN, 0:0:0, 0:0:0,,,, LMMICLK_dly, LMMIWRRDN_dly);
+  endspecify
+
+endmodule
+
+module PLL_CORE_B ( input CIBDIR, CIBDSEL2, CIBDSEL1, CIBDSEL0, CIBLDREG, 
+    CIBROT, output CLKOP, CLKOS, CLKOS2, CLKOS3, CLKOS4, CLKOS5, input ENEXT, 
+    ENCLKOP, ENCLKOS, ENCLKOS2, ENCLKOS3, ENCLKOS4, ENCLKOS5, FBKCK, output 
+    INTFBK5, INTFBK4, INTFBK3, INTFBK2, INTFBK1, INTFBK0, INTLOCK, input 
+    LEGACY, output LEGRDYN, input LMMICLK, LMMIOFFSET6, LMMIOFFSET5, 
+    LMMIOFFSET4, LMMIOFFSET3, LMMIOFFSET2, LMMIOFFSET1, LMMIOFFSET0, output 
+    LMMIRDATA7, LMMIRDATA6, LMMIRDATA5, LMMIRDATA4, LMMIRDATA3, LMMIRDATA2, 
+    LMMIRDATA1, LMMIRDATA0, LMMIRDATAVALID, LMMIREADY, input LMMIREQUEST, 
+    LMMIRESETN, LMMIWDATA7, LMMIWDATA6, LMMIWDATA5, LMMIWDATA4, LMMIWDATA3, 
+    LMMIWDATA2, LMMIWDATA1, LMMIWDATA0, LMMIWRRDN, output LOCK, PFDDN, PFDUP, 
+    input PLLRESET, REFCK, STDBY, ZRSEL3, output REFMUXCK, input PLLPDN, 
+    output REGQA, REGQB, REGQB1, CLKOUTDL, input ROTDEL, DIRDEL, ROTDELP1, 
+    GRAYTEST4, GRAYTEST3, GRAYTEST2, GRAYTEST1, GRAYTEST0, BINTEST1, BINTEST0, 
+    DIRDELP1, GRAYACT4, GRAYACT3, GRAYACT2, GRAYACT1, GRAYACT0, BINACT1, 
+    BINACT0, OPCGLDCK, SCANRST, SCANCLK, REFDETRESET, output REFDETLOS );
+
+  PLL_CORE INST10( .CIBDIR(CIBDIR), .CIBDSEL2(CIBDSEL2), .CIBDSEL1(CIBDSEL1), 
+    .CIBDSEL0(CIBDSEL0), .CIBLDREG(CIBLDREG), .CIBROT(CIBROT), .CLKOP(CLKOP), 
+    .CLKOS(CLKOS), .CLKOS2(CLKOS2), .CLKOS3(CLKOS3), .CLKOS4(CLKOS4), 
+    .CLKOS5(CLKOS5), .ENEXT(ENEXT), .ENCLKOP(ENCLKOP), .ENCLKOS(ENCLKOS), 
+    .ENCLKOS2(ENCLKOS2), .ENCLKOS3(ENCLKOS3), .ENCLKOS4(ENCLKOS4), 
+    .ENCLKOS5(ENCLKOS5), .FBKCK(FBKCK), .INTFBK5(INTFBK5), .INTFBK4(INTFBK4), 
+    .INTFBK3(INTFBK3), .INTFBK2(INTFBK2), .INTFBK1(INTFBK1), .INTFBK0(INTFBK0), 
+    .INTLOCK(INTLOCK), .LEGACY(LEGACY), .LEGRDYN(LEGRDYN), .LMMICLK(LMMICLK), 
+    .LMMIOFFSET6(LMMIOFFSET6), .LMMIOFFSET5(LMMIOFFSET5), 
+    .LMMIOFFSET4(LMMIOFFSET4), .LMMIOFFSET3(LMMIOFFSET3), 
+    .LMMIOFFSET2(LMMIOFFSET2), .LMMIOFFSET1(LMMIOFFSET1), 
+    .LMMIOFFSET0(LMMIOFFSET0), .LMMIRDATA7(LMMIRDATA7), 
+    .LMMIRDATA6(LMMIRDATA6), .LMMIRDATA5(LMMIRDATA5), .LMMIRDATA4(LMMIRDATA4), 
+    .LMMIRDATA3(LMMIRDATA3), .LMMIRDATA2(LMMIRDATA2), .LMMIRDATA1(LMMIRDATA1), 
+    .LMMIRDATA0(LMMIRDATA0), .LMMIRDATAVALID(LMMIRDATAVALID), 
+    .LMMIREADY(LMMIREADY), .LMMIREQUEST(LMMIREQUEST), .LMMIRESETN(LMMIRESETN), 
+    .LMMIWDATA7(LMMIWDATA7), .LMMIWDATA6(LMMIWDATA6), .LMMIWDATA5(LMMIWDATA5), 
+    .LMMIWDATA4(LMMIWDATA4), .LMMIWDATA3(LMMIWDATA3), .LMMIWDATA2(LMMIWDATA2), 
+    .LMMIWDATA1(LMMIWDATA1), .LMMIWDATA0(LMMIWDATA0), .LMMIWRRDN(LMMIWRRDN), 
+    .LOCK(LOCK), .PFDDN(PFDDN), .PFDUP(PFDUP), .PLLRESET(PLLRESET), 
+    .REFCK(REFCK), .STDBY(STDBY), .ZRSEL3(ZRSEL3), .REFMUXCK(REFMUXCK), 
+    .PLLPDN(PLLPDN), .REGQA(REGQA), .REGQB(REGQB), .REGQB1(REGQB1), 
+    .CLKOUTDL(CLKOUTDL), .ROTDEL(ROTDEL), .DIRDEL(DIRDEL), .ROTDELP1(ROTDELP1), 
+    .GRAYTEST4(GRAYTEST4), .GRAYTEST3(GRAYTEST3), .GRAYTEST2(GRAYTEST2), 
+    .GRAYTEST1(GRAYTEST1), .GRAYTEST0(GRAYTEST0), .BINTEST1(BINTEST1), 
+    .BINTEST0(BINTEST0), .DIRDELP1(DIRDELP1), .GRAYACT4(GRAYACT4), 
+    .GRAYACT3(GRAYACT3), .GRAYACT2(GRAYACT2), .GRAYACT1(GRAYACT1), 
+    .GRAYACT0(GRAYACT0), .BINACT1(BINACT1), .BINACT0(BINACT0), 
+    .OPCGLDCK(OPCGLDCK), .SCANRST(SCANRST), .SCANCLK(SCANCLK), 
+    .REFDETRESET(REFDETRESET), .REFDETLOS(REFDETLOS));
+  defparam INST10.CRIPPLE = "1P";
+  defparam INST10.CSET = "8P";
+  defparam INST10.DELAY_CTRL = "200PS";
+  defparam INST10.DIRECTION = "DISABLED";
+  defparam INST10.DYN_SOURCE = "STATIC";
+  defparam INST10.ENCLK_CLKOP = "ENABLED";
+  defparam INST10.ENCLK_CLKOS = "ENABLED";
+  defparam INST10.ENCLK_CLKOS2 = "DISABLED";
+  defparam INST10.ENCLK_CLKOS3 = "DISABLED";
+  defparam INST10.ENCLK_CLKOS4 = "DISABLED";
+  defparam INST10.ENCLK_CLKOS5 = "DISABLED";
+  defparam INST10.ENABLE_SYNC = "DISABLED";
+  defparam INST10.FAST_LOCK_EN = "ENABLED";
+  defparam INST10.V2I_1V_EN = "ENABLED";
+  defparam INST10.FBK_EDGE_SEL = "POSITIVE";
+  defparam INST10.FBK_INTEGER_MODE = "ENABLED";
+  defparam INST10.FBK_PI_BYPASS = "NOT_BYPASSED";
+  defparam INST10.FLOAT_CP = "DISABLED";
+  defparam INST10.FLOCK_CTRL = "2X";
+  defparam INST10.FLOCK_EN = "ENABLED";
+  defparam INST10.FLOCK_SRC_SEL = "REFCLK";
+  defparam INST10.FORCE_FILTER = "DISABLED";
+  defparam INST10.I_CTRL = "10UA";
+  defparam INST10.IPI_COMP_EN = "DISABLED";
+  defparam INST10.LDT_INT_LOCK_STICKY = "DISABLED";
+  defparam INST10.LDT_LOCK = "1536CYC";
+  defparam INST10.LDT_LOCK_SEL = "UFREQ";
+  defparam INST10.LEGACY_ATT = "DISABLED";
+  defparam INST10.LOAD_REG = "DISABLED";
+  defparam INST10.OPENLOOP_EN = "DISABLED";
+  defparam INST10.PLLPDN_EN = "DISABLED";
+  defparam INST10.PLLPD_N = "USED";
+  defparam INST10.PLLRESET_ENA = "ENABLED";
+  defparam INST10.REF_INTEGER_MODE = "ENABLED";
+  defparam INST10.REFIN_RESET = "SET";
+  defparam INST10.RESET_LF = "DISABLED";
+  defparam INST10.ROTATE = "DISABLED";
+  defparam INST10.SEL_OUTA = "DISABLED";
+  defparam INST10.SEL_OUTB = "DISABLED";
+  defparam INST10.SEL_OUTC = "DISABLED";
+  defparam INST10.SEL_OUTD = "DISABLED";
+  defparam INST10.SEL_OUTE = "DISABLED";
+  defparam INST10.SEL_OUTF = "DISABLED";
+  defparam INST10.SLEEP = "DISABLED";
+  defparam INST10.SSC_DITHER = "DISABLED";
+  defparam INST10.SSC_EN_CENTER_IN = "DOWN_TRIANGLE";
+  defparam INST10.SSC_EN_SDM = "DISABLED";
+  defparam INST10.SSC_EN_SSC = "DISABLED";
+  defparam INST10.SSC_ORDER = "SDM_ORDER1";
+  defparam INST10.SSC_PI_BYPASS = "NOT_BYPASSED";
+  defparam INST10.SSC_SQUARE_MODE = "DISABLED";
+  defparam INST10.STDBY_ATT = "DISABLED";
+  defparam INST10.TRIMOP_BYPASS_N = "BYPASSED";
+  defparam INST10.TRIMOS_BYPASS_N = "BYPASSED";
+  defparam INST10.TRIMOS2_BYPASS_N = "BYPASSED";
+  defparam INST10.TRIMOS3_BYPASS_N = "BYPASSED";
+  defparam INST10.TRIMOS4_BYPASS_N = "BYPASSED";
+  defparam INST10.TRIMOS5_BYPASS_N = "BYPASSED";
+  defparam INST10.V2I_KVCO_SEL = "60";
+  defparam INST10.V2I_PP_RES = "9K";
+  defparam INST10.CLKMUX_FB = "CMUX_CLKOP";
+  defparam INST10.SEL_FBK = "FBKCLK0";
+  defparam INST10.INTFBKDEL_SEL = "DISABLED";
+  defparam INST10.PMU_WAITFORLOCK = "ENABLED";
+  defparam INST10.REF_OSC_CTRL = "3P2";
+  defparam INST10.REF_COUNTS = "0000";
+  defparam INST10.REF_USE = "DISABLED";
+  defparam INST10.REF_ENABLE = "DISABLED";
+  defparam INST10.SIM_FLOAT_PRECISION = "0.1";
+  defparam INST10.DELA = "8";
+  defparam INST10.DELB = "2";
+  defparam INST10.DELC = "7";
+  defparam INST10.DELD = "7";
+  defparam INST10.DELE = "7";
+  defparam INST10.DELF = "7";
+  defparam INST10.DIVA = "8";
+  defparam INST10.DIVB = "2";
+  defparam INST10.DIVC = "7";
+  defparam INST10.DIVD = "7";
+  defparam INST10.DIVE = "7";
+  defparam INST10.DIVF = "7";
+  defparam INST10.FBK_MMD_DIG = "1";
+  defparam INST10.PHIA = "0";
+  defparam INST10.PHIB = "0";
+  defparam INST10.PHIC = "0";
+  defparam INST10.PHID = "0";
+  defparam INST10.PHIE = "0";
+  defparam INST10.PHIF = "0";
+  defparam INST10.REF_MMD_DIG = "1";
+  defparam INST10.EXTERNAL_DIVIDE_FACTOR = "0";
+  defparam INST10.BW_CTL_BIAS = "0b0101";
+  defparam INST10.CLKOP_TRIM = "0b0000";
+  defparam INST10.CLKOS_TRIM = "0b0000";
+  defparam INST10.CLKOS2_TRIM = "0b0000";
+  defparam INST10.CLKOS3_TRIM = "0b0000";
+  defparam INST10.CLKOS4_TRIM = "0b0000";
+  defparam INST10.CLKOS5_TRIM = "0b0000";
+  defparam INST10.DYN_SEL = "0b000";
+  defparam INST10.FBK_CUR_BLE = "0b00000000";
+  defparam INST10.FBK_IF_TIMING_CTL = "0b00";
+  defparam INST10.FBK_MASK = "0b00000000";
+  defparam INST10.FBK_MMD_PULS_CTL = "0b0000";
+  defparam INST10.FBK_MODE = "0b00";
+  defparam INST10.FBK_PI_RC = "0b1100";
+  defparam INST10.FBK_PR_CC = "0b0000";
+  defparam INST10.FBK_PR_IC = "0b1000";
+  defparam INST10.IPI_CMP = "0b0001";
+  defparam INST10.IPI_CMPN = "0b0011";
+  defparam INST10.IPP_CTRL = "0b0100";
+  defparam INST10.IPP_SEL = "0b0111";
+  defparam INST10.KP_VCO = "0b00011";
+  defparam INST10.REF_MASK = "0b00000000";
+  defparam INST10.REF_MMD_IN = "0b00001000";
+  defparam INST10.REF_MMD_PULS_CTL = "0b0000";
+  defparam INST10.REF_TIMING_CTL = "0b00";
+  defparam INST10.SSC_F_CODE = "0b000000000000000";
+  defparam INST10.SSC_N_CODE = "0b000000000";
+  defparam INST10.SSC_REG_WEIGHTING_SEL = "0b000";
+  defparam INST10.SSC_STEP_IN = "0b0000000";
+  defparam INST10.SSC_TBASE = "0b000000000000";
+  defparam INST10.V2I_PP_ICTRL = "0b11111";
+  defparam INST10.DIV_DEL = "0b0001000";
+  defparam INST10.PHASE_SEL_DEL = "0b000";
+  defparam INST10.PHASE_SEL_DEL_P1 = "0b000";
+endmodule
+
 module DDR_MEM_1_cke_o_0_ ( input PADDO, output DDRMEM1ckeo0 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_cke_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_cke_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1ckeo0), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -4908,7 +5437,7 @@ module DDR_MEM_1_cke_o_0_ ( input PADDO, output DDRMEM1ckeo0 );
 
 endmodule
 
-module SEIO18_CORE0005 ( input I, DOLP, inout B, output O, INLP, input T, 
+module SEIO18_CORE0006 ( input I, DOLP, inout B, output O, INLP, input T, 
     output INADC );
 
   SEIO18_CORE INST10( .I(I), .DOLP(DOLP), .B(B), .O(O), .INLP(INLP), .T(T), 
@@ -4921,7 +5450,7 @@ endmodule
 module DDR_MEM_1_odt_o_0_ ( input PADDO, output DDRMEM1odto0 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_odt_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_odt_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1odto0), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -4936,7 +5465,7 @@ endmodule
 module DDR_MEM_1_wen_o ( input PADDO, output DDR_MEM_1_wen_o );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_wen_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_wen_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDR_MEM_1_wen_o), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -4951,7 +5480,7 @@ endmodule
 module DDR_MEM_1_rasn_o ( input PADDO, output DDR_MEM_1_rasn_o );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_rasn_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_rasn_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDR_MEM_1_rasn_o), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -4966,7 +5495,7 @@ endmodule
 module DDR_MEM_1_casn_o ( input PADDO, output DDR_MEM_1_casn_o );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_casn_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_casn_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDR_MEM_1_casn_o), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -4981,7 +5510,7 @@ endmodule
 module DDR_MEM_1_ba_o_2_ ( input PADDO, output DDRMEM1bao2 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_ba_o_pad[2].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_ba_o_pad[2].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1bao2), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -4996,7 +5525,7 @@ endmodule
 module DDR_MEM_1_ba_o_1_ ( input PADDO, output DDRMEM1bao1 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_ba_o_pad[1].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_ba_o_pad[1].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1bao1), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5011,7 +5540,7 @@ endmodule
 module DDR_MEM_1_ba_o_0_ ( input PADDO, output DDRMEM1bao0 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_ba_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_ba_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1bao0), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5026,7 +5555,7 @@ endmodule
 module DDR_MEM_1_addr_o_12_ ( input PADDO, output DDRMEM1addro12 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[12].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[12].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro12), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5041,7 +5570,7 @@ endmodule
 module DDR_MEM_1_addr_o_11_ ( input PADDO, output DDRMEM1addro11 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[11].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[11].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro11), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5056,7 +5585,7 @@ endmodule
 module DDR_MEM_1_addr_o_10_ ( input PADDO, output DDRMEM1addro10 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[10].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[10].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro10), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5071,7 +5600,7 @@ endmodule
 module DDR_MEM_1_addr_o_9_ ( input PADDO, output DDRMEM1addro9 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[9].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[9].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro9), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5086,7 +5615,7 @@ endmodule
 module DDR_MEM_1_addr_o_8_ ( input PADDO, output DDRMEM1addro8 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[8].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[8].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro8), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5101,7 +5630,7 @@ endmodule
 module DDR_MEM_1_addr_o_7_ ( input PADDO, output DDRMEM1addro7 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[7].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[7].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro7), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5116,7 +5645,7 @@ endmodule
 module DDR_MEM_1_addr_o_6_ ( input PADDO, output DDRMEM1addro6 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[6].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[6].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro6), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5131,7 +5660,7 @@ endmodule
 module DDR_MEM_1_addr_o_5_ ( input PADDO, output DDRMEM1addro5 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[5].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[5].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro5), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5146,7 +5675,7 @@ endmodule
 module DDR_MEM_1_addr_o_4_ ( input PADDO, output DDRMEM1addro4 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[4].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[4].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro4), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5161,7 +5690,7 @@ endmodule
 module DDR_MEM_1_addr_o_3_ ( input PADDO, output DDRMEM1addro3 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[3].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[3].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro3), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5176,7 +5705,7 @@ endmodule
 module DDR_MEM_1_addr_o_2_ ( input PADDO, output DDRMEM1addro2 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[2].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[2].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro2), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5191,7 +5720,7 @@ endmodule
 module DDR_MEM_1_addr_o_1_ ( input PADDO, output DDRMEM1addro1 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[1].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[1].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro1), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5206,7 +5735,7 @@ endmodule
 module DDR_MEM_1_addr_o_0_ ( input PADDO, output DDRMEM1addro0 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_addr_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1addro0), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5221,7 +5750,7 @@ endmodule
 module DDR_MEM_1_csn_o_0_ ( input PADDO, output DDRMEM1csno0 );
   wire   GNDI;
 
-  SEIO18_CORE0005 \DDR_MEM_1_csn_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+  SEIO18_CORE0006 \DDR_MEM_1_csn_o_pad[0].bb_inst ( .I(PADDO), .DOLP(GNDI), 
     .B(DDRMEM1csno0), .O(), .INLP(), .T(GNDI), .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -5270,128 +5799,128 @@ endmodule
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-hrD9UkFBT0eKjzroCd/erbgTRhEbrfuwS8v/3N9VFNRn52zULbn+w1GiEXb8NRGi
-LdCxGWGPTNoE/1YTx+7MU/MiPEPHmQd//W97NDz+8RJIcRbOHVG7vaNt8lXsJWYr
-Gv2iKnDrgqKmYbo5cYbVpawb0+UVFcDf7wosmErecXYuIskTiAu6W8L+9cmL8jbH
-LVwNC1orGCAisrXoyln9s/R6D4b246a62URLm03HkODrJT81hR9k0uPH7DSittjM
-bSmAlQJ4OiYr6xKCm2ijs95tSIeb2Gz7ZLm8WHlwPbObGR3L7Z/90cOiD17aCxMN
-LMF3I40pwPtb5BEBpkqfDg==
+fL1U6ruUUEcvX9EcJyOGXCqgFxgEZwGc3dfh/3zY0XJijMDSK/8Fkmhfqj+PcyWb
+Mv3gBz9Qj+4la6bXVHWQjjsh6CJupcHpkK5bQnQ3CVQyGagVov+Gt7qKVHprTGZf
+jCSRc6EOi3xeg6tDn6HueRKetVCNRGagXE9aMRrA/8LwU4E/wA19Ro5fhz7F5g8B
+cAXT5zKk7abkvVnj9N/GekzOTcSBQwjJaXdRIA18tyoEk9MKU0tAa6ngBLYDv0nl
+RliTBj+UOgrqsbT7j1LlsQE1iiJwh5ylFc4bK4XD/zQRiQJ3rd3+JLrd5RXPGnTf
+69E//ZbgMbYR9VOIwSICbQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-V2rEfh3FjtGzA2n5D/jnQ5rt4ALiJLc903aoI/iqPDSFywPc0E8emmYHN9Z3n0tB
-DoNlnEHn5S/2bylaCOfXnPs7dE4uDIDKS9OWXpaIPm7q7zialzMxubGz/AbrSo88
-X8mvTDJhwsJqviMaLPakC0Ckp/E5zN8GW5/FvEvqM5iTot2DmF1CeDJlYhmGD4oW
-L7bJG79VNIkaBt7NGxbj4iz1ZnAntIl7MgRGvpq5C0O0GU5Onud1zI9cRHL/jbiH
-Sl00hoxIVgtWnvi60+EdTqIfKBeMyo89jAW1a+m2CxqZ6ocETSk54TBj9LYIRjT7
-3qPlAxgOwt/w+1S1RNzKHZcRU7YFZfvqddxhUSS3rxijjvwqbxWu7yvZadkP1Xf1
-cuX68QpoSFfFIWFPU8rOfFhtlg0Tw9mzzP2yd1EE9PuMLIvuEloElNJuLt9VMF03
-PSFZuuXQli5ji3lyqnSb2zouBmq1Haowy8QijOPOEEEX8ZJphVUk9P7meU0OQqyz
+NVpQ/IyD92GsWysSdtxcldzuz8gsUwYFLK18JGLHkB8OSLBRCqQgF+1n1+hzrD5p
+a2ctMjnNk5TzQwlAcsUlLeFw61uOKFlyv4VLFJo7xzLs52t/jc9rXxziDghM/vi8
+MwUsqCyp24JKk7stJS9HU7eqkKPsUi+3jdiXdY+XY2vcJmH4FedNBpj/DkVwL6Yd
++NhyWhevZyiwUNlOy0HQgaTvBwqKPL520QAyjDm7Iqu6vVeaShKHHQHM7oY73I3U
+mdGqFTOMVC3Cao5+ALb4cxkBn6vBZsYfEdHsgHLEX+Ju1oPCAtVOQMW9/1MhxJ4q
+uIBdxi/6DR3P7a6vscYp1G29QJyLsCEpCG72Xi++Lx5sYwInfVcyOrAF+iMEe9ru
+FHf9A+azeAkRwyE2FVOV/YGKzqZChMOx99BO9tj2Rgb6UWKNpFEAXf2C+OsVoRlD
+DkigfED3ZM9arYHdxgQGKr1imBRjiItgWtxd7dwn6lgFtGA8PXejbqbQW+OYv21F
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-ihPm91RDmuPl7x60/9JRPBh/GvH5qoFloaDJq/3xrfPH+s8LFyIqCco4KB92K8ep
-6mxczdiP1SY2ISIEg4/P8FxxClwkw9jbJ41P6OjobN5ZJXyFbyh1nkbEsfRr6EWp
-xCdLRx5uClJZhiUpjul12HxdoIp+8O/HyThPiLHR9JUOrrlMoZygTGJLo1mAd3ls
-1oNbjcyqSUdpD9+CP2ltN9F/Gw6TLm3JEIvorMZpgKmOTkfjaaMOT8QzHBPt+7Si
-NTPyHOFpJlaLnprK+IS0Pi+dROne/qXpMN5FWaw/Owbm+kyB8tSSS4uCWYzxDpcs
-2ibZ1u/1AzmUcQiGgl011Q==
+mU9CyRro8d8r7zGeFVtkrTLylabYHHjkYsp3hDVQAbBHnSx8nL7a9cfbNygyQlzf
+dmvFGbZbLawVcY4ICJThtYrL2v+vigTqbYLbJOhRFDlAURgn3qPgi8DgWwM7Wh0N
+WcALI8WBdDdNvwCjUKUUy3B5OE+JDxSo8NhRe2NUqDvOD19AX3XEBfe4mIpXFcJG
+8YwsNYp2Ama/Bn5yn5DhF0F/cIp3EFAgkwqZf1GDbAD3pmMtJcz+ptJdGkZsN7Pd
+T/emmAjeyxurbDjMj8I4HX2tJWmF0akjoIi91JJ4+vbeiekh+1ocno037E/TPW70
+4UQ6ry+ZJUJdfvsz/6o2Sg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-e0BqULo8+C0CRGYiZ0YVPiAe3hQkgX8tSY24wtqQxv0b96H1/1NLTxvfJuJXiznn
-+HuQu6QsxtTau1wkftEAlRI/aAZd5WUlsa3FV6tc4ank6sInKBmkmC6v52QlwdGF
-Oso3uPbkfzBH8704MD/CKkB6KR8Ub6Y5sdUG5OxyVc4=
+uaftEmvjr4zn/c2Z1mqwVhTvASpXNQuoGGGi+5cWfwVX/tPH+wIKO3BiuZSv1+ZP
+fTZo3Z78x1MlsuUC28sWXQ2Lruj8zzhiuhDpFd6CHoc6Ng5b3R65lF+1E0Wej3at
+PpzQzNZ8DXeRBo9QAWceND4jEqZzNr9iDxRcVaAYBF4=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-U99aUM7Se0mmawBvV0+C8UgPGlji4Jy8ePfXyJoGecZX5syFFPCFcDHYiQefZPrX
-KjHlg75NKgTEIuOvM4GEXKyXkCdOgl/9iNFsjyxlYEPdyfrav5vPJ2FNJ6F8zUKV
-9I+02fGtJieGfQ7dV24evOyqa7j+9Fs3LmQQVRRdh/5acQI5PKBe9PcJFjBcT4b3
-kReLaWX3N9s8g6xLPfIFvtOWqrj8ZeuNZBz7/75d/o7HW5qtvRXHikQC4vaCQagv
-jQ/jZAKHLf5TN8ZMTRmuLsJ7L7ty8V0ShJXpoSCF5nQfMnjPPhgQQ4tu96vtqMdE
-1RI4XMQ/n35w7+GtK7OhdQ==
+SEBb3TxEQeT2z0AV5rSQzoDVgMdu2h59O2hkdthrNLegDcWhCe8Hh9mOfw0ti4WB
+J0SY1Gbh/TedwWaivLACot8BMin7qITYTED9QVyRonLEXHJInJZd9GNnLrMxGyp0
+jd5cd4gM+HhiZal90UruDJY3NtifGOV+MlvMYmRMRIaZPHk0lj+EiS7tRBN5e23O
+LL8TKuYuJZ5Kos6e4GeKUQoL9NTJ5ua7aqWQPL7UOblC1BvSBEXSJHZdqAb5bKuf
+jSH8sH0Yx31nip4fDqT8p1KxiLD/IRv/oegodkSjuOYBZCYzlxuHV7uQCKENfTbH
+d+S98Fa8VQUkATBskH/kKQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-Oz1iUQw6NZOxNIPPyZzGwsVujSJSIcqK5zkgwgMSPkLAOXkdBkiXTiVBJi0lsJ6V
-JzLs0eYHFuN7f+k2KlwIjMLuYcGM3uHBSOlrCOhtxTZJOpmvs0/15OQvJ/13+I38
-9Suz1uaGjwk0vFxu25V57PPIDUrttEbr8Kq5HhMOz/WcuLsF1oCVIQ4Zoe9ubS1M
-/8kLeFeEBQLTa0gjGe1ORAOi3VLo6Uv/EXW7oWtbnC2BsWQdy2T1bps64Md0RvwL
-a67mi1jU5HoCmwdm+FkI49oiVlxaAX6I7fyAwP/E6INEPo9+Y3HsKxfgmL1GRb0g
-YjxtDvf5gYrSTv5vCM2cHg==
+KwW6o5z/EYlXuBho4gbwQ8UMT5hHbfAJvwfrirh6HB/uDpTGj4dW1hM20Gj4JyjU
+9AlK7nRY6gJTqrx2Fgc9sexTbclm0EUcDxq+dqqvPYhhuUhTnhPeWoSkSwV5M8Ye
+yNa7hSCh76SqtsdPjvpyrJK4qYd2TXUj5Wo6S65pvyY+PR2tNaWDaKFRnsYDM0wC
+apvQyrzLt/9D1MOIPvfDUxuz2lpDJW8zKrTZ8IGP/MFkSaK9ddD28QO2t+5/xkm/
+tpmDkGcmJ23qTbSZkh0jQROf6xq82CkMolkqNSl34KXRRSX2oIdO/LjAA2TTCWsf
+mOEOLyFOQXAAa3Ttv3tApg==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=2576)
 `pragma protect data_block
-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
+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
 
 `pragma protect end_protected

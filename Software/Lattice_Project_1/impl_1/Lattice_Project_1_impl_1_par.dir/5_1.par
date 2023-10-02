@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "Lattice_Project_1_impl_1_map.udb"
-Mon Oct  2 07:24:27 2023
+Mon Oct  2 17:41:00 2023
 
 PAR: Place And Route Radiant Software (64-bit) 2023.1.1.200.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=OFF \
@@ -22,24 +22,23 @@ Performance Grade:   7_High-Performance_1.0V
 Device SLICE utilization summary after final SLICE packing:
    SLICE              3/16128        <1% used
 
-WARNING <70001944> - par: No master clock for
-	generated clock	create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 2 [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }] .
-Number of Signals: 100
-Number of Connections: 939
+Number of Signals: 103
+Number of Connections: 997
 Device utilization summary:
 
    VHI                   1/1           100% used
-   DIFFIO18              3/37            8% used
-                         3/37            8% bonded
+   DIFFIO18              4/37           11% used
+                         4/37           10% bonded
    DDRDLL                1/2            50% used
    DQSBUF                2/4            50% used
    IOLOGIC              41/74           55% used
-   SEIO18               44/74           59% used
-                        44/74           59% bonded
+   SEIO18               46/74           62% used
+                        46/74           62% bonded
    SEIO33                4/156           3% used
                          4/82            5% bonded
    ECLKDIV               1/12            8% used
    ECLKSYNC              1/12            8% used
+   PLL                   1/3            33% used
    DPHY                  2/2           100% used
    APIO                 20/32           63% used
    SLICE                 3/16128        <1% used
@@ -48,28 +47,28 @@ Device utilization summary:
 
 
 Pin Constraint Summary:
-   41 out of 45 pins locked (91% locked).
+   42 out of 46 pins locked (91% locked).
 .
 .
 
 .
-Starting Placer Phase 0 (HIER). CPU time: 12 secs , REAL time: 14 secs 
-...........
-Finished Placer Phase 0 (HIER). CPU time: 12 secs , REAL time: 14 secs 
+Starting Placer Phase 0 (HIER). CPU time: 10 secs , REAL time: 11 secs 
+..........
+Finished Placer Phase 0 (HIER). CPU time: 10 secs , REAL time: 11 secs 
 
 .   
-Starting Placer Phase 1. CPU time: 13 secs , REAL time: 14 secs 
+Starting Placer Phase 1. CPU time: 10 secs , REAL time: 11 secs 
 ..  ..
-...............
+............
 
-Placer score = 95795.
-Finished Placer Phase 1. CPU time: 30 secs , REAL time: 32 secs 
+Placer score = 100530.
+Finished Placer Phase 1. CPU time: 21 secs , REAL time: 22 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  95795
-Finished Placer Phase 2.  CPU time: 30 secs , REAL time: 32 secs 
+Placer score =  100530
+Finished Placer Phase 2.  CPU time: 21 secs , REAL time: 22 secs 
 
 After final PLC packing legalization, all 0 SLICEs that were not satisfying 1 CLK/CE/LSR per HALF-PLC restriction are all placed into compatible PLCs.
 
@@ -77,7 +76,7 @@ After final PLC packing legalization, all 0 SLICEs that were not satisfying 1 CL
 
 Global Clock Resources:
   CLK_PIN    : 0 out of 26 (0%)
-  PLL        : 0 out of 3 (0%)
+  PLL        : 1 out of 3 (33%)
   DCS        : 0 out of 1 (0%)
   DCC        : 0 out of 62 (0%)
   ECLKDIV    : 1 out of 12 (8%)
@@ -88,15 +87,16 @@ Global Clock Resources:
 
 Global Clocks:
   PRIMARY "DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o" from comp "DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.ECLKDIV_inst" on ECLKDIV_CORE site "ECLKDIV_CORE_R55C50B", clk load = 43, ce load = 0, sr load = 0
+  PRIMARY "PLL_1_clkop_o" from CLKOP on comp "PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst" on PLL site "PLL_LLC", clk load = 1, ce load = 0, sr load = 0
 
-  PRIMARY  : 1 out of 16 (6%)
+  PRIMARY  : 2 out of 16 (12%)
 
 Edge Clocks:
 
   ECLK "DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w": BANK3_ECLK1
-    - From ROUTING "R26C31D.F0", driver "DDR_MEM_1_cke_o_pad[0].SLICE_0".
+    - From GPLL_CLKOS "PLL_LLC".CLKOS, driver "PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst".
   ECLK "DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w": BANK4_ECLK1
-    - From ROUTING "R26C31D.F0", driver "DDR_MEM_1_cke_o_pad[0].SLICE_0".
+    - From GPLL_CLKOS "PLL_LLC".CLKOS, driver "PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst".
 
 --------------- End of Clock Report ---------------
 
@@ -106,12 +106,12 @@ I/O Usage Summary (final):
    5 out of 82 (6.1%) bonded SEIO33 sites used.
    Number of SEIO33 components: 4; differential: 0
    Number of Vref pins used: 1
-   41 out of 74 (55.4%) SEIO18 sites used.
-   41 out of 74 (55.4%) bonded SEIO18 sites used.
-   Number of SEIO18 components: 41; differential: 3
-   3 out of 37 (8.1%) DIFFIO18 sites used.
-   3 out of 37 (8.1%) bonded DIFFIO18 sites used.
-   Number of DIFFIO18 components: 3; differential: 3
+   42 out of 74 (56.8%) SEIO18 sites used.
+   42 out of 74 (56.8%) bonded SEIO18 sites used.
+   Number of SEIO18 components: 42; differential: 4
+   4 out of 37 (10.8%) DIFFIO18 sites used.
+   4 out of 37 (10.8%) bonded DIFFIO18 sites used.
+   Number of DIFFIO18 components: 4; differential: 4
 
 I/O Bank Usage Summary:
 +----------+----------------+------------+------------+------------+
@@ -122,17 +122,17 @@ I/O Bank Usage Summary:
 | 2        | 0 / 13 (  0%)  | -          | -          | -          |
 | 3        | 24 / 32 ( 75%) | 1.5V       | -          | -          |
 | 4        | 21 / 32 ( 65%) | 1.5V       | -          | REF_15     |
-| 5        | 0 / 10 (  0%)  | -          | -          | -          |
+| 5        | 2 / 10 ( 20%)  | 1.8V       | -          | -          |
 | 6        | 0 / 26 (  0%)  | -          | -          | -          |
 | 7        | 0 / 11 (  0%)  | -          | -          | -          |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 30 secs , REAL time: 32 secs 
+Total Placer CPU time: 21 secs , REAL time: 22 secs 
 
 Writing design to file Lattice_Project_1_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 07:25:00 10/02/23
+Start NBR router at 17:41:22 10/02/23
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -148,16 +148,22 @@ Note: NBR uses a different method to calculate timing slacks. The
 *****************************************************************
 
 Starting routing resource preassignment
+WARNING <62243001> - par: The external feedback signal PLL_1_clkop_o for PLL_CORE instance PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst drives neither primary nor edge clock loads. Please review this PLL feedback connection in your design.
+WARNING <62243002> - par: The PLL_CORE instance PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst has outputs driving both primary and edge clock loads, but its feedback signal PLL_1_clkop_o is external. Please review this feedback connection in your design.
+INFO <62244000> - par: The external feedback signal PLL_1_clkop_o for PLL_CORE instance PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst will use the primary clock network.
 Preassignment Summary:
 --------------------------------------------------------------------------------
-141 connections routed with dedicated routing resources
-1 global clock signals routed
-475 connections routed (of 939 total) (50.59%)
+143 connections routed with dedicated routing resources
+2 global clock signals routed
+389 connections routed (of 997 total) (39.02%)
 ---------------------------------------------------------
 Clock routing summary:
-Primary clocks (2 used out of 32 available):
+Primary clocks (4 used out of 32 available):
     Signal "DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o" (1, 17)
        Clock   loads: 43    out of    43 routed (100.00%)
+    Signal "PLL_1_clkop_o" (2, 18)
+       Clock   loads: 1     out of     1 routed (100.00%)
+       Data    loads: 0     out of     2 routed (  0.00%)
 Other clocks:
     Signal "DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w"
        Clock   loads: 24    out of    24 routed (100.00%)
@@ -169,27 +175,29 @@ Other clocks:
        Clock   loads: 8     out of     8 routed (100.00%)
     Signal "DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqswout_w"
        Clock   loads: 1     out of     1 routed (100.00%)
+    Signal "PLL_1_inst.lscc_pll_inst.clki_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
-WARNING <70001944> - par: No master clock for
-	generated clock	create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 2 [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }] .
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 07:25:07 10/02/23
+Start NBR section for initial routing at 17:41:28 10/02/23
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 46 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.437ns/0.000ns; real time: 44 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 07:25:46 10/02/23
+Start NBR section for normal routing at 17:42:06 10/02/23
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 46 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.437ns/0.000ns; real time: 44 secs 
 
-Start NBR section for post-routing at 07:25:46 10/02/23
+Start NBR section for post-routing at 17:42:06 10/02/23
 
 End NBR router with 0 unrouted connection
 
@@ -198,8 +206,8 @@ Starting full timing analysis...
 NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
-  Estimated worst slack<setup> : <n/a>
-  Estimated worst slack<hold > : <n/a>
+  Estimated worst slack<setup> : 1.437ns
+  Estimated worst slack<hold > : 1.404ns
   Timing score<setup> : 0
   Timing score<hold > : 0
   Number of connections with timing violations<setup> : 0 (0.00%)
@@ -207,10 +215,10 @@ NBR Summary
 -----------
 
 
-Total CPU time 49 secs 
-Total REAL time: 51 secs 
+Total CPU time 48 secs 
+Total REAL time: 49 secs 
 Completely routed.
-End of route.  939 routed (100.00%); 0 unrouted.
+End of route.  997 routed (100.00%); 0 unrouted.
 
 Writing design to file Lattice_Project_1_impl_1_par.dir/5_1.udb ...
 
@@ -220,15 +228,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
-PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
-PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
-PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 1.437
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.404
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 1 mins 21 secs 
-Total REAL Time: 1 mins 26 secs 
-Peak Memory Usage: 425.80 MB
+Total CPU  Time: 1 mins 11 secs 
+Total REAL Time: 1 mins 12 secs 
+Peak Memory Usage: 429.97 MB
 
 
 par done!

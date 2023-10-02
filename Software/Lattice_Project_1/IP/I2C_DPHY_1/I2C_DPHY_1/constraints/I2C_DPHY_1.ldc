@@ -9,8 +9,8 @@ set FIFO_DEPTH 16
 set FIFO_IMPL "LUT"
 set TX_FIFO_AE_FLAG 2
 set RX_FIFO_AF_FLAG 14
-set SYS_CLOCK_FREQ 24
-set PRESCALER 117
+set SYS_CLOCK_FREQ 48
+set PRESCALER 237
 
 
 ldc_set_port -iobuf {PULLMODE=UP} [get_ports {scl_io}]

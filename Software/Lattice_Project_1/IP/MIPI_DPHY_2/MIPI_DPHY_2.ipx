@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
-<RadiantModule architecture="LIFCL" date="2023 10 01 02:06:15" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="module" module="mipi_dphy" name="MIPI_DPHY_2" package="CABGA256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.6.0">
+<RadiantModule architecture="LIFCL" date="2023 10 02 16:27:12" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="module" module="mipi_dphy" name="MIPI_DPHY_2" package="CABGA256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.6.0">
  <Package>
-  <File modified="2023 10 01 02:06:15" name="rtl/MIPI_DPHY_2_bb.v" type="black_box_verilog"/>
-  <File modified="2023 10 01 02:06:15" name="MIPI_DPHY_2.cfg" type="cfg"/>
-  <File modified="2023 10 01 02:06:15" name="misc/MIPI_DPHY_2_tmpl.v" type="template_verilog"/>
-  <File modified="2023 10 01 02:06:15" name="misc/MIPI_DPHY_2_tmpl.vhd" type="template_vhdl"/>
-  <File modified="2023 10 01 02:06:15" name="rtl/MIPI_DPHY_2.v" type="top_level_verilog"/>
-  <File modified="2023 10 01 02:06:15" name="constraints/MIPI_DPHY_2.ldc" type="timing_constraints"/>
-  <File modified="2023 10 01 02:06:15" name="testbench/dut_params.v" type="dependency_file"/>
-  <File modified="2023 10 01 02:06:15" name="testbench/dut_inst.v" type="dependency_file"/>
-  <File modified="2023 10 01 02:06:15" name="component.xml" type="IP-XACT_component"/>
-  <File modified="2023 10 01 02:06:15" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2023 10 02 16:27:12" name="rtl/MIPI_DPHY_2_bb.v" type="black_box_verilog"/>
+  <File modified="2023 10 02 16:27:12" name="MIPI_DPHY_2.cfg" type="cfg"/>
+  <File modified="2023 10 02 16:27:12" name="misc/MIPI_DPHY_2_tmpl.v" type="template_verilog"/>
+  <File modified="2023 10 02 16:27:12" name="misc/MIPI_DPHY_2_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 10 02 16:27:12" name="rtl/MIPI_DPHY_2.v" type="top_level_verilog"/>
+  <File modified="2023 10 02 16:27:12" name="constraints/MIPI_DPHY_2.ldc" type="timing_constraints"/>
+  <File modified="2023 10 02 16:27:12" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 10 02 16:27:12" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 10 02 16:27:12" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 10 02 16:27:12" name="design.xml" type="IP-XACT_design"/>
   <File modified="2022 10 26 05:09:44" name="testbench/tb_top.v" type="testbench_verilog"/>
  </Package>
 </RadiantModule>

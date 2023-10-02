@@ -7,6 +7,8 @@ create_clock -name {sync_clk_i} -period 41.666 [get_ports sync_clk_i] originatin
 
 create_clock -name {sync_clk_i} -period 41.666 [get_ports sync_clk_i] originating in instance MIPI_DPHY_2_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
 
+create_clock -name {clki_i} -period 6.4 [get_ports clki_i] originating in instance PLL_1_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
 #set NUM_DQ_PER_GROUP [expr {NUM_DQS_GROUP * 8}] originating in instance DDR_MEM_1_inst was updated to #set NUM_DQ_PER_GROUP [expr {NUM_DQS_GROUP * 8}] and kept.
 
 ldc_set_port -iobuf {IO_TYPE=SSTL15D_II} [get_ports dqs0_io] originating in instance DDR_MEM_1_inst was kept as is.
@@ -114,4 +116,8 @@ ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda_io] originating in instance I2C
 #    set_false_path -from [get_clocks sync_clk_i] -to [get_clocks pll_clkop_w] originating in instance MIPI_DPHY_2_inst was updated to #    set_false_path -from [get_clocks sync_clk_i] -to [get_clocks pll_clkop_w] and kept.
 
 #} originating in instance MIPI_DPHY_2_inst was updated to #} and kept.
+
+# IO_TYPE constraint - Refclk originating in instance PLL_1_inst was updated to # IO_TYPE constraint - Refclk and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVDS} [get_ports clki_i] originating in instance PLL_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=LVDS} [get_ports PLL_1_clki_i] and kept.
 

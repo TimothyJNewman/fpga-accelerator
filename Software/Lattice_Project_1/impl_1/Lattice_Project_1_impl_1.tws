@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.1.200.1
 
-Mon Oct  2 07:16:26 2023
+Mon Oct  2 17:37:34 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -48,6 +48,8 @@ Package Status:                     Final          Version 39
 
 1.1  SDC Constraints
 =====================
+[IGNORED:]create_generated_clock -name {PLL_1_clkos_o} -source [get_pins PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK] -multiply_by 3 [get_pins PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS]
+[IGNORED:]create_generated_clock -name {PLL_1_clkop_o} -source [get_pins PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK] -divide_by 1 [get_pins PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP]
 [IGNORED:]create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN] -divide_by 2 [get_pins DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT]
 
 1.2  Constraint Coverage
@@ -89,9 +91,15 @@ create_clock,
 create_generated_clock,
 ...
 
---------------------------------------------------
-There is no end point satisfying reporting criteria
-
+-------------------------------------------------------------------
+     Listing 1 Start or End Points      |           Type           
+-------------------------------------------------------------------
+PLL_1_clki_i                            |                     input
+-------------------------------------------------------------------
+                                        |                          
+Number of I/O ports without constraint  |                         1
+                                        |                          
+-------------------------------------------------------------------
 
 Nets without clock definition
 Define a clock on a top level port or a generated clock on a clock divider pin associated with this net(s).
@@ -109,6 +117,10 @@ None
 ============================
 WARNING "70001944" - No master clock for
 	generated clock	create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 2 [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }] .
+WARNING "70001944" - No master clock for
+	generated clock	create_generated_clock -name {PLL_1_clkop_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 1 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] .
+WARNING "70001944" - No master clock for
+	generated clock	create_generated_clock -name {PLL_1_clkos_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 3 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }] .
 
 ===============================================================
 2  Setup at Speed Grade 7_High-Performance_1.0V Corner at 85 Degrees
@@ -130,6 +142,56 @@ Clock DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o|                    |       Period
 ------------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing
+-----------------------------------------------------------------------------------------------------------
+Clock DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o|   Worst Time Between Edges   |           Comment            
+-----------------------------------------------------------------------------------------------------------
+ From PLL_1_clkop_o                          |                         ---- |                      No path 
+ From PLL_1_clkos_o                          |                         ---- |                      No path 
+-----------------------------------------------------------------------------------------------------------
+
+2.1.2 Clock "PLL_1_clkop_o"
+=======================
+create_generated_clock -name {PLL_1_clkop_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 1 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+          Clock PLL_1_clkop_o           |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From PLL_1_clkop_o                     |             Target |               +INF |          0.000 MHz 
+                                        | Actual (all paths) |           4.000 ns |        250.000 MHz 
+MIPI_DPHY_1_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/LMMICLK (MPW)                                                                
+                                        |   (50% duty cycle) |           4.000 ns |        250.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+          Clock PLL_1_clkop_o           |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o                                                              
+                                        |                         ---- |                      No path 
+ From PLL_1_clkos_o                     |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.1.3 Clock "PLL_1_clkos_o"
+=======================
+create_generated_clock -name {PLL_1_clkos_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 3 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+          Clock PLL_1_clkos_o           |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From PLL_1_clkos_o                     |             Target |               +INF |          0.000 MHz 
+                                        | Actual (all paths) |               ---- |               ---- 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+          Clock PLL_1_clkos_o           |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o                                                              
+                                        |                         ---- |                      No path 
+ From PLL_1_clkop_o                     |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
 
 2.2  Endpoint slacks
 =======================

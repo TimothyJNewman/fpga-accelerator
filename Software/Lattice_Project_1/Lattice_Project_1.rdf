@@ -30,6 +30,12 @@
         <Source name="IP/I2C_DPHY_2/I2C_DPHY_2/I2C_DPHY_2.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
+        <Source name="IP/OSC_1/OSC_1/OSC_1.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="IP/PLL_1/PLL_1/PLL_1.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
         <Source name="Config.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

@@ -17,11 +17,11 @@ Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May
 @N|Running in 64-bit mode
 File C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 104MB peak: 104MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 104MB peak: 104MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Mon Oct  2 07:15:25 2023
+# Mon Oct  2 17:36:13 2023
 
 ###########################################################]

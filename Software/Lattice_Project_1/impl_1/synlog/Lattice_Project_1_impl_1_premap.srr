@@ -1,4 +1,4 @@
-# Mon Oct  2 07:15:25 2023
+# Mon Oct  2 17:36:13 2023
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -19,7 +19,7 @@ Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 070R, Built
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 136MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 131MB peak: 136MB)
 
 Reading constraint file: C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc
 @W: MT536 |Found constraint file with both legacy-style and FPGA timing constraints. 
@@ -29,25 +29,25 @@ See clock summary report "C:\Users\timot\Documents\Programming\fpga-accelerator\
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 143MB)
+Design Input Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 144MB peak: 144MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 144MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 144MB peak: 145MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 157MB peak: 157MB)
+Start loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 157MB peak: 157MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 157MB peak: 159MB)
+Finished loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 157MB peak: 159MB)
 
 NConnInternalConnection caching is on
 @N: FX493 |Applying initial value "00000000" on instance mem_LUT\.mem_reg\.async\.data_buff_r[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 209MB peak: 209MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 209MB peak: 210MB)
 
 @N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1239:11:1239:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1239:11:1239:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) has its enable tied to GND.
@@ -60,10 +60,10 @@ Finished HSTDM IP insertion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 @N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs8_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs8_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_sclk_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_sclk_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 209MB peak: 210MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 210MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 209MB peak: 210MB)
 
 @W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[0\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
 @W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[1\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
@@ -133,7 +133,7 @@ original code -> new code
    100 -> 0010000
    101 -> 0100000
    110 -> 1000000
-Encoding state machine <encrypted> (in view: work.I2C_DPHY_1_ipgen_lscc_i2c_master_stop_gen_10s_24s_113s_32s_13s_0_1_2_3(verilog))
+Encoding state machine <encrypted> (in view: work.I2C_DPHY_1_ipgen_lscc_i2c_master_stop_gen_10s_48s_226s_63s_25s_0_1_2_3(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
@@ -191,7 +191,7 @@ original code -> new code
    100 -> 0010000
    101 -> 0100000
    110 -> 1000000
-Encoding state machine <encrypted> (in view: work.I2C_DPHY_2_ipgen_lscc_i2c_master_stop_gen_10s_24s_113s_32s_13s_0_1_2_3(verilog))
+Encoding state machine <encrypted> (in view: work.I2C_DPHY_2_ipgen_lscc_i2c_master_stop_gen_10s_48s_226s_63s_25s_0_1_2_3(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
@@ -235,14 +235,14 @@ original code -> new code
    1000 -> 0100000000
    1001 -> 1000000000
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 214MB peak: 214MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 215MB peak: 215MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 216MB peak: 216MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 216MB peak: 216MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=84 on top level netlist main 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 216MB peak: 216MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 216MB peak: 217MB)
 
 Some data will not be shown as it is part of encrypted module
 
@@ -255,13 +255,15 @@ Level     Clock                                                       Frequency 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                                      200.0 MHz     5.000         system       system_clkgroup           0    
                                                                                                                                               
-0 -       main|I2C_DPHY_1_clk_i_inferred_clock                        200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     292  
+0 -       PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     588  
                                                                                                                                               
-0 -       main|I2C_DPHY_2_clk_i_inferred_clock                        200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     292  
+0 -       main|DDR_MEM_1_sync_clk_i_inferred_clock                    200.0 MHz     5.000         inferred     Inferred_clkgroup_0_5     17   
                                                                                                                                               
-0 -       main|DDR_MEM_1_sync_clk_i_inferred_clock                    200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     17   
+0 -       DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     8    
                                                                                                                                               
-0 -       DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     8    
+0 -       main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     2    
+                                                                                                                                              
+0 -       main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     2    
 ==============================================================================================================================================
 
 
@@ -269,21 +271,25 @@ Level     Clock                                                       Frequency 
 Clock Load Summary
 ***********************
 
-                                                            Clock     Source                                                                          Clock Pin                                                                  Non-clock Pin     Non-clock Pin
-Clock                                                       Load      Pin                                                                             Seq Example                                                                Seq Example       Comb Example 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                      0         -                                                                               -                                                                          -                 -            
-                                                                                                                                                                                                                                                                
-main|I2C_DPHY_1_clk_i_inferred_clock                        292       I2C_DPHY_1_clk_i.OUT[0](tri)                                                    -                                                                          -                 -            
-                                                                                                                                                                                                                                                                
-main|I2C_DPHY_2_clk_i_inferred_clock                        292       I2C_DPHY_2_clk_i.OUT[0](tri)                                                    -                                                                          -                 -            
-                                                                                                                                                                                                                                                                
-main|DDR_MEM_1_sync_clk_i_inferred_clock                    17        DDR_MEM_1_sync_clk_i.OUT[0](tri)                                                DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2.C     -                 -            
-                                                                                                                                                                                                                                                                
-DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     8         DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT(ECLKDIV)     DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[3:0].C                       -                 -            
-================================================================================================================================================================================================================================================================
+                                                            Clock     Source                                                                          Clock Pin                                                                                                            Non-clock Pin     Non-clock Pin
+Clock                                                       Load      Pin                                                                             Seq Example                                                                                                          Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      0         -                                                                               -                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                          
+PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      588       PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)                    -                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                          
+main|DDR_MEM_1_sync_clk_i_inferred_clock                    17        DDR_MEM_1_sync_clk_i.OUT[0](tri)                                                DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2.C                                               -                 -            
+                                                                                                                                                                                                                                                                                                          
+DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     8         DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT(ECLKDIV)     DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[3:0].C                                                                 -                 -            
+                                                                                                                                                                                                                                                                                                          
+main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  2         MIPI_DPHY_1_sync_clk_i.OUT[0](tri)                                              MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.clk_r.C            -                 -            
+                                                                                                                                                                                                                                                                                                          
+main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  2         MIPI_DPHY_2_sync_clk_i.OUT[0](tri)                                              MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER\.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER\.u_clock_divider.clk_r.C     -                 -            
+==========================================================================================================================================================================================================================================================================================================
 
 @W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Found inferred clock DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock which controls 8 sequential elements including DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_2\rtl\mipi_dphy_2.v":327:4:327:9|Found inferred clock main|MIPI_DPHY_2_sync_clk_i_inferred_clock which controls 2 sequential elements including MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER\.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER\.u_clock_divider.count[0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_1\rtl\mipi_dphy_1.v":307:4:307:9|Found inferred clock main|MIPI_DPHY_1_sync_clk_i_inferred_clock which controls 2 sequential elements including MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.count[0]. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Found inferred clock main|DDR_MEM_1_sync_clk_i_inferred_clock which controls 17 sequential elements including DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[1]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 ICG Latch Removal Summary:
@@ -298,13 +304,14 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 8 clock pin(s) of sequential element(s)
-0 instances converted, 8 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 582 clock pin(s) of sequential element(s)
+0 instances converted, 582 sequential instances remain driven by gated/generated clocks
 
 ================================================================================================ Gated/Generated Clocks ================================================================================================
 Clock Tree ID     Driving Element                                                        Drive Element Type     Unconverted Fanout     Sample Instance                                    Explanation                   
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT     ECLKDIV                8                      DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]     Clock Optimization not enabled
+@KP:ckid0_31      PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP                PLL                    574                    ENCRYPTED                                          Clock Optimization not enabled
+@KP:ckid0_32      DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT     ECLKDIV                8                      DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]     Clock Optimization not enabled
 ========================================================================================================================================================================================================================
 
 
@@ -317,19 +324,19 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 215MB peak: 216MB)
+Starting constraint checker (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 215MB peak: 217MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 215MB peak: 216MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 215MB peak: 217MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 216MB peak: 216MB)
+Finished constraint checker (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 217MB peak: 217MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 127MB peak: 217MB)
+At Mapper Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 125MB peak: 217MB)
 
-Process took 0h:00m:10s realtime, 0h:00m:10s cputime
-# Mon Oct  2 07:15:36 2023
+Process took 0h:00m:14s realtime, 0h:00m:13s cputime
+# Mon Oct  2 17:36:27 2023
 
 ###########################################################]

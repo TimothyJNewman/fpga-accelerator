@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2023 10 02 17:49:00" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="module" module="pll" name="PLL_1" package="CABGA256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.8.0">
+ <Package>
+  <File modified="2023 10 02 17:49:00" name="rtl/PLL_1_bb.v" type="black_box_verilog"/>
+  <File modified="2023 10 02 17:49:00" name="PLL_1.cfg" type="cfg"/>
+  <File modified="2023 10 02 17:49:00" name="misc/PLL_1_tmpl.v" type="template_verilog"/>
+  <File modified="2023 10 02 17:49:00" name="misc/PLL_1_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 10 02 17:49:00" name="rtl/PLL_1.v" type="top_level_verilog"/>
+  <File modified="2023 10 02 17:49:00" name="constraints/PLL_1.ldc" type="timing_constraints"/>
+  <File modified="2023 10 02 17:49:00" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 10 02 17:49:00" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 10 02 17:49:00" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 10 02 17:49:00" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 05 21 00:57:55" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

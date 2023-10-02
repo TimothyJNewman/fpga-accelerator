@@ -22,7 +22,8 @@ MIPI_DPHY_2_data_n_io,
 I2C_DPHY_1_scl_io,
 I2C_DPHY_1_sda_io,
 I2C_DPHY_2_scl_io,
-I2C_DPHY_2_sda_io);
+I2C_DPHY_2_sda_io,
+PLL_1_clki_i);
 
 wire DDR_MEM_1_eclk_i;
 wire DDR_MEM_1_sync_clk_i;
@@ -142,6 +143,8 @@ wire [3:0] MIPI_DPHY_2_lp_tx_data_n_i ;
 wire MIPI_DPHY_2_lp_tx_data_en_i ; 
 wire MIPI_DPHY_2_lp_tx_clk_p_i ; 
 wire MIPI_DPHY_2_lp_tx_clk_n_i ;
+wire [3:0] MIPI_DPHY_2_hs_tx_cil_ready_o;
+wire [3:0] MIPI_DPHY_2_data_lane_ss_o;
 
 inout MIPI_DPHY_2_clk_p_io ; 
 inout MIPI_DPHY_2_clk_n_io ; 
@@ -149,12 +152,11 @@ inout [3:0] MIPI_DPHY_2_data_p_io ;
 inout [3:0] MIPI_DPHY_2_data_n_io ; 
 
 // Check these signals
-wire MIPI_DPHY_2_usrstdby_i ; 
-wire MIPI_DPHY_2_pd_dphy_i ; 
-wire MIPI_DPHY_2_txclk_hsgate_i ; 
-wire MIPI_DPHY_2_pll_lock_o ; 
-wire MIPI_DPHY_2_clk_byte_o ; 
-wire MIPI_DPHY_2_ready_o ; 
+//wire MIPI_DPHY_2_usrstdby_i ; 
+//wire MIPI_DPHY_2_pd_dphy_i ; 
+//wire MIPI_DPHY_2_pll_lock_o ; 
+//wire MIPI_DPHY_2_clk_byte_o ; 
+//wire MIPI_DPHY_2_ready_o ; 
 
 inout I2C_DPHY_1_scl_io;
 inout I2C_DPHY_1_sda_io;
@@ -187,10 +189,19 @@ wire I2C_DPHY_2_lmmi_rdata_valid_o;
 wire I2C_DPHY_2_lmmi_ready_o;
 wire I2C_DPHY_2_int_o;
 
-DDR_MEM_1 DDR_MEM_1_inst (.eclk_i(DDR_MEM_1_eclk_i),
+input PLL_1_clki_i;
+
+wire PLL_1_clki_i;
+wire PLL_1_rstn_i;
+wire PLL_1_clkop_o;
+wire PLL_1_clkos_o;
+wire PLL_1_clkos2_o;
+wire PLL_1_lock_o;
+
+DDR_MEM_1 DDR_MEM_1_inst (.eclk_i(PLL_1_clkos_o),
         .sync_clk_i(DDR_MEM_1_sync_clk_i),
         .sync_rst_i(DDR_MEM_1_sync_rst_i),
-        .pll_lock_i(DDR_MEM_1_pll_lock_i),
+        .pll_lock_i(PLL_1_lock_o),
 		.sclk_o(DDR_MEM_1_sclk_o),
     .sync_update_i(DDR_MEM_1_sync_update_i),
     .rd_clksel_dqs0_i(DDR_MEM_1_rd_clksel_dqs0_i),
@@ -250,7 +261,7 @@ DDR_MEM_1 DDR_MEM_1_inst (.eclk_i(DDR_MEM_1_eclk_i),
 
 MIPI_DPHY_1 MIPI_DPHY_1_inst (.sync_clk_i(MIPI_DPHY_1_sync_clk_i),
     .sync_rst_i(MIPI_DPHY_1_sync_rst_i),
-    .lmmi_clk_i(MIPI_DPHY_1_lmmi_clk_i),
+    .lmmi_clk_i(PLL_1_clkop_o),
     .lmmi_resetn_i(MIPI_DPHY_1_lmmi_resetn_i),
     .lmmi_wdata_i(MIPI_DPHY_1_lmmi_wdata_i),
     .lmmi_wr_rdn_i(MIPI_DPHY_1_lmmi_wr_rdn_i),
@@ -259,16 +270,8 @@ MIPI_DPHY_1 MIPI_DPHY_1_inst (.sync_clk_i(MIPI_DPHY_1_sync_clk_i),
     .lmmi_ready_o(MIPI_DPHY_1_lmmi_ready_o),
     .lmmi_rdata_o(MIPI_DPHY_1_lmmi_rdata_o),
     .lmmi_rdata_valid_o(MIPI_DPHY_1_lmmi_rdata_valid_o),
-    .hs_rx_clk_en_i(MIPI_DPHY_1_hs_rx_clk_en_i),
-    .hs_rx_data_en_i(MIPI_DPHY_1_hs_rx_data_en_i),
-    .hs_data_des_en_i(MIPI_DPHY_1_hs_data_des_en_i),
     .hs_rx_data_o(MIPI_DPHY_1_hs_rx_data_o),
     .hs_rx_data_sync_o(MIPI_DPHY_1_hs_rx_data_sync_o),
-    .lp_rx_en_i(MIPI_DPHY_1_lp_rx_en_i),
-    .lp_rx_data_p_o(MIPI_DPHY_1_lp_rx_data_p_o),
-    .lp_rx_data_n_o(MIPI_DPHY_1_lp_rx_data_n_o),
-    .lp_rx_clk_p_o(MIPI_DPHY_1_lp_rx_clk_p_o),
-    .lp_rx_clk_n_o(MIPI_DPHY_1_lp_rx_clk_n_o),
     .pll_lock_i(MIPI_DPHY_1_pll_lock_i),
     .clk_p_io(MIPI_DPHY_1_clk_p_io),
     .clk_n_io(MIPI_DPHY_1_clk_n_io),
@@ -280,7 +283,7 @@ MIPI_DPHY_1 MIPI_DPHY_1_inst (.sync_clk_i(MIPI_DPHY_1_sync_clk_i),
 
 MIPI_DPHY_2 MIPI_DPHY_2_inst (.sync_clk_i(MIPI_DPHY_2_sync_clk_i),
     .sync_rst_i(MIPI_DPHY_2_sync_rst_i),
-    .lmmi_clk_i(MIPI_DPHY_2_lmmi_clk_i),
+    .lmmi_clk_i(PLL_1_clkop_o),
     .lmmi_resetn_i(MIPI_DPHY_2_lmmi_resetn_i),
     .lmmi_wdata_i(MIPI_DPHY_2_lmmi_wdata_i),
     .lmmi_wr_rdn_i(MIPI_DPHY_2_lmmi_wr_rdn_i),
@@ -289,7 +292,9 @@ MIPI_DPHY_2 MIPI_DPHY_2_inst (.sync_clk_i(MIPI_DPHY_2_sync_clk_i),
     .lmmi_ready_o(MIPI_DPHY_2_lmmi_ready_o),
     .lmmi_rdata_o(MIPI_DPHY_2_lmmi_rdata_o),
     .lmmi_rdata_valid_o(MIPI_DPHY_2_lmmi_rdata_valid_o),
-    .hs_tx_en_i(MIPI_DPHY_2_hs_tx_en_i),
+        .hs_tx_cil_ready_o(MIPI_DPHY_2_hs_tx_cil_ready_o),
+        .data_lane_ss_o(MIPI_DPHY_2_data_lane_ss_o),
+	.hs_tx_en_i(MIPI_DPHY_2_hs_tx_en_i),
     .hs_tx_data_i(MIPI_DPHY_2_hs_tx_data_i),
     .hs_tx_data_en_i(MIPI_DPHY_2_hs_tx_data_en_i),
     .lp_tx_en_i(MIPI_DPHY_2_lp_tx_en_i),
@@ -304,14 +309,13 @@ MIPI_DPHY_2 MIPI_DPHY_2_inst (.sync_clk_i(MIPI_DPHY_2_sync_clk_i),
     .data_n_io(MIPI_DPHY_2_data_n_io),
     .usrstdby_i(MIPI_DPHY_2_usrstdby_i),
     .pd_dphy_i(MIPI_DPHY_2_pd_dphy_i),
-    .txclk_hsgate_i(MIPI_DPHY_2_txclk_hsgate_i),
     .pll_lock_o(MIPI_DPHY_2_pll_lock_o),
     .clk_byte_o(MIPI_DPHY_2_clk_byte_o),
     .ready_o(MIPI_DPHY_2_ready_o));
 	
 I2C_DPHY_1 I2C_DPHY_1_inst (.scl_io(I2C_DPHY_1_scl_io),
         .sda_io(I2C_DPHY_1_sda_io),
-        .clk_i(I2C_DPHY_1_clk_i),
+        .clk_i(PLL_1_clkop_o),
         .rst_n_i(I2C_DPHY_1_rst_n_i),
         .lmmi_request_i(I2C_DPHY_1_lmmi_request_i),
         .lmmi_wr_rdn_i(I2C_DPHY_1_lmmi_wr_rdn_i),
@@ -324,7 +328,7 @@ I2C_DPHY_1 I2C_DPHY_1_inst (.scl_io(I2C_DPHY_1_scl_io),
 		
 I2C_DPHY_2 I2C_DPHY_2_inst (.scl_io(I2C_DPHY_2_scl_io),
         .sda_io(I2C_DPHY_2_sda_io),
-        .clk_i(I2C_DPHY_2_clk_i),
+        .clk_i(PLL_1_clkop_o),
         .rst_n_i(I2C_DPHY_2_rst_n_i),
         .lmmi_request_i(I2C_DPHY_2_lmmi_request_i),
         .lmmi_wr_rdn_i(I2C_DPHY_2_lmmi_wr_rdn_i),
@@ -334,5 +338,15 @@ I2C_DPHY_2 I2C_DPHY_2_inst (.scl_io(I2C_DPHY_2_scl_io),
         .lmmi_rdata_valid_o(I2C_DPHY_2_lmmi_rdata_valid_o),
         .lmmi_ready_o(I2C_DPHY_2_lmmi_ready_o),
         .int_o(I2C_DPHY_2_int_o));
+
+PLL_1 PLL_1_inst(.clki_i(PLL_1_clki_i),
+        .rstn_i(PLL_1_rstn_i),
+		// sysclk
+        .clkop_o(PLL_1_clkop_o),
+		// high speed clock
+        .clkos_o(PLL_1_clkos_o),
+		// feedback
+		.clkos2_o(PLL_1_clkos2_o),
+        .lock_o(PLL_1_lock_o));
 
 endmodule

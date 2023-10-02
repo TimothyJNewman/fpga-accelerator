@@ -16,11 +16,11 @@
                     <ipxact:configurableElementValue referenceId="FIFO_IMPL">LUT</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="TX_FIFO_AE_FLAG">2</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="RX_FIFO_AF_FLAG">14</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="SYS_CLOCK_FREQ">24</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SYS_CLOCK_FREQ">48</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="DESIRED_CLOCK_FREQ">100.0</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="PRESCALER_INPUT">117</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="PRESCALER">117</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ACTUAL_CLOCK_FREQ">100.418410041841</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PRESCALER_INPUT">237</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PRESCALER">237</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ACTUAL_CLOCK_FREQ">100.20876826722338</ipxact:configurableElementValue>
                 </ipxact:configurableElementValues>
             </ipxact:componentRef>
         </ipxact:componentInstance>

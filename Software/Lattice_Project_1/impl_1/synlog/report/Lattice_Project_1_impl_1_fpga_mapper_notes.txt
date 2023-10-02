@@ -20,6 +20,7 @@
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[2] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[1] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[0] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":760:4:760:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d1 (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.dll_rst (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":760:4:760:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2 (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[8] (in view: work.main(verilog)) because it does not drive other instances.
@@ -30,8 +31,8 @@
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":992:4:992:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[1] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":992:4:992:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[0] (in view: work.main(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@N: MT611 :|Automatically generated clock main|I2C_DPHY_2_clk_i_inferred_clock is not used and is being removed
-@N: MT611 :|Automatically generated clock main|I2C_DPHY_1_clk_i_inferred_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock main|MIPI_DPHY_2_sync_clk_i_inferred_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock main|MIPI_DPHY_1_sync_clk_i_inferred_clock is not used and is being removed
 @N: MT611 :|Automatically generated clock main|DDR_MEM_1_sync_clk_i_inferred_clock is not used and is being removed
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 

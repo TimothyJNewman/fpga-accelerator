@@ -1,4 +1,4 @@
-# Mon Oct  2 07:15:37 2023
+# Mon Oct  2 17:36:28 2023
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -22,20 +22,20 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 136MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 136MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 140MB peak: 140MB)
+Start loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 141MB peak: 143MB)
+Finished loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 141MB peak: 143MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 204MB peak: 204MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 204MB peak: 204MB)
 
 @N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1239:11:1239:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
@@ -48,10 +48,14 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:03s; CPU Time elapse
 @N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_8 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_8 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3372:17:3372:27|Tristate driver dqwl_dqs7_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs7_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 209MB peak: 209MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 210MB peak: 210MB)
 
 @W: MO197 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Removing FSM register DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1] (in view view:work.main(verilog)) because its output is a constant.
 @W: MO197 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Removing FSM register DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[0] (in view view:work.main(verilog)) because its output is a constant.
+@W: MO129 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_1\rtl\mipi_dphy_1.v":307:4:307:9|Sequential instance MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider.clk_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_1\rtl\mipi_dphy_1.v":307:4:307:9|Sequential instance MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider.count[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_2\rtl\mipi_dphy_2.v":327:4:327:9|Sequential instance MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER.u_clock_divider.clk_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_2\rtl\mipi_dphy_2.v":327:4:327:9|Sequential instance MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER.u_clock_divider.count[0] is reduced to a combinational gate by constant propagation.
 @W: MO161 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Register bit DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1] (in view view:work.main(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
 @W: MO129 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[0] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[0] is reduced to a combinational gate by constant propagation.
@@ -61,9 +65,8 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.init_load_n_r (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.init_move_r (in view: work.main(verilog)) because it does not drive other instances.
 
-Starting factoring (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 211MB peak: 211MB)
+Starting factoring (Real Time elapsed 0h:00m:39s; CPU Time elapsed 0h:00m:38s; Memory used current: 212MB peak: 212MB)
 
-@W: BN132 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":760:4:760:9|Removing instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d1 because it is equivalent to instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.dll_rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[6] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[5] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[4] (in view: work.main(verilog)) because it does not drive other instances.
@@ -71,6 +74,7 @@ Starting factoring (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; M
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[2] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[1] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[0] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":760:4:760:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d1 (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.dll_rst (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":760:4:760:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2 (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[8] (in view: work.main(verilog)) because it does not drive other instances.
@@ -81,7 +85,7 @@ Starting factoring (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; M
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":992:4:992:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[1] (in view: work.main(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":992:4:992:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[0] (in view: work.main(verilog)) because it does not drive other instances.
 
-Finished factoring (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 214MB peak: 214MB)
+Finished factoring (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:38s; Memory used current: 215MB peak: 215MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -89,69 +93,70 @@ Available hyper_sources - for debug and ip models
 
 NConnInternalConnection caching is on
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 214MB peak: 215MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:38s; Memory used current: 216MB peak: 216MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:28s; Memory used current: 215MB peak: 215MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:39s; Memory used current: 216MB peak: 217MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:28s; Memory used current: 215MB peak: 215MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:40s; Memory used current: 216MB peak: 217MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 215MB peak: 215MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:40s; Memory used current: 216MB peak: 217MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 215MB peak: 215MB)
+Finished preparing to map (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:40s; Memory used current: 216MB peak: 217MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 215MB peak: 215MB)
+Finished technology mapping (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 216MB peak: 217MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:29s		     1.95ns		   0 /         0
+   1		0h:00m:41s		     1.95ns		   0 /         0
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 215MB peak: 216MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:41s; Memory used current: 216MB peak: 217MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 215MB peak: 216MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:42s; Memory used current: 217MB peak: 217MB)
 
-@N: MT611 :|Automatically generated clock main|I2C_DPHY_2_clk_i_inferred_clock is not used and is being removed
-@N: MT611 :|Automatically generated clock main|I2C_DPHY_1_clk_i_inferred_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock main|MIPI_DPHY_2_sync_clk_i_inferred_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock main|MIPI_DPHY_1_sync_clk_i_inferred_clock is not used and is being removed
 @N: MT611 :|Automatically generated clock main|DDR_MEM_1_sync_clk_i_inferred_clock is not used and is being removed
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:30s; Memory used current: 216MB peak: 216MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:42s; Memory used current: 217MB peak: 218MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:31s; Memory used current: 216MB peak: 216MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:42s; Memory used current: 217MB peak: 218MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:33s; Memory used current: 155MB peak: 216MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:44s; Memory used current: 156MB peak: 218MB)
 
 Writing Analyst data base C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:33s; Memory used current: 206MB peak: 216MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:45s; Memory used current: 206MB peak: 218MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:34s; Memory used current: 207MB peak: 216MB)
+Writing scf file... (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:47s; Memory used current: 207MB peak: 218MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
-@W: BW150 :|Clock main|I2C_DPHY_2_clk_i_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
-@W: BW150 :|Clock main|I2C_DPHY_1_clk_i_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
+@W: BW150 :|Clock main|MIPI_DPHY_2_sync_clk_i_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
+@W: BW150 :|Clock main|MIPI_DPHY_1_sync_clk_i_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
 @W: BW150 :|Clock main|DDR_MEM_1_sync_clk_i_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:35s; Memory used current: 207MB peak: 216MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:47s; Memory used current: 207MB peak: 218MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:35s; Memory used current: 207MB peak: 216MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:50s; CPU Time elapsed 0h:00m:48s; Memory used current: 207MB peak: 218MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:35s; Memory used current: 206MB peak: 216MB)
+Start final timing analysis (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:49s; Memory used current: 206MB peak: 218MB)
 
-@W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_2\rtl\mipi_dphy_2.v":1944:65:1944:80|Blackbox DPHY_Z9_layer0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_1\rtl\mipi_dphy_1.v":880:69:880:80|Blackbox DPHY_Z6_layer0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\pll_1\pll_1\rtl\pll_1.v":1301:67:1301:71|Blackbox PLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_2\rtl\mipi_dphy_2.v":2331:65:2331:77|Blackbox DPHY_Z9_layer0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_1\rtl\mipi_dphy_1.v":1205:69:1205:78|Blackbox DPHY_Z6_layer0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":2948:27:2948:37|Blackbox ODDRX2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":2942:41:2942:48|Blackbox DELAYB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":2815:27:2815:38|Blackbox ODDRX1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -164,11 +169,12 @@ Start final timing analysis (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:0
 @W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1070:60:1070:68|Blackbox DDRDLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1053:35:1053:45|Blackbox ECLKSYNC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1047:30:1047:39|Blackbox ECLKDIV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_1_inst.lscc_pll_inst.PLL_1_clkop_o.
 @W: MT420 |Found inferred clock DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.sclk_o.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Oct  2 07:16:14 2023
+# Timing report written on Mon Oct  2 17:37:19 2023
 #
 
 
@@ -193,7 +199,8 @@ Worst slack in design: 1.949
                                                             Requested     Estimated     Requested     Estimated               Clock        Clock                
 Starting Clock                                              Frequency     Frequency     Period        Period        Slack     Type         Group                
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     200.0 MHz     NA            5.000         NA            NA        inferred     Inferred_clkgroup_0_1
+DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     200.0 MHz     NA            5.000         NA            NA        inferred     Inferred_clkgroup_0_2
+PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      200.0 MHz     NA            5.000         NA            NA        inferred     Inferred_clkgroup_0_1
 System                                                      200.0 MHz     327.8 MHz     5.000         3.051         1.949     system       system_clkgroup      
 ================================================================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
@@ -240,12 +247,12 @@ DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.DQS_BLOCK\.DQS_X2\.u_O
 DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.DQS_BLOCK\.DQS_X2\.u_ODDRX2DQS                                    System        ODDRX2DQS     Q           dqs_o_w            0.000       1.949
 DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_oddrx2_4_ck.DDR_CLK\[0\]\.DDR_CLK_X2\.u_ck_ODDRX2      System        ODDRX2        Q           q_out_clk_w[0]     0.000       5.000
 DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_moshx2_4_csn.DDR_CSN\[0\]\.DDR_CSN_X2\.u_CSN_OSHX2     System        OSHX2         Q           q_out_csn_w[0]     0.000       5.000
+PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL                                                                          System        PLL           CLKOS       PLL_1_clkos_o      0.000       5.000
 DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                                                                 System        DDRDLL        CODE[0]     code_w[0]          0.000       5.000
 DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                                                                 System        DDRDLL        CODE[1]     code_w[1]          0.000       5.000
 DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                                                                 System        DDRDLL        CODE[2]     code_w[2]          0.000       5.000
 DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                                                                 System        DDRDLL        CODE[3]     code_w[3]          0.000       5.000
 DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                                                                 System        DDRDLL        CODE[4]     code_w[4]          0.000       5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                                                                 System        DDRDLL        CODE[5]     code_w[5]          0.000       5.000
 =======================================================================================================================================================================================================
 
 
@@ -309,10 +316,10 @@ DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.u0_DQSBUF             
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:36s; Memory used current: 207MB peak: 216MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:49s; Memory used current: 207MB peak: 218MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:36s; Memory used current: 207MB peak: 216MB)
+Finished timing report (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:49s; Memory used current: 207MB peak: 218MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -320,11 +327,11 @@ Part: lifcl_40-7
 
 Register bits: 0 of 32256 (0%)
 PIC Latch:       0
-I/O cells:       45
+I/O cells:       46
 
 
 Details:
-BB:             22
+BB:             23
 DDRDLL:         1
 DELAYB:         2
 DPHY:           1
@@ -339,10 +346,11 @@ ODDRX2:         1
 ODDRX2DQ:       16
 ODDRX2DQS:      2
 OSHX2:          1
+PLL:            1
 TSHX2DQ:        2
 TSHX2DQS:       2
-VHI:            21
-VLO:            21
+VHI:            23
+VLO:            23
 
 Resource Usage inside macros:
 Registers: 0
@@ -362,12 +370,12 @@ Total number of LRAMs: 0 + 0 = 0 of 2 (0.00%)
 Total number of DSPs: 0 + 0 = 0 of 56 (0.00%)
 Total number of Distributed RAMs: 0 + 0 = 0 
 Total number of Carry Chains: 0 + 0 = 0 
-Total number of BlackBoxes: 97 + 0 = 97 
+Total number of BlackBoxes: 102 + 0 = 102 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:36s; Memory used current: 71MB peak: 216MB)
+At Mapper Exit (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:49s; Memory used current: 71MB peak: 218MB)
 
-Process took 0h:00m:38s realtime, 0h:00m:36s cputime
-# Mon Oct  2 07:16:15 2023
+Process took 0h:00m:52s realtime, 0h:00m:50s cputime
+# Mon Oct  2 17:37:20 2023
 
 ###########################################################]

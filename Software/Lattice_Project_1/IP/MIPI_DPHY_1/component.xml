@@ -111,27 +111,6 @@
                 </ipxact:wire>
             </ipxact:port>
             <ipxact:port>
-                <ipxact:name>hs_rx_clk_en_i</ipxact:name>
-                <ipxact:displayName>hs_rx_clk_en_i</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>in</ipxact:direction>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>hs_rx_data_en_i</ipxact:name>
-                <ipxact:displayName>hs_rx_data_en_i</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>in</ipxact:direction>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>hs_data_des_en_i</ipxact:name>
-                <ipxact:displayName>hs_data_des_en_i</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>in</ipxact:direction>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
                 <ipxact:name>hs_rx_data_o</ipxact:name>
                 <ipxact:displayName>hs_rx_data_o</ipxact:displayName>
                 <ipxact:wire>
@@ -155,53 +134,6 @@
                             <ipxact:right>0</ipxact:right>
                         </ipxact:vector>
                     </ipxact:vectors>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>lp_rx_en_i</ipxact:name>
-                <ipxact:displayName>lp_rx_en_i</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>in</ipxact:direction>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>lp_rx_data_p_o</ipxact:name>
-                <ipxact:displayName>lp_rx_data_p_o</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>out</ipxact:direction>
-                    <ipxact:vectors>
-                        <ipxact:vector>
-                            <ipxact:left>3</ipxact:left>
-                            <ipxact:right>0</ipxact:right>
-                        </ipxact:vector>
-                    </ipxact:vectors>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>lp_rx_data_n_o</ipxact:name>
-                <ipxact:displayName>lp_rx_data_n_o</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>out</ipxact:direction>
-                    <ipxact:vectors>
-                        <ipxact:vector>
-                            <ipxact:left>3</ipxact:left>
-                            <ipxact:right>0</ipxact:right>
-                        </ipxact:vector>
-                    </ipxact:vectors>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>lp_rx_clk_p_o</ipxact:name>
-                <ipxact:displayName>lp_rx_clk_p_o</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>out</ipxact:direction>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>lp_rx_clk_n_o</ipxact:name>
-                <ipxact:displayName>lp_rx_clk_n_o</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>out</ipxact:direction>
                 </ipxact:wire>
             </ipxact:port>
             <ipxact:port>
@@ -329,8 +261,8 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2023 10 01 02:06:15</lsccip:createdTimestamp>
-            <lsccip:radiantBuild>&quot;Lattice Radiant Software&quot; (64-bit) 2023.1.0.43.3</lsccip:radiantBuild>
+            <lsccip:createdTimestamp>2023 10 02 16:26:26</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>&quot;Lattice Radiant Software&quot; (64-bit) 2023.1.1.200.1</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>
 </ipxact:component>

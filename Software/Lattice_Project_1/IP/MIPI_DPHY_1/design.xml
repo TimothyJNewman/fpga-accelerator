@@ -14,7 +14,7 @@
                     <ipxact:configurableElementValue referenceId="DEVICE">LIFCL-40</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="INTF">CSI2_APP</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="DPHY_IP">HARD_IP</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="CIL_BYPASS">CIL_BYPASSED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CIL_BYPASS">CIL_ENABLED</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="PLL_MODE">EXTERNAL</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="CLK_MODE">ENABLED</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="INT_DATA_RATE">320.0</ipxact:configurableElementValue>
@@ -365,23 +365,23 @@
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.hs_rx_clk_en_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="hs_rx_clk_en_i"/>
-                <ipxact:externalPortReference portRef="hs_rx_clk_en_i"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.hs_rx_data_en_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="hs_rx_data_en_i"/>
-                <ipxact:externalPortReference portRef="hs_rx_data_en_i"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.hs_data_des_en_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="hs_data_des_en_i"/>
-                <ipxact:externalPortReference portRef="hs_data_des_en_i"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
@@ -456,51 +456,37 @@
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.lp_rx_en_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="lp_rx_en_i"/>
-                <ipxact:externalPortReference portRef="lp_rx_en_i"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.lp_rx_data_p_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="lp_rx_data_p_o"/>
-                <ipxact:externalPortReference portRef="lp_rx_data_p_o">
-                    <ipxact:partSelect>
-                        <ipxact:range>
-                            <ipxact:left>3</ipxact:left>
-                            <ipxact:right>0</ipxact:right>
-                        </ipxact:range>
-                    </ipxact:partSelect>
-                </ipxact:externalPortReference>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.lp_rx_data_n_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="lp_rx_data_n_o"/>
-                <ipxact:externalPortReference portRef="lp_rx_data_n_o">
-                    <ipxact:partSelect>
-                        <ipxact:range>
-                            <ipxact:left>3</ipxact:left>
-                            <ipxact:right>0</ipxact:right>
-                        </ipxact:range>
-                    </ipxact:partSelect>
-                </ipxact:externalPortReference>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.lp_rx_clk_p_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="lp_rx_clk_p_o"/>
-                <ipxact:externalPortReference portRef="lp_rx_clk_p_o"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>MIPI_DPHY_1.lp_rx_clk_n_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="MIPI_DPHY_1" portRef="lp_rx_clk_n_o"/>
-                <ipxact:externalPortReference portRef="lp_rx_clk_n_o"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>

@@ -14,7 +14,7 @@ Family:  LIFCL
 Device:  LIFCL-40
 Package: CABGA256
 Performance Grade:   7_High-Performance_1.0V
-Successfully loading design udb and device data from disks and to up-layer in CPU time: 5 secs , REAL time: 5 secs 
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 5 secs , REAL time: 6 secs 
 
 
 
@@ -90,15 +90,15 @@ Bitstream Status: Final           Version 10.1.
 Saving bit stream in "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.bit".
 Bitstream generation complete!
 
-Total CPU Time: 38 secs 
-Total REAL Time: 40 secs 
+Total CPU Time: 39 secs 
+Total REAL Time: 41 secs 
 Peak Memory Usage: 523 MB
 
 
 ibisgen "Lattice_Project_1_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/lifcl.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.1.200.1
 
-Mon Oct  2 07:26:50 2023
+Mon Oct  2 17:43:11 2023
 
 Loading Lattice_Project_1_impl_1.udb ...
 Loading device for application GENERIC from file 'je5d30.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
@@ -112,7 +112,7 @@ Family:  LIFCL
 Device:  LIFCL-40
 Package: CABGA256
 Performance Grade:   7_High-Performance_1.0V
-Successfully loading design udb and device data from disks and to up-layer in CPU time: 5 secs , REAL time: 6 secs 
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 7 secs , REAL time: 7 secs 
 
 Created design models.
 
@@ -153,6 +153,6 @@ Writing Verilog netlist to file Lattice_Project_1_impl_1_vo.vo
     <postMsg mid="35400233" type="Info" dynamic="1" navigation="0" arg0="Lattice_Project_1_impl_1_vo.vo"  />
 Writing SDF timing to file Lattice_Project_1_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 8 secs 
-Total REAL Time: 9 secs 
+Total CPU Time: 7 secs 
+Total REAL Time: 8 secs 
 Peak Memory Usage: 342 MB

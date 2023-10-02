@@ -147,17 +147,31 @@
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2904:7:2904:33|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_ck in library work.
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5928:7:5928:12|Synthesizing module ODDRX2 in library work.
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":11:7:11:15|Synthesizing module DDR_MEM_1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5322:7:5322:38|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_dphy in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":673:7:673:44|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5306:7:5306:38|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_dphy in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":657:7:657:44|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":269:7:269:42|Synthesizing module MIPI_DPHY_1_ipgen_lscc_clock_divider in library work.
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":11:7:11:17|Synthesizing module MIPI_DPHY_1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5324:7:5324:38|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_dphy in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1633:7:1633:44|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5326:7:5326:38|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_dphy in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1635:7:1635:44|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":289:7:289:42|Synthesizing module MIPI_DPHY_2_ipgen_lscc_clock_divider in library work.
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":11:7:11:17|Synthesizing module MIPI_DPHY_2 in library work.
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_1\I2C_DPHY_1\rtl\I2C_DPHY_1.v":11:7:11:16|Synthesizing module I2C_DPHY_1 in library work.
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_2\I2C_DPHY_2\rtl\I2C_DPHY_2.v":11:7:11:16|Synthesizing module I2C_DPHY_2 in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":161:7:161:26|Synthesizing module PLL_1_ipgen_lscc_pll in library work.
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":11:7:11:11|Synthesizing module PLL_1 in library work.
 @N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v":1:7:1:10|Synthesizing module main in library work.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":262:10:262:20|Input usr_fbclk_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":286:10:286:20|Input refdetreset is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":299:10:299:19|Input apb_pclk_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":300:10:300:23|Input apb_preset_n_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":301:15:301:27|Input apb_penable_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":302:15:302:24|Input apb_psel_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":303:15:303:26|Input apb_pwrite_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":304:21:304:31|Input apb_paddr_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":305:21:305:32|Input apb_pwdata_i is unused.
 @N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2904:30:2904:45|Input almost_full_th_i is unused.
 @N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2905:30:2905:49|Input almost_full_clr_th_i is unused.
 @N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2906:30:2906:46|Input almost_empty_th_i is unused.
@@ -170,27 +184,104 @@
 @N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2907:30:2907:50|Input almost_empty_clr_th_i is unused.
 @N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":259:26:259:30|Input clk_i is unused.
 @N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":260:26:260:30|Input rst_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1777:15:1777:25|Input pll_clkop_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1778:15:1778:25|Input pll_clkos_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1779:15:1779:24|Input pll_lock_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1782:15:1782:28|Input hs_tx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5501:15:5501:28|Input hs_rx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5502:15:5502:29|Input hs_rx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5503:15:5503:24|Input hs_rx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5504:15:5504:30|Input hs_data_des_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":709:15:709:24|Input pll_lock_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":714:15:714:24|Input hs_rx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":724:15:724:24|Input lp_tx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":728:15:728:27|Input lp_tx_clk_p_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":729:15:729:27|Input lp_tx_clk_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":733:15:733:24|Input usrstdby_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5494:15:5494:24|Input hs_tx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5495:15:5495:28|Input hs_tx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5496:36:5496:47|Input hs_tx_data_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5497:15:5497:29|Input hs_tx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5519:15:5519:25|Input pll_clkop_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5520:15:5520:25|Input pll_clkos_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5533:15:5533:28|Input txclk_hsgate_i is unused.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[30] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[29] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[28] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[27] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[26] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[25] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[24] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[23] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[22] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[21] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[20] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[19] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[18] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[17] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[16] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[15] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[14] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[13] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[12] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[11] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[10] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[9] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[8] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[7] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[6] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[5] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[4] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[3] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[2] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[1] is always 0.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1779:15:1779:25|Input pll_clkop_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1780:15:1780:25|Input pll_clkos_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1781:15:1781:24|Input pll_lock_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1783:15:1783:24|Input hs_tx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1784:15:1784:28|Input hs_tx_clk_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1788:15:1788:24|Input lp_tx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1789:34:1789:47|Input lp_tx_data_p_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1790:34:1790:47|Input lp_tx_data_n_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1791:15:1791:29|Input lp_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1792:15:1792:27|Input lp_tx_clk_p_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1793:15:1793:27|Input lp_tx_clk_n_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1795:15:1795:24|Input lp_rx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1801:15:1801:28|Input txclk_hsgate_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5503:15:5503:28|Input hs_rx_clk_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5504:15:5504:29|Input hs_rx_data_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5505:15:5505:24|Input hs_rx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5506:15:5506:30|Input hs_data_des_en_i is unused.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[30] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[29] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[28] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[27] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[26] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[25] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[24] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[23] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[22] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[21] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[20] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[19] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[18] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[17] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[16] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[15] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[14] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[13] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[12] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[11] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[10] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[9] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[8] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[7] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[6] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[5] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[4] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[3] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[2] is always 0.
+@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[1] is always 0.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":684:15:684:27|Input lmmi_resetn_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":693:15:693:24|Input pll_lock_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":695:15:695:28|Input hs_rx_clk_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":696:15:696:29|Input hs_rx_data_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":697:15:697:30|Input hs_data_des_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":698:15:698:24|Input hs_rx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":702:15:702:24|Input lp_rx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":708:15:708:24|Input lp_tx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":709:15:709:28|Input lp_tx_data_p_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":710:15:710:28|Input lp_tx_data_n_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":711:15:711:29|Input lp_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":712:15:712:27|Input lp_tx_clk_p_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":713:15:713:27|Input lp_tx_clk_n_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":717:15:717:24|Input usrstdby_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5478:15:5478:24|Input hs_tx_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5479:15:5479:28|Input hs_tx_clk_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5480:36:5480:47|Input hs_tx_data_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5481:15:5481:29|Input hs_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5503:15:5503:25|Input pll_clkop_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5504:15:5504:25|Input pll_clkos_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5517:15:5517:28|Input txclk_hsgate_i is unused.
 @N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2564:10:2564:15|Input eclk_i is unused.
 @N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1240:34:1240:44|Input data_mask_i is unused.
 @N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3517:4:3517:9|Trying to extract state machine for register delay_st_r.
@@ -207,32 +298,6 @@
 @N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3157:35:3157:45|Input data_dqs8_i is unused.
 @N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3160:34:3160:49|Input data_mask_dqs2_i is unused.
 @N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3161:34:3161:49|Input data_mask_dqs3_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3162:34:3162:49|Input data_mask_dqs4_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3163:34:3163:49|Input data_mask_dqs5_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3164:34:3164:49|Input data_mask_dqs6_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3165:34:3165:49|Input data_mask_dqs7_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3166:34:3166:49|Input data_mask_dqs8_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3178:16:3178:31|Input rd_clksel_dqs2_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3179:16:3179:31|Input rd_clksel_dqs3_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3180:16:3180:31|Input rd_clksel_dqs4_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3181:16:3181:31|Input rd_clksel_dqs5_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3182:16:3182:31|Input rd_clksel_dqs6_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3183:16:3183:31|Input rd_clksel_dqs7_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3184:16:3184:31|Input rd_clksel_dqs8_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3185:10:3185:22|Input rd_dir_dqs0_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3186:10:3186:22|Input rd_dir_dqs1_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3187:10:3187:22|Input rd_dir_dqs2_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3188:10:3188:22|Input rd_dir_dqs3_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3189:10:3189:22|Input rd_dir_dqs4_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3190:10:3190:22|Input rd_dir_dqs5_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3191:10:3191:22|Input rd_dir_dqs6_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3192:10:3192:22|Input rd_dir_dqs7_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3193:10:3193:22|Input rd_dir_dqs8_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3194:10:3194:24|Input rd_loadn_dqs0_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3195:10:3195:24|Input rd_loadn_dqs1_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3196:10:3196:24|Input rd_loadn_dqs2_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3197:10:3197:24|Input rd_loadn_dqs3_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3198:10:3198:24|Input rd_loadn_dqs4_i is unused.
 @N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Trying to extract state machine for register flag.
 @N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Trying to extract state machine for register cs_memsync.
 @N|Running in 64-bit mode

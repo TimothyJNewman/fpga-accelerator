@@ -1,1 +1,2 @@
-ckid0_0:@|S:DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT@|E:DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_31:@|S:PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_31==1@|M:ClockId_0_31
+ckid0_32:@|S:DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT@|E:DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]@|F:@syn_dgcc_clockid0_32==1@|M:ClockId_0_32

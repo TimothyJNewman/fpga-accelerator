@@ -48,7 +48,7 @@ Package: CABGA256
 Performance Grade:  7_High-Performance_1.0V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.1.200.1
-Mapped on: Mon Oct  2 07:24:15 2023
+Mapped on: Mon Oct  2 17:40:50 2023
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -68,13 +68,13 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
       Number used as logic LUT4s:                          3
       Number used as distributed RAM:                      0 (6 per 16X4 RAM)
       Number used as ripple logic:                         0 (2 per CCU2)
-   Number of PIOs used/reserved:   55 out of   156 (35%)
+   Number of PIOs used/reserved:   57 out of   156 (37%)
       Number of PIOs reserved:      7 (per sysConfig and/or prohibit constraint)
-      Number of PIOs used:         48
+      Number of PIOs used:         50
         Number of PIOs used for single ended IO:        42
-        Number of PIO pairs used for differential IO:    3
+        Number of PIO pairs used for differential IO:    4
         Number allocated to regular speed PIOs:     4 out of   82 (5%)
-        Number allocated to high speed PIOs:       44 out of   74 (59%)
+        Number allocated to high speed PIOs:       46 out of   74 (62%)
    Number of Dedicated IO used for ADC/PCIE/DPHY:   20 out of   32 (63%)
    Number of IDDR/ODDR/TDDR functions used:     59 out of   386 (15%)
       Number of IDDR functions:                0
@@ -109,7 +109,7 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
       Number of ACC54:               0 out of 28 (0%)
       Number of REG18:               0 out of 112 (0%)
    Number of ALUREGs:             0 out of 1 (0%)
-   Number of PLLs:                0 out of 3 (0%)
+   Number of PLLs:                1 out of 3 (33%)
    Number of DDRDLLs:             1 out of 2 (50%)
    Number of DLLDELs:             0 out of 10 (0%)
    Number of DQSs:                2 out of 4 (50%)
@@ -134,10 +134,12 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
    Number of JTAG:                0 out of 1 (0%)
    Number of SED:                 0 out of 1 (0%)
    Number of PCSs:                0 out of 1 (0%)
-   Number of Clocks:  6
+   Number of Clocks:  9
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w: 24 loads, 24 rising, 0
      falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_EC
      LKSYNC.ECLKSYNC_inst/ECLKOUT)
+      Net PLL_1_clkos_o: 1 loads, 1 rising, 0 falling (Driver: Pin
+     PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS)
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o: 43 loads, 43 rising, 0
      falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_EC
      LKDIV.ECLKDIV_inst/DIVOUT)
@@ -153,12 +155,17 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqswout_w: 1
      loads, 1 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
      _8.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW)
-   Number of Clock Enables:  0
-   Number of LSRs:  1
-      Net VCC: 15 loads, 0 SLICEs
-   Top 10 highest fanout non-clock nets:
+      Net PLL_1_clkop_o: 2 loads, 2 rising, 0 falling (Driver: Pin
+     PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP)
 
-      Net VCC: 291 loads
+      Net PLL_1_inst.lscc_pll_inst.clki_w: 1 loads, 1 rising, 0 falling (Driver:
+     Port PLL_1_clki_i)
+   Number of Clock Enables:  1
+      Net VCC: 8 loads, 0 SLICEs
+   Number of LSRs:  1
+      Net VCC: 18 loads, 0 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net VCC: 202 loads
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[0]: 2 loads
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[1]: 2 loads
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[2]: 2 loads
@@ -212,6 +219,7 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
 | dqs0_io             | BIDIR     | SSTL15D_II|       | O/T   |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[6]       | BIDIR     | SSTL15_II |       | O     |           |
+
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -219,7 +227,6 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
 | dq_dqs0_io[1]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
@@ -235,6 +242,8 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
 | I2C_DPHY_2_scl_io   | BIDIR     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | I2C_DPHY_2_sda_io   | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| PLL_1_clki_i        | INPUT     | LVDS      |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DDR_MEM_1_cke_o[0]  | OUTPUT    | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -268,6 +277,7 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DDR_MEM_1_addr_o[5] | OUTPUT    | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+
 | DDR_MEM_1_addr_o[4] | OUTPUT    | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DDR_MEM_1_addr_o[3] | OUTPUT    | SSTL15_II |       | O     |           |
@@ -277,7 +287,6 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
 | DDR_MEM_1_addr_o[1] | OUTPUT    | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DDR_MEM_1_addr_o[0] | OUTPUT    | SSTL15_II |       | O     |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DDR_MEM_1_csn_o[0]  | OUTPUT    | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -290,6 +299,52 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
 
 Block GSR_INST undriven or does not drive anything - clipped.
 Block VCC_cZ was optimized away.
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                 Pin/Node Value
+  PLL Instance Name:                            PLL_1_inst/lscc_pll_inst/gen_no_
+       refclk_mon.u_PLL.PLL_inst
+  Input Reference Clock:               PIN      PLL_1_inst.lscc_pll_inst.clki_w
+  Output Clock(P):                     NODE     PLL_1_clkop_o
+  Output Clock(S):                     NODE     PLL_1_clkos_o
+  Output Clock(S2):                             NONE
+  Output Clock(S3):                             NONE
+  Output Clock(S4):                             NONE
+  Output Clock(S5):                             NONE
+  Feedback Signal:                     NODE     PLL_1_clkop_o
+  Reset Signal:                        NODE     VCC
+  Standby Signal:                      NODE     DDR_MEM_1_cke_o_pad[0].gnd
+  PLL LOCK signal:                              NONE
+  PLL Internal LOCK Signal:                     NONE
+  A Divider:                                    8
+  B Divider:                                    2
+  C Divider:                                    7
+  D Divider:                                    7
+  E Divider:                                    7
+  F Divider:                                    7
+  A Post Divider Shift:                         8
+  B Post Divider Shift:                         2
+  C Post Divider Shift:                         7
+  D Post Divider Shift:                         7
+  E Post Divider Shift:                         7
+  F Post Divider Shift:                         7
+  A Section VCO Phase Shift:                    0
+  B Section VCO Phase Shift:                    0
+  C Section VCO Phase Shift:                    0
+  D Section VCO Phase Shift:                    0
+  E Section VCO Phase Shift:                    0
+  F Section VCO Phase Shift:                    0
+
+  CLKOP Trim Setting:                           0000
+  CLKOS Trim Setting:                           0000
+  CLKOS2 Trim Setting:                          0000
+  CLKOS3 Trim Setting:                          0000
+  CLKOS4 Trim Setting:                          0000
+  CLKOS5 Trim Setting:                          0000
 
 
 
@@ -312,19 +367,22 @@ Instance Name: DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/u0_DQSBUF
      .DQSBUF_inst
          Type: DQSBUF_CORE
 Instance Name: MIPI_DPHY_1_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_r
-     x/HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst
+     x/HARD_IP.CIL.u_dphy_cil.DPHY_inst
          Type: DPHY_CORE
 Instance Name: MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrappe
-     r_tx/HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst
+     r_tx/HARD_IP.genblk1.u_DPHY_CIL_tx.DPHY_inst
          Type: DPHY_CORE
+Instance Name: PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
+         Type: PLL_CORE
 
 
 
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 ------------------
 
-   Total number of constraints: 94
+   Total number of constraints: 100
    Total number of constraints dropped: 0
+   Total number of constraints duplicated: 1
 
 
 
@@ -332,8 +390,10 @@ Instance Name: MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrappe
 -------------------------
 
    Total CPU Time: 6 secs
-   Total REAL Time: 7 secs
-   Peak Memory Usage: 315 MB
+   Total REAL Time: 6 secs
+   Peak Memory Usage: 314 MB
+
+
 
 
 
@@ -416,6 +476,7 @@ Copyright (c) 2002-2023 Lattice Semiconductor
 <LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
 <LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
 <LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_pll>PLL/DLL Summary</A></LI>
 <LI><A href=#mrp_asic>ASIC Components</A></LI>
 <LI><A href=#mrp_consum>Constraint Summary</A></LI>
 <LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>

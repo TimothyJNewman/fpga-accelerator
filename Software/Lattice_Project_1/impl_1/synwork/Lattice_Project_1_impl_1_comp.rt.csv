@@ -1,3 +1,7 @@
 Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
-work, DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0,0h:00m:01s,0h:00m:01s,-,0h:00m:00s,   149 MB,     0 MB,     0 MB,     0 MB,     0 MB
-work, DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0,0h:00m:04s,0h:00m:04s,0h:00m:00s,0h:00m:00s,   149 MB,     2 MB,     1 MB,     0 MB,     0 MB
+work, MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   151 MB,     0 MB,     0 MB,     0 MB,     0 MB
+work, MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0,0h:00m:01s,0h:00m:01s,-,0h:00m:00s,   151 MB,     1 MB,     1 MB,     0 MB,     0 MB
+work, MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   151 MB,     0 MB,     0 MB,     0 MB,     0 MB
+work, MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0,0h:00m:01s,0h:00m:01s,-,0h:00m:00s,   151 MB,     0 MB,     0 MB,     0 MB,     0 MB
+work, DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0,0h:00m:02s,0h:00m:02s,-,0h:00m:00s,   151 MB,     0 MB,     0 MB,     0 MB,     0 MB
+work, DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0,0h:00m:05s,0h:00m:05s,0h:00m:00s,0h:00m:00s,   151 MB,     2 MB,     1 MB,     0 MB,     0 MB

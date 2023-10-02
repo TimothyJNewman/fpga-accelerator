@@ -1,34 +1,34 @@
 {
 "Synplify Pro (R) Job Log" : {
-	"Date" : "07:16:15    02-Oct-2023",
+	"Date" : "17:37:21    02-Oct-2023",
 	"Working Directory" : "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1",
 	"Install" : "C:/lscc/radiant/2023.1/synpbase"
 },
 "impl_1" :{
-   "Start Time" : "07:14:17",
-   "Runtime" : "01m:58s",
-   "Executable Run Time" : "01m:56s",
+   "Start Time" : "17:34:40",
+   "Runtime" : "02m:41s",
+   "Executable Run Time" : "02m:38s",
    "synthesis" : {
-      "Start Time" : "07:14:17",
-      "Runtime" : "01m:58s",
-      "Executable Run Time" : "01m:56s",
+      "Start Time" : "17:34:40",
+      "Runtime" : "02m:41s",
+      "Executable Run Time" : "02m:38s",
       "compile" : {
-         "Start Time" : "07:14:17",
-         "Runtime" : "01m:19s",
-         "Executable Run Time" : "01m:18s",
+         "Start Time" : "17:34:40",
+         "Runtime" : "01m:47s",
+         "Executable Run Time" : "01m:45s",
          "compile_flow" : {
-            "Start Time" : "07:14:17",
-            "Runtime" : "01m:08s",
-            "Executable Run Time" : "01m:07s",
+            "Start Time" : "17:34:40",
+            "Runtime" : "01m:33s",
+            "Executable Run Time" : "01m:31s",
             "compiler" : {
                "executable" : "bin64/c_hdl.exe",
                "Run Directory" : "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1",
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "07:14:17",
-               "Run Time" : "01m:04s",
-               "Exe Run Time" : "01m:03s",
+               "Run Start Time" : "17:34:40",
+               "Run Time" : "01m:28s",
+               "Exe Run Time" : "01m:26s",
                "Memory Usage" : "-",
                "Up-to-date (run skipped)" : "no"
             },
@@ -38,9 +38,9 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "07:15:21",
-               "Run Time" : "04s",
-               "Exe Run Time" : "04s",
+               "Run Start Time" : "17:36:08",
+               "Run Time" : "05s",
+               "Exe Run Time" : "05s",
                "Memory Usage" : "-",
                "Up-to-date (run skipped)" : "no"
             }
@@ -51,26 +51,26 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "07:15:25",
-            "Run Time" : "11s",
-            "Exe Run Time" : "11s",
+            "Run Start Time" : "17:36:13",
+            "Run Time" : "14s",
+            "Exe Run Time" : "14s",
             "Memory Usage" : "-",
             "Up-to-date (run skipped)" : "no"
          }
       },
       "map" : {
-         "Start Time" : "07:15:37",
-         "Runtime" : "38s",
-         "Executable Run Time" : "38s",
+         "Start Time" : "17:36:28",
+         "Runtime" : "53s",
+         "Executable Run Time" : "53s",
          "fpga_mapper" : {
             "executable" : "bin64/m_gen_lattice.exe",
             "Run Directory" : "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1",
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "07:15:37",
-            "Run Time" : "38s",
-            "Exe Run Time" : "38s",
+            "Run Start Time" : "17:36:28",
+            "Run Time" : "53s",
+            "Exe Run Time" : "53s",
             "Memory Usage" : "-",
             "Up-to-date (run skipped)" : "no"
          }

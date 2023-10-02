@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
-<RadiantModule architecture="LIFCL" date="2023 10 02 06:37:39" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="ip" module="i2c_master" name="I2C_DPHY_2" package="CABGA256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.5.0">
+<RadiantModule architecture="LIFCL" date="2023 10 02 15:22:38" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="ip" module="i2c_master" name="I2C_DPHY_2" package="CABGA256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.5.0">
  <Package>
-  <File modified="2023 10 02 06:37:39" name="rtl/I2C_DPHY_2_bb.v" type="black_box_verilog"/>
-  <File modified="2023 10 02 06:37:39" name="I2C_DPHY_2.cfg" type="cfg"/>
-  <File modified="2023 10 02 06:37:39" name="misc/I2C_DPHY_2_tmpl.v" type="template_verilog"/>
-  <File modified="2023 10 02 06:37:39" name="misc/I2C_DPHY_2_tmpl.vhd" type="template_vhdl"/>
-  <File modified="2023 10 02 06:37:39" name="rtl/I2C_DPHY_2.v" type="top_level_verilog"/>
-  <File modified="2023 10 02 06:37:39" name="constraints/I2C_DPHY_2.ldc" type="timing_constraints"/>
-  <File modified="2023 10 02 06:37:39" name="testbench/dut_params.v" type="dependency_file"/>
-  <File modified="2023 10 02 06:37:39" name="testbench/dut_inst.v" type="dependency_file"/>
-  <File modified="2023 10 02 06:37:39" name="component.xml" type="IP-XACT_component"/>
-  <File modified="2023 10 02 06:37:39" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2023 10 02 15:22:37" name="rtl/I2C_DPHY_2_bb.v" type="black_box_verilog"/>
+  <File modified="2023 10 02 15:22:37" name="I2C_DPHY_2.cfg" type="cfg"/>
+  <File modified="2023 10 02 15:22:37" name="misc/I2C_DPHY_2_tmpl.v" type="template_verilog"/>
+  <File modified="2023 10 02 15:22:37" name="misc/I2C_DPHY_2_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 10 02 15:22:38" name="rtl/I2C_DPHY_2.v" type="top_level_verilog"/>
+  <File modified="2023 10 02 15:22:38" name="constraints/I2C_DPHY_2.ldc" type="timing_constraints"/>
+  <File modified="2023 10 02 15:22:38" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 10 02 15:22:38" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 10 02 15:22:38" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 10 02 15:22:38" name="design.xml" type="IP-XACT_design"/>
   <File modified="2023 04 17 12:26:19" name="testbench/i2c_slave_model.v" type="testbench_verilog"/>
   <File modified="2023 04 17 12:26:19" name="testbench/lscc_lmmi2apb.v" type="testbench_verilog"/>
   <File modified="2023 04 17 12:26:19" name="testbench/tb_lmmi_mst.v" type="testbench_verilog"/>

@@ -1,4 +1,4 @@
-#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile|-top|main|-layerid|0|-orig_srs|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\Lattice_Project_1_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\|-I|C:\\lscc\\radiant\\2023.1\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile|-top|main|-layerid|0|-orig_srs|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\Lattice_Project_1_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\PLL_1\\PLL_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\|-I|C:\\lscc\\radiant\\2023.1\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
 #CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\bin64\\c_ver.exe":1685564424
 #CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile":1691619046
 #CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v":1686793695
@@ -49,12 +49,13 @@
 #CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/rom/rtl/lscc_rom.v":1680687765
 #CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_sub.v":1562800650
 #CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1564990995
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1\\rtl\\MIPI_DPHY_1.v":1696122375
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1\\rtl\\DDR_MEM_1.v":1696126172
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2\\rtl\\MIPI_DPHY_2.v":1696122375
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\source\\impl_1\\main.v":1696227026
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1\\rtl\\I2C_DPHY_1.v":1696225017
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2\\rtl\\I2C_DPHY_2.v":1696225059
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1\\rtl\\MIPI_DPHY_1.v":1696260386
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1\\rtl\\DDR_MEM_1.v":1696256597
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2\\rtl\\MIPI_DPHY_2.v":1696260432
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\source\\impl_1\\main.v":1696263762
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1\\rtl\\I2C_DPHY_1.v":1696256571
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2\\rtl\\I2C_DPHY_2.v":1696256558
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\PLL_1\\PLL_1\\rtl\\PLL_1.v":1696264282
 #numinternalfiles:5
 #defaultlanguage:verilog
 0			"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v" verilog
@@ -104,6 +105,7 @@
 44			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v" verilog
 45			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_1\I2C_DPHY_1\rtl\I2C_DPHY_1.v" verilog
 46			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_2\I2C_DPHY_2\rtl\I2C_DPHY_2.v" verilog
+47			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v" verilog
 #Dependency Lists(Uses List)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
 1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
@@ -149,9 +151,10 @@
 41 -1
 42 -1
 43 -1
-44 42 41 43 45 46
+44 42 41 43 45 46 47
 45 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
 46 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+47 -1
 #Dependency Lists(Users Of)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
 1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
@@ -200,6 +203,7 @@
 44 -1
 45 44
 46 44
+47 44
 #Design Unit to File Association
 module work lscc_add_sub 2
 module work lscc_adder 2
@@ -302,6 +306,7 @@ module work MIPI_DPHY_2_ipgen_lscc_apb2lmmi 43
 module work main 44
 module work I2C_DPHY_1 45
 module work I2C_DPHY_2 46
+module work PLL_1 47
 module work I2C_DPHY_1_ipgen_lscc_i2c_master 45
 module work I2C_DPHY_1_ipgen_lscc_i2c_master_native 45
 module work I2C_DPHY_1_ipgen_lscc_apb2lmmi 45
@@ -334,6 +339,8 @@ module work I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm 46
 module work I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm_top 46
 module work I2C_DPHY_2_ipgen_lscc_i2c_master_controller 46
 module work I2C_DPHY_2_ipgen_lscc_i2c_master_lmmi 46
+module work PLL_1_ipgen_lscc_pll 47
+module work PLL_1_ipgen_lscc_apb2lmmi 47
 #Unbound instances to file Association.
 inst work SP32K SP32K 38
 inst work SP16KA SP16KA 38

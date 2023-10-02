@@ -192,6 +192,32 @@
                 </ipxact:wire>
             </ipxact:port>
             <ipxact:port>
+                <ipxact:name>hs_tx_cil_ready_o</ipxact:name>
+                <ipxact:displayName>hs_tx_cil_ready_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>data_lane_ss_o</ipxact:name>
+                <ipxact:displayName>data_lane_ss_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
                 <ipxact:name>clk_p_io</ipxact:name>
                 <ipxact:displayName>clk_p_io</ipxact:displayName>
                 <ipxact:wire>
@@ -241,13 +267,6 @@
             <ipxact:port>
                 <ipxact:name>pd_dphy_i</ipxact:name>
                 <ipxact:displayName>pd_dphy_i</ipxact:displayName>
-                <ipxact:wire>
-                    <ipxact:direction>in</ipxact:direction>
-                </ipxact:wire>
-            </ipxact:port>
-            <ipxact:port>
-                <ipxact:name>txclk_hsgate_i</ipxact:name>
-                <ipxact:displayName>txclk_hsgate_i</ipxact:displayName>
                 <ipxact:wire>
                     <ipxact:direction>in</ipxact:direction>
                 </ipxact:wire>
@@ -330,8 +349,8 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2023 10 01 02:06:15</lsccip:createdTimestamp>
-            <lsccip:radiantBuild>&quot;Lattice Radiant Software&quot; (64-bit) 2023.1.0.43.3</lsccip:radiantBuild>
+            <lsccip:createdTimestamp>2023 10 02 16:27:12</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>&quot;Lattice Radiant Software&quot; (64-bit) 2023.1.1.200.1</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>
 </ipxact:component>

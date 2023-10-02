@@ -12,7 +12,7 @@ Hostname: DESKTOP-TOAOPO9
 
 Implementation : impl_1
 
-# Written on Mon Oct  2 07:15:35 2023
+# Written on Mon Oct  2 17:36:26 2023
 
 ##### DESIGN INFO #######################################################
 
@@ -24,7 +24,7 @@ Constraint File(s):      "C:\Users\timot\Documents\Programming\fpga-accelerator\
 
 ##### SUMMARY ############################################################
 
-Found 0 issues in 0 out of 46 constraints
+Found 0 issues in 0 out of 47 constraints
 
 
 ##### DETAILS ############################################################
@@ -38,10 +38,13 @@ Starting                                                    Ending              
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                      System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
 System                                                      main|DDR_MEM_1_sync_clk_i_inferred_clock                    |     5.000            |     No paths         |     No paths         |     No paths                         
+PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock      |     5.000            |     No paths         |     No paths         |     No paths                         
 DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
 DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
-main|I2C_DPHY_2_clk_i_inferred_clock                        main|I2C_DPHY_2_clk_i_inferred_clock                        |     5.000            |     No paths         |     No paths         |     No paths                         
-main|I2C_DPHY_1_clk_i_inferred_clock                        main|I2C_DPHY_1_clk_i_inferred_clock                        |     5.000            |     No paths         |     No paths         |     No paths                         
+main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
+main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  |     5.000            |     No paths         |     No paths         |     No paths                         
+main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
+main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  |     5.000            |     No paths         |     No paths         |     No paths                         
 main|DDR_MEM_1_sync_clk_i_inferred_clock                    System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
 main|DDR_MEM_1_sync_clk_i_inferred_clock                    DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 main|DDR_MEM_1_sync_clk_i_inferred_clock                    main|DDR_MEM_1_sync_clk_i_inferred_clock                    |     5.000            |     No paths         |     No paths         |     No paths                         
@@ -124,6 +127,7 @@ p:MIPI_DPHY_2_data_p_io[2] (bidir end point)
 p:MIPI_DPHY_2_data_p_io[2] (bidir start point)
 p:MIPI_DPHY_2_data_p_io[3] (bidir end point)
 p:MIPI_DPHY_2_data_p_io[3] (bidir start point)
+p:PLL_1_clki_i
 p:dq_dqs0_io[0] (bidir end point)
 p:dq_dqs0_io[0] (bidir start point)
 p:dq_dqs0_io[1] (bidir end point)

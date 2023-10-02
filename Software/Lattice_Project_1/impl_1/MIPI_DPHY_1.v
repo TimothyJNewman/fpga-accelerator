@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE 
-// Netlist written on Mon Oct  2 07:13:50 2023
+// Netlist written on Mon Oct  2 17:34:07 2023
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/lscc/radiant/2023.1/ip/avant/fifo/rtl/lscc_fifo.v"
@@ -143,10 +143,8 @@
 
 module MIPI_DPHY_1 (sync_clk_i, sync_rst_i, lmmi_clk_i, lmmi_resetn_i, 
             lmmi_wdata_i, lmmi_wr_rdn_i, lmmi_offset_i, lmmi_request_i, 
-            lmmi_ready_o, lmmi_rdata_o, lmmi_rdata_valid_o, hs_rx_clk_en_i, 
-            hs_rx_data_en_i, hs_data_des_en_i, hs_rx_data_o, hs_rx_data_sync_o, 
-            lp_rx_en_i, lp_rx_data_p_o, lp_rx_data_n_o, lp_rx_clk_p_o, 
-            lp_rx_clk_n_o, pll_lock_i, clk_p_io, clk_n_io, data_p_io, 
+            lmmi_ready_o, lmmi_rdata_o, lmmi_rdata_valid_o, hs_rx_data_o, 
+            hs_rx_data_sync_o, pll_lock_i, clk_p_io, clk_n_io, data_p_io, 
             data_n_io, pd_dphy_i, clk_byte_o, ready_o) /* synthesis cpe_box=1 */ ;
     input sync_clk_i;
     input sync_rst_i;
@@ -159,16 +157,8 @@ module MIPI_DPHY_1 (sync_clk_i, sync_rst_i, lmmi_clk_i, lmmi_resetn_i,
     output lmmi_ready_o;
     output [3:0]lmmi_rdata_o;
     output lmmi_rdata_valid_o;
-    input hs_rx_clk_en_i;
-    input hs_rx_data_en_i;
-    input hs_data_des_en_i;
     output [31:0]hs_rx_data_o;
     output [3:0]hs_rx_data_sync_o;
-    input lp_rx_en_i;
-    output [3:0]lp_rx_data_p_o;
-    output [3:0]lp_rx_data_n_o;
-    output lp_rx_clk_p_o;
-    output lp_rx_clk_n_o;
     input pll_lock_i;
     inout clk_p_io;
     inout clk_n_io;

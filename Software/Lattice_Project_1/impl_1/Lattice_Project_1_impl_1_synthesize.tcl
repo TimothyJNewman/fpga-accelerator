@@ -10,7 +10,7 @@ set para(prj_dir) "C:/Users/timot/Documents/Programming/fpga-accelerator/Softwar
 # synthesize VMs
 # propgate constraints
 file delete -force -- Lattice_Project_1_impl_1_cpe.ldc
-run_engine_newmsg cpe -f "Lattice_Project_1_impl_1.cprj" "MIPI_DPHY_1.cprj" "DDR_MEM_1.cprj" "MIPI_DPHY_2.cprj" "I2C_DPHY_1.cprj" "I2C_DPHY_2.cprj" -a "LIFCL"  -o Lattice_Project_1_impl_1_cpe.ldc
+run_engine_newmsg cpe -f "Lattice_Project_1_impl_1.cprj" "MIPI_DPHY_1.cprj" "DDR_MEM_1.cprj" "MIPI_DPHY_2.cprj" "I2C_DPHY_1.cprj" "I2C_DPHY_2.cprj" "PLL_1.cprj" -a "LIFCL"  -o Lattice_Project_1_impl_1_cpe.ldc
 # synthesize top design
 file delete -force -- Lattice_Project_1_impl_1.vm Lattice_Project_1_impl_1.ldc
 run_engine synpwrap -prj "Lattice_Project_1_impl_1_synplify.tcl" -log "Lattice_Project_1_impl_1.srf"

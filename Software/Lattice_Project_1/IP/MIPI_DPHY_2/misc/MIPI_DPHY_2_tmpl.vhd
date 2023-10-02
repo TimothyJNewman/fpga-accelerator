@@ -20,13 +20,14 @@ component MIPI_DPHY_2 is
         lp_tx_data_en_i: in std_logic;
         lp_tx_clk_p_i: in std_logic;
         lp_tx_clk_n_i: in std_logic;
+        hs_tx_cil_ready_o: out std_logic_vector(3 downto 0);
+        data_lane_ss_o: out std_logic_vector(3 downto 0);
         clk_p_io: inout std_logic;
         clk_n_io: inout std_logic;
         data_p_io: inout std_logic_vector(3 downto 0);
         data_n_io: inout std_logic_vector(3 downto 0);
         usrstdby_i: in std_logic;
         pd_dphy_i: in std_logic;
-        txclk_hsgate_i: in std_logic;
         pll_lock_o: out std_logic;
         clk_byte_o: out std_logic;
         ready_o: out std_logic
@@ -54,13 +55,14 @@ __: MIPI_DPHY_2 port map(
     lp_tx_data_en_i=>,
     lp_tx_clk_p_i=>,
     lp_tx_clk_n_i=>,
+    hs_tx_cil_ready_o=>,
+    data_lane_ss_o=>,
     clk_p_io=>,
     clk_n_io=>,
     data_p_io=>,
     data_n_io=>,
     usrstdby_i=>,
     pd_dphy_i=>,
-    txclk_hsgate_i=>,
     pll_lock_o=>,
     clk_byte_o=>,
     ready_o=>

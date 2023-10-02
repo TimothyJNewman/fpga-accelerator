@@ -12,6 +12,7 @@ add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-acc
 add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v"
 add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v"
 add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v"
 
 
 #implementation: "impl_1"
@@ -23,7 +24,7 @@ impl -add C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
 set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2}
+set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1}
 
 #device options
 set_option -technology LIFCL

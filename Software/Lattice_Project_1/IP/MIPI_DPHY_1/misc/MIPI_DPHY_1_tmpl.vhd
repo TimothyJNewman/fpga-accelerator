@@ -11,16 +11,8 @@ component MIPI_DPHY_1 is
         lmmi_ready_o: out std_logic;
         lmmi_rdata_o: out std_logic_vector(3 downto 0);
         lmmi_rdata_valid_o: out std_logic;
-        hs_rx_clk_en_i: in std_logic;
-        hs_rx_data_en_i: in std_logic;
-        hs_data_des_en_i: in std_logic;
         hs_rx_data_o: out std_logic_vector(31 downto 0);
         hs_rx_data_sync_o: out std_logic_vector(3 downto 0);
-        lp_rx_en_i: in std_logic;
-        lp_rx_data_p_o: out std_logic_vector(3 downto 0);
-        lp_rx_data_n_o: out std_logic_vector(3 downto 0);
-        lp_rx_clk_p_o: out std_logic;
-        lp_rx_clk_n_o: out std_logic;
         pll_lock_i: in std_logic;
         clk_p_io: inout std_logic;
         clk_n_io: inout std_logic;
@@ -44,16 +36,8 @@ __: MIPI_DPHY_1 port map(
     lmmi_ready_o=>,
     lmmi_rdata_o=>,
     lmmi_rdata_valid_o=>,
-    hs_rx_clk_en_i=>,
-    hs_rx_data_en_i=>,
-    hs_data_des_en_i=>,
     hs_rx_data_o=>,
     hs_rx_data_sync_o=>,
-    lp_rx_en_i=>,
-    lp_rx_data_p_o=>,
-    lp_rx_data_n_o=>,
-    lp_rx_clk_p_o=>,
-    lp_rx_clk_n_o=>,
     pll_lock_i=>,
     clk_p_io=>,
     clk_n_io=>,

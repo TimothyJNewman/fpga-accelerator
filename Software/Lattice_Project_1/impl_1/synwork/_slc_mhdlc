@@ -7,4 +7,5 @@ I2C_DPHY_1
 I2C_DPHY_2_ipgen_lscc_i2c_master_arbtr
 I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm_top
 I2C_DPHY_2
+PLL_1
 main

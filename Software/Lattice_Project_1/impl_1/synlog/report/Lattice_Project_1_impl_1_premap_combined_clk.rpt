@@ -7,13 +7,14 @@
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 8 clock pin(s) of sequential element(s)
-0 instances converted, 8 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 582 clock pin(s) of sequential element(s)
+0 instances converted, 582 sequential instances remain driven by gated/generated clocks
 
 ================================================================================================ Gated/Generated Clocks ================================================================================================
 Clock Tree ID     Driving Element                                                        Drive Element Type     Unconverted Fanout     Sample Instance                                    Explanation                   
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT     ECLKDIV                8                      DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]     Clock Optimization not enabled
+@KP:ckid0_31      PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP                PLL                    574                    ENCRYPTED                                          Clock Optimization not enabled
+@KP:ckid0_32      DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT     ECLKDIV                8                      DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]     Clock Optimization not enabled
 ========================================================================================================================================================================================================================
 
 

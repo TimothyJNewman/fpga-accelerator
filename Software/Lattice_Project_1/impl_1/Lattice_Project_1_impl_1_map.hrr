@@ -5,7 +5,7 @@ Report for cell main
                                   cell	      count    Res Usage(%)
                                   LUT4	          3        100.0
                                LUTGATE	          3        100.0
-                                 IOBUF	         45        100.0
+                                 IOBUF	         46        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                              DDR_MEM_1	          1         0.0
@@ -13,12 +13,13 @@ SUB MODULES
                             I2C_DPHY_2	          1         0.0
                            MIPI_DPHY_1	          1         0.0
                            MIPI_DPHY_2	          1         0.0
+                                 PLL_1	          1         0.0
 ---------------------------------------------------
 Report for cell DDR_MEM_1
    Instance path: main/DDR_MEM_1_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	         18        40.0
+                                 IOBUF	         18        39.1
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
 DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0	          1         0.0
@@ -27,7 +28,7 @@ Report for cell DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
    Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	         18        40.0
+                                 IOBUF	         18        39.1
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
      DDR_MEM_1_ipgen_common_logic_2s_2	          1         0.0
@@ -46,13 +47,13 @@ Report for cell DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
    Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          9        20.0
+                                 IOBUF	          9        19.6
 ---------------------------------------------------
 Report for cell DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0
    Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          9        20.0
+                                 IOBUF	          9        19.6
 ---------------------------------------------------
 Report for cell DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK
    Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn
@@ -115,7 +116,7 @@ Report for cell I2C_DPHY_1
    Instance path: main/I2C_DPHY_1_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          2         4.4
+                                 IOBUF	          2         4.3
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                       secured_design_1	          1         0.0
@@ -124,7 +125,7 @@ Report for cell secured_design_1
    Instance path: main/I2C_DPHY_1_inst/lscc_i2c_master_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          2         4.4
+                                 IOBUF	          2         4.3
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                       secured_design_2	          1         0.0
@@ -133,13 +134,13 @@ Report for cell secured_design_2
    Instance path: main/secured_instance_2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          2         4.4
+                                 IOBUF	          2         4.3
 ---------------------------------------------------
 Report for cell I2C_DPHY_2
    Instance path: main/I2C_DPHY_2_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          2         4.4
+                                 IOBUF	          2         4.3
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                       secured_design_3	          1         0.0
@@ -148,7 +149,7 @@ Report for cell secured_design_3
    Instance path: main/I2C_DPHY_2_inst/lscc_i2c_master_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          2         4.4
+                                 IOBUF	          2         4.3
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                       secured_design_4	          1         0.0
@@ -157,4 +158,19 @@ Report for cell secured_design_4
    Instance path: main/secured_instance_4
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOBUF	          2         4.4
+                                 IOBUF	          2         4.3
+---------------------------------------------------
+Report for cell PLL_1
+   Instance path: main/PLL_1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          1         2.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+       PLL_1_ipgen_lscc_pll_Z26_layer0	          1         0.0
+---------------------------------------------------
+Report for cell PLL_1_ipgen_lscc_pll_Z26_layer0
+   Instance path: main/PLL_1_inst/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          1         2.2
