@@ -1,0 +1,157 @@
+Runtime Summary:
+================
+
+	* Library: work, DesignUnit: DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
+		Hardware Generation Phase   : 0h:00m:01s
+
+	* Library: work, DesignUnit: DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
+		Hardware Generation Phase   : 0h:00m:04s
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: main
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_Z25_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_native_Z24_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_lmmi_Z23_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_controller_24s_ON_32
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm_top
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_byte_rx_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_byte_tx_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_arbtr
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_bus_cntrl_fsm_top_24s_ON_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_stop_gen_10s_24s_113s_32s_13s_0_1_2_3
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_master_start_gen_Z22_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_delay_gen_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_sclk_gen
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_2_ipgen_lscc_i2c_glitch_filter_24s_41s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_Z21_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_native_Z20_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_lmmi_Z19_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z18_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z17_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_soft_fifo_Z16_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z15_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_fwft_fabric_noreg_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z14_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z13_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_soft_fifo_Z12_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z11_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_fwft_fabric_reg_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_controller_24s_ON_32
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_cntrl_fsm_top
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_byte_rx_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_byte_tx_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_cntrl_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_arbtr
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_bus_cntrl_fsm_top_24s_ON_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_stop_gen_10s_24s_113s_32s_13s_0_1_2_3
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_master_start_gen_Z10_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_delay_gen_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_sclk_gen
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: I2C_DPHY_1_ipgen_lscc_i2c_glitch_filter_24s_41s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_2
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DPHY_Z9_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DPHY_Z6_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_common_logic_2s_2
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_mem_sync
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ODDRX2
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ODDRX1
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: OSHX2
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ODDRX2DQ
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: IDDRX2DQ
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DELAYB
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: TSHX2DQS
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: TSHX2DQ
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ODDRX2DQS
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: BB
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DQSBUF
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDRDLL
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ECLKSYNC
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ECLKDIV
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
+			Optimization Phase: Negligible CPU time

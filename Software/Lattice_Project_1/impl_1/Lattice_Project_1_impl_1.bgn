@@ -1,0 +1,74 @@
+BITGEN: Bitstream Generator Radiant Software (64-bit) 2023.1.1.200.1
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Oct  2 07:26:14 2023
+
+
+Command: bitgen -w -g REGISTER_INIT:ON -s C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/security_setting/Lattice_Project_1.secproj -gui Lattice_Project_1_impl_1.udb 
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                        DONE_OD  |                            ON*  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                           OFF*  |
++---------------------------------+---------------------------------+
+|               EARLY_IO_RELEASE  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                  REGISTER_INIT  |                           ON**  |
++---------------------------------+---------------------------------+
+|   MASTER_PREAMBLE_TIMER_CYCLES  |                        600000*  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_I3C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                      DONE_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                     INITN_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                  PROGRAMN_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                        TRANSFR  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                           3.5*  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           OFF*  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                  CONFIG_IOSLEW  |                          SLOW*  |
++---------------------------------+---------------------------------+
+|                        WAKE_UP  |              ENABLE_DONE_SYNC*  |
++---------------------------------+---------------------------------+
+|                       BOOTMODE  |                         DUAL**  |
++---------------------------------+---------------------------------+
+|         CONFIGIO_VOLTAGE_BANK0  |                            3.3  |
++---------------------------------+---------------------------------+
+|         CONFIGIO_VOLTAGE_BANK1  |                            3.3  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 10.1.
+ 
+Saving bit stream in "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.bit".
+Bitstream generation complete!

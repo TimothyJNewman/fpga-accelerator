@@ -1,0 +1,12 @@
+    I2C_DPHY_1 u_I2C_DPHY_1(.scl_io(scl_io),
+        .sda_io(sda_io),
+        .clk_i(clk_i),
+        .rst_n_i(rst_n_i),
+        .lmmi_request_i(lmmi_request_i),
+        .lmmi_wr_rdn_i(lmmi_wr_rdn_i),
+        .lmmi_offset_i(lmmi_offset_i),
+        .lmmi_wdata_i(lmmi_wdata_i),
+        .lmmi_rdata_o(lmmi_rdata_o),
+        .lmmi_rdata_valid_o(lmmi_rdata_valid_o),
+        .lmmi_ready_o(lmmi_ready_o),
+        .int_o(int_o));

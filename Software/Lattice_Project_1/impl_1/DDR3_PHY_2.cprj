@@ -1,0 +1,6 @@
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR3_PHY_2/rtl/DDR3_PHY_2.v"
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR3_PHY_2" "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1"
+-top DDR3_PHY_2
+-a "LIFCL"

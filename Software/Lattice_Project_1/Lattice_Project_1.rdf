@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2023.1.1.200.1" title="Lattice_Project_1" device="LIFCL-40-7BG256C" performance_grade="7_High-Performance_1.0V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="main" top="main"/>
+        <Source name="IP/MIPI_DPHY_1/MIPI_DPHY_1.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="IP/DDR_MEM_1/DDR_MEM_1/DDR_MEM_1.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="IP/MIPI_DPHY_2/MIPI_DPHY_2.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="IP/I2C_CAM/I2C_CAM.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="IP/DDR3_MC_2/DDR3_MC_2.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="IP/DDR3_PHY_2/DDR3_PHY_2.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/main.v" type="Verilog" type_short="Verilog">
+            <Options top_module="main"/>
+        </Source>
+        <Source name="IP/I2C_DPHY_1/I2C_DPHY_1/I2C_DPHY_1.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="IP/I2C_DPHY_2/I2C_DPHY_2/I2C_DPHY_2.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="Config.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="impl_1/Lattice_Project_1_impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/Config.ldc" type="LSE Design Constraints File" type_short="LDC" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/Lattice_Project_1_impl_1.ldc" type="LSE Design Constraints File" type_short="LDC" excluded="TRUE">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Lattice_Project_11.sty"/>
+</RadiantProject>

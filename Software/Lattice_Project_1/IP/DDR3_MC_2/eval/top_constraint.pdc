@@ -1,0 +1,70 @@
+# Below are constraints for the clocks of DDR3 SDRAM Controller
+# You need to copy these to your top level constraints 
+# Optional: You can replace the * with the actual instance path from top-level RTL in the FPGA design
+
+# Constraints for PLL reference clock.
+create_clock -name {clk_i} -period 10.000 [get_ports clk_i]
+
+# Constraint for the PLL-generated clocks
+create_generated_clock -name {clkop} -source [get_pins */lscc_ddr3_mc_inst/EN_PLL.u0_ddr_clks/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK] -divide_by 1 -multiply_by 4 [get_pins */lscc_ddr3_mc_inst/EN_PLL.u0_ddr_clks/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP]
+create_generated_clock -name {clkos} -source [get_pins */lscc_ddr3_mc_inst/EN_PLL.u0_ddr_clks/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK] -divide_by 1 [get_pins */lscc_ddr3_mc_inst/EN_PLL.u0_ddr_clks/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS]
+
+# Constrain the clocks generated in the DDR3 SDRAM PHY
+create_generated_clock -name {eclkout_w} -source [get_pins */lscc_ddr3_mc_inst/EN_PLL.u0_ddr_clks/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP] -divide_by 1 [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT]
+create_generated_clock -name {sclk_o} -source [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT] -divide_by 4 [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT]
+
+# The LOCK signals from PLL and DDRDLL only toggle once during reset and once during loss of lock.
+# The DDR3_MC halts the data path in both cases.
+# Thus the timing from the LOCK to the double FF synchronizer can be ignored.
+set_false_path -from [get_pins */lscc_ddr3_mc_inst/EN_PLL.u0_ddr_clks/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/LOCK] -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/pll_lock_d1*.ff_inst/DF]
+set_false_path -from [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u0_DDRDLL.DDRDLL_inst/LOCK] -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/dll_lock_d1*.ff_inst/DF]
+
+# The MEMSYNC logic stops the eclkout_w and sclk_o during the reset of DDR primitives as follows:
+# Stop the eclkout_w and sclk_o, wait for 4 clkos, assert reset for 4 clkos, wait for 4 clkos, resume eclkout_w and sclk_o.
+# Thus, no need to be concerned on the reset timing requirement for ECLKDIV and DQSBUF.
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVRST]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/u0_DQSBUF.DQSBUF_inst/RST]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/u0_DQSBUF.DQSBUF_inst/RST]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/DW_24.u1_dq_dqs_dm_unit/u0_DQSBUF.DQSBUF_inst/RST]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/DW_32.u1_dq_dqs_dm_unit/u0_DQSBUF.DQSBUF_inst/RST]
+
+# Constraints for double FF synchronizer.
+set_max_delay -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/dll_lock_d2*.ff_inst/DF] 1
+set_max_delay -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/pll_lock_d2*.ff_inst/DF] 1
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/ready_d1*.ff_inst/DF]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/ready_d2*.ff_inst/DF]
+# Group the ready signal from clkos domain together with the diuble FF synchronizer in sclk_o domain.
+ldc_create_group -name ddrmem_ready -bbox {2 1} [get_cells {*/lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/ready.ff_inst */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/ready_d1*.ff_inst */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/ready_d2*.ff_inst}]
+
+# The timing of DDR IOs are guaranteed by Hardware and is using the dedicated routing path to the DDR primitives.
+set_false_path -to [get_ports em_ddr_dm_o*]
+set_false_path -to [get_ports em_ddr_clk_o*]
+set_false_path -to [get_ports em_ddr_cke_o*]
+set_false_path -to [get_ports em_ddr_cs_n_o*]
+set_false_path -to [get_ports em_ddr_ras_n_o]
+set_false_path -to [get_ports em_ddr_cas_n_o]
+set_false_path -to [get_ports em_ddr_we_n_o]
+set_false_path -to [get_ports em_ddr_odt_o*]
+set_false_path -to [get_ports em_ddr_addr_o*]
+set_false_path -to [get_ports em_ddr_ba_o*]
+set_false_path -to [get_ports em_ddr_reset_n_o]
+set_false_path -to [get_ports em_ddr_data_io*] -from [get_ports em_ddr_data_io*]
+set_false_path -to [get_ports em_ddr_dqs_io*] -from [get_ports em_ddr_dqs_io*]
+# Constraints for double FF that synchronizes the de-assertion of reset.
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/mem_sync_rst_d1*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/u1_common_logic/u1_mem_sync/mem_sync_rst_d2*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/ddrmem_rst_n_d1*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/U1_ddr3_sdram_phy/phy_wrapper_lscc_ddr_mem/DDR_MEM_32_BIT.u0_lscc_ddr_mem_inst/ddrmem_rst_n_d2*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/ddr3mc_rst_n_d1*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_ddr3_mc_inst/NATIVE_ITF.u0_ddr3_mc_wrapper/ddr3mc_rst_n_d2*.ff_inst/LSR]
+# Constraints on other eval_top ports, you dont need these constraints because these are outside of the DDR3_MC.
+set_false_path -to [get_pins rst_d1*.ff_inst/LSR]
+set_false_path -to [get_pins rst_d2*.ff_inst/LSR]
+set_false_path -to [get_pins mem_rst_n*.ff_inst/DF]
+set_false_path -to [get_pins lfsr_in_en_r*.ff_inst/DF]
+set_false_path -to [get_pins lfsr_out_en_r*.ff_inst/DF]
+set_false_path -to [get_ports lfsr_out_o]
+
+# This is constraint just to check that there is no unexpected reset connection
+# The DDR3_MC has double registers that synchronizes the reset de-assertion
+set_input_delay -clock clk_i -max 5 [get_ports rst_n_i]

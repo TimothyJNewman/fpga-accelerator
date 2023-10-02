@@ -1,0 +1,36 @@
+#Start recording tcl command: 8/11/2023 20:30:29
+#Project Location: C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
+prj_open "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/Lattice_Project_1.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_device -part LIFCL-40-7SG72C -performance "7_High-Performance_1.0V"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_device -part LIFCL-40-7BG256C -performance "7_High-Performance_1.0V"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 8/12/2023 03:08:53

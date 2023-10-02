@@ -1,0 +1,12 @@
+@P:  Worst Slack : 1.949
+@P:  DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock - Estimated Frequency : NA
+@P:  DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock - Estimated Period : NA
+@P:  DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock - Requested Period : 5.000
+@P:  DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock - Slack : NA
+@P:  System - Estimated Frequency : 327.8 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 3.051
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : 1.949
+@P:  CPU Time : 0h:00m:36s

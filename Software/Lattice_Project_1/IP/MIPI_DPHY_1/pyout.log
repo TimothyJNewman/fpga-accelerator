@@ -1,0 +1,323 @@
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.43883959999999433
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\constraints\MIPI_DPHY_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\constraints\MIPI_DPHY_2.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.40524150000010195
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\constraints\DDR_MEM_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.ipx 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\I2C_CAM.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\misc\I2C_CAM_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\misc\I2C_CAM_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\constraints\I2C_CAM.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\I2C_CAM.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\constraints\MIPI_DPHY_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\constraints\MIPI_DPHY_2.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.4208535000016127
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\constraints\DDR_MEM_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.ipx 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\I2C_CAM.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\misc\I2C_CAM_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\misc\I2C_CAM_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\constraints\I2C_CAM.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\I2C_CAM.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\constraints\MIPI_DPHY_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\constraints\MIPI_DPHY_2.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.40970949999973527
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.4697662999988097
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.43112959999962186
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.595476199998302
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\constraints\DDR_MEM_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.43534729999919364
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\constraints\DDR_MEM_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.ipx 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\I2C_CAM.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\misc\I2C_CAM_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\misc\I2C_CAM_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\constraints\I2C_CAM.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\I2C_CAM.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\misc\MIPI_DPHY_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\constraints\MIPI_DPHY_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\MIPI_DPHY_1.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\misc\MIPI_DPHY_2_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\constraints\MIPI_DPHY_2.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\MIPI_DPHY_2.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.45130760000029113
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.41063969999959227
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\constraints\DDR_MEM_1.ldc 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_params.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\testbench\dut_inst.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\design.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\component.xml 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.42280720000053407
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 4, 'O_DIV': {'CLKOP': 4, 'CLKOS': 16}, 'BWFAC': 7.943282347242733, 'fbk_div': 16, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.07270816082859365, 'BW_3DB': 12.589254117941802, 'BW_OPL': 8.317637711026794, 'PM_3DB': 64.65903740448465}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1_bb.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\DDR_MEM_1.cfg 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.v 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\misc\DDR_MEM_1_tmpl.vhd 
+Writing C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v 

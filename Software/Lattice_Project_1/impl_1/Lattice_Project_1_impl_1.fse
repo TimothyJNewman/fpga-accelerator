@@ -1,0 +1,274 @@
+
+fsm_encoding {49778477815} onehot
+
+fsm_state_encoding {49778477815} INIT {000000001}
+
+fsm_state_encoding {49778477815} READY {000000010}
+
+fsm_state_encoding {49778477815} UDDCNTLN {000000100}
+
+fsm_state_encoding {49778477815} UPDATE_UDDCNTLN {000001000}
+
+fsm_state_encoding {49778477815} PAUSE {000010000}
+
+fsm_state_encoding {49778477815} UPDATE_PAUSE {000100000}
+
+fsm_state_encoding {49778477815} FREEZE {001000000}
+
+fsm_state_encoding {49778477815} STOP {010000000}
+
+fsm_state_encoding {49778477815} DDR {100000000}
+
+fsm_registers {49778477815} {cs_memsync[8]}  {cs_memsync[7]}  {cs_memsync[6]}  {cs_memsync[5]}  {cs_memsync[4]}  {cs_memsync[3]}  {cs_memsync[2]}  {cs_memsync[1]}  {cs_memsync[0]} 
+
+fsm_encoding {49778477814} sequential
+
+fsm_state_encoding {49778477814} 00 {00}
+
+fsm_state_encoding {49778477814} 01 {01}
+
+fsm_state_encoding {49778477814} 10 {10}
+
+fsm_registers {49778477814} {flag[1]}  {flag[0]} 
+
+fsm_encoding {4935174351713} sequential
+
+fsm_state_encoding {4935174351713} D_IDLE {00}
+
+fsm_state_encoding {4935174351713} D_ACT {01}
+
+fsm_state_encoding {4935174351713} D_DONE {10}
+
+fsm_registers {4935174351713} {delay_st_r[1]}  {delay_st_r[0]} 
+
+fsm_encoding {5246054460512} sequential
+
+fsm_state_encoding {5246054460512} IDLE {00}
+
+fsm_state_encoding {5246054460512} LOW {01}
+
+fsm_state_encoding {5246054460512} WAIT {10}
+
+fsm_state_encoding {5246054460512} HIGH {11}
+
+fsm_registers {5246054460512} {sclk_state_r[1]}  {sclk_state_r[0]} 
+
+fsm_encoding {5242414424111} onehot
+
+fsm_state_encoding {5242414424111} IDLE_STATE {0000001}
+
+fsm_state_encoding {5242414424111} WAIT_SCL1 {0000010}
+
+fsm_state_encoding {5242414424111} WAIT_START {0000100}
+
+fsm_state_encoding {5242414424111} DETECT {0001000}
+
+fsm_state_encoding {5242414424111} GEN_SDA0 {0010000}
+
+fsm_state_encoding {5242414424111} WAIT_SCL0 {0100000}
+
+fsm_state_encoding {5242414424111} HOLD_SCL0 {1000000}
+
+fsm_registers {5242414424111} {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {5244134441310} sequential
+
+fsm_state_encoding {5244134441310} 00 {00}
+
+fsm_state_encoding {5244134441310} 01 {01}
+
+fsm_state_encoding {5244134441310} 10 {10}
+
+fsm_registers {5244134441310} {state[1]}  {state[0]} 
+
+fsm_encoding {522232422329} onehot
+
+fsm_state_encoding {522232422329} IDLE_STATE {000000000001}
+
+fsm_state_encoding {522232422329} POL_STATE {000000000010}
+
+fsm_state_encoding {522232422329} START_STATE {000000000100}
+
+fsm_state_encoding {522232422329} SCL_EN_STATE {000000001000}
+
+fsm_state_encoding {522232422329} SLVADR_MSB_STATE {000000010000}
+
+fsm_state_encoding {522232422329} SLVADR_LSB_STATE {000000100000}
+
+fsm_state_encoding {522232422329} TX_STATE {000001000000}
+
+fsm_state_encoding {522232422329} RX_STATE {000010000000}
+
+fsm_state_encoding {522232422329} SCL_DISABLE_STATE {000100000000}
+
+fsm_state_encoding {522232422329} STOP_STATE {001000000000}
+
+fsm_state_encoding {522232422329} ARBT_WAIT {010000000000}
+
+fsm_state_encoding {522232422329} RS_10BIT_WAIT {100000000000}
+
+fsm_registers {522232422329} {state[11]}  {state[10]}  {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {521909419098} onehot
+
+fsm_state_encoding {521909419098} TX_IDLE {0000000001}
+
+fsm_state_encoding {521909419098} TX_BIT0 {0000000010}
+
+fsm_state_encoding {521909419098} TX_BIT1 {0000000100}
+
+fsm_state_encoding {521909419098} TX_BIT2 {0000001000}
+
+fsm_state_encoding {521909419098} TX_BIT3 {0000010000}
+
+fsm_state_encoding {521909419098} TX_BIT4 {0000100000}
+
+fsm_state_encoding {521909419098} TX_BIT5 {0001000000}
+
+fsm_state_encoding {521909419098} TX_BIT6 {0010000000}
+
+fsm_state_encoding {521909419098} TX_BIT7 {0100000000}
+
+fsm_state_encoding {521909419098} TX_RD_ACK {1000000000}
+
+fsm_registers {521909419098} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {521654416547} onehot
+
+fsm_state_encoding {521654416547} RX_IDLE {0000000001}
+
+fsm_state_encoding {521654416547} RX_BIT0 {0000000010}
+
+fsm_state_encoding {521654416547} RX_BIT1 {0000000100}
+
+fsm_state_encoding {521654416547} RX_BIT2 {0000001000}
+
+fsm_state_encoding {521654416547} RX_BIT3 {0000010000}
+
+fsm_state_encoding {521654416547} RX_BIT4 {0000100000}
+
+fsm_state_encoding {521654416547} RX_BIT5 {0001000000}
+
+fsm_state_encoding {521654416547} RX_BIT6 {0010000000}
+
+fsm_state_encoding {521654416547} RX_BIT7 {0100000000}
+
+fsm_state_encoding {521654416547} RX_WR_ACK {1000000000}
+
+fsm_registers {521654416547} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {534605446056} sequential
+
+fsm_state_encoding {534605446056} IDLE {00}
+
+fsm_state_encoding {534605446056} LOW {01}
+
+fsm_state_encoding {534605446056} WAIT {10}
+
+fsm_state_encoding {534605446056} HIGH {11}
+
+fsm_registers {534605446056} {sclk_state_r[1]}  {sclk_state_r[0]} 
+
+fsm_encoding {534241442415} onehot
+
+fsm_state_encoding {534241442415} IDLE_STATE {0000001}
+
+fsm_state_encoding {534241442415} WAIT_SCL1 {0000010}
+
+fsm_state_encoding {534241442415} WAIT_START {0000100}
+
+fsm_state_encoding {534241442415} DETECT {0001000}
+
+fsm_state_encoding {534241442415} GEN_SDA0 {0010000}
+
+fsm_state_encoding {534241442415} WAIT_SCL0 {0100000}
+
+fsm_state_encoding {534241442415} HOLD_SCL0 {1000000}
+
+fsm_registers {534241442415} {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {534413444134} sequential
+
+fsm_state_encoding {534413444134} 00 {00}
+
+fsm_state_encoding {534413444134} 01 {01}
+
+fsm_state_encoding {534413444134} 10 {10}
+
+fsm_registers {534413444134} {state[1]}  {state[0]} 
+
+fsm_encoding {532232422323} onehot
+
+fsm_state_encoding {532232422323} IDLE_STATE {000000000001}
+
+fsm_state_encoding {532232422323} POL_STATE {000000000010}
+
+fsm_state_encoding {532232422323} START_STATE {000000000100}
+
+fsm_state_encoding {532232422323} SCL_EN_STATE {000000001000}
+
+fsm_state_encoding {532232422323} SLVADR_MSB_STATE {000000010000}
+
+fsm_state_encoding {532232422323} SLVADR_LSB_STATE {000000100000}
+
+fsm_state_encoding {532232422323} TX_STATE {000001000000}
+
+fsm_state_encoding {532232422323} RX_STATE {000010000000}
+
+fsm_state_encoding {532232422323} SCL_DISABLE_STATE {000100000000}
+
+fsm_state_encoding {532232422323} STOP_STATE {001000000000}
+
+fsm_state_encoding {532232422323} ARBT_WAIT {010000000000}
+
+fsm_state_encoding {532232422323} RS_10BIT_WAIT {100000000000}
+
+fsm_registers {532232422323} {state[11]}  {state[10]}  {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {531909419092} onehot
+
+fsm_state_encoding {531909419092} TX_IDLE {0000000001}
+
+fsm_state_encoding {531909419092} TX_BIT0 {0000000010}
+
+fsm_state_encoding {531909419092} TX_BIT1 {0000000100}
+
+fsm_state_encoding {531909419092} TX_BIT2 {0000001000}
+
+fsm_state_encoding {531909419092} TX_BIT3 {0000010000}
+
+fsm_state_encoding {531909419092} TX_BIT4 {0000100000}
+
+fsm_state_encoding {531909419092} TX_BIT5 {0001000000}
+
+fsm_state_encoding {531909419092} TX_BIT6 {0010000000}
+
+fsm_state_encoding {531909419092} TX_BIT7 {0100000000}
+
+fsm_state_encoding {531909419092} TX_RD_ACK {1000000000}
+
+fsm_registers {531909419092} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {531654416541} onehot
+
+fsm_state_encoding {531654416541} RX_IDLE {0000000001}
+
+fsm_state_encoding {531654416541} RX_BIT0 {0000000010}
+
+fsm_state_encoding {531654416541} RX_BIT1 {0000000100}
+
+fsm_state_encoding {531654416541} RX_BIT2 {0000001000}
+
+fsm_state_encoding {531654416541} RX_BIT3 {0000010000}
+
+fsm_state_encoding {531654416541} RX_BIT4 {0000100000}
+
+fsm_state_encoding {531654416541} RX_BIT5 {0001000000}
+
+fsm_state_encoding {531654416541} RX_BIT6 {0010000000}
+
+fsm_state_encoding {531654416541} RX_BIT7 {0100000000}
+
+fsm_state_encoding {531654416541} RX_WR_ACK {1000000000}
+
+fsm_registers {531654416541} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

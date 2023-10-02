@@ -1,0 +1,215 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys HDL compiler and linker, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+50       C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_CAM\rtl\I2C_CAM.v (2023-10-01 02:06:14, N/A)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 52
+FID:  path (timestamp)
+0        C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v (2023-10-01 03:09:32)
+53       C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_1\I2C_DPHY_1\rtl\I2C_DPHY_1.v (2023-10-02 06:36:57)
+54       C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_2\I2C_DPHY_2\rtl\I2C_DPHY_2.v (2023-10-02 06:37:39)
+1        C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v (2023-10-01 02:06:15)
+2        C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v (2023-10-01 02:06:15)
+49       C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v (2023-10-02 07:10:26)
+3        C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl/lscc_fifo.v (2023-03-21 00:59:25)
+4        C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl/lscc_fifo_dc.v (2023-03-21 00:59:02)
+5        C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl/lscc_ram_dp.v (2023-04-19 03:16:42)
+6        C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl/lscc_ram_dp_true.v (2023-04-19 03:19:22)
+7        C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl/lscc_ram_dq.v (2023-04-19 03:19:54)
+8        C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl/lscc_rom.v (2023-04-05 10:42:45)
+9        C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl/lscc_adder.v (2019-08-05 08:40:57)
+10       C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl/lscc_add_sub.v (2023-05-08 03:30:52)
+11       C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl/lscc_complex_mult.v (2021-09-10 02:26:39)
+12       C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl/lscc_cntr.v (2019-08-05 08:41:47)
+13       C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_dpram/rtl/lscc_distributed_dpram.v (2022-11-25 02:34:14)
+14       C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_rom/rtl/lscc_distributed_rom.v (2022-11-25 02:58:52)
+15       C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_spram/rtl/lscc_distributed_spram.v (2022-11-25 02:57:37)
+16       C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl/lscc_mult_accumulate.v (2020-03-18 09:18:16)
+17       C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl/lscc_mult_add_sub.v (2020-03-18 09:17:43)
+18       C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v (2020-03-18 09:15:40)
+19       C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl/lscc_multiplier.v (2019-08-05 08:42:13)
+20       C:\lscc\radiant\2023.1\ip\pmi\../common/ram_shift_reg/rtl/lscc_shift_register.v (2022-10-07 02:25:14)
+21       C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl/lscc_subtractor.v (2019-08-05 08:43:15)
+22       C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v (2019-07-11 00:12:46)
+23       C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v (2019-07-11 00:13:20)
+24       C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v (2019-07-11 00:14:03)
+25       C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v (2019-07-11 00:14:35)
+26       C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v (2019-08-06 03:55:15)
+27       C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v (2019-08-06 03:55:15)
+28       C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v (2022-10-18 09:05:48)
+29       C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v (2019-08-06 03:55:15)
+30       C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v (2021-12-22 05:54:41)
+31       C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v (2021-12-22 05:57:43)
+32       C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v (2020-05-11 02:31:25)
+33       C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v (2019-07-11 00:15:11)
+34       C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v (2019-07-11 00:15:37)
+35       C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v (2019-07-11 00:16:06)
+36       C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v (2019-07-11 00:16:55)
+37       C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v (2022-02-16 02:51:13)
+38       C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v (2022-02-16 03:07:36)
+39       C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v (2022-02-16 02:51:54)
+40       C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v (2022-02-16 02:52:03)
+41       C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v (2022-02-16 02:52:13)
+42       C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v (2022-02-16 02:52:24)
+43       C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v (2019-07-11 00:17:30)
+44       C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v (2023-06-15 02:48:15)
+45       C:\lscc\radiant\2023.1\synpbase\lib\lucent\pmi_def.v (2023-05-31 21:20:45)
+46       C:\lscc\radiant\2023.1\synpbase\lib\vlog\hypermods.v (2023-05-31 21:20:56)
+47       C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_objects.v (2023-05-31 21:20:56)
+48       C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_pipes.svh (2023-05-31 21:20:56)
+
+*******************************************************************
+Unchanged modules: 133
+MID:  lib.cell.view
+0        work.DDR_MEM_1.verilog
+1        work.DDR_MEM_1_ipgen_common_logic.verilog
+2        work.DDR_MEM_1_ipgen_dq_dqs_dm_unit.verilog
+3        work.DDR_MEM_1_ipgen_lscc_apb2lmmi.verilog
+4        work.DDR_MEM_1_ipgen_lscc_ddr_mem.verilog
+5        work.DDR_MEM_1_ipgen_lscc_pll.verilog
+6        work.DDR_MEM_1_ipgen_mddrx2_4_ca.verilog
+7        work.DDR_MEM_1_ipgen_mddrx2_4_ck_cke_odt.verilog
+8        work.DDR_MEM_1_ipgen_mem_sync.verilog
+9        work.DDR_MEM_1_ipgen_moshx2_4_csn.verilog
+10       work.DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt.verilog
+11       work.DDR_MEM_1_ipgen_oddrx2_4_ck.verilog
+189      work.I2C_DPHY_1.verilog
+190      work.I2C_DPHY_1_ipgen_lscc_apb2lmmi.verilog
+191      work.I2C_DPHY_1_ipgen_lscc_delay_gen.verilog
+192      work.I2C_DPHY_1_ipgen_lscc_i2c_bus_cntrl_fsm_top.verilog
+193      work.I2C_DPHY_1_ipgen_lscc_i2c_glitch_filter.verilog
+194      work.I2C_DPHY_1_ipgen_lscc_i2c_master.verilog
+195      work.I2C_DPHY_1_ipgen_lscc_i2c_master_arbtr.verilog
+196      work.I2C_DPHY_1_ipgen_lscc_i2c_master_byte_rx_fsm.verilog
+197      work.I2C_DPHY_1_ipgen_lscc_i2c_master_byte_tx_fsm.verilog
+198      work.I2C_DPHY_1_ipgen_lscc_i2c_master_cntrl_fsm.verilog
+199      work.I2C_DPHY_1_ipgen_lscc_i2c_master_cntrl_fsm_top.verilog
+200      work.I2C_DPHY_1_ipgen_lscc_i2c_master_controller.verilog
+201      work.I2C_DPHY_1_ipgen_lscc_i2c_master_lmmi.verilog
+202      work.I2C_DPHY_1_ipgen_lscc_i2c_master_native.verilog
+203      work.I2C_DPHY_1_ipgen_lscc_i2c_master_start_gen.verilog
+204      work.I2C_DPHY_1_ipgen_lscc_i2c_master_stop_gen.verilog
+205      work.I2C_DPHY_1_ipgen_lscc_sclk_gen.verilog
+206      work.I2C_DPHY_2.verilog
+207      work.I2C_DPHY_2_ipgen_lscc_apb2lmmi.verilog
+208      work.I2C_DPHY_2_ipgen_lscc_delay_gen.verilog
+209      work.I2C_DPHY_2_ipgen_lscc_i2c_bus_cntrl_fsm_top.verilog
+210      work.I2C_DPHY_2_ipgen_lscc_i2c_glitch_filter.verilog
+211      work.I2C_DPHY_2_ipgen_lscc_i2c_master.verilog
+212      work.I2C_DPHY_2_ipgen_lscc_i2c_master_arbtr.verilog
+213      work.I2C_DPHY_2_ipgen_lscc_i2c_master_byte_rx_fsm.verilog
+214      work.I2C_DPHY_2_ipgen_lscc_i2c_master_byte_tx_fsm.verilog
+215      work.I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm.verilog
+216      work.I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm_top.verilog
+217      work.I2C_DPHY_2_ipgen_lscc_i2c_master_controller.verilog
+218      work.I2C_DPHY_2_ipgen_lscc_i2c_master_lmmi.verilog
+219      work.I2C_DPHY_2_ipgen_lscc_i2c_master_native.verilog
+220      work.I2C_DPHY_2_ipgen_lscc_i2c_master_start_gen.verilog
+221      work.I2C_DPHY_2_ipgen_lscc_i2c_master_stop_gen.verilog
+222      work.I2C_DPHY_2_ipgen_lscc_sclk_gen.verilog
+12       work.MIPI_DPHY_1.verilog
+13       work.MIPI_DPHY_1_ipgen_lscc_apb2lmmi.verilog
+14       work.MIPI_DPHY_1_ipgen_lscc_clock_divider.verilog
+15       work.MIPI_DPHY_1_ipgen_lscc_gddr_sync.verilog
+16       work.MIPI_DPHY_1_ipgen_lscc_mipi_dphy.verilog
+17       work.MIPI_DPHY_1_ipgen_lscc_mipi_dphy_soft_rx.verilog
+18       work.MIPI_DPHY_1_ipgen_lscc_mipi_dphy_soft_tx.verilog
+19       work.MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx.verilog
+20       work.MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_tx.verilog
+21       work.MIPI_DPHY_1_ipgen_lscc_pll.verilog
+22       work.MIPI_DPHY_2.verilog
+23       work.MIPI_DPHY_2_ipgen_lscc_apb2lmmi.verilog
+24       work.MIPI_DPHY_2_ipgen_lscc_clock_divider.verilog
+25       work.MIPI_DPHY_2_ipgen_lscc_gddr_sync.verilog
+26       work.MIPI_DPHY_2_ipgen_lscc_mipi_dphy.verilog
+27       work.MIPI_DPHY_2_ipgen_lscc_mipi_dphy_soft_rx.verilog
+28       work.MIPI_DPHY_2_ipgen_lscc_mipi_dphy_soft_tx.verilog
+29       work.MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_rx.verilog
+30       work.MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx.verilog
+31       work.MIPI_DPHY_2_ipgen_lscc_pll.verilog
+32       work.lscc_add_sub.verilog
+33       work.lscc_adder.verilog
+34       work.lscc_cntr.verilog
+35       work.lscc_complex_mult.verilog
+36       work.lscc_distributed_dpram.verilog
+37       work.lscc_distributed_rom.verilog
+38       work.lscc_distributed_spram.verilog
+39       work.lscc_fifo.verilog
+40       work.lscc_fifo_dc.verilog
+41       work.lscc_fifo_dc_fwft_fabric.verilog
+42       work.lscc_fifo_dc_hw_core.verilog
+43       work.lscc_fifo_dc_main.verilog
+44       work.lscc_fifo_fwft_fabric.verilog
+45       work.lscc_fifo_hw_core.verilog
+46       work.lscc_fifo_main.verilog
+47       work.lscc_fifo_mem.verilog
+48       work.lscc_fifo_mem_core.verilog
+49       work.lscc_fifo_mem_main.verilog
+50       work.lscc_hard_fifo.verilog
+51       work.lscc_hard_fifo_dc.verilog
+52       work.lscc_mult_accumulate.verilog
+53       work.lscc_mult_add_sub.verilog
+54       work.lscc_mult_add_sub_sum.verilog
+55       work.lscc_multiplier.verilog
+56       work.lscc_multiplier_dsp.verilog
+57       work.lscc_multiplier_lut.verilog
+58       work.lscc_ram_dp.verilog
+59       work.lscc_ram_dp_core.verilog
+60       work.lscc_ram_dp_main.verilog
+61       work.lscc_ram_dp_true.verilog
+62       work.lscc_ram_dp_true_core.verilog
+63       work.lscc_ram_dp_true_inst.verilog
+64       work.lscc_ram_dp_true_main.verilog
+65       work.lscc_ram_dq.verilog
+66       work.lscc_ram_dq_core.verilog
+67       work.lscc_ram_dq_inst.verilog
+68       work.lscc_ram_dq_main.verilog
+69       work.lscc_rom.verilog
+70       work.lscc_rom_inst.verilog
+71       work.lscc_rom_inst_core.verilog
+72       work.lscc_shift_register.verilog
+73       work.lscc_soft_fifo.verilog
+74       work.lscc_soft_fifo_dc.verilog
+75       work.lscc_subtractor.verilog
+76       work.lscc_write_through.verilog
+98       work.main.verilog
+77       work.pmi_add.verilog
+78       work.pmi_addsub.verilog
+79       work.pmi_complex_mult.verilog
+80       work.pmi_counter.verilog
+81       work.pmi_distributed_dpram.verilog
+82       work.pmi_distributed_rom.verilog
+83       work.pmi_distributed_shift_reg.verilog
+84       work.pmi_distributed_spram.verilog
+85       work.pmi_fifo.verilog
+86       work.pmi_fifo_dc.verilog
+87       work.pmi_mac.verilog
+88       work.pmi_mult.verilog
+89       work.pmi_multaddsub.verilog
+90       work.pmi_multaddsubsum.verilog
+91       work.pmi_ram_dp.verilog
+92       work.pmi_ram_dp_be.verilog
+93       work.pmi_ram_dp_true.verilog
+94       work.pmi_ram_dq.verilog
+95       work.pmi_ram_dq_be.verilog
+96       work.pmi_rom.verilog
+97       work.pmi_sub.verilog

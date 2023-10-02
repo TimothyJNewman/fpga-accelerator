@@ -1,0 +1,2781 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>DDR_MEM_1</ipxact:name>
+    <ipxact:version>1.4.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_ddr_mem_inst</ipxact:instanceName>
+            <ipxact:componentRef library="module" name="ddr_mem" vendor="latticesemi.com" version="1.4.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="INTERFACE_TYPE">DDR3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IO_TYPE">SSTL15_II</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CK_DQS_IO">SSTL15D_II</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEARING_INPUT">X2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEARING">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_DQ_PER_DQS">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BUS_WIDTH">16</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_DQS_GROUP">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_MASK_ENABLE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK_ADDR_CMD_ENABLE">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_MARGIN_ENABLE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK_FREQ">400</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SYS_CLK_FREQ">200.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_EN_IN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="set_attributes">set_attr: done</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout">{'CLKOP': {'EN': 1, 'BYP': 0, 'FREQ': 400, 'DIV': 2, 'PHASE': 0, 'TOL': 0.1, 'TRIM_EN': 0, 'TRIM_MODE': 'Falling', 'TRIM_MULT': '000', 'CLKEN': 0}, 'CLKOS': {'EN': True, 'BYP': False, 'FREQ': 100.0, 'DIV': 8, 'PHASE': 0, 'TOL': 0.0, 'TRIM_EN': 0, 'TRIM_MODE': 'Falling', 'TRIM_MULT': '000', 'CLKEN': 0}, 'CLKOS2': {'EN': False, 'BYP': False, 'FREQ': 100.0, 'DIV': 8, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': 0}, 'CLKOS3': {'EN': False, 'BYP': False, 'FREQ': 100.0, 'DIV': 8, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': 0}, 'CLKOS4': {'EN': False, 'BYP': False, 'FREQ': 100.0, 'DIV': 8, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': 0}, 'CLKOS5': {'EN': False, 'BYP': False, 'FREQ': 100.0, 'DIV': 8, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': 0}}</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="print_attributes">print_attr: done</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_config_mode">FREQUENCY</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_optim_prio">JITTER</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_frac_n">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_ssc">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_usr_fbk">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_pmu_wait_lock">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_int_fbkdel_sel">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_vco_freq">1600.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_refclk_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_refclk_pin">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_refclk_io_type">SLVS</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_m_div">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_m_div_disp">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_phasedet_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_refclk_mon">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_refclk_mon_freq">3P2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_fbk_mode">CLKOP</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_fbk_mode_disp">CLKOP</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_n_div">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_n_div_disp">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_frac_n_div">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_frac_n_div_disp">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="fbclk_divider_decimal_disp">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_profile">DOWN</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_mod_depth">1.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_mod_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_freq">400</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_div">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_div_disp">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_tol">0.1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_freq_disp">400.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_ppm">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_trim_en">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_trim_mode">Falling</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_op_trim_mult">000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_en">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_div">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_div_disp">16</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_ppm">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_trim_en">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_trim_mode">Falling</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_os_trim_mult">000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_div">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_div_disp">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_ppm">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s2_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_div">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_div_disp">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_ppm">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s3_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_div">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_div_disp">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_ppm">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s4_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_div">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_div_disp">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_ppm">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clk_s5_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_dyn_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_clken_op">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_clken_os">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_clken_s2">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_clken_s3">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_clken_s4">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_clken_s5">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_pll_reset">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_pll_lock">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_pll_lock_sticky">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_reg_interface">None</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_legacy">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_powerdown">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INTFBKDEL_SEL">DISABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PMU_WAITFORLOCK">ENABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REF_OSC_CTRL">3P2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REF_COUNTS">0000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_REFCLK_MON">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKI_FREQ">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKI_DIVIDER_ACTUAL_STR">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FRAC_N_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FBK_MODE">CLKOP</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FBCLK_DIVIDER_ACTUAL_STR">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SSC_N_CODE_STR">0b000000100</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SSC_F_CODE_STR">0b000000000000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SS_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SSC_PROFILE">DOWN</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SSC_TBASE_STR">0b000000000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SSC_STEP_IN_STR">0b0000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SSC_REG_WEIGHTING_SEL_STR">0b000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOP_BYPASS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENCLKOP_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOP_FREQ_ACTUAL">400.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOP_PHASE_ACTUAL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIVOP_ACTUAL_STR">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELA">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHIA">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TRIM_EN_P">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOP_TRIM_MODE">Falling</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOP_TRIM">0b0000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS_EN">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS_BYPASS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENCLKOS_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS_FREQ_ACTUAL">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS_PHASE_ACTUAL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIVOS_ACTUAL_STR">15</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELB">15</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHIB">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TRIM_EN_S">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS_TRIM_MODE">Falling</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS_TRIM">0b0000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS2_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS2_BYPASS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENCLKOS2_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS2_FREQ_ACTUAL">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS2_PHASE_ACTUAL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIVOS2_ACTUAL_STR">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELC">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHIC">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS3_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS3_BYPASS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENCLKOS3_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS3_FREQ_ACTUAL">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS3_PHASE_ACTUAL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIVOS3_ACTUAL_STR">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELD">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHID">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS4_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS4_BYPASS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENCLKOS4_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS4_FREQ_ACTUAL">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS4_PHASE_ACTUAL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIVOS4_ACTUAL_STR">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELE">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHIE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS5_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS5_BYPASS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENCLKOS5_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS5_FREQ_ACTUAL">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOS5_PHASE_ACTUAL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIVOS5_ACTUAL_STR">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELF">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHIF">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_REFCLK_FROM_PIN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_IO_TYPE">SLVS</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_PORTS_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_RST">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LOCK_EN">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_LOCK_STICKY">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LMMI_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="APB_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LEGACY_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="POWERDOWN_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IPI_CMP">0b1100</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CSET">8P</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CRIPPLE">1P</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IPP_CTRL">0b0110</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IPP_SEL">0b1111</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BW_CTL_BIAS">0b1111</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="V2I_PP_RES">9K</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="KP_VCO">0b00011</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="V2I_KVCO_SEL">60</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="V2I_1V_EN">ENABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_DDRCLK">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDR_WIDTH">13</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_CS">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_ODT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_CKE">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BA_WIDTH">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_RD_DEL_ADJ_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_RD_DEL_SIGN">POSITIVE</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_RD_DEL_VALUE_INPUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_RD_DEL_VALUE_INT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_RD_DEL_VALUE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_WR_DEL_ADJ_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_WR_DEL_SIGN">POSITIVE</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_WR_DEL_VALUE_INPUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_WR_DEL_VALUE_INT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_WR_DEL_VALUE">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.eclk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="eclk_i"/>
+                <ipxact:externalPortReference portRef="eclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.sync_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="sync_clk_i"/>
+                <ipxact:externalPortReference portRef="sync_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.sync_rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="sync_rst_i"/>
+                <ipxact:externalPortReference portRef="sync_rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.pll_lock_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="pll_lock_i"/>
+                <ipxact:externalPortReference portRef="pll_lock_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.pll_refclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="pll_refclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.pll_rst_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="pll_rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.pll_lock_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="pll_lock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.sclk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="sclk_o"/>
+                <ipxact:externalPortReference portRef="sclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.sync_update_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="sync_update_i"/>
+                <ipxact:externalPortReference portRef="sync_update_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs0_i"/>
+                <ipxact:externalPortReference portRef="rd_clksel_dqs0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs1_i"/>
+                <ipxact:externalPortReference portRef="rd_clksel_dqs1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_clksel_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_clksel_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dir_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dir_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_loadn_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_loadn_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs0_i"/>
+                <ipxact:externalPortReference portRef="rd_dqs0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs1_i"/>
+                <ipxact:externalPortReference portRef="rd_dqs1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_move_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_move_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.selclk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="selclk_i"/>
+                <ipxact:externalPortReference portRef="selclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_dir_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_dir_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_loadn_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_loadn_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_move_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_move_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_dir_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_dir_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_loadn_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_loadn_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_move_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_move_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.pause_cmd_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="pause_cmd_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.pause_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="pause_i"/>
+                <ipxact:externalPortReference portRef="pause_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_outen_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_outen_n_i"/>
+                <ipxact:externalPortReference portRef="dq_outen_n_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs0_i"/>
+                <ipxact:externalPortReference portRef="data_dqs0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs1_i"/>
+                <ipxact:externalPortReference portRef="data_dqs1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dcnt_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dcnt_o"/>
+                <ipxact:externalPortReference portRef="dcnt_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ready_o"/>
+                <ipxact:externalPortReference portRef="ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs0_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs0_o"/>
+                <ipxact:externalPortReference portRef="data_dqs0_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs1_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs1_o"/>
+                <ipxact:externalPortReference portRef="data_dqs1_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_rd_section_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_rd_section_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs0_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs0_o"/>
+                <ipxact:externalPortReference portRef="burst_detect_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs1_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs1_o"/>
+                <ipxact:externalPortReference portRef="burst_detect_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs0_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs0_o"/>
+                <ipxact:externalPortReference portRef="burst_detect_sclk_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs1_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs1_o"/>
+                <ipxact:externalPortReference portRef="burst_detect_sclk_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.burst_detect_sclk_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="burst_detect_sclk_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs0_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs0_o"/>
+                <ipxact:externalPortReference portRef="data_valid_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs1_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs1_o"/>
+                <ipxact:externalPortReference portRef="data_valid_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_valid_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_valid_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rd_cout_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rd_cout_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wr_cout_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wr_cout_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wrlvl_cout_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wrlvl_cout_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs0_i"/>
+                <ipxact:externalPortReference portRef="dqs_outen_n_dqs0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs1_i"/>
+                <ipxact:externalPortReference portRef="dqs_outen_n_dqs1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs_outen_n_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs_outen_n_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs0_i"/>
+                <ipxact:externalPortReference portRef="dqs0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs1_i"/>
+                <ipxact:externalPortReference portRef="dqs1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs0_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs1_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.data_mask_dqs8_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs8_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.csn_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="csn_din0_i"/>
+                <ipxact:externalPortReference portRef="csn_din0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.csn_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="csn_din1_i"/>
+                <ipxact:externalPortReference portRef="csn_din1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.csn_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="csn_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.csn_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="csn_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din0_i"/>
+                <ipxact:externalPortReference portRef="addr_din0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>12</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din1_i"/>
+                <ipxact:externalPortReference portRef="addr_din1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>12</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din0_i"/>
+                <ipxact:externalPortReference portRef="ba_din0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din1_i"/>
+                <ipxact:externalPortReference portRef="ba_din1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din0_i"/>
+                <ipxact:externalPortReference portRef="casn_din0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din1_i"/>
+                <ipxact:externalPortReference portRef="casn_din1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din0_i"/>
+                <ipxact:externalPortReference portRef="rasn_din0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din1_i"/>
+                <ipxact:externalPortReference portRef="rasn_din1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din0_i"/>
+                <ipxact:externalPortReference portRef="wen_din0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din1_i"/>
+                <ipxact:externalPortReference portRef="wen_din1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din0_i"/>
+                <ipxact:externalPortReference portRef="odt_din0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din1_i"/>
+                <ipxact:externalPortReference portRef="odt_din1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din0_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din0_i"/>
+                <ipxact:externalPortReference portRef="cke_din0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din1_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din1_i"/>
+                <ipxact:externalPortReference portRef="cke_din1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din6_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din6_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_din7_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_din7_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ca_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ca_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs0_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs0_o"/>
+                <ipxact:externalPortReference portRef="dqwl_dqs0_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs1_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs1_o"/>
+                <ipxact:externalPortReference portRef="dqwl_dqs1_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqwl_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqwl_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs0_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs0_io"/>
+                <ipxact:externalPortReference portRef="dq_dqs0_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs1_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs1_io"/>
+                <ipxact:externalPortReference portRef="dq_dqs1_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs2_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs2_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs3_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs3_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs4_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs4_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs5_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs5_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs6_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs6_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs7_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs7_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dq_dqs8_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dq_dqs8_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs0_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs0_io"/>
+                <ipxact:externalPortReference portRef="dqs0_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs1_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs1_io"/>
+                <ipxact:externalPortReference portRef="dqs1_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs2_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs2_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs3_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs3_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs4_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs4_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs5_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs5_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs6_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs6_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs7_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs7_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dqs8_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dqs8_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs6_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs6_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs7_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs7_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.dm_dqs8_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs8_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ck_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ck_o"/>
+                <ipxact:externalPortReference portRef="ck_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.csn_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="csn_o"/>
+                <ipxact:externalPortReference portRef="csn_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.addr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="addr_o"/>
+                <ipxact:externalPortReference portRef="addr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>12</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ba_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ba_o"/>
+                <ipxact:externalPortReference portRef="ba_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.casn_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="casn_o"/>
+                <ipxact:externalPortReference portRef="casn_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.rasn_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="rasn_o"/>
+                <ipxact:externalPortReference portRef="rasn_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.wen_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="wen_o"/>
+                <ipxact:externalPortReference portRef="wen_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.odt_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="odt_o"/>
+                <ipxact:externalPortReference portRef="odt_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.cke_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="cke_o"/>
+                <ipxact:externalPortReference portRef="cke_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR_MEM_1.ca_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="ca_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

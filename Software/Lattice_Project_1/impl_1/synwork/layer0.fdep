@@ -1,0 +1,1713 @@
+#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile|-top|main|-layerid|0|-orig_srs|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\Lattice_Project_1_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\|-I|C:\\lscc\\radiant\\2023.1\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\bin64\\c_ver.exe":1685564424
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile":1691619046
+#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v":1686793695
+#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\pmi_def.v":1685564445
+#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vlog\\hypermods.v":1685564456
+#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vlog\\scemi_objects.v":1685564456
+#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vlog\\scemi_pipes.svh":1685564456
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_lifcl.v":1589160685
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_addsub.v":1562800400
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/adder_subtractor/rtl/lscc_add_sub.v":1683513052
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_add.v":1562800366
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1564990857
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_complex_mult.v":1562800443
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1631237199
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_counter.v":1562800475
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/counter/rtl/lscc_cntr.v":1564990907
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_dpram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1669343654
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_spram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/distributed_spram/rtl/lscc_distributed_spram.v":1669345057
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_rom.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/distributed_rom/rtl/lscc_distributed_rom.v":1669345132
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_shift_reg.v":1666080348
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/ram_shift_reg/rtl/lscc_shift_register.v":1665105914
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_fifo.v":1640152481
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/fifo/rtl/lscc_fifo.v":1679360365
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_fifo_dc.v":1640152663
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/fifo_dc/rtl/lscc_fifo_dc.v":1679360342
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_mac.v":1562800511
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1584523096
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_multaddsubsum.v":1562800615
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1584522940
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_multaddsub.v":1562800566
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1584523063
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_mult.v":1562800537
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1564990933
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dp.v":1644979873
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dp/rtl/lscc_ram_dp.v":1681870602
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dp_be.v":1644980856
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dp/rtl/lscc_ram_dp.v":1681870602
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dp_true.v":1644979914
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1681870762
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dq.v":1644979923
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dq/rtl/lscc_ram_dq.v":1681870794
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dq_be.v":1644979933
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dq/rtl/lscc_ram_dq.v":1681870794
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_rom.v":1644979944
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/rom/rtl/lscc_rom.v":1680687765
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_sub.v":1562800650
+#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1564990995
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1\\rtl\\MIPI_DPHY_1.v":1696122375
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1\\rtl\\DDR_MEM_1.v":1696126172
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2\\rtl\\MIPI_DPHY_2.v":1696122375
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\source\\impl_1\\main.v":1696227026
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1\\rtl\\I2C_DPHY_1.v":1696225017
+#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2\\rtl\\I2C_DPHY_2.v":1696225059
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v" verilog
+1		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v" verilog
+2		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog
+3		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v" verilog
+4		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
+5		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v" verilog
+6		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
+7		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v" verilog
+8		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" verilog
+9		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v" verilog
+10		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" verilog
+11		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v" verilog
+12		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" verilog
+13		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v" verilog
+14		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" verilog
+15		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v" verilog
+16		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" verilog
+17		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v" verilog
+18		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" verilog
+19		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v" verilog
+20		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" verilog
+21		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v" verilog
+22		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
+23		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v" verilog
+24		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" verilog
+25		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v" verilog
+26		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
+27		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v" verilog
+28		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
+29		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v" verilog
+30		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" verilog
+31		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v" verilog
+32		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v" verilog
+33		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v" verilog
+34		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v" verilog
+35		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" verilog
+36		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v" verilog
+37		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v" verilog
+38		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v" verilog
+39		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v" verilog
+40		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
+41			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v" verilog
+42			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v" verilog
+43			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v" verilog
+44			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v" verilog
+45			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_1\I2C_DPHY_1\rtl\I2C_DPHY_1.v" verilog
+46			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_2\I2C_DPHY_2\rtl\I2C_DPHY_2.v" verilog
+#Dependency Lists(Uses List)
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+2 0 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+3 0 1 2 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+4 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 0
+5 0 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+6 0 1 2 3 4 5 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+7 0 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+8 0 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+9 0 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+10 0 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+11 0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+12 0 1 2 3 4 5 6 7 8 9 10 11 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+13 0 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+14 0 1 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+15 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+17 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+18 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+19 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+20 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+21 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+22 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+23 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+25 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+26 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 27 28 29 30 31 32 33 34 35 36 37 38 39 40 0
+27 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 28 29 30 31 32 33 34 35 36 37 38 39 40
+28 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 29 30 31 32 33 34 35 36 37 38 39 40 0
+29 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 30 31 32 33 34 35 36 37 38 39 40
+30 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 31 30 32 33 34 35 36 37 38 39 40
+31 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 32 33 34 35 36 37 38 39 40
+32 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 34 35 36 37 38 39 40
+33 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 34 35 36 37 38 39 40
+34 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 35 36 37 38 39 40
+35 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 36 35 37 38 39 40
+36 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 37 38 39 40
+37 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 38 39 40
+38 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 39 40
+39 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 40
+40 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 0
+41 -1
+42 -1
+43 -1
+44 42 41 43 45 46
+45 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+46 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+#Dependency Lists(Users Of)
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+2 0 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+3 0 1 2 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+4 0 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+5 0 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+6 0 1 2 3 4 5 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+7 0 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+8 0 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+9 0 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+10 0 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+11 0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+12 0 1 2 3 4 5 6 7 8 9 10 11 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+13 0 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+14 0 1 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+15 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+17 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+18 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+19 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+20 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+21 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+22 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+23 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+25 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+26 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+27 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+28 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+29 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 30 31 32 33 34 35 36 37 38 39 40 45 46
+30 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+31 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 32 33 34 35 36 37 38 39 40 45 46
+32 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 34 35 36 37 38 39 40 45 46
+33 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 34 35 36 37 38 39 40 45 46
+34 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 35 36 37 38 39 40 45 46
+35 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 45 46
+36 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 37 38 39 40 45 46
+37 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 38 39 40 45 46
+38 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 39 40 45 46
+39 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 40 45 46
+40 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 45 46
+41 44
+42 44
+43 44
+44 -1
+45 44
+46 44
+#Design Unit to File Association
+module work lscc_add_sub 2
+module work lscc_adder 2
+module work lscc_subtractor 2
+module work pmi_addsub 1
+module work pmi_add 3
+module work lscc_complex_mult 6
+module work lscc_mult_add_sub 6
+module work lscc_multiplier 6
+module work lscc_multiplier_lut 6
+module work lscc_multiplier_dsp 6
+module work pmi_complex_mult 5
+module work lscc_cntr 8
+module work pmi_counter 7
+module work lscc_distributed_dpram 10
+module work pmi_distributed_dpram 9
+module work lscc_distributed_spram 12
+module work pmi_distributed_spram 11
+module work lscc_distributed_rom 14
+module work pmi_distributed_rom 13
+module work lscc_shift_register 16
+module work pmi_distributed_shift_reg 15
+module work lscc_fifo 18
+module work lscc_fifo_fwft_fabric 18
+module work lscc_fifo_main 18
+module work lscc_soft_fifo 18
+module work lscc_hard_fifo 18
+module work lscc_fifo_hw_core 18
+module work pmi_fifo 17
+module work lscc_fifo_dc 20
+module work lscc_fifo_dc_fwft_fabric 20
+module work lscc_fifo_dc_main 20
+module work lscc_soft_fifo_dc 20
+module work lscc_hard_fifo_dc 20
+module work lscc_fifo_dc_hw_core 20
+module work lscc_fifo_mem 20
+module work lscc_fifo_mem_main 20
+module work lscc_fifo_mem_core 20
+module work pmi_fifo_dc 19
+module work lscc_mult_accumulate 22
+module work pmi_mac 21
+module work lscc_mult_add_sub_sum 24
+module work pmi_multaddsubsum 23
+module work pmi_multaddsub 25
+module work pmi_mult 27
+module work lscc_ram_dp 30
+module work lscc_ram_dp_main 30
+module work lscc_ram_dp_core 30
+module work pmi_ram_dp 29
+module work pmi_ram_dp_be 31
+module work lscc_ram_dp_true 33
+module work lscc_ram_dp_true_main 33
+module work lscc_write_through 33
+module work lscc_ram_dp_true_inst 33
+module work lscc_ram_dp_true_core 33
+module work pmi_ram_dp_true 32
+module work lscc_ram_dq 35
+module work lscc_ram_dq_main 35
+module work lscc_ram_dq_inst 35
+module work lscc_ram_dq_core 35
+module work pmi_ram_dq 34
+module work pmi_ram_dq_be 36
+module work lscc_rom 38
+module work lscc_rom_inst 38
+module work lscc_rom_inst_core 38
+module work pmi_rom 37
+module work pmi_sub 39
+module work MIPI_DPHY_1 41
+module work MIPI_DPHY_1_ipgen_lscc_mipi_dphy 41
+module work MIPI_DPHY_1_ipgen_lscc_clock_divider 41
+module work MIPI_DPHY_1_ipgen_lscc_gddr_sync 41
+module work MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx 41
+module work MIPI_DPHY_1_ipgen_lscc_mipi_dphy_soft_rx 41
+module work MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_tx 41
+module work MIPI_DPHY_1_ipgen_lscc_mipi_dphy_soft_tx 41
+module work MIPI_DPHY_1_ipgen_lscc_pll 41
+module work MIPI_DPHY_1_ipgen_lscc_apb2lmmi 41
+module work DDR_MEM_1 42
+module work DDR_MEM_1_ipgen_lscc_ddr_mem 42
+module work DDR_MEM_1_ipgen_mem_sync 42
+module work DDR_MEM_1_ipgen_common_logic 42
+module work DDR_MEM_1_ipgen_dq_dqs_dm_unit 42
+module work DDR_MEM_1_ipgen_mddrx2_4_ca 42
+module work DDR_MEM_1_ipgen_mddrx2_4_ck_cke_odt 42
+module work DDR_MEM_1_ipgen_moshx2_4_csn 42
+module work DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt 42
+module work DDR_MEM_1_ipgen_oddrx2_4_ck 42
+module work DDR_MEM_1_ipgen_lscc_pll 42
+module work DDR_MEM_1_ipgen_lscc_apb2lmmi 42
+module work MIPI_DPHY_2 43
+module work MIPI_DPHY_2_ipgen_lscc_mipi_dphy 43
+module work MIPI_DPHY_2_ipgen_lscc_clock_divider 43
+module work MIPI_DPHY_2_ipgen_lscc_gddr_sync 43
+module work MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_rx 43
+module work MIPI_DPHY_2_ipgen_lscc_mipi_dphy_soft_rx 43
+module work MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx 43
+module work MIPI_DPHY_2_ipgen_lscc_mipi_dphy_soft_tx 43
+module work MIPI_DPHY_2_ipgen_lscc_pll 43
+module work MIPI_DPHY_2_ipgen_lscc_apb2lmmi 43
+module work main 44
+module work I2C_DPHY_1 45
+module work I2C_DPHY_2 46
+module work I2C_DPHY_1_ipgen_lscc_i2c_master 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_native 45
+module work I2C_DPHY_1_ipgen_lscc_apb2lmmi 45
+module work I2C_DPHY_1_ipgen_lscc_delay_gen 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_bus_cntrl_fsm_top 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_arbtr 45
+module work I2C_DPHY_1_ipgen_lscc_sclk_gen 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_start_gen 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_stop_gen 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_glitch_filter 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_byte_rx_fsm 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_byte_tx_fsm 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_cntrl_fsm 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_cntrl_fsm_top 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_controller 45
+module work I2C_DPHY_1_ipgen_lscc_i2c_master_lmmi 45
+module work I2C_DPHY_2_ipgen_lscc_i2c_master 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_native 46
+module work I2C_DPHY_2_ipgen_lscc_apb2lmmi 46
+module work I2C_DPHY_2_ipgen_lscc_delay_gen 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_bus_cntrl_fsm_top 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_arbtr 46
+module work I2C_DPHY_2_ipgen_lscc_sclk_gen 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_start_gen 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_stop_gen 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_glitch_filter 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_byte_rx_fsm 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_byte_tx_fsm 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_cntrl_fsm_top 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_controller 46
+module work I2C_DPHY_2_ipgen_lscc_i2c_master_lmmi 46
+#Unbound instances to file Association.
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 38
+inst work SP16KA SP16KA 38
+inst work PDPSC32K PDPSC32K 38
+inst work PDP4K PDP4K 38
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work SP32K SP32K 35
+inst work DP32K DP32K 35
+inst work SP16KA SP16KA 35
+inst work PDPSC32K PDPSC32K 35
+inst work PDP4K PDP4K 35
+inst work DP32K DP32K 33
+inst work DP32K DP32K 33
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work PDP32K PDP32K 30
+inst work PDP4K PDP4K 30
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 20
+inst work PDP32K PDP32K 20
+inst work PDP4K PDP4K 20
+inst work FIFO32K FIFO32K 18
+inst work FIFO32K FIFO32K 18

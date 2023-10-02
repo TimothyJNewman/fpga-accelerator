@@ -1,0 +1,191 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>I2C_DPHY_2</ipxact:name>
+    <ipxact:version>1.5.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_i2c_master_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="i2c_master" vendor="latticesemi.com" version="1.5.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="APB_ENABLE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FAMILY">LIFCL</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_WIDTH">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_DEPTH">16</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_IMPL">LUT</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TX_FIFO_AE_FLAG">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_AF_FLAG">14</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SYS_CLOCK_FREQ">24</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DESIRED_CLOCK_FREQ">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PRESCALER_INPUT">117</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PRESCALER">117</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ACTUAL_CLOCK_FREQ">100.418410041841</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.scl_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="scl_io"/>
+                <ipxact:externalPortReference portRef="scl_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.sda_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="sda_io"/>
+                <ipxact:externalPortReference portRef="sda_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="clk_i"/>
+                <ipxact:externalPortReference portRef="clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.rst_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="rst_n_i"/>
+                <ipxact:externalPortReference portRef="rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_request_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_request_i"/>
+                <ipxact:externalPortReference portRef="lmmi_request_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_wr_rdn_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_wr_rdn_i"/>
+                <ipxact:externalPortReference portRef="lmmi_wr_rdn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_offset_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_offset_i"/>
+                <ipxact:externalPortReference portRef="lmmi_offset_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_wdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_wdata_i"/>
+                <ipxact:externalPortReference portRef="lmmi_wdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_rdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_rdata_o"/>
+                <ipxact:externalPortReference portRef="lmmi_rdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_rdata_valid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_rdata_valid_o"/>
+                <ipxact:externalPortReference portRef="lmmi_rdata_valid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.lmmi_ready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="lmmi_ready_o"/>
+                <ipxact:externalPortReference portRef="lmmi_ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.int_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="int_o"/>
+                <ipxact:externalPortReference portRef="int_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_penable_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_penable_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_psel_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_psel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_pwrite_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_pwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_paddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_paddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_pwdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_pwdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_pready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_pready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_pslverr_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_pslverr_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>I2C_DPHY_2.apb_prdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="I2C_DPHY_2" portRef="apb_prdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

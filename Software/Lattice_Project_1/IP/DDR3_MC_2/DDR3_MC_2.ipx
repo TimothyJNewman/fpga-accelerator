@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2023 10 01 02:06:08" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="ip" module="ddr3_mc" name="DDR3_MC_2" package="CABGA256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.4.2">
+ <Package>
+  <File modified="2023 10 01 02:06:06" name="rtl/DDR3_MC_2_bb.v" type="black_box_verilog"/>
+  <File modified="2023 10 01 02:06:06" name="DDR3_MC_2.cfg" type="cfg"/>
+  <File modified="2023 10 01 02:06:06" name="misc/DDR3_MC_2_tmpl.v" type="template_verilog"/>
+  <File modified="2023 10 01 02:06:06" name="misc/DDR3_MC_2_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 10 01 02:06:07" name="rtl/DDR3_MC_2.v" type="top_level_verilog"/>
+  <File modified="2023 10 01 02:06:07" name="constraints/DDR3_MC_2.ldc" type="timing_constraints"/>
+  <File modified="2023 10 01 02:06:07" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 10 01 02:06:07" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 10 01 02:06:07" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2023 10 01 02:06:07" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 10 01 02:06:07" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 10 01 02:06:07" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/1024Mb_ddr3_parameters.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/2048Mb_ddr3_parameters.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/4096Mb_ddr3_parameters.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/8192Mb_ddr3_parameters.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/cmd_gen.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/ddr3.v" type="testbench_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/ddr3_dimm_16.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/ddr3_dimm_24.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/ddr3_dimm_32.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/ddr3_dimm_8.vh" type="testbench"/>
+  <File modified="2023 10 01 01:06:08" name="testbench/ddr3_parameters.vh" type="testbench"/>
+  <File modified="2023 10 01 01:06:08" name="testbench/ddr3_sdram_mem_params.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/dqs_grp_delay.v" type="testbench_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/lscc_lmmi2ahbl.v" type="testbench_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/monitor.v" type="testbench_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/odt_watchdog.v" type="testbench_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/tb_config_params.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/tb_top.v" type="testbench_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/testcase.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="testbench/testcase_bank_sweep.vh" type="testbench"/>
+  <File modified="2022 06 08 17:31:51" name="eval/create_top_constraint.py" type="eval"/>
+  <File modified="2022 06 08 17:31:51" name="eval/eval_top.v" type="eval_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="eval/lscc_pll.v" type="eval_verilog"/>
+  <File modified="2022 06 08 17:31:51" name="eval/lscc_simple_lfsr.v" type="eval_verilog"/>
+  <File modified="2023 10 01 01:06:08" name="eval/top_constraint.pdc" type="eval"/>
+ </Package>
+</RadiantModule>

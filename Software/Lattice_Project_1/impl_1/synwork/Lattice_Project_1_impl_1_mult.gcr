@@ -1,0 +1,30 @@
+i DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.sclk_o
+m 0 0
+u 5 8
+n ckid0_0 {t:DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1].C} Clock Optimization not enabled
+p {p:DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.sclk_o}{t:DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.sclk_o}{t:DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1].C}
+e ckid0_0 {t:DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1].C} dffr
+d ckid0_0 {t:DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.DIVOUT} ECLKDIV Clock Optimization not enabled
+i DDR_MEM_1_sync_clk_i
+m 0 0
+u 0 0
+i I2C_DPHY_1_clk_i
+m 0 0
+u 0 0
+i I2C_DPHY_2_clk_i
+m 0 0
+u 0 0
+i I2C_DPHY_2_clk_i_i
+m 0 0
+u 0 0
+i I2C_DPHY_1_clk_i_i
+m 0 0
+u 0 0
+i DDR_MEM_1_sync_clk_i_i
+m 0 0
+u 0 0
+i DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.sclk_o_i
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

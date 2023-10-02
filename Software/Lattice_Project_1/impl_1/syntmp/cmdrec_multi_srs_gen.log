@@ -1,0 +1,7 @@
+C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe  -link  -top  main  -multisrs  C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_comp.srs  -osyn  C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_mult.srs  -log  C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\Lattice_Project_1_impl_1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe -link -top main -multisrs ..\synwork\Lattice_Project_1_impl_1_comp.srs -osyn ..\synwork\Lattice_Project_1_impl_1_mult.srs -log ..\synlog\Lattice_Project_1_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:4
+file:..\synwork\lattice_project_1_impl_1_comp.srs|io:i|time:1696227320|size:730644|exec:0|csum:6D3E3D7E0E3F94E0086CF454FD17903C
+file:..\synwork\lattice_project_1_impl_1_mult.srs|io:o|time:1696227325|size:11296|exec:0|csum:
+file:..\synlog\lattice_project_1_impl_1_multi_srs_gen.srr|io:o|time:1696227325|size:1209|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1685564428|size:10600960|exec:1|csum:5D87BCE07D7E863695AC28DD65895E86

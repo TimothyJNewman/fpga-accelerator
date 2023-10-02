@@ -1,0 +1,104 @@
+#--  Synopsys, Inc.
+#--  Version U-2023.03LR-1
+#--  Project file C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\run_options.txt
+#--  Written on Mon Oct  2 07:14:17 2023
+
+
+#project files
+add_file -constraint "Lattice_Project_1_impl_1_cpe.ldc"
+add_file -verilog "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v"
+add_file -vhdl -lib pmi "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v"
+add_file -verilog -vlog_std v2001 "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v"
+
+
+#implementation: "impl_1"
+impl -add impl_1 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1;C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2}
+
+#device options
+set_option -technology LIFCL
+set_option -part LIFCL_40
+set_option -package CABGA256C
+set_option -speed_grade -7
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "main"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+set_option -scm2hydra 0
+set_option -scm2hydra_preserve_rtl_sig 1
+set_option -hdl_strict_syntax 0
+set_option -rtl_xmr_naming 0
+set_option -use_module_idb 1
+
+# mapper_without_write_options
+set_option -frequency 200
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_structural_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 1000
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr auto
+set_option -fix_gated_and_generated_clocks 0
+set_option -rw_check_on_ram 0
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 0
+set_option -Write_declared_clocks_only 1
+set_option -seqshift_no_replicate 0
+
+# Lattice LIFCL
+set_option -s44_optimization 0
+set_option -infer_widefn 1
+set_option -pack_rst_largeram 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# common_options
+set_option -add_dut_hierarchy 0
+set_option -prepare_readback 0
+
+# flow_options
+set_option -use_unified_compile 0
+set_option -slr_aware_debug 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./Lattice_Project_1_impl_1.vm"
+
+#set log file 
+set_option log_file "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srf" 
+impl -active "impl_1"

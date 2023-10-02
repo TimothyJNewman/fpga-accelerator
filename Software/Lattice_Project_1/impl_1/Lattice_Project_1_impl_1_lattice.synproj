@@ -1,0 +1,57 @@
+-a "LIFCL"
+-p LIFCL-40
+-t CABGA256
+-sp "7_High-Performance_1.0V"
+-frequency 200
+-optimization_goal Timing
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Yes
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+
+-max_fanout 1000
+-fsm_encoding_style Auto
+
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+
+
+
+-use_io_reg auto
+
+
+
+
+
+
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1"
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_CAM"
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1"
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2"
+-path "C:/lscc/radiant/2023.1/ispfpga/je5d00/data" "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1" "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1"
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v"
+"C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v"
+"C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v"
+"C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_CAM/rtl/I2C_CAM.v"
+"C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v"
+
+
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1"
+-top main
+-udb "Lattice_Project_1_impl_1_rtl.udb"
+-output_hdl "Lattice_Project_1_impl_1.vm"
+

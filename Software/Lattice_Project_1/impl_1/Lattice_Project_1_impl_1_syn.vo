@@ -1,0 +1,3074 @@
+module \DDR_MEM_1_ipgen_common_logic_2s_2  (
+    output \eclkout_w ,
+    output \sclk_o ,
+    input \GND_net ,
+    input \VCC_net ,
+    output [8:0] \code_w );
+
+    wire [8:0] \u0_DDRDLL.CODE ;
+
+    wire [8:0] \u0_DDRDLL.DCNTL ;
+
+    (* \GSR ="ENABLED" ,
+       \ENA_ROUNDOFF ="ENABLED" ,
+       \FORCE_MAX_DELAY ="CODE_OR_LOCK_FROM_DLL_LOOP" ,
+       \dm:primitive ="DDRDLL_CORE" ,
+       \dm:programming ="GSR:#ON ENA_ROUNDOFF:#ON FORCE_MAX_DELAY:#ON" ,
+       \dm:user ="0" *)
+    \DDRDLL_CORE  \u0_DDRDLL.DDRDLL_inst (
+      .\CODE8 (\code_w [8]),
+      .\CODE7 (\code_w [7]),
+      .\CODE6 (\code_w [6]),
+      .\CODE5 (\code_w [5]),
+      .\CODE4 (\code_w [4]),
+      .\CODE3 (\code_w [3]),
+      .\CODE2 (\code_w [2]),
+      .\CODE1 (\code_w [1]),
+      .\CODE0 (\code_w [0]),
+      .\FREEZE (\GND_net ),
+      .\CLKIN (\eclkout_w ),
+      .\RST (\GND_net ),
+      .\UDDCNTL_N (\VCC_net ));
+    defparam \u0_DDRDLL.DDRDLL_inst .GSR = "ENABLED";
+    defparam \u0_DDRDLL.DDRDLL_inst .ENA_ROUNDOFF = "ENABLED";
+    defparam \u0_DDRDLL.DDRDLL_inst .FORCE_MAX_DELAY = "CODE_OR_LOCK_FROM_DLL_LOOP";
+
+    (* \STOP_EN ="ENABLE" ,
+       \dm:primitive ="ECLKSYNC_CORE" ,
+       \dm:programming ="STOP_EN:::STOP_EN=ENABLE" ,
+       \dm:user ="0" *)
+    \ECLKSYNC_CORE  \u0_ECLKSYNC.ECLKSYNC_inst (
+      .\ECLKIN (\GND_net ),
+      .\ECLKOUT (\eclkout_w ),
+      .\STOP (\GND_net ));
+    defparam \u0_ECLKSYNC.ECLKSYNC_inst .STOP_EN = "ENABLE";
+
+    (* \ECLK_DIV ="2" ,
+       \GSR ="DISABLED" ,
+       \dm:primitive ="ECLKDIV_CORE" ,
+       \dm:programming ="ECLK_DIV:::ECLK_DIV=2 GSR:::GSR=DISABLED" ,
+       \dm:user ="0" *)
+    \ECLKDIV_CORE  \u0_ECLKDIV.ECLKDIV_inst (
+      .\DIVOUT (\sclk_o ),
+      .\DIVRST (\GND_net ),
+      .\ECLKIN (\eclkout_w ),
+      .\SLIP (\GND_net ),
+      .\TESTINP3 (\VCC_net ),
+      .\TESTINP2 (\VCC_net ),
+      .\TESTINP1 (\VCC_net ),
+      .\TESTINP0 (\VCC_net ));
+    defparam \u0_ECLKDIV.ECLKDIV_inst .ECLK_DIV = "2";
+    defparam \u0_ECLKDIV.ECLKDIV_inst .GSR = "DISABLED";
+
+endmodule
+
+module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
+    input \sclk_o ,
+    input \eclkout_w ,
+    inout \dqs1_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    input [8:0] \code_w ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs1_io );
+
+    wire \dqs_o_w ;
+
+    wire \dqs_outen_n_w ;
+
+    wire \dqs_bb_out_w ;
+
+    wire \dqts_w ;
+
+    wire \sw270_out_w ;
+
+    wire \dqswout_w ;
+
+    wire [7:0] \dout_w ;
+
+    wire [3:0] \u0_DQSBUF.RDCLKSEL ;
+
+    wire [2:0] \u0_DQSBUF.RDPNTR ;
+
+    wire [3:0] \u0_DQSBUF.READ ;
+
+    wire [2:0] \u0_DQSBUF.WRPNTR ;
+
+    wire [8:0] \u0_DQSBUF.DLLCODE ;
+
+    (* \IO_TYPE ="SSTL15D_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQS_BLOCK.u_DQS_BB (
+      .\T (\dqs_outen_n_w ),
+      .\I (\dqs_o_w ),
+      .\O (\dqs_bb_out_w ),
+      .\B (\dqs1_io ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[6].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [6]),
+      .\B (\dq_dqs1_io [6]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[4].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [4]),
+      .\B (\dq_dqs1_io [4]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[2].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [2]),
+      .\B (\dq_dqs1_io [2]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[0].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [0]),
+      .\B (\dq_dqs1_io [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[1].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [1]),
+      .\B (\dq_dqs1_io [1]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[3].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [3]),
+      .\B (\dq_dqs1_io [3]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[5].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [5]),
+      .\B (\dq_dqs1_io [5]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[7].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [7]),
+      .\B (\dq_dqs1_io [7]));
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [1]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [5]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [2]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [4]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [7]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [0]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [3]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [6]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="TSHX2DQS" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \TSHX2DQS  \TS_BLOCK.TS_X2.u_TSHX2DQS (
+      .\T0 (\GND_net ),
+      .\T1 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dqs_outen_n_w ),
+      .\DQSW (\dqswout_w ));
+    defparam \TS_BLOCK.TS_X2.u_TSHX2DQS .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="TSHX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \TSHX2DQ  \TS_BLOCK.TS_X2.u_TSHX2DQ (
+      .\T0 (\GND_net ),
+      .\T1 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dqts_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \TS_BLOCK.TS_X2.u_TSHX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQS" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQS  \DQS_BLOCK.DQS_X2.u_ODDRX2DQS (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dqs_o_w ),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW (\dqswout_w ));
+    defparam \DQS_BLOCK.DQS_X2.u_ODDRX2DQS .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \ENABLE_FIFO ="ENABLED" ,
+       \FORCE_READ ="ENABLED" ,
+       \FREE_WHEEL ="DDR" ,
+       \MODX ="MDDRX2" ,
+       \MT_EN_READ ="ENABLED" ,
+       \MT_EN_WRITE ="ENABLED" ,
+       \MT_EN_WRITE_LEVELING ="ENABLED" ,
+       \RD_PNTR ="0b000" ,
+       \READ_ENABLE ="ENABLED" ,
+       \RX_CENTERED ="ENABLED" ,
+       \S_READ ="0" ,
+       \S_WRITE ="0" ,
+       \SIGN_READ ="POSITIVE" ,
+       \SIGN_WRITE ="POSITIVE" ,
+       \UPDATE_QU ="UP1_AND_UP0_SAME" ,
+       \WRITE_ENABLE ="ENABLED" ,
+       \SEL_READ_BIT_ENABLE_CYCLES ="NORMAL" ,
+       \BYPASS_WR_LEVEL_SMTH_LATCH ="SMOOTHING_PATH" ,
+       \BYPASS_WR_SMTH_LATCH ="SMOOTHING_PATH" ,
+       \BYPASS_READ_SMTH_LATCH ="SMOOTHING_PATH" ,
+       \dm:primitive ="DQSBUF_CORE" ,
+       \dm:programming ="GSR:#ON ENABLE_FIFO:::ENABLE_FIFO=ENABLED FORCE_READ:::FORCE_READ=ENABLED FREE_WHEEL:#ON MODX:::MODX=MDDRX2 MT_EN_READ:::MT_EN_READ=ENABLED MT_EN_WRITE:::MT_EN_WRITE=ENABLED MT_EN_WRITE_LEVELING:::MT_EN_WRITE_LEVELING=ENABLED RD_PNTR:#ON READ_ENABLE:::READ_ENABLE=ENABLED RX_CENTERED:#ON S_READ:#ON S_WRITE:#ON SIGN_READ:#ON SIGN_WRITE:#ON UPDATE_QU:#ON WRITE_ENABLE:::WRITE_ENABLE=ENABLED SEL_READ_BIT_ENABLE_CYCLES:#ON BYPASS_WR_LEVEL_SMTH_LATCH:#ON BYPASS_WR_SMTH_LATCH:#ON BYPASS_READ_SMTH_LATCH:#ON" ,
+       \dm:user ="0" *)
+    \DQSBUF_CORE  \u0_DQSBUF.DQSBUF_inst (
+      .\DQSI (\dqs_bb_out_w ),
+      .\DQSW (\dqswout_w ),
+      .\PAUSE (\GND_net ),
+      .\RDCLKSEL3 (\GND_net ),
+      .\RDCLKSEL2 (\GND_net ),
+      .\RDCLKSEL1 (\GND_net ),
+      .\RDCLKSEL0 (\GND_net ),
+      .\RDDIR (\GND_net ),
+      .\RDLOADN (\VCC_net ),
+      .\READ3 (\GND_net ),
+      .\READ2 (\GND_net ),
+      .\READ1 (\GND_net ),
+      .\READ0 (\GND_net ),
+      .\READMOVE (\GND_net ),
+      .\RST (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\SELCLK (\GND_net ),
+      .\DQSW270 (\sw270_out_w ),
+      .\WRDIR (\GND_net ),
+      .\WRLOAD_N (\VCC_net ),
+      .\WRLVDIR (\GND_net ),
+      .\WRLVLOAD_N (\VCC_net ),
+      .\WRLVMOVE (\GND_net ),
+      .\WRMOVE (\GND_net ),
+      .\ECLKIN (\eclkout_w ),
+      .\RSTSMCNT (\GND_net ),
+      .\DLLCODE8 (\code_w [8]),
+      .\DLLCODE7 (\code_w [7]),
+      .\DLLCODE6 (\code_w [6]),
+      .\DLLCODE5 (\code_w [5]),
+      .\DLLCODE4 (\code_w [4]),
+      .\DLLCODE3 (\code_w [3]),
+      .\DLLCODE2 (\code_w [2]),
+      .\DLLCODE1 (\code_w [1]),
+      .\DLLCODE0 (\code_w [0]));
+    defparam \u0_DQSBUF.DQSBUF_inst .GSR = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .ENABLE_FIFO = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .FORCE_READ = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .FREE_WHEEL = "DDR";
+    defparam \u0_DQSBUF.DQSBUF_inst .MODX = "MDDRX2";
+    defparam \u0_DQSBUF.DQSBUF_inst .MT_EN_READ = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .MT_EN_WRITE = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .MT_EN_WRITE_LEVELING = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .RD_PNTR = "0b000";
+    defparam \u0_DQSBUF.DQSBUF_inst .READ_ENABLE = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .RX_CENTERED = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .S_READ = "0";
+    defparam \u0_DQSBUF.DQSBUF_inst .S_WRITE = "0";
+    defparam \u0_DQSBUF.DQSBUF_inst .SIGN_READ = "POSITIVE";
+    defparam \u0_DQSBUF.DQSBUF_inst .SIGN_WRITE = "POSITIVE";
+    defparam \u0_DQSBUF.DQSBUF_inst .UPDATE_QU = "UP1_AND_UP0_SAME";
+    defparam \u0_DQSBUF.DQSBUF_inst .WRITE_ENABLE = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .SEL_READ_BIT_ENABLE_CYCLES = "NORMAL";
+    defparam \u0_DQSBUF.DQSBUF_inst .BYPASS_WR_LEVEL_SMTH_LATCH = "SMOOTHING_PATH";
+    defparam \u0_DQSBUF.DQSBUF_inst .BYPASS_WR_SMTH_LATCH = "SMOOTHING_PATH";
+    defparam \u0_DQSBUF.DQSBUF_inst .BYPASS_READ_SMTH_LATCH = "SMOOTHING_PATH";
+
+endmodule
+
+module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
+    input \sclk_o ,
+    input \eclkout_w ,
+    inout \dqs0_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    input [8:0] \code_w ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs0_io );
+
+    wire \dqs_o_w ;
+
+    wire \dqs_outen_n_w ;
+
+    wire \dqs_bb_out_w ;
+
+    wire \dqts_w ;
+
+    wire \sw270_out_w ;
+
+    wire \dqswout_w ;
+
+    wire [7:0] \dout_w ;
+
+    wire [3:0] \u0_DQSBUF.RDCLKSEL ;
+
+    wire [2:0] \u0_DQSBUF.RDPNTR ;
+
+    wire [3:0] \u0_DQSBUF.READ ;
+
+    wire [2:0] \u0_DQSBUF.WRPNTR ;
+
+    wire [8:0] \u0_DQSBUF.DLLCODE ;
+
+    (* \IO_TYPE ="SSTL15D_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQS_BLOCK.u_DQS_BB (
+      .\T (\dqs_outen_n_w ),
+      .\I (\dqs_o_w ),
+      .\O (\dqs_bb_out_w ),
+      .\B (\dqs0_io ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[6].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [6]),
+      .\B (\dq_dqs0_io [6]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[4].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [4]),
+      .\B (\dq_dqs0_io [4]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[2].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [2]),
+      .\B (\dq_dqs0_io [2]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[0].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [0]),
+      .\B (\dq_dqs0_io [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[1].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [1]),
+      .\B (\dq_dqs0_io [1]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[3].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [3]),
+      .\B (\dq_dqs0_io [3]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[5].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [5]),
+      .\B (\dq_dqs0_io [5]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[7].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [7]),
+      .\B (\dq_dqs0_io [7]));
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [1]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [5]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [2]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [4]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [7]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [0]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [3]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [6]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="TSHX2DQS" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \TSHX2DQS  \TS_BLOCK.TS_X2.u_TSHX2DQS (
+      .\T0 (\GND_net ),
+      .\T1 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dqs_outen_n_w ),
+      .\DQSW (\dqswout_w ));
+    defparam \TS_BLOCK.TS_X2.u_TSHX2DQS .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="TSHX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \TSHX2DQ  \TS_BLOCK.TS_X2.u_TSHX2DQ (
+      .\T0 (\GND_net ),
+      .\T1 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dqts_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \TS_BLOCK.TS_X2.u_TSHX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQS" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQS  \DQS_BLOCK.DQS_X2.u_ODDRX2DQS (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dqs_o_w ),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW (\dqswout_w ));
+    defparam \DQS_BLOCK.DQS_X2.u_ODDRX2DQS .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \ENABLE_FIFO ="ENABLED" ,
+       \FORCE_READ ="ENABLED" ,
+       \FREE_WHEEL ="DDR" ,
+       \MODX ="MDDRX2" ,
+       \MT_EN_READ ="ENABLED" ,
+       \MT_EN_WRITE ="ENABLED" ,
+       \MT_EN_WRITE_LEVELING ="ENABLED" ,
+       \RD_PNTR ="0b000" ,
+       \READ_ENABLE ="ENABLED" ,
+       \RX_CENTERED ="ENABLED" ,
+       \S_READ ="0" ,
+       \S_WRITE ="0" ,
+       \SIGN_READ ="POSITIVE" ,
+       \SIGN_WRITE ="POSITIVE" ,
+       \UPDATE_QU ="UP1_AND_UP0_SAME" ,
+       \WRITE_ENABLE ="ENABLED" ,
+       \SEL_READ_BIT_ENABLE_CYCLES ="NORMAL" ,
+       \BYPASS_WR_LEVEL_SMTH_LATCH ="SMOOTHING_PATH" ,
+       \BYPASS_WR_SMTH_LATCH ="SMOOTHING_PATH" ,
+       \BYPASS_READ_SMTH_LATCH ="SMOOTHING_PATH" ,
+       \dm:primitive ="DQSBUF_CORE" ,
+       \dm:programming ="GSR:#ON ENABLE_FIFO:::ENABLE_FIFO=ENABLED FORCE_READ:::FORCE_READ=ENABLED FREE_WHEEL:#ON MODX:::MODX=MDDRX2 MT_EN_READ:::MT_EN_READ=ENABLED MT_EN_WRITE:::MT_EN_WRITE=ENABLED MT_EN_WRITE_LEVELING:::MT_EN_WRITE_LEVELING=ENABLED RD_PNTR:#ON READ_ENABLE:::READ_ENABLE=ENABLED RX_CENTERED:#ON S_READ:#ON S_WRITE:#ON SIGN_READ:#ON SIGN_WRITE:#ON UPDATE_QU:#ON WRITE_ENABLE:::WRITE_ENABLE=ENABLED SEL_READ_BIT_ENABLE_CYCLES:#ON BYPASS_WR_LEVEL_SMTH_LATCH:#ON BYPASS_WR_SMTH_LATCH:#ON BYPASS_READ_SMTH_LATCH:#ON" ,
+       \dm:user ="0" *)
+    \DQSBUF_CORE  \u0_DQSBUF.DQSBUF_inst (
+      .\DQSI (\dqs_bb_out_w ),
+      .\DQSW (\dqswout_w ),
+      .\PAUSE (\GND_net ),
+      .\RDCLKSEL3 (\GND_net ),
+      .\RDCLKSEL2 (\GND_net ),
+      .\RDCLKSEL1 (\GND_net ),
+      .\RDCLKSEL0 (\GND_net ),
+      .\RDDIR (\GND_net ),
+      .\RDLOADN (\VCC_net ),
+      .\READ3 (\GND_net ),
+      .\READ2 (\GND_net ),
+      .\READ1 (\GND_net ),
+      .\READ0 (\GND_net ),
+      .\READMOVE (\GND_net ),
+      .\RST (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\SELCLK (\GND_net ),
+      .\DQSW270 (\sw270_out_w ),
+      .\WRDIR (\GND_net ),
+      .\WRLOAD_N (\VCC_net ),
+      .\WRLVDIR (\GND_net ),
+      .\WRLVLOAD_N (\VCC_net ),
+      .\WRLVMOVE (\GND_net ),
+      .\WRMOVE (\GND_net ),
+      .\ECLKIN (\eclkout_w ),
+      .\RSTSMCNT (\GND_net ),
+      .\DLLCODE8 (\code_w [8]),
+      .\DLLCODE7 (\code_w [7]),
+      .\DLLCODE6 (\code_w [6]),
+      .\DLLCODE5 (\code_w [5]),
+      .\DLLCODE4 (\code_w [4]),
+      .\DLLCODE3 (\code_w [3]),
+      .\DLLCODE2 (\code_w [2]),
+      .\DLLCODE1 (\code_w [1]),
+      .\DLLCODE0 (\code_w [0]));
+    defparam \u0_DQSBUF.DQSBUF_inst .GSR = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .ENABLE_FIFO = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .FORCE_READ = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .FREE_WHEEL = "DDR";
+    defparam \u0_DQSBUF.DQSBUF_inst .MODX = "MDDRX2";
+    defparam \u0_DQSBUF.DQSBUF_inst .MT_EN_READ = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .MT_EN_WRITE = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .MT_EN_WRITE_LEVELING = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .RD_PNTR = "0b000";
+    defparam \u0_DQSBUF.DQSBUF_inst .READ_ENABLE = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .RX_CENTERED = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .S_READ = "0";
+    defparam \u0_DQSBUF.DQSBUF_inst .S_WRITE = "0";
+    defparam \u0_DQSBUF.DQSBUF_inst .SIGN_READ = "POSITIVE";
+    defparam \u0_DQSBUF.DQSBUF_inst .SIGN_WRITE = "POSITIVE";
+    defparam \u0_DQSBUF.DQSBUF_inst .UPDATE_QU = "UP1_AND_UP0_SAME";
+    defparam \u0_DQSBUF.DQSBUF_inst .WRITE_ENABLE = "ENABLED";
+    defparam \u0_DQSBUF.DQSBUF_inst .SEL_READ_BIT_ENABLE_CYCLES = "NORMAL";
+    defparam \u0_DQSBUF.DQSBUF_inst .BYPASS_WR_LEVEL_SMTH_LATCH = "SMOOTHING_PATH";
+    defparam \u0_DQSBUF.DQSBUF_inst .BYPASS_WR_SMTH_LATCH = "SMOOTHING_PATH";
+    defparam \u0_DQSBUF.DQSBUF_inst .BYPASS_READ_SMTH_LATCH = "SMOOTHING_PATH";
+
+endmodule
+
+module \DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK  (
+    output \DDR_MEM_1_csn_o_c_0 ,
+    input \sclk_o ,
+    input \eclkout_w ,
+    input \GND_net );
+
+    wire [0:0] \q_out_csn_w ;
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="OSHX2" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \OSHX2  \DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\q_out_csn_w [0]));
+    defparam \DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2 .GSR = "ENABLED";
+
+    (* \DEL_VALUE ="0" ,
+       \COARSE_DELAY ="0NS" ,
+       \DEL_MODE ="DQS_CMD_CLK" ,
+       \dm:primitive ="DELAYB" ,
+       \dm:programming ="COARSE_DELAY:#ON DEL_VALUE:#ON DEL_MODE:::DEL_MODE=DQS_CMD_CLK" ,
+       \dm:user ="0" *)
+    \DELAYB  \DDR_CSN[0].u_DELAYB (
+      .\A (\q_out_csn_w [0]),
+      .\Z (\DDR_MEM_1_csn_o_c_0 ));
+    defparam \DDR_CSN[0].u_DELAYB .DEL_VALUE = "0";
+    defparam \DDR_CSN[0].u_DELAYB .COARSE_DELAY = "0NS";
+    defparam \DDR_CSN[0].u_DELAYB .DEL_MODE = "DQS_CMD_CLK";
+
+endmodule
+
+module \DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0  (
+    output \DDR_MEM_1_odt_o_c_0 ,
+    output \DDR_MEM_1_cke_o_c_0 ,
+    output \DDR_MEM_1_casn_o_c ,
+    output \DDR_MEM_1_rasn_o_c ,
+    output \DDR_MEM_1_wen_o_c ,
+    input \sclk_o ,
+    input \GND_net ,
+    output [12:0] \DDR_MEM_1_addr_o_c ,
+    output [2:0] \DDR_MEM_1_ba_o_c );
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_CKE[0].DDR_CKE_X2.u_CKE_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_cke_o_c_0 ));
+    defparam \DDR_CKE[0].DDR_CKE_X2.u_CKE_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ODT[0].DDR_ODT_X2.u_ODT_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_odt_o_c_0 ));
+    defparam \DDR_ODT[0].DDR_ODT_X2.u_ODT_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_WEN.DDR_WEN_X2.u_WEN_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_wen_o_c ));
+    defparam \DDR_WEN.DDR_WEN_X2.u_WEN_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_RASN.DDR_RASN_X2.u_RASN_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_rasn_o_c ));
+    defparam \DDR_RASN.DDR_RASN_X2.u_RASN_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_CASN.DDR_CASN_X2.u_CASN_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_casn_o_c ));
+    defparam \DDR_CASN.DDR_CASN_X2.u_CASN_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_BA[2].DDR_BA_X2.u_BA_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_ba_o_c [2]));
+    defparam \DDR_BA[2].DDR_BA_X2.u_BA_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_BA[0].DDR_BA_X2.u_BA_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_ba_o_c [0]));
+    defparam \DDR_BA[0].DDR_BA_X2.u_BA_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_BA[1].DDR_BA_X2.u_BA_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_ba_o_c [1]));
+    defparam \DDR_BA[1].DDR_BA_X2.u_BA_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[3].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [3]));
+    defparam \DDR_ADDR[3].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[8].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [8]));
+    defparam \DDR_ADDR[8].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[2].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [2]));
+    defparam \DDR_ADDR[2].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[9].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [9]));
+    defparam \DDR_ADDR[9].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[5].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [5]));
+    defparam \DDR_ADDR[5].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[10].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [10]));
+    defparam \DDR_ADDR[10].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[4].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [4]));
+    defparam \DDR_ADDR[4].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[11].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [11]));
+    defparam \DDR_ADDR[11].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[6].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [6]));
+    defparam \DDR_ADDR[6].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[12].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [12]));
+    defparam \DDR_ADDR[12].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[1].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [1]));
+    defparam \DDR_ADDR[1].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[0].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [0]));
+    defparam \DDR_ADDR[0].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX1" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX1  \DDR_ADDR[7].DDR_ADDR_X2.u_ADDR_ODDRX1 (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\DDR_MEM_1_addr_o_c [7]));
+    defparam \DDR_ADDR[7].DDR_ADDR_X2.u_ADDR_ODDRX1 .GSR = "ENABLED";
+
+endmodule
+
+module \DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK  (
+    output \DDR_MEM_1_ck_o_c_0 ,
+    input \eclkout_w ,
+    input \sclk_o ,
+    input \GND_net ,
+    input \VCC_net );
+
+    wire [0:0] \q_out_clk_w ;
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2  \DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2 (
+      .\D0 (\GND_net ),
+      .\D1 (\VCC_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\q_out_clk_w [0]),
+      .\D2 (\GND_net ),
+      .\D3 (\VCC_net ),
+      .\ECLK (\eclkout_w ));
+    defparam \DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2 .GSR = "ENABLED";
+
+    (* \DEL_VALUE ="0" ,
+       \COARSE_DELAY ="0NS" ,
+       \DEL_MODE ="DQS_CMD_CLK" ,
+       \dm:primitive ="DELAYB" ,
+       \dm:programming ="COARSE_DELAY:#ON DEL_VALUE:#ON DEL_MODE:::DEL_MODE=DQS_CMD_CLK" ,
+       \dm:user ="0" *)
+    \DELAYB  \DDR_CLK[0].u_DELAYB (
+      .\A (\q_out_clk_w [0]),
+      .\Z (\DDR_MEM_1_ck_o_c_0 ));
+    defparam \DDR_CLK[0].u_DELAYB .DEL_VALUE = "0";
+    defparam \DDR_CLK[0].u_DELAYB .COARSE_DELAY = "0NS";
+    defparam \DDR_CLK[0].u_DELAYB .DEL_MODE = "DQS_CMD_CLK";
+
+endmodule
+
+module \DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0  (
+    output \DDR_MEM_1_ck_o_c_0 ,
+    output \DDR_MEM_1_cke_o_c_0 ,
+    output \DDR_MEM_1_odt_o_c_0 ,
+    output \DDR_MEM_1_csn_o_c_0 ,
+    output \DDR_MEM_1_wen_o_c ,
+    output \DDR_MEM_1_rasn_o_c ,
+    output \DDR_MEM_1_casn_o_c ,
+    inout \dqs0_io ,
+    inout \dqs1_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    output [2:0] \DDR_MEM_1_ba_o_c ,
+    output [12:0] \DDR_MEM_1_addr_o_c ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs0_io ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs1_io );
+
+    wire \eclkout_w ;
+
+    wire \sclk_o ;
+
+    wire [8:0] \code_w ;
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_common_logic_2s_2  \u1_common_logic (
+      .\code_w ({\code_w [8], \code_w [7], \code_w [6], \code_w [5], \code_w [4], \code_w [3], \code_w [2], \code_w [1], \code_w [0]}),
+      .\eclkout_w (\eclkout_w ),
+      .\sclk_o (\sclk_o ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  \DW_16.u1_dq_dqs_dm_unit (
+      .\code_w ({\code_w [8], \code_w [7], \code_w [6], \code_w [5], \code_w [4], \code_w [3], \code_w [2], \code_w [1], \code_w [0]}),
+      .\dq_dqs1_io ({\dq_dqs1_io [7], \dq_dqs1_io [6], \dq_dqs1_io [5], \dq_dqs1_io [4], \dq_dqs1_io [3], \dq_dqs1_io [2], \dq_dqs1_io [1], \dq_dqs1_io [0]}),
+      .\sclk_o (\sclk_o ),
+      .\eclkout_w (\eclkout_w ),
+      .\dqs1_io (\dqs1_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  \DW_8.u1_dq_dqs_dm_unit (
+      .\code_w ({\code_w [8], \code_w [7], \code_w [6], \code_w [5], \code_w [4], \code_w [3], \code_w [2], \code_w [1], \code_w [0]}),
+      .\dq_dqs0_io ({\dq_dqs0_io [7], \dq_dqs0_io [6], \dq_dqs0_io [5], \dq_dqs0_io [4], \dq_dqs0_io [3], \dq_dqs0_io [2], \dq_dqs0_io [1], \dq_dqs0_io [0]}),
+      .\sclk_o (\sclk_o ),
+      .\eclkout_w (\eclkout_w ),
+      .\dqs0_io (\dqs0_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK  \DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn (
+      .\DDR_MEM_1_csn_o_c_0 (\DDR_MEM_1_csn_o_c_0 ),
+      .\sclk_o (\sclk_o ),
+      .\eclkout_w (\eclkout_w ),
+      .\GND_net (\GND_net ));
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0  \DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt (
+      .\DDR_MEM_1_addr_o_c ({\DDR_MEM_1_addr_o_c [12], \DDR_MEM_1_addr_o_c [11], \DDR_MEM_1_addr_o_c [10], \DDR_MEM_1_addr_o_c [9], \DDR_MEM_1_addr_o_c [8], \DDR_MEM_1_addr_o_c [7], \DDR_MEM_1_addr_o_c [6], \DDR_MEM_1_addr_o_c [5], \DDR_MEM_1_addr_o_c [4], \DDR_MEM_1_addr_o_c [3], \DDR_MEM_1_addr_o_c [2], \DDR_MEM_1_addr_o_c [1], \DDR_MEM_1_addr_o_c [0]}),
+      .\DDR_MEM_1_ba_o_c ({\DDR_MEM_1_ba_o_c [2], \DDR_MEM_1_ba_o_c [1], \DDR_MEM_1_ba_o_c [0]}),
+      .\DDR_MEM_1_odt_o_c_0 (\DDR_MEM_1_odt_o_c_0 ),
+      .\DDR_MEM_1_cke_o_c_0 (\DDR_MEM_1_cke_o_c_0 ),
+      .\DDR_MEM_1_casn_o_c (\DDR_MEM_1_casn_o_c ),
+      .\DDR_MEM_1_rasn_o_c (\DDR_MEM_1_rasn_o_c ),
+      .\DDR_MEM_1_wen_o_c (\DDR_MEM_1_wen_o_c ),
+      .\sclk_o (\sclk_o ),
+      .\GND_net (\GND_net ));
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK  \DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck (
+      .\DDR_MEM_1_ck_o_c_0 (\DDR_MEM_1_ck_o_c_0 ),
+      .\eclkout_w (\eclkout_w ),
+      .\sclk_o (\sclk_o ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+endmodule
+
+module \DDR_MEM_1  (
+    output \DDR_MEM_1_csn_o_c_0 ,
+    output \DDR_MEM_1_odt_o_c_0 ,
+    output \DDR_MEM_1_cke_o_c_0 ,
+    output \DDR_MEM_1_ck_o_c_0 ,
+    inout \dqs1_io ,
+    inout \dqs0_io ,
+    output \DDR_MEM_1_casn_o_c ,
+    output \DDR_MEM_1_rasn_o_c ,
+    output \DDR_MEM_1_wen_o_c ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs1_io ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs0_io ,
+    output [12:0] \DDR_MEM_1_addr_o_c ,
+    output [2:0] \DDR_MEM_1_ba_o_c );
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0  \lscc_ddr_mem_inst (
+      .\DDR_MEM_1_ck_o_c_0 (\DDR_MEM_1_ck_o_c_0 ),
+      .\DDR_MEM_1_cke_o_c_0 (\DDR_MEM_1_cke_o_c_0 ),
+      .\DDR_MEM_1_odt_o_c_0 (\DDR_MEM_1_odt_o_c_0 ),
+      .\DDR_MEM_1_ba_o_c ({\DDR_MEM_1_ba_o_c [2], \DDR_MEM_1_ba_o_c [1], \DDR_MEM_1_ba_o_c [0]}),
+      .\DDR_MEM_1_addr_o_c ({\DDR_MEM_1_addr_o_c [12], \DDR_MEM_1_addr_o_c [11], \DDR_MEM_1_addr_o_c [10], \DDR_MEM_1_addr_o_c [9], \DDR_MEM_1_addr_o_c [8], \DDR_MEM_1_addr_o_c [7], \DDR_MEM_1_addr_o_c [6], \DDR_MEM_1_addr_o_c [5], \DDR_MEM_1_addr_o_c [4], \DDR_MEM_1_addr_o_c [3], \DDR_MEM_1_addr_o_c [2], \DDR_MEM_1_addr_o_c [1], \DDR_MEM_1_addr_o_c [0]}),
+      .\DDR_MEM_1_csn_o_c_0 (\DDR_MEM_1_csn_o_c_0 ),
+      .\dq_dqs0_io ({\dq_dqs0_io [7], \dq_dqs0_io [6], \dq_dqs0_io [5], \dq_dqs0_io [4], \dq_dqs0_io [3], \dq_dqs0_io [2], \dq_dqs0_io [1], \dq_dqs0_io [0]}),
+      .\dq_dqs1_io ({\dq_dqs1_io [7], \dq_dqs1_io [6], \dq_dqs1_io [5], \dq_dqs1_io [4], \dq_dqs1_io [3], \dq_dqs1_io [2], \dq_dqs1_io [1], \dq_dqs1_io [0]}),
+      .\DDR_MEM_1_wen_o_c (\DDR_MEM_1_wen_o_c ),
+      .\DDR_MEM_1_rasn_o_c (\DDR_MEM_1_rasn_o_c ),
+      .\DDR_MEM_1_casn_o_c (\DDR_MEM_1_casn_o_c ),
+      .\dqs0_io (\dqs0_io ),
+      .\dqs1_io (\dqs1_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+endmodule
+
+module \MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0  (
+    inout \MIPI_DPHY_1_clk_p_io ,
+    inout \MIPI_DPHY_1_clk_n_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_p_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_n_io );
+
+    wire [4:0] \HARD_IP.NO_CIL.u_dphy_nocil.LMMIOFFSET ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.LMMIWDATA ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.LMMIRDATA ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D0ACTIVE ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D0BYTCNT ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D0ERRCNT ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D0PASS ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D0VALID ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D1ACTIVE ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D1BYTCNT ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D1ERRCNT ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D1PASS ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D1VALID ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D2ACTIVE ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D2BYTCNT ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D2ERRCNT ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D2PASS ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D2VALID ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D3ACTIVE ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D3BYTCNT ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.D3ERRCNT ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D3PASS ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.D3VALID ;
+
+    wire [9:0] \HARD_IP.NO_CIL.u_dphy_nocil.DCTSTOUT ;
+
+    wire [7:0] \HARD_IP.NO_CIL.u_dphy_nocil.URXDE ;
+
+    wire [15:0] \HARD_IP.NO_CIL.u_dphy_nocil.URXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.URXSHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.URXVDHS ;
+
+    wire [31:0] \HARD_IP.NO_CIL.u_dphy_nocil.UTXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.UTXWVDHS ;
+
+    wire [7:0] \HARD_IP.NO_CIL.u_dphy_nocil.U1RXDE ;
+
+    wire [15:0] \HARD_IP.NO_CIL.u_dphy_nocil.U1RXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U1RXSHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U1RXVDHS ;
+
+    wire [31:0] \HARD_IP.NO_CIL.u_dphy_nocil.U1TXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U1TXWVHS ;
+
+    wire [7:0] \HARD_IP.NO_CIL.u_dphy_nocil.U2RXDE ;
+
+    wire [15:0] \HARD_IP.NO_CIL.u_dphy_nocil.U2RXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U2RXSHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U2RXVDHS ;
+
+    wire [31:0] \HARD_IP.NO_CIL.u_dphy_nocil.U2TXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U2TXWVHS ;
+
+    wire [7:0] \HARD_IP.NO_CIL.u_dphy_nocil.U3RXDE ;
+
+    wire [15:0] \HARD_IP.NO_CIL.u_dphy_nocil.U3RXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U3RXSHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U3RXVDHS ;
+
+    wire [31:0] \HARD_IP.NO_CIL.u_dphy_nocil.U3TXDHS ;
+
+    wire [3:0] \HARD_IP.NO_CIL.u_dphy_nocil.U3TXWVHS ;
+
+    wire [1:0] \HARD_IP.NO_CIL.u_dphy_nocil.LTSTLANE ;
+
+    (* \GSR ="ENABLED" ,
+       \AUTO_PD_EN ="POWERED_UP" ,
+       \CFG_NUM_LANES ="FOUR_LANES" ,
+       \CM ="0b00000000" ,
+       \CN ="0b00000" ,
+       \CO ="0b000" ,
+       \CONT_CLK_MODE ="ENABLED" ,
+       \DESKEW_EN ="DISABLED" ,
+       \DSI_CSI ="CSI2_APP" ,
+       \EN_CIL ="CIL_BYPASSED" ,
+       \HSEL ="DISABLED" ,
+       \LANE0_SEL ="LANE_0" ,
+       \LOCK_BYP ="GATE_TXBYTECLKHS" ,
+       \MASTER_SLAVE ="SLAVE" ,
+       \PLLCLKBYPASS ="BYPASSED" ,
+       \RSEL ="0b00" ,
+       \RXCDRP ="0b01" ,
+       \RXDATAWIDTHHS ="0b00" ,
+       \RXLPRP ="0b001" ,
+       \TEST_ENBL ="0b000000" ,
+       \TEST_PATTERN ="0b10000000001000000000000000000000" ,
+       \TST ="0b0000" ,
+       \TXDATAWIDTHHS ="0b00" ,
+       \U_PRG_HS_PREPARE ="0b00" ,
+       \U_PRG_HS_TRAIL ="0b000000" ,
+       \U_PRG_HS_ZERO ="0b000000" ,
+       \U_PRG_RXHS_SETTLE ="0b000001" ,
+       \UC_PRG_HS_PREPARE ="1P0_TXCLKESC" ,
+       \UC_PRG_HS_TRAIL ="0b00000" ,
+       \UC_PRG_HS_ZERO ="0b0000000" ,
+       \UC_PRG_RXHS_SETTLE ="0b000001" ,
+       \dm:primitive ="DPHY_CORE" ,
+       \dm:programming ="GSR:#ON AUTO_PD_EN:#ON CFG_NUM_LANES:::CFG_NUM_LANES=FOUR_LANES CM:#ON CN:#ON CO:#ON CONT_CLK_MODE:::CONT_CLK_MODE=ENABLED DESKEW_EN:#ON DSI_CSI:#ON EN_CIL:::EN_CIL=CIL_BYPASSED HSEL:#ON LANE0_SEL:#ON LOCK_BYP:#ON MASTER_SLAVE:#ON PLLCLKBYPASS:::PLLCLKBYPASS=BYPASSED RSEL:#ON RXCDRP:::RXCDRP=0b01 RXDATAWIDTHHS:#ON RXLPRP:::RXLPRP=0b001 TEST_ENBL:#ON TEST_PATTERN:::TEST_PATTERN=0b10000000001000000000000000000000 TST:::TST=0b0000 TXDATAWIDTHHS:#ON U_PRG_HS_PREPARE:#ON U_PRG_HS_TRAIL:#ON U_PRG_HS_ZERO:#ON U_PRG_RXHS_SETTLE:::U_PRG_RXHS_SETTLE=0b000001 UC_PRG_HS_PREPARE:#ON UC_PRG_HS_TRAIL:#ON UC_PRG_HS_ZERO:#ON UC_PRG_RXHS_SETTLE:::UC_PRG_RXHS_SETTLE=0b000001" ,
+       \dm:user ="0" *)
+    \DPHY_CORE  \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst (
+      .\BITCKEXT (\VCC_net ),
+      .\CKN (\MIPI_DPHY_1_clk_n_io ),
+      .\CKP (\MIPI_DPHY_1_clk_p_io ),
+      .\CLKREF (\GND_net ),
+      .\DN0 (\MIPI_DPHY_1_data_n_io [0]),
+      .\DN1 (\MIPI_DPHY_1_data_n_io [1]),
+      .\DN2 (\MIPI_DPHY_1_data_n_io [2]),
+      .\DN3 (\MIPI_DPHY_1_data_n_io [3]),
+      .\DP0 (\MIPI_DPHY_1_data_p_io [0]),
+      .\DP1 (\MIPI_DPHY_1_data_p_io [1]),
+      .\DP2 (\MIPI_DPHY_1_data_p_io [2]),
+      .\DP3 (\MIPI_DPHY_1_data_p_io [3]),
+      .\PDDPHY (\GND_net ),
+      .\PDPLL (\VCC_net ),
+      .\SCCLKIN (\VCC_net ),
+      .\SCRSTNIN (\VCC_net ),
+      .\UED0THEN (\GND_net ),
+      .\UFRXMODE (\VCC_net ),
+      .\UTXMDTX (\GND_net ),
+      .\URXCKINE (\VCC_net ),
+      .\UTDIS (\VCC_net ),
+      .\UTXCKE (\VCC_net ),
+      .\UDE0D0TN (\GND_net ),
+      .\UDE1D1TN (\GND_net ),
+      .\UDE2D2TN (\GND_net ),
+      .\UDE3D3TN (\GND_net ),
+      .\UDE4CKTN (\GND_net ),
+      .\UDE5D0RN (\GND_net ),
+      .\UDE6D1RN (\GND_net ),
+      .\UDE7D2RN (\GND_net ),
+      .\UTXDHS31 (\VCC_net ),
+      .\UTXDHS30 (\VCC_net ),
+      .\UTXDHS29 (\VCC_net ),
+      .\UTXDHS28 (\VCC_net ),
+      .\UTXDHS27 (\VCC_net ),
+      .\UTXDHS26 (\VCC_net ),
+      .\UTXDHS25 (\VCC_net ),
+      .\UTXDHS24 (\VCC_net ),
+      .\UTXDHS23 (\VCC_net ),
+      .\UTXDHS22 (\VCC_net ),
+      .\UTXDHS21 (\VCC_net ),
+      .\UTXDHS20 (\VCC_net ),
+      .\UTXDHS19 (\VCC_net ),
+      .\UTXDHS18 (\VCC_net ),
+      .\UTXDHS17 (\VCC_net ),
+      .\UTXDHS16 (\VCC_net ),
+      .\UTXDHS15 (\VCC_net ),
+      .\UTXDHS14 (\VCC_net ),
+      .\UTXDHS13 (\VCC_net ),
+      .\UTXDHS12 (\VCC_net ),
+      .\UTXDHS11 (\VCC_net ),
+      .\UTXDHS10 (\VCC_net ),
+      .\UTXDHS9 (\VCC_net ),
+      .\UTXDHS8 (\VCC_net ),
+      .\UTXDHS7 (\VCC_net ),
+      .\UTXDHS6 (\VCC_net ),
+      .\UTXDHS5 (\VCC_net ),
+      .\UTXDHS4 (\VCC_net ),
+      .\UTXDHS3 (\VCC_net ),
+      .\UTXDHS2 (\VCC_net ),
+      .\UTXDHS1 (\VCC_net ),
+      .\UTXDHS0 (\VCC_net ),
+      .\UTXENER (\GND_net ),
+      .\UTXRD0EN (\GND_net ),
+      .\UTRD0SEN (\GND_net ),
+      .\UTXSKD0N (\GND_net ),
+      .\UTXTGE0 (\VCC_net ),
+      .\UTXTGE1 (\VCC_net ),
+      .\UTXTGE2 (\VCC_net ),
+      .\UTXTGE3 (\VCC_net ),
+      .\UTXULPSE (\VCC_net ),
+      .\UTXUPSEX (\VCC_net ),
+      .\UTXVDE (\VCC_net ),
+      .\UTXWVDHS3 (\VCC_net ),
+      .\UTXWVDHS2 (\VCC_net ),
+      .\UTXWVDHS1 (\VCC_net ),
+      .\UTXWVDHS0 (\VCC_net ),
+      .\U1ENTHEN (\GND_net ),
+      .\U1FRXMD (\VCC_net ),
+      .\U1FTXST (\GND_net ),
+      .\U1TDIS (\VCC_net ),
+      .\U1TREQ (\VCC_net ),
+      .\U1TDE0D3 (\GND_net ),
+      .\U1TDE1CK (\GND_net ),
+      .\U1TDE2D0 (\VCC_net ),
+      .\U1TDE3D1 (\VCC_net ),
+      .\U1TDE4D2 (\VCC_net ),
+      .\U1TDE5D3 (\VCC_net ),
+      .\U1TDE6 (\VCC_net ),
+      .\U1TDE7 (\VCC_net ),
+      .\U1TXDHS31 (\VCC_net ),
+      .\U1TXDHS30 (\VCC_net ),
+      .\U1TXDHS29 (\VCC_net ),
+      .\U1TXDHS28 (\VCC_net ),
+      .\U1TXDHS27 (\VCC_net ),
+      .\U1TXDHS26 (\VCC_net ),
+      .\U1TXDHS25 (\VCC_net ),
+      .\U1TXDHS24 (\VCC_net ),
+      .\U1TXDHS23 (\VCC_net ),
+      .\U1TXDHS22 (\VCC_net ),
+      .\U1TXDHS21 (\VCC_net ),
+      .\U1TXDHS20 (\VCC_net ),
+      .\U1TXDHS19 (\VCC_net ),
+      .\U1TXDHS18 (\VCC_net ),
+      .\U1TXDHS17 (\VCC_net ),
+      .\U1TXDHS16 (\VCC_net ),
+      .\U1TXDHS15 (\VCC_net ),
+      .\U1TXDHS14 (\VCC_net ),
+      .\U1TXDHS13 (\VCC_net ),
+      .\U1TXDHS12 (\VCC_net ),
+      .\U1TXDHS11 (\VCC_net ),
+      .\U1TXDHS10 (\VCC_net ),
+      .\U1TXDHS9 (\VCC_net ),
+      .\U1TXDHS8 (\VCC_net ),
+      .\U1TXDHS7 (\VCC_net ),
+      .\U1TXDHS6 (\VCC_net ),
+      .\U1TXDHS5 (\VCC_net ),
+      .\U1TXDHS4 (\VCC_net ),
+      .\U1TXDHS3 (\VCC_net ),
+      .\U1TXDHS2 (\VCC_net ),
+      .\U1TXDHS1 (\VCC_net ),
+      .\U1TXDHS0 (\VCC_net ),
+      .\U1TXLPD (\VCC_net ),
+      .\U1TXREQ (\GND_net ),
+      .\U1TXREQH (\GND_net ),
+      .\U1TXSK (\GND_net ),
+      .\U1TXTGE0 (\VCC_net ),
+      .\U1TXTGE1 (\VCC_net ),
+      .\U1TXTGE2 (\VCC_net ),
+      .\U1TXTGE3 (\VCC_net ),
+      .\U1TXUPSE (\VCC_net ),
+      .\U1TXUPSX (\VCC_net ),
+      .\U1TXVDE (\VCC_net ),
+      .\U1TXWVHS3 (\VCC_net ),
+      .\U1TXWVHS2 (\VCC_net ),
+      .\U1TXWVHS1 (\VCC_net ),
+      .\U1TXWVHS0 (\VCC_net ),
+      .\U2END2 (\GND_net ),
+      .\U2FRXMD (\VCC_net ),
+      .\U2FTXST (\VCC_net ),
+      .\U2TDIS (\VCC_net ),
+      .\U2TREQ (\VCC_net ),
+      .\U2TDE0D0 (\VCC_net ),
+      .\U2TDE1D1 (\VCC_net ),
+      .\U2TDE2D2 (\VCC_net ),
+      .\U2TDE3D3 (\VCC_net ),
+      .\U2TDE4CK (\VCC_net ),
+      .\U2TDE5D0 (\VCC_net ),
+      .\U2TDE6D1 (\VCC_net ),
+      .\U2TDE7D2 (\VCC_net ),
+      .\U2TXDHS31 (\VCC_net ),
+      .\U2TXDHS30 (\VCC_net ),
+      .\U2TXDHS29 (\VCC_net ),
+      .\U2TXDHS28 (\VCC_net ),
+      .\U2TXDHS27 (\VCC_net ),
+      .\U2TXDHS26 (\VCC_net ),
+      .\U2TXDHS25 (\VCC_net ),
+      .\U2TXDHS24 (\VCC_net ),
+      .\U2TXDHS23 (\VCC_net ),
+      .\U2TXDHS22 (\VCC_net ),
+      .\U2TXDHS21 (\VCC_net ),
+      .\U2TXDHS20 (\VCC_net ),
+      .\U2TXDHS19 (\VCC_net ),
+      .\U2TXDHS18 (\VCC_net ),
+      .\U2TXDHS17 (\VCC_net ),
+      .\U2TXDHS16 (\VCC_net ),
+      .\U2TXDHS15 (\VCC_net ),
+      .\U2TXDHS14 (\VCC_net ),
+      .\U2TXDHS13 (\VCC_net ),
+      .\U2TXDHS12 (\VCC_net ),
+      .\U2TXDHS11 (\VCC_net ),
+      .\U2TXDHS10 (\VCC_net ),
+      .\U2TXDHS9 (\VCC_net ),
+      .\U2TXDHS8 (\VCC_net ),
+      .\U2TXDHS7 (\VCC_net ),
+      .\U2TXDHS6 (\VCC_net ),
+      .\U2TXDHS5 (\VCC_net ),
+      .\U2TXDHS4 (\VCC_net ),
+      .\U2TXDHS3 (\VCC_net ),
+      .\U2TXDHS2 (\VCC_net ),
+      .\U2TXDHS1 (\VCC_net ),
+      .\U2TXDHS0 (\VCC_net ),
+      .\U2TPDTE (\VCC_net ),
+      .\U2TXREQ (\GND_net ),
+      .\U2TXREQH (\GND_net ),
+      .\U2TXSKC (\GND_net ),
+      .\U2TXTGE0 (\VCC_net ),
+      .\U2TXTGE1 (\VCC_net ),
+      .\U2TXTGE2 (\VCC_net ),
+      .\U2TXTGE3 (\VCC_net ),
+      .\U2TXUPSE (\VCC_net ),
+      .\U2TXUPSX (\VCC_net ),
+      .\U2TXVDE (\VCC_net ),
+      .\U2TXWVHS3 (\VCC_net ),
+      .\U2TXWVHS2 (\VCC_net ),
+      .\U2TXWVHS1 (\VCC_net ),
+      .\U2TXWVHS0 (\VCC_net ),
+      .\U3END3 (\GND_net ),
+      .\U3FRXMD (\VCC_net ),
+      .\U3FTXST (\VCC_net ),
+      .\U3TDISD2 (\VCC_net ),
+      .\U3TREQD2 (\VCC_net ),
+      .\U3TDE0D3 (\VCC_net ),
+      .\U3TDE1D0 (\VCC_net ),
+      .\U3TDE2D1 (\VCC_net ),
+      .\U3TDE3D2 (\VCC_net ),
+      .\U3TDE4D3 (\VCC_net ),
+      .\U3TDE5CK (\VCC_net ),
+      .\U3TDE6 (\GND_net ),
+      .\U3TDE7 (\GND_net ),
+      .\U3TXDHS31 (\VCC_net ),
+      .\U3TXDHS30 (\VCC_net ),
+      .\U3TXDHS29 (\VCC_net ),
+      .\U3TXDHS28 (\VCC_net ),
+      .\U3TXDHS27 (\VCC_net ),
+      .\U3TXDHS26 (\VCC_net ),
+      .\U3TXDHS25 (\VCC_net ),
+      .\U3TXDHS24 (\VCC_net ),
+      .\U3TXDHS23 (\VCC_net ),
+      .\U3TXDHS22 (\VCC_net ),
+      .\U3TXDHS21 (\VCC_net ),
+      .\U3TXDHS20 (\VCC_net ),
+      .\U3TXDHS19 (\VCC_net ),
+      .\U3TXDHS18 (\VCC_net ),
+      .\U3TXDHS17 (\VCC_net ),
+      .\U3TXDHS16 (\VCC_net ),
+      .\U3TXDHS15 (\VCC_net ),
+      .\U3TXDHS14 (\VCC_net ),
+      .\U3TXDHS13 (\VCC_net ),
+      .\U3TXDHS12 (\VCC_net ),
+      .\U3TXDHS11 (\VCC_net ),
+      .\U3TXDHS10 (\VCC_net ),
+      .\U3TXDHS9 (\VCC_net ),
+      .\U3TXDHS8 (\VCC_net ),
+      .\U3TXDHS7 (\VCC_net ),
+      .\U3TXDHS6 (\VCC_net ),
+      .\U3TXDHS5 (\VCC_net ),
+      .\U3TXDHS4 (\VCC_net ),
+      .\U3TXDHS3 (\VCC_net ),
+      .\U3TXDHS2 (\VCC_net ),
+      .\U3TXDHS1 (\VCC_net ),
+      .\U3TXDHS0 (\VCC_net ),
+      .\U3TXLPDT (\VCC_net ),
+      .\U3TXREQ (\GND_net ),
+      .\U3TXREQH (\GND_net ),
+      .\U3TXSKC (\GND_net ),
+      .\U3TXTGE0 (\VCC_net ),
+      .\U3TXTGE1 (\VCC_net ),
+      .\U3TXTGE2 (\VCC_net ),
+      .\U3TXTGE3 (\VCC_net ),
+      .\U3TXULPS (\VCC_net ),
+      .\U3TXUPSX (\VCC_net ),
+      .\U3TXVD3 (\VCC_net ),
+      .\U3TXWVHS3 (\VCC_net ),
+      .\U3TXWVHS2 (\VCC_net ),
+      .\U3TXWVHS1 (\VCC_net ),
+      .\U3TXWVHS0 (\VCC_net ),
+      .\UCENCK (\GND_net ),
+      .\UCTXREQH (\GND_net ),
+      .\UCTXUPSC (\GND_net ),
+      .\UCTXUPSX (\GND_net ),
+      .\SCANCLK (\GND_net ),
+      .\SCANRST (\GND_net ),
+      .\LMMICLK (\GND_net ),
+      .\LMMIOFFSET4 (\GND_net ),
+      .\LMMIOFFSET3 (\GND_net ),
+      .\LMMIOFFSET2 (\GND_net ),
+      .\LMMIOFFSET1 (\GND_net ),
+      .\LMMIOFFSET0 (\GND_net ),
+      .\LMMIREQUEST (\GND_net ),
+      .\LMMIRESETN (\GND_net ),
+      .\LMMIWDATA3 (\GND_net ),
+      .\LMMIWDATA2 (\GND_net ),
+      .\LMMIWDATA1 (\GND_net ),
+      .\LMMIWDATA0 (\GND_net ),
+      .\LMMIWRRDN (\GND_net ),
+      .\LTSTEN (\GND_net ),
+      .\LTSTLANE1 (\GND_net ),
+      .\LTSTLANE0 (\VCC_net ),
+      .\UTRNREQ (\VCC_net ),
+      .\OPCGLDCK (\GND_net ));
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .GSR = "ENABLED";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .AUTO_PD_EN = "POWERED_UP";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .CFG_NUM_LANES = "FOUR_LANES";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .CM = "0b00000000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .CN = "0b00000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .CO = "0b000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .CONT_CLK_MODE = "ENABLED";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .DESKEW_EN = "DISABLED";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .DSI_CSI = "CSI2_APP";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .EN_CIL = "CIL_BYPASSED";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .HSEL = "DISABLED";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .LANE0_SEL = "LANE_0";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .LOCK_BYP = "GATE_TXBYTECLKHS";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .MASTER_SLAVE = "SLAVE";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .PLLCLKBYPASS = "BYPASSED";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .RSEL = "0b00";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .RXCDRP = "0b01";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .RXDATAWIDTHHS = "0b00";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .RXLPRP = "0b001";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .TEST_ENBL = "0b000000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .TEST_PATTERN = "0b10000000001000000000000000000000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .TST = "0b0000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .TXDATAWIDTHHS = "0b00";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .U_PRG_HS_PREPARE = "0b00";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .U_PRG_HS_TRAIL = "0b000000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .U_PRG_HS_ZERO = "0b000000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .U_PRG_RXHS_SETTLE = "0b000001";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .UC_PRG_HS_PREPARE = "1P0_TXCLKESC";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .UC_PRG_HS_TRAIL = "0b00000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .UC_PRG_HS_ZERO = "0b0000000";
+    defparam \HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst .UC_PRG_RXHS_SETTLE = "0b000001";
+
+endmodule
+
+module \MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0  (
+    inout \MIPI_DPHY_1_clk_n_io ,
+    inout \MIPI_DPHY_1_clk_p_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_n_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_p_io );
+
+    (* \dm:user ="0" *)
+    \MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0  \RECEIVER.lscc_mipi_wrapper_rx (
+      .\MIPI_DPHY_1_data_p_io ({\MIPI_DPHY_1_data_p_io [3], \MIPI_DPHY_1_data_p_io [2], \MIPI_DPHY_1_data_p_io [1], \MIPI_DPHY_1_data_p_io [0]}),
+      .\MIPI_DPHY_1_data_n_io ({\MIPI_DPHY_1_data_n_io [3], \MIPI_DPHY_1_data_n_io [2], \MIPI_DPHY_1_data_n_io [1], \MIPI_DPHY_1_data_n_io [0]}),
+      .\MIPI_DPHY_1_clk_p_io (\MIPI_DPHY_1_clk_p_io ),
+      .\MIPI_DPHY_1_clk_n_io (\MIPI_DPHY_1_clk_n_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+endmodule
+
+module \MIPI_DPHY_1  (
+    inout \MIPI_DPHY_1_clk_p_io ,
+    inout \MIPI_DPHY_1_clk_n_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_p_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_n_io );
+
+    (* \dm:user ="0" *)
+    \MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0  \lscc_mipi_dphy_inst (
+      .\MIPI_DPHY_1_data_n_io ({\MIPI_DPHY_1_data_n_io [3], \MIPI_DPHY_1_data_n_io [2], \MIPI_DPHY_1_data_n_io [1], \MIPI_DPHY_1_data_n_io [0]}),
+      .\MIPI_DPHY_1_data_p_io ({\MIPI_DPHY_1_data_p_io [3], \MIPI_DPHY_1_data_p_io [2], \MIPI_DPHY_1_data_p_io [1], \MIPI_DPHY_1_data_p_io [0]}),
+      .\MIPI_DPHY_1_clk_n_io (\MIPI_DPHY_1_clk_n_io ),
+      .\MIPI_DPHY_1_clk_p_io (\MIPI_DPHY_1_clk_p_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+endmodule
+
+module \MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0  (
+    inout \MIPI_DPHY_2_clk_p_io ,
+    inout \MIPI_DPHY_2_clk_n_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_p_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_n_io );
+
+    wire [4:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.LMMIOFFSET ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.LMMIWDATA ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.LMMIRDATA ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D0ACTIVE ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D0BYTCNT ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D0ERRCNT ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D0PASS ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D0VALID ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D1ACTIVE ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D1BYTCNT ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D1ERRCNT ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D1PASS ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D1VALID ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D2ACTIVE ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D2BYTCNT ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D2ERRCNT ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D2PASS ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D2VALID ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D3ACTIVE ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D3BYTCNT ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D3ERRCNT ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D3PASS ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.D3VALID ;
+
+    wire [9:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DCTSTOUT ;
+
+    wire [7:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.URXDE ;
+
+    wire [15:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.URXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.URXSHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.URXVDHS ;
+
+    wire [31:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.UTXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.UTXWVDHS ;
+
+    wire [7:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U1RXDE ;
+
+    wire [15:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U1RXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U1RXSHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U1RXVDHS ;
+
+    wire [31:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U1TXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U1TXWVHS ;
+
+    wire [7:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U2RXDE ;
+
+    wire [15:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U2RXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U2RXSHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U2RXVDHS ;
+
+    wire [31:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U2TXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U2TXWVHS ;
+
+    wire [7:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U3RXDE ;
+
+    wire [15:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U3RXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U3RXSHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U3RXVDHS ;
+
+    wire [31:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U3TXDHS ;
+
+    wire [3:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.U3TXWVHS ;
+
+    wire [1:0] \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.LTSTLANE ;
+
+    (* \GSR ="ENABLED" ,
+       \AUTO_PD_EN ="POWERED_UP" ,
+       \CFG_NUM_LANES ="FOUR_LANES" ,
+       \CM ="0b11010101" ,
+       \CN ="0b11111" ,
+       \CO ="0b010" ,
+       \CONT_CLK_MODE ="ENABLED" ,
+       \DESKEW_EN ="DISABLED" ,
+       \DSI_CSI ="DSI_APP" ,
+       \EN_CIL ="CIL_BYPASSED" ,
+       \HSEL ="DISABLED" ,
+       \LANE0_SEL ="LANE_0" ,
+       \LOCK_BYP ="GATE_TXBYTECLKHS" ,
+       \MASTER_SLAVE ="MASTER" ,
+       \PLLCLKBYPASS ="REGISTERED" ,
+       \RSEL ="0b01" ,
+       \RXCDRP ="0b00" ,
+       \RXDATAWIDTHHS ="0b01" ,
+       \RXLPRP ="0b000" ,
+       \TEST_ENBL ="0b000000" ,
+       \TEST_PATTERN ="0b00000000000000000000000000000000" ,
+       \TST ="0b1001" ,
+       \TXDATAWIDTHHS ="0b00" ,
+       \U_PRG_HS_PREPARE ="0b01" ,
+       \U_PRG_HS_TRAIL ="0b000001" ,
+       \U_PRG_HS_ZERO ="0b000001" ,
+       \U_PRG_RXHS_SETTLE ="0b000001" ,
+       \UC_PRG_HS_PREPARE ="1P0_TXCLKESC" ,
+       \UC_PRG_HS_TRAIL ="0b00001" ,
+       \UC_PRG_HS_ZERO ="0b0000001" ,
+       \UC_PRG_RXHS_SETTLE ="0b000001" ,
+       \dm:primitive ="DPHY_CORE" ,
+       \dm:programming ="GSR:#ON AUTO_PD_EN:#ON CFG_NUM_LANES:::CFG_NUM_LANES=FOUR_LANES CM:::CM=0b11010101 CN:::CN=0b11111 CO:::CO=0b010 CONT_CLK_MODE:::CONT_CLK_MODE=ENABLED DESKEW_EN:#ON DSI_CSI:::DSI_CSI=DSI_APP EN_CIL:::EN_CIL=CIL_BYPASSED HSEL:#ON LANE0_SEL:#ON LOCK_BYP:#ON MASTER_SLAVE:::MASTER_SLAVE=MASTER PLLCLKBYPASS:#ON RSEL:::RSEL=0b01 RXCDRP:#ON RXDATAWIDTHHS:::RXDATAWIDTHHS=0b01 RXLPRP:#ON TEST_ENBL:#ON TEST_PATTERN:#ON TST:#ON TXDATAWIDTHHS:#ON U_PRG_HS_PREPARE:::U_PRG_HS_PREPARE=0b01 U_PRG_HS_TRAIL:::U_PRG_HS_TRAIL=0b000001 U_PRG_HS_ZERO:::U_PRG_HS_ZERO=0b000001 U_PRG_RXHS_SETTLE:::U_PRG_RXHS_SETTLE=0b000001 UC_PRG_HS_PREPARE:#ON UC_PRG_HS_TRAIL:::UC_PRG_HS_TRAIL=0b00001 UC_PRG_HS_ZERO:::UC_PRG_HS_ZERO=0b0000001 UC_PRG_RXHS_SETTLE:::UC_PRG_RXHS_SETTLE=0b000001" ,
+       \dm:user ="0" *)
+    \DPHY_CORE  \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst (
+      .\BITCKEXT (\VCC_net ),
+      .\CKN (\MIPI_DPHY_2_clk_n_io ),
+      .\CKP (\MIPI_DPHY_2_clk_p_io ),
+      .\CLKREF (\GND_net ),
+      .\DN0 (\MIPI_DPHY_2_data_n_io [0]),
+      .\DN1 (\MIPI_DPHY_2_data_n_io [1]),
+      .\DN2 (\MIPI_DPHY_2_data_n_io [2]),
+      .\DN3 (\MIPI_DPHY_2_data_n_io [3]),
+      .\DP0 (\MIPI_DPHY_2_data_p_io [0]),
+      .\DP1 (\MIPI_DPHY_2_data_p_io [1]),
+      .\DP2 (\MIPI_DPHY_2_data_p_io [2]),
+      .\DP3 (\MIPI_DPHY_2_data_p_io [3]),
+      .\PDDPHY (\GND_net ),
+      .\PDPLL (\GND_net ),
+      .\SCCLKIN (\GND_net ),
+      .\SCRSTNIN (\VCC_net ),
+      .\UED0THEN (\GND_net ),
+      .\UFRXMODE (\VCC_net ),
+      .\UTXMDTX (\GND_net ),
+      .\URXCKINE (\VCC_net ),
+      .\UTDIS (\VCC_net ),
+      .\UTXCKE (\VCC_net ),
+      .\UDE0D0TN (\GND_net ),
+      .\UDE1D1TN (\GND_net ),
+      .\UDE2D2TN (\GND_net ),
+      .\UDE3D3TN (\GND_net ),
+      .\UDE4CKTN (\GND_net ),
+      .\UDE5D0RN (\GND_net ),
+      .\UDE6D1RN (\GND_net ),
+      .\UDE7D2RN (\GND_net ),
+      .\UTXDHS31 (\GND_net ),
+      .\UTXDHS30 (\GND_net ),
+      .\UTXDHS29 (\GND_net ),
+      .\UTXDHS28 (\GND_net ),
+      .\UTXDHS27 (\GND_net ),
+      .\UTXDHS26 (\GND_net ),
+      .\UTXDHS25 (\GND_net ),
+      .\UTXDHS24 (\GND_net ),
+      .\UTXDHS23 (\GND_net ),
+      .\UTXDHS22 (\GND_net ),
+      .\UTXDHS21 (\GND_net ),
+      .\UTXDHS20 (\GND_net ),
+      .\UTXDHS19 (\GND_net ),
+      .\UTXDHS18 (\GND_net ),
+      .\UTXDHS17 (\GND_net ),
+      .\UTXDHS16 (\GND_net ),
+      .\UTXDHS15 (\GND_net ),
+      .\UTXDHS14 (\GND_net ),
+      .\UTXDHS13 (\GND_net ),
+      .\UTXDHS12 (\GND_net ),
+      .\UTXDHS11 (\GND_net ),
+      .\UTXDHS10 (\GND_net ),
+      .\UTXDHS9 (\GND_net ),
+      .\UTXDHS8 (\GND_net ),
+      .\UTXDHS7 (\GND_net ),
+      .\UTXDHS6 (\GND_net ),
+      .\UTXDHS5 (\GND_net ),
+      .\UTXDHS4 (\GND_net ),
+      .\UTXDHS3 (\GND_net ),
+      .\UTXDHS2 (\GND_net ),
+      .\UTXDHS1 (\GND_net ),
+      .\UTXDHS0 (\GND_net ),
+      .\UTXENER (\GND_net ),
+      .\UTXRD0EN (\GND_net ),
+      .\UTRD0SEN (\GND_net ),
+      .\UTXSKD0N (\GND_net ),
+      .\UTXTGE0 (\VCC_net ),
+      .\UTXTGE1 (\VCC_net ),
+      .\UTXTGE2 (\VCC_net ),
+      .\UTXTGE3 (\VCC_net ),
+      .\UTXULPSE (\GND_net ),
+      .\UTXUPSEX (\VCC_net ),
+      .\UTXVDE (\VCC_net ),
+      .\UTXWVDHS3 (\GND_net ),
+      .\UTXWVDHS2 (\GND_net ),
+      .\UTXWVDHS1 (\GND_net ),
+      .\UTXWVDHS0 (\VCC_net ),
+      .\U1ENTHEN (\GND_net ),
+      .\U1FRXMD (\VCC_net ),
+      .\U1FTXST (\GND_net ),
+      .\U1TDIS (\VCC_net ),
+      .\U1TREQ (\VCC_net ),
+      .\U1TDE0D3 (\GND_net ),
+      .\U1TDE1CK (\GND_net ),
+      .\U1TDE2D0 (\GND_net ),
+      .\U1TDE3D1 (\GND_net ),
+      .\U1TDE4D2 (\GND_net ),
+      .\U1TDE5D3 (\GND_net ),
+      .\U1TDE6 (\GND_net ),
+      .\U1TDE7 (\GND_net ),
+      .\U1TXDHS31 (\GND_net ),
+      .\U1TXDHS30 (\GND_net ),
+      .\U1TXDHS29 (\GND_net ),
+      .\U1TXDHS28 (\GND_net ),
+      .\U1TXDHS27 (\GND_net ),
+      .\U1TXDHS26 (\GND_net ),
+      .\U1TXDHS25 (\GND_net ),
+      .\U1TXDHS24 (\GND_net ),
+      .\U1TXDHS23 (\GND_net ),
+      .\U1TXDHS22 (\GND_net ),
+      .\U1TXDHS21 (\GND_net ),
+      .\U1TXDHS20 (\GND_net ),
+      .\U1TXDHS19 (\GND_net ),
+      .\U1TXDHS18 (\GND_net ),
+      .\U1TXDHS17 (\GND_net ),
+      .\U1TXDHS16 (\GND_net ),
+      .\U1TXDHS15 (\GND_net ),
+      .\U1TXDHS14 (\GND_net ),
+      .\U1TXDHS13 (\GND_net ),
+      .\U1TXDHS12 (\GND_net ),
+      .\U1TXDHS11 (\GND_net ),
+      .\U1TXDHS10 (\GND_net ),
+      .\U1TXDHS9 (\GND_net ),
+      .\U1TXDHS8 (\GND_net ),
+      .\U1TXDHS7 (\GND_net ),
+      .\U1TXDHS6 (\GND_net ),
+      .\U1TXDHS5 (\GND_net ),
+      .\U1TXDHS4 (\GND_net ),
+      .\U1TXDHS3 (\GND_net ),
+      .\U1TXDHS2 (\GND_net ),
+      .\U1TXDHS1 (\GND_net ),
+      .\U1TXDHS0 (\GND_net ),
+      .\U1TXLPD (\GND_net ),
+      .\U1TXREQ (\GND_net ),
+      .\U1TXREQH (\GND_net ),
+      .\U1TXSK (\GND_net ),
+      .\U1TXTGE0 (\VCC_net ),
+      .\U1TXTGE1 (\VCC_net ),
+      .\U1TXTGE2 (\VCC_net ),
+      .\U1TXTGE3 (\VCC_net ),
+      .\U1TXUPSE (\VCC_net ),
+      .\U1TXUPSX (\VCC_net ),
+      .\U1TXVDE (\VCC_net ),
+      .\U1TXWVHS3 (\GND_net ),
+      .\U1TXWVHS2 (\GND_net ),
+      .\U1TXWVHS1 (\GND_net ),
+      .\U1TXWVHS0 (\VCC_net ),
+      .\U2END2 (\GND_net ),
+      .\U2FRXMD (\VCC_net ),
+      .\U2FTXST (\GND_net ),
+      .\U2TDIS (\VCC_net ),
+      .\U2TREQ (\VCC_net ),
+      .\U2TDE0D0 (\VCC_net ),
+      .\U2TDE1D1 (\VCC_net ),
+      .\U2TDE2D2 (\VCC_net ),
+      .\U2TDE3D3 (\VCC_net ),
+      .\U2TDE4CK (\GND_net ),
+      .\U2TDE5D0 (\GND_net ),
+      .\U2TDE6D1 (\GND_net ),
+      .\U2TDE7D2 (\GND_net ),
+      .\U2TXDHS31 (\GND_net ),
+      .\U2TXDHS30 (\GND_net ),
+      .\U2TXDHS29 (\GND_net ),
+      .\U2TXDHS28 (\GND_net ),
+      .\U2TXDHS27 (\GND_net ),
+      .\U2TXDHS26 (\GND_net ),
+      .\U2TXDHS25 (\GND_net ),
+      .\U2TXDHS24 (\GND_net ),
+      .\U2TXDHS23 (\GND_net ),
+      .\U2TXDHS22 (\GND_net ),
+      .\U2TXDHS21 (\GND_net ),
+      .\U2TXDHS20 (\GND_net ),
+      .\U2TXDHS19 (\GND_net ),
+      .\U2TXDHS18 (\GND_net ),
+      .\U2TXDHS17 (\GND_net ),
+      .\U2TXDHS16 (\GND_net ),
+      .\U2TXDHS15 (\GND_net ),
+      .\U2TXDHS14 (\GND_net ),
+      .\U2TXDHS13 (\GND_net ),
+      .\U2TXDHS12 (\GND_net ),
+      .\U2TXDHS11 (\GND_net ),
+      .\U2TXDHS10 (\GND_net ),
+      .\U2TXDHS9 (\GND_net ),
+      .\U2TXDHS8 (\GND_net ),
+      .\U2TXDHS7 (\GND_net ),
+      .\U2TXDHS6 (\GND_net ),
+      .\U2TXDHS5 (\GND_net ),
+      .\U2TXDHS4 (\GND_net ),
+      .\U2TXDHS3 (\GND_net ),
+      .\U2TXDHS2 (\GND_net ),
+      .\U2TXDHS1 (\GND_net ),
+      .\U2TXDHS0 (\GND_net ),
+      .\U2TPDTE (\VCC_net ),
+      .\U2TXREQ (\GND_net ),
+      .\U2TXREQH (\GND_net ),
+      .\U2TXSKC (\GND_net ),
+      .\U2TXTGE0 (\VCC_net ),
+      .\U2TXTGE1 (\VCC_net ),
+      .\U2TXTGE2 (\VCC_net ),
+      .\U2TXTGE3 (\VCC_net ),
+      .\U2TXUPSE (\VCC_net ),
+      .\U2TXUPSX (\VCC_net ),
+      .\U2TXVDE (\VCC_net ),
+      .\U2TXWVHS3 (\GND_net ),
+      .\U2TXWVHS2 (\GND_net ),
+      .\U2TXWVHS1 (\GND_net ),
+      .\U2TXWVHS0 (\VCC_net ),
+      .\U3END3 (\GND_net ),
+      .\U3FRXMD (\VCC_net ),
+      .\U3FTXST (\GND_net ),
+      .\U3TDISD2 (\GND_net ),
+      .\U3TREQD2 (\GND_net ),
+      .\U3TDE0D3 (\GND_net ),
+      .\U3TDE1D0 (\VCC_net ),
+      .\U3TDE2D1 (\VCC_net ),
+      .\U3TDE3D2 (\VCC_net ),
+      .\U3TDE4D3 (\VCC_net ),
+      .\U3TDE5CK (\GND_net ),
+      .\U3TDE6 (\GND_net ),
+      .\U3TDE7 (\GND_net ),
+      .\U3TXDHS31 (\GND_net ),
+      .\U3TXDHS30 (\GND_net ),
+      .\U3TXDHS29 (\GND_net ),
+      .\U3TXDHS28 (\GND_net ),
+      .\U3TXDHS27 (\GND_net ),
+      .\U3TXDHS26 (\GND_net ),
+      .\U3TXDHS25 (\GND_net ),
+      .\U3TXDHS24 (\GND_net ),
+      .\U3TXDHS23 (\GND_net ),
+      .\U3TXDHS22 (\GND_net ),
+      .\U3TXDHS21 (\GND_net ),
+      .\U3TXDHS20 (\GND_net ),
+      .\U3TXDHS19 (\GND_net ),
+      .\U3TXDHS18 (\GND_net ),
+      .\U3TXDHS17 (\GND_net ),
+      .\U3TXDHS16 (\GND_net ),
+      .\U3TXDHS15 (\GND_net ),
+      .\U3TXDHS14 (\GND_net ),
+      .\U3TXDHS13 (\GND_net ),
+      .\U3TXDHS12 (\GND_net ),
+      .\U3TXDHS11 (\GND_net ),
+      .\U3TXDHS10 (\GND_net ),
+      .\U3TXDHS9 (\GND_net ),
+      .\U3TXDHS8 (\GND_net ),
+      .\U3TXDHS7 (\GND_net ),
+      .\U3TXDHS6 (\GND_net ),
+      .\U3TXDHS5 (\GND_net ),
+      .\U3TXDHS4 (\GND_net ),
+      .\U3TXDHS3 (\GND_net ),
+      .\U3TXDHS2 (\GND_net ),
+      .\U3TXDHS1 (\GND_net ),
+      .\U3TXDHS0 (\GND_net ),
+      .\U3TXLPDT (\GND_net ),
+      .\U3TXREQ (\GND_net ),
+      .\U3TXREQH (\GND_net ),
+      .\U3TXSKC (\GND_net ),
+      .\U3TXTGE0 (\VCC_net ),
+      .\U3TXTGE1 (\VCC_net ),
+      .\U3TXTGE2 (\VCC_net ),
+      .\U3TXTGE3 (\VCC_net ),
+      .\U3TXULPS (\GND_net ),
+      .\U3TXUPSX (\GND_net ),
+      .\U3TXVD3 (\GND_net ),
+      .\U3TXWVHS3 (\GND_net ),
+      .\U3TXWVHS2 (\GND_net ),
+      .\U3TXWVHS1 (\GND_net ),
+      .\U3TXWVHS0 (\VCC_net ),
+      .\UCENCK (\GND_net ),
+      .\UCTXREQH (\GND_net ),
+      .\UCTXUPSC (\GND_net ),
+      .\UCTXUPSX (\GND_net ),
+      .\SCANCLK (\GND_net ),
+      .\SCANRST (\GND_net ),
+      .\LMMICLK (\GND_net ),
+      .\LMMIOFFSET4 (\GND_net ),
+      .\LMMIOFFSET3 (\GND_net ),
+      .\LMMIOFFSET2 (\GND_net ),
+      .\LMMIOFFSET1 (\GND_net ),
+      .\LMMIOFFSET0 (\GND_net ),
+      .\LMMIREQUEST (\GND_net ),
+      .\LMMIRESETN (\GND_net ),
+      .\LMMIWDATA3 (\GND_net ),
+      .\LMMIWDATA2 (\GND_net ),
+      .\LMMIWDATA1 (\GND_net ),
+      .\LMMIWDATA0 (\GND_net ),
+      .\LMMIWRRDN (\GND_net ),
+      .\LTSTEN (\GND_net ),
+      .\LTSTLANE1 (\GND_net ),
+      .\LTSTLANE0 (\GND_net ),
+      .\UTRNREQ (\VCC_net ),
+      .\OPCGLDCK (\GND_net ));
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .GSR = "ENABLED";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .AUTO_PD_EN = "POWERED_UP";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .CFG_NUM_LANES = "FOUR_LANES";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .CM = "0b11010101";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .CN = "0b11111";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .CO = "0b010";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .CONT_CLK_MODE = "ENABLED";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .DESKEW_EN = "DISABLED";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .DSI_CSI = "DSI_APP";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .EN_CIL = "CIL_BYPASSED";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .HSEL = "DISABLED";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .LANE0_SEL = "LANE_0";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .LOCK_BYP = "GATE_TXBYTECLKHS";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .MASTER_SLAVE = "MASTER";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .PLLCLKBYPASS = "REGISTERED";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .RSEL = "0b01";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .RXCDRP = "0b00";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .RXDATAWIDTHHS = "0b01";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .RXLPRP = "0b000";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .TEST_ENBL = "0b000000";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .TEST_PATTERN = "0b00000000000000000000000000000000";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .TST = "0b1001";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .TXDATAWIDTHHS = "0b00";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .U_PRG_HS_PREPARE = "0b01";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .U_PRG_HS_TRAIL = "0b000001";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .U_PRG_HS_ZERO = "0b000001";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .U_PRG_RXHS_SETTLE = "0b000001";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .UC_PRG_HS_PREPARE = "1P0_TXCLKESC";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .UC_PRG_HS_TRAIL = "0b00001";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .UC_PRG_HS_ZERO = "0b0000001";
+    defparam \HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst .UC_PRG_RXHS_SETTLE = "0b000001";
+
+endmodule
+
+module \MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0  (
+    inout \MIPI_DPHY_2_clk_n_io ,
+    inout \MIPI_DPHY_2_clk_p_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_n_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_p_io );
+
+    (* \dm:user ="0" *)
+    \MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0  \TRANSMITTER.lscc_mipi_wrapper_tx (
+      .\MIPI_DPHY_2_data_p_io ({\MIPI_DPHY_2_data_p_io [3], \MIPI_DPHY_2_data_p_io [2], \MIPI_DPHY_2_data_p_io [1], \MIPI_DPHY_2_data_p_io [0]}),
+      .\MIPI_DPHY_2_data_n_io ({\MIPI_DPHY_2_data_n_io [3], \MIPI_DPHY_2_data_n_io [2], \MIPI_DPHY_2_data_n_io [1], \MIPI_DPHY_2_data_n_io [0]}),
+      .\MIPI_DPHY_2_clk_p_io (\MIPI_DPHY_2_clk_p_io ),
+      .\MIPI_DPHY_2_clk_n_io (\MIPI_DPHY_2_clk_n_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+endmodule
+
+module \MIPI_DPHY_2  (
+    inout \MIPI_DPHY_2_clk_p_io ,
+    inout \MIPI_DPHY_2_clk_n_io ,
+    input \GND_net ,
+    input \VCC_net ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_p_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_n_io );
+
+    (* \dm:user ="0" *)
+    \MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0  \lscc_mipi_dphy_inst (
+      .\MIPI_DPHY_2_data_n_io ({\MIPI_DPHY_2_data_n_io [3], \MIPI_DPHY_2_data_n_io [2], \MIPI_DPHY_2_data_n_io [1], \MIPI_DPHY_2_data_n_io [0]}),
+      .\MIPI_DPHY_2_data_p_io ({\MIPI_DPHY_2_data_p_io [3], \MIPI_DPHY_2_data_p_io [2], \MIPI_DPHY_2_data_p_io [1], \MIPI_DPHY_2_data_p_io [0]}),
+      .\MIPI_DPHY_2_clk_n_io (\MIPI_DPHY_2_clk_n_io ),
+      .\MIPI_DPHY_2_clk_p_io (\MIPI_DPHY_2_clk_p_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+endmodule
+
+
+`pragma protect begin_protected
+
+`pragma protect version=1
+`pragma protect author="Lattice Semiconductor Corporation"
+`pragma protect author_info="Lattice Semiconductor Corporation"
+`pragma protect encrypt_agent="Radiant encrypt_hdl"
+`pragma protect encrypt_agent_info="Radiant encrypt_hdl Version 1.0"
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Mentor Graphics Corporation"
+`pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+HVZFgC8HddC5VsNOddt+d0gS1E0b9PHvWAN5wV3pi1EObbBscsoLK/JdOE1QN77h
+tCsCwYJT9e5qeYpePHw4uf4QdtDLc83x5CfFNUBuhVeqoyuRtYXOux5sTXpOTSHr
+1JEpg+AbrMLLPtwhxsuA2nlAzwimNLAQqcDEXpyWhfQ5rB+eRuf/xa7Q/Pb8OOF5
+GZbno13TzlIk5fLSX07j6crzgFvMXMAXxkMxJ9R36fEFFAm0E98zEbdrYn/l6aZ7
+gKi17/l3K/DSsooqAJaH7K2CnF72sU2o6mj4l9+Puj7B8+3pEE8glcl9t4lM4xTm
+/jphbBiz5qzexCl44sFpuw==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
+`pragma protect key_keyowner="Synopsys"
+`pragma protect key_keyname="SNPS-VCS-RSA-1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+EpdXeWvvKMu9vkcWYgeCX3oeXTr3/C/pvp+j/yGkkEBz/dgsZTkwuBOi/egvZtGm
+HfhKidUgfyrlW+YmpwaaIcj8bmCMWfxfPRz3yXcQFRIfMBCU6ePp+wAr9MOly7AG
+RFui7yRI4hxsI/vkFElsmjy0qMc6Lof73rMYLiGWr1s=
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Aldec"
+`pragma protect key_keyname="ALDEC15_001"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+dB5TvKqXi832H6V7nbuOC3Bq7Mw2H/Jp9O2tGoUUD7/4qLya09XlrSUUpl60XhDE
+7KmEPuwz+9PQA7spOebaiqIfDKqsgDHOEUV8BpV1f/ihdTvnywA3hCwSRCNJMbtU
+Lahsf/AzTEOCdBkLndk9uA4bgr5MNoXsaa+4+ZpOCgKUCXD2/0vtQo+VkXyqO04o
+3hpEBHKPE5h8ws/2jrT9N1lcZ6M5b8NeAdDyW5ISEN8znXl0DMiDujeiao/Xt7ze
+vGSXrTuXlPIrALY4UAsx2vbVvbbdTcjkFBET2BzHeSoqG02mi0FS0nAfiWrgEwVP
+lpv9j22VEMITDpXcbQ50YA==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Cadence Design Systems."
+`pragma protect key_keyname="CDS_RSA_KEY_VER_1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+CU0VCerQXFze5sC/FsdWDxqJ2TVH5jg6nne7Q0z4iBnUI0p6SVwK1znAWPARBNfo
+rrnvCNVWSDhf+31TSZ/Y/kGWm0Q3W4sTHKg1pVOFD704YB8jOa3IKdoyAG2du7pW
++B9EKU8fR2GYmlmJk3kn1P8cm0cwlp69x4qis99xJJrjKVe+jh8kOkyBpOKFv248
+QacGWnq9Zn78BvMOGNP+NGT6cY4+a+0K48Bj1BqWhlOzG1IT+xEhd1HWPHrqPK7p
+QQ/YkEuFfOYUWxXkyg0QV2uBaqADr6FHcVcfVOyT+npGrjhUfOoLisPjsabLdrqM
+E5I8DzcyMImnzJeaTq3wFg==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+lJest5cEDv52czZdwdUq5YRZIxIK82j4EkN0ZUoj5qe9t/VevqUnb5TWoa8NuPk+
+62tzl+W8EuURV8xvkcfZUCPS2otz3XyxBhQa+jXGCiMZWKtVwYWlU2aRQcQSzgja
+KI0HVare1xfQ/Q6q8dCnHsVhJbbO/5+Lt80hAxdvqNy2GWKvOB5vqRk6qZWDp1Ky
+y21w7UrjQWkxKtWfGMmDaEqGk2RxAT+KvA01ypR58+nN1dAcTjxtx0eMA6hABTP5
+WXf9Z9vPTtSBdnjKO49iuw5lqf9fkCyKYK59eXGOZyi0aKumGsd3hCAGzBETStFa
+LE4QuaXuSGpITJW7qnWn2g==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_3"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+bGOW2M3an2MNsZYsT3gcr+6cp7vrr8wMOH1gzmrTBgsdzJi58Nt/IAiOq0qbuM+o
+p7u/wmD4IM2hgZYQZd7PcYhQVpj1PSAz62Hmt7+3gOBvHAWqELByVI8AT/BmNA9Y
+W6L8Ug7qFHVCsiAJncjY5Eht+r5vxydbchA57etZlk63geP13CgfHLRmwNNBjaww
+aGT9bIyRqYxh5SOgEHq9iGhZGyT9pfqGSEvjSJ/up7qq/AKeHtdDED4YF8TYUR5T
+pm16rO4cxtsonIWk31DWfsK95rF9X+ekczlNTLfmMfJIsQHeUCS4sl/556/jzj5L
+zlns2tAKMy+7lPcUdU/SSX8r+KeSppwUssdRUN9ketUcrIIqNwZGsJ/v5RxbFUsk
+JWIoDVfVjN/+RVirfhG8abVuqVbejOe/6gjJUoHwbnED6YjRO5ufm7W/7GbDXlY+
+hHHzGVD76jXzTdcWwKlMOhF5tF9Lw3Ljxh7DcGC9K+GXRT2OArD/t+qZOwSrmbiQ
+
+`pragma protect data_method="aes256-cbc"
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=608)
+`pragma protect data_block
+pLDfIHyNuXHRelOzRSvrcBiWh6WRH5oRfX3s81QwTZS74eqV0Vj13dWub3rWLRI4
+5Q3woo8gTXcDqpO/WHl7Matrnumu9/Gk9Sbqaw07PA29b5PXVtNjmEG4T9/pMN56
+XNKFufNuhFjhuQOaxGuaepJTqOIXDSKRLfynv9GJWNJaVJWCfQPMORM7GQ6x2+Uj
+8VPpBlBhENLW1XeJza1xVxHI/6Llxj4aNiur0fefYqwGEh8HHQZKXnTmmbO6+9eo
+NwO+i3E8INXvZdFqOfNcY5w0nSDcqnhuuYA5qSZZpAB9t2+Z5SefYciUVlkz8V2z
+fUoN1lMUw6Dk9PcBJkUeVizHG+75A58Hh20zKBhm+tHFHsxB8Eq7jIQtubVhlxcl
+d5Axw7rVB0wHziS+CCAAFVgQqqt0Bi3+o6bbbwo/ILLtfrNH9ZpqxdOxwGMwPxcx
+MduBr0qYwCVS4NVtxScQJSdLgyt9AAmrPOef1K/8hqToH4OCYrF0UqNBDWOOJb57
+uBg/FJ6QzrCDq8ibgr42kfoG/g8XSQzxInsySsUlUXTRUkOqVMAM+88ywQdgXVOf
+/TXSU8dEMjqZchzxsLgzYMibDfvmypy7Qmu3hy0SCbtookNXKE9G/h/uHtYyU2gl
+1X/533w7VeKdBj3KbLJZJNTkdj1c1TldSg6iMkwZDN4G9eK4aaPuWb0mGlweI/Mz
+sk4yKX76/YB1v0wjr3kW6RMu+u8P5KYHrxjW0/2qp7BaQjL4p/SI2+WJ6tNPr4Pe
+0r+EHOFJKjCqZdFXHXg0nvPRCSJr/QIHUOVyWSw1CiU=
+
+`pragma protect end_protected
+
+
+`pragma protect begin_protected
+
+`pragma protect version=1
+`pragma protect author="Lattice Semiconductor Corporation"
+`pragma protect author_info="Lattice Semiconductor Corporation"
+`pragma protect encrypt_agent="Radiant encrypt_hdl"
+`pragma protect encrypt_agent_info="Radiant encrypt_hdl Version 1.0"
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Mentor Graphics Corporation"
+`pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+UlHOnyxFEPHA8RZcPDuyJDswfN0c43Cs7GZsVCwGI7Ida70iySSVCzO32I8xBo2j
+5o7Q4hpRQjwiYavvjb2YWBlluS3ZZVfz3N/2NuTqIIsF2XXlvy2rVCVlI8XrtC1h
+pHzeIk3fx5yI42J0pwp0XZ95d6ysgpVdc6JXwvyn5NlTO59ouK+fow0lkhUkRDaJ
+iyWK0eVNm0QcMXn+3MrzLO3/x4r/hJymh5LgJBVO1dgCZOxaWxsRn2NQY0m2pQ3D
+oGqjFaDXz3IMDiQqReq1QKSnofOvQEklpM1dm/dXV1MGKcP9wpYhGVIRG78npy6L
+JVgqNfhHXA66jxYfGstm1g==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
+`pragma protect key_keyowner="Synopsys"
+`pragma protect key_keyname="SNPS-VCS-RSA-1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+HQ1ZByOdYspgvaZk+AkkZrwVCJ4z8PpnFgEAFPTmigy8J6Ty4yNcQKt5/f27176V
+/YsR6F3kNkTv5KJg5jKJKFSsXX+6lLQJs1mhnk34ywf0W1x6Bc3KYlwmCf68h+X6
+KL3anubY5hrPvjN9u3Y4XTvnD6d6MqZk83DGN4YIPEI=
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Aldec"
+`pragma protect key_keyname="ALDEC15_001"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+mhO7gtPXIQh7z7l9qkixbwLKwCHx33/xUCjpYQ+oW0lAmSp9Isw9URbzgB6GEQtz
+wm4MjDriHSgVElcKi8vBp7g7G4IyNJx1UvbQ8U4qOUCkNZtVttJtS/mfVo2L9phO
+ItllsHURxhKBL2N7AfvGcsQgNs+zs2h0q328GCKxW1kudNGKrn7v2uNb2xuPgg8l
+lpI8ZkwbWNR9fHPkf98B3cWReRtcYOYEypT2TKzg0kkugIgG7Wc9DCFDEQ4KUDI9
+++wa26jFIZfB0ALfdc9z7ojz6xk8f/kYQHT9CCZ9oE9MlkrwqYDO7B5gGNlhI2oS
+Nr+U8NgBokaQG2HZJbIPGw==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Cadence Design Systems."
+`pragma protect key_keyname="CDS_RSA_KEY_VER_1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+ql3CDheiFmTIHN3PupRcnyJqDJHqtxCdKNEc7oDMxVAi3ddL2b3lJzPWp3Ru1UDX
+JpT309TecFB6ZvLQe07WSMBN66RnJraSQQcCo9wuBWaPfo+2+5F++Nm2XrFia8JO
+9cIkv0I5kvlJOIquIWea87u2fMaK/Ffv/TMhZwCSFWClqlDaHqI4EAEGdLTwXxMh
+Jox4GrvghCCtNs2GqtyJLjpcPJylI960ufrMa1mngPz5FSLqzMfY924wwH/SyJBb
+sjE2zwiFFp3OICRXidPNB8VFnZ3evQtVpL3JJSWrvEchatHoNqP768Agi4uSDUS1
+6Y85Ky0jFbCyVUDM1u+qJQ==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+AxZPjGz5WRdq+w86jKKu/5WIpxf2qI566QzoXRGW/GNZwhRePpHAMCmmDylCwRKR
+0d7mdcJz7HThIn2BlcGFc+jHZnqFulCH88KcH55rHjT01wzGtxTmUqEvEntREksL
+gqjoA7VL/gq3+zHkk4mKkpQ2JmekQ+zLxcKhWnezOcMZ7L1Wz6d/0SB2URIOO9Q5
+ywePY5wPMlFMiUBDcTk3nTqHpv+SJEhRce2+xqeJU6tujGdRSZvDB48xMJbV0qbC
+xHZXmDfwnmvxEEWqzz3FF/YydczbqEQ6laV1+2JLi0ayuVTFJXdjXsePPbc8Vx1h
+mXZoOMirVP/MucP1Mel50A==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_3"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+GKF3DPuDOrcx0IdG69nHUGaPt1KovWTWjZq0rKTajV5GHCmVsS4jaaAD8MELEAOL
+ET96WW4x1XeC3CYjNvsAeoA+qVcm+MRZlqzW4TAqSwnmhI/i82Ctxrq9u/4aFcGU
+7eCG71/JanU9reyhw2OwQmR2iwGwZhsfXbBuvZ7CtZLKhBwI7MKs1LXHsVaoyoRR
+el+q9o0YK63H7/sY8Ey9EXBycMvZ87PUilOquSY48USVOzTM2QPpvbTMSU3lS+gE
+EOfI6CPdtLwO/FL7aYIbX727hRQdMNiSgGXyiFcYPof/xyqKAGqE60bwT+mwj3of
+FwZh1Aflo3pb9zsfK6JISz2CTHsLHGTatEVhNo2BEvwG7dtpSOp3Pc6doUHHRCxR
+fJY9d8mWYDRE51mcRbPFJ9LOGaT11c7kve08Jwq0Nhthekibui5zWdjgV97LgEtd
+sJOpDJqMwt2euGFJkM5qqavau9D3iIReNMlsSA4VGdgIH+ddQpd57Qm0xVsRtHQu
+
+`pragma protect data_method="aes256-cbc"
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=1056)
+`pragma protect data_block
+iGDslfgbSNuBnj2F4OiXMOPzoTMYQiL/f+6LNv5Lk45/sGWbPEU11v3YEXg2woIS
+VkE0X97LllaHbzBowvvBKoAEiS7K5pxr8gI+sMLQgFH0R4epuXvTitKi53UEf0q2
+VFlNoSIkXMgWSx4qVi5NtM5MeZ/eJ4dM9WYpFy1sFz7IE8FiHHkm5WUEcSgM5tUT
+oGR7PRiomAIYTFaWm9N05MyTHmKOA4ubXP4Y6YUozgrOmYMoAIoM1DF96hwha0Vi
+FFyO5ccHsndZqHS6EjNFmtNR9Gkl6QDTuI4qAVFsAHFvFDqnDMRH9rtm/fFPKAnJ
+SQZECAFMy1RNsX2Oj5sClv4XJII43vOgJk1MRgx2EVsLsKsmawFKfqQKY3xVDccX
+2NldGaWcAaY8f5r28UJqmqIQeegQM66Q7c9rF5reg/VmkBDXEpu7pDT/AmmBPGZ4
+ZVf4V4QnxE047B3qh4qZ90w+KETkU1k92S1i1x/DOl56xKkOdwu8iO4xJAdRjx3G
+ptKGd+uDr0A9Pzh4iaBuVEbJXvPti4T7P8sbD7zYM6DhPRs3nTfGOZ5vKsxLjqvK
+IbvuWEVDTU5mtbEdKRzOtx3tt89IyK3VUm8+Pnr9weEvykhBeHJ6Kwz0XJGc/VaL
+WV7PYqBWs2Kv3vJRMRwnPpWOAECuqpFaORzpsWQVxeYe5EasZRZBpgv9DiXJvjC6
+Z4u0FV3sWBsC4S0WlmK4biWUWQUBrV2Z1WWWC3fc5vFnBi+fyGbly23eDoDwDkzF
+B6/23yaTuX93zUzCa2706Nm+FubJeJpsKdTWPq1h4uVagLovvYHApCv6JNvajawP
+KxH4ayo0pPC4tSQJv7UfpkudyQEuByfukp+NIjCVC/d2A+VWURZo2rJbaA1ByoRo
+2duE4VUzaHuXIesHvMmDSdMKulvrYvmRlgk/V0rSnquKmHZu0tNJQqloKdc3J4UL
+3AmxiSVmQsh4aU9xpt1WvY2tCowlTuQizyD1sjWrYI6K5flWKHsf7zxmBKb3uY50
+zhsLf1EjrpLKlcgRe5A6mS1b+edVvCE6I5hdOeMgJ8q8CzA5TCyWbfZUq/uyvQ2q
+3MJNgFRbgxhki8LzSXXOBJkg0YlKZeNwbxJLI2CjXmUikIWjTiQPLsW1QmoNfUFz
+LOgZV0hgAVv75yMYvIZfeadIIcG2yov9Ubskv8cHVEhDkeTwn9mHmqUq/FSph6YN
+Dcf5Dw7KYeQ5Tv3h1LQkgp/sn6zgezdPN5yjaXK5Deo5yiKKpy+fj6IJ63yGephM
+aDGTHZb2jJ9lftZ7L0aOZWraEK1mP/9YveZzViZU2FqrZ/XqUopDhOTFZUhr4ZSa
+UU2s31NgjJl8AtAZ0PBCc62JyE/bMLm83Kn8yf7rtCPOT2Nk1eakdp4pyDapcTxq
+
+`pragma protect end_protected
+
+module \I2C_DPHY_1  (
+    inout \I2C_DPHY_1_sda_io ,
+    inout \I2C_DPHY_1_scl_io ,
+    input \GND_net ,
+    input \VCC_net );
+
+    (* \dm:user ="0" *)
+    \I2C_DPHY_1_ipgen_lscc_i2c_master_Z21_layer0  \lscc_i2c_master_inst (
+      .\scl_io (\I2C_DPHY_1_scl_io ),
+      .\sda_io (\I2C_DPHY_1_sda_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ),
+      .\clk_i (1'b0),
+      .\rst_n_i (1'b0),
+      .\lmmi_wdata_i ({8'b0}),
+      .\lmmi_wr_rdn_i (1'b0),
+      .\lmmi_offset_i ({4'b0}),
+      .\lmmi_request_i (1'b0),
+      .\apb_penable_i (1'b0),
+      .\apb_psel_i (1'b0),
+      .\apb_pwrite_i (1'b0),
+      .\apb_paddr_i ({6'b0}),
+      .\apb_pwdata_i ({32'b0}));
+
+endmodule
+
+
+`pragma protect begin_protected
+
+`pragma protect version=1
+`pragma protect author="Lattice Semiconductor Corporation"
+`pragma protect author_info="Lattice Semiconductor Corporation"
+`pragma protect encrypt_agent="Radiant encrypt_hdl"
+`pragma protect encrypt_agent_info="Radiant encrypt_hdl Version 1.0"
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Mentor Graphics Corporation"
+`pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+k1UrcAjZkFncPTIXLRzyFfmWunKkWc4xGJ2958KlqjxJy14UwJGHUns7e3MYKCDM
+VQlYU3I+uifotSfoOn/iJbN+H/C+/KH/fX7tBCkg5CKPrhblwBMunXlCmUr29SQ1
+fBtxexYMDElJ9yLtcZbcFQDVvfA+oiouCtjyDuwm86vaPL0V5fg5Xjb/igb9ELPc
+C84H6NhRy7bhiKTYPWIQfwjoz3RJsJDKsvtetWez7YP+9iNf+8XL3+N0i/XC6sFy
+EYFzRrNHgckRQEh8xzcdySpbohE/qhJSyMU0USZqqBg6DhogDW153AO3ysGgMp53
+rOe2ifpevBiNSP2UIbf57A==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
+`pragma protect key_keyowner="Synopsys"
+`pragma protect key_keyname="SNPS-VCS-RSA-1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+LgKtNDwVSfiBPSvhld5bsnNW6nhDmBwX1qCr3MeC1IBK4ph1X22fMcDULLiiac7y
+3PbcxL3lKFlOkDmTBmSY8C0m1kjvMTd9OmSxSXpNyZ5R+4RGuxMmwCI5fFErSbnE
+Fko1l+KcAzytESiWY3YjxGnuW7D/62yCsMKitLYMQ6g=
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Aldec"
+`pragma protect key_keyname="ALDEC15_001"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+qOCY9gTDy8CjTbNfZkIyluZ1iMbTgx8T3XzUEmK9RrUQNp/SpVMUg1Hl0qqO0fF0
+E0x8nFWPU+Gxcin3YY/32AmAyQq8EEwFuJbe+R2wFkxkjHTCD8p37LssR+CyAWlw
+5d06sMnVKzjflc9B5n6GcJqcB09TeT6LxdexY42UNHtLRo8qCPnwKU81ctUBjwe7
+IkZHyJZ/WnRkWDKb7JsrPmrfrk4y/Pb7WTKfa0PQg1vU9GoJaE2xCq3mlNfr05tp
+ZLVIQfQ8/C8vhDw041EWHrVeV5KkcqBKZ24K0DejJf9XMcccjJfunbxEHRuYjrh7
+GgUAghD0c6S18WFpxZfyOg==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Cadence Design Systems."
+`pragma protect key_keyname="CDS_RSA_KEY_VER_1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+R4Q0Y69nWlRuY7S6HMsTo5bWe3AF9nKLqst91QMzBosS81E/hUFPzDhUsarye7//
+tPHw+86sbeSCxj7kBlgsK45ZnAWPjFR+Ji1Cw6UwBPmNJr2p+biiVJVkFMqCJluP
+eBIQP8ETEbmTvrar2zkm0SnafGaWajoWfADunaCD1pZuUzZVU+lcBPyRsI9sAG4+
+CdYR1jFiBGIINIrvqDgeFgGgDaWigdN7N5xHF3fcRi8C1YzmiI1s6Dxg4jJChgma
++Jms+ouNU1l30sIS9hI025ETTI7XZFOeu6wuenaE2LsX8XRIL3wzDIhBqCmy0wCU
+XI0FQvIRg7exIGpMODr1TA==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+CqEqe4oEFYabKKzzyGIYsPHU+hr18C62hlBfaNWvr0WTmT5TQRUVuYlGYaEbT1AU
+zQ2rSqQQ9c/qXdX5MAn3hQpEyZJaNdIlHK1heTgQ0hapVJhaIr9EeBMJcYh8CV0v
+Q1vGhJgvjjAS/POnxMWo3azsdDpfVeD3XhOz2Ky0fT4IKQ5Yy4SVR2FeVf14Nuvp
+QYrsaN/8c7igAWuoo5AkbUPMo/0n0LW720I0FrTTvkBuB5ji5lA217THRkZfhwvU
+TE+I72mPJinz+8h5GU9OOANsQ9UffR62DEymiwkBwRSKp514PTocsK216JIh72DK
+g0JYG6TBeGcI3i+BcqmJIg==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_3"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+jojEglUXFNCXnT1I54aN3qj3mJMHWlvWaV11R4A3stfFHJUpNf7JI8CyEpn8pHm4
+ty75xw/30e53t4T6Ob4INDTQEpVht+0q7PWfsEfIPqUukkxF1oIfoCBFm+4+dfje
+W1VFVQEmMkoOI67IDVbh1pg3g1E0MpeiFHwF1omf6OpSHLvnIuQo+CzidKFSVz0e
+jrL7UFMWicwsxWqp2N5P8H1I0r+wZwVpiPRg0nzzJJe90agyxoRtUFYMWdZU22bn
+H7pQrHcSSdGQwLj69pYIRJpYx2qPmSZTEs2r+tRe0FuPFB2DtBuiWseYqwRLFTho
+M94SAhGB386KtUHZCo+S296pxaF8wOIvOLyfiSQOtBCBtxbVjnq1IwCP7+hMUqaB
+PmysEuVrCENA+eraxsVwaEcjMR2sAjR0UWW2Z+jUnIp9YN4MlverUkNUr0+Bqp18
+paoLAm5cTOH6iattP5PKsT1D/metmw7+VjxXQ+vLbIIsWhElDVaey9Xn4g5odtKT
+
+`pragma protect data_method="aes256-cbc"
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=576)
+`pragma protect data_block
+LDgYIXrcbMArtqIJA+Kj+2yhT+Kwt85dc9TJ0DUzX/uHQo7sU2LsmV3cZ8C1mxgT
+wPR/EOfo/JaLSe1dMRqpQFchfHmFLvE2ipZhS/83UDvZZr9wS6Z2kW9v/GL8rs+B
+Zo0V44OtT/O1gft1ujmJndjQV5Ohoa0q6PjVWGMuU08bAmM1i/P7CS2xSGg9ls6A
+W6OKBmCt+S2Cdmw0jNzEu1FHo7rICjAGLL3EGNjLe9NtOYmFi9RigkNUwsMlbMWH
+bJqtY09yqQ12KzPp+ozMMVHF5THqZp4kXNizvkJYQ0A/7xz5+9giBqTft6AelviG
+VDprDNuKdLd0ta80QKRUHzdJNtEYCeFNN7ER3S/3M7jfH7gZ1v7H3YUdfdQA6DQO
+CaqkGYMJGfUxU8hRkRBLknAyMwNhdZd7TFqU1f4ypSHwKKudsP56HPHBEmiwVz3T
+GGvHkfnppipLQbCfdQEVDOTHcFCByKpnToIMqyVorNAXyS8r/RnuAaUGTsM+Nkck
+w3snTPjqM1epae1LfxT339LBXnA5FAvGGc8mOBZq0yOw1oJMbjz+5WzhQxSA5wFE
+yRjJr4jCsIi+FIQJwLhr3HGz28Bz92K4eGR7TsjsBtMdFc8qIqqZlXAlI0QcIqZ+
+5PtTW1csFTMN3FNDnxcLN8g2Tn9tjc9InxJBd620nAJ/FxIGH/UjZvlZJCeQIODQ
+/G0kdsPdUkhxzDNWc7lW54ctBCg55OprHsKG17a+L+YlpKVyhgqJeSkZZtDJDsNe
+
+`pragma protect end_protected
+
+
+`pragma protect begin_protected
+
+`pragma protect version=1
+`pragma protect author="Lattice Semiconductor Corporation"
+`pragma protect author_info="Lattice Semiconductor Corporation"
+`pragma protect encrypt_agent="Radiant encrypt_hdl"
+`pragma protect encrypt_agent_info="Radiant encrypt_hdl Version 1.0"
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Mentor Graphics Corporation"
+`pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+Sg867SnOQ0JNDXEkVx51rDsJ74ro4mR63HMu14/yryOO/M9F0wwmRkkxDCD7tINB
+/973+kf9yEhQR8qcC+dbeoRHSx47ROlbjsfr4/EC/JaYF1gErPw6BmUSS6e4+Vat
+Hr61TZL1YdFc3yNnNadTz7Lhq4QgGiwPQ/7lVTasNl1ugRKROZRoqOetFIO4IJYp
+xdE7jZnN0i+AKw1aZtI+HoOU16JlNFsdG0WB5tX8NiBKnYM5SuhogD7tNC3rpJMi
+Cb7ciWGNIADiLlqNQ37evwSMi105PYD/RsKm90kP+4Y804yiB+QanE5jQqBl5WGH
+dNwedDwZBpLcsYwyzVh8BQ==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
+`pragma protect key_keyowner="Synopsys"
+`pragma protect key_keyname="SNPS-VCS-RSA-1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+IQ8KORXIpe4sAYtPFS9T+gh5b4CbkwCS+v7H5grAUXbTzrUU9mgTx+8XTciHnRyY
+ZCh4ccaEovUUuixFwS94YdF0bAdFa6UK/QU3kvOTvjl7AO1u4agoZktZkbGDtxK9
+0o1SkP0BY0tQ/R+PNqgsJCn3dhTyj8wUoIzJLigB5Q8=
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Aldec"
+`pragma protect key_keyname="ALDEC15_001"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+hclx9k1bbeOYQ3zYnFXOtcyW4t2PoQcMm2KgOZKU7qB4HdjpUD1KXh1+sWpUiqzn
+5+WOhHdMa3sNGtbeqiyZWpR4hy0pnnnyRfdNU+wYtDm7+lBQg5bpaAvZDPs2IndG
+whSdOmn32EBdwFAdQPhD8kpObn15fsypuU1MV7tSY6Q1DnkOy/wd02ZwzlZjwF/z
+KaL3ij2hS86QyhpH7Io1CZGb/rSg+iUmW1gvVJQNb3bSD1swLUH1BKwMno+hzspc
+1CT21rZSCEOdo2cQH9vWfWX8U3Ql1UmY/SeqZ1CyTQkMjp7DXk6p2ewvXpx1BoOS
+xEqT6kr/G0a2sWg62pDwsQ==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Cadence Design Systems."
+`pragma protect key_keyname="CDS_RSA_KEY_VER_1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+jnvW+nScJBESAA22BZURBbpn7wl7Kej4s0Jj0VbKoJ34deYuvmD6Ent7ugYl+A/9
+dRE1d4NbiQmBCZX0wofhCRoNxsne0cnIvKiRYmLV+LrMprDOYpkYhR7ufO7ClRZg
+5mohf4GNXUpojIgYDr4+8HaJiOWkbosG93ndI9fEXNRn82VNOYkiggYA4uM4ZcVs
+MiEINN5/aGxAyejybEcK5/9WWudmlLFOPreCfBy0MaEYuTPG9QlmqA3RsLBxksS4
+tIdAUh0UkeO0rK2LAwyCUgUo4vpPD8vz9cpf/60LqemZ8daxaI0Zc3XXSKlB9W3k
+GPGW1s0pEklT58xwUzkE+g==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+RnVAhaGltQyj5qtNRBwsAbcMQQ8PfWbzrdEtMg8XZG/ZX4yRQnAZniUwC/d7g1Fs
+OS2rOWPse7QD0ZJbb0JX5hbfPNZ455xSlMNu50MFV7ZFLe2fD5/rlk+bg7QORPYR
+CX+W5rrsIPcasmUrTrZPatMVyPQpiEtse8tMPYxkgMLDoNYGc5r1ByX77m77gJj1
+aCCY0CeuA8v8j8pPvVe9/yr9wpyt/8niiAxGCrE8Q5wh52vUkLBpXwxXKCFFxo+D
+Xq4imYCp7B4myZWlyV8tJrgG3BHPBsZY2Y8f/5giEDYbrkzebJrofWK4FFyUBARp
+8myVNeh5GAb0brsFwi5BVw==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_3"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+sMR6eE7lB+4TjHTJ9l+tJzVu1xh9vx+a5Ov97U6ShZ6M+bqK2ZkGNi3mTxsbVyqY
+GYhhVOlJ0jcV1jEnrrEd5bom5TFEooOhslEEIdFpdEbBnD9SH5LSHjEUQ4cT448d
+LT77ix9Hok91GmxB9fz1gR5So6c3wC3L0wpDqpU4YWdoXW49xTxtqoMtd+3O3hze
+RE3mpfMiOQSb+g+tJFlsc8mBCw2x7TkLbDtle2wTvPvXxoe8tULsklmgDry8+lO3
+A9b9tguxik0USNQiY5jmISQ/1bk4MuUgFHIrtm0O67Q7INPbPYN3zm0r4wuqKJzt
+d/bYxZsG5Le7KzDSrIfE0SFI4vvX3Baa1h15is9kOa0XVETq4L3qiZ+r4bfSATQ5
+Jn1QDmwERGMEqL5w4PVu25CCGIylSVcQuRVVbDUTX4UjMPEhqGZODSmvgsLqSDy2
+P8wS0Tf5J8hxHCEpnR6G0qW/iYj2IO+jwdtnAjvSrBKpe0xgBuClq6H7pLqf39k7
+
+`pragma protect data_method="aes256-cbc"
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=1056)
+`pragma protect data_block
+QDVGDaxNXxGozFVXfpgsJ/14RqOxJv37MeycK//ZCIGTrOvVVF3q6wU5a71RPpij
+IjRXYmALLtNyHZmyKJbWBGmkql+olEkAocpK7xnJMPEoZHszBgupEl2NR2qQgWyN
+wqDnYm3EkSTq2w79XtU4+Fgl4BkCQ5emn1KOZagkz1iajLEbJX0acSKSENezR17W
+hryPJ8CzJ4xDcWQ0r+DBvTIMqrCyVWXs/WyMD3QLIpJ4zbPXipuddTsngaOfp3o/
+n6DkDUW8ugI5gdwtHgYKEBD1D1k4PedaqC+EtLcwpcJl2Y+VDk3wowNyvgKhxmAD
+ZbAvvKDYHx50AlZJ50qBBi6L7GjgdASF+hinMEuhhEI1oy5IdyRCqmrsjuOrwE6k
+b7T5O3zcoL/M3OaZnDtbbPRrByFjrCri1DwmdfKyORqua+nUspVRU847uqByVlM0
+Hx8OXCGwXfnn1dyezUIqOjhtho9vCiwQqVRvg+zuxmggBKrEzEWOBUoTQOOj0/Ap
+RKkHlahgThqCFA1QBIb2yN3rQevgu3gz5mcsXEEMSXQhTgLXNAROZjTov/LrRy80
+gqg+wzlWouKXsUVuyGEhdxvi50oEyHG7Meyjt1N5HpVD+Md0vvhUZNICxUt3QaBL
+nCuWPEHFf/6squxliSI9GDqZ9tDo6XqLREkNYf7LcEbeG3dBGc07pLtiZwqg8bPy
+JbjOBg3W+Kdwprrmou4Q0iRD0c5VXys0z0359z7tQwEAK2KcUo3dX+9ktULYne6D
+LqRWiKuYp4jlqv/8q/DrfQXp4V4gwfX8hfX98I0EKpAGOsMpiKuenKu36R1hbLJ6
+pwCixCTIWiJ5Lgh9eHWbJdUmI57QX3QS+t/untM26WmKTiZia3wbYDGcCEQ61+cG
+jGMNxrIQRRqBfU2Xd3x26aonnfkcPbStdftTWpYxHfEU05drNY6hFQqAeCwQPvZC
+g9+boVr50NNAuPVPUFhm7qz+x2QP/13SHWOifwGSBPULkx9wgaF2PcyM/tRWbpGL
+vqz+NfmlX6X4yJUyUdAllFyWr5a8W6366FQwuBFm2DPomk+9X87AxumJspIgM+/X
+gVg/1mGr8pGEWloHKaBcwz8Y7UNWjm3axDyuEQfUGLlWRI2/60VieFfAwZKuyekq
+h9ZQ9fHQseHsTm1eIo1dF05Dhbyq6JMqxsRsxN5BKL5S7w0MJw44sz/r5h57KU8+
+9hUwKaW73bAljwIZz9uW8WDStT0Yg0OIUS27En3I/bpMyr1/eabxDn5Y1y2xPdy2
+R84tMNw2RW9rKf/FRz2eH09Cml/Yj/wqtTPJqipDipSE2lBBATXZ2SGpALin+La4
+6OKdV6GYjRDpqM1vRYj3VfiGo8MIJWKiijKl+gx4s/60h/xxPpB7YziQmVFezrJ7
+
+`pragma protect end_protected
+
+module \I2C_DPHY_2  (
+    inout \I2C_DPHY_2_sda_io ,
+    inout \I2C_DPHY_2_scl_io ,
+    input \GND_net ,
+    input \VCC_net );
+
+    (* \dm:user ="0" *)
+    \I2C_DPHY_2_ipgen_lscc_i2c_master_Z25_layer0  \lscc_i2c_master_inst (
+      .\scl_io (\I2C_DPHY_2_scl_io ),
+      .\sda_io (\I2C_DPHY_2_sda_io ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ),
+      .\clk_i (1'b0),
+      .\rst_n_i (1'b0),
+      .\lmmi_wdata_i ({8'b0}),
+      .\lmmi_wr_rdn_i (1'b0),
+      .\lmmi_offset_i ({4'b0}),
+      .\lmmi_request_i (1'b0),
+      .\apb_penable_i (1'b0),
+      .\apb_psel_i (1'b0),
+      .\apb_pwrite_i (1'b0),
+      .\apb_paddr_i ({6'b0}),
+      .\apb_pwdata_i ({32'b0}));
+
+endmodule
+
+(* \db:architecture ="LIFCL" ,
+   \db:device ="LIFCL-40" ,
+   \db:package ="CABGA256" ,
+   \db:speed ="7_High-Performance_1.0V" ,
+   \db:timestamp ="1696227382" *)
+module \main  (
+    inout \dqs0_io ,
+    inout \dqs1_io ,
+    output \DDR_MEM_1_casn_o ,
+    output \DDR_MEM_1_rasn_o ,
+    output \DDR_MEM_1_wen_o ,
+    inout \MIPI_DPHY_1_clk_p_io ,
+    inout \MIPI_DPHY_1_clk_n_io ,
+    inout \MIPI_DPHY_2_clk_p_io ,
+    inout \MIPI_DPHY_2_clk_n_io ,
+    inout \I2C_DPHY_1_scl_io ,
+    inout \I2C_DPHY_1_sda_io ,
+    inout \I2C_DPHY_2_scl_io ,
+    inout \I2C_DPHY_2_sda_io ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs0_io ,
+    (* \syn_tristate =1 *)
+    inout [7:0] \dq_dqs1_io ,
+    output [0:0] \DDR_MEM_1_ck_o ,
+    output [0:0] \DDR_MEM_1_csn_o ,
+    output [12:0] \DDR_MEM_1_addr_o ,
+    output [2:0] \DDR_MEM_1_ba_o ,
+    output [0:0] \DDR_MEM_1_odt_o ,
+    output [0:0] \DDR_MEM_1_cke_o ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_p_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_1_data_n_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_p_io ,
+    (* \syn_tristate =1 *)
+    inout [3:0] \MIPI_DPHY_2_data_n_io );
+
+    wire \VCC ;
+
+    wire \DDR_MEM_1_casn_o_c ;
+
+    wire \DDR_MEM_1_rasn_o_c ;
+
+    wire \DDR_MEM_1_wen_o_c ;
+
+    wire \DDR_MEM_1_cke_o_pad[0].gnd ;
+
+    wire [0:0] \DDR_MEM_1_ck_o_c ;
+
+    wire [0:0] \DDR_MEM_1_csn_o_c ;
+
+    wire [12:0] \DDR_MEM_1_addr_o_c ;
+
+    wire [2:0] \DDR_MEM_1_ba_o_c ;
+
+    wire [0:0] \DDR_MEM_1_odt_o_c ;
+
+    wire [0:0] \DDR_MEM_1_cke_o_c ;
+
+    (* \dm:primitive ="VHI" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \VHI  \VCC_cZ (
+      .\Z (\VCC ));
+
+    (* \dm:user ="0" *)
+    \DDR_MEM_1  \DDR_MEM_1_inst (
+      .\dq_dqs1_io ({\dq_dqs1_io [7], \dq_dqs1_io [6], \dq_dqs1_io [5], \dq_dqs1_io [4], \dq_dqs1_io [3], \dq_dqs1_io [2], \dq_dqs1_io [1], \dq_dqs1_io [0]}),
+      .\dq_dqs0_io ({\dq_dqs0_io [7], \dq_dqs0_io [6], \dq_dqs0_io [5], \dq_dqs0_io [4], \dq_dqs0_io [3], \dq_dqs0_io [2], \dq_dqs0_io [1], \dq_dqs0_io [0]}),
+      .\DDR_MEM_1_csn_o_c_0 (\DDR_MEM_1_csn_o_c [0]),
+      .\DDR_MEM_1_addr_o_c ({\DDR_MEM_1_addr_o_c [12], \DDR_MEM_1_addr_o_c [11], \DDR_MEM_1_addr_o_c [10], \DDR_MEM_1_addr_o_c [9], \DDR_MEM_1_addr_o_c [8], \DDR_MEM_1_addr_o_c [7], \DDR_MEM_1_addr_o_c [6], \DDR_MEM_1_addr_o_c [5], \DDR_MEM_1_addr_o_c [4], \DDR_MEM_1_addr_o_c [3], \DDR_MEM_1_addr_o_c [2], \DDR_MEM_1_addr_o_c [1], \DDR_MEM_1_addr_o_c [0]}),
+      .\DDR_MEM_1_ba_o_c ({\DDR_MEM_1_ba_o_c [2], \DDR_MEM_1_ba_o_c [1], \DDR_MEM_1_ba_o_c [0]}),
+      .\DDR_MEM_1_odt_o_c_0 (\DDR_MEM_1_odt_o_c [0]),
+      .\DDR_MEM_1_cke_o_c_0 (\DDR_MEM_1_cke_o_c [0]),
+      .\DDR_MEM_1_ck_o_c_0 (\DDR_MEM_1_ck_o_c [0]),
+      .\dqs1_io (\dqs1_io ),
+      .\dqs0_io (\dqs0_io ),
+      .\DDR_MEM_1_casn_o_c (\DDR_MEM_1_casn_o_c ),
+      .\DDR_MEM_1_rasn_o_c (\DDR_MEM_1_rasn_o_c ),
+      .\DDR_MEM_1_wen_o_c (\DDR_MEM_1_wen_o_c ),
+      .\GND_net (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\VCC_net (\VCC ));
+
+    (* \dm:user ="0" *)
+    \MIPI_DPHY_1  \MIPI_DPHY_1_inst (
+      .\MIPI_DPHY_1_data_p_io ({\MIPI_DPHY_1_data_p_io [3], \MIPI_DPHY_1_data_p_io [2], \MIPI_DPHY_1_data_p_io [1], \MIPI_DPHY_1_data_p_io [0]}),
+      .\MIPI_DPHY_1_data_n_io ({\MIPI_DPHY_1_data_n_io [3], \MIPI_DPHY_1_data_n_io [2], \MIPI_DPHY_1_data_n_io [1], \MIPI_DPHY_1_data_n_io [0]}),
+      .\MIPI_DPHY_1_clk_p_io (\MIPI_DPHY_1_clk_p_io ),
+      .\MIPI_DPHY_1_clk_n_io (\MIPI_DPHY_1_clk_n_io ),
+      .\GND_net (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\VCC_net (\VCC ));
+
+    (* \dm:user ="0" *)
+    \MIPI_DPHY_2  \MIPI_DPHY_2_inst (
+      .\MIPI_DPHY_2_data_p_io ({\MIPI_DPHY_2_data_p_io [3], \MIPI_DPHY_2_data_p_io [2], \MIPI_DPHY_2_data_p_io [1], \MIPI_DPHY_2_data_p_io [0]}),
+      .\MIPI_DPHY_2_data_n_io ({\MIPI_DPHY_2_data_n_io [3], \MIPI_DPHY_2_data_n_io [2], \MIPI_DPHY_2_data_n_io [1], \MIPI_DPHY_2_data_n_io [0]}),
+      .\MIPI_DPHY_2_clk_p_io (\MIPI_DPHY_2_clk_p_io ),
+      .\MIPI_DPHY_2_clk_n_io (\MIPI_DPHY_2_clk_n_io ),
+      .\GND_net (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\VCC_net (\VCC ));
+
+    (* \dm:user ="0" *)
+    \I2C_DPHY_1  \I2C_DPHY_1_inst (
+      .\I2C_DPHY_1_sda_io (\I2C_DPHY_1_sda_io ),
+      .\I2C_DPHY_1_scl_io (\I2C_DPHY_1_scl_io ),
+      .\GND_net (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\VCC_net (\VCC ));
+
+    (* \dm:user ="0" *)
+    \I2C_DPHY_2  \I2C_DPHY_2_inst (
+      .\I2C_DPHY_2_sda_io (\I2C_DPHY_2_sda_io ),
+      .\I2C_DPHY_2_scl_io (\I2C_DPHY_2_scl_io ),
+      .\GND_net (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\VCC_net (\VCC ));
+
+    (* \GSR_SYNC ="ASYNC" ,
+       \dm:primitive ="GSR_CORE" ,
+       \dm:programming ="GSR_SYNC:#ON" ,
+       \dm:user ="0" *)
+    \GSR_CORE  \GSR_INST (
+      .\GSR_N (\VCC ),
+      .\CLK (1'b0));
+    defparam \GSR_INST .GSR_SYNC = "ASYNC";
+
+    (* \dm:primitive ="VLO" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \VLO  \DDR_MEM_1_cke_o_pad[0].vlo_inst (
+      .\Z (\DDR_MEM_1_cke_o_pad[0].gnd ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_cke_o_pad[0].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_cke_o_c [0]),
+      .\B (\DDR_MEM_1_cke_o [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_odt_o_pad[0].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_odt_o_c [0]),
+      .\B (\DDR_MEM_1_odt_o [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_wen_o_pad.bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_wen_o_c ),
+      .\B (\DDR_MEM_1_wen_o ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_rasn_o_pad.bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_rasn_o_c ),
+      .\B (\DDR_MEM_1_rasn_o ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_casn_o_pad.bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_casn_o_c ),
+      .\B (\DDR_MEM_1_casn_o ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_ba_o_pad[2].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_ba_o_c [2]),
+      .\B (\DDR_MEM_1_ba_o [2]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_ba_o_pad[1].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_ba_o_c [1]),
+      .\B (\DDR_MEM_1_ba_o [1]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_ba_o_pad[0].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_ba_o_c [0]),
+      .\B (\DDR_MEM_1_ba_o [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[12].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [12]),
+      .\B (\DDR_MEM_1_addr_o [12]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[11].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [11]),
+      .\B (\DDR_MEM_1_addr_o [11]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[10].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [10]),
+      .\B (\DDR_MEM_1_addr_o [10]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[9].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [9]),
+      .\B (\DDR_MEM_1_addr_o [9]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[8].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [8]),
+      .\B (\DDR_MEM_1_addr_o [8]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[7].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [7]),
+      .\B (\DDR_MEM_1_addr_o [7]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[6].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [6]),
+      .\B (\DDR_MEM_1_addr_o [6]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[5].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [5]),
+      .\B (\DDR_MEM_1_addr_o [5]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[4].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [4]),
+      .\B (\DDR_MEM_1_addr_o [4]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[3].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [3]),
+      .\B (\DDR_MEM_1_addr_o [3]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[2].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [2]),
+      .\B (\DDR_MEM_1_addr_o [2]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[1].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [1]),
+      .\B (\DDR_MEM_1_addr_o [1]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_addr_o_pad[0].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_addr_o_c [0]),
+      .\B (\DDR_MEM_1_addr_o [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_csn_o_pad[0].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_csn_o_c [0]),
+      .\B (\DDR_MEM_1_csn_o [0]));
+
+    (* \IO_TYPE ="SSTL15D_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DDR_MEM_1_ck_o_pad[0].bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\DDR_MEM_1_ck_o_c [0]),
+      .\B (\DDR_MEM_1_ck_o [0]));
+
+endmodule
+

@@ -1,0 +1,160 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3        100.0
+                               LUTGATE	          3        100.0
+                                 IOBUF	         45        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             DDR_MEM_1	          1         0.0
+                            I2C_DPHY_1	          1         0.0
+                            I2C_DPHY_2	          1         0.0
+                           MIPI_DPHY_1	          1         0.0
+                           MIPI_DPHY_2	          1         0.0
+---------------------------------------------------
+Report for cell DDR_MEM_1
+   Instance path: main/DDR_MEM_1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	         18        40.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0	          1         0.0
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	         18        40.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+     DDR_MEM_1_ipgen_common_logic_2s_2	          1         0.0
+DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0	          1         0.0
+DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0	          1         0.0
+DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK	          1         0.0
+DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0	          1         0.0
+DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK	          1         0.0
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_common_logic_2s_2
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          9        20.0
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          9        20.0
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK
+   Instance path: main/DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell MIPI_DPHY_1
+   Instance path: main/MIPI_DPHY_1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0	          1         0.0
+---------------------------------------------------
+Report for cell MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0
+   Instance path: main/MIPI_DPHY_1_inst/lscc_mipi_dphy_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0	          1         0.0
+---------------------------------------------------
+Report for cell MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0
+   Instance path: main/MIPI_DPHY_1_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell MIPI_DPHY_2
+   Instance path: main/MIPI_DPHY_2_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0	          1         0.0
+---------------------------------------------------
+Report for cell MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0
+   Instance path: main/MIPI_DPHY_2_inst/lscc_mipi_dphy_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0	          1         0.0
+---------------------------------------------------
+Report for cell MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0
+   Instance path: main/MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell I2C_DPHY_1
+   Instance path: main/I2C_DPHY_1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          2         4.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_1	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_1
+   Instance path: main/I2C_DPHY_1_inst/lscc_i2c_master_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          2         4.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_2	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_2
+   Instance path: main/secured_instance_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          2         4.4
+---------------------------------------------------
+Report for cell I2C_DPHY_2
+   Instance path: main/I2C_DPHY_2_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          2         4.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_3	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_3
+   Instance path: main/I2C_DPHY_2_inst/lscc_i2c_master_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          2         4.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_4	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_4
+   Instance path: main/secured_instance_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          2         4.4

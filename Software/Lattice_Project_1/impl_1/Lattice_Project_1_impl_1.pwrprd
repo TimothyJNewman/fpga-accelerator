@@ -1,0 +1,15 @@
+Property_Name=CLOCK_NAME_DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o
+Property_Type=String
+Property_Value=DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o
+Property_Name=CLOCK_POINT_NAME_DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o
+Property_Type=String
+Property_Value=
+Property_Name=CLOCK_NETNAME_DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o
+Property_Type=String
+Property_Value=DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o
+Property_Name=REQUIRED_FREQUENCY_DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o
+Property_Type=Float
+Property_Value=-0.000465661
+Property_Name=ACTUAL_FREQUENCY_DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o
+Property_Type=Float
+Property_Value=250

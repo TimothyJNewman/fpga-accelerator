@@ -1,0 +1,401 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LIFCL-40
+Performance Grade:      7_High-Performance_1.0V
+PACKAGE:          CABGA256
+Package Status:                     Final          Version 39
+
+Mon Oct  2 07:25:00 2023
+
+Pinout by Port Name:
++--------------------------+----------+-----------------+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Port Name                | Pin/Bank | Buffer Type     | Site      | Properties                                                                                                                                                                  |
++--------------------------+----------+-----------------+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| VREF2_BANK_4             | N10/4    |                 | PB46B     | VREF2_DRIVER                                                                                                                                                                |
+| DDR_MEM_1_addr_o[0]      | P14/3    | SSTL15_II_OUT   | PB70A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[10]     | R16/3    | SSTL15_II_OUT   | PB68A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[11]     | M11/3    | SSTL15_II_OUT   | PB78B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[12]     | R15/3    | SSTL15_II_OUT   | PB68B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[1]      | N11/3    | SSTL15_II_OUT   | PB64B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[2]      | L10/3    | SSTL15_II_OUT   | PB80B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[3]      | R12/3    | SSTL15_II_OUT   | PB60A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[4]      | L12/3    | SSTL15_II_OUT   | PB82B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[5]      | L11/3    | SSTL15_II_OUT   | PB80A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[6]      | M14/3    | SSTL15_II_OUT   | PB74A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[7]      | N13/3    | SSTL15_II_OUT   | PB70B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[8]      | M16/3    | SSTL15_II_OUT   | PB84A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_addr_o[9]      | N16/3    | SSTL15_II_OUT   | PB76A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_ba_o[0]        | R13/3    | SSTL15_II_OUT   | PB62A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_ba_o[1]        | R10/3    | SSTL15_II_OUT   | PB56B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_ba_o[2]        | M12/3    | SSTL15_II_OUT   | PB78A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_casn_o         | T15/3    | SSTL15_II_OUT   | PB66B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_ck_o[0]        | T12/3    | SSTL15D_II_OUT  | PB58A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15D_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF       |
+| DDR_MEM_1_cke_o[0]       | T14/3    | SSTL15_II_OUT   | PB66A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_csn_o[0]       | P11/3    | SSTL15_II_OUT   | PB54B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_odt_o[0]       | N12/3    | SSTL15_II_OUT   | PB64A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_rasn_o         | N14/3    | SSTL15_II_OUT   | PB74B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| DDR_MEM_1_wen_o          | R14/3    | SSTL15_II_OUT   | PB62B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF        |
+| I2C_DPHY_1_scl_io        | G15/1    | LVCMOS33_BIDI   | PR20A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF           |
+| I2C_DPHY_1_sda_io        | G14/1    | LVCMOS33_BIDI   | PR17B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF           |
+| I2C_DPHY_2_scl_io        | F16/1    | LVCMOS33_BIDI   | PR19A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF           |
+| I2C_DPHY_2_sda_io        | G13/1    | LVCMOS33_BIDI   | PR17A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF           |
+| MIPI_DPHY_1_clk_n_io     | D2/60    | HSIO            | DPHY0_CKN |                                                                                                                                                                             |
+| MIPI_DPHY_1_clk_p_io     | D1/60    | HSIO            | DPHY0_CKP |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_n_io[0] | E2/60    | HSIO            | DPHY0_DN0 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_n_io[1] | C2/60    | HSIO            | DPHY0_DN1 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_n_io[2] | F2/60    | HSIO            | DPHY0_DN2 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_n_io[3] | B2/60    | HSIO            | DPHY0_DN3 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_p_io[0] | E1/60    | HSIO            | DPHY0_DP0 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_p_io[1] | C1/60    | HSIO            | DPHY0_DP1 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_p_io[2] | F1/60    | HSIO            | DPHY0_DP2 |                                                                                                                                                                             |
+| MIPI_DPHY_1_data_p_io[3] | B1/60    | HSIO            | DPHY0_DP3 |                                                                                                                                                                             |
+| MIPI_DPHY_2_clk_n_io     | B5/61    | HSIO            | DPHY1_CKN |                                                                                                                                                                             |
+| MIPI_DPHY_2_clk_p_io     | A5/61    | HSIO            | DPHY1_CKP |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_n_io[0] | B4/61    | HSIO            | DPHY1_DN0 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_n_io[1] | B6/61    | HSIO            | DPHY1_DN1 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_n_io[2] | B3/61    | HSIO            | DPHY1_DN2 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_n_io[3] | B7/61    | HSIO            | DPHY1_DN3 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_p_io[0] | A4/61    | HSIO            | DPHY1_DP0 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_p_io[1] | A6/61    | HSIO            | DPHY1_DP1 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_p_io[2] | A3/61    | HSIO            | DPHY1_DP2 |                                                                                                                                                                             |
+| MIPI_DPHY_2_data_p_io[3] | A7/61    | HSIO            | DPHY1_DP3 |                                                                                                                                                                             |
+| dq_dqs0_io[0]            | R1/4     | SSTL15_II_BIDI  | PB16A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[1]            | R2/4     | SSTL15_II_BIDI  | PB16B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[2]            | R3/4     | SSTL15_II_BIDI  | PB18A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[3]            | T2/4     | SSTL15_II_BIDI  | PB18B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[4]            | T3/4     | SSTL15_II_BIDI  | PB20A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[5]            | R4/4     | SSTL15_II_BIDI  | PB24A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[6]            | T4/4     | SSTL15_II_BIDI  | PB20B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[7]            | T5/4     | SSTL15_II_BIDI  | PB26A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[0]            | T9/4     | SSTL15_II_BIDI  | PB40A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[1]            | T10/4    | SSTL15_II_BIDI  | PB40B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[2]            | R8/4     | SSTL15_II_BIDI  | PB42A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[3]            | R9/4     | SSTL15_II_BIDI  | PB44A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[4]            | P6/4     | SSTL15_II_BIDI  | PB32A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[5]            | P7/4     | SSTL15_II_BIDI  | PB32B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[6]            | P8/4     | SSTL15_II_BIDI  | PB42B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs1_io[7]            | P9/4     | SSTL15_II_BIDI  | PB44B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dqs0_io                  | R5/4     | SSTL15D_II_BIDI | PB22A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15D_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF       |
+| dqs1_io                  | M9/4     | SSTL15D_II_BIDI | PB38A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15D_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF       |
++--------------------------+----------+-----------------+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 3    | 1.5V  |
+| 4    | 1.5V  |
++------+-------+
+
+Vref by Bank:
++--------------+-----+--------------------+--------------------------------+
+| Vref         | Pin | Bank # / Vref #    | Load(s)                        |
++--------------+-----+--------------------+--------------------------------+
+| VREF2_BANK_4 | N10 | 4 / VREF2 (REF_15) | P8        P6        R8         |
+|              |     |                    | T9        T10       R9         |
+|              |     |                    | P7        P9        T4         |
+|              |     |                    | T3        R3        R1         |
+|              |     |                    | R2        T2        R4         |
+|              |     |                    | T5                             |
++--------------+-----+--------------------+--------------------------------+
+
+Pinout by Pin Number:
++---------------+--------------------------+------------+-----------------+-------------+-----------------------------------------------------+
+| Pin/Bank      | Pin Info                 | Preference | Buffer Type     | Site        | Dual Function                                       |
++---------------+--------------------------+------------+-----------------+-------------+-----------------------------------------------------+
+| A3/61         | MIPI_DPHY_2_data_p_io[2] |            |                 | DPHY1_DP2   |                                                     |
+| A4/61         | MIPI_DPHY_2_data_p_io[0] |            |                 | DPHY1_DP0   |                                                     |
+| A5/61         | MIPI_DPHY_2_clk_p_io     |            |                 | DPHY1_CKP   |                                                     |
+| A6/61         | MIPI_DPHY_2_data_p_io[1] |            |                 | DPHY1_DP1   |                                                     |
+| A7/61         | MIPI_DPHY_2_data_p_io[3] |            |                 | DPHY1_DP3   |                                                     |
+| A11/80        |                          |            |                 | SD0_TXDN    |                                                     |
+| A12/80        |                          |            |                 | SD0_TXDP    |                                                     |
+| A14/80        |                          |            |                 | SD0_RXDN    |                                                     |
+| A15/80        |                          |            |                 | SD0_RXDP    |                                                     |
+| B1/60         | MIPI_DPHY_1_data_p_io[3] |            |                 | DPHY0_DP3   |                                                     |
+| B2/60         | MIPI_DPHY_1_data_n_io[3] |            |                 | DPHY0_DN3   |                                                     |
+| B3/61         | MIPI_DPHY_2_data_n_io[2] |            |                 | DPHY1_DN2   |                                                     |
+| B4/61         | MIPI_DPHY_2_data_n_io[0] |            |                 | DPHY1_DN0   |                                                     |
+| B5/61         | MIPI_DPHY_2_clk_n_io     |            |                 | DPHY1_CKN   |                                                     |
+| B6/61         | MIPI_DPHY_2_data_n_io[1] |            |                 | DPHY1_DN1   |                                                     |
+| B7/61         | MIPI_DPHY_2_data_n_io[3] |            |                 | DPHY1_DN3   |                                                     |
+| B12/80        |                          |            |                 | SD0_REFRET  |                                                     |
+| B16/0         | Reserved: sysCONFIG      |            |                 | PT76B       | DONE/S0_OUT                                         |
+| C1/60         | MIPI_DPHY_1_data_p_io[1] |            |                 | DPHY0_DP1   |                                                     |
+| C2/60         | MIPI_DPHY_1_data_n_io[1] |            |                 | DPHY0_DN1   |                                                     |
+| C11/80        |                          |            |                 | SD0_REXT    |                                                     |
+| C12/0         | Reserved: sysCONFIG      |            |                 | PT74B       | PROGRAMN                                            |
+| C13/0         |     unused, PULL:DOWN    |            |                 | PT82B       | MCSNO/MSDO/S6_OUT                                   |
+| C14/0         |     unused, PULL:DOWN    |            |                 | PT78B       | MOSI/MD0/SD4/S1_OUT                                 |
+| C15/0         |     unused, PULL:DOWN    |            |                 | PT78A       | MCSN/S1_IN/PCLKT0_1                                 |
+| C16/0         |     unused, PULL:DOWN    |            |                 | PT76A       | MCLK/S0_IN/PCLKT0_0                                 |
+| D1/60         | MIPI_DPHY_1_clk_p_io     |            |                 | DPHY0_CKP   |                                                     |
+| D2/60         | MIPI_DPHY_1_clk_n_io     |            |                 | DPHY0_CKN   |                                                     |
+| D4/7          |     unused, PULL:DOWN    |            |                 | PL3A        | ULC_GPLL0T_IN/EIO                                   |
+| D5/7          |     unused, PULL:DOWN    |            |                 | PL3B        | EIO                                                 |
+| D6/7          |     unused, PULL:DOWN    |            |                 | PL4A        | ULC_GPLL0T_MFGOUT1/EIO                              |
+| D11/0         | Reserved: sysCONFIG      |            |                 | PT74A       | INITN                                               |
+| D12/0         |     unused, PULL:DOWN    |            |                 | PT82A       | MD3/SD7/S6_IN/OSC_BURST                             |
+| D15/0         |     unused, PULL:DOWN    |            |                 | PT80B       | MD2/SD6/S2_OUT                                      |
+| D16/0         |     unused, PULL:DOWN    |            |                 | PT80A       | MISO/MD1/SD5/S2_IN/OSC_HI                           |
+| E1/60         | MIPI_DPHY_1_data_p_io[0] |            |                 | DPHY0_DP0   |                                                     |
+| E2/60         | MIPI_DPHY_1_data_n_io[0] |            |                 | DPHY0_DN0   |                                                     |
+| E4/7          |     unused, PULL:DOWN    |            |                 | PL6A        | ULC_GPLL0T_MFGOUT2/EIO                              |
+| E5/7          |     unused, PULL:DOWN    |            |                 | PL6B        | EIO                                                 |
+| E6/7          |     unused, PULL:DOWN    |            |                 | PL4B        | EIO                                                 |
+| E9/1          |     unused, PULL:DOWN    |            |                 | PR4A        | S8_OUT/EIO                                          |
+| E10/1         |     unused, PULL:DOWN    |            |                 | PR4B        | SD10                                                |
+| E11/1         | Reserved: sysCONFIG      |            |                 | PR6B        | TMS/SCSN/S5_IN                                      |
+| E12/1         |     unused, PULL:DOWN    |            |                 | PR6A        | S9_OUT/EIO                                          |
+| E13/1         |     unused, PULL:DOWN    |            |                 | PR10A       | EIO                                                 |
+| E14/1         | Reserved: sysCONFIG      |            |                 | PR10B       | TDO/SSO/SD1/S3_OUT                                  |
+| E15/0         |     unused, PULL:DOWN    |            |                 | PT84A       | S7_IN                                               |
+| E16/0         |     unused, PULL:DOWN    |            |                 | PT84B       | S7_OUT                                              |
+| F1/60         | MIPI_DPHY_1_data_p_io[2] |            |                 | DPHY0_DP2   |                                                     |
+| F2/60         | MIPI_DPHY_1_data_n_io[2] |            |                 | DPHY0_DN2   |                                                     |
+| F4/7          |     unused, PULL:DOWN    |            |                 | PL19A       | PCLKT7_1/EIO                                        |
+| F6/7          |     unused, PULL:DOWN    |            |                 | PL17A       | PCLKT7_2/EIO                                        |
+| F9/1          |     unused, PULL:DOWN    |            |                 | PR3B        | S8_IN/EIO                                           |
+| F10/1         |     unused, PULL:DOWN    |            |                 | PR8A        | EIO                                                 |
+| F11/1         | Reserved: sysCONFIG      |            |                 | PR8B        | TDI/SSI/SD0/S5_OUT                                  |
+| F14/1         | Reserved: sysCONFIG      |            |                 | PR13A       | TCK/SCLK/PMU_EXT_CLK/S9_IN                          |
+| F15/1         |     unused, PULL:DOWN    |            |                 | PR13B       | PMU_WAKEUPN/SD11/S4_OUT                             |
+| F16/1         | I2C_DPHY_2_scl_io        | LOCATED    | LVCMOS33_BIDI   | PR19A       | PCLKT1_1/SD14                                       |
+| G3/7          |     unused, PULL:DOWN    |            |                 | PL20A       | PCLKT7_0/EIO                                        |
+| G4/7          |     unused, PULL:DOWN    |            |                 | PL19B       | EIO                                                 |
+| G6/7          |     unused, PULL:DOWN    |            |                 | PL17B       | EIO                                                 |
+| G9/1          |     unused, PULL:DOWN    |            |                 | PR11A       | SD3/SDA/USER_SDA/S4_IN                              |
+| G10/1         |     unused, PULL:DOWN    |            |                 | PR11B       | SD2/SCL/USER_SCL/S3_IN                              |
+| G11/1         |     unused, PULL:DOWN    |            |                 | PR15A       | SD9                                                 |
+| G12/1         |     unused, PULL:DOWN    |            |                 | PR15B       | SD8                                                 |
+| G13/1         | I2C_DPHY_2_sda_io        | LOCATED    | LVCMOS33_BIDI   | PR17A       | PCLKT1_2/SD12                                       |
+| G14/1         | I2C_DPHY_1_sda_io        | LOCATED    | LVCMOS33_BIDI   | PR17B       | SD13                                                |
+| G15/1         | I2C_DPHY_1_scl_io        | LOCATED    | LVCMOS33_BIDI   | PR20A       | PCLKT1_0/EIO                                        |
+| G16/1         |     unused, PULL:DOWN    |            |                 | PR19B       | SD15                                                |
+| H1/6          |     unused, PULL:DOWN    |            |                 | PL27A       | EIO                                                 |
+| H2/6          |     unused, PULL:DOWN    |            |                 | PL27B       | EIO                                                 |
+| H3/6          |     unused, PULL:DOWN    |            |                 | PL26B       | EIO                                                 |
+| H4/6          |     unused, PULL:DOWN    |            |                 | PL26A       | EIO                                                 |
+| H5/6          |     unused, PULL:DOWN    |            |                 | PL24B       | EIO                                                 |
+| H6/6          |     unused, PULL:DOWN    |            |                 | PL24A       | EIO                                                 |
+| H10/2         |     unused, PULL:DOWN    |            |                 | PR30B       | EIO                                                 |
+| H11/2         |     unused, PULL:DOWN    |            |                 | PR30A       | PCLKT2_0/EIO                                        |
+| H12/2         |     unused, PULL:DOWN    |            |                 | PR32B       | EIO                                                 |
+| H13/2         |     unused, PULL:DOWN    |            |                 | PR32A       | PCLKT2_1/EIO                                        |
+| H14/2         |     unused, PULL:DOWN    |            |                 | PR27B       | EIO                                                 |
+| H15/2         |     unused, PULL:DOWN    |            |                 | PR27A       | EIO                                                 |
+| H16/2         |     unused, PULL:DOWN    |            |                 | PR26A       | EIO                                                 |
+| J1/6          |     unused, PULL:DOWN    |            |                 | PL32A       | PCLKT6_1/EIO                                        |
+| J2/6          |     unused, PULL:DOWN    |            |                 | PL32B       | EIO                                                 |
+| J5/6          |     unused, PULL:DOWN    |            |                 | PL30B       | EIO                                                 |
+| J6/6          |     unused, PULL:DOWN    |            |                 | PL30A       | PCLKT6_0/EIO                                        |
+| J11/2         |     unused, PULL:DOWN    |            |                 | PR36A       | EIO                                                 |
+| J12/2         |     unused, PULL:DOWN    |            |                 | PR36B       | EIO                                                 |
+| J15/2         |     unused, PULL:DOWN    |            |                 | PR34B       | EIO                                                 |
+| J16/2         |     unused, PULL:DOWN    |            |                 | PR34A       | PCLKT2_2/EIO                                        |
+| K1/6          |     unused, PULL:DOWN    |            |                 | PL34A       | PCLKT6_2/EIO                                        |
+| K2/6          |     unused, PULL:DOWN    |            |                 | PL34B       | EIO                                                 |
+| K3/6          |     unused, PULL:DOWN    |            |                 | PL36B       | EIO                                                 |
+| K4/6          |     unused, PULL:DOWN    |            |                 | PL36A       | EIO                                                 |
+| K5/6          |     unused, PULL:DOWN    |            |                 | PL38B       | EIO                                                 |
+| K6/6          |     unused, PULL:DOWN    |            |                 | PL38A       | EIO                                                 |
+| K7/5          |     unused, PULL:DOWN    |            |                 | PB10B       | PCLKC5_2/CDR0_TESTN/ADC_CN2/COMP3N                  |
+| K11/2         |     unused, PULL:DOWN    |            |                 | PR38A       | EIO                                                 |
+| K12/2         |     unused, PULL:DOWN    |            |                 | PR38B       | EIO                                                 |
+| K13/70        |                          |            |                 | ADC_DN0     |                                                     |
+| K14/70        |                          |            |                 | ADC_DP0     |                                                     |
+| K15/70        |                          |            |                 | ADC_DP1     |                                                     |
+| K16/70        |                          |            |                 | ADC_DN1     |                                                     |
+| L1/6          |     unused, PULL:DOWN    |            |                 | PL40A       | EIO                                                 |
+| L2/6          |     unused, PULL:DOWN    |            |                 | PL40B       | EIO                                                 |
+| L3/6          |     unused, PULL:DOWN    |            |                 | PL47B       | EIO                                                 |
+| L4/6          |     unused, PULL:DOWN    |            |                 | PL46A       | EIO                                                 |
+| L5/6          |     unused, PULL:DOWN    |            |                 | PL46B       | EIO                                                 |
+| L6/5          |     unused, PULL:DOWN    |            |                 | PB10A       | PCLKT5_2/CDR0_TESTP/ADC_CP2/COMP3P                  |
+| L7/5          |     unused, PULL:DOWN    |            |                 | PB8A        | PCLKT5_1/LLC_GPLL0T_IN/ADC_CP3                      |
+| L8/4          |     unused, PULL:DOWN    |            |                 | PB34A       | BDQ38                                               |
+| L9/4          |     unused, PULL:DOWN    |            |                 | PB34B       | BDQ38                                               |
+| L10/3         | DDR_MEM_1_addr_o[2]      | LOCATED    | SSTL15_II_OUT   | PB80B       | ADC_CN12/BDQ76                                      |
+| L11/3         | DDR_MEM_1_addr_o[5]      | LOCATED    | SSTL15_II_OUT   | PB80A       | LRC_GPLL0T_MFGOUT2/ADC_CP12/BDQ76                   |
+| L12/3         | DDR_MEM_1_addr_o[4]      | LOCATED    | SSTL15_II_OUT   | PB82B       | ADC_CN15/BDQ76                                      |
+| M1/6          |     unused, PULL:DOWN    |            |                 | PL42A       | EIO                                                 |
+| M2/6          |     unused, PULL:DOWN    |            |                 | PL42B       | EIO                                                 |
+| M3/6          |     unused, PULL:DOWN    |            |                 | PL47A       | EIO                                                 |
+| M4/5          |     unused, PULL:DOWN    |            |                 | PB6B        | PCLKC5_0/CDR_RXN1/ADC_CN1/COMP2N                    |
+| M7/5          |     unused, PULL:DOWN    |            |                 | PB8B        | PCLKC5_1/LLC_GPLL0C_IN/ADC_CN3                      |
+| M8/4          | dqs1_io-                 |            | SSTL15D_II_BIDI | PB38B       | BDQSN38                                             |
+| M9/4          | dqs1_io+                 | LOCATED    | SSTL15D_II_BIDI | PB38A       | BDQS38                                              |
+| M10/4         |     unused, PULL:DOWN    |            |                 | PB46A       | BDQ38                                               |
+| M11/3         | DDR_MEM_1_addr_o[11]     | LOCATED    | SSTL15_II_OUT   | PB78B       | ADC_CN11/BDQ76                                      |
+| M12/3         | DDR_MEM_1_ba_o[2]        | LOCATED    | SSTL15_II_OUT   | PB78A       | ADC_CP11/BDQ76                                      |
+| M13/3         |     unused, PULL:DOWN    |            |                 | PB82A       | LRC_GPLL0T_MFGOUT1/ADC_CP15/BDQ76                   |
+| M14/3         | DDR_MEM_1_addr_o[6]      | LOCATED    | SSTL15_II_OUT   | PB74A       | PCLKT3_3/ADC_CP14/BDQ76                             |
+| M15/3         |     unused, PULL:DOWN    |            |                 | PB84B       | LRC_GPLL0C_IN/VREF3_2/ATB_SENSE/BDQ76               |
+| M16/3         | DDR_MEM_1_addr_o[8]      | LOCATED    | SSTL15_II_OUT   | PB84A       | LRC_GPLL0T_IN/ATB_FORCE/BDQ76                       |
+| N1/6          |     unused, PULL:DOWN    |            |                 | PL49B       | EIO                                                 |
+| N2/6          |     unused, PULL:DOWN    |            |                 | PL49A       | EIO                                                 |
+| N3/5          |     unused, PULL:DOWN    |            |                 | PB4B        | CDR_RXN0/ADC_CN0/COMP1N                             |
+| N4/5          |     unused, PULL:DOWN    |            |                 | PB6A        | PCLKT5_0/LLC_GPLL0T_MFGOUT1/CDR_RXP1/ADC_CP1/COMP2P |
+| N8/4          |     unused, PULL:DOWN    |            |                 | PB36A       | BDQ38                                               |
+| N9/4          |     unused, PULL:DOWN    |            |                 | PB36B       | BDQ38                                               |
+| N10/4         | VREF2_BANK_4             |            |                 | PB46B       | VREF4_2/BDQ38                                       |
+| N11/3         | DDR_MEM_1_addr_o[1]      | LOCATED    | SSTL15_II_OUT   | PB64B       | ADC_CN4/BDQ60                                       |
+| N12/3         | DDR_MEM_1_odt_o[0]       | LOCATED    | SSTL15_II_OUT   | PB64A       | ADC_CP4/BDQ60                                       |
+| N13/3         | DDR_MEM_1_addr_o[7]      | LOCATED    | SSTL15_II_OUT   | PB70B       | COMP2IN/BDQ76                                       |
+| N14/3         | DDR_MEM_1_rasn_o         | LOCATED    | SSTL15_II_OUT   | PB74B       | PCLKC3_3/ADC_CN14/BDQ76                             |
+| N15/3         |     unused, PULL:DOWN    |            |                 | PB76B       | COMP3IN/BDQSN76                                     |
+| N16/3         | DDR_MEM_1_addr_o[9]      | LOCATED    | SSTL15_II_OUT   | PB76A       | COMP3IP/BDQS76                                      |
+| P1/5          |     unused, PULL:DOWN    |            |                 | PB12A       | PCLKT5_3/CDR1_TESTP                                 |
+| P2/5          |     unused, PULL:DOWN    |            |                 | PB12B       | PCLKC5_3/CDR1_TESTN/VREF5_2                         |
+| P3/5          |     unused, PULL:DOWN    |            |                 | PB4A        | LLC_GPLL0T_MFGOUT2/CDR_RXP0/VREF5_1/ADC_CP0/COMP1P  |
+| P4/4          |     unused, PULL:DOWN    |            |                 | PB24B       | PCLKC4_2/BDQ22                                      |
+| P5/4          | dqs0_io-                 |            | SSTL15D_II_BIDI | PB22B       | BDQSN22                                             |
+| P6/4          | dq_dqs1_io[4]            | LOCATED    | SSTL15_II_BIDI  | PB32A       | BDQ38                                               |
+| P7/4          | dq_dqs1_io[5]            | LOCATED    | SSTL15_II_BIDI  | PB32B       | BDQ38                                               |
+| P8/4          | dq_dqs1_io[6]            | LOCATED    | SSTL15_II_BIDI  | PB42B       | BDQ38                                               |
+| P9/4          | dq_dqs1_io[7]            | LOCATED    | SSTL15_II_BIDI  | PB44B       | PCLKC4_0/BDQ38                                      |
+| P10/3         |     unused, PULL:DOWN    |            |                 | PB56A       | ADC_CP7/BDQ60                                       |
+| P11/3         | DDR_MEM_1_csn_o[0]       | LOCATED    | SSTL15_II_OUT   | PB54B       | PCLKC3_0/ADC_CN5/BDQ60                              |
+| P14/3         | DDR_MEM_1_addr_o[0]      | LOCATED    | SSTL15_II_OUT   | PB70A       | COMP2IP/BDQ76                                       |
+| P15/3         |     unused, PULL:DOWN    |            |                 | PB72A       | PCLKT3_2/ADC_CP13/BDQ76                             |
+| P16/3         |     unused, PULL:DOWN    |            |                 | PB72B       | PCLKC3_2/ADC_CN13/BDQ76                             |
+| PL8A/7        |     unused, PULL:DOWN    |            |                 | PL8A        | EIO                                                 |
+| PL8B/7        |     unused, PULL:DOWN    |            |                 | PL8B        | EIO                                                 |
+| PL10A/7       |     unused, PULL:DOWN    |            |                 | PL10A       | EIO                                                 |
+| PL10B/7       |     unused, PULL:DOWN    |            |                 | PL10B       | EIO                                                 |
+| PL11A/7       |     unused, PULL:DOWN    |            |                 | PL11A       | EIO                                                 |
+| PL11B/7       |     unused, PULL:DOWN    |            |                 | PL11B       | EIO                                                 |
+| PL13A/7       |     unused, PULL:DOWN    |            |                 | PL13A       | EIO                                                 |
+| PL13B/7       |     unused, PULL:DOWN    |            |                 | PL13B       | EIO                                                 |
+| PL15A/7       |     unused, PULL:DOWN    |            |                 | PL15A       | EIO                                                 |
+| PL15B/7       |     unused, PULL:DOWN    |            |                 | PL15B       | EIO                                                 |
+| PL20B/7       |     unused, PULL:DOWN    |            |                 | PL20B       | EIO                                                 |
+| PL44A/6       |     unused, PULL:DOWN    |            |                 | PL44A       | EIO                                                 |
+| PL44B/6       |     unused, PULL:DOWN    |            |                 | PL44B       | EIO                                                 |
+| PR20B/1       |     unused, PULL:DOWN    |            |                 | PR20B       | EIO                                                 |
+| PR24A/2       |     unused, PULL:DOWN    |            |                 | PR24A       | EIO                                                 |
+| PR24B/2       |     unused, PULL:DOWN    |            |                 | PR24B       | EIO                                                 |
+| PR26B/2       |     unused, PULL:DOWN    |            |                 | PR26B       | EIO                                                 |
+| PR40A/2       |     unused, PULL:DOWN    |            |                 | PR40A       | EIO                                                 |
+| PR40B/2       |     unused, PULL:DOWN    |            |                 | PR40B       | EIO                                                 |
+| PR42A/2       |     unused, PULL:DOWN    |            |                 | PR42A       | EIO                                                 |
+| PR42B/2       |     unused, PULL:DOWN    |            |                 | PR42B       | EIO                                                 |
+| PR44A/2       |     unused, PULL:DOWN    |            |                 | PR44A       | EIO                                                 |
+| PR44B/2       |     unused, PULL:DOWN    |            |                 | PR44B       | EIO                                                 |
+| PR46A/2       |     unused, PULL:DOWN    |            |                 | PR46A       | EIO                                                 |
+| PR46B/2       |     unused, PULL:DOWN    |            |                 | PR46B       | EIO                                                 |
+| PR47A/2       |     unused, PULL:DOWN    |            |                 | PR47A       | EIO                                                 |
+| PR47B/2       |     unused, PULL:DOWN    |            |                 | PR47B       | EIO                                                 |
+| PR49A/2       |     unused, PULL:DOWN    |            |                 | PR49A       | EIO                                                 |
+| PR49B/2       |     unused, PULL:DOWN    |            |                 | PR49B       | EIO                                                 |
+| R1/4          | dq_dqs0_io[0]            | LOCATED    | SSTL15_II_BIDI  | PB16A       | VREF4_1/BDQ22                                       |
+| R2/4          | dq_dqs0_io[1]            | LOCATED    | SSTL15_II_BIDI  | PB16B       | BDQ22                                               |
+| R3/4          | dq_dqs0_io[2]            | LOCATED    | SSTL15_II_BIDI  | PB18A       | PCLKT4_3/BDQ22                                      |
+| R4/4          | dq_dqs0_io[5]            | LOCATED    | SSTL15_II_BIDI  | PB24A       | PCLKT4_2/BDQ22                                      |
+| R5/4          | dqs0_io+                 | LOCATED    | SSTL15D_II_BIDI | PB22A       | BDQS22                                              |
+| R6/4          |     unused, PULL:DOWN    |            |                 | PB26B       | BDQ22                                               |
+| R7/4          |     unused, PULL:DOWN    |            |                 | PB28B       | BDQ22                                               |
+| R8/4          | dq_dqs1_io[2]            | LOCATED    | SSTL15_II_BIDI  | PB42A       | BDQ38                                               |
+| R9/4          | dq_dqs1_io[3]            | LOCATED    | SSTL15_II_BIDI  | PB44A       | PCLKT4_0/BDQ38                                      |
+| R10/3         | DDR_MEM_1_ba_o[1]        | LOCATED    | SSTL15_II_OUT   | PB56B       | ADC_CN7/BDQ60                                       |
+| R11/3         |     unused, PULL:DOWN    |            |                 | PB54A       | PCLKT3_0/VREF3_1/ADC_CP5/BDQ60                      |
+| R12/3         | DDR_MEM_1_addr_o[3]      | LOCATED    | SSTL15_II_OUT   | PB60A       | ADC_CP9/BDQS60                                      |
+| R13/3         | DDR_MEM_1_ba_o[0]        | LOCATED    | SSTL15_II_OUT   | PB62A       | ADC_CP10/BDQ60                                      |
+| R14/3         | DDR_MEM_1_wen_o          | LOCATED    | SSTL15_II_OUT   | PB62B       | ADC_CN10/BDQ60                                      |
+| R15/3         | DDR_MEM_1_addr_o[12]     | LOCATED    | SSTL15_II_OUT   | PB68B       | ADC_CN8/BDQ60                                       |
+| R16/3         | DDR_MEM_1_addr_o[10]     | LOCATED    | SSTL15_II_OUT   | PB68A       | ADC_CP8/BDQ60                                       |
+| SD_REFCLKN/80 |                          |            |                 | SD0_REFCLKN |                                                     |
+| SD_REFCLKP/80 |                          |            |                 | SD0_REFCLKP |                                                     |
+| T2/4          | dq_dqs0_io[3]            | LOCATED    | SSTL15_II_BIDI  | PB18B       | PCLKC4_3/BDQ22                                      |
+| T3/4          | dq_dqs0_io[4]            | LOCATED    | SSTL15_II_BIDI  | PB20A       | BDQ22                                               |
+| T4/4          | dq_dqs0_io[6]            | LOCATED    | SSTL15_II_BIDI  | PB20B       | BDQ22                                               |
+| T5/4          | dq_dqs0_io[7]            | LOCATED    | SSTL15_II_BIDI  | PB26A       | BDQ22                                               |
+| T6/4          |     unused, PULL:DOWN    |            |                 | PB28A       | BDQ22                                               |
+| T7/4          |     unused, PULL:DOWN    |            |                 | PB30A       | BDQ22                                               |
+| T8/4          |     unused, PULL:DOWN    |            |                 | PB30B       | BDQ22                                               |
+| T9/4          | dq_dqs1_io[0]            | LOCATED    | SSTL15_II_BIDI  | PB40A       | PCLKT4_1/BDQ38                                      |
+| T10/4         | dq_dqs1_io[1]            | LOCATED    | SSTL15_II_BIDI  | PB40B       | PCLKC4_1/BDQ38                                      |
+| T11/3         | DDR_MEM_1_ck_o[0]-       |            | SSTL15D_II_OUT  | PB58B       | PCLKC3_1/ADC_CN6/BDQ60                              |
+| T12/3         | DDR_MEM_1_ck_o[0]+       | LOCATED    | SSTL15D_II_OUT  | PB58A       | PCLKT3_1/ADC_CP6/BDQ60                              |
+| T13/3         |     unused, PULL:DOWN    |            |                 | PB60B       | ADC_CN9/BDQSN60                                     |
+| T14/3         | DDR_MEM_1_cke_o[0]       | LOCATED    | SSTL15_II_OUT   | PB66A       | COMP1IP/BDQ60                                       |
+| T15/3         | DDR_MEM_1_casn_o         | LOCATED    | SSTL15_II_OUT   | PB66B       | COMP1IN/BDQ60                                       |
++---------------+--------------------------+------------+-----------------+-------------+-----------------------------------------------------+
+
+sysCONFIG Pins:
++----------+----------------------------+----------+-------------+
+| Pad Name | sysCONFIG Pin Name         | Pin/Bank | Buffer Type |
++----------+----------------------------+----------+-------------+
+| PT74A    | INITN                      | D11/0    |             |
+| PT74B    | PROGRAMN                   | C12/0    |             |
+| PT76B    | DONE/S0_OUT                | B16/0    |             |
+| PR13A    | TCK/SCLK/PMU_EXT_CLK/S9_IN | F14/1    |             |
+| PR10B    | TDO/SSO/SD1/S3_OUT         | E14/1    |             |
+| PR8B     | TDI/SSI/SD0/S5_OUT         | F11/1    |             |
+| PR6B     | TMS/SCSN/S5_IN             | E11/1    |             |
++----------+----------------------------+----------+-------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {P14} [ get_ports {DDR_MEM_1_addr_o[0]} ]
+ldc_set_location -site {R16} [ get_ports {DDR_MEM_1_addr_o[10]} ]
+ldc_set_location -site {M11} [ get_ports {DDR_MEM_1_addr_o[11]} ]
+ldc_set_location -site {R15} [ get_ports {DDR_MEM_1_addr_o[12]} ]
+ldc_set_location -site {N11} [ get_ports {DDR_MEM_1_addr_o[1]} ]
+ldc_set_location -site {L10} [ get_ports {DDR_MEM_1_addr_o[2]} ]
+ldc_set_location -site {R12} [ get_ports {DDR_MEM_1_addr_o[3]} ]
+ldc_set_location -site {L12} [ get_ports {DDR_MEM_1_addr_o[4]} ]
+ldc_set_location -site {L11} [ get_ports {DDR_MEM_1_addr_o[5]} ]
+ldc_set_location -site {M14} [ get_ports {DDR_MEM_1_addr_o[6]} ]
+ldc_set_location -site {N13} [ get_ports {DDR_MEM_1_addr_o[7]} ]
+ldc_set_location -site {M16} [ get_ports {DDR_MEM_1_addr_o[8]} ]
+ldc_set_location -site {N16} [ get_ports {DDR_MEM_1_addr_o[9]} ]
+ldc_set_location -site {R13} [ get_ports {DDR_MEM_1_ba_o[0]} ]
+ldc_set_location -site {R10} [ get_ports {DDR_MEM_1_ba_o[1]} ]
+ldc_set_location -site {M12} [ get_ports {DDR_MEM_1_ba_o[2]} ]
+ldc_set_location -site {T15} [ get_ports {DDR_MEM_1_casn_o} ]
+ldc_set_location -site {T12} [ get_ports {DDR_MEM_1_ck_o[0]} ]
+ldc_set_location -site {T14} [ get_ports {DDR_MEM_1_cke_o[0]} ]
+ldc_set_location -site {P11} [ get_ports {DDR_MEM_1_csn_o[0]} ]
+ldc_set_location -site {N12} [ get_ports {DDR_MEM_1_odt_o[0]} ]
+ldc_set_location -site {N14} [ get_ports {DDR_MEM_1_rasn_o} ]
+ldc_set_location -site {R14} [ get_ports {DDR_MEM_1_wen_o} ]
+ldc_set_location -site {G15} [ get_ports {I2C_DPHY_1_scl_io} ]
+ldc_set_location -site {G14} [ get_ports {I2C_DPHY_1_sda_io} ]
+ldc_set_location -site {F16} [ get_ports {I2C_DPHY_2_scl_io} ]
+ldc_set_location -site {G13} [ get_ports {I2C_DPHY_2_sda_io} ]
+ldc_set_location -site {R1} [ get_ports {dq_dqs0_io[0]} ]
+ldc_set_location -site {R2} [ get_ports {dq_dqs0_io[1]} ]
+ldc_set_location -site {R3} [ get_ports {dq_dqs0_io[2]} ]
+ldc_set_location -site {T2} [ get_ports {dq_dqs0_io[3]} ]
+ldc_set_location -site {T3} [ get_ports {dq_dqs0_io[4]} ]
+ldc_set_location -site {R4} [ get_ports {dq_dqs0_io[5]} ]
+ldc_set_location -site {T4} [ get_ports {dq_dqs0_io[6]} ]
+ldc_set_location -site {T5} [ get_ports {dq_dqs0_io[7]} ]
+ldc_set_location -site {T9} [ get_ports {dq_dqs1_io[0]} ]
+ldc_set_location -site {T10} [ get_ports {dq_dqs1_io[1]} ]
+ldc_set_location -site {R8} [ get_ports {dq_dqs1_io[2]} ]
+ldc_set_location -site {R9} [ get_ports {dq_dqs1_io[3]} ]
+ldc_set_location -site {P6} [ get_ports {dq_dqs1_io[4]} ]
+ldc_set_location -site {P7} [ get_ports {dq_dqs1_io[5]} ]
+ldc_set_location -site {P8} [ get_ports {dq_dqs1_io[6]} ]
+ldc_set_location -site {P9} [ get_ports {dq_dqs1_io[7]} ]
+ldc_set_location -site {R5} [ get_ports {dqs0_io} ]
+ldc_set_location -site {M9} [ get_ports {dqs1_io} ]
+
+#DQSDLL
+ldc_set_location -site {DDRDLL_CORE_R54C86} [ get_cells {DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL.DDRDLL_inst} ]
+
+ldc_create_vref -name {VREF2_BANK_4} -site {N10}
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Mon Oct  2 07:25:00 2023
+

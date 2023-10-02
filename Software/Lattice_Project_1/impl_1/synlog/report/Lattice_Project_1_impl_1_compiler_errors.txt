@@ -1,0 +1,6 @@
+@E: CS204 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v":73:12:73:31|Signal DDR_MEM_1_dq_dqs0_io is missing from port list
+@E: CS204 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v":74:12:74:31|Signal DDR_MEM_1_dq_dqs1_io is missing from port list
+@E: CS204 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v":75:6:75:22|Signal DDR_MEM_1_dqs0_io is missing from port list
+@E: CS204 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v":76:6:76:22|Signal DDR_MEM_1_dqs1_io is missing from port list
+@E::Verilog compiler failed
+

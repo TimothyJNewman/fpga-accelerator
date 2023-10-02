@@ -1,2 +1,4 @@
 # fpga-accelerator
-Learning to use Altium Designer by designer an FPGA accelerator module with PCIe connection.
+Creating an FPGA image processor using the Lattice Crosslink-NX LIFCL-40 FPGA. The form factor is a raspberry pi hat.
+
+Using KICAD version 7.

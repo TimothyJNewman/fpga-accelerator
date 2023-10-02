@@ -1,0 +1,117 @@
+###File created by Lattice CPE. Do not modify.###
+create_clock -name {clk_i} -period 20 [get_ports clk_i] originating in instance I2C_DPHY_1_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {clk_i} -period 20 [get_ports clk_i] originating in instance I2C_DPHY_2_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {sync_clk_i} -period 41.666 [get_ports sync_clk_i] originating in instance MIPI_DPHY_1_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {sync_clk_i} -period 41.666 [get_ports sync_clk_i] originating in instance MIPI_DPHY_2_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+#set NUM_DQ_PER_GROUP [expr {NUM_DQS_GROUP * 8}] originating in instance DDR_MEM_1_inst was updated to #set NUM_DQ_PER_GROUP [expr {NUM_DQS_GROUP * 8}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15D_II} [get_ports dqs0_io] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[0]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[1]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[2]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[3]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[4]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[5]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[6]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs0_io[7]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15D_II} [get_ports dqs1_io] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[0]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[1]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[2]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[3]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[4]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[5]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[6]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[7]}] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {cke_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_cke_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {csn_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_csn_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15D_II} [get_ports {ck_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15D_II} [get_ports {DDR_MEM_1_ck_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports rasn_o] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports DDR_MEM_1_rasn_o] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports casn_o] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports DDR_MEM_1_casn_o] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports wen_o] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports DDR_MEM_1_wen_o] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {odt_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_odt_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[1]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[2]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[2]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[3]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[3]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[4]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[4]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[5]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[5]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[6]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[6]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[7]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[7]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[8]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[8]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[9]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[9]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[10]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[10]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[11]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[11]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {addr_o[12]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_addr_o[12]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {ba_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_ba_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {ba_o[1]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_ba_o[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {ba_o[2]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_ba_o[2]}] and kept.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io] originating in instance I2C_DPHY_1_inst was kept as is.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda_io] originating in instance I2C_DPHY_1_inst was kept as is.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io] originating in instance I2C_DPHY_2_inst was kept as is.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda_io] originating in instance I2C_DPHY_2_inst was kept as is.
+
+#if {$INT_TYPE == "TX" &  $DPHY_IP == "LATTICE" & $PLL_MODE == "INTERNAL"} { originating in instance MIPI_DPHY_1_inst was updated to #if {$INT_TYPE == "TX" &  $DPHY_IP == "LATTICE" & $PLL_MODE == "INTERNAL"} { and kept.
+
+#    create_generated_clock -name {pll_clkop_w} -source  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by $CLKOP_FREQ_VAL -divide_by $SYNC_CLOCK_FREQ  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] originating in instance MIPI_DPHY_1_inst was updated to #    create_generated_clock -name {pll_clkop_w} -source  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by $CLKOP_FREQ_VAL -divide_by $SYNC_CLOCK_FREQ  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] and kept.
+
+#    set_false_path -from [get_clocks sync_clk_i] -to [get_clocks pll_clkop_w] originating in instance MIPI_DPHY_1_inst was updated to #    set_false_path -from [get_clocks sync_clk_i] -to [get_clocks pll_clkop_w] and kept.
+
+#} originating in instance MIPI_DPHY_1_inst was updated to #} and kept.
+
+#if {$INT_TYPE == "TX" &  $DPHY_IP == "LATTICE" & $PLL_MODE == "INTERNAL"} { originating in instance MIPI_DPHY_2_inst was updated to #if {$INT_TYPE == "TX" &  $DPHY_IP == "LATTICE" & $PLL_MODE == "INTERNAL"} { and kept.
+
+#    create_generated_clock -name {pll_clkop_w} -source  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by $CLKOP_FREQ_VAL -divide_by $SYNC_CLOCK_FREQ  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] originating in instance MIPI_DPHY_2_inst was updated to #    create_generated_clock -name {pll_clkop_w} -source  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by $CLKOP_FREQ_VAL -divide_by $SYNC_CLOCK_FREQ  [get_pins {lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/LATTICE_SOFT_IP.u_lscc_mipi_dphy_soft_tx/INTERNAL_PLL.u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] and kept.
+
+#    set_false_path -from [get_clocks sync_clk_i] -to [get_clocks pll_clkop_w] originating in instance MIPI_DPHY_2_inst was updated to #    set_false_path -from [get_clocks sync_clk_i] -to [get_clocks pll_clkop_w] and kept.
+
+#} originating in instance MIPI_DPHY_2_inst was updated to #} and kept.
+

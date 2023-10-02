@@ -1,0 +1,5 @@
+#Start recording tcl command: 8/19/2023 11:15:21
+#Project Location: C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
+prj_open "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/Lattice_Project_1.rdf"
+prj_close
+#Stop recording: 8/19/2023 12:44:39

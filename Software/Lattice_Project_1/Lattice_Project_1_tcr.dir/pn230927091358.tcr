@@ -1,0 +1,28 @@
+#Start recording tcl command: 9/27/2023 08:25:48
+#Project Location: C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
+prj_open "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/Lattice_Project_1.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/27/2023 09:13:58

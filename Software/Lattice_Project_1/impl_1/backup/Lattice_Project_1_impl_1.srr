@@ -1,0 +1,883 @@
+#Build: Synplify Pro (R) U-2023.03LR-1, Build 098R, May 29 2023
+#install: C:\lscc\radiant\2023.1\synpbase
+#OS: Windows 10 or later
+#Hostname: DESKTOP-TOAOPO9
+
+# Sat Aug  5 00:28:09 2023
+
+#Implementation: impl_1
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys HDL Compiler, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys VHDL Compiler, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+@N:Can't find top module!
+Top entity isn't set yet!
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.vhd'.
+VHDL syntax check successful!
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 88MB peak: 88MB)
+
+
+Process completed successfully.
+# Sat Aug  5 00:28:11 2023
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys Verilog Compiler, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v" (library work)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1876:29:1876:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1881:29:1881:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1912:33:1912:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1949:29:1949:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1954:29:1954:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1984:33:1984:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2504:29:2504:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2509:29:2509:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2540:33:2540:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2544:33:2544:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2577:29:2577:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2582:29:2582:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2613:33:2613:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2617:33:2617:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3104:29:3104:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3109:29:3109:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3140:33:3140:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3144:33:3144:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3177:29:3177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3182:29:3182:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3213:33:3213:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3217:33:3217:44|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":969:25:969:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":975:25:975:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I::"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v" (library work)
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":3223:23:3223:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":3224:23:3224:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":3225:23:3225:34|Net lmmi_ready_o is not declared.
+@I::"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v" (library work)
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":3223:23:3223:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":3224:23:3224:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":3225:23:3225:34|Net lmmi_ready_o is not declared.
+@I::"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v" (library work)
+@N: CG347 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
+Verilog syntax check successful!
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 130MB peak: 130MB)
+
+
+Process completed successfully.
+# Sat Aug  5 00:28:13 2023
+
+###########################################################]
+###########################################################[
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v" (library work)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1876:29:1876:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1881:29:1881:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1912:33:1912:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1949:29:1949:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1954:29:1954:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1984:33:1984:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2504:29:2504:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2509:29:2509:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2540:33:2540:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2544:33:2544:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2577:29:2577:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2582:29:2582:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2613:33:2613:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2617:33:2617:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3104:29:3104:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3109:29:3109:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3140:33:3140:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3144:33:3144:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3177:29:3177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3182:29:3182:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3213:33:3213:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3217:33:3217:44|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":969:25:969:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":975:25:975:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I::"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v" (library work)
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":3223:23:3223:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":3224:23:3224:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":3225:23:3225:34|Net lmmi_ready_o is not declared.
+@I::"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v" (library work)
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":3223:23:3223:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":3224:23:3224:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":3225:23:3225:34|Net lmmi_ready_o is not declared.
+@I::"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v" (library work)
+@N: CG347 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
+Verilog syntax check successful!
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":3574:7:3574:13|Synthesizing module ECLKDIV in library work.
+Running optimization stage 1 on ECLKDIV .......
+Finished optimization stage 1 on ECLKDIV (CPU Time 0h:00m:00s, Memory Used current: 131MB peak: 132MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":3593:7:3593:14|Synthesizing module ECLKSYNC in library work.
+Running optimization stage 1 on ECLKSYNC .......
+Finished optimization stage 1 on ECLKSYNC (CPU Time 0h:00m:00s, Memory Used current: 131MB peak: 132MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":680:7:680:30|Synthesizing module DDR_MEM_1_ipgen_mem_sync in library work.
+Running optimization stage 1 on DDR_MEM_1_ipgen_mem_sync .......
+@W: CL177 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Sharing sequential element ddr_rst_d1 and merging dll_rst. Add a syn_preserve attribute to the element to prevent sharing.
+Finished optimization stage 1 on DDR_MEM_1_ipgen_mem_sync (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 133MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1518:7:1518:12|Synthesizing module DDRDLL in library work.
+Running optimization stage 1 on DDRDLL .......
+Finished optimization stage 1 on DDRDLL (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 133MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1016:7:1016:34|Synthesizing module DDR_MEM_1_ipgen_common_logic in library work.
+
+	GEARING=32'b00000000000000000000000000000010
+	GEARING_STR=8'b00110010
+   Generated name = DDR_MEM_1_ipgen_common_logic_2s_2
+Running optimization stage 1 on DDR_MEM_1_ipgen_common_logic_2s_2 .......
+Finished optimization stage 1 on DDR_MEM_1_ipgen_common_logic_2s_2 (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 133MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2988:7:2988:34|Synthesizing module DDR_MEM_1_ipgen_lscc_ddr_mem in library work.
+
+	INTERFACE_TYPE=32'b01000100010001000101001000110011
+	IO_TYPE=64'b0101001101010011010101000100110000110001001101010101111101001001
+	CK_DQS_IO=72'b010100110101001101010100010011000011000100110101010001000101111101001001
+	BUS_WIDTH=32'b00000000000000000000000000010000
+	CLK_FREQ=32'b00000000000000000000000110010000
+	GEARING=32'b00000000000000000000000000000010
+	DATA_MASK_ENABLE=32'b00000000000000000000000000000000
+	CLK_ADDR_CMD_ENABLE=32'b00000000000000000000000000000001
+	DYN_MARGIN_ENABLE=32'b00000000000000000000000000000000
+	NUM_DDRCLK=32'b00000000000000000000000000000001
+	ADDR_WIDTH=32'b00000000000000000000000000001101
+	NUM_CS=32'b00000000000000000000000000000001
+	NUM_CKE=32'b00000000000000000000000000000001
+	NUM_ODT=32'b00000000000000000000000000000001
+	BA_WIDTH=32'b00000000000000000000000000000011
+	NUM_DQS_GROUP=32'b00000000000000000000000000000010
+	DQS_RD_DEL_VALUE=8'b00110000
+	DQS_RD_DEL_VALUE_INT=32'b00000000000000000000000000000000
+	DQS_RD_DEL_SIGN=64'b0101000001001111010100110100100101010100010010010101011001000101
+	DQS_WR_DEL_VALUE=8'b00110000
+	DQS_WR_DEL_VALUE_INT=32'b00000000000000000000000000000000
+	DQS_WR_DEL_SIGN=64'b0101000001001111010100110100100101010100010010010101011001000101
+	CKE_WIDTH=32'b00000000000000000000000000000001
+	ODT_WIDTH=32'b00000000000000000000000000000001
+	PLL_EN=32'b00000000000000000000000000000000
+	CLKI_FREQ=80'b00110001001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOP_FREQ_ACTUAL=80'b00110100001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOS_FREQ_ACTUAL=80'b00110001001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOS2_FREQ_ACTUAL=80'b00110001001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOS3_FREQ_ACTUAL=80'b00110001001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOS4_FREQ_ACTUAL=80'b00110001001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOS5_FREQ_ACTUAL=80'b00110001001100000011000000101110001100000011000000110000001100000011000000110000
+	CLKOP_PHASE_ACTUAL=64'b0011000000101110001100000011000000110000001100000011000000110000
+	CLKOS_PHASE_ACTUAL=64'b0011000000101110001100000011000000110000001100000011000000110000
+	CLKOS2_PHASE_ACTUAL=64'b0011000000101110001100000011000000110000001100000011000000110000
+	CLKOS3_PHASE_ACTUAL=64'b0011000000101110001100000011000000110000001100000011000000110000
+	CLKOS4_PHASE_ACTUAL=64'b0011000000101110001100000011000000110000001100000011000000110000
+	CLKOS5_PHASE_ACTUAL=64'b0011000000101110001100000011000000110000001100000011000000110000
+	CLKOS_EN=32'b00000000000000000000000000000001
+	CLKOS2_EN=32'b00000000000000000000000000000000
+	CLKOS3_EN=32'b00000000000000000000000000000000
+	CLKOS4_EN=32'b00000000000000000000000000000000
+	CLKOS5_EN=32'b00000000000000000000000000000000
+	CLKOP_BYPASS=32'b00000000000000000000000000000000
+	CLKOS_BYPASS=32'b00000000000000000000000000000000
+	CLKOS2_BYPASS=32'b00000000000000000000000000000000
+	CLKOS3_BYPASS=32'b00000000000000000000000000000000
+	CLKOS4_BYPASS=32'b00000000000000000000000000000000
+	CLKOS5_BYPASS=32'b00000000000000000000000000000000
+	ENCLKOP_EN=32'b00000000000000000000000000000000
+	ENCLKOS_EN=32'b00000000000000000000000000000000
+	ENCLKOS2_EN=32'b00000000000000000000000000000000
+	ENCLKOS3_EN=32'b00000000000000000000000000000000
+	ENCLKOS4_EN=32'b00000000000000000000000000000000
+	ENCLKOS5_EN=32'b00000000000000000000000000000000
+	FRAC_N_EN=32'b00000000000000000000000000000000
+	SS_EN=32'b00000000000000000000000000000000
+	DYN_PORTS_EN=32'b00000000000000000000000000000000
+	PLL_RST=32'b00000000000000000000000000000001
+	LOCK_EN=32'b00000000000000000000000000000001
+	PLL_LOCK_STICKY=32'b00000000000000000000000000000000
+	LEGACY_EN=32'b00000000000000000000000000000000
+	LMMI_EN=32'b00000000000000000000000000000000
+	APB_EN=32'b00000000000000000000000000000000
+	POWERDOWN_EN=32'b00000000000000000000000000000000
+	TRIM_EN_P=32'b00000000000000000000000000000000
+	TRIM_EN_S=32'b00000000000000000000000000000000
+	PLL_REFCLK_FROM_PIN=32'b00000000000000000000000000000000
+	PLL_IO_TYPE=32'b01010011010011000101011001010011
+	CLKOP_TRIM_MODE=56'b01000110011000010110110001101100011010010110111001100111
+	CLKOS_TRIM_MODE=56'b01000110011000010110110001101100011010010110111001100111
+	CLKOP_TRIM=48'b001100000110001000110000001100000011000000110000
+	CLKOS_TRIM=48'b001100000110001000110000001100000011000000110000
+	FBK_MODE=40'b0100001101001100010010110100111101010000
+	CLKI_DIVIDER_ACTUAL_STR=8'b00110001
+	FBCLK_DIVIDER_ACTUAL_STR=8'b00110100
+	DIVOP_ACTUAL_STR=8'b00110011
+	DIVOS_ACTUAL_STR=16'b0011000100110101
+	DIVOS2_ACTUAL_STR=8'b00110111
+	DIVOS3_ACTUAL_STR=8'b00110111
+	DIVOS4_ACTUAL_STR=8'b00110111
+	DIVOS5_ACTUAL_STR=8'b00110111
+	SSC_N_CODE_STR=88'b0011000001100010001100000011000000110000001100000011000000110000001100010011000000110000
+	SSC_F_CODE_STR=136'b0011000001100010001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000
+	SSC_PROFILE=32'b01000100010011110101011101001110
+	SSC_TBASE_STR=112'b0011000001100010001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000
+	SSC_STEP_IN_STR=72'b001100000110001000110000001100000011000000110000001100000011000000110000
+	SSC_REG_WEIGHTING_SEL_STR=40'b0011000001100010001100000011000000110000
+	DELA=8'b00110011
+	DELB=16'b0011000100110101
+	DELC=8'b00110111
+	DELD=8'b00110111
+	DELE=8'b00110111
+	DELF=8'b00110111
+	PHIA=8'b00110000
+	PHIB=8'b00110000
+	PHIC=8'b00110000
+	PHID=8'b00110000
+	PHIE=8'b00110000
+	PHIF=8'b00110000
+	EN_REFCLK_MON=32'b00000000000000000000000000000000
+	REF_COUNTS=32'b00110000001100000011000000110000
+	INTFBKDEL_SEL=64'b0100010001001001010100110100000101000010010011000100010101000100
+	PMU_WAITFORLOCK=56'b01000101010011100100000101000010010011000100010101000100
+	REF_OSC_CTRL=24'b001100110101000000110010
+	SIM_FLOAT_PRECISION=24'b001100000010111000110001
+	IPI_CMP=48'b001100000110001000110001001100010011000000110000
+	CSET=16'b0011100001010000
+	CRIPPLE=16'b0011000101010000
+	IPP_CTRL=48'b001100000110001000110000001100010011000100110000
+	IPP_SEL=48'b001100000110001000110001001100010011000100110001
+	BW_CTL_BIAS=48'b001100000110001000110001001100010011000100110001
+	V2I_PP_RES=16'b0011100101001011
+	KP_VCO=56'b00110000011000100011000000110000001100000011000100110001
+	V2I_KVCO_SEL=16'b0011011000110000
+	V2I_1V_EN=56'b01000101010011100100000101000010010011000100010101000100
+	X4_WIDTH=32'b00000000000000000000000000000010
+	LDN_START=4'b0100
+	LDN_END=4'b1100
+	MV_START=4'b0111
+	MV_END=4'b1001
+	D_IDLE=2'b00
+	D_ACT=2'b01
+	D_DONE=2'b10
+   Generated name = DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":3190:7:3190:12|Synthesizing module DQSBUF in library work.
+Running optimization stage 1 on DQSBUF .......
+Finished optimization stage 1 on DQSBUF (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1190:7:1190:36|Synthesizing module DDR_MEM_1_ipgen_dq_dqs_dm_unit in library work.
+
+	IO_TYPE=64'b0101001101010011010101000100110000110001001101010101111101001001
+	CK_DQS_IO=72'b010100110101001101010100010011000011000100110101010001000101111101001001
+	INTERFACE_TYPE=32'b01000100010001000101001000110011
+	DATA_MASK_ENABLE=32'b00000000000000000000000000000000
+	BUS_WIDTH=32'b00000000000000000000000000010000
+	GEARING=32'b00000000000000000000000000000010
+	DQS_RD_DEL_VALUE=8'b00110000
+	DQS_RD_DEL_SIGN=64'b0101000001001111010100110100100101010100010010010101011001000101
+	DQS_WR_DEL_VALUE=8'b00110000
+	DQS_WR_DEL_SIGN=64'b0101000001001111010100110100100101010100010010010101011001000101
+	MODX_VALUE=48'b010011010100010001000100010100100101100000110010
+	DEL_MODE=112'b0100010001010001010100110101111101000001010011000100100101000111010011100100010101000100010111110101100000110010
+   Generated name = DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1001:7:1001:8|Synthesizing module BB in library work.
+Running optimization stage 1 on BB .......
+Finished optimization stage 1 on BB (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5902:7:5902:15|Synthesizing module ODDRX2DQS in library work.
+Running optimization stage 1 on ODDRX2DQS .......
+Finished optimization stage 1 on ODDRX2DQS (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":11112:7:11112:13|Synthesizing module TSHX2DQ in library work.
+Running optimization stage 1 on TSHX2DQ .......
+Finished optimization stage 1 on TSHX2DQ (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":11101:7:11101:14|Synthesizing module TSHX2DQS in library work.
+Running optimization stage 1 on TSHX2DQS .......
+Finished optimization stage 1 on TSHX2DQS (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1553:7:1553:12|Synthesizing module DELAYB in library work.
+Running optimization stage 1 on DELAYB .......
+Finished optimization stage 1 on DELAYB (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":4051:7:4051:14|Synthesizing module IDDRX2DQ in library work.
+Running optimization stage 1 on IDDRX2DQ .......
+Finished optimization stage 1 on IDDRX2DQ (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5915:7:5915:14|Synthesizing module ODDRX2DQ in library work.
+Running optimization stage 1 on ODDRX2DQ .......
+Finished optimization stage 1 on ODDRX2DQ (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1239:11:1239:14|Removing wire dm_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1259:34:1259:41|Removing wire data_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1263:9:1263:14|Removing wire dm_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1264:9:1264:13|Removing wire dqs_w, as there is no assignment to it.
+Running optimization stage 1 on DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 .......
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1239:11:1239:14|*Output dm_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2406:7:2406:34|Synthesizing module DDR_MEM_1_ipgen_moshx2_4_csn in library work.
+
+	IO_TYPE=64'b0101001101010011010101000100110000110001001101010101111101001001
+	CK_DQS_IO=72'b010100110101001101010100010011000011000100110101010001000101111101001001
+	GEARING=32'b00000000000000000000000000000010
+	NUM_CS=32'b00000000000000000000000000000001
+	DEL_MODE=88'b0100010001010001010100110101111101000011010011010100010001011111010000110100110001001011
+   Generated name = DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_I_SSTL15D_I_2s_1s_DQS_CMD_CLK
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":6193:7:6193:11|Synthesizing module OSHX2 in library work.
+Running optimization stage 1 on OSHX2 .......
+Finished optimization stage 1 on OSHX2 (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+Running optimization stage 1 on DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_I_SSTL15D_I_2s_1s_DQS_CMD_CLK .......
+Finished optimization stage 1 on DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_I_SSTL15D_I_2s_1s_DQS_CMD_CLK (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2535:7:2535:47|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt in library work.
+
+	IO_TYPE=64'b0101001101010011010101000100110000110001001101010101111101001001
+	ADDR_WIDTH=32'b00000000000000000000000000001101
+	GEARING=32'b00000000000000000000000000000010
+	X4_WIDTH=32'b00000000000000000000000000000010
+	BA_WIDTH=32'b00000000000000000000000000000011
+	NUM_ODT=32'b00000000000000000000000000000001
+	NUM_CKE=32'b00000000000000000000000000000001
+	OUTMODE_VALUE=88'b0100111101000100010001000101001001011000001100010101111101010011010000110100110001001011
+   Generated name = DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_I_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5893:7:5893:12|Synthesizing module ODDRX1 in library work.
+Running optimization stage 1 on ODDRX1 .......
+Finished optimization stage 1 on ODDRX1 (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2572:30:2572:40|Removing wire dout_addr_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2573:28:2573:36|Removing wire dout_ba_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2574:9:2574:19|Removing wire dout_casn_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2575:9:2575:19|Removing wire dout_rasn_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2576:9:2576:18|Removing wire dout_wen_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2577:27:2577:36|Removing wire dout_odt_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2578:27:2578:36|Removing wire dout_cke_w, as there is no assignment to it.
+Running optimization stage 1 on DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_I_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK .......
+Finished optimization stage 1 on DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_I_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2904:7:2904:33|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_ck in library work.
+
+	IO_TYPE=64'b0101001101010011010101000100110000110001001101010101111101001001
+	NUM_DDRCLK=32'b00000000000000000000000000000001
+	GEARING=32'b00000000000000000000000000000010
+	DEL_MODE=88'b0100010001010001010100110101111101000011010011010100010001011111010000110100110001001011
+   Generated name = DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_I_1s_2s_DQS_CMD_CLK
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5928:7:5928:12|Synthesizing module ODDRX2 in library work.
+Running optimization stage 1 on ODDRX2 .......
+Finished optimization stage 1 on ODDRX2 (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+Running optimization stage 1 on DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_I_1s_2s_DQS_CMD_CLK .......
+Finished optimization stage 1 on DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_I_1s_2s_DQS_CMD_CLK (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3116:11:3116:20|Removing wire pll_lock_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3139:17:3139:20|Removing wire ca_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3367:17:3367:27|Removing wire dqwl_dqs2_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3368:17:3368:27|Removing wire dqwl_dqs3_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3369:17:3369:27|Removing wire dqwl_dqs4_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3370:17:3370:27|Removing wire dqwl_dqs5_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3371:17:3371:27|Removing wire dqwl_dqs6_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3372:17:3372:27|Removing wire dqwl_dqs7_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3373:17:3373:27|Removing wire dqwl_dqs8_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3490:34:3490:46|Removing wire data_dqs2_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3491:34:3491:46|Removing wire data_dqs3_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3492:34:3492:46|Removing wire data_dqs4_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3493:34:3493:46|Removing wire data_dqs5_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3494:34:3494:46|Removing wire data_dqs6_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3495:34:3495:46|Removing wire data_dqs7_o_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3496:34:3496:46|Removing wire data_dqs8_o_w, as there is no assignment to it.
+Running optimization stage 1 on DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0 .......
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3116:11:3116:20|*Output pll_lock_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3139:17:3139:20|*Output ca_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3367:17:3367:27|*Output dqwl_dqs2_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3368:17:3368:27|*Output dqwl_dqs3_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3369:17:3369:27|*Output dqwl_dqs4_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3370:17:3370:27|*Output dqwl_dqs5_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3371:17:3371:27|*Output dqwl_dqs6_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3372:17:3372:27|*Output dqwl_dqs7_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3373:17:3373:27|*Output dqwl_dqs8_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL190 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3517:4:3517:9|Optimizing register bit init_dir_r to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3517:4:3517:9|Pruning unused register init_dir_r. Make sure that there are no unused intermediate registers.
+Finished optimization stage 1 on DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":11:7:11:15|Synthesizing module DDR_MEM_1 in library work.
+Running optimization stage 1 on DDR_MEM_1 .......
+Finished optimization stage 1 on DDR_MEM_1 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1 .......
+Finished optimization stage 2 on DDR_MEM_1 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on ODDRX2 .......
+Finished optimization stage 2 on ODDRX2 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_I_1s_2s_DQS_CMD_CLK .......
+Finished optimization stage 2 on DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_I_1s_2s_DQS_CMD_CLK (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on ODDRX1 .......
+Finished optimization stage 2 on ODDRX1 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_I_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK .......
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2564:10:2564:15|Input eclk_i is unused.
+Finished optimization stage 2 on DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_I_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on OSHX2 .......
+Finished optimization stage 2 on OSHX2 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_I_SSTL15D_I_2s_1s_DQS_CMD_CLK .......
+Finished optimization stage 2 on DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_I_SSTL15D_I_2s_1s_DQS_CMD_CLK (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on ODDRX2DQ .......
+Finished optimization stage 2 on ODDRX2DQ (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on IDDRX2DQ .......
+Finished optimization stage 2 on IDDRX2DQ (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DELAYB .......
+Finished optimization stage 2 on DELAYB (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on TSHX2DQS .......
+Finished optimization stage 2 on TSHX2DQS (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on TSHX2DQ .......
+Finished optimization stage 2 on TSHX2DQ (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on ODDRX2DQS .......
+Finished optimization stage 2 on ODDRX2DQS (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on BB .......
+Finished optimization stage 2 on BB (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 .......
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1240:34:1240:44|Input data_mask_i is unused.
+Finished optimization stage 2 on DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DQSBUF .......
+Finished optimization stage 2 on DQSBUF (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0 .......
+@N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3517:4:3517:9|Trying to extract state machine for register delay_st_r.
+Extracted state machine for register delay_st_r
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3114:10:3114:21|Input pll_refclk_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3115:10:3115:20|Input pll_rst_n_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3128:10:3128:20|Input pause_cmd_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3129:41:3129:44|Input ca_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3151:35:3151:45|Input data_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3152:35:3152:45|Input data_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3153:35:3153:45|Input data_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3154:35:3154:45|Input data_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3155:35:3155:45|Input data_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3156:35:3156:45|Input data_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3157:35:3157:45|Input data_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3160:34:3160:49|Input data_mask_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3161:34:3161:49|Input data_mask_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3162:34:3162:49|Input data_mask_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3163:34:3163:49|Input data_mask_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3164:34:3164:49|Input data_mask_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3165:34:3165:49|Input data_mask_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3166:34:3166:49|Input data_mask_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3178:16:3178:31|Input rd_clksel_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3179:16:3179:31|Input rd_clksel_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3180:16:3180:31|Input rd_clksel_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3181:16:3181:31|Input rd_clksel_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3182:16:3182:31|Input rd_clksel_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3183:16:3183:31|Input rd_clksel_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3184:16:3184:31|Input rd_clksel_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3185:10:3185:22|Input rd_dir_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3186:10:3186:22|Input rd_dir_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3187:10:3187:22|Input rd_dir_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3188:10:3188:22|Input rd_dir_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3189:10:3189:22|Input rd_dir_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3190:10:3190:22|Input rd_dir_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3191:10:3191:22|Input rd_dir_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3192:10:3192:22|Input rd_dir_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3193:10:3193:22|Input rd_dir_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3194:10:3194:24|Input rd_loadn_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3195:10:3195:24|Input rd_loadn_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3196:10:3196:24|Input rd_loadn_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3197:10:3197:24|Input rd_loadn_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3198:10:3198:24|Input rd_loadn_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3199:10:3199:24|Input rd_loadn_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3200:10:3200:24|Input rd_loadn_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3201:10:3201:24|Input rd_loadn_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3202:10:3202:24|Input rd_loadn_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3205:16:3205:24|Input rd_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3206:16:3206:24|Input rd_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3207:16:3207:24|Input rd_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3208:16:3208:24|Input rd_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3209:16:3209:24|Input rd_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3210:16:3210:24|Input rd_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3211:16:3211:24|Input rd_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3212:10:3212:23|Input rd_move_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3213:10:3213:23|Input rd_move_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3214:10:3214:23|Input rd_move_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3215:10:3215:23|Input rd_move_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3216:10:3216:23|Input rd_move_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3217:10:3217:23|Input rd_move_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3218:10:3218:23|Input rd_move_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3219:10:3219:23|Input rd_move_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3220:10:3220:23|Input rd_move_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3221:10:3221:22|Input wr_dir_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3222:10:3222:22|Input wr_dir_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3223:10:3223:22|Input wr_dir_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3224:10:3224:22|Input wr_dir_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3225:10:3225:22|Input wr_dir_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3226:10:3226:22|Input wr_dir_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3227:10:3227:22|Input wr_dir_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3228:10:3228:22|Input wr_dir_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3229:10:3229:22|Input wr_dir_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3230:10:3230:24|Input wr_loadn_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3231:10:3231:24|Input wr_loadn_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3232:10:3232:24|Input wr_loadn_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3233:10:3233:24|Input wr_loadn_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3234:10:3234:24|Input wr_loadn_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3235:10:3235:24|Input wr_loadn_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3236:10:3236:24|Input wr_loadn_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3237:10:3237:24|Input wr_loadn_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3238:10:3238:24|Input wr_loadn_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3239:10:3239:23|Input wr_move_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3240:10:3240:23|Input wr_move_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3241:10:3241:23|Input wr_move_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3242:10:3242:23|Input wr_move_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3243:10:3243:23|Input wr_move_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3244:10:3244:23|Input wr_move_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3245:10:3245:23|Input wr_move_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3246:10:3246:23|Input wr_move_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3247:10:3247:23|Input wr_move_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3248:10:3248:25|Input wrlvl_dir_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3249:10:3249:25|Input wrlvl_dir_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3250:10:3250:25|Input wrlvl_dir_dqs2_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3251:10:3251:25|Input wrlvl_dir_dqs3_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3252:10:3252:25|Input wrlvl_dir_dqs4_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3253:10:3253:25|Input wrlvl_dir_dqs5_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3254:10:3254:25|Input wrlvl_dir_dqs6_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3255:10:3255:25|Input wrlvl_dir_dqs7_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3256:10:3256:25|Input wrlvl_dir_dqs8_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3257:10:3257:27|Input wrlvl_loadn_dqs0_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3258:10:3258:27|Input wrlvl_loadn_dqs1_i is unused.
+@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3259:10:3259:27|Input wrlvl_loadn_dqs2_i is unused.
+
+Only the first 100 messages of id 'CL159' are reported. To see all messages use 'report_messages -log C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\Lattice_Project_1_impl_1_compiler.srr -id CL159' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL159} -count unlimited' in the Tcl shell.
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3349:10:3349:16|Inout dqs2_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3350:10:3350:16|Inout dqs3_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3351:10:3351:16|Inout dqs4_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3352:10:3352:16|Inout dqs5_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3353:10:3353:16|Inout dqs6_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3354:10:3354:16|Inout dqs7_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3355:10:3355:16|Inout dqs8_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3358:16:3358:25|Inout dq_dqs2_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3359:16:3359:25|Inout dq_dqs3_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3360:16:3360:25|Inout dq_dqs4_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3361:16:3361:25|Inout dq_dqs5_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3362:16:3362:25|Inout dq_dqs6_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3363:16:3363:25|Inout dq_dqs7_io is unused
+@W: CL158 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3364:16:3364:25|Inout dq_dqs8_io is unused
+Finished optimization stage 2 on DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_common_logic_2s_2 .......
+Finished optimization stage 2 on DDR_MEM_1_ipgen_common_logic_2s_2 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDRDLL .......
+Finished optimization stage 2 on DDRDLL (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on DDR_MEM_1_ipgen_mem_sync .......
+@N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Trying to extract state machine for register flag.
+Extracted state machine for register flag
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Trying to extract state machine for register cs_memsync.
+Extracted state machine for register cs_memsync
+State machine has 9 reachable states with original encodings of:
+   000010
+   000011
+   000100
+   000101
+   000110
+   000111
+   100010
+   110010
+   111010
+Finished optimization stage 2 on DDR_MEM_1_ipgen_mem_sync (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 136MB)
+Running optimization stage 2 on ECLKSYNC .......
+Finished optimization stage 2 on ECLKSYNC (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 136MB)
+Running optimization stage 2 on ECLKDIV .......
+Finished optimization stage 2 on ECLKDIV (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 136MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 135MB peak: 136MB)
+
+
+Process completed successfully.
+# Sat Aug  5 00:28:37 2023
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 93MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Aug  5 00:28:38 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:25s; Memory used current: 31MB peak: 33MB)
+
+Process took 0h:00m:28s realtime, 0h:00m:25s cputime
+
+Process completed successfully.
+# Sat Aug  5 00:28:38 2023
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 94MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Aug  5 00:28:40 2023
+
+###########################################################]
+Premap Report
+
+# Sat Aug  5 00:28:40 2023
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: DESKTOP-TOAOPO9
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 070R, Built Jun  8 2023 11:14:23, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 123MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 137MB)
+
+Reading constraint file: C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc
+@E:"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc":1:0:1:255|couldn't read file "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc": no such file or directory
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Aug  5 00:28:42 2023
+
+###########################################################]

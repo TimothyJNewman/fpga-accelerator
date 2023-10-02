@@ -1,0 +1,425 @@
+<HTML>
+<HEAD>
+<TITLE>Place & Route Report</TITLE>
+<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Mon Oct  2 07:24:27 2023
+
+Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=OFF \
+	Lattice_Project_1_impl_1_map.udb Lattice_Project_1_impl_1.udb 
+
+
+<A name="par_cts"></A><B><U><big>Cost Table Summary</big></U></B>
+Level/       Number       Worst        Timing       Worst        Timing       Run          Run
+Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -            0            -            0            01:25        Completed
+* : Design saved.
+
+Total (real) run time for 1-seed: 1 mins 26 secs 
+
+par done!
+
+Lattice Place and Route Report for Design &quot;Lattice_Project_1_impl_1_map.udb&quot;
+Mon Oct  2 07:24:27 2023
+
+
+<A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
+PAR: Place And Route Radiant Software (64-bit) 2023.1.1.200.1.
+Command Line: par -w -t 1 -cores 1 -exp parPathBased=OFF \
+	Lattice_Project_1_impl_1_map.udb Lattice_Project_1_impl_1_par.dir/5_1.udb 
+
+Loading Lattice_Project_1_impl_1_map.udb ...
+Loading device for application GENERIC from file &apos;je5d30.nph&apos; in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Final          Version 39.
+Performance Hardware Data Status:   Final          Version 117.1.
+
+
+
+Design:  main
+Family:  LIFCL
+Device:  LIFCL-40
+Package: CABGA256
+Performance Grade:   7_High-Performance_1.0V
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE              3/16128        &lt;1% used
+
+WARNING &lt;70001944&gt; - par: No master clock for
+	generated clock	create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 2 [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }] .
+Number of Signals: 100
+Number of Connections: 939
+
+<A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
+
+   VHI                   1/1           100% used
+   DIFFIO18              3/37            8% used
+                         3/37            8% bonded
+   DDRDLL                1/2            50% used
+   DQSBUF                2/4            50% used
+   IOLOGIC              41/74           55% used
+   SEIO18               44/74           59% used
+                        44/74           59% bonded
+   SEIO33                4/156           3% used
+                         4/82            5% bonded
+   ECLKDIV               1/12            8% used
+   ECLKSYNC              1/12            8% used
+   DPHY                  2/2           100% used
+   APIO                 20/32           63% used
+   SLICE                 3/16128        &lt;1% used
+     LUT                 3/32256        &lt;1% used
+     REG                 0/32256         0% used
+
+
+Pin Constraint Summary:
+   41 out of 45 pins locked (91% locked).
+.
+.
+
+.
+Starting Placer Phase 0 (HIER). CPU time: 12 secs , REAL time: 14 secs 
+...........
+Finished Placer Phase 0 (HIER). CPU time: 12 secs , REAL time: 14 secs 
+
+.   
+Starting Placer Phase 1. CPU time: 13 secs , REAL time: 14 secs 
+..  ..
+...............
+
+Placer score = 95795.
+Finished Placer Phase 1. CPU time: 30 secs , REAL time: 32 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  95795
+Finished Placer Phase 2.  CPU time: 30 secs , REAL time: 32 secs 
+
+After final PLC packing legalization, all 0 SLICEs that were not satisfying 1 CLK/CE/LSR per HALF-PLC restriction are all placed into compatible PLCs.
+
+
+<A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 26 (0%)
+  PLL        : 0 out of 3 (0%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 0 out of 62 (0%)
+  ECLKDIV    : 1 out of 12 (8%)
+  PCLKDIV    : 0 out of 1 (0%)
+  OSC        : 0 out of 1 (0%)
+  DPHY       : 2 out of 2 (100%)
+  PCIE       : 0 out of 1 (0%)
+
+Global Clocks:
+  PRIMARY &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o&quot; from comp &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_ECLKDIV.ECLKDIV_inst&quot; on ECLKDIV_CORE site &quot;ECLKDIV_CORE_R55C50B&quot;, clk load = 43, ce load = 0, sr load = 0
+
+  PRIMARY  : 1 out of 16 (6%)
+
+Edge Clocks:
+
+  ECLK &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w&quot;: BANK3_ECLK1
+    - From ROUTING &quot;R26C31D.F0&quot;, driver &quot;DDR_MEM_1_cke_o_pad[0].SLICE_0&quot;.
+  ECLK &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w&quot;: BANK4_ECLK1
+    - From ROUTING &quot;R26C31D.F0&quot;, driver &quot;DDR_MEM_1_cke_o_pad[0].SLICE_0&quot;.
+
+
+
+
+I/O Usage Summary (final):
+   5 out of 156 (3.2%) SEIO33 sites used.
+   5 out of 82 (6.1%) bonded SEIO33 sites used.
+   Number of SEIO33 components: 4; differential: 0
+   Number of Vref pins used: 1
+   41 out of 74 (55.4%) SEIO18 sites used.
+   41 out of 74 (55.4%) bonded SEIO18 sites used.
+   Number of SEIO18 components: 41; differential: 3
+   3 out of 37 (8.1%) DIFFIO18 sites used.
+   3 out of 37 (8.1%) bonded DIFFIO18 sites used.
+   Number of DIFFIO18 components: 3; differential: 3
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 0 / 12 (  0%)  | 3.3V       | -          | -          |
+| 1        | 4 / 20 ( 20%)  | 3.3V       | -          | -          |
+| 2        | 0 / 13 (  0%)  | -          | -          | -          |
+| 3        | 24 / 32 ( 75%) | 1.5V       | -          | -          |
+| 4        | 21 / 32 ( 65%) | 1.5V       | -          | REF_15     |
+| 5        | 0 / 10 (  0%)  | -          | -          | -          |
+| 6        | 0 / 26 (  0%)  | -          | -          | -          |
+| 7        | 0 / 11 (  0%)  | -          | -          | -          |
++----------+----------------+------------+------------+------------+
+
+Total Placer CPU time: 30 secs , REAL time: 32 secs 
+
+Writing design to file Lattice_Project_1_impl_1_par.dir/5_1.udb ...
+
+
+Start NBR router at 07:25:00 10/02/23
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+141 connections routed with dedicated routing resources
+1 global clock signals routed
+475 connections routed (of 939 total) (50.59%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (2 used out of 32 available):
+    Signal &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o&quot; (1, 17)
+       Clock   loads: 43    out of    43 routed (100.00%)
+Other clocks:
+    Signal &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w&quot;
+       Clock   loads: 24    out of    24 routed (100.00%)
+    Signal &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.sw270_out_w&quot;
+       Clock   loads: 8     out of     8 routed (100.00%)
+    Signal &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqswout_w&quot;
+       Clock   loads: 1     out of     1 routed (100.00%)
+    Signal &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w&quot;
+       Clock   loads: 8     out of     8 routed (100.00%)
+    Signal &quot;DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqswout_w&quot;
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+WARNING &lt;70001944&gt; - par: No master clock for
+	generated clock	create_generated_clock -name {DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o} -source [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 2 [get_pins {DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }] .
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 07:25:07 10/02/23
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 46 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 07:25:46 10/02/23
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 46 secs 
+
+Start NBR section for post-routing at 07:25:46 10/02/23
+
+End NBR router with 0 unrouted connection
+
+Starting full timing analysis...
+
+
+<A name="par_nbrsum"></A><B><U><big>NBR Summary</big></U></B>
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Estimated worst slack&lt;setup&gt; : &lt;n/a&gt;
+  Estimated worst slack&lt;hold &gt; : &lt;n/a&gt;
+  Timing score&lt;setup&gt; : 0
+  Timing score&lt;hold &gt; : 0
+  Number of connections with timing violations&lt;setup&gt; : 0 (0.00%)
+  Number of connections with timing violations&lt;hold &gt; : 0 (0.00%)
+-----------
+
+
+Total CPU time 49 secs 
+Total REAL time: 51 secs 
+Completely routed.
+End of route.  939 routed (100.00%); 0 unrouted.
+
+Writing design to file Lattice_Project_1_impl_1_par.dir/5_1.udb ...
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  Time: 1 mins 21 secs 
+Total REAL Time: 1 mins 26 secs 
+Peak Memory Usage: 425.80 MB
+
+
+par done!
+
+Note: user must run &apos;timing&apos; for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#par_cts>Cost Table Summary</A></LI>
+<LI><A href=#par_best>Best Par Run</A></LI>
+<LI><A href=#par_dus>Device utilization summary</A></LI>
+<LI><A href=#par_clk>Clock Report</A></LI>
+<LI><A href=#par_nbrsum>NBR Summary</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

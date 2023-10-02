@@ -1,0 +1,50 @@
+Lattice Timing Report -  Setup , Version Radiant Software (64-bit) 2023.1.1.200.1
+
+Mon Oct  2 07:26:08 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -iotime -html -rpt Lattice_Project_1_impl_1.ior Lattice_Project_1_impl_1.udb -gui
+
+-------------------------------------------
+Design:          main
+Family:          LIFCL
+Device:          LIFCL-40
+Package:         CABGA256
+Performance:     7_High-Performance_1.0V
+Package Status:                     Final          Version 39
+Performance Hardware Data Status :   Final Version 117.1
+-------------------------------------------
+
+I/O Timing Report
+=================
+
+Performance Grade Translation Table
+------------------------------------------------
+         Code          |   Performance Grade    
+------------------------------------------------
+7_High-Performance_1.0V| 7_High-Performance_1.0V
+------------------------------------------------
+
+FPGA Input Port Results for Performance Grade: 7_High-Performance_1.0V
+----------------------------------------------------------
+-----------------------------------------------------
+Port Name|Setup|Grade|Edge|Hold|Grade|edge|Clock Port
+-----------------------------------------------------
+-----------------------------------------------------
+***Warning: IO ports are not constrained.
+---------------------------------------------------------------------------------------------------------
+
+FPGA Output Port Results for Performance Grade: 7_High-Performance_1.0V
+----------------------------------------------------------
+--------------------------------------------------------------------------------
+Port Name|Clock To Out (MAX)|Grade|Edge|Clock To Out (MIN)|Grade|edge|Clock Port
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+***Warning: IO ports are not constrained.
+---------------------------------------------------------------------------------------------------------
+

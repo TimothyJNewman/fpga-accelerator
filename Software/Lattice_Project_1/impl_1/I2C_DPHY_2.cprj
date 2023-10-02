@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v"
+-sdc "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/constraints/I2C_DPHY_2.ldc"
+-path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2" "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1"
+-top I2C_DPHY_2
+-a "LIFCL"

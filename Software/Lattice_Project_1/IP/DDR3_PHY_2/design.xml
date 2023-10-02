@@ -1,0 +1,656 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>DDR3_PHY_2</ipxact:name>
+    <ipxact:version>1.1.1</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_ddr3_phy_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="ddr3_phy" vendor="latticesemi.com" version="1.1.1">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="FAMILY">LIFCL</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INTERFACE_TYPE">DDR3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MEM_TYPE">1Gb</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDR_WIDTH">14</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FREQ">200.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKOP_FREQ">400.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BIT_RATE">800Mbps</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEARING_RATION">[4:1]</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MEMORY_TYPE">On-board Memory</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DDR_DATA_WIDTH">16</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQSW">x8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_CS_WIDTH">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DDR_CS_WIDTH">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_WIDTH">64</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLKO_WIDTH">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CS_WIDTH">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CKE_WIDTH">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BYTE_LANE">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DQS_WIDTH">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DDR3_2T">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_LEVEL_EN">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IP_MEM_COMMON_RST">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_TRAINING_EN">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RST_DEL">40</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEARING">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TIM_500">51</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ROW_WIDTH">14</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="COL_WIDTH">10</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BURST_LENGTH">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CAS_LATENCY">6</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CAS_LATENCY_INT">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RD_BURST_TYPE">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_REC">6</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_REC_INT">1024</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PD_DLL_CONTROL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MRS0_INIT">1320</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ODI_CONTROL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RTT_NOM">68</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_LEVEL_EN_INT">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADD_LATENCY">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MRS1_INIT">196</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CWL_LATENCY">5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CWL_INT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RTT_WR">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MRS2_INIT">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MRS3_INIT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="X4_MODE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SIM">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GATE_SIM">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MANUALLY_ADJUST">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TMOD_INPUT">12</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TMOD">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TMOD_WIDTH">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TMRD_INPUT">4.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TMRD">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TMRD_WIDTH">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLDQSEN_INPUT">25</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLDQSEN">13</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLMRD_INPUT">40</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLMRD">21</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLMRD_WIDTH">5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLO_INPUT">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TWLO">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TXPR_INPUT">48</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TXPR">25</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TXPR_WIDTH">5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TZQINIT_INPUT">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TZQINIT">257</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TZQINIT_WIDTH">9</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DESEL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WL_DQS_PHASE_DLY_CNT">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="clk_i"/>
+                <ipxact:externalPortReference portRef="clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.eclk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="eclk_i"/>
+                <ipxact:externalPortReference portRef="eclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.clk_stable_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="clk_stable_i"/>
+                <ipxact:externalPortReference portRef="clk_stable_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dqsbuf_pause_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dqsbuf_pause_i"/>
+                <ipxact:externalPortReference portRef="dqsbuf_pause_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.ddr_rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="ddr_rst_i"/>
+                <ipxact:externalPortReference portRef="ddr_rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.update_done_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="update_done_i"/>
+                <ipxact:externalPortReference portRef="update_done_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.sclk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="sclk_o"/>
+                <ipxact:externalPortReference portRef="sclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dll_update_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dll_update_o"/>
+                <ipxact:externalPortReference portRef="dll_update_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.mem_rst_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="mem_rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.rd_override_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="rd_override_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dqs_chk_i.7:0</ipxact:name>
+            <ipxact:tiedValue>8'b00000000</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dqs_chk_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.phy_init_act_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="phy_init_act_o"/>
+                <ipxact:externalPortReference portRef="phy_init_act_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.wl_act_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="wl_act_o"/>
+                <ipxact:externalPortReference portRef="wl_act_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.wl_err_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="wl_err_o"/>
+                <ipxact:externalPortReference portRef="wl_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.rt_err_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="rt_err_o"/>
+                <ipxact:externalPortReference portRef="rt_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.rst_cntr_ready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="rst_cntr_ready_o"/>
+                <ipxact:externalPortReference portRef="rst_cntr_ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.csm_ready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="csm_ready_o"/>
+                <ipxact:externalPortReference portRef="csm_ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_rst_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_rst_n_i"/>
+                <ipxact:externalPortReference portRef="dfi_rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_addr_i.13:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_addr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>13</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_addr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>13</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_bank_i.2:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_bank_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_bank_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_cas_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_cas_n_i"/>
+                <ipxact:externalPortReference portRef="dfi_cas_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_cke_i.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_cke_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_cke_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_cs_n_i.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_cs_n_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_cs_n_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_odt_i.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_odt_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_odt_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_ras_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_ras_n_i"/>
+                <ipxact:externalPortReference portRef="dfi_ras_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_we_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_we_n_i"/>
+                <ipxact:externalPortReference portRef="dfi_we_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_wrdata_i.63:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_wrdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_wrdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_wrdataen_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_wrdataen_i"/>
+                <ipxact:externalPortReference portRef="dfi_wrdataen_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_wrdata_mask_i.7:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_wrdata_mask_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_wrdata_mask_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_init_start_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_init_start_i"/>
+                <ipxact:externalPortReference portRef="dfi_init_start_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_rddata_o.63:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_rddata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="dfi_rddata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_init_complete_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_init_complete_o"/>
+                <ipxact:externalPortReference portRef="dfi_init_complete_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.dfi_rddata_valid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="dfi_rddata_valid_o"/>
+                <ipxact:externalPortReference portRef="dfi_rddata_valid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_rst_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_rst_n_o"/>
+                <ipxact:externalPortReference portRef="em_ddr_rst_n_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_clk_o.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_clk_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_clk_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_cke_o.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_cke_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_cke_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_addr_o.13:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_addr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>13</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_addr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>13</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_ba_o.2:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_ba_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_ba_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_cs_n_o.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_cs_n_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_cs_n_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_odt_o.0:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_odt_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_odt_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_cas_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_cas_n_o"/>
+                <ipxact:externalPortReference portRef="em_ddr_cas_n_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_ras_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_ras_n_o"/>
+                <ipxact:externalPortReference portRef="em_ddr_ras_n_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_we_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_we_n_o"/>
+                <ipxact:externalPortReference portRef="em_ddr_we_n_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_dm_o.1:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_dm_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_dm_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_dqs_io.1:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_dqs_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_dqs_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>DDR3_PHY_2.em_ddr_data_io.15:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="DDR3_PHY_2" portRef="em_ddr_data_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="em_ddr_data_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

@@ -1,0 +1,12 @@
+synthesis:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Oct  1 02:14:14 2023
+
+
+Command Line:  synthesis -comp -f Lattice_Project_1_impl_1_lattice.synproj -gui 
+

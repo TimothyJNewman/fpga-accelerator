@@ -1,0 +1,338 @@
+                         Lattice Mapping Report File
+Design:  main
+Family:  LIFCL
+Device:  LIFCL-40
+Package: CABGA256
+Performance Grade:  7_High-Performance_1.0V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.1.200.1
+Mapped on: Mon Oct  2 07:24:15 2023
+
+Design Information
+------------------
+
+Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc C:/Users/timot/Docu
+     ments/Programming/fpga-accelerator/Software/Lattice_Project_1/Config.pdc -o
+     Lattice_Project_1_impl_1_map.udb -mp Lattice_Project_1_impl_1.mrp -hierrpt
+     -gui
+
+Design Summary
+--------------
+
+   Number of registers:           0 out of 32724 (0%)
+      Number of SLICE         registers:    0 out of 32256 (0%)
+      Number of PIO Input     registers:    0 out of   156 (0%)
+      Number of PIO Output    registers:    0 out of   156 (0%)
+      Number of PIO Tri-State registers:    0 out of   156 (0%)
+   Number of LUT4s:               3 out of 32256 (<1%)
+      Number used as logic LUT4s:                          3
+      Number used as distributed RAM:                      0 (6 per 16X4 RAM)
+      Number used as ripple logic:                         0 (2 per CCU2)
+   Number of PIOs used/reserved:   55 out of   156 (35%)
+      Number of PIOs reserved:      7 (per sysConfig and/or prohibit constraint)
+      Number of PIOs used:         48
+        Number of PIOs used for single ended IO:        42
+        Number of PIO pairs used for differential IO:    3
+        Number allocated to regular speed PIOs:     4 out of   82 (5%)
+        Number allocated to high speed PIOs:       44 out of   74 (59%)
+   Number of Dedicated IO used for ADC/PCIE/DPHY:   20 out of   32 (63%)
+   Number of IDDR/ODDR/TDDR functions used:     59 out of   386 (15%)
+      Number of IDDR functions:                0
+      Number of ODDR functions:               41
+                ODDRX1:          21
+                ODDRX2:          20
+      Number of TDDR functions:               18
+                TDDRX2:          18
+   Number of IOs using at least one DDR function: 41 (3 differential)
+      Number of IOs using IDDR only:           0 (0 differential)
+      Number of IOs using ODDR only:          23 (1 differential)
+      Number of IOs using ODDR/TDDR:          18 (2 differential)
+      Number of IOs using IDDR/ODDR/TDDR:      0 (0 differential)
+   Number of Block RAMs:          0 out of 84 (0%)
+   Number of Large RAMs:          0 out of 2 (0%)
+   Number of Logical DSP Functions:
+      Number of Pre-Adders (9+9):    0 out of 112 (0%)
+      Number of Multipliers (18x18): 0 out of 56 (0%)
+         Number of 9X9:        0 (1 18x18 = 2   9x9)
+         Number of 18x18:      0 (1 18x18 = 1 18x18)
+         Number of 18x36:      0 (2 18x18 = 1 18x36)
+         Number of 36x36:      0 (4 18x18 = 1 36x36)
+      Number of 54-bit Accumulators: 0 out of 28 (0%)
+      Number of 18-bit Registers:    0 out of 112 (0%)
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+   Number of Physical DSP Components:
+      Number of PREADD9:             0 out of 112 (0%)
+      Number of MULT9:               0 out of 112 (0%)
+      Number of MULT18:              0 out of 56 (0%)
+      Number of MULT18X36:           0 out of 28 (0%)
+      Number of MULT36:              0 out of 14 (0%)
+      Number of ACC54:               0 out of 28 (0%)
+      Number of REG18:               0 out of 112 (0%)
+   Number of ALUREGs:             0 out of 1 (0%)
+   Number of PLLs:                0 out of 3 (0%)
+   Number of DDRDLLs:             1 out of 2 (50%)
+   Number of DLLDELs:             0 out of 10 (0%)
+   Number of DQSs:                2 out of 4 (50%)
+   Number of DCSs:                0 out of 1 (0%)
+   Number of DCCs:                0 out of 62 (0%)
+   Number of PCLKDIVs:            0 out of 1 (0%)
+   Number of ECLKDIVs:            1 out of 12 (8%)
+   Number of ECLKSYNCs:           1 out of 12 (8%)
+   Number of ADC Blocks:          0 out of 1 (0%)
+   Number of SGMIICDRs:           0 out of 2 (0%)
+   Number of PMUs:                0 out of 1 (0%)
+   Number of BNKREF18s:           0 out of 3 (0%)
+   Number of BNKREF33s:           0 out of 5 (0%)
+   Number of PCIEs:               0 out of 1 (0%)
+   Number of I2CFIFOs:            0 out of 1 (0%)
+   Number of DPHYs:               2 out of 2 (100%)
+   Number of Oscillators:         0 out of 1 (0%)
+   Number of GSR:                 0 out of 1 (0%)
+   Number of Cryptographic Block: 0 out of 1 (0%)
+   Number of Config IP:           0 out of 1 (0%)
+                 TSALL:           0 out of 1 (0%)
+   Number of JTAG:                0 out of 1 (0%)
+   Number of SED:                 0 out of 1 (0%)
+   Number of PCSs:                0 out of 1 (0%)
+   Number of Clocks:  6
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w: 24 loads, 24 rising, 0
+     falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_EC
+     LKSYNC.ECLKSYNC_inst/ECLKOUT)
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o: 43 loads, 43 rising, 0
+     falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_EC
+     LKDIV.ECLKDIV_inst/DIVOUT)
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.sw270_out_w:
+     8 loads, 8 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.
+     DW_16.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW270)
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqswout_w: 1
+     loads, 1 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
+     _16.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW)
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w: 8
+     loads, 8 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
+     _8.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW270)
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqswout_w: 1
+     loads, 1 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
+     _8.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW)
+   Number of Clock Enables:  0
+   Number of LSRs:  1
+      Net VCC: 15 loads, 0 SLICEs
+   Top 10 highest fanout non-clock nets:
+
+                                    Page 2
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net VCC: 291 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[0]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[1]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[2]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[3]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[4]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[5]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[6]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[7]: 2 loads
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[8]: 2 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dqs1_io             | BIDIR     | SSTL15D_II|       | O/T   |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[6]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[2]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[1]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[5]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[7]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dqs0_io             | BIDIR     | SSTL15D_II|       | O/T   |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[6]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[2]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+                                    Page 3
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
+| dq_dqs0_io[1]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[5]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[7]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| I2C_DPHY_1_scl_io   | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| I2C_DPHY_1_sda_io   | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| I2C_DPHY_2_scl_io   | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| I2C_DPHY_2_sda_io   | BIDIR     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_cke_o[0]  | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_odt_o[0]  | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_wen_o     | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_rasn_o    | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_casn_o    | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_ba_o[2]   | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_ba_o[1]   | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_ba_o[0]   | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[12]| OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[11]| OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[10]| OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[9] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[8] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[7] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[6] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[5] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[4] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[3] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[2] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[1] | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_addr_o[0] | OUTPUT    | SSTL15_II |       | O     |           |
+
+                                    Page 4
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_csn_o[0]  | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DDR_MEM_1_ck_o[0]   | OUTPUT    | SSTL15D_II|       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Block VCC_cZ was optimized away.
+
+ASIC Components
+---------------
+
+Instance Name:
+     DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_DDRDLL.DDRDLL_inst
+         Type: DDRDLL_CORE
+Instance Name:
+     DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst
+         Type: ECLKSYNC_CORE
+Instance Name:
+     DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst
+         Type: ECLKDIV_CORE
+Instance Name: DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/u0_DQSBU
+     F.DQSBUF_inst
+         Type: DQSBUF_CORE
+Instance Name: DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/u0_DQSBUF
+     .DQSBUF_inst
+         Type: DQSBUF_CORE
+Instance Name: MIPI_DPHY_1_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_r
+     x/HARD_IP.NO_CIL.u_dphy_nocil.DPHY_inst
+         Type: DPHY_CORE
+Instance Name: MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrappe
+     r_tx/HARD_IP.genblk1.u_DPHY_NO_CIL_tx.DPHY_inst
+         Type: DPHY_CORE
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 94
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 6 secs
+   Total REAL Time: 7 secs
+   Peak Memory Usage: 315 MB
+
+
+
+
+
+
+
+
+
+                                    Page 5
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.
