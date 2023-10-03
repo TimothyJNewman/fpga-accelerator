@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.1.200.1
 
-Mon Oct  2 17:42:19 2023
+Tue Oct  3 02:22:46 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -473,7 +473,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B32B)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B16B)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -553,7 +553,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B44A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B16A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -633,7 +633,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B40B)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B20A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -713,7 +713,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B40A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B28A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -793,7 +793,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B42A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B26A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -873,7 +873,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B32A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B18A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -953,7 +953,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B42B)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B28B)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1033,7 +1033,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}  (IOLOGIC_CORE_IOL_B38A)
+Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}  (IOLOGIC_CORE_IOL_B22A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1170,7 +1170,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}  (IOLOGIC_CORE_IOL_B22A)
+Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}  (IOLOGIC_CORE_IOL_B38A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1250,7 +1250,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQ/SCLK}  (IOLOGIC_CORE_IOL_B44B)
+Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQ/SCLK}  (IOLOGIC_CORE_IOL_B18B)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1330,7 +1330,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B32B)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B16B)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1410,7 +1410,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B44A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B16A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1490,7 +1490,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B40B)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B20A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1570,7 +1570,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B40A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B28A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1650,7 +1650,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B42A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B26A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1730,7 +1730,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B32A)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B18A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1810,7 +1810,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B42B)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE_IOL_B28B)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
@@ -1890,7 +1890,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE_ECLKDIV_CORE_R55C50B)
-Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}  (IOLOGIC_CORE_IOL_B38A)
+Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}  (IOLOGIC_CORE_IOL_B22A)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1

@@ -55,251 +55,244 @@ RAM style = auto
 The -comp option is TRUE.
 The -syn option is FALSE.
 Hardtimer checking is enabled (default). The -dt option is not used.
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/OSC_1/OSC_1 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1 (searchpath added)
--path C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1 (searchpath added)
--path C:/lscc/radiant/2023.1/ispfpga/je5d00/data (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1 (searchpath added)
+-path /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1 (searchpath added)
+-path /home/timothyjabez/lscc/radiant/2023.1/ispfpga/je5d00/data (searchpath added)
 Mixed language design
-Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/OSC_1/OSC_1/rtl/OSC_1.v
-Verilog design file = C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v
+Verilog design file = /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v
+Verilog design file = /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v
 VHDL library = pmi
-VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd
+VHDL design file = /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port MBISTCLK is not connected on this instance. VDB-5050
 Compile design.
 Compile Design Begin
 WARNING <35002045> - synthesis: No Lattice Encryption Key found for encrypted module.
 WARNING <35002045> - synthesis: No Lattice Encryption Key found for encrypted module.
-Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v. VERI-1482
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(1): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(2): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(3): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(4): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(5): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_dpram.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_dpram.v(43): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(6): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_spram.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_spram.v(42): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(7): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_rom.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_rom.v(42): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(8): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v(41): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(9): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(10): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(11): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(12): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(13): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(14): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(15): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_true.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_true.v(49): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(18): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(19): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(20): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(21): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_1/rtl/mipi_dphy_1.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_2/rtl/mipi_dphy_2.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/osc_1/osc_1/rtl/osc_1.v. VERI-1482
-Analyzing Verilog file c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/pll_1/pll_1/rtl/pll_1.v. VERI-1482
-Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd. VHDL-1481
-Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd
+Analyzing Verilog file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v. VERI-1482
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(1): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v(40): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(2): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_add.v(50): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(3): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(4): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_counter.v(39): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(5): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_dpram.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_dpram.v(43): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(6): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_spram.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_spram.v(42): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(7): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_rom.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_rom.v(42): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(8): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v(41): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(9): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(44): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(10): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(11): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v(52): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(12): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(13): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(14): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v(51): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(15): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(16): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(17): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_true.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_true.v(49): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(18): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(19): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(20): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_rom.v(45): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v(21): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_sub.v(50): analyzing included file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v. VERI-1482
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v. VERI-1482
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v. VERI-1482
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v. VERI-1482
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v. VERI-1482
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v. VERI-1482
+Analyzing Verilog file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v. VERI-1482
+Analyzing VHDL file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd. VHDL-1481
+Analyzing VHDL file /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd
 
-INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd(4): analyzing package components. VHDL-1014
-INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1". VHDL-1504
+INFO <35921014> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - synthesis: The default VHDL library search path is now "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): main
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(1): compiling module main. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(11): compiling module DDR_MEM_1. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(2988): compiling module DDR_MEM_1_ipgen_lscc_ddr_mem(INTERFACE_TYPE="DDR3",IO_TYPE="SSTL15_II",CK_DQS_IO="SSTL15D_II",CLK_ADDR_CMD_ENABLE=1,ADDR_WIDTH=13,DQS_RD_DEL_SIGN="POSITIVE",DQS_WR_DEL_SIGN="POSITIVE",CLKOP_FREQ_ACTUAL=400.0,CLKOS_EN=1,PLL_RST=1,LOCK_EN=1,PLL_IO_TYPE="SLVS",FBCLK_DIVIDER_ACTUAL_STR="4",DIVOP_ACTUAL_STR="3",DIVOS_ACTUAL_STR=   ....   A="3",DELB="15",DELC="7",DELD="7",DELE="7",DELF="7",REF_COUNTS="0000",IPI_CMP="0b1100",CSET="8P",CRIPPLE="1P",IPP_CTRL="0b0110",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(1016): compiling module DDR_MEM_1_ipgen_common_logic. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3574): compiling module ECLKDIV(ECLK_DIV="2",GSR="DISABLED"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3593): compiling module ECLKSYNC(STOP_EN="ENABLE"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(680): compiling module DDR_MEM_1_ipgen_mem_sync. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1518): compiling module DDRDLL. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(1190): compiling module DDR_MEM_1_ipgen_dq_dqs_dm_unit(IO_TYPE="SSTL15_II",CK_DQS_IO="SSTL15D_II",INTERFACE_TYPE="DDR3",DQS_RD_DEL_SIGN="POSITIVE",DQS_WR_DEL_SIGN="POSITIVE"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3190): compiling module DQSBUF(ENABLE_FIFO="ENABLED",FORCE_READ="ENABLED",MODX="MDDRX2",MT_EN_READ="ENABLED",MT_EN_WRITE="ENABLED",MT_EN_WRITE_LEVELING="ENABLED",READ_ENABLE="ENABLED",WRITE_ENABLE="ENABLED"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1001): compiling module BB. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5902): compiling module ODDRX2DQS. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(11112): compiling module TSHX2DQ. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(11101): compiling module TSHX2DQS. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1553): compiling module DELAYB(DEL_MODE="DQS_ALIGNED_X2"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(4051): compiling module IDDRX2DQ. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5915): compiling module ODDRX2DQ. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(2406): compiling module DDR_MEM_1_ipgen_moshx2_4_csn(IO_TYPE="SSTL15_II",CK_DQS_IO="SSTL15D_II"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1553): compiling module DELAYB(DEL_MODE="DQS_CMD_CLK"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(6193): compiling module OSHX2. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(2535): compiling module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt(IO_TYPE="SSTL15_II",ADDR_WIDTH=13,GEARING=2,X4_WIDTH=2). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5893): compiling module ODDRX1. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/ddr_mem_1/ddr_mem_1/rtl/ddr_mem_1.v(2904): compiling module DDR_MEM_1_ipgen_oddrx2_4_ck(IO_TYPE="SSTL15_II"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5928): compiling module ODDRX2. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_1/rtl/mipi_dphy_1.v(11): compiling module MIPI_DPHY_1. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_1/rtl/mipi_dphy_1.v(5322): compiling module MIPI_DPHY_1_ipgen_lscc_mipi_dphy(FAMILY="LIFCL",INT_TYPE="RX",INT_DATA_RATE=320.0,NUM_LANE=4,SYNC_CLOCK_FREQ=24,PLL_MODE="EXTERNAL",CN="11111",CO="010",CM="11010101",DPHY_TEST_PATTERN="0b10000000001000000000000000000000",T_DATA_SETTLE="11",T_CLK_SETTLE="10",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_EN=1,DIVOP_ACTUAL_STR="7",   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_1/rtl/mipi_dphy_1.v(673): compiling module MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx(INT_DATA_RATE=320.0,CM="11010101",CN="11111",CO="010",T_DATA_SETTLE="11",T_CLK_SETTLE="10",DPHY_TEST_PATTERN="0b10000000001000000000000000000000"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(2615): compiling module DPHY(CFG_NUM_LANES="FOUR_LANES",CONT_CLK_MODE="ENABLED",EN_CIL="CIL_BYPASSED",PLLCLKBYPASS="BYPASSED",RXCDRP="0b01",RXLPRP="0b001",TEST_PATTERN="0b10000000001000000000000000000000",TST="0b0000",U_PRG_RXHS_SETTLE="0b000001",UC_PRG_RXHS_SETTLE="0b000001"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_2/rtl/mipi_dphy_2.v(11): compiling module MIPI_DPHY_2. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_2/rtl/mipi_dphy_2.v(5324): compiling module MIPI_DPHY_2_ipgen_lscc_mipi_dphy(FAMILY="LIFCL",INT_DATA_RATE=320.0,NUM_LANE=4,SYNC_CLOCK_FREQ=24,CN="11111",CO="010",CM="11010101",T_DATA_SETTLE="11",T_CLK_SETTLE="10",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_EN=1,DIVOP_ACTUAL_STR="7",DIVOS_ACTUAL_STR="7",DIVOS2_ACTUAL_STR="7",DIVOS3_ACTUAL_STR="7",DIVOS4_ACTUAL_STR="7",DI   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/mipi_dphy_2/rtl/mipi_dphy_2.v(1633): compiling module MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx(NUM_LANE=4,INTF="CSI2_APP",DPHY_IP="HARD_IP",INT_DATA_RATE=320.0,TX_FREQ_TGT=0,CM="11010101",CN="11111",CO="010",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_EN=1,DIVOP_ACTUAL_STR="7",DIVOS_ACTUAL_STR="7",DIVOS2_ACTUAL_STR="7",DIVOS3_ACTUAL_STR="7",DIVOS4_ACTUAL_STR="7",DIVOS5_ACTUAL_STR="   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(2615): compiling module DPHY(CFG_NUM_LANES="FOUR_LANES",CM="0b11010101",CN="0b11111",CO="0b010",CONT_CLK_MODE="ENABLED",DSI_CSI="DSI_APP",EN_CIL="CIL_BYPASSED",MASTER_SLAVE="MASTER",RSEL="0b01",RXDATAWIDTHHS="0b01",U_PRG_HS_PREPARE="0b01",U_PRG_HS_TRAIL="0b000001",U_PRG_HS_ZERO="0b000001",U_PRG_RXHS_SETTLE="0b000001",UC_PRG_HS_TRAIL="0b00001",UC_PRG_HS_ZERO="0b0000001",UC_PRG_RXHS_SETTLE="0b000001"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(11): compiling module I2C_DPHY_1. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): net stop_detect_i does not have a driver. VDB-1002
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): compiling module protected. VERI-1018
-WARNING <35901209> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_1/i2c_dphy_1/rtl/i2c_dphy_1.v(0): expression size 32 truncated to fit in target size 8. VERI-1209
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(49): compiling module pmi_fifo(pmi_data_depth=16,pmi_full_flag=16,pmi_almost_full_flag=16,pmi_almost_empty_flag=2,pmi_family="LIFCL",pmi_implementation="LUT"). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(57): compiling module lscc_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,DATA_WIDTH=8,ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=16,ALMOST_FULL_DEASSERT_LVL=16,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=2,ALMOST_EMPTY_DEASSERT_LVL=2,FAMILY="LIFCL"). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(254): compiling module lscc_fifo_fwft_fabric(REGMODE="reg",DWID=8). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(403): compiling module lscc_fifo_main(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=16,ALMOST_FULL_DEASSERT_LVL=16,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=2,ALMOST_EMPTY_DEASSERT_LVL=2,FAMILY="LIFCL"). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(2873): compiling module lscc_soft_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=16,ALMOST_FULL_DEASSERT_LVL=16,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=2,ALMOST_EMPTY_DEASSERT_LVL=2,FAMILY="LIFCL"). VERI-1018
-WARNING <35901209> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(3131): expression size 5 truncated to fit in target size 4. VERI-1209
-WARNING <35901209> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(3132): expression size 5 truncated to fit in target size 4. VERI-1209
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(49): compiling module pmi_fifo(pmi_data_depth=16,pmi_full_flag=16,pmi_almost_full_flag=14,pmi_almost_empty_flag=0,pmi_regmode="noreg",pmi_family="LIFCL",pmi_implementation="LUT"). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(57): compiling module lscc_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,DATA_WIDTH=8,REGMODE="noreg",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=14,ALMOST_FULL_DEASSERT_LVL=14,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=0,ALMOST_EMPTY_DEASSERT_LVL=0,FAMILY="LIFCL"). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(254): compiling module lscc_fifo_fwft_fabric(DWID=8). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(403): compiling module lscc_fifo_main(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,REGMODE="noreg",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=14,ALMOST_FULL_DEASSERT_LVL=14,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=0,ALMOST_EMPTY_DEASSERT_LVL=0,FAMILY="LIFCL"). VERI-1018
-INFO <35901018> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(2873): compiling module lscc_soft_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,REGMODE="noreg",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=14,ALMOST_FULL_DEASSERT_LVL=14,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=0,ALMOST_EMPTY_DEASSERT_LVL=0,FAMILY="LIFCL"). VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(11): compiling module I2C_DPHY_2. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): net stop_detect_i does not have a driver. VDB-1002
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-INFO <35901018> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): compiling module protected. VERI-1018
-WARNING <35901209> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/ip/i2c_dphy_2/i2c_dphy_2/rtl/i2c_dphy_2.v(0): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(27): net DDR_MEM_1_eclk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(28): net DDR_MEM_1_sync_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(29): net DDR_MEM_1_sync_rst_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(30): net DDR_MEM_1_pll_lock_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(35): net DDR_MEM_1_sync_update_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(36): net DDR_MEM_1_rd_clksel_dqs0_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(37): net DDR_MEM_1_rd_clksel_dqs1_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(38): net DDR_MEM_1_rd_dqs0_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(39): net DDR_MEM_1_rd_dqs1_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(40): net DDR_MEM_1_selclk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(41): net DDR_MEM_1_pause_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(42): net DDR_MEM_1_dq_outen_n_i[1] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(43): net DDR_MEM_1_data_dqs0_i[31] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(44): net DDR_MEM_1_data_dqs1_i[31] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(55): net DDR_MEM_1_dqs_outen_n_dqs0_i[1] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(56): net DDR_MEM_1_dqs_outen_n_dqs1_i[1] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(57): net DDR_MEM_1_dqs0_i[1] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(58): net DDR_MEM_1_dqs1_i[1] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(59): net DDR_MEM_1_csn_din0_i[0] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(60): net DDR_MEM_1_csn_din1_i[0] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(61): net DDR_MEM_1_addr_din0_i[12] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(62): net DDR_MEM_1_addr_din1_i[12] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(63): net DDR_MEM_1_ba_din0_i[2] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(64): net DDR_MEM_1_ba_din1_i[2] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(65): net DDR_MEM_1_casn_din0_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(66): net DDR_MEM_1_casn_din1_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(67): net DDR_MEM_1_rasn_din0_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(68): net DDR_MEM_1_rasn_din1_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(69): net DDR_MEM_1_wen_din0_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(70): net DDR_MEM_1_wen_din1_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(71): net DDR_MEM_1_odt_din0_i[0] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(72): net DDR_MEM_1_odt_din1_i[0] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(73): net DDR_MEM_1_cke_din0_i[0] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(74): net DDR_MEM_1_cke_din1_i[0] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(92): net MIPI_DPHY_1_sync_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(93): net MIPI_DPHY_1_sync_rst_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(94): net MIPI_DPHY_1_lmmi_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(95): net MIPI_DPHY_1_lmmi_resetn_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(96): net MIPI_DPHY_1_lmmi_wdata_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(97): net MIPI_DPHY_1_lmmi_wr_rdn_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(98): net MIPI_DPHY_1_lmmi_offset_i[4] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(99): net MIPI_DPHY_1_lmmi_request_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(103): net MIPI_DPHY_1_hs_rx_clk_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(104): net MIPI_DPHY_1_hs_rx_data_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(105): net MIPI_DPHY_1_hs_data_des_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(108): net MIPI_DPHY_1_lp_rx_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(113): net MIPI_DPHY_1_pll_lock_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(121): net MIPI_DPHY_1_pd_dphy_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(125): net MIPI_DPHY_2_sync_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(126): net MIPI_DPHY_2_sync_rst_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(127): net MIPI_DPHY_2_lmmi_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(128): net MIPI_DPHY_2_lmmi_resetn_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(129): net MIPI_DPHY_2_lmmi_wdata_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(130): net MIPI_DPHY_2_lmmi_wr_rdn_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(131): net MIPI_DPHY_2_lmmi_offset_i[4] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(132): net MIPI_DPHY_2_lmmi_request_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(136): net MIPI_DPHY_2_hs_tx_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(137): net MIPI_DPHY_2_hs_tx_data_i[31] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(138): net MIPI_DPHY_2_hs_tx_data_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(139): net MIPI_DPHY_2_lp_tx_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(140): net MIPI_DPHY_2_lp_tx_data_p_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(141): net MIPI_DPHY_2_lp_tx_data_n_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(142): net MIPI_DPHY_2_lp_tx_data_en_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(143): net MIPI_DPHY_2_lp_tx_clk_p_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(144): net MIPI_DPHY_2_lp_tx_clk_n_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(152): net MIPI_DPHY_2_usrstdby_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(153): net MIPI_DPHY_2_pd_dphy_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(154): net MIPI_DPHY_2_txclk_hsgate_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(166): net I2C_DPHY_1_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(167): net I2C_DPHY_1_rst_n_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(168): net I2C_DPHY_1_lmmi_request_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(169): net I2C_DPHY_1_lmmi_wr_rdn_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(170): net I2C_DPHY_1_lmmi_offset_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(171): net I2C_DPHY_1_lmmi_wdata_i[7] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(179): net I2C_DPHY_2_clk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(180): net I2C_DPHY_2_rst_n_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(181): net I2C_DPHY_2_lmmi_request_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(182): net I2C_DPHY_2_lmmi_wr_rdn_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(183): net I2C_DPHY_2_lmmi_offset_i[3] does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: c:/users/timot/documents/programming/fpga-accelerator/software/lattice_project_1/source/impl_1/main.v(184): net I2C_DPHY_2_lmmi_wdata_i[7] does not have a driver. VDB-1002
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(1): compiling module main. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(11): compiling module DDR_MEM_1. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(2988): compiling module DDR_MEM_1_ipgen_lscc_ddr_mem(INTERFACE_TYPE="DDR3",IO_TYPE="SSTL15_II",CK_DQS_IO="SSTL15D_II",CLK_ADDR_CMD_ENABLE=1,ADDR_WIDTH=13,DQS_RD_DEL_SIGN="POSITIVE",DQS_WR_DEL_SIGN="POSITIVE",CLKOP_FREQ_ACTUAL=400.0,CLKOS_EN=1,PLL_RST=1,LOCK_EN=1,PLL_IO_TYPE="SLVS",FBCLK_DIVIDER_ACTUAL_STR="4",DIVOP_ACTUAL_STR="3",DIVOS_ACTUAL_STR=   ....   A="3",DELB="15",DELC="7",DELD="7",DELE="7",DELF="7",REF_COUNTS="0000",IPI_CMP="0b1100",CSET="8P",CRIPPLE="1P",IPP_CTRL="0b0110",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(1016): compiling module DDR_MEM_1_ipgen_common_logic. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3574): compiling module ECLKDIV(ECLK_DIV="2",GSR="DISABLED"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3593): compiling module ECLKSYNC(STOP_EN="ENABLE"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(680): compiling module DDR_MEM_1_ipgen_mem_sync. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1518): compiling module DDRDLL. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(1190): compiling module DDR_MEM_1_ipgen_dq_dqs_dm_unit(IO_TYPE="SSTL15_II",CK_DQS_IO="SSTL15D_II",INTERFACE_TYPE="DDR3",DQS_RD_DEL_SIGN="POSITIVE",DQS_WR_DEL_SIGN="POSITIVE"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3190): compiling module DQSBUF(ENABLE_FIFO="ENABLED",FORCE_READ="ENABLED",MODX="MDDRX2",MT_EN_READ="ENABLED",MT_EN_WRITE="ENABLED",MT_EN_WRITE_LEVELING="ENABLED",READ_ENABLE="ENABLED",WRITE_ENABLE="ENABLED"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1001): compiling module BB. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5902): compiling module ODDRX2DQS. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(11112): compiling module TSHX2DQ. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(11101): compiling module TSHX2DQS. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1553): compiling module DELAYB(DEL_MODE="DQS_ALIGNED_X2"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(4051): compiling module IDDRX2DQ. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5915): compiling module ODDRX2DQ. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(2406): compiling module DDR_MEM_1_ipgen_moshx2_4_csn(IO_TYPE="SSTL15_II",CK_DQS_IO="SSTL15D_II"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1553): compiling module DELAYB(DEL_MODE="DQS_CMD_CLK"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(6193): compiling module OSHX2. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(2535): compiling module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt(IO_TYPE="SSTL15_II",ADDR_WIDTH=13,GEARING=2,X4_WIDTH=2). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5893): compiling module ODDRX1. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v(2904): compiling module DDR_MEM_1_ipgen_oddrx2_4_ck(IO_TYPE="SSTL15_II"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(5928): compiling module ODDRX2. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v(11): compiling module MIPI_DPHY_1. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v(5306): compiling module MIPI_DPHY_1_ipgen_lscc_mipi_dphy(FAMILY="LIFCL",INT_TYPE="RX",INT_DATA_RATE=320.0,NUM_LANE=4,SYNC_CLOCK_FREQ=24,PLL_MODE="EXTERNAL",CN="11111",CO="010",CM="11010101",CIL_BYPASS="CIL_ENABLED",DPHY_TEST_PATTERN="0b10000000001000000000000000000000",T_DATA_SETTLE="11",T_CLK_SETTLE="10",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_E   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v(657): compiling module MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx(CIL_BYPASS="CIL_ENABLED",INT_DATA_RATE=320.0,CM="11010101",CN="11111",CO="010",T_DATA_SETTLE="11",T_CLK_SETTLE="10",DPHY_TEST_PATTERN="0b10000000001000000000000000000000"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v(269): compiling module MIPI_DPHY_1_ipgen_lscc_clock_divider(TGT_FREQ_IN=24). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(2615): compiling module DPHY(CFG_NUM_LANES="FOUR_LANES",CONT_CLK_MODE="ENABLED",PLLCLKBYPASS="BYPASSED",RXCDRP="0b01",RXLPRP="0b001",TEST_PATTERN="0b10000000001000000000000000000000",TST="0b0000",U_PRG_RXHS_SETTLE="0b000011",UC_PRG_RXHS_SETTLE="0b000010"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v(11): compiling module MIPI_DPHY_2. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v(5326): compiling module MIPI_DPHY_2_ipgen_lscc_mipi_dphy(FAMILY="LIFCL",INT_DATA_RATE=320.0,NUM_LANE=4,SYNC_CLOCK_FREQ=24,CN="11111",CO="010",CM="11010101",CIL_BYPASS="CIL_ENABLED",T_DATA_SETTLE="11",T_CLK_SETTLE="10",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_EN=1,DIVOP_ACTUAL_STR="7",DIVOS_ACTUAL_STR="7",DIVOS2_ACTUAL_STR="7",DIVOS3_ACTUAL_STR="7"   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v(1635): compiling module MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx(NUM_LANE=4,INTF="CSI2_APP",DPHY_IP="HARD_IP",DPHY_CIL_BYPASS="CIL_ENABLED",INT_DATA_RATE=320.0,TX_FREQ_TGT=0,CM="11010101",CN="11111",CO="010",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_EN=1,DIVOP_ACTUAL_STR="7",DIVOS_ACTUAL_STR="7",DIVOS2_ACTUAL_STR="7",DIVOS3_ACTUAL_STR="7",DIVOS4_ACTU   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v(289): compiling module MIPI_DPHY_2_ipgen_lscc_clock_divider(TGT_FREQ_IN=24). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(2615): compiling module DPHY(CFG_NUM_LANES="FOUR_LANES",CM="0b11010101",CN="0b11111",CO="0b010",CONT_CLK_MODE="ENABLED",DSI_CSI="DSI_APP",MASTER_SLAVE="MASTER",RSEL="0b01",RXDATAWIDTHHS="0b01",U_PRG_HS_PREPARE="0b01",U_PRG_HS_TRAIL="0b000001",U_PRG_HS_ZERO="0b000001",U_PRG_RXHS_SETTLE="0b000001",UC_PRG_HS_TRAIL="0b00001",UC_PRG_HS_ZERO="0b0000001",UC_PRG_RXHS_SETTLE="0b000001"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(11): compiling module I2C_DPHY_1. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): net stop_detect_i does not have a driver. VDB-1002
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): compiling module protected. VERI-1018
+WARNING <35901209> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v(0): expression size 32 truncated to fit in target size 8. VERI-1209
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(49): compiling module pmi_fifo(pmi_data_depth=16,pmi_full_flag=16,pmi_almost_full_flag=16,pmi_almost_empty_flag=2,pmi_family="LIFCL",pmi_implementation="LUT"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(57): compiling module lscc_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,DATA_WIDTH=8,ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=16,ALMOST_FULL_DEASSERT_LVL=16,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=2,ALMOST_EMPTY_DEASSERT_LVL=2,FAMILY="LIFCL"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(254): compiling module lscc_fifo_fwft_fabric(REGMODE="reg",DWID=8). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(403): compiling module lscc_fifo_main(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=16,ALMOST_FULL_DEASSERT_LVL=16,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=2,ALMOST_EMPTY_DEASSERT_LVL=2,FAMILY="LIFCL"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(2873): compiling module lscc_soft_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=16,ALMOST_FULL_DEASSERT_LVL=16,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=2,ALMOST_EMPTY_DEASSERT_LVL=2,FAMILY="LIFCL"). VERI-1018
+WARNING <35901209> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(3131): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(3132): expression size 5 truncated to fit in target size 4. VERI-1209
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(49): compiling module pmi_fifo(pmi_data_depth=16,pmi_full_flag=16,pmi_almost_full_flag=14,pmi_almost_empty_flag=0,pmi_regmode="noreg",pmi_family="LIFCL",pmi_implementation="LUT"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(57): compiling module lscc_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,DATA_WIDTH=8,REGMODE="noreg",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=14,ALMOST_FULL_DEASSERT_LVL=14,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=0,ALMOST_EMPTY_DEASSERT_LVL=0,FAMILY="LIFCL"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(254): compiling module lscc_fifo_fwft_fabric(DWID=8). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(403): compiling module lscc_fifo_main(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,REGMODE="noreg",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=14,ALMOST_FULL_DEASSERT_LVL=14,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=0,ALMOST_EMPTY_DEASSERT_LVL=0,FAMILY="LIFCL"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(2873): compiling module lscc_soft_fifo(IMPLEMENTATION="LUT",ADDRESS_DEPTH=16,ADDRESS_WIDTH=32'b0100,DATA_WIDTH=8,REGMODE="noreg",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=14,ALMOST_FULL_DEASSERT_LVL=14,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=0,ALMOST_EMPTY_DEASSERT_LVL=0,FAMILY="LIFCL"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(11): compiling module I2C_DPHY_2. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): net stop_detect_i does not have a driver. VDB-1002
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): compiling module protected. VERI-1018
+WARNING <35901209> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v(0): expression size 32 truncated to fit in target size 8. VERI-1209
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v(11): compiling module PLL_1. VERI-1018
+WARNING <35901214> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v(649): assignment to input clki_i. VERI-1214
+INFO <35901018> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v(163): compiling module PLL_1_ipgen_lscc_pll(FVCO=1406.25,CLKI_FREQ=156.25,CLKOP_FREQ_ACTUAL=156.25,CLKOS_FREQ_ACTUAL=468.75,CLKOS2_FREQ_ACTUAL=156.25,CLKOS_EN=1,CLKOS2_EN=1,PLL_RST=1,LOCK_EN=1,PLL_REFCLK_FROM_PIN=1,FBK_MODE="CLKOS2",DIVOP_ACTUAL_STR="8",DIVOS_ACTUAL_STR="2",DIVOS2_ACTUAL_STR="8",DIVOS3_ACTUAL_STR="7",DIVOS4_ACTUAL_STR="7",DIVOS5_   ....   E_STR="0b000000001",DELA="8",DELB="2",DELC="8",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0001",CSET="8P",CRIPPLE="1P",IPP_CTRL="0b0100",IPP_SEL="0b0111",V2I_PP_RES="9K"). VERI-1018
+INFO <35901018> - synthesis: /home/timothyjabez/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(10022): compiling module PLL(CRIPPLE="1P",CSET="8P",DELA="8",DELB="2",DELC="8",DELD="7",DELE="7",DELF="7",DIVA="8",DIVB="2",DIVC="8",DIVD="7",DIVE="7",DIVF="7",ENCLK_CLKOP="ENABLED",ENCLK_CLKOS="ENABLED",ENCLK_CLKOS2="ENABLED",V2I_1V_EN="ENABLED",FBK_INTEGER_MODE="ENABLED",FBK_MASK="0b00000000",FBK_MMD_DIG="1",IPI_CMP="0b0001",IPP_CTRL="0b0100",IPP   ....   _PP_RES="9K",CLKMUX_FB="CMUX_CLKOS2",SEL_FBK="FBKCLK2",DIV_DEL=72'b01100000110001000110000001100000011000000110001001100000011000000110000,SIM_FLOAT_PRECISION="0.1"). VERI-1018
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(29): net DDR_MEM_1_sync_clk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(30): net DDR_MEM_1_sync_rst_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(36): net DDR_MEM_1_sync_update_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(37): net DDR_MEM_1_rd_clksel_dqs0_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(38): net DDR_MEM_1_rd_clksel_dqs1_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(39): net DDR_MEM_1_rd_dqs0_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(40): net DDR_MEM_1_rd_dqs1_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(41): net DDR_MEM_1_selclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(42): net DDR_MEM_1_pause_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(43): net DDR_MEM_1_dq_outen_n_i[1] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(44): net DDR_MEM_1_data_dqs0_i[31] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(45): net DDR_MEM_1_data_dqs1_i[31] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(56): net DDR_MEM_1_dqs_outen_n_dqs0_i[1] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(57): net DDR_MEM_1_dqs_outen_n_dqs1_i[1] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(58): net DDR_MEM_1_dqs0_i[1] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(59): net DDR_MEM_1_dqs1_i[1] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(60): net DDR_MEM_1_csn_din0_i[0] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(61): net DDR_MEM_1_csn_din1_i[0] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(62): net DDR_MEM_1_addr_din0_i[12] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(63): net DDR_MEM_1_addr_din1_i[12] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(64): net DDR_MEM_1_ba_din0_i[2] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(65): net DDR_MEM_1_ba_din1_i[2] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(66): net DDR_MEM_1_casn_din0_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(67): net DDR_MEM_1_casn_din1_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(68): net DDR_MEM_1_rasn_din0_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(69): net DDR_MEM_1_rasn_din1_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(70): net DDR_MEM_1_wen_din0_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(71): net DDR_MEM_1_wen_din1_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(72): net DDR_MEM_1_odt_din0_i[0] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(73): net DDR_MEM_1_odt_din1_i[0] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(74): net DDR_MEM_1_cke_din0_i[0] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(75): net DDR_MEM_1_cke_din1_i[0] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(93): net MIPI_DPHY_1_sync_clk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(94): net MIPI_DPHY_1_sync_rst_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(96): net MIPI_DPHY_1_lmmi_resetn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(97): net MIPI_DPHY_1_lmmi_wdata_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(98): net MIPI_DPHY_1_lmmi_wr_rdn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(99): net MIPI_DPHY_1_lmmi_offset_i[4] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(100): net MIPI_DPHY_1_lmmi_request_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(114): net MIPI_DPHY_1_pll_lock_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(122): net MIPI_DPHY_1_pd_dphy_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(126): net MIPI_DPHY_2_sync_clk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(127): net MIPI_DPHY_2_sync_rst_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(129): net MIPI_DPHY_2_lmmi_resetn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(130): net MIPI_DPHY_2_lmmi_wdata_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(131): net MIPI_DPHY_2_lmmi_wr_rdn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(132): net MIPI_DPHY_2_lmmi_offset_i[4] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(133): net MIPI_DPHY_2_lmmi_request_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(137): net MIPI_DPHY_2_hs_tx_en_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(138): net MIPI_DPHY_2_hs_tx_data_i[31] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(139): net MIPI_DPHY_2_hs_tx_data_en_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(140): net MIPI_DPHY_2_lp_tx_en_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(141): net MIPI_DPHY_2_lp_tx_data_p_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(142): net MIPI_DPHY_2_lp_tx_data_n_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(143): net MIPI_DPHY_2_lp_tx_data_en_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(144): net MIPI_DPHY_2_lp_tx_clk_p_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(145): net MIPI_DPHY_2_lp_tx_clk_n_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(169): net I2C_DPHY_1_rst_n_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(170): net I2C_DPHY_1_lmmi_request_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(171): net I2C_DPHY_1_lmmi_wr_rdn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(172): net I2C_DPHY_1_lmmi_offset_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(173): net I2C_DPHY_1_lmmi_wdata_i[7] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(182): net I2C_DPHY_2_rst_n_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(183): net I2C_DPHY_2_lmmi_request_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(184): net I2C_DPHY_2_lmmi_wr_rdn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(185): net I2C_DPHY_2_lmmi_offset_i[3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(186): net I2C_DPHY_2_lmmi_wdata_i[7] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(195): net PLL_1_rstn_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(310): net MIPI_DPHY_2_usrstdby_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v(311): net MIPI_DPHY_2_pd_dphy_i does not have a driver. VDB-1002
 LSE: Compile Design done
 

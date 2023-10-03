@@ -2,23 +2,26 @@
 
 <clocks>
     <clockitem name = "MIPI_DPHY_1_clk_p_io"  type = "net" />
-    <clockitem name = "MIPI_DPHY_2_inst/lscc_mipi_dphy_inst/TRANSMITTER.lscc_mipi_wrapper_tx/n16"  type = "net" />
     <clockitem name = "MIPI_DPHY_1_clk_n_io"  type = "net" />
-    <clockitem name = "MIPI_DPHY_2_clk_n_io"  type = "net" />
     <clockitem name = "MIPI_DPHY_2_clk_p_io"  type = "net" />
+    <clockitem name = "MIPI_DPHY_2_clk_n_io"  type = "net" />
+    <clockitem name = "PLL_1_clkop_o"  type = "net" />
+    <clockitem name = "PLL_1_clkos_o"  type = "net" />
     <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/dqswout_w"  type = "net" />
-    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/sr90_out_w"  type = "net" />
-    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/sw270_out_w"  type = "net" />
-    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/sr90_out_w"  type = "net" />
-    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/sw270_out_w"  type = "net" />
     <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/dqswout_w"  type = "net" />
+    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/sw270_out_w"  type = "net" />
+    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/sr90_out_w"  type = "net" />
+    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/sw270_out_w"  type = "net" />
+    <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/sr90_out_w"  type = "net" />
+    <clockitem name = "PLL_1_inst/clkos2_o"  type = "net" />
+    <clockitem name = "PLL_1_inst/lscc_pll_inst/clki_w"  type = "net" />
     <clockitem name = "DDR_MEM_1_inst/lscc_ddr_mem_inst/eclkout_w"  type = "net" />
     <clockitem name = "DDR_MEM_1_inst/sclk_o"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 13
+    //  Number of Clocks processed: 16
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.

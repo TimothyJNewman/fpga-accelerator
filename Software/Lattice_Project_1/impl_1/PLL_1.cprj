@@ -1,7 +1,7 @@
--ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v"
--lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd"
--ver "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v"
--sdc "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/constraints/PLL_1.ldc"
--path "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1" "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1"
+-ver "/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd"
+-ver "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v"
+-sdc "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/constraints/PLL_1.ldc"
+-path "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1" "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1"
 -top PLL_1
 -a "LIFCL"

@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Place & Route Report</TITLE>
-<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:////home/timothyjabez/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:////home/timothyjabez/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Mon Oct  2 17:41:00 2023
+Tue Oct  3 02:22:30 2023
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=OFF \
 	Lattice_Project_1_impl_1_map.udb Lattice_Project_1_impl_1.udb 
@@ -52,15 +52,15 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=OFF \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            1.437        0            1.404        0            01:11        Completed
+5_1   *      0            1.437        0            1.404        0            14           Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 1 mins 12 secs 
+Total (real) run time for 1-seed: 15 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;Lattice_Project_1_impl_1_map.udb&quot;
-Mon Oct  2 17:41:00 2023
+Tue Oct  3 02:22:30 2023
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -69,7 +69,7 @@ Command Line: par -w -t 1 -cores 1 -exp parPathBased=OFF \
 	Lattice_Project_1_impl_1_map.udb Lattice_Project_1_impl_1_par.dir/5_1.udb 
 
 Loading Lattice_Project_1_impl_1_map.udb ...
-Loading device for application GENERIC from file &apos;je5d30.nph&apos; in environment: C:/lscc/radiant/2023.1/ispfpga.
+Loading device for application GENERIC from file &apos;je5d30.nph&apos; in environment: /home/timothyjabez/lscc/radiant/2023.1/ispfpga.
 Package Status:                     Final          Version 39.
 Performance Hardware Data Status:   Final          Version 117.1.
 
@@ -115,23 +115,23 @@ Pin Constraint Summary:
 .
 
 .
-Starting Placer Phase 0 (HIER). CPU time: 10 secs , REAL time: 11 secs 
+Starting Placer Phase 0 (HIER). CPU time: 2 secs , REAL time: 3 secs 
 ..........
-Finished Placer Phase 0 (HIER). CPU time: 10 secs , REAL time: 11 secs 
+Finished Placer Phase 0 (HIER). CPU time: 2 secs , REAL time: 3 secs 
 
 .   
-Starting Placer Phase 1. CPU time: 10 secs , REAL time: 11 secs 
+Starting Placer Phase 1. CPU time: 2 secs , REAL time: 3 secs 
 ..  ..
 ............
 
-Placer score = 100530.
-Finished Placer Phase 1. CPU time: 21 secs , REAL time: 22 secs 
+Placer score = 100717.
+Finished Placer Phase 1. CPU time: 3 secs , REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  100530
-Finished Placer Phase 2.  CPU time: 21 secs , REAL time: 22 secs 
+Placer score =  100717
+Finished Placer Phase 2.  CPU time: 3 secs , REAL time: 4 secs 
 
 After final PLC packing legalization, all 0 SLICEs that were not satisfying 1 CLK/CE/LSR per HALF-PLC restriction are all placed into compatible PLCs.
 
@@ -191,12 +191,12 @@ I/O Bank Usage Summary:
 | 7        | 0 / 11 (  0%)  | -          | -          | -          |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 21 secs , REAL time: 22 secs 
+Total Placer CPU time: 3 secs , REAL time: 4 secs 
 
 Writing design to file Lattice_Project_1_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 17:41:22 10/02/23
+Start NBR router at Tue Oct 03 02:22:34 BST 2023
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -248,20 +248,20 @@ Completed routing resource preassignment
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 17:41:28 10/02/23
+Start NBR section for initial routing at Tue Oct 03 02:22:35 BST 2023
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 1.437ns/0.000ns; real time: 44 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 1.437ns/0.000ns; real time: 9 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 17:42:06 10/02/23
+Start NBR section for normal routing at Tue Oct 03 02:22:43 BST 2023
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 1.437ns/0.000ns; real time: 44 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 1.437ns/0.000ns; real time: 9 secs 
 
-Start NBR section for post-routing at 17:42:06 10/02/23
+Start NBR section for post-routing at Tue Oct 03 02:22:43 BST 2023
 
 End NBR router with 0 unrouted connection
 
@@ -280,8 +280,8 @@ Starting full timing analysis...
 -----------
 
 
-Total CPU time 48 secs 
-Total REAL time: 49 secs 
+Total CPU time 10 secs 
+Total REAL time: 10 secs 
 Completely routed.
 End of route.  997 routed (100.00%); 0 unrouted.
 
@@ -299,9 +299,9 @@ PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = 1.404
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 1 mins 11 secs 
-Total REAL Time: 1 mins 12 secs 
-Peak Memory Usage: 429.97 MB
+Total CPU  Time: 14 secs 
+Total REAL Time: 15 secs 
+Peak Memory Usage: 603.73 MB
 
 
 par done!

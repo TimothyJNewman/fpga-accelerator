@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Lattice TCL Log</TITLE>
-<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:////home/timothyjabez/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:////home/timothyjabez/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -40,46 +40,6 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
-<A name="pn230812030853"></A><B><U><big>pn230812030853</big></U></B>
-#Start recording tcl command: 8/11/2023 20:30:29
-#Project Location: C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
-prj_open "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/Lattice_Project_1.rdf"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_set_device -part LIFCL-40-7SG72C -performance "7_High-Performance_1.0V"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_set_device -part LIFCL-40-7BG256C -performance "7_High-Performance_1.0V"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-#Stop recording: 8/12/2023 03:08:53
-
-
-
 <A name="pn230813015123"></A><B><U><big>pn230813015123</big></U></B>
 #Start recording tcl command: 8/12/2023 17:20:10
 #Project Location: C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
@@ -280,13 +240,16 @@ prj_run Export -impl impl_1
 
 
 
-<A name="pn231002072746"></A><B><U><big>pn231002072746</big></U></B>
-#Start recording tcl command: 10/2/2023 02:06:13
+<A name="pn231002184548"></A><B><U><big>pn231002184548</big></U></B>
+#Start recording tcl command: 10/2/2023 12:59:47
 #Project Location: C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
 prj_open "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/Lattice_Project_1.rdf"
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
+prj_add_source "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/OSC_1/OSC_1/OSC_1.ipx"
+prj_add_source "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/PLL_1.ipx"
+prj_disable_source "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/OSC_1/OSC_1/OSC_1.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
 prj_run Synthesis -impl impl_1
 prj_run Map -impl impl_1
 prj_run PAR -impl impl_1
@@ -299,37 +262,18 @@ prj_run Synthesis -impl impl_1
 prj_run Map -impl impl_1
 prj_run PAR -impl impl_1
 prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
 prj_run Map -impl impl_1
 prj_run PAR -impl impl_1
 prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_add_source "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/I2C_DPHY_1.ipx"
-prj_add_source "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/I2C_DPHY_2.ipx"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_disable_source "C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_CAM/I2C_CAM.ipx"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-#Stop recording: 10/2/2023 07:27:46
+#Stop recording: 10/2/2023 18:45:48
+
+
+
+<A name="pn231002203514"></A><B><U><big>pn231002203514</big></U></B>
+#Start recording tcl command: 10/2/2023 20:34:07
+#Project Location: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1; Project name: Lattice_Project_1
+prj_open "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/Lattice_Project_1.rdf"
+#Stop recording: 10/2/2023 20:35:14
 
 
 
@@ -337,7 +281,6 @@ prj_run Export -impl impl_1
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
-<LI><A href=#pn230812030853>pn230812030853</A></LI>
 <LI><A href=#pn230813015123>pn230813015123</A></LI>
 <LI><A href=#pn230819124439>pn230819124439</A></LI>
 <LI><A href=#pn230820233451>pn230820233451</A></LI>
@@ -346,7 +289,8 @@ prj_run Export -impl impl_1
 <LI><A href=#pn230930234321>pn230930234321</A></LI>
 <LI><A href=#pn231001033145>pn231001033145</A></LI>
 <LI><A href=#pn231001130104>pn231001130104</A></LI>
-<LI><A href=#pn231002072746>pn231002072746</A></LI>
+<LI><A href=#pn231002184548>pn231002184548</A></LI>
+<LI><A href=#pn231002203514>pn231002203514</A></LI>
 </UL>
 </DIV>
 

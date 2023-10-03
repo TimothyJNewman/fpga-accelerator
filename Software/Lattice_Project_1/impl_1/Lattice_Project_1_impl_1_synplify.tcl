@@ -45,28 +45,28 @@ set_option -seqshift_no_replicate 0
 set_option -dup false
 set_option -disable_io_insertion false
 add_file -constraint {Lattice_Project_1_impl_1_cpe.ldc}
-add_file -verilog {C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v}
-add_file -vhdl -lib pmi {C:/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v}
-add_file -verilog -vlog_std v2001 {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v}
+add_file -verilog {/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v}
+add_file -vhdl -lib pmi {/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v}
+add_file -verilog -vlog_std v2001 {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v}
 #-- top module name
 set_option -top_module main
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2}
-set_option -include_path {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2}
+set_option -include_path {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1}
 
 #-- set result format/file last
 project -result_format "vm"
-project -result_file {C:/Users/timot/Documents/Programming/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.vm}
+project -result_file {/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.vm}
 
 #-- error message log file
 project -log_file {Lattice_Project_1_impl_1.srf}
