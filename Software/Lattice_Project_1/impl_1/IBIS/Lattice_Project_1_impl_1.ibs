@@ -1,7 +1,7 @@
 |************************************************************************
 | IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.1.200.1
-| Report Generate Date: Oct  3 2023
-| Report Generate Time: 02:22:53
+| Report Generate Date: Oct  4 2023
+| Report Generate Time: 02:15:45
 |************************************************************************
 | IBIS File LibisMaker.ibs
 | Cadence Design Systems, Inc. 2022 
@@ -189,7 +189,7 @@ T2            dq_dqs1_io[7]        ss2150m100eaaaaaaaio
 M9            dqs0_io+             s2d150m100eaaaaaaaio
 M8            dqs0_io-             s2d150m100eaaaaaaaio
 P8            dq_dqs0_io[6]        ss2150m100eaaaaaaaio
-P6            dq_dqs0_io[4]        ss2150m100eaaaaaaaio
+N9            dq_dqs0_io[4]        ss2150m100eaaaaaaaio
 R8            dq_dqs0_io[2]        ss2150m100eaaaaaaaio
 T9            dq_dqs0_io[0]        ss2150m100eaaaaaaaio
 T10           dq_dqs0_io[1]        ss2150m100eaaaaaaaio

@@ -48,7 +48,7 @@ Performance Grade:      7_High-Performance_1.0V
 PACKAGE:          CABGA256
 Package Status:                     Final          Version 39
 
-Tue Oct  3 02:22:34 2023
+Wed Oct  4 02:15:26 2023
 
 Pinout by Port Name:
 +--------------------------+----------+-----------------+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -107,7 +107,7 @@ Pinout by Port Name:
 | dq_dqs0_io[1]            | T10/4    | SSTL15_II_BIDI  | PB40B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
 | dq_dqs0_io[2]            | R8/4     | SSTL15_II_BIDI  | PB42A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
 | dq_dqs0_io[3]            | R9/4     | SSTL15_II_BIDI  | PB44A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
-| dq_dqs0_io[4]            | P6/4     | SSTL15_II_BIDI  | PB32A     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
+| dq_dqs0_io[4]            | N9/4     | SSTL15_II_BIDI  | PB36B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
 | dq_dqs0_io[5]            | P7/4     | SSTL15_II_BIDI  | PB32B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
 | dq_dqs0_io[6]            | P8/4     | SSTL15_II_BIDI  | PB42B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
 | dq_dqs0_io[7]            | P9/4     | SSTL15_II_BIDI  | PB44B     | DRIVE:10mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:SSTL15_II DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:VREF2_LOAD |
@@ -142,7 +142,7 @@ Vccio by Bank:
 | VREF2_BANK_4 | N10 | 4 / VREF2 (REF_15) | R7        R3        T5         |
 |              |     |                    | T6        T3        R1         |
 |              |     |                    | R2        T2        P8         |
-|              |     |                    | P6        R8        T9         |
+|              |     |                    | N9        R8        T9         |
 |              |     |                    | T10       R9        P7         |
 |              |     |                    | P9                             |
 +--------------+-----+--------------------+--------------------------------+
@@ -285,7 +285,7 @@ Vccio by Bank:
 | N3/5          |     unused, PULL:DOWN    |            |                 | PB4B        | CDR_RXN0/ADC_CN0/COMP1N                             |
 | N4/5          | PLL_1_clki_i+            | LOCATED    | LVDS_IN         | PB6A        | PCLKT5_0/LLC_GPLL0T_MFGOUT1/CDR_RXP1/ADC_CP1/COMP2P |
 | N8/4          |     unused, PULL:DOWN    |            |                 | PB36A       | BDQ38                                               |
-| N9/4          |     unused, PULL:DOWN    |            |                 | PB36B       | BDQ38                                               |
+| N9/4          | dq_dqs0_io[4]            | LOCATED    | SSTL15_II_BIDI  | PB36B       | BDQ38                                               |
 | N10/4         | VREF2_BANK_4             |            |                 | PB46B       | VREF4_2/BDQ38                                       |
 | N11/3         | DDR_MEM_1_addr_o[1]      | LOCATED    | SSTL15_II_OUT   | PB64B       | ADC_CN4/BDQ60                                       |
 | N12/3         | DDR_MEM_1_odt_o[0]       | LOCATED    | SSTL15_II_OUT   | PB64A       | ADC_CP4/BDQ60                                       |
@@ -298,7 +298,7 @@ Vccio by Bank:
 | P3/5          |     unused, PULL:DOWN    |            |                 | PB4A        | LLC_GPLL0T_MFGOUT2/CDR_RXP0/VREF5_1/ADC_CP0/COMP1P  |
 | P4/4          |     unused, PULL:DOWN    |            |                 | PB24B       | PCLKC4_2/BDQ22                                      |
 | P5/4          | dqs1_io-                 |            | SSTL15D_II_BIDI | PB22B       | BDQSN22                                             |
-| P6/4          | dq_dqs0_io[4]            | LOCATED    | SSTL15_II_BIDI  | PB32A       | BDQ38                                               |
+| P6/4          |     unused, PULL:DOWN    |            |                 | PB32A       | BDQ38                                               |
 | P7/4          | dq_dqs0_io[5]            | LOCATED    | SSTL15_II_BIDI  | PB32B       | BDQ38                                               |
 | P8/4          | dq_dqs0_io[6]            | LOCATED    | SSTL15_II_BIDI  | PB42B       | BDQ38                                               |
 | P9/4          | dq_dqs0_io[7]            | LOCATED    | SSTL15_II_BIDI  | PB44B       | PCLKC4_0/BDQ38                                      |
@@ -418,7 +418,7 @@ ldc_set_location -site {T9} [ get_ports {dq_dqs0_io[0]} ]
 ldc_set_location -site {T10} [ get_ports {dq_dqs0_io[1]} ]
 ldc_set_location -site {R8} [ get_ports {dq_dqs0_io[2]} ]
 ldc_set_location -site {R9} [ get_ports {dq_dqs0_io[3]} ]
-ldc_set_location -site {P6} [ get_ports {dq_dqs0_io[4]} ]
+ldc_set_location -site {N9} [ get_ports {dq_dqs0_io[4]} ]
 ldc_set_location -site {P7} [ get_ports {dq_dqs0_io[5]} ]
 ldc_set_location -site {P8} [ get_ports {dq_dqs0_io[6]} ]
 ldc_set_location -site {P9} [ get_ports {dq_dqs0_io[7]} ]
@@ -446,7 +446,7 @@ ldc_create_vref -name {VREF2_BANK_4} -site {N10}
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Tue Oct  3 02:22:34 2023
+Wed Oct  4 02:15:26 2023
 
 
 
