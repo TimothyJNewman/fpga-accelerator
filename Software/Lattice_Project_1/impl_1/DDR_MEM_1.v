@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE 
-// Netlist written on Mon Oct  2 20:45:29 2023
+// Netlist written on Fri Oct  6 02:06:06 2023
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "/home/timothyjabez/lscc/radiant/2023.1/ip/avant/fifo/rtl/lscc_fifo.v"
@@ -185,8 +185,8 @@ module DDR_MEM_1 (eclk_i, sync_clk_i, sync_rst_i, pll_lock_i, sclk_o,
     input [1:0]dqs1_i;
     input [0:0]csn_din0_i;
     input [0:0]csn_din1_i;
-    input [12:0]addr_din0_i;
-    input [12:0]addr_din1_i;
+    input [13:0]addr_din0_i;
+    input [13:0]addr_din1_i;
     input [2:0]ba_din0_i;
     input [2:0]ba_din1_i;
     input casn_din0_i;
@@ -207,7 +207,7 @@ module DDR_MEM_1 (eclk_i, sync_clk_i, sync_rst_i, pll_lock_i, sclk_o,
     inout dqs1_io;
     output [0:0]ck_o;
     output [0:0]csn_o;
-    output [12:0]addr_o;
+    output [13:0]addr_o;
     output [2:0]ba_o;
     output casn_o;
     output rasn_o;

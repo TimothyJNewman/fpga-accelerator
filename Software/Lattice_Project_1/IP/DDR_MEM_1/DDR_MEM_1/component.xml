@@ -335,7 +335,7 @@
                     <ipxact:direction>in</ipxact:direction>
                     <ipxact:vectors>
                         <ipxact:vector>
-                            <ipxact:left>12</ipxact:left>
+                            <ipxact:left>13</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:vector>
                     </ipxact:vectors>
@@ -348,7 +348,7 @@
                     <ipxact:direction>in</ipxact:direction>
                     <ipxact:vectors>
                         <ipxact:vector>
-                            <ipxact:left>12</ipxact:left>
+                            <ipxact:left>13</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:vector>
                     </ipxact:vectors>
@@ -573,7 +573,7 @@
                     <ipxact:direction>out</ipxact:direction>
                     <ipxact:vectors>
                         <ipxact:vector>
-                            <ipxact:left>12</ipxact:left>
+                            <ipxact:left>13</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:vector>
                     </ipxact:vectors>
@@ -700,7 +700,7 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2023 10 02 15:23:17</lsccip:createdTimestamp>
+            <lsccip:createdTimestamp>2023 10 06 02:05:24</lsccip:createdTimestamp>
             <lsccip:radiantBuild>&quot;Lattice Radiant Software&quot; (64-bit) 2023.1.1.200.1</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>

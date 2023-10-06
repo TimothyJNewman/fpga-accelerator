@@ -1,109 +1,109 @@
-#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile|-top|main|-layerid|0|-orig_srs|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\Lattice_Project_1_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\PLL_1\\PLL_1|-I|C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\|-I|C:\\lscc\\radiant\\2023.1\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v|-devicelib|C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\bin64\\c_ver.exe":1685564424
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\impl_1\\synwork\\_verilog_hintfile":1691619046
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\lifcl.v":1686793695
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\lucent\\pmi_def.v":1685564445
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vlog\\hypermods.v":1685564456
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vlog\\scemi_objects.v":1685564456
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vlog\\scemi_pipes.svh":1685564456
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_lifcl.v":1589160685
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_addsub.v":1562800400
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/adder_subtractor/rtl/lscc_add_sub.v":1683513052
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_add.v":1562800366
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1564990857
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_complex_mult.v":1562800443
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1631237199
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_counter.v":1562800475
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/counter/rtl/lscc_cntr.v":1564990907
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_dpram.v":1565060115
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1669343654
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_spram.v":1565060115
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/distributed_spram/rtl/lscc_distributed_spram.v":1669345057
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_rom.v":1565060115
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/distributed_rom/rtl/lscc_distributed_rom.v":1669345132
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_distributed_shift_reg.v":1666080348
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/ram_shift_reg/rtl/lscc_shift_register.v":1665105914
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_fifo.v":1640152481
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/fifo/rtl/lscc_fifo.v":1679360365
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_fifo_dc.v":1640152663
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/fifo_dc/rtl/lscc_fifo_dc.v":1679360342
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_mac.v":1562800511
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1584523096
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_multaddsubsum.v":1562800615
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1584522940
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_multaddsub.v":1562800566
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1584523063
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_mult.v":1562800537
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1564990933
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dp.v":1644979873
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dp/rtl/lscc_ram_dp.v":1681870602
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dp_be.v":1644980856
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dp/rtl/lscc_ram_dp.v":1681870602
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dp_true.v":1644979914
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1681870762
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dq.v":1644979923
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dq/rtl/lscc_ram_dq.v":1681870794
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_ram_dq_be.v":1644979933
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/ram_dq/rtl/lscc_ram_dq.v":1681870794
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_rom.v":1644979944
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../avant/rom/rtl/lscc_rom.v":1680687765
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_sub.v":1562800650
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1564990995
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_1\\rtl\\MIPI_DPHY_1.v":1696260386
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\DDR_MEM_1\\DDR_MEM_1\\rtl\\DDR_MEM_1.v":1696256597
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\MIPI_DPHY_2\\rtl\\MIPI_DPHY_2.v":1696260432
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\source\\impl_1\\main.v":1696263762
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_1\\I2C_DPHY_1\\rtl\\I2C_DPHY_1.v":1696256571
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\I2C_DPHY_2\\I2C_DPHY_2\\rtl\\I2C_DPHY_2.v":1696256558
-#CUR:"C:\\Users\\timot\\Documents\\Programming\\fpga-accelerator\\Software\\Lattice_Project_1\\IP\\PLL_1\\PLL_1\\rtl\\PLL_1.v":1696264282
-0			"C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.v" verilog
-1		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v" verilog
-2		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog
-3		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v" verilog
-4		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
-5		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v" verilog
-6		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
-7		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v" verilog
-8		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" verilog
-9		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_dpram.v" verilog
-10		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" verilog
-11		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_spram.v" verilog
-12		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" verilog
-13		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_rom.v" verilog
-14		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" verilog
-15		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v" verilog
-16		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" verilog
-17		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v" verilog
-18		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" verilog
-19		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v" verilog
-20		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" verilog
-21		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v" verilog
-22		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
-23		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v" verilog
-24		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" verilog
-25		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v" verilog
-26		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
-27		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v" verilog
-28		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
-29		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v" verilog
-30		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" verilog
-31		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v" verilog
-32		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_true.v" verilog
-33		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v" verilog
-34		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v" verilog
-35		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" verilog
-36		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v" verilog
-37		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v" verilog
-38		*	"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v" verilog
-39		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v" verilog
-40		*	"C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
-41			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v" verilog
-42			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v" verilog
-43			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v" verilog
-44			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v" verilog
-45			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_1\I2C_DPHY_1\rtl\I2C_DPHY_1.v" verilog
-46			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_2\I2C_DPHY_2\rtl\I2C_DPHY_2.v" verilog
-47			"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v" verilog
+#OPTIONS:"|-mixedhdl|-modhint|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/_verilog_hintfile|-top|main|-layerid|0|-orig_srs|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1|-I|/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/|-I|/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib|-v2001|-devicelib|/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v|-devicelib|/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/linux_a_64/c_ver":1685539351
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/_verilog_hintfile":1696554371
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1686768495
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/pmi_def.v":1685539323
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vlog/hypermods.v":1685539338
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vlog/scemi_objects.v":1685539338
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vlog/scemi_pipes.svh":1685539338
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v":1589135485
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v":1562775200
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":1683487852
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_add.v":1562775166
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v":1564965657
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v":1562775243
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v":1631211999
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_counter.v":1562775275
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":1564965707
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_dpram.v":1565034915
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1669314854
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_spram.v":1565034915
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v":1669316257
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_rom.v":1565034915
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v":1669316332
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v":1666055148
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v":1665080714
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v":1640123681
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":1679331565
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v":1640123863
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":1679331542
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v":1562775311
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1584494296
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v":1562775415
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1584494140
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v":1562775366
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1584494263
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v":1562775337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v":1564965733
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v":1644951073
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1681845402
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v":1644952056
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1681845402
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_true.v":1644951114
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1681845562
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v":1644951123
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v":1681845594
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":1644951133
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v":1681845594
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_rom.v":1644951144
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":1680662565
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_sub.v":1562775450
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v":1564965795
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":1696270324
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1696554324
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1696270324
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v":1696554362
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v":1696270324
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v":1696270324
+#CUR:"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":1696270324
+0			"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.v" verilog
+1		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v" verilog
+2		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v" verilog
+3		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_add.v" verilog
+4		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v" verilog
+5		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v" verilog
+6		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v" verilog
+7		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_counter.v" verilog
+8		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v" verilog
+9		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_dpram.v" verilog
+10		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v" verilog
+11		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_spram.v" verilog
+12		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v" verilog
+13		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_rom.v" verilog
+14		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v" verilog
+15		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v" verilog
+16		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v" verilog
+17		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v" verilog
+18		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v" verilog
+19		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v" verilog
+20		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v" verilog
+21		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v" verilog
+22		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v" verilog
+23		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v" verilog
+24		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v" verilog
+25		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v" verilog
+26		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v" verilog
+27		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v" verilog
+28		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v" verilog
+29		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v" verilog
+30		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v" verilog
+31		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v" verilog
+32		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_true.v" verilog
+33		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v" verilog
+34		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v" verilog
+35		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v" verilog
+36		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v" verilog
+37		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_rom.v" verilog
+38		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v" verilog
+39		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_sub.v" verilog
+40		*	"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v" verilog
+41			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v" verilog
+42			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v" verilog
+43			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v" verilog
+44			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v" verilog
+45			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v" verilog
+46			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v" verilog
+47			"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v" verilog
 #Dependency Lists(Uses List)
 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
 1 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
@@ -253,14 +253,14 @@ module work MIPI_DPHY_2_ipgen_lscc_mipi_dphy 43
 module work MIPI_DPHY_2 43
 module work DDR_MEM_1_ipgen_lscc_apb2lmmi 42
 module work DDR_MEM_1_ipgen_lscc_pll 42
-module work DDR_MEM_1_ipgen_oddrx2_4_ck 42
-module work DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt 42
 module work DDR_MEM_1_ipgen_moshx2_4_csn 42
 module work DDR_MEM_1_ipgen_mddrx2_4_ck_cke_odt 42
 module work DDR_MEM_1_ipgen_mddrx2_4_ca 42
 module work DDR_MEM_1_ipgen_dq_dqs_dm_unit 42
 module work DDR_MEM_1_ipgen_common_logic 42
 module work DDR_MEM_1_ipgen_mem_sync 42
+module work DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt 42
+module work DDR_MEM_1_ipgen_oddrx2_4_ck 42
 module work DDR_MEM_1_ipgen_lscc_ddr_mem 42
 module work DDR_MEM_1 42
 module work MIPI_DPHY_1_ipgen_lscc_apb2lmmi 41

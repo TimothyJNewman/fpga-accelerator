@@ -101,6 +101,9 @@ u 0 0
 i PLL_1_inst.lscc_pll_inst.clkos_o
 m 0 0
 u 0 0
+i PLL_1_inst.lscc_pll_inst.clkos2_o
+m 0 0
+u 0 0
 i PLL_1_inst.lscc_pll_inst.lock_o
 m 0 0
 u 0 0

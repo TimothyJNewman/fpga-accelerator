@@ -1,4 +1,4 @@
-# Mon Oct  2 17:36:13 2023
+# Fri Oct  6 02:06:14 2023
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -8,95 +8,99 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: U-2023.03LR-1
-Install: C:\lscc\radiant\2023.1\synpbase
-OS: Windows 10 or later
-Hostname: DESKTOP-TOAOPO9
+Install: /home/timothyjabez/lscc/radiant/2023.1/synpbase
+OS: Ubuntu 22.04.3 LTS
+Hostname: timothyjabez-MS-7D99
+max virtual memory: unlimited (bytes)
+max user processes: 127149
+max stack size: 8388608 (bytes)
+
 
 Implementation : impl_1
-Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 070R, Built Jun  8 2023 11:14:23, @
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 070R, Built Jun  8 2023 10:19:04, @4770327
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 211MB peak: 211MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 131MB peak: 136MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 223MB peak: 223MB)
 
-Reading constraint file: C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc
+Reading constraint file: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1_cpe.ldc
 @W: MT536 |Found constraint file with both legacy-style and FPGA timing constraints. 
-@L: C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_scck.rpt 
-See clock summary report "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_scck.rpt"
+@L: /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1_scck.rpt 
+See clock summary report "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 144MB peak: 144MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 228MB peak: 228MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 144MB peak: 145MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 228MB peak: 228MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 157MB peak: 157MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 241MB peak: 241MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 157MB peak: 159MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 243MB peak: 243MB)
 
 NConnInternalConnection caching is on
 @N: FX493 |Applying initial value "00000000" on instance mem_LUT\.mem_reg\.async\.data_buff_r[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 209MB peak: 209MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 293MB peak: 293MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 209MB peak: 210MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 293MB peak: 293MB)
 
-@N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1239:11:1239:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1239:11:1239:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs3_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs3_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs4_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs4_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs5_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs5_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs6_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs6_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs7_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs7_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs8_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs8_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1:1:1:2|Tristate driver burst_detect_sclk_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_sclk_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1793:11:1793:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1793:11:1793:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs3_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs3_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs4_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs4_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs5_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs5_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs6_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs6_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs7_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs7_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_dqs8_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_dqs8_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1:1:1:2|Tristate driver burst_detect_sclk_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net burst_detect_sclk_dqs2_o (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 209MB peak: 210MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 293MB peak: 293MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 209MB peak: 210MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 293MB peak: 293MB)
 
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[0\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[1\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[2\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[3\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[4\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[5\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[6\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[7\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[0\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[1\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[2\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[3\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[4\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[5\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[6\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1472:29:1472:41|Removing instance DQ_BLOCK\[7\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[0\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[1\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[2\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[3\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[4\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[5\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[6\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[7\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[0\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[1\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[2\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[3\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[4\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[5\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[6\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":1467:41:1467:48|Removing instance DQ_BLOCK\[7\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[0\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[1\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[2\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[3\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[4\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[5\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[6\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[7\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[0\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[1\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[2\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[3\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[4\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[5\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[6\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2026:29:2026:41|Removing instance DQ_BLOCK\[7\]\.DQ_X2\.u_DQ_IDDRX2DQ (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[0\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[1\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[2\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[3\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[4\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[5\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[6\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[7\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[0\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[1\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[2\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[3\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[4\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[5\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[6\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2021:41:2021:48|Removing instance DQ_BLOCK\[7\]\.u_DELAYB (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_1(verilog)) because it does not drive other instances.
 Encoding state machine cs_memsync[8:0] (in view: work.DDR_MEM_1_ipgen_mem_sync(verilog))
 original code -> new code
    000010 -> 000000001
@@ -235,14 +239,14 @@ original code -> new code
    1000 -> 0100000000
    1001 -> 1000000000
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 215MB peak: 215MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 295MB peak: 295MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 216MB peak: 216MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 297MB peak: 297MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=84 on top level netlist main 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 216MB peak: 217MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 297MB peak: 297MB)
 
 Some data will not be shown as it is part of encrypted module
 
@@ -287,10 +291,10 @@ main|MIPI_DPHY_1_sync_clk_i_inferred_clock                  2         MIPI_DPHY_
 main|MIPI_DPHY_2_sync_clk_i_inferred_clock                  2         MIPI_DPHY_2_sync_clk_i.OUT[0](tri)                                              MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER\.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER\.u_clock_divider.clk_r.C     -                 -            
 ==========================================================================================================================================================================================================================================================================================================
 
-@W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":3517:4:3517:9|Found inferred clock DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock which controls 8 sequential elements including DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_2\rtl\mipi_dphy_2.v":327:4:327:9|Found inferred clock main|MIPI_DPHY_2_sync_clk_i_inferred_clock which controls 2 sequential elements including MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER\.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER\.u_clock_divider.count[0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\mipi_dphy_1\rtl\mipi_dphy_1.v":307:4:307:9|Found inferred clock main|MIPI_DPHY_1_sync_clk_i_inferred_clock which controls 2 sequential elements including MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.count[0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\timot\documents\programming\fpga-accelerator\software\lattice_project_1\ip\ddr_mem_1\ddr_mem_1\rtl\ddr_mem_1.v":778:4:778:9|Found inferred clock main|DDR_MEM_1_sync_clk_i_inferred_clock which controls 17 sequential elements including DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Found inferred clock DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock which controls 8 sequential elements including DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Found inferred clock main|MIPI_DPHY_2_sync_clk_i_inferred_clock which controls 2 sequential elements including MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER\.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER\.u_clock_divider.count[0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Found inferred clock main|MIPI_DPHY_1_sync_clk_i_inferred_clock which controls 2 sequential elements including MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.count[0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Found inferred clock main|DDR_MEM_1_sync_clk_i_inferred_clock which controls 17 sequential elements including DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[1]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -324,19 +328,19 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 215MB peak: 217MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 297MB peak: 297MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 215MB peak: 217MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 297MB peak: 297MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 217MB peak: 217MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 297MB peak: 297MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 125MB peak: 217MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 297MB peak: 297MB)
 
-Process took 0h:00m:14s realtime, 0h:00m:13s cputime
-# Mon Oct  2 17:36:27 2023
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Oct  6 02:06:16 2023
 
 ###########################################################]

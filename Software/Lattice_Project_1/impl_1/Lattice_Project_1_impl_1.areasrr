@@ -6,9 +6,13 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: U-2023.03LR-1
-Install: C:\lscc\radiant\2023.1\synpbase
-OS: Windows 10 or later
-Hostname: DESKTOP-TOAOPO9
+Install: /home/timothyjabez/lscc/radiant/2023.1/synpbase
+OS: Ubuntu 22.04.3 LTS
+Hostname: timothyjabez-MS-7D99
+max virtual memory: unlimited (bytes)
+max user processes: 127149
+max stack size: 8388608 (bytes)
+
 
 Implementation : impl_1
 
@@ -23,12 +27,12 @@ Part:			LIFCL_40-7 (Lattice)
 IO PADS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-OB           23                                      
+OB           24                                      
 BB           19                                      
                                                      
-Total IO     42                 100 %                
+Total IO     43                 100 %                
 =====================================================
-Total IO PADS in the block main:	42 (30.88 % Utilization)
+Total IO PADS in the block main:	43 (31.16 % Utilization)
 
 
 BLACKBOX
@@ -47,14 +51,14 @@ ODDRX2DQS           2
 DQSBUF              2                                       
 OSHX2               1                                       
 DELAYB              2                                       
-ODDRX1              21                                      
+ODDRX1              22                                      
 ODDRX2              1                                       
 DPHY                2                                       
 PLL                 1                                       
                                                             
-Total BLACK BOX     94                 100 %                
+Total BLACK BOX     95                 100 %                
 ============================================================
-Total BLACKBOX in the block main:	94 (69.12 % Utilization)
+Total BLACKBOX in the block main:	95 (68.84 % Utilization)
 
 ---------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1   ########
@@ -66,9 +70,9 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 BB           18                                      
                                                      
-Total IO     18                 42.9 %               
+Total IO     18                 41.9 %               
 =====================================================
-Total IO PADS in the block DDR_MEM_1_inst:	18 (13.24 % Utilization)
+Total IO PADS in the block DDR_MEM_1_inst:	18 (13.04 % Utilization)
 
 
 BLACKBOX
@@ -86,12 +90,12 @@ ODDRX2DQS           2
 DQSBUF              2                                       
 OSHX2               1                                       
 DELAYB              2                                       
-ODDRX1              21                                      
+ODDRX1              22                                      
 ODDRX2              1                                       
                                                             
-Total BLACK BOX     68                 72.3 %               
+Total BLACK BOX     69                 72.6 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst:	68 (50.00 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst:	69 (50.00 % Utilization)
 
 --------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0   ########
@@ -104,9 +108,9 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 BB           18                                      
                                                      
-Total IO     18                 42.9 %               
+Total IO     18                 41.9 %               
 =====================================================
-Total IO PADS in the block DDR_MEM_1_inst.lscc_ddr_mem_inst:	18 (13.24 % Utilization)
+Total IO PADS in the block DDR_MEM_1_inst.lscc_ddr_mem_inst:	18 (13.04 % Utilization)
 
 
 BLACKBOX
@@ -124,12 +128,12 @@ ODDRX2DQS           2
 DQSBUF              2                                       
 OSHX2               1                                       
 DELAYB              2                                       
-ODDRX1              21                                      
+ODDRX1              22                                      
 ODDRX2              1                                       
                                                             
-Total BLACK BOX     66                 70.2 %               
+Total BLACK BOX     67                 70.5 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst:	66 (48.53 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst:	67 (48.55 % Utilization)
 
 ---------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1_ipgen_common_logic_2s_2   ########
@@ -146,9 +150,9 @@ ECLKDIV             1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     5                  5.32 %               
+Total BLACK BOX     5                  5.26 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic:	5 (3.68 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic:	5 (3.62 % Utilization)
 
 ----------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0   ########
@@ -161,9 +165,9 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 BB           9                                       
                                                      
-Total IO     9                  21.4 %               
+Total IO     9                  20.9 %               
 =====================================================
-Total IO PADS in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit:	9 (6.62 % Utilization)
+Total IO PADS in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit:	9 (6.52 % Utilization)
 
 
 BLACKBOX
@@ -177,9 +181,9 @@ DQSBUF              1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     14                 14.9 %               
+Total BLACK BOX     14                 14.7 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit:	14 (10.29 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit:	14 (10.14 % Utilization)
 
 ------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0   ########
@@ -192,9 +196,9 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 BB           9                                       
                                                      
-Total IO     9                  21.4 %               
+Total IO     9                  20.9 %               
 =====================================================
-Total IO PADS in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit:	9 (6.62 % Utilization)
+Total IO PADS in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit:	9 (6.52 % Utilization)
 
 
 BLACKBOX
@@ -208,9 +212,9 @@ DQSBUF              1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     14                 14.9 %               
+Total BLACK BOX     14                 14.7 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit:	14 (10.29 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit:	14 (10.14 % Utilization)
 
 -------------------------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK   ########
@@ -226,12 +230,12 @@ DELAYB              1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     4                  4.26 %               
+Total BLACK BOX     4                  4.21 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn:	4 (2.94 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn:	4 (2.90 % Utilization)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
-########   Utilization report for  cell:   DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0   ########
+########   Utilization report for  cell:   DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_14s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0   ########
 Instance path:   DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt                                    
 Parent Instance:   DDR_MEM_1_inst.lscc_ddr_mem_inst                                                                                              
 =================================================================================================================================================
@@ -239,13 +243,13 @@ Parent Instance:   DDR_MEM_1_inst.lscc_ddr_mem_inst
 BLACKBOX
 Name                Total elements     Utilization     Notes
 ------------------------------------------------------------
-ODDRX1              21                                      
+ODDRX1              22                                      
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     23                 24.5 %               
+Total BLACK BOX     24                 25.3 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt:	23 (16.91 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt:	24 (17.39 % Utilization)
 
 -------------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK   ########
@@ -261,9 +265,9 @@ DELAYB              1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     4                  4.26 %               
+Total BLACK BOX     4                  4.21 %               
 ============================================================
-Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck:	4 (2.94 % Utilization)
+Total BLACKBOX in the block DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck:	4 (2.90 % Utilization)
 
 ----------------------------------------------------------------
 ########   Utilization report for  cell:   I2C_DPHY_1   ########
@@ -276,9 +280,9 @@ Name                Total elements     Utilization     Notes
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     2                  2.13 %               
+Total BLACK BOX     2                  2.11 %               
 ============================================================
-Total BLACKBOX in the block I2C_DPHY_1_inst:	2 (1.47 % Utilization)
+Total BLACKBOX in the block I2C_DPHY_1_inst:	2 (1.45 % Utilization)
 
 ----------------------------------------------------------------
 ########   Utilization report for  cell:   I2C_DPHY_2   ########
@@ -291,9 +295,9 @@ Name                Total elements     Utilization     Notes
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     2                  2.13 %               
+Total BLACK BOX     2                  2.11 %               
 ============================================================
-Total BLACKBOX in the block I2C_DPHY_2_inst:	2 (1.47 % Utilization)
+Total BLACKBOX in the block I2C_DPHY_2_inst:	2 (1.45 % Utilization)
 
 -----------------------------------------------------------------
 ########   Utilization report for  cell:   MIPI_DPHY_1   ########
@@ -307,9 +311,9 @@ VHI                 3
 VLO                 3                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     7                  7.45 %               
+Total BLACK BOX     7                  7.37 %               
 ============================================================
-Total BLACKBOX in the block MIPI_DPHY_1_inst:	7 (5.15 % Utilization)
+Total BLACKBOX in the block MIPI_DPHY_1_inst:	7 (5.07 % Utilization)
 
 ------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0   ########
@@ -324,9 +328,9 @@ VHI                 2
 VLO                 2                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     5                  5.32 %               
+Total BLACK BOX     5                  5.26 %               
 ============================================================
-Total BLACKBOX in the block MIPI_DPHY_1_inst.lscc_mipi_dphy_inst:	5 (3.68 % Utilization)
+Total BLACKBOX in the block MIPI_DPHY_1_inst.lscc_mipi_dphy_inst:	5 (3.62 % Utilization)
 
 ------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0   ########
@@ -341,9 +345,9 @@ DPHY                1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  3.19 %               
+Total BLACK BOX     3                  3.16 %               
 ============================================================
-Total BLACKBOX in the block MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	3 (2.21 % Utilization)
+Total BLACKBOX in the block MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	3 (2.17 % Utilization)
 
 -----------------------------------------------------------------
 ########   Utilization report for  cell:   MIPI_DPHY_2   ########
@@ -357,9 +361,9 @@ VHI                 3
 VLO                 3                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     7                  7.45 %               
+Total BLACK BOX     7                  7.37 %               
 ============================================================
-Total BLACKBOX in the block MIPI_DPHY_2_inst:	7 (5.15 % Utilization)
+Total BLACKBOX in the block MIPI_DPHY_2_inst:	7 (5.07 % Utilization)
 
 ------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0   ########
@@ -374,9 +378,9 @@ VHI                 2
 VLO                 2                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     5                  5.32 %               
+Total BLACK BOX     5                  5.26 %               
 ============================================================
-Total BLACKBOX in the block MIPI_DPHY_2_inst.lscc_mipi_dphy_inst:	5 (3.68 % Utilization)
+Total BLACKBOX in the block MIPI_DPHY_2_inst.lscc_mipi_dphy_inst:	5 (3.62 % Utilization)
 
 ------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0   ########
@@ -391,9 +395,9 @@ DPHY                1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     3                  3.19 %               
+Total BLACK BOX     3                  3.16 %               
 ============================================================
-Total BLACKBOX in the block MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx:	3 (2.21 % Utilization)
+Total BLACKBOX in the block MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx:	3 (2.17 % Utilization)
 
 -----------------------------------------------------------
 ########   Utilization report for  cell:   PLL_1   ########
@@ -405,9 +409,9 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 BB           1                                       
                                                      
-Total IO     1                  2.38 %               
+Total IO     1                  2.33 %               
 =====================================================
-Total IO PADS in the block PLL_1_inst:	1 (0.74 % Utilization)
+Total IO PADS in the block PLL_1_inst:	1 (0.72 % Utilization)
 
 
 BLACKBOX
@@ -417,9 +421,9 @@ VHI                 2
 VLO                 2                                       
 PLL                 1                                       
                                                             
-Total BLACK BOX     5                  5.32 %               
+Total BLACK BOX     5                  5.26 %               
 ============================================================
-Total BLACKBOX in the block PLL_1_inst:	5 (3.68 % Utilization)
+Total BLACKBOX in the block PLL_1_inst:	5 (3.62 % Utilization)
 
 -------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   PLL_1_ipgen_lscc_pll_Z26_layer0   ########
@@ -432,9 +436,9 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 BB           1                                       
                                                      
-Total IO     1                  2.38 %               
+Total IO     1                  2.33 %               
 =====================================================
-Total IO PADS in the block PLL_1_inst.lscc_pll_inst:	1 (0.74 % Utilization)
+Total IO PADS in the block PLL_1_inst.lscc_pll_inst:	1 (0.72 % Utilization)
 
 
 BLACKBOX
@@ -444,9 +448,9 @@ PLL                 1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     3                  3.19 %               
+Total BLACK BOX     3                  3.16 %               
 ============================================================
-Total BLACKBOX in the block PLL_1_inst.lscc_pll_inst:	3 (2.21 % Utilization)
+Total BLACKBOX in the block PLL_1_inst.lscc_pll_inst:	3 (2.17 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

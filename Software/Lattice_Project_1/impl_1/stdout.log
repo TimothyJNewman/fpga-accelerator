@@ -2,7 +2,7 @@ Running in Lattice mode
 
                                Synplify Pro (R) 
 
-                Version U-2023.03LR-1 for win64 - May 29, 2023 
+               Version U-2023.03LR-1 for linux64 - May 29, 2023 
 
                     Copyright (c) 1988 - 2023 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
@@ -20,10 +20,10 @@ Running in Lattice mode
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 
-Starting:    C:\lscc\radiant\2023.1\synpbase\bin64\mbin\synbatch.exe
-Install:     C:\lscc\radiant\2023.1\synpbase
-Hostname:    DESKTOP-TOAOPO9
-Date:        Mon Oct  2 17:34:39 2023
+Starting:    /home/timothyjabez/lscc/radiant/2023.1/synpbase/linux_a_64/mbin/synbatch
+Install:     /home/timothyjabez/lscc/radiant/2023.1/synpbase
+Hostname:    timothyjabez-MS-7D99
+Date:        Fri Oct  6 02:06:10 2023
 Version:     U-2023.03LR-1
 
 Arguments:   -product synplify_base -batch Lattice_Project_1_impl_1_synplify.tcl
@@ -32,68 +32,72 @@ ProductType: synplify_pro
 
 
 
-log file: "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srr"
+log file: "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srr"
 Running: impl_1 in foreground
 
 Running proj_1|impl_1
 
 Running Flow: compile (Compile) on proj_1|impl_1
-# Mon Oct  2 17:34:40 2023
+# Fri Oct  6 02:06:10 2023
 
 Running Flow: compile_flow (Compile Process) on proj_1|impl_1
-# Mon Oct  2 17:34:40 2023
+# Fri Oct  6 02:06:10 2023
 
 Running: compiler (Compile Input) on proj_1|impl_1
-# Mon Oct  2 17:34:40 2023
-Copied C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_comp.srs to C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srs
+# Fri Oct  6 02:06:10 2023
+Process ID: 10375
+Copied /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_comp.srs to /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srs
 
 compiler completed
-# Mon Oct  2 17:36:08 2023
+# Fri Oct  6 02:06:14 2023
 
 Return Code: 0
-Run Time:00h:01m:26s
+Run Time:00h:00m:03s
 
 Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl_1
-# Mon Oct  2 17:36:08 2023
+# Fri Oct  6 02:06:14 2023
+Process ID: 10515
 
 multi_srs_gen completed
-# Mon Oct  2 17:36:13 2023
+# Fri Oct  6 02:06:14 2023
 
 Return Code: 0
-Run Time:00h:00m:05s
-Copied C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_mult.srs to C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srs
-Copied C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srr to C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srf
+Run Time:00h:00m:00s
+Copied /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_mult.srs to /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srs
+Copied /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srr to /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srf
 Complete: Compile Process on proj_1|impl_1
 
 Running: premap (Premap) on proj_1|impl_1
-# Mon Oct  2 17:36:13 2023
+# Fri Oct  6 02:06:14 2023
+Process ID: 10531
 
 premap completed with warnings
-# Mon Oct  2 17:36:27 2023
+# Fri Oct  6 02:06:16 2023
 
 Return Code: 1
-Run Time:00h:00m:14s
+Run Time:00h:00m:02s
 Complete: Compile on proj_1|impl_1
 
 Running Flow: map (Map) on proj_1|impl_1
-# Mon Oct  2 17:36:28 2023
+# Fri Oct  6 02:06:16 2023
 License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on proj_1|impl_1
-# Mon Oct  2 17:36:28 2023
-Copied C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_m.srm to C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srm
+# Fri Oct  6 02:06:16 2023
+Process ID: 10546
+Copied /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_m.srm to /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srm
 
 fpga_mapper completed with warnings
-# Mon Oct  2 17:37:21 2023
+# Fri Oct  6 02:06:18 2023
 
 Return Code: 1
-Run Time:00h:00m:53s
+Run Time:00h:00m:02s
 Complete: Map on proj_1|impl_1
-Copied C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srr to C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1.srf
+Copied /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srr to /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.srf
 Complete: Logic Synthesis on proj_1|impl_1
 TCL script complete: "Lattice_Project_1_impl_1_synplify.tcl"
 exit status=0
 exit status=0
 Save changes for project:
-C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\proj_1.prj
+/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/proj_1.prj
 batch mode default:no

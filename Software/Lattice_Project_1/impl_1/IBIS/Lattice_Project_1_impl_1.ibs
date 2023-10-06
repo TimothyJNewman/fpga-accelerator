@@ -1,7 +1,7 @@
 |************************************************************************
 | IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.1.200.1
-| Report Generate Date: Oct  4 2023
-| Report Generate Time: 02:15:45
+| Report Generate Date: Oct  6 2023
+| Report Generate Time: 02:09:13
 |************************************************************************
 | IBIS File LibisMaker.ibs
 | Cadence Design Systems, Inc. 2022 
@@ -196,32 +196,33 @@ T10           dq_dqs0_io[1]        ss2150m100eaaaaaaaio
 R9            dq_dqs0_io[3]        ss2150m100eaaaaaaaio
 P7            dq_dqs0_io[5]        ss2150m100eaaaaaaaio
 P9            dq_dqs0_io[7]        ss2150m100eaaaaaaaio
-G13           I2C_DPHY_1_scl_io    lvc330m080gaaaaaaaio
-G16           I2C_DPHY_1_sda_io    lvc330m080gaaaaaaaio
-G15           I2C_DPHY_2_scl_io    lvc330m080gaaaaaaaio
-G14           I2C_DPHY_2_sda_io    lvc330m080gaaaaaaaio
+G15           I2C_DPHY_1_scl_io    lvc330m080gaaaaaaaio
+G14           I2C_DPHY_1_sda_io    lvc330m080gaaaaaaaio
+G16           I2C_DPHY_2_scl_io    lvc330m080gaaaaaaaio
+F16           I2C_DPHY_2_sda_io    lvc330m080gaaaaaaaio
 N4            PLL_1_clki_i+        lvs180axxxeaaaaabain
 M4            PLL_1_clki_i-        lvs180axxxeaaaaabain
-T14           DDR_MEM_1_cke_o[0]   ss2150m100eaaaaaaaou
-N12           DDR_MEM_1_odt_o[0]   ss2150m100eaaaaaaaou
-R14           DDR_MEM_1_wen_o      ss2150m100eaaaaaaaou
-N14           DDR_MEM_1_rasn_o     ss2150m100eaaaaaaaou
-T15           DDR_MEM_1_casn_o     ss2150m100eaaaaaaaou
-M12           DDR_MEM_1_ba_o[2]    ss2150m100eaaaaaaaou
-R10           DDR_MEM_1_ba_o[1]    ss2150m100eaaaaaaaou
-R13           DDR_MEM_1_ba_o[0]    ss2150m100eaaaaaaaou
-R15           DDR_MEM_1_addr_o[12] ss2150m100eaaaaaaaou
-M11           DDR_MEM_1_addr_o[11] ss2150m100eaaaaaaaou
-R16           DDR_MEM_1_addr_o[10] ss2150m100eaaaaaaaou
-N16           DDR_MEM_1_addr_o[9]  ss2150m100eaaaaaaaou
-M16           DDR_MEM_1_addr_o[8]  ss2150m100eaaaaaaaou
-N13           DDR_MEM_1_addr_o[7]  ss2150m100eaaaaaaaou
-M14           DDR_MEM_1_addr_o[6]  ss2150m100eaaaaaaaou
-L11           DDR_MEM_1_addr_o[5]  ss2150m100eaaaaaaaou
-L12           DDR_MEM_1_addr_o[4]  ss2150m100eaaaaaaaou
-R12           DDR_MEM_1_addr_o[3]  ss2150m100eaaaaaaaou
-L10           DDR_MEM_1_addr_o[2]  ss2150m100eaaaaaaaou
-N11           DDR_MEM_1_addr_o[1]  ss2150m100eaaaaaaaou
+M11           DDR_MEM_1_cke_o[0]   ss2150m100eaaaaaaaou
+N13           DDR_MEM_1_odt_o[0]   ss2150m100eaaaaaaaou
+L12           DDR_MEM_1_wen_o      ss2150m100eaaaaaaaou
+N11           DDR_MEM_1_rasn_o     ss2150m100eaaaaaaaou
+N12           DDR_MEM_1_casn_o     ss2150m100eaaaaaaaou
+R13           DDR_MEM_1_ba_o[2]    ss2150m100eaaaaaaaou
+M14           DDR_MEM_1_ba_o[1]    ss2150m100eaaaaaaaou
+T13           DDR_MEM_1_ba_o[0]    ss2150m100eaaaaaaaou
+R16           DDR_MEM_1_addr_o[13] ss2150m100eaaaaaaaou
+N14           DDR_MEM_1_addr_o[12] ss2150m100eaaaaaaaou
+T15           DDR_MEM_1_addr_o[11] ss2150m100eaaaaaaaou
+M13           DDR_MEM_1_addr_o[10] ss2150m100eaaaaaaaou
+M16           DDR_MEM_1_addr_o[9]  ss2150m100eaaaaaaaou
+P16           DDR_MEM_1_addr_o[8]  ss2150m100eaaaaaaaou
+N16           DDR_MEM_1_addr_o[7]  ss2150m100eaaaaaaaou
+R15           DDR_MEM_1_addr_o[6]  ss2150m100eaaaaaaaou
+P15           DDR_MEM_1_addr_o[5]  ss2150m100eaaaaaaaou
+T14           DDR_MEM_1_addr_o[4]  ss2150m100eaaaaaaaou
+R14           DDR_MEM_1_addr_o[3]  ss2150m100eaaaaaaaou
+N15           DDR_MEM_1_addr_o[2]  ss2150m100eaaaaaaaou
+M15           DDR_MEM_1_addr_o[1]  ss2150m100eaaaaaaaou
 P14           DDR_MEM_1_addr_o[0]  ss2150m100eaaaaaaaou
 P11           DDR_MEM_1_csn_o[0]   ss2150m100eaaaaaaaou
 T12           DDR_MEM_1_ck_o[0]+   s2d150m100eaaaaaaaou

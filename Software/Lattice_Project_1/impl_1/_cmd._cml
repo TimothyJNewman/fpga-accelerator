@@ -1,0 +1,1 @@
+-link -encrypt -top main -osyn /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_comp.srs /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/layer0.srs  -jobname linker  

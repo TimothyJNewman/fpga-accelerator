@@ -1,7 +1,8 @@
-C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe  -link  -top  main  -multisrs  C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_comp.srs  -osyn  C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_mult.srs  -log  C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\Lattice_Project_1_impl_1_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\..\..\..\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe -link -top main -multisrs ..\synwork\Lattice_Project_1_impl_1_comp.srs -osyn ..\synwork\Lattice_Project_1_impl_1_mult.srs -log ..\synlog\Lattice_Project_1_impl_1_multi_srs_gen.srr
-rc:0 success:1 runtime:5
-file:..\synwork\lattice_project_1_impl_1_comp.srs|io:i|time:1696264566|size:747202|exec:0|csum:8EF2BFD39BB2DBFD59C2BF0F484C7419
-file:..\synwork\lattice_project_1_impl_1_mult.srs|io:o|time:1696264572|size:11292|exec:0|csum:
-file:..\synlog\lattice_project_1_impl_1_multi_srs_gen.srr|io:o|time:1696264573|size:1209|exec:0|csum:
-file:..\..\..\..\..\..\..\..\..\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1685564428|size:10600960|exec:1|csum:5D87BCE07D7E863695AC28DD65895E86
+/home/timothyjabez/lscc/radiant/2023.1/synpbase/bin/syn_nfilter  -link  -top  main  -multisrs  /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_comp.srs  -osyn  /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_mult.srs  -log  /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synlog/Lattice_Project_1_impl_1_multi_srs_gen.srr 
+relcom:../../../../../../lscc/radiant/2023.1/synpbase/bin/syn_nfilter -link -top main -multisrs ../synwork/Lattice_Project_1_impl_1_comp.srs -osyn ../synwork/Lattice_Project_1_impl_1_mult.srs -log ../synlog/Lattice_Project_1_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/Lattice_Project_1_impl_1_comp.srs|io:i|time:1696554373|size:746918|exec:0|csum:670CD10EFC3C9F01D8726FEBE66C4ECA
+file:../synwork/Lattice_Project_1_impl_1_mult.srs|io:o|time:1696554374|size:11174|exec:0|csum:
+file:../synlog/Lattice_Project_1_impl_1_multi_srs_gen.srr|io:o|time:1696554374|size:1388|exec:0|csum:
+file:../../../../../../lscc/radiant/2023.1/synpbase/linux_a_64/syn_nfilter|io:i|time:1685539350|size:14307024|exec:1|csum:FAB2F05F89E2181CD55B5EB70F1844C3
+file:../../../../../../lscc/radiant/2023.1/synpbase/bin/syn_nfilter|io:i|time:1685539309|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0

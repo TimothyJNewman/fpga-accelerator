@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.1.200.1
 
 // backanno -o Lattice_Project_1_impl_1_vo.vo -sp 7_High-Performance_1.0V -w -neg -gui Lattice_Project_1_impl_1.udb 
-// Netlist created on Wed Oct  4 02:15:36 2023
-// Netlist written on Wed Oct  4 02:15:46 2023
+// Netlist created on Fri Oct  6 02:09:04 2023
+// Netlist written on Fri Oct  6 02:09:14 2023
 // Design is for device LIFCL-40
 // Design is for package CABGA256
 // Design is for performance grade 7_High-Performance_1.0V
@@ -24,7 +24,7 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
   output [0:0] DDR_MEM_1_odt_o;
   output DDR_MEM_1_wen_o, DDR_MEM_1_rasn_o, DDR_MEM_1_casn_o;
   output [2:0] DDR_MEM_1_ba_o;
-  output [12:0] DDR_MEM_1_addr_o;
+  output [13:0] DDR_MEM_1_addr_o;
   output [0:0] DDR_MEM_1_csn_o;
   output [0:0] DDR_MEM_1_ck_o;
   inout  dqs1_io;
@@ -87,14 +87,14 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
          \DDR_MEM_1_cke_o_c[0] , \DDR_MEM_1_odt_o_c[0] , DDR_MEM_1_wen_o_c, 
          DDR_MEM_1_rasn_o_c, DDR_MEM_1_casn_o_c, \DDR_MEM_1_ba_o_c[2] , 
          \DDR_MEM_1_ba_o_c[1] , \DDR_MEM_1_ba_o_c[0] , 
-         \DDR_MEM_1_addr_o_c[12] , \DDR_MEM_1_addr_o_c[11] , 
-         \DDR_MEM_1_addr_o_c[10] , \DDR_MEM_1_addr_o_c[9] , 
-         \DDR_MEM_1_addr_o_c[8] , \DDR_MEM_1_addr_o_c[7] , 
-         \DDR_MEM_1_addr_o_c[6] , \DDR_MEM_1_addr_o_c[5] , 
-         \DDR_MEM_1_addr_o_c[4] , \DDR_MEM_1_addr_o_c[3] , 
-         \DDR_MEM_1_addr_o_c[2] , \DDR_MEM_1_addr_o_c[1] , 
-         \DDR_MEM_1_addr_o_c[0] , \DDR_MEM_1_csn_o_c[0] , 
-         \DDR_MEM_1_ck_o_c[0] , VCC, 
+         \DDR_MEM_1_addr_o_c[13] , \DDR_MEM_1_addr_o_c[12] , 
+         \DDR_MEM_1_addr_o_c[11] , \DDR_MEM_1_addr_o_c[10] , 
+         \DDR_MEM_1_addr_o_c[9] , \DDR_MEM_1_addr_o_c[8] , 
+         \DDR_MEM_1_addr_o_c[7] , \DDR_MEM_1_addr_o_c[6] , 
+         \DDR_MEM_1_addr_o_c[5] , \DDR_MEM_1_addr_o_c[4] , 
+         \DDR_MEM_1_addr_o_c[3] , \DDR_MEM_1_addr_o_c[2] , 
+         \DDR_MEM_1_addr_o_c[1] , \DDR_MEM_1_addr_o_c[0] , 
+         \DDR_MEM_1_csn_o_c[0] , \DDR_MEM_1_ck_o_c[0] , VCC, 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[8] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[7] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[6] , 
@@ -106,7 +106,8 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[0] , PLL_1_clkos_o, 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqs_bb_out_w , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqs_bb_out_w , 
-         PLL_1_clkop_o, \PLL_1_inst.lscc_pll_inst.clki_w ;
+         PLL_1_clkop_o, \PLL_1_inst.lscc_pll_inst.clki_w , 
+         \PLL_1_inst.lscc_pll_inst.clkos2_o ;
 
 `pragma protect begin_protected
 `pragma protect version=1
@@ -120,76 +121,76 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-MRIXikGxqFwpGd8LAqH2RYPHPRaykCtpqhbEBDbhnV8FKhg2oeIct3vv+qHBQJC3
-/1lcks/WPJoEgODDoHIcS/PG+t225TRluZw8DykyCL3VY43tPp8yj9ee2t66skWC
-E8R/p1rDh30ZbiKvPUagOlZbnewY+5r0dfU20eYu64WzDh8w5FVpHoO3HRze/jHa
-FDm+sah4ld1iGfDqgxxzWcHuU3u37qcw3JKNE5bgEU/lYNkLZX8BBrKZidbxmQ5/
-WwrtukIBSNkxnYmYj3rfShX8wVoqbM1CKmCcjLXvual/HI5wO+rbZuH4XX+5s9Rd
-XXPsJyZrSi0ToiqVrCEqqA==
+GlOgEWGkQrE1VRnp75BACsdHk0uzK8bsm3ksXQOuJ+zTyYbFytNPDmaGJ9sF13s4
+emYvuywFqUreEhQHYNT8AkGa+CzNoBwkNI4t335WTJ6j0cjliVKeJH/sVQO33iQu
+vTHv2ykADtEmNA7C+nRnKYUN4uc8KO5f/nK498G6rwadjoOmxxBFqaAURMoB+iMt
+shzHDMt/tKDI0ERCqCN8iDtrjuUKM3Z5T0X8yrXWncOaxiRIgs57z/pvCnXdjZhs
+kTccy7D/2uB0kp/xn991+5PlLFsDndTgTzCSyz+CoXOciKJLfEW6yitEn25Oo908
+bWKp69PAHjmxYDPA95wN5g==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-VHVBml7lujAzBL6kBudvWQMO9IiDzdjR4Rrp0FmRW9ZuYdbIJKG2kNahjjqdne6O
-PXxt9NK3joqLxIDkxViPUA3iyixPS1BV6MixvL9limol05f/Fh/uk/3kUugTinV5
-viy9bvkbQi7Nu1uzR8apcBgQCk7qLs9EWiYqt1AFTRD4yBBCENa67Jr4C3sBIab0
-3BxgDjPKd1DP7xWmUdaCm1Xv9EqhqYmzlJsWeivoDyeJ8SiUVuMgjaj2SI3xo+FR
-wAdh8vifuls6Y4sfokPkJwL+B5JaHSfq+moEk7oUCnM1oB8qO7N92x7Ch/cpljtJ
-27NMxaZ5/4voJynNDWPdHU7/m9QXMTP1UFdCqoIJP50nGkjmjtBo1LzxzfMbOZec
-Ki+BUT3jCZKXt18XM3zVWMWsBLDcJtfFSNKfyDmo8iIqltoFTdT9FyDRbNnNAAnp
-HfAhtYlMNENZMLsdd8qzZp9i+jRhfheliLWMOns+QAYZMos/EDoWwz/zFLSOecs8
+WOJBRDNBM4YTnEo2OhpspO7EIE1ky9qxJ6g3epsy1ljDueg1FTz95fWXsxtbUrN9
+64ymsL1jA2R23Zwp6sypQMPtG0I9aUhlp5yWwHiCr3eNaM490rasSz+nbqPpwH9N
+AImYBga01Q06XqDe1yR+/dA1tTAaH/uaBGVcbHtcqznJ6QlfcjpUQuYMa7ZOaKX+
+6KrW/is54Af/UXW8FyvRu7B4Pu3PHgejdQkXec7TliKh86KkKW+ndIBD34k+bAlp
+8UMq5cpB5cvnk+Yn9iGzBSVLbKb/XVQEghC0H6OUHbUT2f0ZbKaFpRwDpCD5QpZF
+wJtJGo6sObO4tENwB9SCP5DG8gtrYe9KXq1CtdHyohi3B8/InGCMeU4eg9cncic3
+XVxaDcpE7rimk0wZE3BkMp5e2wUkQoYlUv54P9CzkJD2xqSnPHKqDs9oZynDtZOp
+qtMgdIcervnOpGIxjbsLPHb7k6ICl3o8S/kAkji+OMo6HnDnjjrI4AAVKIWxk8i6
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-mQcryPVOhPjoCp9+39G1d0B+MjTOFwns/6t4V45JvMrl8Z+UBIJ5AQT1CIBf7uWS
-VLhJRMY5lx/GIABAO1BM/amBTcoDsY2RRoqF7YzsNsgc4FOdPQkUz9ZF5uII2gDX
-mapdi2o6aUO9N2MHU4BBLd+osMMtalgW267EmqwncF+MsW0tvbWrDdxQiD1j1UZS
-FxSQSfJ6k02n33vJR+t+BkXNYPhDfWVSP1KB6lEEsOzEMSoO7sp8fL6LleulMtu4
-nNTXxU2qXjxlWwW0KkFq2zIHuOTx5Rpdt3hOZb9Wdi7DIHX4zoJuF6/HDop283I4
-6PHJ4DfDSintDnCdUrF+FA==
+UDjEGNXsEaAx2V88CmScaNqPKmTeFvma7sS7+v0TFQJ1EEv+kNpBKWFlVXp2p8Px
+5f7c81NEuDO667SDM4i0xMnz3Bs2dyPAZWFun8utSxYaXoB19EO1sLpCGyRQ0atH
+rrXEI2FuOErtCrmCf1o2w752UC/iG01vb+Go+eDChwatg/dFwMw0DE/bjUMIwJ8t
+SKjnmhFa5Bx6gbMBkSKWEiroCuT00i2JxWvMnnOI/Wcvco1P+X9Kn2oJFf1gMTz2
+cYjV9tdlm1sRH2r95aAk0Kr/Bv02BpvbdurIjS1zsBIOZtcAzS6ySDZ5eoN1vTOe
+bL6oZ7ntZziNbvEAtLUqmA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-JAhEdVbwLAmu/+jNe9dyVNT9X5AFlIDOlRxJznMUQZb5rGeUO2taE/WNYwJ1kvZ/
-R4T3OZDmjy+eCVptEAtAYgFApxYWcxnXJSgmKcqZk+UXgY+Akd22cq/1SbF3fxb1
-RrkgUUOo+rJrDjlKfPV3vBJ8CeF+VBawoaYblYRwF7M=
+CH3GXF/VyWkCkUrZ7giSOASI8o36dQElZaJhJH369mm5ZVcwGJ+9EzadtZl2v4C0
+SFsoBqPQ92welCVaMfeukTx4BcGvOuJZ5AuWCOT60C5xrQk+qGS4KSi4LDQnOs+q
+tJd5cHQKWrOtmDeXD++dTxMRxeEP8GpwIKInhZvrTFI=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-ivLKv6iiII01yyyjER8QSUYKc8csNKttyucBZW0nj5+WeW9k5digJo6m7G4n9pj6
-xHjdZFcGGUBfVOgWwYtY0qQGGZ0QP0k8brLfJ8JcWDZ7DVE8jlGKs4tD/qBUFbeO
-tJ7SRIyMQRvjCwHW9iZleZf4bCIdItahSY2X3IYE/egCSvCTcUhoft9n2/NyGi6e
-IcU9VFjIu6ZByxvWt4t6MCVKlvMCJzpUQqcQn0p/APt5nFyLAJ6owYKq3HCnVfUU
-c/GGXAMQ2rpHU9sRcR/hUrv8j/hIsBqrbZUSQtn/65TuZP7n56miwSUvXyiAefkb
-VCQLCs0FKPAUqkM9GMxXlQ==
+vZBPOhwmZPZOGCPeGKBYz2ckALDTs6pOqLxE+i7OFhyTzxmnxWeRLrHsDHbuTU2L
+9pgTGQN6i2GFKRqIkr/UiTl6S815iM+lqvgdOMxXVtxQdPebS2rHwOv3D220ThPP
+zQ3/8cHe9WAVZkv/xMgKWlBBQv57LxEEzul+spFKXVHaLx97xvKRWyiyO+RglSCO
+oLs9/H6QxHl1hL1abEIWt3wMuyWx0Bb/08gDlX620miTmkR3gMYBNw/BxapC/zbL
+4tlc0aHv16X85SY4piznuMxtljrz5usuC99pl4BBrpNqKaH6j2D4Tm+Rs0ZASig+
+4ewI5Z9kiiir6CrNNRRCwA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-JADZowtm7EUZI923MQVbwAZp+r65luP6D17rsRG53+avXNZ0AWn14GJRfNQQHzEM
-v/+0h+5/6UJG+sc/+2+fM0qRTXR7jH0fAy8YbI15mgbbdRwY9/+lAC6+qrLrooWF
-2p5R7Pb1/88+U/NR0WxHQyml1G0Y3KGVVx62B5h//BIVh5HoOu+sV297tv3f56gz
-eMmveIY5dlwe3Bm8d+Qg7R7+WfJ+K7Va7+wy6V5zUVHAX7wblLtv5V6PrvmfhKPB
-4ct6yGWhJzJcNJuOzpgLXm0rJ9KFc+6ZOT95d6fRifNuiLrzbjWLidtNdG5LcscD
-M7fcsMk+SLU7zPYt/rlDRg==
+p47Lmv0vFp/jQs9Kxi3kLISbkxXFI00cPsFa6zq8RFQ3dlsnz59QwHIXYT6BnTv0
+qpTPr+hkgUo2XpGl/ZlmAPPW9A/xM/k3pysmB2UtcaHUHkunIwgjIsBEhy5idF7i
+7vowivnpSTqFRiEIhGD9uQNR16HgmFA4mBQOtS3fgu3dgJGGqT5H7++FAGcaPBUm
+KmJYQpe3HTfYpiVtqo6FyqF7GcnBBAAVHnW3rlHdxbbPfBcNj/+ilLHGHttoLn51
+qTHAixwvjQWc11cLQiDK1NMl4fmNKArxwXs5M4xEoRPxUNFKgWy7s7BXkaTQsikc
+5NXblQzkxEY2EcWmdEfp6A==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=44, bytes=32)
 `pragma protect data_block
-2Vy1P4/D4FWpHIfEJF84BtRhE//gv3SnPD2LEokBnm8=
+jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
 
 `pragma protect end_protected
   DDR_MEM_1_cke_o_pad_0__SLICE_0 \DDR_MEM_1_cke_o_pad[0].SLICE_0 ( 
@@ -530,6 +531,11 @@ M7fcsMk+SLU7zPYt/rlDRg==
     .TXDATA1(\DDR_MEM_1_cke_o_pad[0].gnd ));
   DDR_MEM_1_ba_o_pad_0__bb_inst_IOL \DDR_MEM_1_ba_o_pad[0].bb_inst_IOL ( 
     .DOUT(\DDR_MEM_1_ba_o_c[0] ), 
+    .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
+    .TXDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .TXDATA1(\DDR_MEM_1_cke_o_pad[0].gnd ));
+  DDR_MEM_1_addr_o_pad_13__bb_inst_IOL \DDR_MEM_1_addr_o_pad[13].bb_inst_IOL 
+    ( .DOUT(\DDR_MEM_1_addr_o_c[13] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TXDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA1(\DDR_MEM_1_cke_o_pad[0].gnd ));
@@ -1577,7 +1583,7 @@ M7fcsMk+SLU7zPYt/rlDRg==
     .CIBLDREG(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .CIBROT(\DDR_MEM_1_cke_o_pad[0].gnd ), .ENCLKOP(VCC), .ENCLKOS(VCC), 
     .ENCLKOS2(VCC), .ENCLKOS3(VCC), .ENCLKOS4(VCC), .ENCLKOS5(VCC), 
-    .FBKCK(PLL_1_clkop_o), .LEGACY(VCC), .LMMICLK(VCC), 
+    .FBKCK(\PLL_1_inst.lscc_pll_inst.clkos2_o ), .LEGACY(VCC), .LMMICLK(VCC), 
     .LMMIOFFSET0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .LMMIOFFSET1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .LMMIOFFSET2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -1615,7 +1621,8 @@ M7fcsMk+SLU7zPYt/rlDRg==
     .GRAYACT4(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .BINACT0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .BINACT1(\DDR_MEM_1_cke_o_pad[0].gnd ), .OPCGLDCK(VCC), .SCANRST(VCC), 
-    .SCANCLK(VCC), .CLKOP(PLL_1_clkop_o), .CLKOS(PLL_1_clkos_o));
+    .SCANCLK(VCC), .CLKOP(PLL_1_clkop_o), .CLKOS(PLL_1_clkos_o), 
+    .CLKOS2(\PLL_1_inst.lscc_pll_inst.clkos2_o ));
   DDR_MEM_1_cke_o_0_ \DDR_MEM_1_cke_o[0]_I ( .PADDO(\DDR_MEM_1_cke_o_c[0] ), 
     .DDRMEM1ckeo0(DDR_MEM_1_cke_o[0]));
   DDR_MEM_1_odt_o_0_ \DDR_MEM_1_odt_o[0]_I ( .PADDO(\DDR_MEM_1_odt_o_c[0] ), 
@@ -1632,6 +1639,8 @@ M7fcsMk+SLU7zPYt/rlDRg==
     .DDRMEM1bao1(DDR_MEM_1_ba_o[1]));
   DDR_MEM_1_ba_o_0_ \DDR_MEM_1_ba_o[0]_I ( .PADDO(\DDR_MEM_1_ba_o_c[0] ), 
     .DDRMEM1bao0(DDR_MEM_1_ba_o[0]));
+  DDR_MEM_1_addr_o_13_ \DDR_MEM_1_addr_o[13]_I ( 
+    .PADDO(\DDR_MEM_1_addr_o_c[13] ), .DDRMEM1addro13(DDR_MEM_1_addr_o[13]));
   DDR_MEM_1_addr_o_12_ \DDR_MEM_1_addr_o[12]_I ( 
     .PADDO(\DDR_MEM_1_addr_o_c[12] ), .DDRMEM1addro12(DDR_MEM_1_addr_o[12]));
   DDR_MEM_1_addr_o_11_ \DDR_MEM_1_addr_o[11]_I ( 
@@ -1675,89 +1684,89 @@ M7fcsMk+SLU7zPYt/rlDRg==
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-LJmxxpybZUG+eYsshC4ez+jPPZb5pRy55QGfb2JnCrboX0x+Z3ZYwwRRKuT0Z0Zx
-BJCjgstPvX30AjE2HB2obxU5S9MBwBmebhtz8HooOvPWVY1CEW5wf8TkkblEjH+U
-qYUMSfGfLdhkq+P+SIhHJfDXdjMU7FZaxM+dABHPsE+rA1RjwoSumsSh78gtIoIl
-PHGd243T8gM5S6NyZpuCR5vmSMktZOo8U8g5+kd4Vn5b1l9yW8dKdQY5XSmNOkF+
-qUXwkhcnLt71H9or+BBZTDDHVP1Lu9mUobx1TZy0sj5k7RxUzwszB9ApbITjIGox
-Amg0dyHhMUErDzso2tfPvg==
+bYjvviFRN663+u4LJSrNGM2zzGgxbZoPaU4DS1GB2v1rOXZqoo9UKDglr18VxK5f
+f3QJTi/UQnG/1MMo+L6cUd9R1H4oYdRGxEYI+wXPtJHrAW/GSJBJav5j/lZaciUf
+aPNtncWz8NuY1WMbiKbk/tE4JLxFyxmbmW3WmhHzmbUYxSHysp2bRZOXdmDXE4Bc
+j9L3ZSLhYTpbttr0TTYyDpjo6Rvg8xQvQlTuM0FM637gB/y67eB7RcYlAJC4Jc5R
+/KDHYx57UcWwoEA9zloCcST02rsTWXYAeHuVcb+O8qmFTBC+4M4m/Ya23wNpzx81
+N/NDsJc79J33JFYW6dY0LA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-dnVp/vJUq2CPTjqMkEvVsaCBHfMZuQImfaKqIlQ4MH0R2CPEG9gYfUcXs58Do+mV
-aStk8+tq2aQs2/ow1BVkNSGsiyXYZZbYk1sZpIv+kefWqixhnM0QwqMLLnjJqvjX
-GhW4GWT/wLSy3k8OHKoYlXgT5mx8DpEtTXM2BwDw7nTCWoz25UV62VtHPDYrgTTa
-1L9FX703stuqgWbxHwb24+/hanfB1qgZODIQVSMnSZsRXv/elYR58SI4ywqZkWv1
-1lfgv4XuI0UOWHI/m17tIMzhIaG25zzueYnnejQJ1YgQkqrQEPTXawqkfOqNNbZK
-AYmZVqAbpwDQ0Tz64hWfNcEk9+LCUJ9hkt/mapgh291i/xWsoTPwls5sOqqM2f8c
-3NC5GLkGkdJFuFDeCHR2n7zCFrhagXRHuxRAxB2fQ1j+jxSkG70gfxFPM726Ia3q
-YCuCqK4Of9jzw/AwbDWVP3sLGM7P57rMBaeO2A3Q9nyATJG2JMqe5k6JlqtocUQb
+J8fwIy6oN9r+AitnJJawWlGzkv0o7+X5eMIobk0aZytxp6yY8rJERpjknC5+r3Aj
+Rr8DojtnMpLMOU3tEtz1i2fT7uRf5RtvWWBisqK16d0r253bsBsHbs5W7+QkVziW
+lKhfnPMqcI9Py5jNvRgOy2LdDFdKwoT/vLl3WqQnd7TlloLHQZ0H9IKLTFCM6c0v
+mJC7HqnheOxq0jZPh0Uy4gw6D/G9Tss41ucvTCiAO9I0puF5CpCLRpy3EpY5yy9R
+fk7DXKTLHtUt5K8bU9bgkvWbLw4yKcgrIPa6JGT5YeEaBfDNSjM+hsLqKorzGvip
+a+cIQQJ/usYJB4seASiNbio8i8uBWzi6abDJtF+YORrMwx3LIKGg1daznEkyvoZj
+QMka38RU95mHk4RPB6uA59NwCSPvzQAvDaO7wI64/gCRxrJ60n9UwpLSgZWfuXbD
+lsYW7a6voLcfZBIeYXAorFbQ3L7Fhdhj4MegMaWh03cIZlh+BZ0w6VN7aAmgpD/1
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-Rd0Meam+tBkZCubg9xTsPpJI2VEa7ManrdXGVrDgC3DatT7Vd1TncpYcH62dWtzT
-zSswMjOKpdiOq1v79b+cYdV3b9Isv54039IbRe1U37qLCXuQtDQfmtuXecGAd5Ao
-RCVFE6+XogaRL4d8CNkKkWygb96hMjWJg+ylAY3Or3XGu/oqh43DYlcccLA2W3Y6
-QMfVzV9k6AmY60fSH3sCRt89yWwyROPC0KbAJ7SdFDZmNBXijqhJQmqsLWbMg44p
-aq9UFABbQl5QvmRY3U6z074Q/3CnokuMd7e+DvfdSIItoafWmyfCmz313gof7T/i
-116r8hLWKc8uZdF86qK9+g==
+W+QIoVhmove4thdrrQkPx8jTUJrBY9hiN1L7bMs0YVYcT67jGwREE8pAbPEWNfkN
+6BPT2p80ZYBkco6gY+9uTSg91eBRR8rRVfZBKyrDsbFGcI2U3svv5c7DTOo/3M7R
+cq0KfAO422ryLGt12zV+z0rVXW0xrEVNA8VeVQjEIAYtaihXz+aRPxGD4YOwohvg
+UdhQfm7TM6ZCAzY6RC62GHESq/LZ6D9detwLGL3zUO8pv2j3YZPbxEqSZl37Gd9K
+wq76zaS/UrCWLIzPnp9Z2ZsC4CnmXA13C8Q2pNlf+VdDuuNXHR30cXQgJBvH//DA
+ttpA1DrkKh4HSBjI6sI8fg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-R+NLgItmF+NMmJG9NkgEOjXleP/ykyPhOFS1hjAogH/DT9Q9Ago1rhrcaOmeW1VG
-j9llNrsqBcxuYiRxAITwvIPM+HBEemQtHUcRHck/qA7Lf5yxiGs/sJJEBkFvQqx8
-fPdoS79skx0BZF0HWnNJLRUp1s6x31t1kQyHU0CY8CY=
+nz0QmGIwh31n9Q4EjmQOByDXK2Q73ndeic3BwXXL7lbwAMHY812rhceBk6IvOAqU
+VTZyGg09QreFTrGsXqMzj1CEtEdwIzvDBrsZUcEc9EEiClZQ7tCiqMRTgiETaHUw
+1WFL9+Swow1DUtjXJqPGCBS29V7RpB5+w91netYp1Gk=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-q/jUUFQG9Ssw132Z0sk+CKgqDUH6UxQ9ZSu5ZrXkd8RS+QeqtmeRAHYVuSjoQBHD
-3C46TMjWhKKWU/9+T0FPZUjbo2160fjyt3pj416rb3FedmB1rd8mszdrbIj1TBFk
-+YuMLNgLuLh2cdGoTy1LYUCOcsW8eLppc0MV58ocLgQf82o5yqvLXpfWQcOOu0bJ
-TnXh24y2iMNt1Me8AkoReHfMFH6EmJdzKWbkgVExmaZVgoP4c7qdDRdXkpi//hcX
-xHcHKluy1cVVkf18yEdwhOAltDkSZKO3Ra2sDRh1n7lpp0ti2/YGVh2BhDxzKipd
-GzkmRLnUvJEFft/6TJZ3kw==
+ebGJTtqQR2hhMU9cXRgvIGv/vzXg8dhbfRXmpxI0uAl18ohOomsqR6ck4lxQpsIn
+FWuqSq8XC6zV56Ybk16Dzcara3kzgcIKHLPQTkQKV13L/cL55INTkXERyzkGdFiV
+0qM5/jzncyHNCzMpvGfMZKGQMLOOYC9FVeGwrqL1zoIN1wI8wdDAVCs41KfWEYdq
+C7yagi/wr4FgekUWAg73bdQvXpVqpTtBq+iPkHLvQygPfKmASkVE9KLeil8OzN1S
+j5//D7uhuQBRV108kdzKnsl314fseJxC25dYfSc6pIHG4Xdwd0CJV/mr2uA5Lrkh
+zTZmgF2BeKF3okj60BCKNg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-PuetMONu71Zi1ykpwoiurGZ5lxo7o9wxPFWl8vkHkg/zpbNJG+XyNnfl2PALdNrI
-L5Hj0mIX3/WI7vX8Lg6DksRPmzonvrSyvIcxX8hdkmxJ8l1jnXVyYptjNWcCtWQr
-sW8gyhF3Vjdf01mP3c8LGmwElOipPtf7cL35BnQjTv7rt9jG1K5pTxc9Y/voNiYO
-jN4aC7ycV4hKy1CMmUGogvGs8ff6tto11YQAtxvpRRh1hmt0VhGoE5dTQHqbY07f
-FgY98j1ONUITmi3ifx+p3Pc007nWEEOoY0oeS7/dysdRuxKtcUDQMDmEMW8mQwD7
-BVoEMnYgO1MY5cmBq4BrVA==
+VS7vN1w/UzfsdOaNGvrRa1T8JHOvPle2Ose0ndCdsiiU7Lgp/aB2XClgRnR3Z1tM
+JEeDpfggUh5q1mEVEx0FGiYNwGUdAPsZ/vCIyHUeJJwbEzhIz3p6T6PgCglg+RyN
+0bb5HtvtSvmNNAsTYHc+S9P43lZfgipXbldEeh9Z/LXNMq4RsK9MJrgRCuf8Awro
+egIIxiCipiiiIlajewmi3yGQSJIZdaJ0CkPz0utEM5h7no2fmp9SB+LOvwn1bd/U
+FKmKWvbTEiIayDdev1V+h3SwP3dyknR3WK+QH04tnqY85kjrKovpO9UoQbiq8RuI
+a7g48NOoFTiz/p1sHxqdMg==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=640)
 `pragma protect data_block
-ZON6Ow+kj2kc496bQv5Fl7aC4ebT6MYUsQNNse0dgUrbvPVoP3jT7W4D0DVRwmMV
-Z1eaJ9mbVf+d480D+s37PHqmAzQ5eM85xUPY0NoZInIq4JD7d7Xt9CLl3cEDUbnz
-jdh6qCq08ynUMLtofwXy9YYC160FDb9I25iFyttUvDlVAv/5ueHr7e2WGAxWVIUu
-LIVeSMMJTjqJltIasmQzxHn3RlB8RK3hvtzHGGB8xRjf4LporEU8w9RdavPo2Wf0
-YA19jPkYuWQCGyWsBJm37iVFy+HXDuojSPYod4CqZdJKYU4bPalC8fyJhzIRyDIg
-mOXbMONfdxRwSGsMmHdaP4QOdqGp0020PIcryRDIbBEgd7MiFwkeW+YhTq6FdH1B
-9Cbr0dpUPdyMsO1pVlbgQiBI5LAXoLSqEL/90t0EpVWMSEvZo/ltBVouRzWfG1Qs
-4GvwhFugYqL4h2Y55tTUpo2L0wPmccwJ76DGrSywtKLNHv5wQvD6ozcWsXC5lrVn
-cXi0hNJylGDSdLzIQ6TR6PGgdxGyeZxWI/vFx2jdgnrZ3bgEB5svR5avB7QJjdIK
-HbZVFb1mpOM+oMnVReMRXETN2C5bRGGbdZDLUkzYu0omTbeYuEO/6T5hgj6pggpF
-XQZN1oC0YBxj/5sx4S1MLnxm/416bQ8YNgezd2GJinULhhYnyvSO5iXT1itzcZDr
-2TIN8BIcKQ+y8VZeynRBAHDy2EOnZIzcgtUay/7xaB60414t5I3Fjb/y4B/i8VQ9
-zKd1164x8ps8Wa9dA8F1hIE+iqtUyBKGav/Kko4Njj5PMx7+wNuU1t2anmMfqec4
-iGZwVZjM8DrhgUpC7/9mnw==
+gQXD078ezNUS5UNxUPjyx74izi6mAO8wtitMjh/DdISframI8cOfJfX6BmxLYeQQ
+w0OSMEEPrfZ382fw9cyc77sjSqDMRUsIwdxEcFd7NhtLF6WiLo3PiKmk6dz335OI
+d/j8VFNwlsAa6da/IRLVvvGMvoXQXsdfCpnHRhA4LpLrNkLgMn5PyB/GgASQWXaO
+DoMHp0GRzI21DB5n3sDe/iy1KQTxTq/R0U6sQ74ulWaON4ikDgT6o/hcc5/XrYOo
+9CABLYTG8xZhWQvJd42xnf9THTwewr73ux22gNtHcf4ldZKL27c7UH9vD3b7S3PW
+NX8VMK9g0t4J8CEDYk/UsprjMQynAN6b1RGhxNYFFhLVLjuo51uzmHxL8lx/si6d
+ntMVSa4rWiBJ8h0OVet5aOdhyldb30Adaw9B+q3nl/Q/Dvyz1iSxyqDlehfZqXGC
+IYoaQmHzuieydQX1C7mE8LPDsCkQAsm6Q2Umyad1+9dAHrRxF/bRGMhulW+T/ocB
+eG5B9MXePnvlD5CXPFEmTxGeCfNIIpt5aSwzXf4bSfgy6TPoV7PnRa6Bt76DPb5f
++EUHc/URZAHyTMOJlnlmhjdjrkTrqA/zQ+t+ntwiEq4UdJueH0tWvhWbwW1EAC9k
+z9awvTMSsCe+Zr/Hbwt3fLwOlYE7qZH3J1VSg4NIrF5n/w5x9P54BwrZS31dXSQ8
+A+TLTLpo/YHLNTnVigRYdK3nyJaKYpAWaVPYuILhUofpTvqou3O70z015FvlNHTe
+ie8Euy0ZkscyLA2xQfqzmYVZmWnfYw+zRskSAQUH8etXyaUKc1lleM9ERXV3ALmP
+UZu+t09QLr5+fIyokwmXiw==
 
 `pragma protect end_protected
 endmodule
@@ -2747,6 +2756,28 @@ module DDR_MEM_1_ba_o_pad_0__bb_inst_IOL ( output DOUT, input SCLKOUT, TXDATA0,
 
   ODDRX1_B 
     \DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt/DDR_BA[0].DDR_BA_X2.u_BA_ODDRX1 
+    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
+    .Q(DOUT));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (SCLKOUT => DOUT) = (0:0:0,0:0:0);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
+    $width (posedge SCLKOUT, 0:0:0);
+    $width (negedge SCLKOUT, 0:0:0);
+  endspecify
+
+endmodule
+
+module DDR_MEM_1_addr_o_pad_13__bb_inst_IOL ( output DOUT, input SCLKOUT, 
+    TXDATA0, TXDATA1 );
+  wire   GNDI, TXDATA0_dly, SCLKOUT_dly, TXDATA1_dly;
+
+  ODDRX1_B 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt/DDR_ADDR[13].DDR_ADDR_X2.u_ADDR_ODDRX1 
     ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
     .Q(DOUT));
   gnd DRIVEGND( .PWR0(GNDI));
@@ -5164,7 +5195,7 @@ module PLL_1_inst_lscc_pll_inst_gen_no_refclk_mon_u_PLL_PLL_inst ( input
     LMMIWRRDN, PLLRESET, REFCK, STDBY, PLLPDN, ROTDEL, DIRDEL, ROTDELP1, 
     GRAYTEST0, GRAYTEST1, GRAYTEST2, GRAYTEST3, GRAYTEST4, BINTEST0, BINTEST1, 
     DIRDELP1, GRAYACT0, GRAYACT1, GRAYACT2, GRAYACT3, GRAYACT4, BINACT0, 
-    BINACT1, OPCGLDCK, SCANRST, SCANCLK, output CLKOP, CLKOS );
+    BINACT1, OPCGLDCK, SCANRST, SCANCLK, output CLKOP, CLKOS, CLKOS2 );
   wire   VCCI, LMMICLK_NOTIN, GNDI, LMMIOFFSET0_dly, LMMICLK_dly, 
          LMMIOFFSET1_dly, LMMIOFFSET2_dly, LMMIOFFSET3_dly, LMMIOFFSET4_dly, 
          LMMIOFFSET5_dly, LMMIOFFSET6_dly, LMMIREQUEST_dly, LMMIWDATA0_dly, 
@@ -5174,8 +5205,8 @@ module PLL_1_inst_lscc_pll_inst_gen_no_refclk_mon_u_PLL_PLL_inst ( input
   PLL_CORE_B \PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst ( 
     .CIBDIR(CIBDIR), .CIBDSEL2(CIBDSEL2), .CIBDSEL1(CIBDSEL1), 
     .CIBDSEL0(CIBDSEL0), .CIBLDREG(CIBLDREG), .CIBROT(CIBROT), .CLKOP(CLKOP), 
-    .CLKOS(CLKOS), .CLKOS2(), .CLKOS3(), .CLKOS4(), .CLKOS5(), .ENEXT(VCCI), 
-    .ENCLKOP(ENCLKOP), .ENCLKOS(ENCLKOS), .ENCLKOS2(ENCLKOS2), 
+    .CLKOS(CLKOS), .CLKOS2(CLKOS2), .CLKOS3(), .CLKOS4(), .CLKOS5(), 
+    .ENEXT(VCCI), .ENCLKOP(ENCLKOP), .ENCLKOS(ENCLKOS), .ENCLKOS2(ENCLKOS2), 
     .ENCLKOS3(ENCLKOS3), .ENCLKOS4(ENCLKOS4), .ENCLKOS5(ENCLKOS5), 
     .FBKCK(FBKCK), .INTFBK5(), .INTFBK4(), .INTFBK3(), .INTFBK2(), .INTFBK1(), 
     .INTFBK0(), .INTLOCK(), .LEGACY(LEGACY), .LEGRDYN(), 
@@ -5208,8 +5239,10 @@ module PLL_1_inst_lscc_pll_inst_gen_no_refclk_mon_u_PLL_PLL_inst ( input
   specify
     (FBKCK => CLKOP) = (0:0:0,0:0:0);
     (FBKCK => CLKOS) = (0:0:0,0:0:0);
+    (FBKCK => CLKOS2) = (0:0:0,0:0:0);
     (REFCK => CLKOP) = (0:0:0,0:0:0);
     (REFCK => CLKOS) = (0:0:0,0:0:0);
+    (REFCK => CLKOS2) = (0:0:0,0:0:0);
     $width (posedge LMMICLK, 0:0:0);
     $width (negedge LMMICLK, 0:0:0);
     $setuphold 
@@ -5303,7 +5336,7 @@ module PLL_CORE_B ( input CIBDIR, CIBDSEL2, CIBDSEL1, CIBDSEL0, CIBLDREG,
   defparam INST10.DYN_SOURCE = "STATIC";
   defparam INST10.ENCLK_CLKOP = "ENABLED";
   defparam INST10.ENCLK_CLKOS = "ENABLED";
-  defparam INST10.ENCLK_CLKOS2 = "DISABLED";
+  defparam INST10.ENCLK_CLKOS2 = "ENABLED";
   defparam INST10.ENCLK_CLKOS3 = "DISABLED";
   defparam INST10.ENCLK_CLKOS4 = "DISABLED";
   defparam INST10.ENCLK_CLKOS5 = "DISABLED";
@@ -5356,8 +5389,8 @@ module PLL_CORE_B ( input CIBDIR, CIBDSEL2, CIBDSEL1, CIBDSEL0, CIBLDREG,
   defparam INST10.TRIMOS5_BYPASS_N = "BYPASSED";
   defparam INST10.V2I_KVCO_SEL = "60";
   defparam INST10.V2I_PP_RES = "9K";
-  defparam INST10.CLKMUX_FB = "CMUX_CLKOP";
-  defparam INST10.SEL_FBK = "FBKCLK0";
+  defparam INST10.CLKMUX_FB = "CMUX_CLKOS2";
+  defparam INST10.SEL_FBK = "FBKCLK2";
   defparam INST10.INTFBKDEL_SEL = "DISABLED";
   defparam INST10.PMU_WAITFORLOCK = "ENABLED";
   defparam INST10.REF_OSC_CTRL = "3P2";
@@ -5367,13 +5400,13 @@ module PLL_CORE_B ( input CIBDIR, CIBDSEL2, CIBDSEL1, CIBDSEL0, CIBLDREG,
   defparam INST10.SIM_FLOAT_PRECISION = "0.1";
   defparam INST10.DELA = "8";
   defparam INST10.DELB = "2";
-  defparam INST10.DELC = "7";
+  defparam INST10.DELC = "8";
   defparam INST10.DELD = "7";
   defparam INST10.DELE = "7";
   defparam INST10.DELF = "7";
   defparam INST10.DIVA = "8";
   defparam INST10.DIVB = "2";
-  defparam INST10.DIVC = "7";
+  defparam INST10.DIVC = "8";
   defparam INST10.DIVD = "7";
   defparam INST10.DIVE = "7";
   defparam INST10.DIVF = "7";
@@ -5548,6 +5581,21 @@ module DDR_MEM_1_ba_o_0_ ( input PADDO, output DDRMEM1bao0 );
     (PADDO => DDRMEM1bao0) = (0:0:0,0:0:0);
     $width (posedge DDRMEM1bao0, 0:0:0);
     $width (negedge DDRMEM1bao0, 0:0:0);
+  endspecify
+
+endmodule
+
+module DDR_MEM_1_addr_o_13_ ( input PADDO, output DDRMEM1addro13 );
+  wire   GNDI;
+
+  SEIO18_CORE0006 \DDR_MEM_1_addr_o_pad[13].bb_inst ( .I(PADDO), .DOLP(GNDI), 
+    .B(DDRMEM1addro13), .O(), .INLP(), .T(GNDI), .INADC());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => DDRMEM1addro13) = (0:0:0,0:0:0);
+    $width (posedge DDRMEM1addro13, 0:0:0);
+    $width (negedge DDRMEM1addro13, 0:0:0);
   endspecify
 
 endmodule
@@ -5799,126 +5847,126 @@ endmodule
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-Cjqzs37J4gAbLL6oWpc2PgkO3n5Ab9kJKaN0JjMljdwQ9MdkjpxBk4ET8zuqmF3h
-1YtVtaQou2lfEnl/FgEVvXb/JzxcH9cT45ZjWiwWZkoWUDaZq4SxwW6315DwXb1+
-RQg3JCMCenq/C9IvzfV59eJnw/j0/wl69PTHYLuTXOc7TynwpK8/cs5I8igcmOkL
-P1jbbW9BWosBzH5ymcKZ1RNPN2/ka3N6h95yED/6JyU/9/gFRueTXRuydFjA/eIA
-Pnxgq5MRnbBDZ5d4y62in+RZ5ShrZ3dfAGQa6c28p7OH2ZxKt2WvgbGLlPz52zxl
-x6d1HPmDMZmt+rkrH1yz0Q==
+qDQATGbuQy1G31wyulC9GCgeIA8tdy5NprIEJzt+S6YcZKx/HBie+meeIZ8wMjET
+qikG5hmSVrjJbf61PYonngAry5i8Qmw2NN/nwV5cW6OCfv+LwnZW0yvokhMksltw
+wuho/tdrxHNfNRNbqIgxQi2Byez2hYPcWRaX+LyaRZam4i4AV53kxzz0aE7nPCEj
+xjvGkBNvc3wFboXo78nl4Z89bPH+em4x5EA0wz28/uSyPg6xeqltE6kHyL2BM9KA
+Q57j5zv5zcdISXQizOKJoIJ/2u5nZdVKJbjE0mFFVxCh/6JBQ/SRLJ6i48GC97Ed
+uzsHrv5XAs06ngO6nkkiTw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-t/LbMCXicoOqr9MvO0THItoY21JmRy2XSlP1Etys+FDbMSxzBL/KVSZ2rAQO4t0W
-xn/sCb2Sv2yqHdpYH4+BzELDso5ZUl6fIIW9DMGizKvc3p8DCKEON3PlTy/NCvMO
-WzmvJnRw2G3wAuWSmkTJduwN+OsT2bKfzEpMan9UAuVXnLJ8XXWPtF5t4wqXIbis
-r0j5GtWhi97AL2tgQuPH8FUg3PIlXcCnX3TNdql7iiLXbj274SZWRPbZLZvbJ7dS
-J6OpG5KrAWqR8oNM03Ws211wjnc4EOl2GdGkqBIVM/LlNjc6v+1UZPXc3PI3WxHh
-pBNazxEvcEbAJWsp3GusPDmh0HVbcgT2kRUc8fyENqdfxjn+Du69iFG503bEUOWh
-4HHn4khrRmaYzV80v19NUiFQkUZqPO9Du7k03ioww6ngMzjYIjzQuJrgR4Y9naXH
-Qev3wI21f4/sOo6qZEq3u7FGHdg+A3bCeGeRcZpiikwCzL4TnnZ1fV4v/2Ot7GSB
+cc5MoyG+JlEwgjKzcERAJOCjdhIlBvlglnFGhbStXIUlh9F+nJgg49u5CZiQOCsN
+Ccedl373/sS+64PDfV7Ikw5OymBCK1B5k9sVXmqd7stJfdKGFICPipHhnKmyTaMr
+tz+LchbIIvxPrAG37cTXyzO5OH02udcu5YX9pnJQw5MAvJ/6Rd/3boFtZZhybu19
+lQJaDMa3rg31J/h/U1s/BtCXQIRB3LFaEN1UInVFk8f1y4XCpeJkG8BSc1rIIuRt
+fPupGJBExiaP7O/Lyn5oFrKnwpGYu0Hxkqn3YYsVAZHlF7D0sJOJsLxhU92OrFnk
+/cV+tFKZSDtvhmjYZg0DIKfu9SFZO2fUN+vL79U0Bnbc9Drgit2gXhZYdZyDl0Zx
+Yylbe5FX5sa+rrkmNLpz+j/2eMQKd05x5s5qh45kMyTgYW44ZJneFyaeWdYABo+i
+ileX+J4n/KgID0+u37e1E/cEU6iJDYpErPhFxGQtehqDu9/roTY/JKUTPNcCgpwl
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-AZI2CEZpgtbAXPI0/J8tdZE4NYl6KqiUFab31CeqpIUgEkRu/5CdfwN1StqUmu1o
-BiyIMHsoId8dS7kd1KgbnxGphEosGh8Hioqw6vNfnwrLKtrewFbXmC3iwRx/bJW9
-gOZljKLWnGMMOnZIjzBFMLS+Mr6jdQmenvXsmfYeLd6LCX7udG4RqrCmqpM4x/jD
-p/prs1t7W7RMOnVUulrRWqq9Xc+b7JSRWWNaybjTjOysFKoJ5ZpiNMZci31oOOON
-VQgvnfOPnjb6eZdNLlpBK1qtZlcbHE62VgrAIsatxlpk15RiUk7Shh+IvWlkJFOY
-vzN32U2rWAuwFJ72riNtEA==
+R6pPKiUP+4DcNeSM6PU9cPthoHgtv7Mmr6e/+1Uq1vqkFINo0WoSntddV8/TxmWV
+3kENkF+3utqS58np92rUD6mjoC9MIEnuCJjB2QcoulihpaJTXCJ1EkwxcRIQEGJJ
+dQNcFI3KWBRcTARDLi6aJe5IhG9CaxGoYZZTFQ2sT3LFzG/iJtepzXT0bBvPgNjr
+Dgt20U7fG28YP8glJ1MzPWq4as+gjo5BpCVQDTH3ticTYtpX+Wik26wRtqmlKW0K
+n9VEfxsXEWgsUAJ9EC4DGBIzM1RI/yJCPuMkoHMPmot3vy07oG8XBT58grHVu7Fr
+jPapJfvRjSZtGQzd0Q0MkQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-Nx9nKkjTFZRGdXAVyZI+g2gAAnd/VVggSJwvgeLYIgpVaffp8GJWPD2n6INcmcHd
-/0bNXIFMV41VxRDB7FOM8RzkrY0oimRdIirDlsPpqvw6e8Uq/0a/gzZ82FjbuLtm
-huhJjdPp2VJ67jE24EuOoZFevG8sllSPlOuFBJPnwPc=
+OCeQ3pzpZ4oAQwnGz+JNAQnumgnxLnx5y4UZONHdu/g3uY5DaaL0hdDXSO9n4I/3
+SlfhUVmAzyqUd/RhexIfksM8ts5aLZcOaECM110DzfLtDhnQWAMDZTXtFvez2vZm
+SaeUIunQp9K5mqu2fiDZXwMy7aC2GwhtuSgDlAbj0uA=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-arFrtEdKr0AxLFsvTTKG2uTxrJ5GZGpgxLWN8/cKiLt2GHOpidL757KY/kI5LLGq
-V+/F4Zz8Bsb09ebNfirqxLipAhGIzg1lKYFanvSiBMFhJHvLKMHNb4GyvPPGKHtu
-ivsMJCfbLuowEAiU5PvZ/RvCosywNIghVykPD8P7KOOToJD0lVLt5zruGYS58k7u
-pQh9M2nHZNDLe5wdqgo61okwTt6lSIWy9xKMiwQh37B/+Jkov7zS1NK9gPZaQik6
-OmgVpTFq9tqKFq7jEgRUqcNWi+b2KQY4BDhVDab0MpqZcs/ghR2UZSVHfmTKGpnn
-3F39Dr4BpJnwvH0JOEJdcA==
+k+yUAi1x4MYS5AJNP37c9VTzWGpebDLTf6qnooe8BNOKncL7yopezJLErG4dBBid
+ZaYGEEPBoUpkd2PjnGERUKfHDbvukXVl/w4HmD9qYuB/FD/42AYQCJVRO2twhaQd
+hw0NNi0OoB+15/HUSVEyfryHtUOj9lLG4AKGUDwMeDBFB2Bu/DkPciY4q+oAel5N
+xzDh3bDktpclcIaRvvnu9OrU0DjkGKMVrzmn50G+ocnu+gW2IESz21iEkuN5ZI+s
+XFMMacHT6OsOBj9Wp3SsNLr2RwvQbIWZoSvYmS5/MHrWqZLnEmMiBt7Q/YP948+I
+VtUMn+hEYEFxt3op2UEqtQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-O6yWE4ccfAPuTrqPM/AJ+4ltBcNpjnkSxDPm8K7M/4nF/InNgrscEQZGozp0lGxH
-TNrHsJvrOxowHzmrPR9pPi6555etXBBmoPYa1jvXk8vfkkb4YVn5EBIKsfTrr7hQ
-pNpX2FJYsMgOZZgta7ksQtG5i77C1E/fnVwp7y4SJrw4j+yeAlMIzzqAYwNktzrI
-2ARwnoDNnnJ7FupP5b5Ah90GEuXrEHCLi/V09eh8yE3h40YOf08N5rLDgcYZwjDG
-B44XKLyuq9HeT2nEDpGIHznMY1W1pzt/qWK50UPeFwfVaX72JnFkW5Ed4xbDdsjE
-Xz/SbZP5HcS1Odk2loMxMw==
+hDDBczCr5UT5f4U5XZWXYeYJfRP4oK+F3lkLzdvK6DR8/spFnzHdMWCMs7/Z1L+V
+qS2lPIjcpNTNSaoDBMKjFuzFFXgIDY3uqySitPCysjVlhhIc5+3Iu5/YEHuFhhGT
+/7sAkS8PzGL7g18WeRjj60nM+vqn+9MFO0YAlrd2AX/jktCbalREhbWUX+2UEtbL
+dOBQMgG36HkUW3HuMqpbrvaX/URAHS6yvqzkFCRrKJFLLg+WcGkXsjHAiY/Kdlqg
+KOUKMmKdbkiS264XcZtZ3ZAai18PNcKcoazruP+jC7FSyQdVmlASuCV2x61PP7Zi
+9tgC2meW/CfghpL80N5Afg==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=2496)
 `pragma protect data_block
-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
+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
 
 `pragma protect end_protected

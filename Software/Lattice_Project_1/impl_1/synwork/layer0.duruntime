@@ -1,24 +1,6 @@
 Runtime Summary:
 ================
 
-	* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
-		Hardware Generation Phase   : 0h:00m:02s
-
-	* Library: work, DesignUnit: DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
-		Hardware Generation Phase   : 0h:00m:05s
-
 	The following design units have negligible CPU times:
 	=====================================================
 		* Library: work, DesignUnit: main
@@ -117,29 +99,37 @@ Runtime Summary:
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_clock_divider_24s_2s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: MIPI_DPHY_1
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DPHY_Z6_layer0
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_clock_divider_24s_2s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DDR_MEM_1
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_13s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_14s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DDR_MEM_1_ipgen_common_logic_2s_2
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DDR_MEM_1_ipgen_mem_sync
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: PLL
-			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx_Z8_layer0
-			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx_Z5_layer0
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: ODDRX2
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
@@ -163,17 +153,9 @@ Runtime Summary:
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DQSBUF
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0
-			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: DDRDLL
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: ECLKSYNC
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: ECLKDIV
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: MIPI_DPHY_2_ipgen_lscc_mipi_dphy_Z7_layer0
-			Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: MIPI_DPHY_1_ipgen_lscc_mipi_dphy_Z4_layer0
-			Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0
-			Optimization Phase: Negligible CPU time

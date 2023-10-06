@@ -6,16 +6,20 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: U-2023.03LR-1
-Install: C:\lscc\radiant\2023.1\synpbase
-OS: Windows 10 or later
-Hostname: DESKTOP-TOAOPO9
+Install: /home/timothyjabez/lscc/radiant/2023.1/synpbase
+OS: Ubuntu 22.04.3 LTS
+Hostname: timothyjabez-MS-7D99
+max virtual memory: unlimited (bytes)
+max user processes: 127149
+max stack size: 8388608 (bytes)
+
 
 Implementation : impl_1
 
-# Written on Mon Oct  2 17:36:16 2023
+# Written on Fri Oct  6 02:06:15 2023
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\Lattice_Project_1_impl_1_cpe.ldc"
+Constraint File(s):      "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1_cpe.ldc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################

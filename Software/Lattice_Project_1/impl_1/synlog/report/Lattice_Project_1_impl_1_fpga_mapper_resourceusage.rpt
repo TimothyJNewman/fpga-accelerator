@@ -3,7 +3,7 @@ Part: lifcl_40-7
 
 Register bits: 0 of 32256 (0%)
 PIC Latch:       0
-I/O cells:       46
+I/O cells:       47
 
 Details:
 BB:             23
@@ -15,8 +15,8 @@ DQSBUF:         2
 ECLKDIV:        1
 ECLKSYNC:       1
 GSR:            1
-OB:             23
-ODDRX1:         21
+OB:             24
+ODDRX1:         22
 ODDRX2:         1
 ODDRX2DQ:       16
 ODDRX2DQS:      2
@@ -45,4 +45,4 @@ Total number of LRAMs: 0 + 0 = 0 of 2 (0.00%)
 Total number of DSPs: 0 + 0 = 0 of 56 (0.00%)
 Total number of Distributed RAMs: 0 + 0 = 0 
 Total number of Carry Chains: 0 + 0 = 0 
-Total number of BlackBoxes: 102 + 0 = 102 
+Total number of BlackBoxes: 103 + 0 = 103 

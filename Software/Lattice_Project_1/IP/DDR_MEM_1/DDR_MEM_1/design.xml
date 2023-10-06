@@ -216,7 +216,7 @@
                     <ipxact:configurableElementValue referenceId="V2I_KVCO_SEL">60</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="V2I_1V_EN">ENABLED</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="NUM_DDRCLK">1</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ADDR_WIDTH">13</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDR_WIDTH">14</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="NUM_CS">1</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="NUM_ODT">1</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="NUM_CKE">1</ipxact:configurableElementValue>
@@ -1937,7 +1937,7 @@
                 <ipxact:externalPortReference portRef="addr_din0_i">
                     <ipxact:partSelect>
                         <ipxact:range>
-                            <ipxact:left>12</ipxact:left>
+                            <ipxact:left>13</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:range>
                     </ipxact:partSelect>
@@ -1951,7 +1951,7 @@
                 <ipxact:externalPortReference portRef="addr_din1_i">
                     <ipxact:partSelect>
                         <ipxact:range>
-                            <ipxact:left>12</ipxact:left>
+                            <ipxact:left>13</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:range>
                     </ipxact:partSelect>
@@ -2700,7 +2700,7 @@
                 <ipxact:externalPortReference portRef="addr_o">
                     <ipxact:partSelect>
                         <ipxact:range>
-                            <ipxact:left>12</ipxact:left>
+                            <ipxact:left>13</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:range>
                     </ipxact:partSelect>

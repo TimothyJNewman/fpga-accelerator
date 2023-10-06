@@ -5,7 +5,7 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
-<data>C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\Lattice_Project_1_impl_1_premap.srr</data>
+<data>/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synlog/Lattice_Project_1_impl_1_premap.srr</data>
 <title></title>
 </report_link>
 <job_status>
@@ -15,32 +15,32 @@ The file contains the job information from mapper to be displayed as part of the
 <info name="Notes">
 <data>16</data>
 <report_link name="more">
-<data>C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\report\Lattice_Project_1_impl_1_premap_notes.txt</data>
+<data>/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synlog/report/Lattice_Project_1_impl_1_premap_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
 <data>38</data>
 <report_link name="more">
-<data>C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\report\Lattice_Project_1_impl_1_premap_warnings.txt</data>
+<data>/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synlog/report/Lattice_Project_1_impl_1_premap_warnings.txt</data>
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
-<data>C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synlog\report\Lattice_Project_1_impl_1_premap_errors.txt</data>
+<data>/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synlog/report/Lattice_Project_1_impl_1_premap_errors.txt</data>
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:13s</data>
+<data>0h:00m:01s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:13s</data>
+<data>0h:00m:01s</data>
 </info>
 <info name="Peak Memory">
-<data>217MB</data>
+<data>297MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1696264587</data>
+<data type="timestamp">1696554376</data>
 </info>
 </job_info>
 </job_run_status>

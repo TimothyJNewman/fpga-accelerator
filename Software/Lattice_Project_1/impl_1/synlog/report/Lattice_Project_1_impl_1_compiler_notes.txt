@@ -1,304 +1,307 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
+@N|stack limit increased to max
 @N:Can't find top module!
-@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.1\ip\pmi\pmi_lifcl.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file '/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd'.
 @N|Running in 64-bit mode
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1876:29:1876:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1881:29:1881:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1912:33:1912:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1949:29:1949:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1954:29:1954:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1984:33:1984:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2504:29:2504:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2509:29:2509:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2540:33:2540:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2544:33:2544:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2577:29:2577:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2582:29:2582:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2613:33:2613:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2617:33:2617:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3104:29:3104:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3109:29:3109:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3140:33:3140:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3144:33:3144:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3177:29:3177:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3182:29:3182:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3213:33:3213:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3217:33:3217:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":969:25:969:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":975:25:975:36|Read directive translate_on.
-@N: CG347 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1876:29:1876:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1881:29:1881:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1912:33:1912:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1949:29:1949:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1954:29:1954:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1984:33:1984:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2504:29:2504:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2509:29:2509:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2540:33:2540:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2544:33:2544:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2577:29:2577:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2582:29:2582:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2613:33:2613:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2617:33:2617:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3104:29:3104:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3109:29:3109:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3140:33:3140:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3144:33:3144:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3177:29:3177:41|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3182:29:3182:40|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3213:33:3213:45|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3217:33:3217:44|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
-@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":969:25:969:37|Read directive translate_off.
-@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":975:25:975:36|Read directive translate_on.
-@N: CG347 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":3574:7:3574:13|Synthesizing module ECLKDIV in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":3593:7:3593:14|Synthesizing module ECLKSYNC in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":680:7:680:30|Synthesizing module DDR_MEM_1_ipgen_mem_sync in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1518:7:1518:12|Synthesizing module DDRDLL in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1016:7:1016:34|Synthesizing module DDR_MEM_1_ipgen_common_logic in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2988:7:2988:34|Synthesizing module DDR_MEM_1_ipgen_lscc_ddr_mem in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":3190:7:3190:12|Synthesizing module DQSBUF in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1190:7:1190:36|Synthesizing module DDR_MEM_1_ipgen_dq_dqs_dm_unit in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1001:7:1001:8|Synthesizing module BB in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5902:7:5902:15|Synthesizing module ODDRX2DQS in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":11112:7:11112:13|Synthesizing module TSHX2DQ in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":11101:7:11101:14|Synthesizing module TSHX2DQS in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":1553:7:1553:12|Synthesizing module DELAYB in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":4051:7:4051:14|Synthesizing module IDDRX2DQ in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5915:7:5915:14|Synthesizing module ODDRX2DQ in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2406:7:2406:34|Synthesizing module DDR_MEM_1_ipgen_moshx2_4_csn in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":6193:7:6193:11|Synthesizing module OSHX2 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2535:7:2535:47|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5893:7:5893:12|Synthesizing module ODDRX1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2904:7:2904:33|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_ck in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":5928:7:5928:12|Synthesizing module ODDRX2 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":11:7:11:15|Synthesizing module DDR_MEM_1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5306:7:5306:38|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_dphy in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":657:7:657:44|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":269:7:269:42|Synthesizing module MIPI_DPHY_1_ipgen_lscc_clock_divider in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":11:7:11:17|Synthesizing module MIPI_DPHY_1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5326:7:5326:38|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_dphy in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1635:7:1635:44|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":289:7:289:42|Synthesizing module MIPI_DPHY_2_ipgen_lscc_clock_divider in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":11:7:11:17|Synthesizing module MIPI_DPHY_2 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_1\I2C_DPHY_1\rtl\I2C_DPHY_1.v":11:7:11:16|Synthesizing module I2C_DPHY_1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\I2C_DPHY_2\I2C_DPHY_2\rtl\I2C_DPHY_2.v":11:7:11:16|Synthesizing module I2C_DPHY_2 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":161:7:161:26|Synthesizing module PLL_1_ipgen_lscc_pll in library work.
-@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\lucent\lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":11:7:11:11|Synthesizing module PLL_1 in library work.
-@N: CG364 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\source\impl_1\main.v":1:7:1:10|Synthesizing module main in library work.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":262:10:262:20|Input usr_fbclk_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":286:10:286:20|Input refdetreset is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":299:10:299:19|Input apb_pclk_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":300:10:300:23|Input apb_preset_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":301:15:301:27|Input apb_penable_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":302:15:302:24|Input apb_psel_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":303:15:303:26|Input apb_pwrite_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":304:21:304:31|Input apb_paddr_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\PLL_1\PLL_1\rtl\PLL_1.v":305:21:305:32|Input apb_pwdata_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2904:30:2904:45|Input almost_full_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2905:30:2905:49|Input almost_full_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2906:30:2906:46|Input almost_empty_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2907:30:2907:50|Input almost_empty_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":259:26:259:30|Input clk_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":260:26:260:30|Input rst_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2904:30:2904:45|Input almost_full_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2905:30:2905:49|Input almost_full_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2906:30:2906:46|Input almost_empty_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":2907:30:2907:50|Input almost_empty_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":259:26:259:30|Input clk_i is unused.
-@N: CL159 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":260:26:260:30|Input rst_i is unused.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[30] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[29] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[28] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[27] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[26] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[25] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[24] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[23] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[22] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[21] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[20] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[19] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[18] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[17] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[16] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[15] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[14] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[13] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[12] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[11] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[10] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[9] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[8] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[7] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[6] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[5] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[4] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[3] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[2] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":327:4:327:9|Register bit count[1] is always 0.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1779:15:1779:25|Input pll_clkop_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1780:15:1780:25|Input pll_clkos_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1781:15:1781:24|Input pll_lock_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1783:15:1783:24|Input hs_tx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1784:15:1784:28|Input hs_tx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1788:15:1788:24|Input lp_tx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1789:34:1789:47|Input lp_tx_data_p_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1790:34:1790:47|Input lp_tx_data_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1791:15:1791:29|Input lp_tx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1792:15:1792:27|Input lp_tx_clk_p_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1793:15:1793:27|Input lp_tx_clk_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1795:15:1795:24|Input lp_rx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":1801:15:1801:28|Input txclk_hsgate_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5503:15:5503:28|Input hs_rx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5504:15:5504:29|Input hs_rx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5505:15:5505:24|Input hs_rx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_2\rtl\MIPI_DPHY_2.v":5506:15:5506:30|Input hs_data_des_en_i is unused.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[30] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[29] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[28] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[27] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[26] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[25] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[24] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[23] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[22] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[21] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[20] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[19] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[18] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[17] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[16] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[15] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[14] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[13] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[12] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[11] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[10] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[9] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[8] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[7] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[6] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[5] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[4] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[3] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[2] is always 0.
-@N: CL189 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":307:4:307:9|Register bit count[1] is always 0.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":684:15:684:27|Input lmmi_resetn_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":693:15:693:24|Input pll_lock_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":695:15:695:28|Input hs_rx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":696:15:696:29|Input hs_rx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":697:15:697:30|Input hs_data_des_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":698:15:698:24|Input hs_rx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":702:15:702:24|Input lp_rx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":708:15:708:24|Input lp_tx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":709:15:709:28|Input lp_tx_data_p_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":710:15:710:28|Input lp_tx_data_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":711:15:711:29|Input lp_tx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":712:15:712:27|Input lp_tx_clk_p_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":713:15:713:27|Input lp_tx_clk_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":717:15:717:24|Input usrstdby_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5478:15:5478:24|Input hs_tx_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5479:15:5479:28|Input hs_tx_clk_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5480:36:5480:47|Input hs_tx_data_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5481:15:5481:29|Input hs_tx_data_en_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5503:15:5503:25|Input pll_clkop_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5504:15:5504:25|Input pll_clkos_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\MIPI_DPHY_1\rtl\MIPI_DPHY_1.v":5517:15:5517:28|Input txclk_hsgate_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":2564:10:2564:15|Input eclk_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":1240:34:1240:44|Input data_mask_i is unused.
-@N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3517:4:3517:9|Trying to extract state machine for register delay_st_r.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3114:10:3114:21|Input pll_refclk_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3115:10:3115:20|Input pll_rst_n_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3128:10:3128:20|Input pause_cmd_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3129:41:3129:44|Input ca_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3151:35:3151:45|Input data_dqs2_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3152:35:3152:45|Input data_dqs3_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3153:35:3153:45|Input data_dqs4_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3154:35:3154:45|Input data_dqs5_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3155:35:3155:45|Input data_dqs6_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3156:35:3156:45|Input data_dqs7_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3157:35:3157:45|Input data_dqs8_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3160:34:3160:49|Input data_mask_dqs2_i is unused.
-@N: CL159 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":3161:34:3161:49|Input data_mask_dqs3_i is unused.
-@N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Trying to extract state machine for register flag.
-@N: CL201 :"C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\IP\DDR_MEM_1\DDR_MEM_1\rtl\DDR_MEM_1.v":778:4:778:9|Trying to extract state machine for register cs_memsync.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1876:29:1876:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1881:29:1881:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1912:33:1912:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1916:33:1916:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1949:29:1949:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1954:29:1954:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1984:33:1984:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1988:33:1988:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2504:29:2504:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2509:29:2509:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2540:33:2540:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2544:33:2544:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2577:29:2577:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2582:29:2582:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2613:33:2613:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2617:33:2617:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3104:29:3104:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3109:29:3109:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3140:33:3140:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3144:33:3144:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3177:29:3177:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3182:29:3182:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3213:33:3213:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3217:33:3217:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":969:25:969:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":975:25:975:36|Read directive translate_on.
+@N: CG347 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
+@N|stack limit increased to max
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1876:29:1876:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1881:29:1881:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1912:33:1912:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1916:33:1916:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1949:29:1949:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1954:29:1954:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1984:33:1984:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1988:33:1988:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2504:29:2504:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2509:29:2509:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2540:33:2540:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2544:33:2544:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2577:29:2577:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2582:29:2582:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2613:33:2613:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":2617:33:2617:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3104:29:3104:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3109:29:3109:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3140:33:3140:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3144:33:3144:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3177:29:3177:41|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3182:29:3182:40|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3213:33:3213:45|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":3217:33:3217:44|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":969:25:969:37|Read directive translate_off.
+@N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":975:25:975:36|Read directive translate_on.
+@N: CG347 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
+@N|stack limit increased to max
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":3574:7:3574:13|Synthesizing module ECLKDIV in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":3593:7:3593:14|Synthesizing module ECLKSYNC in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1231:7:1231:30|Synthesizing module DDR_MEM_1_ipgen_mem_sync in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1518:7:1518:12|Synthesizing module DDRDLL in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1567:7:1567:34|Synthesizing module DDR_MEM_1_ipgen_common_logic in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2988:7:2988:34|Synthesizing module DDR_MEM_1_ipgen_lscc_ddr_mem in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":3190:7:3190:12|Synthesizing module DQSBUF in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1744:7:1744:36|Synthesizing module DDR_MEM_1_ipgen_dq_dqs_dm_unit in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1001:7:1001:8|Synthesizing module BB in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5902:7:5902:15|Synthesizing module ODDRX2DQS in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":11112:7:11112:13|Synthesizing module TSHX2DQ in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":11101:7:11101:14|Synthesizing module TSHX2DQS in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1553:7:1553:12|Synthesizing module DELAYB in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":4051:7:4051:14|Synthesizing module IDDRX2DQ in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5915:7:5915:14|Synthesizing module ODDRX2DQ in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2807:7:2807:34|Synthesizing module DDR_MEM_1_ipgen_moshx2_4_csn in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":6193:7:6193:11|Synthesizing module OSHX2 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":761:7:761:47|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5893:7:5893:12|Synthesizing module ODDRX1 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":628:7:628:33|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_ck in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5928:7:5928:12|Synthesizing module ODDRX2 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":11:7:11:15|Synthesizing module DDR_MEM_1 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5306:7:5306:38|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_dphy in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":657:7:657:44|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_wrapper_rx in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":269:7:269:42|Synthesizing module MIPI_DPHY_1_ipgen_lscc_clock_divider in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":11:7:11:17|Synthesizing module MIPI_DPHY_1 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":5326:7:5326:38|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_dphy in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1635:7:1635:44|Synthesizing module MIPI_DPHY_2_ipgen_lscc_mipi_wrapper_tx in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":289:7:289:42|Synthesizing module MIPI_DPHY_2_ipgen_lscc_clock_divider in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":11:7:11:17|Synthesizing module MIPI_DPHY_2 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_1/I2C_DPHY_1/rtl/I2C_DPHY_1.v":11:7:11:16|Synthesizing module I2C_DPHY_1 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/I2C_DPHY_2/I2C_DPHY_2/rtl/I2C_DPHY_2.v":11:7:11:16|Synthesizing module I2C_DPHY_2 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":163:7:163:26|Synthesizing module PLL_1_ipgen_lscc_pll in library work.
+@N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":11:7:11:11|Synthesizing module PLL_1 in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/source/impl_1/main.v":1:7:1:10|Synthesizing module main in library work.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":264:10:264:20|Input usr_fbclk_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":288:10:288:20|Input refdetreset is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":301:10:301:19|Input apb_pclk_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":302:10:302:23|Input apb_preset_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":303:15:303:27|Input apb_penable_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":304:15:304:24|Input apb_psel_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":305:15:305:26|Input apb_pwrite_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":306:21:306:31|Input apb_paddr_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":307:21:307:32|Input apb_pwdata_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2904:30:2904:45|Input almost_full_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2905:30:2905:49|Input almost_full_clr_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2906:30:2906:46|Input almost_empty_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2907:30:2907:50|Input almost_empty_clr_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":259:26:259:30|Input clk_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":260:26:260:30|Input rst_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2904:30:2904:45|Input almost_full_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2905:30:2905:49|Input almost_full_clr_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2906:30:2906:46|Input almost_empty_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":2907:30:2907:50|Input almost_empty_clr_th_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":259:26:259:30|Input clk_i is unused.
+@N: CL159 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v":260:26:260:30|Input rst_i is unused.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[30] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[29] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[28] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[27] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[26] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[25] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[24] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[23] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[22] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[21] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[20] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[19] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[18] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[17] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[16] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[15] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[14] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[13] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[12] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[11] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[10] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[9] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[8] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[7] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[6] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[5] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[4] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[3] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[2] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Register bit count[1] is always 0.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1779:15:1779:25|Input pll_clkop_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1780:15:1780:25|Input pll_clkos_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1781:15:1781:24|Input pll_lock_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1783:15:1783:24|Input hs_tx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1784:15:1784:28|Input hs_tx_clk_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1788:15:1788:24|Input lp_tx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1789:34:1789:47|Input lp_tx_data_p_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1790:34:1790:47|Input lp_tx_data_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1791:15:1791:29|Input lp_tx_data_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1792:15:1792:27|Input lp_tx_clk_p_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1793:15:1793:27|Input lp_tx_clk_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1795:15:1795:24|Input lp_rx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":1801:15:1801:28|Input txclk_hsgate_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":5503:15:5503:28|Input hs_rx_clk_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":5504:15:5504:29|Input hs_rx_data_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":5505:15:5505:24|Input hs_rx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":5506:15:5506:30|Input hs_data_des_en_i is unused.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[30] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[29] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[28] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[27] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[26] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[25] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[24] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[23] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[22] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[21] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[20] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[19] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[18] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[17] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[16] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[15] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[14] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[13] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[12] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[11] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[10] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[9] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[8] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[7] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[6] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[5] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[4] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[3] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[2] is always 0.
+@N: CL189 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Register bit count[1] is always 0.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":684:15:684:27|Input lmmi_resetn_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":693:15:693:24|Input pll_lock_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":695:15:695:28|Input hs_rx_clk_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":696:15:696:29|Input hs_rx_data_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":697:15:697:30|Input hs_data_des_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":698:15:698:24|Input hs_rx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":702:15:702:24|Input lp_rx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":708:15:708:24|Input lp_tx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":709:15:709:28|Input lp_tx_data_p_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":710:15:710:28|Input lp_tx_data_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":711:15:711:29|Input lp_tx_data_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":712:15:712:27|Input lp_tx_clk_p_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":713:15:713:27|Input lp_tx_clk_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":717:15:717:24|Input usrstdby_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5478:15:5478:24|Input hs_tx_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5479:15:5479:28|Input hs_tx_clk_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5480:36:5480:47|Input hs_tx_data_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5481:15:5481:29|Input hs_tx_data_en_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5503:15:5503:25|Input pll_clkop_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5504:15:5504:25|Input pll_clkos_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5517:15:5517:28|Input txclk_hsgate_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":790:10:790:15|Input eclk_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1794:34:1794:44|Input data_mask_i is unused.
+@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Trying to extract state machine for register delay_st_r.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3114:10:3114:21|Input pll_refclk_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3115:10:3115:20|Input pll_rst_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3128:10:3128:20|Input pause_cmd_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3129:41:3129:44|Input ca_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3151:35:3151:45|Input data_dqs2_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3152:35:3152:45|Input data_dqs3_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3153:35:3153:45|Input data_dqs4_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3154:35:3154:45|Input data_dqs5_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3155:35:3155:45|Input data_dqs6_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3156:35:3156:45|Input data_dqs7_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3157:35:3157:45|Input data_dqs8_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3160:34:3160:49|Input data_mask_dqs2_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3161:34:3161:49|Input data_mask_dqs3_i is unused.
+@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Trying to extract state machine for register flag.
+@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Trying to extract state machine for register cs_memsync.
 @N|Running in 64-bit mode
 

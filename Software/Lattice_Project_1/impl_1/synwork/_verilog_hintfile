@@ -1,14 +1,14 @@
 %%% protect protected_file
 #OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi"
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\bin64\\c_vhdl.exe":1685564424
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\location.map":1685564773
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\std.vhd":1685564455
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1685564455
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\std1164.vhd":1685564456
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\numeric.vhd":1685564455
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\umr_capim.vhd":1685564455
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\arith.vhd":1685564455
-#CUR:"C:\\lscc\\radiant\\2023.1\\synpbase\\lib\\vhd\\unsigned.vhd":1685564455
-#CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_lifcl.vhd":1648540488
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/linux_a_64/c_vhdl":1685539351
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/location.map":1685539459
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/std.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/snps_haps_pkg.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/std1164.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/numeric.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/umr_capim.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/arith.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/vhd/unsigned.vhd":1685539337
+#CUR:"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_lifcl.vhd":1648515288
 @E
 @ 

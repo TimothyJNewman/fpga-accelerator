@@ -6,10 +6,10 @@ Command Line: postsyn -a LIFCL -p LIFCL-40 -t CABGA256 -sp 7_High-Performance_1.
    Performance:      7_High-Performance_1.0V
 Reading input file 'Lattice_Project_1_impl_1.vm' ...
 Reading constraint file '/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc' ...
-WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (96) : No port matched 'scl_io'.
-WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (97) : No port matched 'sda_io'.
-WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (98) : No port matched 'scl_io'.
-WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (99) : No port matched 'sda_io'.
+WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (97) : No port matched 'scl_io'.
+WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (98) : No port matched 'sda_io'.
+WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (99) : No port matched 'scl_io'.
+WARNING <1026001> - /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/Lattice_Project_1_impl_1.ldc (100) : No port matched 'sda_io'.
 WARNING <1027013> - No port matched 'scl_io'.
 WARNING <1014301> - Can't resolve object 'scl_io' in constraint 'ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]'.
 WARNING <1027013> - No port matched 'sda_io'.
@@ -26,9 +26,11 @@ WARNING <70001944> - No master clock for
 	generated clock	create_generated_clock -name {PLL_1_clkop_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 1 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] .
 WARNING <70001944> - No master clock for
 	generated clock	create_generated_clock -name {PLL_1_clkos_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 3 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }] .
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {PLL_1_inst/lscc_pll_inst/clkos2_o} -source [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 1 [get_pins {PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS2 }] .
  
 Constraint Summary:
-   Total number of constraints: 49
+   Total number of constraints: 51
    Total number of constraints dropped: 2
    Total number of constraints duplicated: 2
  

@@ -31,8 +31,8 @@ component DDR_MEM_1 is
         dqs1_i: in std_logic_vector(1 downto 0);
         csn_din0_i: in std_logic_vector(0 to 0);
         csn_din1_i: in std_logic_vector(0 to 0);
-        addr_din0_i: in std_logic_vector(12 downto 0);
-        addr_din1_i: in std_logic_vector(12 downto 0);
+        addr_din0_i: in std_logic_vector(13 downto 0);
+        addr_din1_i: in std_logic_vector(13 downto 0);
         ba_din0_i: in std_logic_vector(2 downto 0);
         ba_din1_i: in std_logic_vector(2 downto 0);
         casn_din0_i: in std_logic;
@@ -53,7 +53,7 @@ component DDR_MEM_1 is
         dqs1_io: inout std_logic;
         ck_o: out std_logic_vector(0 to 0);
         csn_o: out std_logic_vector(0 to 0);
-        addr_o: out std_logic_vector(12 downto 0);
+        addr_o: out std_logic_vector(13 downto 0);
         ba_o: out std_logic_vector(2 downto 0);
         casn_o: out std_logic;
         rasn_o: out std_logic;
