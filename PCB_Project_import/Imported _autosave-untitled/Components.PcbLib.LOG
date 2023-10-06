@@ -1,0 +1,59 @@
+Importer Log Report
+Document: C:\Users\timot\Documents\Programming\SpaceSoc\Flight-Computer\Hardware\circuit board design v2.1\Components.pretty
+    Section : Analyze Document from - C:\Users\timot\Documents\Programming\SpaceSoc\Flight-Computer\Hardware\circuit board design v2.1\Components.pretty
+        Warning: Unknown child zone of footprint.
+    EndSection
+    Section : Import Document - C:\Users\timot\Documents\Programming\fpga-accelerator\PCB_Project_import\Imported _autosave-untitled\Components.PcbLib
+        Section : Component REF** importing.
+        EndSection
+        Section : Component IC** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component J** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component G*** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component ANT** importing.
+        EndSection
+        Section : Component REF** importing.
+            Warning: Custom pad '1' shape 'anchor rect' translated to 'eRectangular'
+            Warning: Custom pad '2' shape 'anchor rect' translated to 'eRectangular'
+            Warning: Custom pad '3' shape 'anchor rect' translated to 'eRectangular'
+            Warning: Custom pad '4' shape 'anchor rect' translated to 'eRectangular'
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component Q** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component J** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+        Section : Component REF** importing.
+        EndSection
+    EndSection
