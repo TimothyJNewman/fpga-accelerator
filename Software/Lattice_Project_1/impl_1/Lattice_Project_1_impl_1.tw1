@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.1.200.1
 
-Fri Oct  6 02:08:49 2023
+Sun Oct  8 02:58:39 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -68,10 +68,12 @@ ldc_set_vcc -bank 3 1.5
 ldc_set_vcc -bank 1 3.29999995231628
     Bank 1 voltage: 3.3 V
 ldc_set_vcc -core 1
+ldc_set_vcc -bank 5 1.5
+    Bank 5 voltage: 1.5 V
 
 1.2  Constraint Coverage
 ---------------------------
-Constraint Coverage: 16.3934%
+Constraint Coverage: 17.1875%
 
 
 1.3  Overall Summary
@@ -97,22 +99,22 @@ DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_
                                         |          No required time
 DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[6].u_DQ_BB_IOL/TOUT                           
                                         |          No required time
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/Q                           
-                                        |          No required time
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL/TOUT                           
-                                        |          No required time
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/Q                           
                                         |          No required time
 DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[2].u_DQ_BB_IOL/TOUT                           
                                         |          No required time
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/Q                           
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/Q                           
                                         |          No required time
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL/TOUT                           
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL/TOUT                           
+                                        |          No required time
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/Q                           
+                                        |          No required time
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL/TOUT                           
                                         |          No required time
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing start po |                          
-ints                                    |                        60
+ints                                    |                        62
                                         |                          
 -------------------------------------------------------------------
 
@@ -139,17 +141,17 @@ create_generated_clock,
 -------------------------------------------------------------------
 dqs1_io                                 |                    output
 dq_dqs1_io[6]                           |                    output
-dq_dqs1_io[4]                           |                    output
 dq_dqs1_io[2]                           |                    output
-dq_dqs1_io[0]                           |                    output
-dq_dqs1_io[1]                           |                    output
 dq_dqs1_io[3]                           |                    output
+dq_dqs1_io[4]                           |                    output
+dq_dqs1_io[1]                           |                    output
+dq_dqs1_io[0]                           |                    output
 dq_dqs1_io[5]                           |                    output
 dq_dqs1_io[7]                           |                    output
 dqs0_io                                 |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        54
+Number of I/O ports without constraint  |                        56
                                         |                          
 -------------------------------------------------------------------
 
@@ -239,7 +241,7 @@ Clock Domain Crossing
           Clock PLL_1_clkos_o           |   Worst Time Between Edges   |           Comment            
 ------------------------------------------------------------------------------------------------------
  From DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o                                                              
-                                        |                     2.133 ns |             slack = 2.254 ns 
+                                        |                     2.133 ns |             slack = 2.234 ns 
  From PLL_1_clkop_o                     |                         ---- |                      No path 
  From PLL_1_inst/lscc_pll_inst/clkos2_o |                         ---- |                      No path 
  From PLL_1_clki_i                      |                         ---- |                      No path 
@@ -298,26 +300,26 @@ Clock Domain Crossing
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/SCLK              
+                                         |    2.234 ns 
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/SCLK              
+                                         |    2.234 ns 
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/SCLK}              
-                                         |    2.254 ns 
+                                         |    2.234 ns 
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2/SCLK}              
-                                         |    2.255 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
+                                         |    2.235 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
+                                         |    2.328 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
+                                         |    2.328 ns 
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
+                                         |    2.328 ns 
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
+                                         |    2.328 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    2.348 ns 
+                                         |    2.328 ns 
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}              
-                                         |    2.348 ns 
+                                         |    2.328 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -341,14 +343,14 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/SCLK}  (IOLOGIC_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.354 ns 
 Setup Constraint : 2.133 ns 
-Path Slack       : 2.254 ns  (Passed)
+Path Slack       : 2.234 ns  (Passed)
 
 
 Source Clock Path
@@ -366,24 +368,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  0.774  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
+                                                          NET DELAY          0.970                  1.744  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
-{DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/SCLK}
-                                                                             0.000                  3.229  1       
+                                                          NET DELAY          1.170                  3.269  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/SCLK
+                                                                             0.000                  3.269  1       
 
 
 Destination Clock Path
@@ -402,23 +404,183 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  2.908  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
-{DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/ECLK}
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.625)                  5.483  
+                                                          NET DELAY          0.970                  3.878  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/ECLK
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.625)                  5.503  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.483  
-Arrival Time                                                                                     -(3.229)  
+Required Time                                                                                       5.503  
+Arrival Time                                                                                     -(3.269)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.254  
+Path Slack  (Passed)                                                                                2.234  
 
 
 
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
+Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
+Destination Clock: PLL_1_clkos_o (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : -0.354 ns 
+Setup Constraint : 2.133 ns 
+Path Slack       : 2.234 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  0.474  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  0.774  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  1.744  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                                          NET DELAY          1.170                  3.269  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/SCLK
+                                                                             0.000                  3.269  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                  2.133  1       
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  2.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  2.908  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  3.878  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ/ECLK
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.625)                  5.503  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                       5.503  
+Arrival Time                                                                                     -(3.269)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                2.234  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
+Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/SCLK}  (IOLOGIC_CORE)
+Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
+Destination Clock: PLL_1_clkos_o (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : -0.354 ns 
+Setup Constraint : 2.133 ns 
+Path Slack       : 2.234 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  0.474  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  0.774  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  1.744  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                                          NET DELAY          1.170                  3.269  46      
+{DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/SCLK}
+                                                                             0.000                  3.269  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                  2.133  1       
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  2.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  2.908  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  3.878  26      
+{DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].u_DELAYB/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck/DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2/ECLK}
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.625)                  5.503  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                       5.503  
+Arrival Time                                                                                     -(3.269)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                2.234  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
 Path End         : {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2/SCLK}  (IOLOGIC_CORE)
@@ -428,7 +590,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.354 ns 
 Setup Constraint : 2.133 ns 
-Path Slack       : 2.255 ns  (Passed)
+Path Slack       : 2.235 ns  (Passed)
 
 
 Source Clock Path
@@ -446,24 +608,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  0.774  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
+                                                          NET DELAY          0.970                  1.744  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
+                                                          NET DELAY          1.170                  3.269  46      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].u_DELAYB/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2/SCLK}
-                                                                             0.000                  3.229  1       
+                                                                             0.000                  3.269  1       
 
 
 Destination Clock Path
@@ -482,178 +644,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  2.908  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
+                                                          NET DELAY          0.970                  3.878  26      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].u_DELAYB/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn/DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2/ECLK}
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.626)                  5.484  
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.626)                  5.504  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.484  
-Arrival Time                                                                                     -(3.229)  
+Required Time                                                                                       5.504  
+Arrival Time                                                                                     -(3.269)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.255  
-
-
-
-
-++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
-Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
-Destination Clock: PLL_1_clkos_o (R)
-Logic Level      : 1
-Delay Ratio      : 100.0% (route), 0.0% (logic)
-Clock Skew       : -0.354 ns 
-Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  0.474  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  0.774  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-                                                          CONSTRAINT         0.000                  2.133  1       
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  2.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  2.908  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
-
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
-Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
-Destination Clock: PLL_1_clkos_o (R)
-Logic Level      : 1
-Delay Ratio      : 100.0% (route), 0.0% (logic)
-Clock Skew       : -0.354 ns 
-Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  0.474  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  0.774  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-                                                          CONSTRAINT         0.000                  2.133  1       
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  2.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  2.908  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
+Path Slack  (Passed)                                                                                2.235  
 
 
 
@@ -668,7 +670,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.354 ns 
 Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
+Path Slack       : 2.328 ns  (Passed)
 
 
 Source Clock Path
@@ -686,24 +688,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  0.774  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
+                                                          NET DELAY          0.970                  1.744  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
+                                                          NET DELAY          1.170                  3.269  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
+                                                                             0.000                  3.269  1       
 
 
 Destination Clock Path
@@ -722,183 +724,23 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  2.908  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
+                                                          NET DELAY          0.970                  3.878  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.719)                  5.597  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
+Required Time                                                                                       5.597  
+Arrival Time                                                                                     -(3.269)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
+Path Slack  (Passed)                                                                                2.328  
 
 
 
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
-Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
-Destination Clock: PLL_1_clkos_o (R)
-Logic Level      : 1
-Delay Ratio      : 100.0% (route), 0.0% (logic)
-Clock Skew       : -0.354 ns 
-Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  0.474  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  0.774  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-                                                          CONSTRAINT         0.000                  2.133  1       
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  2.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  2.908  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
-
-
-
-
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
-Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
-Destination Clock: PLL_1_clkos_o (R)
-Logic Level      : 1
-Delay Ratio      : 100.0% (route), 0.0% (logic)
-Clock Skew       : -0.354 ns 
-Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  0.775  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  0.474  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  0.774  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-                                                          CONSTRAINT         0.000                  2.133  1       
-PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                           0.000                  2.908  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                          -0.300                  2.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY          0.300                  2.908  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
-----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
-
-
-
-
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
 Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
@@ -908,7 +750,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.354 ns 
 Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
+Path Slack       : 2.328 ns  (Passed)
 
 
 Source Clock Path
@@ -926,24 +768,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  0.774  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
+                                                          NET DELAY          0.970                  1.744  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
+                                                          NET DELAY          1.170                  3.269  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
+                                                                             0.000                  3.269  1       
 
 
 Destination Clock Path
@@ -962,18 +804,178 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  2.908  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
+                                                          NET DELAY          0.970                  3.878  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.719)                  5.597  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
+Required Time                                                                                       5.597  
+Arrival Time                                                                                     -(3.269)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
+Path Slack  (Passed)                                                                                2.328  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
+Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
+Destination Clock: PLL_1_clkos_o (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : -0.354 ns 
+Setup Constraint : 2.133 ns 
+Path Slack       : 2.328 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  0.474  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  0.774  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  1.744  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                                          NET DELAY          1.170                  3.269  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK
+                                                                             0.000                  3.269  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                  2.133  1       
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  2.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  2.908  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  3.878  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/ECLK
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.719)                  5.597  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                       5.597  
+Arrival Time                                                                                     -(3.269)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                2.328  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
+Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
+Destination Clock: PLL_1_clkos_o (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : -0.354 ns 
+Setup Constraint : 2.133 ns 
+Path Slack       : 2.328 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  0.475  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  0.775  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  0.474  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  0.774  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  1.744  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                                          NET DELAY          1.170                  3.269  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK
+                                                                             0.000                  3.269  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                  2.133  1       
+PLL_1_clki_i                              main            CLOCK LATENCY      0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY          0.000                  2.133  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL           0.475                  2.608  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY          0.300                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                           0.000                  2.908  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                          -0.300                  2.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY          0.300                  2.908  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY          0.970                  3.878  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/ECLK
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.719)                  5.597  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                       5.597  
+Arrival Time                                                                                     -(3.269)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                2.328  
 
 
 
@@ -988,7 +990,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.354 ns 
 Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
+Path Slack       : 2.328 ns  (Passed)
 
 
 Source Clock Path
@@ -1006,24 +1008,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  0.774  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
+                                                          NET DELAY          0.970                  1.744  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
+                                                          NET DELAY          1.170                  3.269  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                             0.000                  3.229  1       
+                                                                             0.000                  3.269  1       
 
 
 Destination Clock Path
@@ -1042,18 +1044,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  2.908  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
+                                                          NET DELAY          0.970                  3.878  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.719)                  5.597  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
+Required Time                                                                                       5.597  
+Arrival Time                                                                                     -(3.269)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
+Path Slack  (Passed)                                                                                2.328  
 
 
 
@@ -1068,7 +1070,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.354 ns 
 Setup Constraint : 2.133 ns 
-Path Slack       : 2.348 ns  (Passed)
+Path Slack       : 2.328 ns  (Passed)
 
 
 Source Clock Path
@@ -1086,24 +1088,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  0.774  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  0.774  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  1.724  24      
+                                                          NET DELAY          0.970                  1.744  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.078  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL      0.354                  2.098  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                       0.000                  2.078  1       
+                                          ECLKDIV_CORE                       0.000                  2.098  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                       0.000                  2.079  44      
+                                          ECLKDIV_CORE                       0.000                  2.099  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY          1.150                  3.229  44      
+                                                          NET DELAY          1.170                  3.269  46      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}
-                                                                             0.000                  3.229  1       
+                                                                             0.000                  3.269  1       
 
 
 Destination Clock Path
@@ -1122,18 +1124,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY          0.300                  2.908  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL        0.000                  2.908  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY          0.950                  3.858  24      
+                                                          NET DELAY          0.970                  3.878  26      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/ECLK}
-                                                                             0.000                  3.858  1       
-                                                          Uncertainty     -(0.000)                  3.858  
-                                                          Setup time     -(-1.719)                  5.577  
+                                                                             0.000                  3.878  1       
+                                                          Uncertainty     -(0.000)                  3.878  
+                                                          Setup time     -(-1.719)                  5.597  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                       5.577  
-Arrival Time                                                                                     -(3.229)  
+Required Time                                                                                       5.597  
+Arrival Time                                                                                     -(3.269)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                2.348  
+Path Slack  (Passed)                                                                                2.328  
 
 
 
@@ -1156,25 +1158,25 @@ Path Slack  (Passed)                                                            
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQ/SCLK}              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
+                                         |    1.700 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
+                                         |    1.700 ns 
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
+                                         |    1.700 ns 
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}              
-                                         |    1.680 ns 
+                                         |    1.700 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -1205,7 +1207,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1223,24 +1225,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1259,18 +1261,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/ECLK}
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
@@ -1285,7 +1287,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1303,24 +1305,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQ/SCLK}
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1339,18 +1341,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQ/ECLK}
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
@@ -1365,7 +1367,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1383,24 +1385,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1419,18 +1421,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
@@ -1438,14 +1440,14 @@ Path Slack  (Passed)                                                            
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
 Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
 Destination Clock: PLL_1_clkos_o (R)
 Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1463,24 +1465,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
+                                                          NET DELAY       1.170                  3.135  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1499,18 +1501,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                          NET DELAY       0.970                  1.578  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/ECLK
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
@@ -1525,7 +1527,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1543,24 +1545,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1579,183 +1581,23 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
-Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
-Destination Clock: PLL_1_clkos_o (R)
-Logic Level      : 1
-Delay Ratio      : 100.0% (route), 0.0% (logic)
-Clock Skew       : -0.386 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                        0.000                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       -0.300                  0.308  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY       0.300                  0.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-                                                          CONSTRAINT      0.000                  0.000  1       
-PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                        0.000                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       -0.300                  0.308  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY       0.300                  0.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
-
-
-
-
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
-Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
-Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
-Destination Clock: PLL_1_clkos_o (R)
-Logic Level      : 1
-Delay Ratio      : 100.0% (route), 0.0% (logic)
-Clock Skew       : -0.386 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                        0.000                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       -0.300                  0.308  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY       0.300                  0.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-                                                          CONSTRAINT      0.000                  0.000  1       
-PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
-PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
-                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
-PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
-                                          PLL_CORE                        0.000                  0.609  1       
-PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       -0.300                  0.308  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
-                                                          NET DELAY       0.300                  0.608  1       
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
-DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
-----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
-
-
-
-
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
 Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
@@ -1765,7 +1607,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1783,24 +1625,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1819,18 +1661,178 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
+Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
+Destination Clock: PLL_1_clkos_o (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : -0.386 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.700 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                        0.000                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       -0.300                  0.308  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY       0.300                  0.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY       0.970                  1.578  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                                          NET DELAY       1.170                  3.135  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/SCLK
+                                                                          0.000                  3.135  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                        0.000                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       -0.300                  0.308  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY       0.300                  0.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY       0.970                  1.578  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ/ECLK
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             1.700  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT  (ECLKDIV_CORE)
+Path End         : DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK  (IOLOGIC_CORE)
+Source Clock     : DDR_MEM_1_inst/lscc_ddr_mem_inst/sclk_o (R)
+Destination Clock: PLL_1_clkos_o (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : -0.386 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.700 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                        0.000                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       -0.300                  0.308  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY       0.300                  0.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY       0.970                  1.578  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
+                                                          NET DELAY       1.170                  3.135  46      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/SCLK
+                                                                          0.000                  3.135  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+PLL_1_clki_i                              main            CLOCK LATENCY   0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/PLL_1_clki_i                     NET DELAY       0.000                  0.000  1       
+PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/B->PLL_1_inst/lscc_pll_inst/genblk1.u0_BB/O
+                                          DIFFIO18_CORE   PADI_DEL        0.309                  0.309  1       
+PLL_1_inst/lscc_pll_inst/clki_w                           NET DELAY       0.300                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS
+                                          PLL_CORE                        0.000                  0.609  1       
+PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       -0.300                  0.308  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
+                                                          NET DELAY       0.300                  0.608  1       
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
+                                                          NET DELAY       0.970                  1.578  26      
+DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ/ECLK
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
@@ -1845,7 +1847,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1863,24 +1865,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/SCLK
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1899,18 +1901,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ/ECLK
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 
@@ -1925,7 +1927,7 @@ Logic Level      : 1
 Delay Ratio      : 100.0% (route), 0.0% (logic)
 Clock Skew       : -0.386 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 1.680 ns  (Passed)
+Path Slack       : 1.700 ns  (Passed)
 
 
 Source Clock Path
@@ -1943,24 +1945,24 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.944  44      
+                                          ECLKDIV_CORE    CLKDIVOUT_DEL   0.386                  1.964  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKDIV.ECLKDIV_inst/DIVOUT
-                                          ECLKDIV_CORE                    0.000                  1.944  1       
+                                          ECLKDIV_CORE                    0.000                  1.964  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                          ECLKDIV_CORE                    0.000                  1.945  44      
+                                          ECLKDIV_CORE                    0.000                  1.965  46      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/sclk_o
-                                                          NET DELAY       1.150                  3.095  44      
+                                                          NET DELAY       1.170                  3.135  46      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/SCLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/SCLK}
-                                                                          0.000                  3.095  1       
+                                                                          0.000                  3.135  1       
 
 
 Destination Clock Path
@@ -1979,18 +1981,18 @@ PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->PLL_1_inst/lscc
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/PLL_1_clkos_o
                                                           NET DELAY       0.300                  0.608  1       
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKIN->DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/u0_ECLKSYNC.ECLKSYNC_inst/ECLKOUT
-                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  24      
+                                          ECLKSYNC_CORE   CLK2OUT_DEL     0.000                  0.608  26      
 DDR_MEM_1_inst/lscc_ddr_mem_inst/u1_common_logic/eclkout_w
-                                                          NET DELAY       0.950                  1.558  24      
+                                                          NET DELAY       0.970                  1.578  26      
 {DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQS_BLOCK.DQS_X2.u_ODDRX2DQS/ECLK   DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/TS_BLOCK.TS_X2.u_TSHX2DQS/ECLK}
-                                                                          0.000                  1.558  1       
-                                                          Uncertainty     0.000                  1.558  
-                                                          Hold time      -0.144                  1.414  
+                                                                          0.000                  1.578  1       
+                                                          Uncertainty     0.000                  1.578  
+                                                          Hold time      -0.144                  1.434  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Required Time                                                                                   -1.414  
-Arrival Time                                                                                     3.094  
+Required Time                                                                                   -1.434  
+Arrival Time                                                                                     3.134  
 ----------------------------------------  --------------  -------------  ------  ---------------------  ------  
-Path Slack  (Passed)                                                                             1.680  
+Path Slack  (Passed)                                                                             1.700  
 
 
 

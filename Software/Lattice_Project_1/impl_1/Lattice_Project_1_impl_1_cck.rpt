@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : impl_1
 
-# Written on Fri Oct  6 02:06:16 2023
+# Written on Sun Oct  8 01:55:07 2023
 
 ##### DESIGN INFO #######################################################
 
@@ -28,7 +28,7 @@ Constraint File(s):      "/home/timothyjabez/Documents/fpga-accelerator/Software
 
 ##### SUMMARY ############################################################
 
-Found 0 issues in 0 out of 48 constraints
+Found 0 issues in 0 out of 50 constraints
 
 
 ##### DETAILS ############################################################
@@ -133,6 +133,8 @@ p:MIPI_DPHY_2_data_p_io[2] (bidir start point)
 p:MIPI_DPHY_2_data_p_io[3] (bidir end point)
 p:MIPI_DPHY_2_data_p_io[3] (bidir start point)
 p:PLL_1_clki_i
+p:dm_dqs0_o
+p:dm_dqs1_o
 p:dq_dqs0_io[0] (bidir end point)
 p:dq_dqs0_io[0] (bidir start point)
 p:dq_dqs0_io[1] (bidir end point)

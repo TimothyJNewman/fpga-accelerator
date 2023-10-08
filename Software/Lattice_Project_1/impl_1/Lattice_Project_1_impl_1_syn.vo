@@ -64,6 +64,7 @@ module \DDR_MEM_1_ipgen_common_logic_2s_2  (
 endmodule
 
 module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
+    output \dm_dqs1_o_c ,
     input \sclk_o ,
     input \eclkout_w ,
     inout \dqs1_io ,
@@ -120,15 +121,6 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
        \dm:primitive ="BB" ,
        \dm:programming ="" ,
        \dm:user ="0" *)
-    \BB  \DQ_BLOCK[4].u_DQ_BB (
-      .\T (\dqts_w ),
-      .\I (\dout_w [4]),
-      .\B (\dq_dqs1_io [4]));
-
-    (* \IO_TYPE ="SSTL15_II" ,
-       \dm:primitive ="BB" ,
-       \dm:programming ="" ,
-       \dm:user ="0" *)
     \BB  \DQ_BLOCK[2].u_DQ_BB (
       .\T (\dqts_w ),
       .\I (\dout_w [2]),
@@ -138,10 +130,19 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
        \dm:primitive ="BB" ,
        \dm:programming ="" ,
        \dm:user ="0" *)
-    \BB  \DQ_BLOCK[0].u_DQ_BB (
+    \BB  \DQ_BLOCK[3].u_DQ_BB (
       .\T (\dqts_w ),
-      .\I (\dout_w [0]),
-      .\B (\dq_dqs1_io [0]));
+      .\I (\dout_w [3]),
+      .\B (\dq_dqs1_io [3]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[4].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [4]),
+      .\B (\dq_dqs1_io [4]));
 
     (* \IO_TYPE ="SSTL15_II" ,
        \dm:primitive ="BB" ,
@@ -156,10 +157,10 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
        \dm:primitive ="BB" ,
        \dm:programming ="" ,
        \dm:user ="0" *)
-    \BB  \DQ_BLOCK[3].u_DQ_BB (
+    \BB  \DQ_BLOCK[0].u_DQ_BB (
       .\T (\dqts_w ),
-      .\I (\dout_w [3]),
-      .\B (\dq_dqs1_io [3]));
+      .\I (\dout_w [0]),
+      .\B (\dq_dqs1_io [0]));
 
     (* \IO_TYPE ="SSTL15_II" ,
        \dm:primitive ="BB" ,
@@ -183,33 +184,17 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
        \dm:primitive ="ODDRX2DQ" ,
        \dm:programming ="GSR:#ON" ,
        \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ (
+    \ODDRX2DQ  \DM_BLOCK.DM_X2.u_DM_ODDRX2DQ (
       .\D0 (\GND_net ),
       .\D1 (\GND_net ),
       .\SCLK (\sclk_o ),
       .\RST (\GND_net ),
-      .\Q (\dout_w [1]),
+      .\Q (\dm_dqs1_o_c ),
       .\D2 (\GND_net ),
       .\D3 (\GND_net ),
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
-
-    (* \GSR ="ENABLED" ,
-       \dm:primitive ="ODDRX2DQ" ,
-       \dm:programming ="GSR:#ON" ,
-       \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ (
-      .\D0 (\GND_net ),
-      .\D1 (\GND_net ),
-      .\SCLK (\sclk_o ),
-      .\RST (\GND_net ),
-      .\Q (\dout_w [5]),
-      .\D2 (\GND_net ),
-      .\D3 (\GND_net ),
-      .\ECLK (\eclkout_w ),
-      .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+    defparam \DM_BLOCK.DM_X2.u_DM_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -231,17 +216,17 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
        \dm:primitive ="ODDRX2DQ" ,
        \dm:programming ="GSR:#ON" ,
        \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ (
+    \ODDRX2DQ  \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ (
       .\D0 (\GND_net ),
       .\D1 (\GND_net ),
       .\SCLK (\sclk_o ),
       .\RST (\GND_net ),
-      .\Q (\dout_w [4]),
+      .\Q (\dout_w [5]),
       .\D2 (\GND_net ),
       .\D3 (\GND_net ),
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+    defparam \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -263,17 +248,17 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
        \dm:primitive ="ODDRX2DQ" ,
        \dm:programming ="GSR:#ON" ,
        \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ (
+    \ODDRX2DQ  \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ (
       .\D0 (\GND_net ),
       .\D1 (\GND_net ),
       .\SCLK (\sclk_o ),
       .\RST (\GND_net ),
-      .\Q (\dout_w [0]),
+      .\Q (\dout_w [4]),
       .\D2 (\GND_net ),
       .\D3 (\GND_net ),
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+    defparam \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -290,6 +275,38 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
     defparam \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [1]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [0]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -436,6 +453,7 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  (
 endmodule
 
 module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
+    output \dm_dqs0_o_c ,
     input \sclk_o ,
     input \eclkout_w ,
     inout \dqs0_io ,
@@ -492,15 +510,6 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
        \dm:primitive ="BB" ,
        \dm:programming ="" ,
        \dm:user ="0" *)
-    \BB  \DQ_BLOCK[4].u_DQ_BB (
-      .\T (\dqts_w ),
-      .\I (\dout_w [4]),
-      .\B (\dq_dqs0_io [4]));
-
-    (* \IO_TYPE ="SSTL15_II" ,
-       \dm:primitive ="BB" ,
-       \dm:programming ="" ,
-       \dm:user ="0" *)
     \BB  \DQ_BLOCK[2].u_DQ_BB (
       .\T (\dqts_w ),
       .\I (\dout_w [2]),
@@ -510,10 +519,19 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
        \dm:primitive ="BB" ,
        \dm:programming ="" ,
        \dm:user ="0" *)
-    \BB  \DQ_BLOCK[0].u_DQ_BB (
+    \BB  \DQ_BLOCK[3].u_DQ_BB (
       .\T (\dqts_w ),
-      .\I (\dout_w [0]),
-      .\B (\dq_dqs0_io [0]));
+      .\I (\dout_w [3]),
+      .\B (\dq_dqs0_io [3]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \DQ_BLOCK[4].u_DQ_BB (
+      .\T (\dqts_w ),
+      .\I (\dout_w [4]),
+      .\B (\dq_dqs0_io [4]));
 
     (* \IO_TYPE ="SSTL15_II" ,
        \dm:primitive ="BB" ,
@@ -528,10 +546,10 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
        \dm:primitive ="BB" ,
        \dm:programming ="" ,
        \dm:user ="0" *)
-    \BB  \DQ_BLOCK[3].u_DQ_BB (
+    \BB  \DQ_BLOCK[0].u_DQ_BB (
       .\T (\dqts_w ),
-      .\I (\dout_w [3]),
-      .\B (\dq_dqs0_io [3]));
+      .\I (\dout_w [0]),
+      .\B (\dq_dqs0_io [0]));
 
     (* \IO_TYPE ="SSTL15_II" ,
        \dm:primitive ="BB" ,
@@ -555,33 +573,17 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
        \dm:primitive ="ODDRX2DQ" ,
        \dm:programming ="GSR:#ON" ,
        \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ (
+    \ODDRX2DQ  \DM_BLOCK.DM_X2.u_DM_ODDRX2DQ (
       .\D0 (\GND_net ),
       .\D1 (\GND_net ),
       .\SCLK (\sclk_o ),
       .\RST (\GND_net ),
-      .\Q (\dout_w [1]),
+      .\Q (\dm_dqs0_o_c ),
       .\D2 (\GND_net ),
       .\D3 (\GND_net ),
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
-
-    (* \GSR ="ENABLED" ,
-       \dm:primitive ="ODDRX2DQ" ,
-       \dm:programming ="GSR:#ON" ,
-       \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ (
-      .\D0 (\GND_net ),
-      .\D1 (\GND_net ),
-      .\SCLK (\sclk_o ),
-      .\RST (\GND_net ),
-      .\Q (\dout_w [5]),
-      .\D2 (\GND_net ),
-      .\D3 (\GND_net ),
-      .\ECLK (\eclkout_w ),
-      .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+    defparam \DM_BLOCK.DM_X2.u_DM_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -603,17 +605,17 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
        \dm:primitive ="ODDRX2DQ" ,
        \dm:programming ="GSR:#ON" ,
        \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ (
+    \ODDRX2DQ  \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ (
       .\D0 (\GND_net ),
       .\D1 (\GND_net ),
       .\SCLK (\sclk_o ),
       .\RST (\GND_net ),
-      .\Q (\dout_w [4]),
+      .\Q (\dout_w [5]),
       .\D2 (\GND_net ),
       .\D3 (\GND_net ),
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+    defparam \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -635,17 +637,17 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
        \dm:primitive ="ODDRX2DQ" ,
        \dm:programming ="GSR:#ON" ,
        \dm:user ="0" *)
-    \ODDRX2DQ  \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ (
+    \ODDRX2DQ  \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ (
       .\D0 (\GND_net ),
       .\D1 (\GND_net ),
       .\SCLK (\sclk_o ),
       .\RST (\GND_net ),
-      .\Q (\dout_w [0]),
+      .\Q (\dout_w [4]),
       .\D2 (\GND_net ),
       .\D3 (\GND_net ),
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
-    defparam \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+    defparam \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -662,6 +664,38 @@ module \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  (
       .\ECLK (\eclkout_w ),
       .\DQSW270 (\sw270_out_w ));
     defparam \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [1]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
+
+    (* \GSR ="ENABLED" ,
+       \dm:primitive ="ODDRX2DQ" ,
+       \dm:programming ="GSR:#ON" ,
+       \dm:user ="0" *)
+    \ODDRX2DQ  \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ (
+      .\D0 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\SCLK (\sclk_o ),
+      .\RST (\GND_net ),
+      .\Q (\dout_w [0]),
+      .\D2 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\ECLK (\eclkout_w ),
+      .\DQSW270 (\sw270_out_w ));
+    defparam \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ .GSR = "ENABLED";
 
     (* \GSR ="ENABLED" ,
        \dm:primitive ="ODDRX2DQ" ,
@@ -1168,7 +1202,9 @@ module \DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0  (
     output \DDR_MEM_1_rasn_o_c ,
     output \DDR_MEM_1_casn_o_c ,
     inout \dqs0_io ,
+    output \dm_dqs0_o_c ,
     inout \dqs1_io ,
+    output \dm_dqs1_o_c ,
     input \PLL_1_clkos_o ,
     input \GND_net ,
     input \VCC_net ,
@@ -1198,6 +1234,7 @@ module \DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0  (
     \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0  \DW_16.u1_dq_dqs_dm_unit (
       .\code_w ({\code_w [8], \code_w [7], \code_w [6], \code_w [5], \code_w [4], \code_w [3], \code_w [2], \code_w [1], \code_w [0]}),
       .\dq_dqs1_io ({\dq_dqs1_io [7], \dq_dqs1_io [6], \dq_dqs1_io [5], \dq_dqs1_io [4], \dq_dqs1_io [3], \dq_dqs1_io [2], \dq_dqs1_io [1], \dq_dqs1_io [0]}),
+      .\dm_dqs1_o_c (\dm_dqs1_o_c ),
       .\sclk_o (\sclk_o ),
       .\eclkout_w (\eclkout_w ),
       .\dqs1_io (\dqs1_io ),
@@ -1208,6 +1245,7 @@ module \DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0  (
     \DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0  \DW_8.u1_dq_dqs_dm_unit (
       .\code_w ({\code_w [8], \code_w [7], \code_w [6], \code_w [5], \code_w [4], \code_w [3], \code_w [2], \code_w [1], \code_w [0]}),
       .\dq_dqs0_io ({\dq_dqs0_io [7], \dq_dqs0_io [6], \dq_dqs0_io [5], \dq_dqs0_io [4], \dq_dqs0_io [3], \dq_dqs0_io [2], \dq_dqs0_io [1], \dq_dqs0_io [0]}),
+      .\dm_dqs0_o_c (\dm_dqs0_o_c ),
       .\sclk_o (\sclk_o ),
       .\eclkout_w (\eclkout_w ),
       .\dqs0_io (\dqs0_io ),
@@ -1249,7 +1287,9 @@ module \DDR_MEM_1  (
     output \DDR_MEM_1_cke_o_c_0 ,
     output \DDR_MEM_1_ck_o_c_0 ,
     input \PLL_1_clkos_o ,
+    output \dm_dqs1_o_c ,
     inout \dqs1_io ,
+    output \dm_dqs0_o_c ,
     inout \dqs0_io ,
     output \DDR_MEM_1_casn_o_c ,
     output \DDR_MEM_1_rasn_o_c ,
@@ -1277,7 +1317,9 @@ module \DDR_MEM_1  (
       .\DDR_MEM_1_rasn_o_c (\DDR_MEM_1_rasn_o_c ),
       .\DDR_MEM_1_casn_o_c (\DDR_MEM_1_casn_o_c ),
       .\dqs0_io (\dqs0_io ),
+      .\dm_dqs0_o_c (\dm_dqs0_o_c ),
       .\dqs1_io (\dqs1_io ),
+      .\dm_dqs1_o_c (\dm_dqs1_o_c ),
       .\PLL_1_clkos_o (\PLL_1_clkos_o ),
       .\GND_net (\GND_net ),
       .\VCC_net (\VCC_net ));
@@ -2308,88 +2350,88 @@ endmodule
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-dd9yf5+vPNtQhstDo2IqOr7CDM0J05+o5L4OMBAqXuoxpXT36veJFK1lSAY7Y+E9
-OvWGFwBuSE6EYKjAUHkp80XEnpL/7EtaHcqh/IyIPMpUb8G5YKBOIBcfFOGnIHBm
-RN/O5d4AHhRcPJkVm0mHCd12/s4u61Nxzz7sV6QV+1vrGpGgrK800U4i4jOUiAyK
-AsCQ4Z8kikptdjulvRRSku2jm12g4qPaYFurr1L0g90pStHPDVXOLsg6jk+o8hcV
-pyXp6nEasDyG1DhmMGalFpNUGfJ7MDFCWmDlFc2PE3VBBYLpaVUDq00nGaB5MdTc
-8PhCk5NO5VRsKF+07rMnRw==
+VSeqPWH9EiOuGjUrR5KBcu5OAjtr043UoJPccvZACJyM2isJGtuWjPacUWjVDNaX
+4dM3MI2m1FZozxm/0mq9cBspwroLKjkNCzNbj6kJLqJJ3RsZAqz5JzeZX7O3JhYi
+5vy8uxE4inI2ggCIT5Fdc+a5cx7NBxcRd7mfIP69QaGvoHAl9AZJJ4oufNOibWGW
+Wfmxyr8tIE02Mksgo8TT0ARuywRr18X+BVcSpEgotDzaT+Y9SoHPR5Tg/yl0KBPB
+a9N6QblQVFI98z2m/JfeBtPUnD8lvMXueprMMe5woS+VwShB48BlvPBCwcYULjnq
+gsxMh8nve1V7ot5YIBR0zg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-HyBx3TcDQMYrNkSONJL1B0dKzgDA9VUhcbQg7BCw4RV8L0OHXH1oG0uSOKiT51h5
-QqpSZRb37nc81gyimdT94l/OKCfZq7DUQR6/wYv61j2J+dMUwuDn9UwVl1Kzm3uU
-Oodwz+eFO6s2zxf3QolpW8EJ5rFhEJZkX9zcs2UeNvo=
+Lf6xTJrnQQ2jMFwmROhYGSMeQ2VQmpeMlKKauMvAlo07wWF7U+1y5B2UIOlPkPXi
+Al3c9NSsA6jtwWDH5asyP/9ECzCUdlVcSQOzESo84seYLdEdZeqn9A3NL+Xefy0A
+ZzugGgSxWVDbAcFMoK7cB/QgSIHg4LcyVBY4Y7Dny5w=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-UcACjn+BOdvtBVtNyay3TCYyBM/963A1kR3QwmazYXLwhvsjFl2G4EZ4uTggpnu9
-0BD4c/NV9VY4lzNtr+WxS8TLCabMdDULPYcqPYuMXTiErFuJ2vqhVvrFQkXrPikb
-K+tbjpF1mzcjyW7sfAxW3wFfL5PjgK3yMUrWTQ7EkdhwAe/cmxyfSUvM/94Bvesi
-/iZmlpnIgGKSO1theTvdA51te8SH5+GElIm97avk19QtWIm9YILuZFSLBbzfK7bC
-YY7K1DCOyWumrprIsXTozOoMj5zH21olu9ccoiXKpslq2IjPGgxgdMNhXwzsXt6A
-8YiUukHfQYplBdpugIRarw==
+LUMU8+kRJw3lim1Ib+8mybDkkSZHQ/dAndRHLMe+JtGU4t833gPHrkIumNJ3DVpc
+jqPy9vJU/VaO0dcvmC3mbfcRaY6GA/OcOAPyY+LgkwYuSOZxWo1fif5lTWt6nZXU
+E9ltE36cPF4v/czbZeLjkCwGmIIUExgN/IymEAoKD2YN2L8LnofXe+BHKNX5zoYg
+YWv/vezTlnYHaH0HbVYQziS5tfowDd61Hx4ZUlXCMJUotlePzkXNajBrjl/g7801
+qaSXi9jVFo69gtcWaNq1QCPRDOTEmkZrtgs9XrGJFxa0I9cYGQDuCXxLcBp2U31S
+Bq11BbYBZFukFFLb3FotsA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-iotRqTHYTCC4bzoU3AeEyMWdSNYf6BH9rnhkLY9vsXmaKQTsC3aalbbpM6KZBU2Z
-dOwEE3NfeanKCV5qVvzgiI9x2MtEAFQ0NkjpOD5HU2G923MTeNcq9TBwP3KO+tff
-0D7kdWm5iXLTb1IXugxGOR0hWMvs1gzrQBJAFdcfZoGCEOJH5HwPy0Y6yuGc/aD9
-qpfl6PCEKg4T8D5GbpHiy4zCdSXoWG2uKMHVRrtABF5GlyZf1+3QtjfUVKlf25ZI
-RnaJf+lt2Qp62KGa9BrPa06vat4ufLKQEwiSZZxPOO/29nIxz1x4cLLNc98+NmhE
-fu9/ul/h3ruOiwbCrIz6xw==
+QwFEm5GQ0NIwqjQCv7q+5hxpV/vR++IUsYgXdFkCV9KYPw/1irNQlxTDkpgzvgmu
+B1Lpjc7BCEIEthUtEvReH8lIMAxMz3J4BrV7BTfZEvoMO/pitSU7SCdsbICpXiqt
+wPZ+qQYNUIBVCfDUSCqj0pdRwa/NWupYTpA8xwEslm3Rco/WU8sEEoniiS7jJ0SX
+e7M0C5SW0BnPJBsx7Bd7I/UrBh7lhEHQyy9z51Xj7C3LYFx3EUm0mZQyQQU5IQfL
+AKaC5MG3QvC7fP4CSJ0CLQGByhWZTBS6mWFOAFG7UlGd3FUJH8IU1xI0tDnn2u6L
+W5GrYBjfmjn3snLEF7k1Yw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-g2f+cHHy5LM+H03UQPS/S2dOvUMJkeJYudg3RHVAc+iDX8bCtqTdSx4JN6d8qM1Z
-CRd5tw+OCuohylJ9sdosla3I1FoTyIdukq9rdDgwcv7xihowuzqWghFv4OPgX88B
-1c7w6VNz89OVbJW2px3BXMaT7kQuBq/uzNSornA/aSoJEtGfpDm1VfZG5en1U4dk
-xZ/KlrFaqnUrm315Gay6LL6AN8T+ww141J8CNQSl9Rc/eEf+GM3TYF0DedlkUkxt
-gbxKSwJY0nB2HkbyJURB8lnxKHUyW/atQBnXzFKBcQJqnTP+t8zKYyQ8Yc728/iV
-gOeoJcXIkgwd21NajgIbgA==
+jHCewrUgt0LdqyGRTlxOA19/K3fVmxvU30Y9LmcHa8rjgVwNWNA4KcmyEtvOn9bc
+6/oBYBUIYDxFy2OSngk31g021/os6rASrL8BVwPkm66ijrndM9OSLIPmqhKJs2pN
+f69ZvrrwLjxd8qSlA69MY138278YVVuNN7/4Oxpd6mfvnmE0NVYVMwHx62OGwhc2
+n2LOTo0UpwOJ5L0lXiWpL0WrA4+DaXIOyPWCdHmpj+fe6Zj7oKWvXGc9c+UrWy4S
+vegDDeVZA/fR3DYCnL0lcbNnehOKKxODH7knJTvylShDi5BnmMYra1ANB5b1PkmT
+j81S2SlJnz8r44WwzGfh5Q==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-aP/4l/pODWWFbA7T/OyawLNSj1UC2Egn1OAVSDINbeVWS9gT3F608AflUtoErSrA
-/MfkJ3dnLRRNHVR+T2aaWCSw44XQbRVfGzxJXnCRmj/60wvbN9t4MeBvsqMvz1/q
-5cCo+Jobq9wktLnAKRiLK7LbbqeUKXk3FSqekJ/WaQjxFqxtakRzKY1TbYCCzlDB
-5Yv1rHJUvMprtLmFhpN03LMCAk/OUq6QYuz4mRJYKQmd9W1ECxy7gXw73HpWU0sT
-v3PSCc2r3WTfDDskcsZorgv2P/khYXSGuSk5W/259vua7uLoG8aRQNyvhkpTKj4q
-WebuZceP/sgGBtTjWGMsA6XGTLdgBEqc+tb/Wqd1prldHYSzunnmx+ZX6PmQBduH
-IKMdybz9Qf9qH3sroTflhc+ffB5Z73TbfozU6KcmHFrHYMoxHCbfUq6/1O/rDqzK
-uDBuAg62Wywd5YOunshWuruXbOiqWrx8Bksc+iM2NpVPrHzoclvPTm2qf51ZJKa2
+fmkz6lR3LIUjZsO+R1bapLRR+eT0SDFy0ykIGnaj4KSZnBn6UgQOYvgv3QSFzr6z
+EAMrAQUQ72/rpJC3wTRS8VajLA5Nzy/lv61VEPApupeAYiDfcQY0hf3n7ePlFQpe
+GfBh2ACFZjUXzI28/Mqvr7kK6QkSlELyup6JWFfj48OQox4vKcm5J8AIW3X7T3pF
+8m00fISF58GOHk/kOAXeaXJCjTdB9HzXLeva2Li5+VyfKQwfvF1GOFnK7a+omlQ7
+M5RczmFeTE6jU5ZrLjld7xCJ06pej8J5LTkHmnAS+P02VgQtgugeWWdnbxaCDGRh
+4wSCKZNiNrs+X82S7MbBUa4TnyY6cS2CFJABgUheW2ubCwv5NBzx+MPLntWAU/ua
+uJ3zDVLUxIvym+AnOZ7KavzYHmh8dfQd4nD6GZprtiU+8zZPmhF5HoCTnE0T4sk7
+29pJdK5Tybhuu2L6g0B2nKHQKXOxtGF9PQ9wi0dopLSZx9w+To0x4q+zUJxLKQMd
 
 `pragma protect data_method="aes256-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=608)
 `pragma protect data_block
-6rvxnsivf4iNthZRr/8LMpbe/AKNCp4hjBo0Bhh8M4n4947O70VNyAY6xqD6P3CL
-Ajl4qn9QSPlMrTg2CuTYRWistzl5mQNOSZQUxcPFNz7nMNfXUT08wCw1lrRaMvHT
-mmzM8UMUVdxpcKuHQ5am41GZgCgwlFD+sKw14GHRJW6gK3pFqBFBU0zj4TpuzEki
-ppjQT7+NFl5z5dgyZ+PjuzFNpoPrvf8kM2tgINcwC4/IApVEqv8h3SJ6yhv429wI
-SrdgNtP425p2GsAmVFZw4+krZAogXdx5dnGBUKEPes+UvV605tkpquT7UycJ2XHv
-ihy6csi7/Dpyw7aa7JCpF0PtLe3KCvbsgi8+lPOsIxYDwk8miPnrp3y862k5DBvP
-m4fTk8ATp2bUmfI4LU1PQXtuFG8gylMvtnMnegOTBHh+EXNOBEeHFlCOO5vw3Bee
-w0huycFnIawAGuHf9z9BhFqxzHQpkqEJ9pfaDpVtizI5FVa+NXRa6WOR7LB5YnUL
-ZddRALBI7iR+mfyna8wSctVeCvXByVQUvoeLC9z0bMNzBHJbgR4ZegTyQ305QKVB
-xuyUkAOKx7nygm/apgUPETMkp3sa1sp85/YmQvmZmbjO+bq/YhLBQzBDccF9kOPI
-WazVHbfhwS2IXUIO+jzGREFKBG1cmvC3cpezK3FpvU1HpIgdMiUMTGDpIy8hp1Cz
-LIC82V0XrJQfoMt2IK3KJ7yMugL11s5nfVmLy9I3kkdQX0TdZoFQccVPUNtbt5Gc
-Hz4Z5tp4Ww8+MWqTIByTH8dthNbLtsJMruEkzMVpe9c=
+FPmnRLQJGaEHIWo4DYc1UsfxCVMFftiVT2TSmBJUFsMsOsDjdR6BtQ/0g8BYUggp
+rafYY5k+GQhLUK2QWE8Zw0mFD2YnVc25tE6C986Sf2cujok6tfKIWOULtbfLtKLG
+RdDrQewbbIEAyGX7WlMptZ2omZ0IaCIAXrWRpWlUlsJcDjV7QdDmvSD0XPzqyvbX
+zYngothXvwZW5gfprUoRA3wdtZokbmFcSGSK4tru6yTGV9LVPCwVIxOSEUePQ3Dq
+rp8t3eNnPphGm51+lyY5kBVKiBIS0U1p0ilIprFBGOgTwaEwY1Rc4JQX7TKbR+JZ
+nRv4AlT+D/clQNfBi1LY5dqaUBNFsXBiPvrfqoRU82vVAEwg7QdPv25X+C0j0akD
+Zb3u5+sKE/SpMFMj7/FWPwmPR9nFFiMTjMQB8NWiPDSUa0O9pJVr1/eAzqXu7je0
+11kOitq4cN8dUNp6/wbxvtLb9I0jnZLubtjmjT+9zOlkZrcAI9XfDyrkYGt5rF5y
+nzbYf1me6H8yq4n5ILwRsSJUez8O5BfEf9Xe45mZNJ1A9s6tha5PwUunWDcgHIJM
+nr0ekbLiJ6Gh2jWHwqNPtvvmLdMtarOQOKyIXHKbQT2wP9EJiiGWWlGrisdKT2S2
+RsGW89WK4FsS4KDlsD473iVIuRWq/b65CEfj01dt8MiztfXtointuBnkpSfKM5Sj
+C2z4lcMRIKkAgUcIMV7UpYyRhfsiSEn2eSw3m41z0QKDwIvuLdzzTMJDM70E3yOE
+e2FZgztM3YCI6jNbYXav1kwN+mKmOdfMI+oje++To+Y=
 
 `pragma protect end_protected
 
@@ -2407,97 +2449,97 @@ Hz4Z5tp4Ww8+MWqTIByTH8dthNbLtsJMruEkzMVpe9c=
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-ABoxz65wwjH5gPpSimW+Taw6P6eRViWgA9pu1B+5iHjy/71MEUgH/Y0roqP+kyVk
-jV1eM19RyQLemMZC+hZpyU/54qcNCmPUnTyvkWA/Ba7FhksL1J3qD2tPYnhqQbxe
-bJrIZ+5cNex8ufWTEwibe5cIQZTa3PiVTpHxBKEiO0bDCJdfBO0ZiaKoMqf9ECcH
-3HjT1LzGQMfvm6apFTh/XHGLuwlbRgr2L7PkAzVbUWxgmsy205czRKqw6hBtzoMx
-d3IPXlNJFIY2QprSIi9ILD6DbYiRJuTLBaylZDFP/R1Y/o8G5C0ww5PMA5hbB4ln
-SjOdjBxC5uwcw/JBzPAP4g==
+l2EIK//8ZbdBVzB2mdSeWSAPeSR5gpHwLQqvgOSWmeACeSW3/UIKlt42mRtHYnTd
+oXEGZkdc+bLNher7XggesbDjr8Jmy2Ixfa3QHjLoXgHiQ9ZkIOUY/G4ubXj1Chu9
+KrrBZGkX5xyp3XHM0eCBNFZW1Md8FOsK5+fOTTQQ5COVe5N4kzZxn8f/FeDxANb/
+NMdhPwbp3FaZglalJzYYrpd1yC2rpMnUVxPAZB8Tvb47Lriz2EMQr9phChNHDNdo
+E10s7+bZmxihsnxN31aTwKNBH8xQmARp/QtA9/RTlTGOO//ZlJuokK38Dmv59NML
+nLlVT3xs9ZzOO0R6sigZTg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-x8G+P2/H4EBldPaB+O7q7EoY3saBuFZvPog26eJ4w5SrlwLQhnJBWVdK8nYrI7JD
-qJdMiG8QixZsJMbekUXpam71Cks6Dloh40do1GNlcwSD1WGkEfkccaxSZiIiU7vE
-xEZVFefEx3xUac/7Q+DlXoHYX/s3aQpcwP2jHxUj42k=
+3P8+eVHsFY6hLOUI5q96FRHd2gl8yNijiYA64RRZqJVNWiI7W/v5hvFkcurW+HFK
+8BghD9djti26XemttNieLeqUUBILmmHdR6cDA7dUipGr/T7XK6ybSqUi3iDPsh5X
+LXLRVwB6Dnbh1erBVay36JTivdaS3kZzlOGtJKdiTXg=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-gOVxGv8uf9FVg6llM3SitykAsZsvjoHL/dfr4gOmU+AFUR3um/R96SdNO9ltEA7/
-eYCvUnnfzHcSmx3sMNeqhXH9jlEkLh/PfHtCmlqoc8+BuLInVeqLaxtFJKBGd5t6
-fVan12BOvrZUSxaAEUtfFX2ob1/jQN11PDyzD7XU156zbqoIt5tQl6ThMkbKd/Bj
-POhP5sEitlrAYrkfdtCDcHDnC4/gqw6Xl2EaEpLvsiWEunPAxEBgxIkUIiqyCqyB
-7Uvg865GmjA2XPkWhX4dNBJb8Slts5xChNKZdbjqiB30LJ2teAMdL7k48+dOZ7Tn
-/764FIWGIGmgwc+GjCe4Lg==
+r7dKHKW8cINvU9h+k3BABIuQGDUnH9uJ4G1WwNhYbh48jBA+zQ1GAcKCKC61v54w
+QxnHUYXTwr86liiHrHjZVURr0mhRp2aLIwgjOcCoyIm4cUIRsx+SGxWsAlq/Agvp
+pB5p2yBZsLpwGKtdEvfnSSav0GPBsX+n4fTuWVArtdmYfDxm0qBtD2PRkLUTnBcK
+jE7NetqkwxmT+Ku+0OT+M+K5bAXyIpe88jDoWmOrLHhwgKO4zBhaCg6IB0PE1KH7
+xLpzmUHrnY3DRY3E7gKPkA5BEKOIHja4+1Jw8NNeHmyItpjRvi+Ef2x7q2vFFgE7
+XeKAmSxi4GMGH0WouzrdPw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-O28oVQO3yIIBFSA5LEZqSLZP+bIVhn+FKqpNCg+TD7SQfBoGiUQ52dUwEBG3G+1u
-EFrjYbFLJXQ3aL34E/Hrxkvrq7olC2k3Zc1hNYYMNfpq2SAZq8fwn64XNfz5dQ8K
-9jc2shFAV20d/8vpawxMylBko+GbJAUfqTs6/46z6ZxfEntvf3YYNrapiJVVKofd
-c+HI3e5buSo95qMcnw56061zoMXguUU0u0W+DinWBuQ5xh34q6URZ9+7/fUtd9mA
-xytt9cN2VSbx4YcS/QT1a/EAoFkUbVd6H8jdUk1ccQRV6pg3Mka17j8fYXqrZaBi
-nCyyUoKnN8sVzj0K7BH2mw==
+DHZzvRNLlmOetLSSt8bxPdXi+aEhLMJStuAc8uax6Uj8WyyM2eSnUrIobRRV0Cc7
+DGEA9t5aFf5fa6Zl2aA8tGXAB+ATHvaDTuYmYb3MFRPnLnvCZMe5sfYICvO7KVNW
+kJQPdfBlfGr8ejeMuE0omtnttygAJdZ5xzHU4JLHQIx9omd0EqpsNiSgnzU78lrG
+IAcHbG7+QD0vWwYmYZ/lcSbvlSmFAvTBQbQY7ECRBivmECLDUydcNX8sxV+KmcIY
+bomQfYjtZ2VwG3FvRKbFdxsvszDn58zxMhpG5HjsggsZ0vha9rPNiJAbJFqBrsIF
+O/eCId93h/i6OL6oANBrKQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-GTtwaK7cKt+S/qR3ZxJoeeEo9alA6CHF6WXqZEwxGVoQMJcnklTTj12LVI98iTpu
-sHZDIfThb1hREgNntvhmOPYmY6xPi2iVUpWcBqzsbJqn9slldbC6UEhdy1rPdnkF
-YoERKcJo93eVCiimxZRl1bSZ7LYbIKoVAAGdpcu8nD7uyL2rN802jQZqikFGBBts
-15xjFGrJ2aTkgDVkePIKKdUwrmS0NAWlci+SrpJDuC0MKNvNvVfMs5UAOAydZaQ3
-KyPVIKKyxFQWkHiXdFX1SGI1oQmZhXa9fc5838FLrgrxSCtqvRrKGTgVk1+rPnXK
-R8v4rrt/cRwbKCPGiWUsxQ==
+uN+z5EP1/F8OXKJChlKVlH8SR0Cp+TOVN1/Uj4gKYLtQEh+CSGWYUhnicAT9zzcn
+6kldUZNrVElFF/M3byCzeWy1B1JIvhkQXlj9H6oHHzTobgIndSJgZ9lyP7wzVC3v
+XAORF+l+flFI6lsJczhz0ABzLhQw0CKEkeCtjclL4pWuoa06JlbuM8M02y2rT7Sl
+/IrODgWjyXazJgrW8P33qAB9ZQP/HqRVXRd+IsCHdbgitZptTU95cVli9CD2Nw4s
+M+roEONvsdo147I73OG6cWKDeFGwrK3yzYb8AhnVItAx19TvLyYkRoxXvHWL0dbn
+vLH3OEH33ygK+2A78y/6mQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-WDGiGQZ6d7cA37umZnCo/gX08JfldriHOlnwC7LHOZXEUDhKEYGYHXVl4k8kZSz3
-/g/m3qJpEgHr8/k+bG5cWx1xA1URAp2FW9C3v6Kn9MbSFNFoq2Uvo/8qvsfxm3YT
-K8gxFgel5pfCgAvG6ai0SgPp2ZZsTng+GzF7kH1YQpJfHfE0GQqnmmq+A2rgVX6f
-73wwyNE+lQuWry6povdDOJewYjX0XsFkkA0ev9E/1Vx66Zgfd7jCtNnP3kzi/2Dg
-z0jVXdQzB7zqpLjtBuSkKPEEoLNecfpfu/toJ2rS94cwH/zPgzpulYxKBYfx+MU5
-fP38sOuIYYGl4PuIkbivHWhfISG+kE02kEMK7WBL2NiPrQnWqz1AYlE1Z0A2ndgy
-NQYYJ+aoaCLL/2Xz9N2F2hiZZZ0Qs3H9GXBTg6YLOHG2VG3CQYkhWYKPXyiqEYyj
-EpoCbBUNF6TNH98HqOBimWcVdIqAH1DHICRzsfg5UDQNIUgseM3oKTBBdL9MtRtG
+Rw45YMQy1sB7/2blzwHG6dws0hg8uzweIy94Ufm7t/eRKKSzdQTCysT3SN7DiOyL
+J9HKXWTBn2JqB0Pzc/G+WZ2plBx9xo7Wz5VbElGOPGeO/8t8TpRem+V7UDUdYUc7
+/P5UW6jhW/r+IFe3Jx6czVAAMZ/7lvsYzs+QlmYuT4qGTT75iv318TvD3Zh2fwRJ
+qHVjFHR51sCTmBgFYujuaXCO9KLAgDErEk5+zmtLj1xAQik4weG2QYHl0bLf+zIg
+phL2BVbWe+rxjd7Q/jlBr8kuno4giCeLDdOnh1NFKVaGQPjyAWAt3yfj1vxoSnrZ
+vnd8xlxARnWyI8d+wQJlHSRkaA8zMZwj7C7605mbwIgF4/7E0cUkubqUkICeRPSV
+Xx41zVm2iKpHQ6wa94hybEwD49q9FfigLQUDbx95vDeP7QrYyjEpGSrVSxOgqe0m
+VcuSH18X35WIiYepC+n1wV1Rm1+ivmftNRKUpITiUW2NafFV/xmsqzWPmp6bxPfO
 
 `pragma protect data_method="aes256-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=1056)
 `pragma protect data_block
-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
+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
 
 `pragma protect end_protected
 
@@ -2542,87 +2584,87 @@ endmodule
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-RamfhLrU6DrzX9Fcjypqi8/AAXXxwWLQ1xdWIXIrrrNoo2jt8VTgaIwnyWMC2wHq
-hXao97Qfu0qumhUhFuT2aIoNKfaWxB5c4ys6xr3e1Et+3JpsQy8+Pi8E2jDWLcA4
-Pvc58VnZRlgzTpo0jml39HSYtFEg8jWOC0p4cJwHY8IgzmApGbV8ec4R+007Xn9k
-r8khTVLYwo0Gm7bWw2ikur6Rw2OnkhCeVFZMaREje0XvmWtuRDMM+ER4B6MwI3SO
-AK7w4KO1xbhLEL9A1H5hgc8M4b9Mt0T9wTFU1OLTEVmtV8Ccsw4SxPjAiw6UN6jc
-JQLmW/6wLBBpaOE7Qc7Czg==
+SXEYH8zwqurlLT4YU6yHTWqGeflkLyfgFyy+QFALij5/clSipJ5+HZxV3rG8uhRq
+Q0B+rJSZbf7hMld2ld5aYIT3LaR0oslY5HNLu+rtunvciSJSdZjSL0lVjmGfxELj
+RbtIOuDPQcVvXfcYFrTFYfN4VQCEQ/h9rTH1cmYWZBltmdxV+ugHtMXk5hZjhaKj
+TLLb5NPoJaMi9I6eLaCon863CPdjq6/ZzL42Dj4lNwil+NcnNSCGIfP7HHjKNxv8
+MpXHIVdgmNvPyEC8V0ZWeE/fU+xuVMuUmsbzjTy4aMBUYhNGinlw3aNc2TB2kp9i
+3fvA+A7zCQ3Ttqwjl8Mtcg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-3KWGspAKneNauJCv5+EW7EBSVULMr1KHNbKSughMMkHtwHvoPiek0rSRuj23NT7t
-pDDbJhCS69oLY67PZZbF7TQybiHTlfFHA4qpbBKNwBTc0oTZlyU38BVOGb3RMeW5
-D1ax+iH2zu8SxH/HdD+34oI87b/jeQGlI1CbJkkgQN4=
+dXvPaPmG4yq9PaNbBf6zLkVaZFLsa4tC9c0X1BunE3zWhXBsqpxIGiqjMHv+r+Re
+0uks/tBLXmtOBnXJ1GDUHKnAQaPsSipFO1ImLVFeusXb3+eM+n4874lbhVfsnWWo
+OzEPS2uhcdOGwhLptDX/+joOayZlwUQR+Owz61v6aT0=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-hnsctcl0dxQPgM28B24Em41pCEaPWgzkFdXVVMPykhZPK280SjUlKiOYab6c07vu
-WQMTwFVxEeffZcjdxLMpn4Cgxb8+R3BOsrBRb/Mz0ADMI0RjwfdS8jERi7xXufuh
-bvvnERIf/olRnSgIPrVKiEKQp3nqXcVae69SKSEitVIDK4T2xQ1feL4G+/+B6lRs
-ncFJuNwWAkUzerXOzqgFAoaw/B1aFWIg+c1aKuH84SfNm0S00IHjhvQ6xuumr8bn
-2kfqC9VYhqBqF/efcm99uOpcrbo7UljWy3qgJ5Sy1Z0ovOR+W5uGMmLV/CwrEvd0
-AerkKS9ZLF1ptdAiKLPXrw==
+XU2qZ3H+XPic7PMLEzJPV+dAMEzIWab1MEnw7KbzlfHeDVJFhE6s9fus+66U8rix
+iF6JAsCSh//A8Gnll8nELmvjx6Gk+7YlgHj2icQ7OF5VA1xrOfLZ5+U6alemwYlU
+8gE0RLyez78DiJRhBNib0gUdyp2wNo9JYfK1Uz85uh5/0KNt1WGxaVW/JTMcIDe4
+x/M/WAeiKk6LsuxYOSIcMXqPjKlnRSOi3czi3HciwyHXxazaiOD3sFMGhZ+vDIUY
+e3dr8w0f+e8nE5tEvQ6sGg0iySbymRNY1HX40q4RfxXTrr9KvFpnKsG3nUcgpns1
+BtL5JxnqShWmMCd9ppy15A==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-ISIJ99AKI0ma1tk9nAdxdY1wPkT5SfQynrQRqO7w+KwPWFrnYevuFmZ6BNvprX0u
-FhDnJ1klbsaI76ZowT9Uy/1+CDLbzI9uk4RIFYsPsl5ifDdqTnKQjpvfQmDEbl1M
-OEErVhdzLr/iXq7NgYOFWxEmFpXu7mXEuiARSqxEZv8rJKdB+s7V97tlYvcJI2O8
-RXzhEDCj44Jlf/MGoGPiKOSFO3i10n21vE3hsaVmFpN9j6atUNpcWlrSHRfRodba
-SUqJ663sNwUjV/ps1CcvnalbIntTSnWwNPmBaE5Cgy399ELWA3pb47aCM50Aor9u
-HvPijc+GGnZKeNXt0j2Ueg==
+iEjbsZClr7YS1nc6qnADWM+qBJzHG9y1CW+AI9lXUw1fVWa4UuCnCB2T9EIJXTGO
+HFtEg6H4dSl8obz5XuJaElcj7NFHnqx4BLGq07tKcIL/KAYkEeKFzDU3/Z6B0aKd
+Pa2E56WViQsP6vrhIlDI6Iasbtq7A7WlTvJChka/q4cPW5FI3+oAttHbiVocOatV
+OPWWSfBFxlxA2IbGjVnKKCKVh1ESp+TvIzUe8KvfCENM7f8CTczAG1TJ/M3IONRD
+shunWqfUsPI+Pi7ZxBkpWA+3YaR/OITwk4GfWfUXt2t0w+HQlPZZ4cpgxd4uRtQ5
+9Xuj6RNHd23z0BAfx4afUA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-uFZS3iw2Lryn82bB4Y1KzwVMb7CRSY1IE1e5eGIsKxHt0mm4YDr4OPHjQWYoHaG8
-RWBtBg1hIHEcYn/b2K+BlNy7P+uTquFALBjMpi+czeAxVxgQO+gu6X4eHFv+LXxO
-I49qBtEkSKkRCMdQNhbetiEtE+7xm9AGBDfoXiG+ZMpUwp+aaUNk8VDF5YxLYON5
-fobeYkC1RnIrwkNIJDOXKEbzRSh8p2RDSdWCtoeP6gaJTs+QnRaimbPc6BcLenBU
-ug3cR9oBpudcE7HKhX9f+9CDPTRchLnmUb+YPHwlUnNU2JCuEAoMPP37uurxKcy/
-XmpypamJjW+1hM8GBs43XQ==
+sjoKtanvYHv3gTXQisMiCYUg99CbDT4uGaWdTwK6jA4mBsqwzkHWPrRER1WZTHMs
+kMysmeyYcepxz6lCWfmeuhGnWNZGSan4PPbQ33HmQaO4Vjle8a6R2W2Qr5XnqrOD
+/r95qnb6dE4iEIy6a4uAZTxgK1iwEE1l4Z3j88e6BSQiQpCe7ZkD4mrSpPFfA7Xf
+MN1IDuqWtaqlZX/9oUNZnR8ewVyPLEKvBfXsk/ZtStMZnXIH/83NxfA9Pm8Trmv+
+e11FFbbrIR2G4rTMgRvYGO5obQyU/h3PUDk8DOux+mo5ypo0IOQH2W6LXEnLnYRW
+m4urfMfMSS7Oa+MRtjPMrw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-lwsNGdcWYu756R6qco7awqKJeKXf1B5UztGAFWg6zR6shYk76pUI+nC/Fpu597KN
-S8K/p/yPQBjrxroOGCNBrYz7z+0ydUsn3Ca85mJVPJ7V76eV9CrdLgY1XC4NxgWL
-sQ/3xBUDI2x/wMjKyZaxKVMjdnWDmzw9RcOWzSY20dq52s1Qz1Cv8nzE4gWPGfer
-yiQ3GXcc281q2cNkzgodkc6hkdQNKzyCLHx4B+OBRuIPKHzOl1k5Lo8CCU/aTFDO
-zt4XAL71hgwwW0k0ui8JDo/yA8Tw16CcZVHdaIn7czEhh4EbIzw7SsS8bUM7Anff
-2FJARjY4B66taaTIS9Jp4/doqD22TER8pYFNS3NWQyxb2xGdnwjftJAjAvdDUl4t
-6cNX99JC+qsPlx9ID/oZhp7EsQR8dOw7qOXrTPTvgn+BstQRtb2o+3LCbFPv6LZD
-9qf7BBRQejNi+2tpRcEAD0g4z/GJ4crotx4GCxEq+0MTbkTiMfCWtqVMvk/jMOva
+gfYzF/EJyfpNxQJ7Ns84LvMnCseVYggKgJFmo56oWmyCfkDcYDLGYp3/JZwIhhf+
+jGO52V7KTVHs3XkPk3x7X6wlM+KW0pBU7rFbqSBuaz2jdNcb79yBfiGiwHCPuXrW
+IB3brvtNpWFc7AGb5FYc1Negvquwo17eMx7RCVH5fBW6XYgI3X3qrJmaI9Ty9TJx
+3Q2MXGSO35X+7jvmHUb/ZWO/0nTYDBiU2Lor4+4N5E0xnWikDmF3ySBjrG1Kk5ZW
+8kl/sjaHNmHruhVJKUUeJm+v2O/eHg/pqHVr0/gWNwTS3sKY2z0ooVLC/Fqm1gdE
+RbxUFahyNu0g88IohlgpdrFKmrG81nqq6PcLwmG+/NJXl6K3KEdIk1EKu6SCp9Ju
+RwbKy4VAlGLVwJnwbJ1QlqttHfeJBR881fmiZFsvb1/tliIutPl28leDDVDeBbZi
+rdwF3HZPPJyiiQZv9qDUnm0y2s1cKwhIh+K44Rqhf76KA9nTP8bmzp6hqpjKUc47
 
 `pragma protect data_method="aes256-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=576)
 `pragma protect data_block
-SMEND11zfoTD1DmLyYE7H7DJOrc1hOcj2ED2CDh6Imo8IQYQVnWW0/Er5L6Oaa8r
-ubmcLh5yNLB56PKFarEtqTm1GA0cNy9R2cJWaj4qfoh88XCV8lg/HhfFlgg2dIuQ
-26lti9BWRSocFnjXvfIBGj6cBHIZNUrgSS8nJslRDvspFasEs3fqhXUieG3rl3BZ
-b4yFGU/UCvf2nPHfSynDbVZEc4gT6EMBigUPcthjm737rF4PGCxYQxQstBwM3W+O
-5sXmLiFMU0V/+tsHk1wDMvCTm0URJXdwR2rPHTDGj5zK83suIzi0T3DI6iFFHfgN
-PVEww9DUCaBoUiBeyttXZxuDA9lsTlrQ5jIrs4PUw4vQipl/csMSGxRY66HuoVVK
-nRDJ8CVkvx9jkKh33vT/ZYdPf3Cm+09/sOM6PNcRMJwSt38lUxv9AxT7jd1TEesi
-o6a+vanRU8VOmbVqVVWF/aJXEXPnyxnS59sRBboS+gA0uA70mkoZsd8pkxS6CEUc
-bXlqFs4Y3StWdCT5/jsyDMNskXLnKqhZ4mDKaFn61ZJctXmz//3aWwaXxsRTtPWe
-IvEc2sy2IdKhOz9oUrcjEVhrGzn/5HcelB51OqJfDtsSpgX69dB9SJz1C78v73W/
-Bu1JnpF7Cd1muMIZsG2gEgl4XbUi2an/b/RWiz3zzKqmlRZLTlPPqJ4EvbS6XCtK
-PrmFolACdz1Fr1lYW9py1R3giJJ4KrX2qELdf17UmsxdU1Wwjxf3XqP0ShjEqkmP
+4TCK3EqqBzE02LfpUuKZ03jcKq+mMojWmtLkmH1XexQJmXzuRXNBecW70yolgn5L
+sTt9nQKYTo52A7gszRpXLT8nxunqkiZy3aU1PzlNtWvtivqm2b9S9/fV3J05+hgX
+bABTkYevQcFj3dBDZwYQOOmg5i+rFLSOngTrtxj+h3yiH05KFNY/iuF1DKl29HwN
+/VGMsKwrEJJcnAyzPZ/1m1+DxFgS1hSophajhXpn9zfjnWJ3ywTxongdMSLI+UqS
+KOg6u1ej5XFcF9WlVkE8OsHf4VvTAUDcXUsZQpL757O9rhTF35IxtXx+93NZqHW/
+ugAXB5DvqVYh+yWVLllExU3ECs54wgcIycgnPPeX9VqOseU/dZh4fcf4JIU6NLdU
+ROT6aIU8SOj3VPgFcoqPpKod++qRRcYXSXXiU0gQreYDZxSYc/q/u+UnDZ0OhLs+
+RcE97RTcIc0BdRaQL5kQDdiKYfLW+PpVpXF1YHVcsCong2SjVPq8JLwEnAR0X4Hf
+Uu13QsphW6wxr1EqDaFEYdGnTmzRQzlAHv74B0memXNuWMPQnlDGzAMpTtCo2QyI
+ev2Kmmp2kybXFSMZiYyrWiUQPh3FZFzdTmX/B8Cwx58S8GAIpr9v4tA1GsnOpXB/
+zMLPnpaKwqAClwqrR52SGuxxQs3CWcnHHg8ZwxVox9UCqBu1lTjhJ1Nov5s9AflY
+M6cNfGagFXVH3HS+EW4kGuTVFVkEdRqBsljHtvREm9DpvpUmZ4jf0BAjJF0hcsxb
 
 `pragma protect end_protected
 
@@ -2640,97 +2682,97 @@ PrmFolACdz1Fr1lYW9py1R3giJJ4KrX2qELdf17UmsxdU1Wwjxf3XqP0ShjEqkmP
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-V4jJ/d1UjoNvZnITcQQdtGJGlrF+oqBRXro5ykMe8MldNP72PiRg2bMOE1MuIMdd
-sjcfc7aTezjwC09SW/TxkOPlARXiDYzLEohGik5ZsajjY9n7GebwSlN4ZRSehQKF
-MwaBQoTkaD1HRMFco6gEBKRj9V6oOyokSUIa5FtZw0Oz2gtpJ3w7rmD5nEoz8In6
-clj62yJxEY4wb7tV57irOG4IFbNFLZkKBdnqM2eYW/abMTll7FnFVjHcBkyU8vhY
-J9JjQS8Vd1d15r5HnigbgZXPnKBMb7Igxil05mfGMAoSYv10mpl18g0jC1If2gY9
-1mRMzU6qI0Uu/nVWw6bdEQ==
+CDcphlfSML3/7bUp2T8uEa6OriUohcmHDGKmlVw/qYyBjEVlS64+u1LK7NByvzVj
+e6pW+UyvShIRtv3oO3btpAZiv3F906V3xtTKneDkZ+mlF3tvfBqz9JzujFAzeLYy
+bf+dbE+qB7bk8syBlM11VHHa0lw6cAhZgViHHb0queqTzeJxNMkvkDMa62GCosw/
+/VOLywMf4KWzgfxJlGDzZT/xU3F83WNQ0B3qdHKompBPrJt3cGpkDOeUMdj8sA/P
+IP0ycoh5tZrN7AfCfBgAJ0x5LFQRgUb9KEZS9Io/5R6rTTXK5YRoAELSB4BEfEXS
+QBucDGLgBOp7d0RxDQ7HWw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-1qymeZXaKyxkGbSngyKx8Gw48iaoOqdnn3HYzt1W2Busi0vm9KB9NEzr5tH8wiRA
-+hpFk6siGyBrtS5UEFro8+1iZHJ1j5kq4G0xJ04jMQ2yZu/BwLOt2Toak8l9dHxg
-XEbe1LoGcGppNcixukY6pIl+APptbf9+HN5Cfqd6Udg=
+Uqiijrx0MT805e+dA/A6u7ZXYwHPcNL7p3HuZWGVxd+q4xYKHGZD/6SQA3ZSn3LA
+Kn/h68n+y0HTpzp2y29PTx5ISOIWyM1PitS4Qb7iBkwd8fdlzo+vMR8PSPrUN4Mr
+jPBJtlKFYsKiElfHIJv95cQH+dbWcTaITnBu+j5Rzpw=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-sjSNHufb4TdPyCkN7eqoneToUEo3YHtb+osyUQZPyXYkcNRcZo6a5rUCnw2IrkNK
-3MC1IlYnZUqeRPYgONlGZIctJhlTNZyybl+Q5Ks/qo0PieHLBDlYus1r2tXhrTCu
-7vWHUJfY9N8UbEJTw3D6jnNuPwUS6lsgBORbdN18JrqtMMC+FNUF3xUKMavhqnu4
-uyrgSHzJs1DzzWFmXAawY7U9y4FkH+mcKMczZyqzw/moSkaZ/c8eOZCeNrrvyV8a
-PNwPvU+OYNho5WS+33C6b85FCtH1ILZysvDQoUx3xteclB15jCq4SXaCCsOT3TSM
-NqQSbuYjfFbZEkDW5yQByw==
+ULHvX5Cje3B/Bt4Z03xdc453xDePAz6lx4bE59OsCNBTB6q5uhFPybPTrIXlLLMJ
+kHvZxIzq24mdx002U6oXIfTLoGbyBtdxjJ1ZsrgyfzQ8O+mifUZ3x/Op9XXGcpI6
+T36rbY2KAO5pM+NZqDyz+cN1BcPfXBlasD3VEDim0O+gdlSXmRLeElEG3//6DIC+
+8HJDAEa/Ct3La9g9J0mWOpAuWX6CKTsyDq7IBF0kymns/cZkbCcSq7LdjOg+BSo2
++7pW4HqRpo75oVSR8fGVO61wWcFslYA28UARTHhq/17BEi3D36vh057pmH8SBq3k
+6OsC62ZdddPuJqiaBRm1IQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-IbiK/YpIgO4TxdtJ7fiPrPArOoPjqgarc3PBDjQ+WjiqOn3bTgQA+KyWXJbIEgPw
-obMkhdLURmuo0rnTOIBDY+3WQBKbbtwxRYL/Zq8qR2q21kKuPCHq6/NzMocZ7gGH
-6M362DzLtCLkvuUh1RYzSfKvW6PhK8vOb+yxHadsf9iICmmMhMlKPcX9SJ4PfdwI
-dWmHZOv+Gg/iU1glvNg7fXezlg6Yc26tcpA9aHBFG3bpdHRmyx7mg6D9ZFv/Z1QC
-vJe4+N9vQxcujgslbY5qeDzWjYKkQvVEhsntZWMp7ieH7EfuulnkVm3kFADehwZi
-8thtMDUN+Uu2u2TREuTiLA==
+H9eboYWdL+XrSwgWDnQOCSC77Z7nhyETH0drSgS5VxVQb8LcwkbKI6dDBXlTBEsT
+7VHYzr2IQFFzwZMUjxM7u5ydRGdxvrSBBATkCL6KEeKjSi1dv9JxvBZioxKTk3xJ
+c1xepog9srTAjhjHSN33Qs4wB9UJs06FuIhplTXi78RDqfp35AgxkPz0sj0B4E+X
+yydEWAQHq4EmTK2oYdu1PPLvIxnqXMyKyuID4ExTPJRTBwcEbeZfMWW1LcDENQry
+g5cXeanUNyplhwMzNyX7xx8HpjzOKA96x6/69PUmy9EzuFVP3FOhch/03d8VtsK5
+fKxZOtiO3BUJWoLAOH3gyQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-uP8VQf/WE1FVuqslLuYeY0ztNwkS7bJVLpPTVuR1zkF1ubAKcJptKmypaRDUzTcW
-mLLnnaVi+M8qVxJSvu9LamCGj2HAYU4MeLcivE0wmGMzAhM31kAUJyVhOHfGe3eB
-3LbtdvfaWK21OplWmXtAIoxBK/COuqNcbGu8YZ7N3SxCMWM2jJvRa2Abf5eWqyxp
-BtHASSRhLnoxHZ/gOHGC1cLsdSkgCv0/70fVwpRZJsAkIiRyrbpUnxyIDOlYbr1u
-W703LbdBBs2af/YNi42rTot7efOCEpQ3DfXKKD/D1R1Sc46zljDVgxigDj3ajMsQ
-4yCqB0uYWfv1RYTzzvufrQ==
+jVn66NfRn57G8DDBd3hM1QOOdM2QSHxCrTDhiv+LsA4UiFk4aWRQvkrYwkrjKosI
+L9uWVbha3sA5ix1VIQLaGwYMzVgiTQ4rId6uHo9BrOurOFMkjgmeGwDTbRG02TDB
+RzvAIfsWI/FyAzbJfZuTepZnJ0vd9yqw6Qpip81hjLtjTkWb2Y73yFR/lF5eloVK
+oXA8IYfovH6Lw/uRB1t06rqHJD3nT6ultVdYyz19gITHp/ym1PcEuhXiwfdQU5yU
+uGYe8jGcVyjWakJjSaxHySJObbl0UJr+0sf1V3wpRY35EQPlRrmP/ZGftAB9CFPa
+LhdXcSOaTY3yuWUcRsrHgA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-X5NwmWaq1cILNOl7jcCKmK27O/p9/oq5iazA3AtftxZGOZC8VqAmQjvlCkLWRUwU
-0NQcGDP6ALUqqTprQXszzBkEnZteVjUcKiRWeEB9G/966u4gh49PXfDyRlu5RT+h
-r//Hc70VQxDNPdjGFCno9lwN9ig1YigcJBuudjXxaU+mXgFGJ7xDreSlUUKOsTHq
-c3vx8S1EdwFlJ3I0RlbVOxC1Cqs3HWglnT7n+4HITZsjGtkMj4YT44jSSSRHyXYe
-4fMl1pnM0fsMv+OWe+lNnHsBz8hECCGkTDk8tOEe+dLEOc7hxa6cB1iYul9IWxKD
-mK5mDN+niTF1flybE0PHOIkd9smvfABxwH1qbdh4JlG7gFtDbSEY6qCF0jlFLzbk
-ZbsCvTwJ+XwYCb7UD3l5RrJBXq23wugd7EkmBCf4l2pMC6Dd8o192qPSvEMEXXO+
-T+C0KezyKMjCYQ7ng8tRNBtFj3Eaba/bVr+srkhAFWliLi3eCAL/NqzjeCz2lKlE
+fQpJLWnrkkO2fNlYjkZitgMBpkvl0GeKNmZe26T9eSGfWjMi4zb/eqbQwHp+u84u
+81Ahp3Hg5zp7UD+5bl0lg5+2E2O9ALuMdgui5VmQdD44J4PzTT5dok8rdJ/QYyR2
+FD8eV108UvANKagGYoiRmX/N/2gYGRqr7AMb669B8OeHwLfEmVT5b7kZzMbiXsGb
+kuxMOJ+f8CBSERy1MEPljVWHUPxQt2+uP0P6JkHuSvc1necwzoIqha7Ias268Gay
+GDlmPFYHcmJGknJzEXeDMAi58q0DikS3lYKX6McCUtyqZl9ql5RmV/G4jbKUfozA
+RPWNbCWG5dbYLp8Jz08BUgbJch2J0KVCI7CKtXe3JZUJeF0Che9ks0hUcz6U3zqd
+z83oyU9Mf32F7zWPK0XCZ7iB+emUtV2Ov/DPp7Atmtzf/kzqEUfq+PxTbGkTwNLO
+927prK+I7XnqoRx3+RMZyinJp8IbHlPM8llwZaMBQ8J/+cwuHnvUWQfKTgaDgEm7
 
 `pragma protect data_method="aes256-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=1056)
 `pragma protect data_block
-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
+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
 
 `pragma protect end_protected
 
@@ -3132,10 +3174,12 @@ endmodule
    \db:device ="LIFCL-40" ,
    \db:package ="CABGA256" ,
    \db:speed ="7_High-Performance_1.0V" ,
-   \db:timestamp ="1696554379" *)
+   \db:timestamp ="1696726509" *)
 module \main  (
     inout \dqs0_io ,
     inout \dqs1_io ,
+    output \dm_dqs0_o ,
+    output \dm_dqs1_o ,
     output \DDR_MEM_1_casn_o ,
     output \DDR_MEM_1_rasn_o ,
     output \DDR_MEM_1_wen_o ,
@@ -3172,6 +3216,10 @@ module \main  (
     wire \PLL_1_clkop_o ;
 
     wire \VCC ;
+
+    wire \dm_dqs0_o_c ;
+
+    wire \dm_dqs1_o_c ;
 
     wire \DDR_MEM_1_casn_o_c ;
 
@@ -3210,7 +3258,9 @@ module \main  (
       .\DDR_MEM_1_cke_o_c_0 (\DDR_MEM_1_cke_o_c [0]),
       .\DDR_MEM_1_ck_o_c_0 (\DDR_MEM_1_ck_o_c [0]),
       .\PLL_1_clkos_o (\PLL_1_clkos_o ),
+      .\dm_dqs1_o_c (\dm_dqs1_o_c ),
       .\dqs1_io (\dqs1_io ),
+      .\dm_dqs0_o_c (\dm_dqs0_o_c ),
       .\dqs0_io (\dqs0_io ),
       .\DDR_MEM_1_casn_o_c (\DDR_MEM_1_casn_o_c ),
       .\DDR_MEM_1_rasn_o_c (\DDR_MEM_1_rasn_o_c ),
@@ -3492,6 +3542,24 @@ module \main  (
       .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
       .\I (\DDR_MEM_1_ck_o_c [0]),
       .\B (\DDR_MEM_1_ck_o [0]));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \dm_dqs1_o_pad.bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\dm_dqs1_o_c ),
+      .\B (\dm_dqs1_o ));
+
+    (* \IO_TYPE ="SSTL15_II" ,
+       \dm:primitive ="BB" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB  \dm_dqs0_o_pad.bb_inst (
+      .\T (\DDR_MEM_1_cke_o_pad[0].gnd ),
+      .\I (\dm_dqs0_o_c ),
+      .\B (\dm_dqs0_o ));
 
 endmodule
 

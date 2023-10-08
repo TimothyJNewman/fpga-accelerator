@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "main")
-  (DATE "Fri Oct  6 02:09:14 2023")
+  (DATE "Sun Oct  8 02:59:05 2023")
   (VENDOR "Lattice")
   (PROGRAM "backanno")
   (VERSION "Radiant Software (64-bit) 2023.1.1.200.1")
@@ -62,31 +62,6 @@
   )
   (CELL
 
-      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL")
-
-      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
-        (IOPATH DQSW270 TOUT (846:860:875)(846:860:875))
-      )
-    )
-    (TIMINGCHECK
-      (SETUPHOLD (posedge SCLKOUT) (posedge ECLK) (0:0:0)(0:0:0))
-      (SETUPHOLD TSDATA0 (posedge SCLKOUT) (477:477:477)(-477:-455:-434))
-      (SETUPHOLD TXDATA0 (posedge SCLKOUT) (493:503:513)(-493:-483:-473))
-      (SETUPHOLD TXDATA1 (posedge SCLKOUT) (472:480:489)(-472:-470:-469))
-      (SETUPHOLD TSDATA1 (posedge SCLKOUT) (479:479:479)(-479:-452:-425))
-      (SETUPHOLD TXDATA2 (posedge SCLKOUT) (455:458:461)(-455:-451:-447))
-      (SETUPHOLD TXDATA3 (posedge SCLKOUT) (473:473:473)(-473:-461:-450))
-    )
-    (TIMINGCHECK
-      (WIDTH (posedge DQSW270) (937:937:937))
-      (WIDTH (negedge DQSW270) (937:937:937))
-    )
-  )
-  (CELL
-
       (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL")
 
       (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL)
@@ -112,9 +87,34 @@
   )
   (CELL
 
-      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL")
+      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL")
 
-      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL)
+      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
+        (IOPATH DQSW270 TOUT (846:860:875)(846:860:875))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge SCLKOUT) (posedge ECLK) (0:0:0)(0:0:0))
+      (SETUPHOLD TSDATA0 (posedge SCLKOUT) (477:477:477)(-477:-455:-434))
+      (SETUPHOLD TXDATA0 (posedge SCLKOUT) (493:503:513)(-493:-483:-473))
+      (SETUPHOLD TXDATA1 (posedge SCLKOUT) (472:480:489)(-472:-470:-469))
+      (SETUPHOLD TSDATA1 (posedge SCLKOUT) (479:479:479)(-479:-452:-425))
+      (SETUPHOLD TXDATA2 (posedge SCLKOUT) (455:458:461)(-455:-451:-447))
+      (SETUPHOLD TXDATA3 (posedge SCLKOUT) (473:473:473)(-473:-461:-450))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge DQSW270) (937:937:937))
+      (WIDTH (negedge DQSW270) (937:937:937))
+    )
+  )
+  (CELL
+
+      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL")
+
+      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL)
     (DELAY
       (ABSOLUTE
         (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
@@ -162,9 +162,9 @@
   )
   (CELL
 
-      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL")
+      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL")
 
-      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL)
+      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL)
     (DELAY
       (ABSOLUTE
         (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
@@ -287,31 +287,6 @@
   )
   (CELL
 
-      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL")
-
-      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
-        (IOPATH DQSW270 TOUT (846:860:875)(846:860:875))
-      )
-    )
-    (TIMINGCHECK
-      (SETUPHOLD (posedge SCLKOUT) (posedge ECLK) (0:0:0)(0:0:0))
-      (SETUPHOLD TSDATA0 (posedge SCLKOUT) (477:477:477)(-477:-455:-434))
-      (SETUPHOLD TXDATA0 (posedge SCLKOUT) (493:503:513)(-493:-483:-473))
-      (SETUPHOLD TXDATA1 (posedge SCLKOUT) (472:480:489)(-472:-470:-469))
-      (SETUPHOLD TSDATA1 (posedge SCLKOUT) (479:479:479)(-479:-452:-425))
-      (SETUPHOLD TXDATA2 (posedge SCLKOUT) (455:458:461)(-455:-451:-447))
-      (SETUPHOLD TXDATA3 (posedge SCLKOUT) (473:473:473)(-473:-461:-450))
-    )
-    (TIMINGCHECK
-      (WIDTH (posedge DQSW270) (937:937:937))
-      (WIDTH (negedge DQSW270) (937:937:937))
-    )
-  )
-  (CELL
-
       (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL")
 
       (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL)
@@ -337,9 +312,34 @@
   )
   (CELL
 
-      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL")
+      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL")
 
-      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL)
+      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
+        (IOPATH DQSW270 TOUT (846:860:875)(846:860:875))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge SCLKOUT) (posedge ECLK) (0:0:0)(0:0:0))
+      (SETUPHOLD TSDATA0 (posedge SCLKOUT) (477:477:477)(-477:-455:-434))
+      (SETUPHOLD TXDATA0 (posedge SCLKOUT) (493:503:513)(-493:-483:-473))
+      (SETUPHOLD TXDATA1 (posedge SCLKOUT) (472:480:489)(-472:-470:-469))
+      (SETUPHOLD TSDATA1 (posedge SCLKOUT) (479:479:479)(-479:-452:-425))
+      (SETUPHOLD TXDATA2 (posedge SCLKOUT) (455:458:461)(-455:-451:-447))
+      (SETUPHOLD TXDATA3 (posedge SCLKOUT) (473:473:473)(-473:-461:-450))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge DQSW270) (937:937:937))
+      (WIDTH (negedge DQSW270) (937:937:937))
+    )
+  )
+  (CELL
+
+      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL")
+
+      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL)
     (DELAY
       (ABSOLUTE
         (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
@@ -387,9 +387,9 @@
   )
   (CELL
 
-      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL")
+      (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL")
 
-      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL)
+      (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL)
     (DELAY
       (ABSOLUTE
         (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
@@ -871,6 +871,46 @@
     )
   )
   (CELL
+    (CELLTYPE "dm_dqs1_o_pad_bb_inst_IOL")
+    (INSTANCE dm_dqs1_o_pad\.bb_inst_IOL)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge SCLKOUT) (posedge ECLK) (0:0:0)(0:0:0))
+      (SETUPHOLD TXDATA0 (posedge SCLKOUT) (493:503:513)(-493:-483:-473))
+      (SETUPHOLD TXDATA1 (posedge SCLKOUT) (472:480:489)(-472:-470:-469))
+      (SETUPHOLD TXDATA2 (posedge SCLKOUT) (455:458:461)(-455:-451:-447))
+      (SETUPHOLD TXDATA3 (posedge SCLKOUT) (473:473:473)(-473:-461:-450))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge DQSW270) (937:937:937))
+      (WIDTH (negedge DQSW270) (937:937:937))
+    )
+  )
+  (CELL
+    (CELLTYPE "dm_dqs0_o_pad_bb_inst_IOL")
+    (INSTANCE dm_dqs0_o_pad\.bb_inst_IOL)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH DQSW270 DOUT (730:766:802)(730:766:802))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge SCLKOUT) (posedge ECLK) (0:0:0)(0:0:0))
+      (SETUPHOLD TXDATA0 (posedge SCLKOUT) (493:503:513)(-493:-483:-473))
+      (SETUPHOLD TXDATA1 (posedge SCLKOUT) (472:480:489)(-472:-470:-469))
+      (SETUPHOLD TXDATA2 (posedge SCLKOUT) (455:458:461)(-455:-451:-447))
+      (SETUPHOLD TXDATA3 (posedge SCLKOUT) (473:473:473)(-473:-461:-450))
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge DQSW270) (937:937:937))
+      (WIDTH (negedge DQSW270) (937:937:937))
+    )
+  )
+  (CELL
     (CELLTYPE "DDR_MEM_1_inst_lscc_ddr_mem_inst_u1_common_logic_u0_ECLKSYNC_ECLKSYNC_inst")
     (INSTANCE DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst)
     (DELAY
@@ -921,20 +961,6 @@
     )
   )
   (CELL
-    (CELLTYPE "dq_dqs1_io_4_")
-    (INSTANCE dq_dqs1_io\[4\]_I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH PADDO dqdqs1io4 (2479:2609:2740)(2479:2609:2740))
-        (IOPATH PADDT dqdqs1io4 (3043:4389:5736)(3043:4389:5736))
-      )
-    )
-    (TIMINGCHECK
-      (WIDTH (posedge dqdqs1io4) (469:469:469))
-      (WIDTH (negedge dqdqs1io4) (469:469:469))
-    )
-  )
-  (CELL
     (CELLTYPE "dq_dqs1_io_2_")
     (INSTANCE dq_dqs1_io\[2\]_I)
     (DELAY
@@ -949,17 +975,31 @@
     )
   )
   (CELL
-    (CELLTYPE "dq_dqs1_io_0_")
-    (INSTANCE dq_dqs1_io\[0\]_I)
+    (CELLTYPE "dq_dqs1_io_3_")
+    (INSTANCE dq_dqs1_io\[3\]_I)
     (DELAY
       (ABSOLUTE
-        (IOPATH PADDO dqdqs1io0 (2479:2609:2740)(2479:2609:2740))
-        (IOPATH PADDT dqdqs1io0 (3043:4389:5736)(3043:4389:5736))
+        (IOPATH PADDO dqdqs1io3 (2479:2609:2740)(2479:2609:2740))
+        (IOPATH PADDT dqdqs1io3 (3043:4389:5736)(3043:4389:5736))
       )
     )
     (TIMINGCHECK
-      (WIDTH (posedge dqdqs1io0) (469:469:469))
-      (WIDTH (negedge dqdqs1io0) (469:469:469))
+      (WIDTH (posedge dqdqs1io3) (469:469:469))
+      (WIDTH (negedge dqdqs1io3) (469:469:469))
+    )
+  )
+  (CELL
+    (CELLTYPE "dq_dqs1_io_4_")
+    (INSTANCE dq_dqs1_io\[4\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO dqdqs1io4 (2479:2609:2740)(2479:2609:2740))
+        (IOPATH PADDT dqdqs1io4 (3043:4389:5736)(3043:4389:5736))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge dqdqs1io4) (469:469:469))
+      (WIDTH (negedge dqdqs1io4) (469:469:469))
     )
   )
   (CELL
@@ -977,17 +1017,17 @@
     )
   )
   (CELL
-    (CELLTYPE "dq_dqs1_io_3_")
-    (INSTANCE dq_dqs1_io\[3\]_I)
+    (CELLTYPE "dq_dqs1_io_0_")
+    (INSTANCE dq_dqs1_io\[0\]_I)
     (DELAY
       (ABSOLUTE
-        (IOPATH PADDO dqdqs1io3 (2479:2609:2740)(2479:2609:2740))
-        (IOPATH PADDT dqdqs1io3 (3043:4389:5736)(3043:4389:5736))
+        (IOPATH PADDO dqdqs1io0 (2479:2609:2740)(2479:2609:2740))
+        (IOPATH PADDT dqdqs1io0 (3043:4389:5736)(3043:4389:5736))
       )
     )
     (TIMINGCHECK
-      (WIDTH (posedge dqdqs1io3) (469:469:469))
-      (WIDTH (negedge dqdqs1io3) (469:469:469))
+      (WIDTH (posedge dqdqs1io0) (469:469:469))
+      (WIDTH (negedge dqdqs1io0) (469:469:469))
     )
   )
   (CELL
@@ -1065,20 +1105,6 @@
     )
   )
   (CELL
-    (CELLTYPE "dq_dqs0_io_4_")
-    (INSTANCE dq_dqs0_io\[4\]_I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH PADDO dqdqs0io4 (2479:2609:2740)(2479:2609:2740))
-        (IOPATH PADDT dqdqs0io4 (3043:4389:5736)(3043:4389:5736))
-      )
-    )
-    (TIMINGCHECK
-      (WIDTH (posedge dqdqs0io4) (469:469:469))
-      (WIDTH (negedge dqdqs0io4) (469:469:469))
-    )
-  )
-  (CELL
     (CELLTYPE "dq_dqs0_io_2_")
     (INSTANCE dq_dqs0_io\[2\]_I)
     (DELAY
@@ -1093,17 +1119,31 @@
     )
   )
   (CELL
-    (CELLTYPE "dq_dqs0_io_0_")
-    (INSTANCE dq_dqs0_io\[0\]_I)
+    (CELLTYPE "dq_dqs0_io_3_")
+    (INSTANCE dq_dqs0_io\[3\]_I)
     (DELAY
       (ABSOLUTE
-        (IOPATH PADDO dqdqs0io0 (2479:2609:2740)(2479:2609:2740))
-        (IOPATH PADDT dqdqs0io0 (3043:4389:5736)(3043:4389:5736))
+        (IOPATH PADDO dqdqs0io3 (2479:2609:2740)(2479:2609:2740))
+        (IOPATH PADDT dqdqs0io3 (3043:4389:5736)(3043:4389:5736))
       )
     )
     (TIMINGCHECK
-      (WIDTH (posedge dqdqs0io0) (469:469:469))
-      (WIDTH (negedge dqdqs0io0) (469:469:469))
+      (WIDTH (posedge dqdqs0io3) (469:469:469))
+      (WIDTH (negedge dqdqs0io3) (469:469:469))
+    )
+  )
+  (CELL
+    (CELLTYPE "dq_dqs0_io_4_")
+    (INSTANCE dq_dqs0_io\[4\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO dqdqs0io4 (2479:2609:2740)(2479:2609:2740))
+        (IOPATH PADDT dqdqs0io4 (3043:4389:5736)(3043:4389:5736))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge dqdqs0io4) (469:469:469))
+      (WIDTH (negedge dqdqs0io4) (469:469:469))
     )
   )
   (CELL
@@ -1121,17 +1161,17 @@
     )
   )
   (CELL
-    (CELLTYPE "dq_dqs0_io_3_")
-    (INSTANCE dq_dqs0_io\[3\]_I)
+    (CELLTYPE "dq_dqs0_io_0_")
+    (INSTANCE dq_dqs0_io\[0\]_I)
     (DELAY
       (ABSOLUTE
-        (IOPATH PADDO dqdqs0io3 (2479:2609:2740)(2479:2609:2740))
-        (IOPATH PADDT dqdqs0io3 (3043:4389:5736)(3043:4389:5736))
+        (IOPATH PADDO dqdqs0io0 (2479:2609:2740)(2479:2609:2740))
+        (IOPATH PADDT dqdqs0io0 (3043:4389:5736)(3043:4389:5736))
       )
     )
     (TIMINGCHECK
-      (WIDTH (posedge dqdqs0io3) (469:469:469))
-      (WIDTH (negedge dqdqs0io3) (469:469:469))
+      (WIDTH (posedge dqdqs0io0) (469:469:469))
+      (WIDTH (negedge dqdqs0io0) (469:469:469))
     )
   )
   (CELL
@@ -1781,666 +1821,708 @@
     )
   )
   (CELL
+    (CELLTYPE "dm_dqs1_o")
+    (INSTANCE dm_dqs1_o_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO dm_dqs1_o (2479:2609:2740)(2479:2609:2740))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge dm_dqs1_o) (469:469:469))
+      (WIDTH (negedge dm_dqs1_o) (469:469:469))
+    )
+  )
+  (CELL
+    (CELLTYPE "dm_dqs0_o")
+    (INSTANCE dm_dqs0_o_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO dm_dqs0_o (2479:2609:2740)(2479:2609:2740))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge dm_dqs0_o) (469:469:469))
+      (WIDTH (negedge dm_dqs0_o) (469:469:469))
+    )
+  )
+  (CELL
     (CELLTYPE "main")
     (INSTANCE )
     (DELAY
       (ABSOLUTE
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA0 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA1 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA2 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA3 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TSDATA0 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TSDATA1 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA0 
-          (2507:2899:3291)(2507:2899:3291))
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA1 
-          (2507:2899:3291)(2507:2899:3291))
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA2 
-          (2507:2899:3291)(2507:2899:3291))
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA3 
-          (2507:2899:3291)(2507:2899:3291))
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TSDATA0 
-          (2507:2899:3291)(2507:2899:3291))
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TSDATA1 
-          (2507:2899:3291)(2507:2899:3291))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA0 
-          (1892:2204:2516)(1892:2204:2516))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA1 
-          (1892:2204:2516)(1892:2204:2516))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA2 
-          (1892:2204:2516)(1892:2204:2516))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA3 
-          (1892:2204:2516)(1892:2204:2516))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA0 
-          (1892:2204:2516)(1892:2204:2516))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA1 
-          (1892:2204:2516)(1892:2204:2516))
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA0 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA1 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA2 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA3 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TSDATA0 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TSDATA1 
-          (1895:2208:2521)(1895:2208:2521))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA0 
-          (1787:2080:2374)(1787:2080:2374))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA1 
-          (1787:2080:2374)(1787:2080:2374))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA2 
-          (1787:2080:2374)(1787:2080:2374))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA3 
-          (1787:2080:2374)(1787:2080:2374))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA0 
-          (1787:2080:2374)(1787:2080:2374))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA1 
-          (1787:2080:2374)(1787:2080:2374))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA0 
-          (1748:2042:2336)(1748:2042:2336))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA1 
-          (1748:2042:2336)(1748:2042:2336))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA2 
-          (1748:2042:2336)(1748:2042:2336))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA3 
-          (1748:2042:2336)(1748:2042:2336))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA0 
-          (1748:2042:2336)(1748:2042:2336))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA1 
-          (1748:2042:2336)(1748:2042:2336))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA0 
-          (1793:2088:2384)(1793:2088:2384))
+          (1829:2113:2397)(1829:2113:2397))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA1 
-          (1793:2088:2384)(1793:2088:2384))
+          (1829:2113:2397)(1829:2113:2397))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA2 
-          (1793:2088:2384)(1793:2088:2384))
+          (1829:2113:2397)(1829:2113:2397))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA3 
-          (1793:2088:2384)(1793:2088:2384))
+          (1829:2113:2397)(1829:2113:2397))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TSDATA0 
-          (1793:2088:2384)(1793:2088:2384))
+          (1829:2113:2397)(1829:2113:2397))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TSDATA1 
-          (1793:2088:2384)(1793:2088:2384))
+          (1829:2113:2397)(1829:2113:2397))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA0 
+          (1929:2229:2530)(1929:2229:2530))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA1 
+          (1929:2229:2530)(1929:2229:2530))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA2 
+          (1929:2229:2530)(1929:2229:2530))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA3 
+          (1929:2229:2530)(1929:2229:2530))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA0 
+          (1929:2229:2530)(1929:2229:2530))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA1 
+          (1929:2229:2530)(1929:2229:2530))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA0 
+          (1784:2067:2350)(1784:2067:2350))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA1 
+          (1784:2067:2350)(1784:2067:2350))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA2 
+          (1784:2067:2350)(1784:2067:2350))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA3 
+          (1784:2067:2350)(1784:2067:2350))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA0 
+          (1784:2067:2350)(1784:2067:2350))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA1 
+          (1784:2067:2350)(1784:2067:2350))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA0 
+          (1549:1802:2056)(1549:1802:2056))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA1 
+          (1549:1802:2056)(1549:1802:2056))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA2 
+          (1549:1802:2056)(1549:1802:2056))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA3 
+          (1549:1802:2056)(1549:1802:2056))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA0 
+          (1549:1802:2056)(1549:1802:2056))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA1 
+          (1549:1802:2056)(1549:1802:2056))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA0 
-          (1902:2217:2532)(1902:2217:2532))
+          (1935:2238:2541)(1935:2238:2541))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA1 
-          (1902:2217:2532)(1902:2217:2532))
+          (1935:2238:2541)(1935:2238:2541))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA2 
-          (1902:2217:2532)(1902:2217:2532))
+          (1935:2238:2541)(1935:2238:2541))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA3 
-          (1902:2217:2532)(1902:2217:2532))
+          (1935:2238:2541)(1935:2238:2541))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TSDATA0 
-          (1902:2217:2532)(1902:2217:2532))
+          (1935:2238:2541)(1935:2238:2541))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TSDATA1 
-          (1902:2217:2532)(1902:2217:2532))
+          (1935:2238:2541)(1935:2238:2541))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA0 
-          (1998:2329:2660)(1998:2329:2660))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA1 
-          (1998:2329:2660)(1998:2329:2660))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA2 
-          (1998:2329:2660)(1998:2329:2660))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA3 
-          (1998:2329:2660)(1998:2329:2660))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TSDATA0 
-          (1998:2329:2660)(1998:2329:2660))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TSDATA1 
-          (1998:2329:2660)(1998:2329:2660))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA0 
-          (2541:2929:3318)(2541:2929:3318))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA1 
-          (2541:2929:3318)(2541:2929:3318))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA2 
-          (2541:2929:3318)(2541:2929:3318))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TXDATA3 
-          (2812:3242:3672)(2812:3242:3672))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TSDATA0 
-          (2541:2929:3318)(2541:2929:3318))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQS_BLOCK\.u_DQS_BB_IOL/TSDATA1 
-          (2812:3242:3672)(2812:3242:3672))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA0 
-          (2918:3367:3816)(2918:3367:3816))
+          (1094:1299:1505)(1094:1299:1505))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA1 
-          (2918:3367:3816)(2918:3367:3816))
+          (1094:1299:1505)(1094:1299:1505))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA2 
-          (2918:3367:3816)(2918:3367:3816))
+          (1094:1299:1505)(1094:1299:1505))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TXDATA3 
-          (2918:3367:3816)(2918:3367:3816))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TSDATA0 
-          (2918:3367:3816)(2918:3367:3816))
+          (1094:1299:1505)(1094:1299:1505))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[6\]\.u_DQ_BB_IOL/TSDATA1 
-          (2918:3367:3816)(2918:3367:3816))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA0 
-          (2616:3027:3439)(2616:3027:3439))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA1 
-          (2616:3027:3439)(2616:3027:3439))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA2 
-          (2616:3027:3439)(2616:3027:3439))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA3 
-          (2616:3027:3439)(2616:3027:3439))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA0 
-          (2616:3027:3439)(2616:3027:3439))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA1 
-          (2616:3027:3439)(2616:3027:3439))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA0 
-          (2800:3224:3648)(2800:3224:3648))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA1 
-          (2800:3224:3648)(2800:3224:3648))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA2 
-          (2800:3224:3648)(2800:3224:3648))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TXDATA3 
-          (2800:3224:3648)(2800:3224:3648))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TSDATA0 
-          (2800:3224:3648)(2800:3224:3648))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TSDATA1 
-          (2800:3224:3648)(2800:3224:3648))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA0 
-          (2697:3105:3514)(2697:3105:3514))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA1 
-          (2697:3105:3514)(2697:3105:3514))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA2 
-          (2697:3105:3514)(2697:3105:3514))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA3 
-          (2697:3105:3514)(2697:3105:3514))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA0 
-          (2697:3105:3514)(2697:3105:3514))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA1 
-          (2697:3105:3514)(2697:3105:3514))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA0 
-          (2812:3242:3672)(2812:3242:3672))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA1 
-          (2812:3242:3672)(2812:3242:3672))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA2 
-          (2812:3242:3672)(2812:3242:3672))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA3 
-          (2812:3242:3672)(2812:3242:3672))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA0 
-          (2812:3242:3672)(2812:3242:3672))
-        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA1 
-          (2812:3242:3672)(2812:3242:3672))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA0 
-          (2698:3104:3510)(2698:3104:3510))
+          (1611:1893:2175)(1611:1893:2175))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA1 
-          (2698:3104:3510)(2698:3104:3510))
+          (1611:1893:2175)(1611:1893:2175))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA2 
-          (2698:3104:3510)(2698:3104:3510))
+          (1611:1893:2175)(1611:1893:2175))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TXDATA3 
-          (2698:3104:3510)(2698:3104:3510))
+          (1611:1893:2175)(1611:1893:2175))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TSDATA0 
-          (2698:3104:3510)(2698:3104:3510))
+          (1611:1893:2175)(1611:1893:2175))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TSDATA1 
-          (2698:3104:3510)(2698:3104:3510))
+          (1611:1893:2175)(1611:1893:2175))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA0 
+          (1486:1755:2024)(1486:1755:2024))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA1 
+          (1486:1755:2024)(1486:1755:2024))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA2 
+          (1486:1755:2024)(1486:1755:2024))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TXDATA3 
+          (1486:1755:2024)(1486:1755:2024))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA0 
+          (1486:1755:2024)(1486:1755:2024))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TSDATA1 
+          (1486:1755:2024)(1486:1755:2024))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA0 
+          (1502:1764:2027)(1502:1764:2027))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA1 
+          (1502:1764:2027)(1502:1764:2027))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA2 
+          (1502:1764:2027)(1502:1764:2027))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TXDATA3 
+          (1502:1764:2027)(1502:1764:2027))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA0 
+          (1502:1764:2027)(1502:1764:2027))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TSDATA1 
+          (1502:1764:2027)(1502:1764:2027))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA0 
+          (1268:1497:1727)(1268:1497:1727))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA1 
+          (1268:1497:1727)(1268:1497:1727))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA2 
+          (1268:1497:1727)(1268:1497:1727))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TXDATA3 
+          (1268:1497:1727)(1268:1497:1727))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA0 
+          (1268:1497:1727)(1268:1497:1727))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TSDATA1 
+          (1268:1497:1727)(1268:1497:1727))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA0 
-          (2407:2782:3158)(2407:2782:3158))
+          (1206:1432:1658)(1206:1432:1658))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA1 
-          (2407:2782:3158)(2407:2782:3158))
+          (1206:1432:1658)(1206:1432:1658))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA2 
-          (2407:2782:3158)(2407:2782:3158))
+          (1206:1432:1658)(1206:1432:1658))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TXDATA3 
-          (2407:2782:3158)(2407:2782:3158))
+          (1206:1432:1658)(1206:1432:1658))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TSDATA0 
-          (2407:2782:3158)(2407:2782:3158))
+          (1206:1432:1658)(1206:1432:1658))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/TSDATA1 
-          (2407:2782:3158)(2407:2782:3158))
+          (1206:1432:1658)(1206:1432:1658))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA0 
-          (2807:3233:3659)(2807:3233:3659))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA1 
-          (2807:3233:3659)(2807:3233:3659))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA2 
-          (2807:3233:3659)(2807:3233:3659))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TXDATA3 
-          (2807:3233:3659)(2807:3233:3659))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TSDATA0 
-          (2807:3233:3659)(2807:3233:3659))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/TSDATA1 
-          (2807:3233:3659)(2807:3233:3659))
+          (1315:1561:1807)(1315:1561:1807))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_cke_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (4168:4797:5427)(4168:4797:5427))
+          DDR_MEM_1_cke_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (1328:1568:1808)(1328:1568:1808))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_cke_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (4168:4797:5427)(4168:4797:5427))
+          DDR_MEM_1_cke_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (1328:1568:1808)(1328:1568:1808))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_odt_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (3651:4185:4720)(3651:4185:4720))
+          DDR_MEM_1_odt_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (1582:1864:2147)(1582:1864:2147))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_odt_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (3651:4185:4720)(3651:4185:4720))
+          DDR_MEM_1_odt_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (1582:1864:2147)(1582:1864:2147))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_wen_o_pad\.bb_inst_IOL/TXDATA0 (4175:4801:5428)(4175:4801:5428))
+          DDR_MEM_1_wen_o_pad\.bb_inst_IOL/TXDATA0 (1694:1989:2284)(1694:1989:2284))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_wen_o_pad\.bb_inst_IOL/TXDATA1 (4175:4801:5428)(4175:4801:5428))
+          DDR_MEM_1_wen_o_pad\.bb_inst_IOL/TXDATA1 (1694:1989:2284)(1694:1989:2284))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_rasn_o_pad\.bb_inst_IOL/TXDATA0 (3452:3971:4490)(3452:3971:4490))
+          DDR_MEM_1_rasn_o_pad\.bb_inst_IOL/TXDATA0 (1308:1562:1816)(1308:1562:1816))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_rasn_o_pad\.bb_inst_IOL/TXDATA1 (3452:3971:4490)(3452:3971:4490))
+          DDR_MEM_1_rasn_o_pad\.bb_inst_IOL/TXDATA1 (1308:1562:1816)(1308:1562:1816))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_casn_o_pad\.bb_inst_IOL/TXDATA0 (3452:3971:4490)(3452:3971:4490))
+          DDR_MEM_1_casn_o_pad\.bb_inst_IOL/TXDATA0 (949:1143:1337)(949:1143:1337))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_casn_o_pad\.bb_inst_IOL/TXDATA1 (3452:3971:4490)(3452:3971:4490))
+          DDR_MEM_1_casn_o_pad\.bb_inst_IOL/TXDATA1 (949:1143:1337)(949:1143:1337))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ba_o_pad\[2\]\.bb_inst_IOL/TXDATA0 (3561:4100:4639)(3561:4100:4639))
+          DDR_MEM_1_ba_o_pad\[2\]\.bb_inst_IOL/TXDATA0 (1058:1271:1485)(1058:1271:1485))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ba_o_pad\[2\]\.bb_inst_IOL/TXDATA1 (3561:4100:4639)(3561:4100:4639))
+          DDR_MEM_1_ba_o_pad\[2\]\.bb_inst_IOL/TXDATA1 (1058:1271:1485)(1058:1271:1485))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ba_o_pad\[1\]\.bb_inst_IOL/TXDATA0 (3822:4395:4969)(3822:4395:4969))
+          DDR_MEM_1_ba_o_pad\[1\]\.bb_inst_IOL/TXDATA0 (1443:1705:1967)(1443:1705:1967))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ba_o_pad\[1\]\.bb_inst_IOL/TXDATA1 (3822:4395:4969)(3822:4395:4969))
+          DDR_MEM_1_ba_o_pad\[1\]\.bb_inst_IOL/TXDATA1 (1443:1705:1967)(1443:1705:1967))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ba_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (3664:4220:4776)(3664:4220:4776))
+          DDR_MEM_1_ba_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (1164:1396:1629)(1164:1396:1629))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ba_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (3664:4220:4776)(3664:4220:4776))
+          DDR_MEM_1_ba_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (1164:1396:1629)(1164:1396:1629))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[13\]\.bb_inst_IOL/TXDATA0 (3757:4310:4864)(3757:4310:4864))
+          DDR_MEM_1_addr_o_pad\[13\]\.bb_inst_IOL/TXDATA0 (1579:1860:2142)(1579:1860:2142))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[13\]\.bb_inst_IOL/TXDATA1 (3757:4310:4864)(3757:4310:4864))
+          DDR_MEM_1_addr_o_pad\[13\]\.bb_inst_IOL/TXDATA1 (1579:1860:2142)(1579:1860:2142))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[12\]\.bb_inst_IOL/TXDATA0 (3962:4556:5151)(3962:4556:5151))
+          DDR_MEM_1_addr_o_pad\[12\]\.bb_inst_IOL/TXDATA0 (1443:1705:1967)(1443:1705:1967))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[12\]\.bb_inst_IOL/TXDATA1 (3962:4556:5151)(3962:4556:5151))
+          DDR_MEM_1_addr_o_pad\[12\]\.bb_inst_IOL/TXDATA1 (1443:1705:1967)(1443:1705:1967))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[11\]\.bb_inst_IOL/TXDATA0 (3552:4087:4623)(3552:4087:4623))
+          DDR_MEM_1_addr_o_pad\[11\]\.bb_inst_IOL/TXDATA0 (1411:1682:1954)(1411:1682:1954))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[11\]\.bb_inst_IOL/TXDATA1 (3552:4087:4623)(3552:4087:4623))
+          DDR_MEM_1_addr_o_pad\[11\]\.bb_inst_IOL/TXDATA1 (1411:1682:1954)(1411:1682:1954))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[10\]\.bb_inst_IOL/TXDATA0 (4068:4676:5284)(4068:4676:5284))
+          DDR_MEM_1_addr_o_pad\[10\]\.bb_inst_IOL/TXDATA0 (1592:1869:2147)(1592:1869:2147))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[10\]\.bb_inst_IOL/TXDATA1 (4068:4676:5284)(4068:4676:5284))
+          DDR_MEM_1_addr_o_pad\[10\]\.bb_inst_IOL/TXDATA1 (1592:1869:2147)(1592:1869:2147))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[9\]\.bb_inst_IOL/TXDATA0 (4171:4796:5422)(4171:4796:5422))
+          DDR_MEM_1_addr_o_pad\[9\]\.bb_inst_IOL/TXDATA0 (1492:1753:2014)(1492:1753:2014))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[9\]\.bb_inst_IOL/TXDATA1 (4171:4796:5422)(4171:4796:5422))
+          DDR_MEM_1_addr_o_pad\[9\]\.bb_inst_IOL/TXDATA1 (1492:1753:2014)(1492:1753:2014))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[8\]\.bb_inst_IOL/TXDATA0 (3924:4515:5107)(3924:4515:5107))
+          DDR_MEM_1_addr_o_pad\[8\]\.bb_inst_IOL/TXDATA0 (1685:1984:2284)(1685:1984:2284))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[8\]\.bb_inst_IOL/TXDATA1 (3924:4515:5107)(3924:4515:5107))
+          DDR_MEM_1_addr_o_pad\[8\]\.bb_inst_IOL/TXDATA1 (1685:1984:2284)(1685:1984:2284))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[7\]\.bb_inst_IOL/TXDATA0 (3959:4552:5146)(3959:4552:5146))
+          DDR_MEM_1_addr_o_pad\[7\]\.bb_inst_IOL/TXDATA0 (1337:1580:1823)(1337:1580:1823))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[7\]\.bb_inst_IOL/TXDATA1 (3959:4552:5146)(3959:4552:5146))
+          DDR_MEM_1_addr_o_pad\[7\]\.bb_inst_IOL/TXDATA1 (1337:1580:1823)(1337:1580:1823))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[6\]\.bb_inst_IOL/TXDATA0 (3757:4310:4864)(3757:4310:4864))
+          DDR_MEM_1_addr_o_pad\[6\]\.bb_inst_IOL/TXDATA0 (1579:1860:2142)(1579:1860:2142))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[6\]\.bb_inst_IOL/TXDATA1 (3757:4310:4864)(3757:4310:4864))
+          DDR_MEM_1_addr_o_pad\[6\]\.bb_inst_IOL/TXDATA1 (1579:1860:2142)(1579:1860:2142))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[5\]\.bb_inst_IOL/TXDATA0 (3603:4137:4672)(3603:4137:4672))
+          DDR_MEM_1_addr_o_pad\[5\]\.bb_inst_IOL/TXDATA0 (1582:1864:2147)(1582:1864:2147))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[5\]\.bb_inst_IOL/TXDATA1 (3603:4137:4672)(3603:4137:4672))
+          DDR_MEM_1_addr_o_pad\[5\]\.bb_inst_IOL/TXDATA1 (1582:1864:2147)(1582:1864:2147))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[4\]\.bb_inst_IOL/TXDATA0 (3449:3967:4485)(3449:3967:4485))
+          DDR_MEM_1_addr_o_pad\[4\]\.bb_inst_IOL/TXDATA0 (1051:1262:1474)(1051:1262:1474))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[4\]\.bb_inst_IOL/TXDATA1 (3449:3967:4485)(3449:3967:4485))
+          DDR_MEM_1_addr_o_pad\[4\]\.bb_inst_IOL/TXDATA1 (1051:1262:1474)(1051:1262:1474))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[3\]\.bb_inst_IOL/TXDATA0 (3561:4100:4639)(3561:4100:4639))
+          DDR_MEM_1_addr_o_pad\[3\]\.bb_inst_IOL/TXDATA0 (1202:1437:1673)(1202:1437:1673))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[3\]\.bb_inst_IOL/TXDATA1 (3561:4100:4639)(3561:4100:4639))
+          DDR_MEM_1_addr_o_pad\[3\]\.bb_inst_IOL/TXDATA1 (1202:1437:1673)(1202:1437:1673))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[2\]\.bb_inst_IOL/TXDATA0 (4066:4677:5289)(4066:4677:5289))
+          DDR_MEM_1_addr_o_pad\[2\]\.bb_inst_IOL/TXDATA0 (1337:1580:1823)(1337:1580:1823))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[2\]\.bb_inst_IOL/TXDATA1 (4066:4677:5289)(4066:4677:5289))
+          DDR_MEM_1_addr_o_pad\[2\]\.bb_inst_IOL/TXDATA1 (1337:1580:1823)(1337:1580:1823))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[1\]\.bb_inst_IOL/TXDATA0 (4277:4921:5566)(4277:4921:5566))
+          DDR_MEM_1_addr_o_pad\[1\]\.bb_inst_IOL/TXDATA0 (1595:1873:2152)(1595:1873:2152))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[1\]\.bb_inst_IOL/TXDATA1 (4277:4921:5566)(4277:4921:5566))
+          DDR_MEM_1_addr_o_pad\[1\]\.bb_inst_IOL/TXDATA1 (1595:1873:2152)(1595:1873:2152))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (3651:4185:4720)(3651:4185:4720))
+          DDR_MEM_1_addr_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (1575:1855:2136)(1575:1855:2136))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_addr_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (3651:4185:4720)(3651:4185:4720))
+          DDR_MEM_1_addr_o_pad\[0\]\.bb_inst_IOL/TXDATA1 (1575:1855:2136)(1575:1855:2136))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_csn_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (3151:3631:4111)(3151:3631:4111))
+          DDR_MEM_1_csn_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (1410:1676:1943)(1410:1676:1943))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_csn_o_pad\[0\]\.bb_inst_IOL/TXDATA2 (3151:3631:4111)(3151:3631:4111))
+          DDR_MEM_1_csn_o_pad\[0\]\.bb_inst_IOL/TXDATA2 (1410:1676:1943)(1410:1676:1943))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (3349:3848:4348)(3349:3848:4348))
+          DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/TXDATA0 (802:977:1152)(802:977:1152))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
-          DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/TXDATA2 (3349:3848:4348)(3349:3848:4348))
+          DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/TXDATA2 (802:977:1152)(802:977:1152))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs1_o_pad\.bb_inst_IOL/TXDATA0 (2140:2478:2816)(2140:2478:2816))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs1_o_pad\.bb_inst_IOL/TXDATA1 (2140:2478:2816)(2140:2478:2816))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs1_o_pad\.bb_inst_IOL/TXDATA2 (2140:2478:2816)(2140:2478:2816))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs1_o_pad\.bb_inst_IOL/TXDATA3 (1926:2225:2525)(1926:2225:2525))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs0_o_pad\.bb_inst_IOL/TXDATA0 (1274:1505:1737)(1274:1505:1737))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs0_o_pad\.bb_inst_IOL/TXDATA1 (1274:1505:1737)(1274:1505:1737))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs0_o_pad\.bb_inst_IOL/TXDATA2 (1274:1505:1737)(1274:1505:1737))
+        (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
+          dm_dqs0_o_pad\.bb_inst_IOL/TXDATA3 (1368:1614:1860)(1368:1614:1860))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_DDRDLL\.DDRDLL_inst/FREEZE 
-          (4175:4801:5428)(4175:4801:5428))
+          (1595:1873:2152)(1595:1873:2152))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/STOP 
-          (3045:3506:3968)(3045:3506:3968))
+          (1573:1843:2114)(1573:1843:2114))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVRST 
-          (3292:3744:4197)(3292:3744:4197))
+          (2076:2376:2677)(2076:2376:2677))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/SLIP 
-          (3045:3506:3968)(3045:3506:3968))
+          (1730:2022:2315)(1730:2022:2315))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL3 
-          (1790:2084:2379)(1790:2084:2379))
+          (2153:2495:2837)(2153:2495:2837))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL2 
-          (1790:2084:2379)(1790:2084:2379))
+          (2153:2495:2837)(2153:2495:2837))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL1 
-          (1790:2084:2379)(1790:2084:2379))
+          (2153:2495:2837)(2153:2495:2837))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL0 
-          (1790:2084:2379)(1790:2084:2379))
+          (2153:2495:2837)(2153:2495:2837))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDDIR 
-          (2156:2509:2862)(2156:2509:2862))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ3 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ2 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ1 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ0 
-          (1651:1930:2209)(1651:1930:2209))
+          (1687:1954:2222)(1687:1954:2222))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READMOVE 
-          (2156:2509:2862)(2156:2509:2862))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/SELCLK 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRDIR 
-          (2069:2388:2707)(2069:2388:2707))
+          (2153:2495:2837)(2153:2495:2837))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRLVDIR 
-          (1895:2208:2521)(1895:2208:2521))
+          (1654:1926:2199)(1654:1926:2199))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRLVMOVE 
-          (2069:2388:2707)(2069:2388:2707))
+          (2153:2495:2837)(2153:2495:2837))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRMOVE 
-          (2153:2504:2856)(2153:2504:2856))
+          (2038:2358:2679)(2038:2358:2679))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL3 
-          (2812:3242:3672)(2812:3242:3672))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL2 
-          (2812:3242:3672)(2812:3242:3672))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL1 
-          (2812:3242:3672)(2812:3242:3672))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDCLKSEL0 
-          (2812:3242:3672)(2812:3242:3672))
+          (1274:1505:1737)(1274:1505:1737))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/RDDIR 
-          (2812:3242:3672)(2812:3242:3672))
+          (1847:2163:2480)(1847:2163:2480))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ3 
-          (2541:2929:3318)(2541:2929:3318))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ2 
-          (2541:2929:3318)(2541:2929:3318))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ1 
-          (2812:3242:3672)(2812:3242:3672))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READ0 
-          (2812:3242:3672)(2812:3242:3672))
+          (1380:1630:1880)(1380:1630:1880))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/READMOVE 
-          (2812:3242:3672)(2812:3242:3672))
+          (1847:2163:2480)(1847:2163:2480))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/SELCLK 
-          (2800:3224:3648)(2800:3224:3648))
+          (1368:1614:1860)(1368:1614:1860))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRDIR 
-          (2697:3105:3514)(2697:3105:3514))
+          (1268:1497:1727)(1268:1497:1727))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRLVDIR 
-          (2800:3224:3648)(2800:3224:3648))
+          (1368:1614:1860)(1368:1614:1860))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRLVMOVE 
-          (2697:3105:3514)(2697:3105:3514))
+          (1268:1497:1727)(1268:1497:1727))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/WRMOVE 
-          (2891:3333:3776)(2891:3333:3776))
+          (1847:2163:2480)(1847:2163:2480))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 I2C_DPHY_1_scl_io_I/PADDO 
-          (5236:5992:6749)(5236:5992:6749))
+          (2378:2741:3104)(2378:2741:3104))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 I2C_DPHY_1_sda_io_I/PADDO 
-          (5372:6160:6949)(5372:6160:6949))
+          (2378:2741:3104)(2378:2741:3104))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 I2C_DPHY_2_scl_io_I/PADDO 
-          (5536:6361:7186)(5536:6361:7186))
+          (2547:2943:3339)(2547:2943:3339))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 I2C_DPHY_2_sda_io_I/PADDO 
-          (5536:6361:7186)(5536:6361:7186))
+          (2627:3034:3442)(2627:3034:3442))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/CIBDIR 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/CIBDSEL2 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/CIBDSEL1 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/CIBDSEL0 
-          (2377:2756:3136)(2377:2756:3136))
+          (2414:2781:3149)(2414:2781:3149))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/CIBLDREG 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/CIBROT 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET6 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET5 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET4 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET3 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET2 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET1 
-          (2377:2756:3136)(2377:2756:3136))
+          (2414:2781:3149)(2414:2781:3149))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIOFFSET0 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIREQUEST 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA7 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA6 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA5 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA4 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA3 
-          (2377:2756:3136)(2377:2756:3136))
+          (2414:2781:3149)(2414:2781:3149))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA2 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA1 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWDATA0 
-          (2377:2756:3136)(2377:2756:3136))
+          (2414:2781:3149)(2414:2781:3149))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/LMMIWRRDN 
-          (2298:2665:3032)(2298:2665:3032))
+          (2334:2690:3046)(2334:2690:3046))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/STDBY 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/ROTDEL 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/DIRDEL 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/ROTDELP1 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYTEST4 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYTEST3 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYTEST2 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYTEST1 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYTEST0 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/BINTEST1 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/BINTEST0 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/DIRDELP1 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYACT4 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYACT3 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYACT2 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYACT1 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/GRAYACT0 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/BINACT1 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT DDR_MEM_1_cke_o_pad\[0\]\.SLICE_0/F0 
           PLL_1_inst\.lscc_pll_inst\.gen_no_refclk_mon\.u_PLL\.PLL_inst/BINACT0 
-          (2421:2813:3205)(2421:2813:3205))
+          (2458:2838:3219)(2458:2838:3219))
         (INTERCONNECT 
           GND_for_MIPI_DPHY_1_inst\.lscc_mipi_dphy_inst\.RECEIVER\.lscc_mipi_wrapper_rx\.HARD_IP\.CIL\.u_dphy_cil\.SLICE_1/F0 
           MIPI_DPHY_1_inst\.lscc_mipi_dphy_inst\.RECEIVER\.lscc_mipi_wrapper_rx\.HARD_IP\.CIL\.u_dphy_cil\.DPHY_inst/PDDPHY 
@@ -3942,15 +4024,15 @@
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/SCLKOUT 
-          (2155:2274:2393)(2155:2274:2393))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/SCLKOUT 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/SCLKOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/SCLKOUT 
+          (2155:2274:2393)(2155:2274:2393))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/SCLKOUT 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
@@ -3958,7 +4040,7 @@
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/SCLKOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/SCLKOUT 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
@@ -3978,15 +4060,15 @@
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/SCLKOUT 
-          (2155:2274:2393)(2155:2274:2393))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/SCLKOUT 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/SCLKOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/SCLKOUT 
+          (2155:2274:2393)(2155:2274:2393))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/SCLKOUT 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
@@ -3994,7 +4076,7 @@
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/SCLKOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/SCLKOUT 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
@@ -4078,6 +4160,12 @@
           DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/SCLKOUT (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
+          dm_dqs1_o_pad\.bb_inst_IOL/SCLKOUT (2155:2274:2393)(2155:2274:2393))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
+          dm_dqs0_o_pad\.bb_inst_IOL/SCLKOUT (2155:2274:2393)(2155:2274:2393))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKDIV\.ECLKDIV_inst/DIVOUT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/SCLK 
           (2155:2274:2393)(2155:2274:2393))
         (INTERCONNECT 
@@ -4101,15 +4189,15 @@
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/ECLK 
-          (602:635:668)(602:635:668))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/ECLK 
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/ECLK 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/ECLK 
+          (602:635:668)(602:635:668))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/ECLK 
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
@@ -4117,7 +4205,7 @@
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/ECLK 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/ECLK 
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
@@ -4137,15 +4225,15 @@
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/ECLK 
-          (602:635:668)(602:635:668))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/ECLK 
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/ECLK 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/ECLK 
+          (602:635:668)(602:635:668))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/ECLK 
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
@@ -4153,7 +4241,7 @@
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/ECLK 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/ECLK 
           (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
@@ -4169,6 +4257,12 @@
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
           DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/ECLK (599:633:667)(599:633:667))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
+          dm_dqs1_o_pad\.bb_inst_IOL/ECLK (602:635:668)(602:635:668))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
+          dm_dqs0_o_pad\.bb_inst_IOL/ECLK (602:635:668)(602:635:668))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_ECLKSYNC\.ECLKSYNC_inst/ECLKOUT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_DDRDLL\.DDRDLL_inst/CLKIN 
@@ -4197,15 +4291,15 @@
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DQSW270 
-          (0:0:0)(0:0:0))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DQSW270 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DQSW270 
+          (0:0:0)(0:0:0))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
@@ -4213,7 +4307,7 @@
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DQSW270 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
@@ -4224,11 +4318,8 @@
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DOUT 
-          dq_dqs1_io\[4\]_I/PADDO (20:20:20)(20:20:20))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TOUT 
-          dq_dqs1_io\[4\]_I/PADDT (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
+          dm_dqs1_o_pad\.bb_inst_IOL/DQSW270 (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/DOUT 
           dq_dqs1_io\[2\]_I/PADDO (20:20:20)(20:20:20))
@@ -4236,11 +4327,17 @@
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TOUT 
           dq_dqs1_io\[2\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DOUT 
-          dq_dqs1_io\[0\]_I/PADDO (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DOUT 
+          dq_dqs1_io\[3\]_I/PADDO (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TOUT 
-          dq_dqs1_io\[0\]_I/PADDT (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TOUT 
+          dq_dqs1_io\[3\]_I/PADDT (20:20:20)(20:20:20))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DOUT 
+          dq_dqs1_io\[4\]_I/PADDO (20:20:20)(20:20:20))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TOUT 
+          dq_dqs1_io\[4\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/DOUT 
           dq_dqs1_io\[1\]_I/PADDO (20:20:20)(20:20:20))
@@ -4248,11 +4345,11 @@
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TOUT 
           dq_dqs1_io\[1\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DOUT 
-          dq_dqs1_io\[3\]_I/PADDO (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DOUT 
+          dq_dqs1_io\[0\]_I/PADDO (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TOUT 
-          dq_dqs1_io\[3\]_I/PADDT (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TOUT 
+          dq_dqs1_io\[0\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_16\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/DOUT 
           dq_dqs1_io\[5\]_I/PADDO (20:20:20)(20:20:20))
@@ -4287,15 +4384,15 @@
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DQSW270 
-          (0:0:0)(0:0:0))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DQSW270 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DQSW270 
+          (0:0:0)(0:0:0))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
@@ -4303,7 +4400,7 @@
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DQSW270 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
@@ -4314,11 +4411,8 @@
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[7\]\.u_DQ_BB_IOL/DQSW270 
           (0:0:0)(0:0:0))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DOUT 
-          dq_dqs0_io\[4\]_I/PADDO (20:20:20)(20:20:20))
-        (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TOUT 
-          dq_dqs0_io\[4\]_I/PADDT (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.u0_DQSBUF\.DQSBUF_inst/DQSW270 
+          dm_dqs0_o_pad\.bb_inst_IOL/DQSW270 (0:0:0)(0:0:0))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/DOUT 
           dq_dqs0_io\[2\]_I/PADDO (20:20:20)(20:20:20))
@@ -4326,11 +4420,17 @@
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[2\]\.u_DQ_BB_IOL/TOUT 
           dq_dqs0_io\[2\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DOUT 
-          dq_dqs0_io\[0\]_I/PADDO (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DOUT 
+          dq_dqs0_io\[3\]_I/PADDO (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TOUT 
-          dq_dqs0_io\[0\]_I/PADDT (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TOUT 
+          dq_dqs0_io\[3\]_I/PADDT (20:20:20)(20:20:20))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/DOUT 
+          dq_dqs0_io\[4\]_I/PADDO (20:20:20)(20:20:20))
+        (INTERCONNECT 
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[4\]\.u_DQ_BB_IOL/TOUT 
+          dq_dqs0_io\[4\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/DOUT 
           dq_dqs0_io\[1\]_I/PADDO (20:20:20)(20:20:20))
@@ -4338,11 +4438,11 @@
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[1\]\.u_DQ_BB_IOL/TOUT 
           dq_dqs0_io\[1\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/DOUT 
-          dq_dqs0_io\[3\]_I/PADDO (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/DOUT 
+          dq_dqs0_io\[0\]_I/PADDO (20:20:20)(20:20:20))
         (INTERCONNECT 
-          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[3\]\.u_DQ_BB_IOL/TOUT 
-          dq_dqs0_io\[3\]_I/PADDT (20:20:20)(20:20:20))
+          DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[0\]\.u_DQ_BB_IOL/TOUT 
+          dq_dqs0_io\[0\]_I/PADDT (20:20:20)(20:20:20))
         (INTERCONNECT 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.DW_8\.u1_dq_dqs_dm_unit\.DQ_BLOCK\[5\]\.u_DQ_BB_IOL/DOUT 
           dq_dqs0_io\[5\]_I/PADDO (20:20:20)(20:20:20))
@@ -4403,6 +4503,10 @@
           DDR_MEM_1_csn_o\[0\]_I/PADDO (20:20:20)(20:20:20))
         (INTERCONNECT DDR_MEM_1_ck_o_pad\[0\]\.bb_inst_IOL/DOUT 
           DDR_MEM_1_ck_o\[0\]_I/PADDO (20:20:20)(20:20:20))
+        (INTERCONNECT dm_dqs1_o_pad\.bb_inst_IOL/DOUT dm_dqs1_o_I/PADDO (20:20:20)
+          (20:20:20))
+        (INTERCONNECT dm_dqs0_o_pad\.bb_inst_IOL/DOUT dm_dqs0_o_I/PADDO (20:20:20)
+          (20:20:20))
         (INTERCONNECT VCC_cZ/Z 
           DDR_MEM_1_inst\.lscc_ddr_mem_inst\.u1_common_logic\.u0_DDRDLL\.DDRDLL_inst/RST 
           (51:79:107)(51:79:107))
@@ -4955,7 +5059,7 @@
         (INTERCONNECT VCC_cZ/Z 
           MIPI_DPHY_2_inst\.lscc_mipi_dphy_inst\.TRANSMITTER\.lscc_mipi_wrapper_tx\.HARD_IP\.genblk1\.u_DPHY_CIL_tx\.DPHY_inst/LMMIRESETN 
           (51:79:107)(51:79:107))
-        (INTERCONNECT VCC_cZ/Z I2C_DPHY_1_scl_io_I/PADDT (95:95:96)(95:95:96))
+        (INTERCONNECT VCC_cZ/Z I2C_DPHY_1_scl_io_I/PADDT (68:68:69)(68:68:69))
         (INTERCONNECT VCC_cZ/Z I2C_DPHY_1_sda_io_I/PADDT (68:68:69)(68:68:69))
         (INTERCONNECT VCC_cZ/Z I2C_DPHY_2_scl_io_I/PADDT (95:95:96)(95:95:96))
         (INTERCONNECT VCC_cZ/Z I2C_DPHY_2_sda_io_I/PADDT (95:95:96)(95:95:96))

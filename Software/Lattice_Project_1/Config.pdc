@@ -9,24 +9,19 @@ ldc_set_location -site {R2} [get_ports {dq_dqs1_io[5]}]
 ldc_set_location -site {R7} [get_ports {dq_dqs1_io[6]}]
 ldc_set_location -site {T2} [get_ports {dq_dqs1_io[7]}]
 ldc_set_location -site {T9} [get_ports {dq_dqs0_io[0]}]
-ldc_set_location -site {T10} [get_ports {dq_dqs0_io[1]}]
-ldc_set_location -site {R8} [get_ports {dq_dqs0_io[2]}]
-ldc_set_location -site {R9} [get_ports {dq_dqs0_io[3]}]
+ldc_set_location -site {P6} [get_ports {dq_dqs0_io[1]}]
+ldc_set_location -site {T10} [get_ports {dq_dqs0_io[2]}]
+ldc_set_location -site {P7} [get_ports {dq_dqs0_io[3]}]
 ldc_set_location -site {N9} [get_ports {dq_dqs0_io[4]}]
-ldc_set_location -site {P7} [get_ports {dq_dqs0_io[5]}]
-ldc_set_location -site {P8} [get_ports {dq_dqs0_io[6]}]
+ldc_set_location -site {M10} [get_ports {dq_dqs0_io[6]}]
 ldc_set_location -site {P9} [get_ports {dq_dqs0_io[7]}]
-ldc_set_sysconfig {BOOTMODE=DUAL JTAG_PORT=ENABLE CONFIGIO_VOLTAGE_BANK1=3.3 CONFIGIO_VOLTAGE_BANK0=3.3}
+ldc_set_sysconfig {BOOTMODE=DUAL JTAG_PORT=ENABLE CONFIGIO_VOLTAGE_BANK1=3.3 CONFIGIO_VOLTAGE_BANK0=3.3 MASTER_SPI_PORT=QUAD SLAVE_I2C_PORT=DISABLE}
 ldc_set_vcc -bank 0 3.29999995231628
 ldc_set_vcc -bank 0 -derate 0
 ldc_set_vcc -bank 4 1.5
 ldc_set_vcc -bank 3 1.5
 ldc_set_vcc -bank 1 3.29999995231628
 ldc_set_vcc -core 1
-ldc_set_location -bank {1} [get_ports I2C_DPHY_2_sda_io]
-ldc_set_location -bank {1} [get_ports I2C_DPHY_2_scl_io]
-ldc_set_location -bank {1} [get_ports I2C_DPHY_1_sda_io]
-ldc_set_location -bank {1} [get_ports I2C_DPHY_1_scl_io]
 ldc_set_location -site {N4} [get_ports PLL_1_clki_i]
 create_clock -name {PLL_1_clki_i} -period 6.4 [get_ports PLL_1_clki_i]
 # IO_TYPE constraint - Refclk
@@ -55,3 +50,11 @@ ldc_set_location -site {R16} [get_ports {DDR_MEM_1_addr_o[13]}]
 ldc_set_location -site {T13} [get_ports {DDR_MEM_1_ba_o[0]}]
 ldc_set_location -site {M14} [get_ports {DDR_MEM_1_ba_o[1]}]
 ldc_set_location -site {R13} [get_ports {DDR_MEM_1_ba_o[2]}]
+ldc_set_vcc -bank 5 1.5
+ldc_set_location -site {T4} [get_ports dm_dqs1_o]
+ldc_set_location -site {R9} [get_ports {dq_dqs0_io[5]}]
+ldc_set_location -site {R8} [get_ports dm_dqs0_o]
+ldc_set_location -site {G13} [get_ports I2C_DPHY_1_scl_io]
+ldc_set_location -site {G14} [get_ports I2C_DPHY_1_sda_io]
+ldc_set_location -site {G16} [get_ports I2C_DPHY_2_scl_io]
+ldc_set_location -site {F16} [get_ports I2C_DPHY_2_sda_io]

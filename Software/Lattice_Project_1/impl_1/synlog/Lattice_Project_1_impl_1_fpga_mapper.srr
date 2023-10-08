@@ -1,4 +1,4 @@
-# Fri Oct  6 02:06:16 2023
+# Sun Oct  8 01:55:07 2023
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -41,16 +41,16 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 288MB peak: 288MB)
 
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1793:11:1793:14|Tristate driver dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0(verilog)) on net dm_o (in view: work.DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_2 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_2 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_3 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_3 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_4 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_4 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_5 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_5 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_6 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_6 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_7 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_7 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3373:17:3373:27|Tristate driver dqwl_dqs8_o_8 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_8 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
-@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3372:17:3372:27|Tristate driver dqwl_dqs7_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs7_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_2 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_2 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_3 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_3 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_4 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_4 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_5 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_5 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_6 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_6 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_7 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_7 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3381:17:3381:27|Tristate driver dqwl_dqs8_o_8 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs8_o_8 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3380:17:3380:27|Tristate driver dqwl_dqs7_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs7_o_1 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3380:17:3380:27|Tristate driver dqwl_dqs7_o_2 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) on net dqwl_dqs7_o_2 (in view: work.DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -58,40 +58,40 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 290MB peak: 290MB)
 
-@W: MO197 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Removing FSM register DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1] (in view view:work.main(verilog)) because its output is a constant.
-@W: MO197 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Removing FSM register DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[0] (in view view:work.main(verilog)) because its output is a constant.
+@W: MO197 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Removing FSM register DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1] (in view view:work.main(verilog)) because its output is a constant.
+@W: MO197 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Removing FSM register DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[0] (in view view:work.main(verilog)) because its output is a constant.
 @W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Sequential instance MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider.clk_r is reduced to a combinational gate by constant propagation.
 @W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":307:4:307:9|Sequential instance MIPI_DPHY_1_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider.count[0] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Sequential instance MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER.u_clock_divider.clk_r is reduced to a combinational gate by constant propagation.
 @W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":327:4:327:9|Sequential instance MIPI_DPHY_2_inst.lscc_mipi_dphy_inst.TRANSMITTER.lscc_mipi_wrapper_tx.GEN_CLK_DIVAIDER.u_clock_divider.count[0] is reduced to a combinational gate by constant propagation.
-@W: MO161 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Register bit DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1] (in view view:work.main(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[0] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[0] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[2] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[3] is reduced to a combinational gate by constant propagation.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.init_load_n_r (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.init_move_r (in view: work.main(verilog)) because it does not drive other instances.
+@W: MO161 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Register bit DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[1] (in view view:work.main(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.delay_st_r[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.loadn_cntr_r[3] is reduced to a combinational gate by constant propagation.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.init_load_n_r (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.init_move_r (in view: work.main(verilog)) because it does not drive other instances.
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 291MB peak: 291MB)
 
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[6] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[5] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[4] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[3] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[2] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[1] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[0] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1311:4:1311:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d1 (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.dll_rst (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1311:4:1311:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2 (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[8] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[7] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[1] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[0] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1543:4:1543:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[2] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1543:4:1543:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[1] (in view: work.main(verilog)) because it does not drive other instances.
-@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1543:4:1543:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[0] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[6] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[5] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[4] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[3] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[2] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[1] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[0] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1319:4:1319:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d1 (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.dll_rst (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1319:4:1319:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.lock_d2 (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[8] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.cs_memsync[7] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[1] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.flag[0] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1551:4:1551:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[2] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1551:4:1551:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[1] (in view: work.main(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1551:4:1551:9|Removing sequential instance DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u1_mem_sync.count[0] (in view: work.main(verilog)) because it does not drive other instances.
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 295MB peak: 295MB)
 
@@ -161,24 +161,24 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 @W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/PLL_1/PLL_1/rtl/PLL_1.v":1303:67:1303:71|Blackbox PLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_2/rtl/MIPI_DPHY_2.v":2331:65:2331:77|Blackbox DPHY_Z9_layer0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":1205:69:1205:78|Blackbox DPHY_Z6_layer0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":672:27:672:37|Blackbox ODDRX2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":666:41:666:48|Blackbox DELAYB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1041:27:1041:38|Blackbox ODDRX1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2850:26:2850:36|Blackbox OSHX2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2044:29:2044:41|Blackbox ODDRX2DQ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1965:29:1965:38|Blackbox TSHX2DQS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1952:28:1952:36|Blackbox TSHX2DQ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1903:30:1903:40|Blackbox ODDRX2DQS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1853:55:1853:63|Blackbox DQSBUF is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1621:60:1621:68|Blackbox DDRDLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1604:35:1604:45|Blackbox ECLKSYNC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1598:30:1598:39|Blackbox ECLKDIV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":680:27:680:37|Blackbox ODDRX2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":674:41:674:48|Blackbox DELAYB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1049:27:1049:38|Blackbox ODDRX1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2858:26:2858:36|Blackbox OSHX2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2116:33:2116:45|Blackbox ODDRX2DQ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1973:29:1973:38|Blackbox TSHX2DQS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1960:28:1960:36|Blackbox TSHX2DQ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1911:30:1911:40|Blackbox ODDRX2DQS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1861:55:1861:63|Blackbox DQSBUF is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1629:60:1629:68|Blackbox DDRDLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1612:35:1612:45|Blackbox ECLKSYNC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1606:30:1606:39|Blackbox ECLKDIV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock PLL_1_ipgen_lscc_pll_Z26_layer0|clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_1_inst.lscc_pll_inst.PLL_1_clkop_o.
 @W: MT420 |Found inferred clock DDR_MEM_1_ipgen_common_logic_2s_2|sclk_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.sclk_o.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Oct  6 02:06:17 2023
+# Timing report written on Sun Oct  8 01:55:08 2023
 #
 
 
@@ -263,21 +263,21 @@ DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL                      
 Ending Points with Worst Slack
 ******************************
 
-                                                                                                                           Starting                                                Required          
-Instance                                                                                                                   Reference     Type          Pin      Net                Time         Slack
-                                                                                                                           Clock                                                                     
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.u0_DQSBUF                                                        System        DQSBUF        DQSI     dqs_bb_out_w       5.000        1.949
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.u0_DQSBUF                                                         System        DQSBUF        DQSI     dqs_bb_out_w       5.000        1.949
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_oddrx2_4_ck.DDR_CLK\[0\]\.DDR_CLK_X2\.u_ck_ODDRX2      System        ODDRX2        ECLK     eclkout_w          5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_oddrx2_4_ck.DDR_CLK\[0\]\.u_DELAYB                     System        DELAYB        A        q_out_clk_w[0]     5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_moshx2_4_csn.DDR_CSN\[0\]\.DDR_CSN_X2\.u_CSN_OSHX2     System        OSHX2         ECLK     eclkout_w          5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_moshx2_4_csn.DDR_CSN\[0\]\.u_DELAYB                    System        DELAYB        A        q_out_csn_w[0]     5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.DQS_BLOCK\.DQS_X2\.u_ODDRX2DQS                                    System        ODDRX2DQS     DQSW     dqswout_w          5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.DQS_BLOCK\.DQS_X2\.u_ODDRX2DQS                                   System        ODDRX2DQS     DQSW     dqswout_w          5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.DQS_BLOCK\.DQS_X2\.u_ODDRX2DQS                                   System        ODDRX2DQS     ECLK     eclkout_w          5.000        5.000
-DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.DQS_BLOCK\.DQS_X2\.u_ODDRX2DQS                                    System        ODDRX2DQS     ECLK     eclkout_w          5.000        5.000
-=====================================================================================================================================================================================================
+                                                                                                                           Starting                                                  Required          
+Instance                                                                                                                   Reference     Type         Pin         Net                Time         Slack
+                                                                                                                           Clock                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.u0_DQSBUF                                                        System        DQSBUF       DQSI        dqs_bb_out_w       5.000        1.949
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.u0_DQSBUF                                                         System        DQSBUF       DQSI        dqs_bb_out_w       5.000        1.949
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_oddrx2_4_ck.DDR_CLK\[0\]\.DDR_CLK_X2\.u_ck_ODDRX2      System        ODDRX2       ECLK        eclkout_w          5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_oddrx2_4_ck.DDR_CLK\[0\]\.u_DELAYB                     System        DELAYB       A           q_out_clk_w[0]     5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_moshx2_4_csn.DDR_CSN\[0\]\.DDR_CSN_X2\.u_CSN_OSHX2     System        OSHX2        ECLK        eclkout_w          5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DDR3_DDR3L_CLK_ADDR_CMD_ENABLE\.u1_moshx2_4_csn.DDR_CSN\[0\]\.u_DELAYB                    System        DELAYB       A           q_out_csn_w[0]     5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.DM_BLOCK\.DM_X2\.u_DM_ODDRX2DQ                                    System        ODDRX2DQ     DQSW270     sw270_out_w        5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.DM_BLOCK\.DM_X2\.u_DM_ODDRX2DQ                                   System        ODDRX2DQ     DQSW270     sw270_out_w        5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16\.u1_dq_dqs_dm_unit.DM_BLOCK\.DM_X2\.u_DM_ODDRX2DQ                                   System        ODDRX2DQ     ECLK        eclkout_w          5.000        5.000
+DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8\.u1_dq_dqs_dm_unit.DM_BLOCK\.DM_X2\.u_DM_ODDRX2DQ                                    System        ODDRX2DQ     ECLK        eclkout_w          5.000        5.000
+=======================================================================================================================================================================================================
 
 
 
@@ -331,7 +331,7 @@ Part: lifcl_40-7
 
 Register bits: 0 of 32256 (0%)
 PIC Latch:       0
-I/O cells:       47
+I/O cells:       49
 
 
 Details:
@@ -344,10 +344,10 @@ DQSBUF:         2
 ECLKDIV:        1
 ECLKSYNC:       1
 GSR:            1
-OB:             24
+OB:             26
 ODDRX1:         22
 ODDRX2:         1
-ODDRX2DQ:       16
+ODDRX2DQ:       18
 ODDRX2DQS:      2
 OSHX2:          1
 PLL:            1
@@ -374,12 +374,12 @@ Total number of LRAMs: 0 + 0 = 0 of 2 (0.00%)
 Total number of DSPs: 0 + 0 = 0 of 56 (0.00%)
 Total number of Distributed RAMs: 0 + 0 = 0 
 Total number of Carry Chains: 0 + 0 = 0 
-Total number of BlackBoxes: 103 + 0 = 103 
+Total number of BlackBoxes: 105 + 0 = 105 
 Mapper successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 295MB peak: 295MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Oct  6 02:06:17 2023
+# Sun Oct  8 01:55:08 2023
 
 ###########################################################]

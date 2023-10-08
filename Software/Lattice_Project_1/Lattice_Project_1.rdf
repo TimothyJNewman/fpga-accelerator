@@ -42,6 +42,9 @@
         <Source name="impl_1/Lattice_Project_1_impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">
             <Options/>
         </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
         <Source name="source/impl_1/Config.ldc" type="LSE Design Constraints File" type_short="LDC" excluded="TRUE">
             <Options/>
         </Source>

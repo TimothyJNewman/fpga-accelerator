@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version U-2023.03LR-1
 #--  Project file /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/run_options.txt
-#--  Written on Fri Oct  6 02:06:10 2023
+#--  Written on Sun Oct  8 01:55:01 2023
 
 
 #project files

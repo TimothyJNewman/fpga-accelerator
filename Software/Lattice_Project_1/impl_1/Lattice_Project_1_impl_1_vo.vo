@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.1.200.1
 
 // backanno -o Lattice_Project_1_impl_1_vo.vo -sp 7_High-Performance_1.0V -w -neg -gui Lattice_Project_1_impl_1.udb 
-// Netlist created on Fri Oct  6 02:09:04 2023
-// Netlist written on Fri Oct  6 02:09:14 2023
+// Netlist created on Sun Oct  8 02:58:55 2023
+// Netlist written on Sun Oct  8 02:59:05 2023
 // Design is for device LIFCL-40
 // Design is for package CABGA256
 // Design is for performance grade 7_High-Performance_1.0V
@@ -14,8 +14,8 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
               I2C_DPHY_1_sda_io, I2C_DPHY_2_scl_io, I2C_DPHY_2_sda_io, 
               PLL_1_clki_i, DDR_MEM_1_cke_o, DDR_MEM_1_odt_o, DDR_MEM_1_wen_o, 
               DDR_MEM_1_rasn_o, DDR_MEM_1_casn_o, DDR_MEM_1_ba_o, 
-              DDR_MEM_1_addr_o, DDR_MEM_1_csn_o, DDR_MEM_1_ck_o, 
-              MIPI_DPHY_1_clk_p_io, MIPI_DPHY_1_clk_n_io, 
+              DDR_MEM_1_addr_o, DDR_MEM_1_csn_o, DDR_MEM_1_ck_o, dm_dqs1_o, 
+              dm_dqs0_o, MIPI_DPHY_1_clk_p_io, MIPI_DPHY_1_clk_n_io, 
               MIPI_DPHY_1_data_p_io, MIPI_DPHY_1_data_n_io, 
               MIPI_DPHY_2_clk_p_io, MIPI_DPHY_2_clk_n_io, 
               MIPI_DPHY_2_data_p_io, MIPI_DPHY_2_data_n_io );
@@ -27,6 +27,7 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
   output [13:0] DDR_MEM_1_addr_o;
   output [0:0] DDR_MEM_1_csn_o;
   output [0:0] DDR_MEM_1_ck_o;
+  output dm_dqs1_o, dm_dqs0_o;
   inout  dqs1_io;
   inout  [7:0] dq_dqs1_io;
   inout  dqs0_io;
@@ -50,15 +51,15 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[6] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n0 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.sw270_out_w , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[4] , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n1 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[2] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n1 , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[3] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n2 , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[0] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[4] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n3 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[1] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n4 , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[3] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[0] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n5 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[5] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n6 , 
@@ -70,15 +71,15 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[6] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n7 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[4] , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n8 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[2] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n8 , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[3] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n9 , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[0] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[4] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n10 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[1] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n11 , 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[3] , 
+         \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[0] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n12 , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[5] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n13 , 
@@ -94,8 +95,8 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
          \DDR_MEM_1_addr_o_c[5] , \DDR_MEM_1_addr_o_c[4] , 
          \DDR_MEM_1_addr_o_c[3] , \DDR_MEM_1_addr_o_c[2] , 
          \DDR_MEM_1_addr_o_c[1] , \DDR_MEM_1_addr_o_c[0] , 
-         \DDR_MEM_1_csn_o_c[0] , \DDR_MEM_1_ck_o_c[0] , VCC, 
-         \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[8] , 
+         \DDR_MEM_1_csn_o_c[0] , \DDR_MEM_1_ck_o_c[0] , dm_dqs1_o_c, 
+         dm_dqs0_o_c, VCC, \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[8] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[7] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[6] , 
          \DDR_MEM_1_inst.lscc_ddr_mem_inst.code_w[5] , 
@@ -121,76 +122,76 @@ module main ( dqs1_io, dq_dqs1_io, dqs0_io, dq_dqs0_io, I2C_DPHY_1_scl_io,
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-GlOgEWGkQrE1VRnp75BACsdHk0uzK8bsm3ksXQOuJ+zTyYbFytNPDmaGJ9sF13s4
-emYvuywFqUreEhQHYNT8AkGa+CzNoBwkNI4t335WTJ6j0cjliVKeJH/sVQO33iQu
-vTHv2ykADtEmNA7C+nRnKYUN4uc8KO5f/nK498G6rwadjoOmxxBFqaAURMoB+iMt
-shzHDMt/tKDI0ERCqCN8iDtrjuUKM3Z5T0X8yrXWncOaxiRIgs57z/pvCnXdjZhs
-kTccy7D/2uB0kp/xn991+5PlLFsDndTgTzCSyz+CoXOciKJLfEW6yitEn25Oo908
-bWKp69PAHjmxYDPA95wN5g==
+jUZZrILOYS7rHfzrrEaunF9nhoWNSJ4s2FlJuY/PEiA3LvwTV9rdyn1N3GFjFkMf
+Mr2A2fL6+MqFOmF+WutOOzDyufWuOwGS1r418HY/HAxaeWFQzA8hx4qsNFZONM83
+pzNMiVZubeYrlqufXf2POOpR5kvexWY8Z/c8XICip3JpX+YSgwPzCf3gEFesZnAn
+aa8gFaN3gSPykPXT609bH9f3SYksXhfvD17XfFXDMJLgfVT6QnA0pD9fv2XbJyOc
+FWneXjUWCLZ+da/4uR8RLs+oxPDlnGNKZ5RiQkhQb7jvuSXcjw4orp8MFadxTVAT
+xLEori6Cwm8+ET6rVaA5Xw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-WOJBRDNBM4YTnEo2OhpspO7EIE1ky9qxJ6g3epsy1ljDueg1FTz95fWXsxtbUrN9
-64ymsL1jA2R23Zwp6sypQMPtG0I9aUhlp5yWwHiCr3eNaM490rasSz+nbqPpwH9N
-AImYBga01Q06XqDe1yR+/dA1tTAaH/uaBGVcbHtcqznJ6QlfcjpUQuYMa7ZOaKX+
-6KrW/is54Af/UXW8FyvRu7B4Pu3PHgejdQkXec7TliKh86KkKW+ndIBD34k+bAlp
-8UMq5cpB5cvnk+Yn9iGzBSVLbKb/XVQEghC0H6OUHbUT2f0ZbKaFpRwDpCD5QpZF
-wJtJGo6sObO4tENwB9SCP5DG8gtrYe9KXq1CtdHyohi3B8/InGCMeU4eg9cncic3
-XVxaDcpE7rimk0wZE3BkMp5e2wUkQoYlUv54P9CzkJD2xqSnPHKqDs9oZynDtZOp
-qtMgdIcervnOpGIxjbsLPHb7k6ICl3o8S/kAkji+OMo6HnDnjjrI4AAVKIWxk8i6
+JiOQ1Q/gpcddT/pKfezbQReVkz+G91XuvGtgXGSwEZjallM1nmGrgNXQuJQxOQES
+KdsSZFFmOH9jicTdOo0iFY8NWtTMcWMhAmJxNAje1QarahGO0LXYvLvWi2kkKa9d
+Ga2KXGFrDvfgV3RNUzfoGZQ7cDBfXSz5oNK/eXpFxiP8XUPWxytLIhWHGA943pJy
+5y32dqlQuilhyQfJ3N1q8Zcd2w0MlYcGEgFJCDGRslpEGwhup8N/y0fLjqED2G3c
+VgeJT4eJrfo6FMu31VEiepR///OiJrh4KDmXAKq+wNY3roG0e+ZbynnuJAqkxn76
+rYdrcweyuFzi4IVM0eIiTDNpbXRWBptDs1jnW2AW/xyXYTwgsDT36GRz1VaDN2cg
+pgfGj678zFK5UQTDN4UGKTdnMTvHKf3m8MPz+mB5wSbFWZ3LSjVGZ7cG3JDUo1QI
+YJ6iVW/cUpwS7uxILpVIQWs7k1H4ZYOeZQSXWVrX9yYPnhUcGOjZ3lad4MKcxjtm
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-UDjEGNXsEaAx2V88CmScaNqPKmTeFvma7sS7+v0TFQJ1EEv+kNpBKWFlVXp2p8Px
-5f7c81NEuDO667SDM4i0xMnz3Bs2dyPAZWFun8utSxYaXoB19EO1sLpCGyRQ0atH
-rrXEI2FuOErtCrmCf1o2w752UC/iG01vb+Go+eDChwatg/dFwMw0DE/bjUMIwJ8t
-SKjnmhFa5Bx6gbMBkSKWEiroCuT00i2JxWvMnnOI/Wcvco1P+X9Kn2oJFf1gMTz2
-cYjV9tdlm1sRH2r95aAk0Kr/Bv02BpvbdurIjS1zsBIOZtcAzS6ySDZ5eoN1vTOe
-bL6oZ7ntZziNbvEAtLUqmA==
+S1UvgGR38e8YtWqpgU8P9LPuY4HFhoFOiax6sg1ovc6DrtBCp4bqBgwSJcDGJHe3
+DBm9F5ofRKTERutnf71toJy8odvZtm4vdtyNP4edVmL0/tPBYO+N+Yr4num+xIgc
+9duTs9omDdUG9T5RQrGvKSqNrF3R6VupicNH+osIWxTkfSJ7xnshXdidhSPm6ynj
+cIfScrKbcmkHedjCCPbeB/X62gVW+0R19nfcQy0xtjy12O8svn1tywBr3HD+ZwqB
+IQe0a43VzZFgRrUqQ8DQdDsuoTGzReTyxk/lh41lN9DajyYUkVDgVwY6RXDOuPyR
+GQPfonQCzLeb2KqMyRYAMw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-CH3GXF/VyWkCkUrZ7giSOASI8o36dQElZaJhJH369mm5ZVcwGJ+9EzadtZl2v4C0
-SFsoBqPQ92welCVaMfeukTx4BcGvOuJZ5AuWCOT60C5xrQk+qGS4KSi4LDQnOs+q
-tJd5cHQKWrOtmDeXD++dTxMRxeEP8GpwIKInhZvrTFI=
+wT5QUH6zCA9UFDa5U43nNxgE8rcH+gFRz7bWhAJial6GCNgnA1w7Zm93RTLkznJf
+Ya+XECbKBDbVZD/40Wexq6V/UqybnyiP3/KYY4JsvIojja0zsJngH3kGuRdNJKux
+R4k86rKbPZMTjaqOLbEuR43Ol7vV+269w6UTf8Y5xgA=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-vZBPOhwmZPZOGCPeGKBYz2ckALDTs6pOqLxE+i7OFhyTzxmnxWeRLrHsDHbuTU2L
-9pgTGQN6i2GFKRqIkr/UiTl6S815iM+lqvgdOMxXVtxQdPebS2rHwOv3D220ThPP
-zQ3/8cHe9WAVZkv/xMgKWlBBQv57LxEEzul+spFKXVHaLx97xvKRWyiyO+RglSCO
-oLs9/H6QxHl1hL1abEIWt3wMuyWx0Bb/08gDlX620miTmkR3gMYBNw/BxapC/zbL
-4tlc0aHv16X85SY4piznuMxtljrz5usuC99pl4BBrpNqKaH6j2D4Tm+Rs0ZASig+
-4ewI5Z9kiiir6CrNNRRCwA==
+BDPSio5VyXQRPj61wcVv9FcTTiALOJIKyKSWd0ofKS+fyWXv0rrV7BnydrHHy2zb
+d9yu9gpIT2+p1BTbH8+PsAycIoJNUxInK6jhty7bdmZ+cAxLJILspfnz9k6sjXgb
+Igimy6tCnLMSLsFnBqrk2K6MJsGfgtckxiirCW8BNiG5PSEcREWp2miOcFONoE8A
+6vK3VrVDA5R3IIasWQcCWpZHNWQBkx7Bl4nW2bFZtFsRxg8zHDAKpy29VNQC22d9
+lInHWuE/xzhPliESSP0IFIz/eXW8X/QJdL5M1huflWyA3NsCFxbiZy8mZ+/l82qw
+unmdn197pC2uy5GbtBuJkw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-p47Lmv0vFp/jQs9Kxi3kLISbkxXFI00cPsFa6zq8RFQ3dlsnz59QwHIXYT6BnTv0
-qpTPr+hkgUo2XpGl/ZlmAPPW9A/xM/k3pysmB2UtcaHUHkunIwgjIsBEhy5idF7i
-7vowivnpSTqFRiEIhGD9uQNR16HgmFA4mBQOtS3fgu3dgJGGqT5H7++FAGcaPBUm
-KmJYQpe3HTfYpiVtqo6FyqF7GcnBBAAVHnW3rlHdxbbPfBcNj/+ilLHGHttoLn51
-qTHAixwvjQWc11cLQiDK1NMl4fmNKArxwXs5M4xEoRPxUNFKgWy7s7BXkaTQsikc
-5NXblQzkxEY2EcWmdEfp6A==
+Yzs2zdt9WQ0X9iqX2vTg6zI7wE9j6pnpNWwmSiAzVOwi/GJ0FvO6WmvyXcec9vN8
+lMv4NFbOa8tbw+zoaxepkFr8hgiJUL9Ed9hYb/zGSm7JUqtS6g6KtMJOYJ6piZbL
+Xn8jjgZUx6P9E0zgMpr6c9Le097kSpZiEx9ByyqfCNlfvgifbzorIGuoEhNKL9AH
+gW3xbVdZ1gwBfK49pxNN6ueZbTql6ujpVFaq4SbDiJRR9kCMhYVRb3n7hN7c9igs
+00SmRAPyGmp4LZtIGJSPAk6mKS76eSyqKV4TESK5aPEsrlWXVpUC2O3I6SRMLL1O
+TYCnWuIlLGqUjWeJSl0jmQ==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=44, bytes=32)
 `pragma protect data_block
-jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
+COUw/x1n9NM66lK+fQd1qU25fy1m0gqdXKPJHlFNUIA=
 
 `pragma protect end_protected
   DDR_MEM_1_cke_o_pad_0__SLICE_0 \DDR_MEM_1_cke_o_pad[0].SLICE_0 ( 
@@ -242,11 +243,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[2].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[4] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[2] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n1 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -258,11 +259,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[2].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[2] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[3] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n2 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -274,11 +275,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[0] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[4] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n3 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -306,11 +307,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[3] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[0] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n5 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -383,11 +384,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[2].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[4] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[2] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n8 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -399,11 +400,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[2].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[2] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[3] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n9 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -415,11 +416,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[0] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[4] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n10 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -447,11 +448,11 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
 
-    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
+    DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
      
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL 
     ( 
-    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[3] ), 
+    .DOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[0] ), 
     .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
     .TOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n12 ), 
     .TSDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -616,6 +617,22 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .TXDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
     .ECLK(\DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w ), 
     .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ));
+  dm_dqs1_o_pad_bb_inst_IOL \dm_dqs1_o_pad.bb_inst_IOL ( .DOUT(dm_dqs1_o_c), 
+    .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
+    .TXDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .TXDATA1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .DQSW270(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.sw270_out_w )
+    , .ECLK(\DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w ), 
+    .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
+  dm_dqs0_o_pad_bb_inst_IOL \dm_dqs0_o_pad.bb_inst_IOL ( .DOUT(dm_dqs0_o_c), 
+    .SCLKOUT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o ), 
+    .TXDATA0(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .TXDATA1(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .DQSW270(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w )
+    , .ECLK(\DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w ), 
+    .TXDATA2(\DDR_MEM_1_cke_o_pad[0].gnd ), 
+    .TXDATA3(\DDR_MEM_1_cke_o_pad[0].gnd ));
   DDR_MEM_1_inst_lscc_ddr_mem_inst_u1_common_logic_u0_DDRDLL_DDRDLL_inst 
     \DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_DDRDLL.DDRDLL_inst ( 
     .FREEZE(\DDR_MEM_1_cke_o_pad[0].gnd ), 
@@ -650,26 +667,26 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[6] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n0 ), 
     .dqdqs1io6(dq_dqs1_io[6]));
-  dq_dqs1_io_4_ \dq_dqs1_io[4]_I ( 
-    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[4] ), 
-    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n1 ), 
-    .dqdqs1io4(dq_dqs1_io[4]));
   dq_dqs1_io_2_ \dq_dqs1_io[2]_I ( 
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[2] ), 
-    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n2 ), 
+    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n1 ), 
     .dqdqs1io2(dq_dqs1_io[2]));
-  dq_dqs1_io_0_ \dq_dqs1_io[0]_I ( 
-    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[0] ), 
+  dq_dqs1_io_3_ \dq_dqs1_io[3]_I ( 
+    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[3] ), 
+    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n2 ), 
+    .dqdqs1io3(dq_dqs1_io[3]));
+  dq_dqs1_io_4_ \dq_dqs1_io[4]_I ( 
+    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[4] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n3 ), 
-    .dqdqs1io0(dq_dqs1_io[0]));
+    .dqdqs1io4(dq_dqs1_io[4]));
   dq_dqs1_io_1_ \dq_dqs1_io[1]_I ( 
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[1] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n4 ), 
     .dqdqs1io1(dq_dqs1_io[1]));
-  dq_dqs1_io_3_ \dq_dqs1_io[3]_I ( 
-    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[3] ), 
+  dq_dqs1_io_0_ \dq_dqs1_io[0]_I ( 
+    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[0] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n5 ), 
-    .dqdqs1io3(dq_dqs1_io[3]));
+    .dqdqs1io0(dq_dqs1_io[0]));
   dq_dqs1_io_5_ \dq_dqs1_io[5]_I ( 
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dout_w[5] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqts_w$n6 ), 
@@ -719,26 +736,26 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[6] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n7 ), 
     .dqdqs0io6(dq_dqs0_io[6]));
-  dq_dqs0_io_4_ \dq_dqs0_io[4]_I ( 
-    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[4] ), 
-    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n8 ), 
-    .dqdqs0io4(dq_dqs0_io[4]));
   dq_dqs0_io_2_ \dq_dqs0_io[2]_I ( 
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[2] ), 
-    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n9 ), 
+    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n8 ), 
     .dqdqs0io2(dq_dqs0_io[2]));
-  dq_dqs0_io_0_ \dq_dqs0_io[0]_I ( 
-    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[0] ), 
+  dq_dqs0_io_3_ \dq_dqs0_io[3]_I ( 
+    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[3] ), 
+    .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n9 ), 
+    .dqdqs0io3(dq_dqs0_io[3]));
+  dq_dqs0_io_4_ \dq_dqs0_io[4]_I ( 
+    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[4] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n10 ), 
-    .dqdqs0io0(dq_dqs0_io[0]));
+    .dqdqs0io4(dq_dqs0_io[4]));
   dq_dqs0_io_1_ \dq_dqs0_io[1]_I ( 
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[1] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n11 ), 
     .dqdqs0io1(dq_dqs0_io[1]));
-  dq_dqs0_io_3_ \dq_dqs0_io[3]_I ( 
-    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[3] ), 
+  dq_dqs0_io_0_ \dq_dqs0_io[0]_I ( 
+    .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[0] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n12 ), 
-    .dqdqs0io3(dq_dqs0_io[3]));
+    .dqdqs0io0(dq_dqs0_io[0]));
   dq_dqs0_io_5_ \dq_dqs0_io[5]_I ( 
     .PADDO(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dout_w[5] ), 
     .PADDT(\DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqts_w$n13 ), 
@@ -1671,6 +1688,8 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
     .DDRMEM1csno0(DDR_MEM_1_csn_o[0]));
   DDR_MEM_1_ck_o_0_ \DDR_MEM_1_ck_o[0]_I ( .PADDO(\DDR_MEM_1_ck_o_c[0] ), 
     .DDRMEM1cko0(DDR_MEM_1_ck_o[0]));
+  dm_dqs1_o dm_dqs1_o_I( .PADDO(dm_dqs1_o_c), .dm_dqs1_o(dm_dqs1_o));
+  dm_dqs0_o dm_dqs0_o_I( .PADDO(dm_dqs0_o_c), .dm_dqs0_o(dm_dqs0_o));
   VCC_cZ VCC_cZ( .Z(VCC));
 `pragma protect begin_protected
 `pragma protect version=1
@@ -1684,89 +1703,89 @@ jkksGkrHzyx+4vcBPEfLKw/vchwQGpbZ1Dx2NYG/aWw=
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-bYjvviFRN663+u4LJSrNGM2zzGgxbZoPaU4DS1GB2v1rOXZqoo9UKDglr18VxK5f
-f3QJTi/UQnG/1MMo+L6cUd9R1H4oYdRGxEYI+wXPtJHrAW/GSJBJav5j/lZaciUf
-aPNtncWz8NuY1WMbiKbk/tE4JLxFyxmbmW3WmhHzmbUYxSHysp2bRZOXdmDXE4Bc
-j9L3ZSLhYTpbttr0TTYyDpjo6Rvg8xQvQlTuM0FM637gB/y67eB7RcYlAJC4Jc5R
-/KDHYx57UcWwoEA9zloCcST02rsTWXYAeHuVcb+O8qmFTBC+4M4m/Ya23wNpzx81
-N/NDsJc79J33JFYW6dY0LA==
+WXUEfuq8HHx+jKnFwUgq8RE+MveooKNN0MTd/61Feun1KTlxuAOqCJQBMtBlZqnO
+wPE6lRe96UHKD4bP/pwdwkOlpRwHhGxtlCXoxL1t77iAD3aCYv0vIgmDlRkxWQ2O
+WiprIQGWdx3YT4T5yzdGehnOudXzNOplDtdffKz5lHk2c5LWY6EWw9sCXhd9Xszg
+79tp+iq4Pq8zKTM0eU6y0C0sU9AAhOI6onxh4kM6WV34492HugVjjqcWJPZTR2ge
+0eUA+FnPecdwc5oziv9Rrxaaap7pEdukEJKQGDue2AJ6oJkWtyS0QdI/DvouE2PB
+93d2S5Cy47xgnxijl8xYVw==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-J8fwIy6oN9r+AitnJJawWlGzkv0o7+X5eMIobk0aZytxp6yY8rJERpjknC5+r3Aj
-Rr8DojtnMpLMOU3tEtz1i2fT7uRf5RtvWWBisqK16d0r253bsBsHbs5W7+QkVziW
-lKhfnPMqcI9Py5jNvRgOy2LdDFdKwoT/vLl3WqQnd7TlloLHQZ0H9IKLTFCM6c0v
-mJC7HqnheOxq0jZPh0Uy4gw6D/G9Tss41ucvTCiAO9I0puF5CpCLRpy3EpY5yy9R
-fk7DXKTLHtUt5K8bU9bgkvWbLw4yKcgrIPa6JGT5YeEaBfDNSjM+hsLqKorzGvip
-a+cIQQJ/usYJB4seASiNbio8i8uBWzi6abDJtF+YORrMwx3LIKGg1daznEkyvoZj
-QMka38RU95mHk4RPB6uA59NwCSPvzQAvDaO7wI64/gCRxrJ60n9UwpLSgZWfuXbD
-lsYW7a6voLcfZBIeYXAorFbQ3L7Fhdhj4MegMaWh03cIZlh+BZ0w6VN7aAmgpD/1
+uWUJLG6IcQHm2X14jCBoj0nSSLpYiHaZNlSXL56yqBwE+VX30bdzqPmsp5FbpW1J
+Lnxywajh1idLN0Hbuvm3lkgLeRmDJ7FSkMyHO2KhIa8AlLwYT9hRZZnfq8btv4kH
+MFnu//42YzzXWYBlVaAt0Dy24RLBDmhnN+CQ8leh1bUx1Q7uR2ezpGnWTJPgofee
+9B/wzmuBE5qSDxDCXm5Ko+X7lNJUle4KXUwT5+iX0L+APcUggLW5EudSwb1Xmx+Y
+dZBmCK6pIzfIa1MAQpowsoqcblFT7Q70LHywn+N4nI7h2CBOeVcbC5f7XTJ5UxA8
+miW8BwiLBd8LameRoN/334WiaLcZrzKqWj4d1ln9vQMdrEzYhCFJ4lKr9+Oobvgv
+XKm2YEpvXhmkmZPH/KCjvyal11yzMgz/fM04iqghyND2k4yhfWbClbNEQZW8jRrO
+nn1wpbLt2RarJzOjCQIxviR+gTG5Yyyfvu0bruRbuP23BF26dQnPkNZ7/33hJb4O
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-W+QIoVhmove4thdrrQkPx8jTUJrBY9hiN1L7bMs0YVYcT67jGwREE8pAbPEWNfkN
-6BPT2p80ZYBkco6gY+9uTSg91eBRR8rRVfZBKyrDsbFGcI2U3svv5c7DTOo/3M7R
-cq0KfAO422ryLGt12zV+z0rVXW0xrEVNA8VeVQjEIAYtaihXz+aRPxGD4YOwohvg
-UdhQfm7TM6ZCAzY6RC62GHESq/LZ6D9detwLGL3zUO8pv2j3YZPbxEqSZl37Gd9K
-wq76zaS/UrCWLIzPnp9Z2ZsC4CnmXA13C8Q2pNlf+VdDuuNXHR30cXQgJBvH//DA
-ttpA1DrkKh4HSBjI6sI8fg==
+CnA+/IcNJKbnFhmyecfKNK/JI9A+r2Kw+YmaNrhqKLYPJOjZi7InJVEiRoKvLaOL
+HuYDikFK5nW/o1UnZwIqyJiuSRZ3eT8e/Cq6rT9i3yT51nwrOq5Afnr8dsTb2Aw1
+lSNiF6mJhr4PaUtpxB2+EBTiJ5Ty8+joGaJa40ReS7HhKWhOLcsLeHvIiSehbfNu
+PKDcLP9g3sKwitevMtU3nuZB97PHzLvweffsXg1lSCPGLOfh2H1uosaAsv1OYMcO
+6oHeVANa4dNqep50okDVDNy+xaReJCoF4GxDLaNxhIMUPxKYjYntZL4lTAS2c6x7
+i1ZbAsX67d1+v5Y0qgEUCg==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-nz0QmGIwh31n9Q4EjmQOByDXK2Q73ndeic3BwXXL7lbwAMHY812rhceBk6IvOAqU
-VTZyGg09QreFTrGsXqMzj1CEtEdwIzvDBrsZUcEc9EEiClZQ7tCiqMRTgiETaHUw
-1WFL9+Swow1DUtjXJqPGCBS29V7RpB5+w91netYp1Gk=
+GYI0RxQRCquvGiQbqpYJcT665zMK/PpCHyBVR4irmWZD0ESMn9g+f4gUvx07MAyJ
+lssrCsIWT2yYtK9K6mjsCFBS3iz4kzxzsazGP3etmUOR6XOGkMPurilOR9NtCVrV
+Ab15oXyTGbzMi8dJHIVVsA9bvOlcI1nB47+HapS9EnQ=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-ebGJTtqQR2hhMU9cXRgvIGv/vzXg8dhbfRXmpxI0uAl18ohOomsqR6ck4lxQpsIn
-FWuqSq8XC6zV56Ybk16Dzcara3kzgcIKHLPQTkQKV13L/cL55INTkXERyzkGdFiV
-0qM5/jzncyHNCzMpvGfMZKGQMLOOYC9FVeGwrqL1zoIN1wI8wdDAVCs41KfWEYdq
-C7yagi/wr4FgekUWAg73bdQvXpVqpTtBq+iPkHLvQygPfKmASkVE9KLeil8OzN1S
-j5//D7uhuQBRV108kdzKnsl314fseJxC25dYfSc6pIHG4Xdwd0CJV/mr2uA5Lrkh
-zTZmgF2BeKF3okj60BCKNg==
+a61XExpUaotSrEEnj71pc1G4MRfUitExUh/5BITnlt25pxClreJVdjdOPAgyiBou
+0gcy6gs4jsVfUvIwtbjNCZn7mt9NfzbNR1nlCyH5X/2ENVqr3zqhRESkRaPVYzfT
+43mK5tYVryIu53DWC0aq2d2E0OsHrDMRVz5SSp5Eji+0QD5beNUUU7FvD3KCXDtS
+e02FdmuKN95PywZMofFaEBS59eAS+9t16fB3VgEcOwXoX+kAFYhwj9WW1MpYys2a
+1SjBDq1mxNerKhBRdJhIrb+F8fk6Acmx01IQ0PDB8tyjqvpzIu4HK4fjapwQsLOU
+6I7j5CtujBUDd7dueB1sDQ==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-VS7vN1w/UzfsdOaNGvrRa1T8JHOvPle2Ose0ndCdsiiU7Lgp/aB2XClgRnR3Z1tM
-JEeDpfggUh5q1mEVEx0FGiYNwGUdAPsZ/vCIyHUeJJwbEzhIz3p6T6PgCglg+RyN
-0bb5HtvtSvmNNAsTYHc+S9P43lZfgipXbldEeh9Z/LXNMq4RsK9MJrgRCuf8Awro
-egIIxiCipiiiIlajewmi3yGQSJIZdaJ0CkPz0utEM5h7no2fmp9SB+LOvwn1bd/U
-FKmKWvbTEiIayDdev1V+h3SwP3dyknR3WK+QH04tnqY85kjrKovpO9UoQbiq8RuI
-a7g48NOoFTiz/p1sHxqdMg==
+CAMOOPT9x9MBFOhNr3s6Uqb9GjxRFk8Hk5LJvUUmOzzXxbXv993rQB31ZdRysG/1
+hiA7Xr1Ox76LwDKKoS7L637eI3jgYwQG5/QFTWV/4UGmTtpIqA6f3XRue1l0h5oj
+VDTj9SQ5mi+IBfdxggG2Uol0eckeI7ZhNoiIYhlEWgef+Z/LrPeYkZOmwhAPg1tH
+Qg/nOtgznXk4wXQ4mNXYkCU8HYftGqa0wyTmDeNoT5W+a/lO265z7P36TZzN5X4R
+A6iYOUuwFELelK8tAfhTrEyIcMNGIiDYgtwrZVttc+ZZMWsbQeYiE7CYbkTfWEzi
+U3LyIEcX93QH2M+s/w0yvw==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=640)
 `pragma protect data_block
-gQXD078ezNUS5UNxUPjyx74izi6mAO8wtitMjh/DdISframI8cOfJfX6BmxLYeQQ
-w0OSMEEPrfZ382fw9cyc77sjSqDMRUsIwdxEcFd7NhtLF6WiLo3PiKmk6dz335OI
-d/j8VFNwlsAa6da/IRLVvvGMvoXQXsdfCpnHRhA4LpLrNkLgMn5PyB/GgASQWXaO
-DoMHp0GRzI21DB5n3sDe/iy1KQTxTq/R0U6sQ74ulWaON4ikDgT6o/hcc5/XrYOo
-9CABLYTG8xZhWQvJd42xnf9THTwewr73ux22gNtHcf4ldZKL27c7UH9vD3b7S3PW
-NX8VMK9g0t4J8CEDYk/UsprjMQynAN6b1RGhxNYFFhLVLjuo51uzmHxL8lx/si6d
-ntMVSa4rWiBJ8h0OVet5aOdhyldb30Adaw9B+q3nl/Q/Dvyz1iSxyqDlehfZqXGC
-IYoaQmHzuieydQX1C7mE8LPDsCkQAsm6Q2Umyad1+9dAHrRxF/bRGMhulW+T/ocB
-eG5B9MXePnvlD5CXPFEmTxGeCfNIIpt5aSwzXf4bSfgy6TPoV7PnRa6Bt76DPb5f
-+EUHc/URZAHyTMOJlnlmhjdjrkTrqA/zQ+t+ntwiEq4UdJueH0tWvhWbwW1EAC9k
-z9awvTMSsCe+Zr/Hbwt3fLwOlYE7qZH3J1VSg4NIrF5n/w5x9P54BwrZS31dXSQ8
-A+TLTLpo/YHLNTnVigRYdK3nyJaKYpAWaVPYuILhUofpTvqou3O70z015FvlNHTe
-ie8Euy0ZkscyLA2xQfqzmYVZmWnfYw+zRskSAQUH8etXyaUKc1lleM9ERXV3ALmP
-UZu+t09QLr5+fIyokwmXiw==
+yGxAxyGVyUQXlPugH400h7+nTK1aI19p02se6wdMu+Ul2/KGZnq4bM7r3OY3lfOW
+kJB1cbzd/DnPPkh7baFosDQAwUQ+TCIaYLTkdsalGcve42EOnPTtuLu8WPtKv+bi
+kp82+n8xcBX5npkMeQ6IskzLhjIgFfJsIIDm41mKU2EgjRDcMhhmon6Lzbg21Af8
+0nZcKlaWPpqJmaDyppdSoIkt3cVhAOp8rdQZfZoSWocZEBPk38U9fiMDwySZghiH
+845H0+gdzlUAwtawR+mgELjENbMB8lqChmQA0V7IJ767X44OlImhv/vN9Zy0mkso
+dGAqUrkpBZ4NVSnS6CS9e/1bL5l6RQWj2PTvM7CvWoDEY4rKddzgxO1d6LfPggql
+sH36/eIs7MjlOts1T+mgVQ2AyZs9LgL0pgSN35qWi2Jns78DgMeg2HVvwn/Ws0hV
+sp4vrqnlp/FXfIM3DVLLOLOdM01n7DjsejSEv3jXuj0/Sy2amY/ka6p+pKq+zbuj
+WIYixQQ+wKL7mJo71zd8NCb0403rPDgYnwEm2EQ2WKmd3WJk1Oryq6Zb0PQpuTPL
+jX8WBWTJhqSl7LVSuEk3HxIbGBi4sKxGWCLhoNIo6Y5j2bEMKiOtEKqTGgbntv+U
+KwqhAVUHDgDpHfukVXiUdDoI+Hedy517kIxNM8eGIMI3pZD6kMeQ0OwVeak6BPjM
+jZ1BqHB82f+jFWs+BmVviK9zszRA+lHKMVudmLU/Xlr8aKMQSRY7BsRcFsEtnLJd
+K27IpmNZcZr6yhi80P5WXQGRfudzM92oyDu8MQWidU05DBxb6xx9+2ns4h/8cZtq
+tc3azDMSiZB5IR2RFfAJ9g==
 
 `pragma protect end_protected
 endmodule
@@ -1935,47 +1954,6 @@ module MTDDRXN0002 ( input T0, T1, ECLK, SCLK, RST, output Q, input WRCLK );
 endmodule
 
 module 
-  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
-   ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
-    DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
-  wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
-         TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
-
-  MODDRXN0001 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ 
-    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
-    .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
-    .WRCLK(DQSW270));
-  gnd DRIVEGND( .PWR0(GNDI));
-  MTDDRXN0002 
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL_MTDDRXN 
-    ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
-    .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
-
-  specify
-    (DQSW270 => DOUT) = (0:0:0,0:0:0);
-    (DQSW270 => TOUT) = (0:0:0,0:0:0);
-    $setuphold 
-      (posedge ECLK, posedge SCLKOUT, 0:0:0, 0:0:0,,,, ECLK_dly, SCLKOUT_dly);
-    $setuphold 
-      (posedge SCLKOUT, TSDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA0_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
-    $setuphold 
-      (posedge SCLKOUT, TSDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA1_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA2, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA2_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA3, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA3_dly);
-    $width (posedge DQSW270, 0:0:0);
-    $width (negedge DQSW270, 0:0:0);
-  endspecify
-
-endmodule
-
-module 
   DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL
    ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
     DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
@@ -2017,20 +1995,61 @@ module
 endmodule
 
 module 
-  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
+  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
    ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
     DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
   wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
          TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
 
   MODDRXN0001 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ 
     ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
     .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
     .WRCLK(DQSW270));
   gnd DRIVEGND( .PWR0(GNDI));
   MTDDRXN0002 
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL_MTDDRXN 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL_MTDDRXN 
+    ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
+    .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
+
+  specify
+    (DQSW270 => DOUT) = (0:0:0,0:0:0);
+    (DQSW270 => TOUT) = (0:0:0,0:0:0);
+    $setuphold 
+      (posedge ECLK, posedge SCLKOUT, 0:0:0, 0:0:0,,,, ECLK_dly, SCLKOUT_dly);
+    $setuphold 
+      (posedge SCLKOUT, TSDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
+    $setuphold 
+      (posedge SCLKOUT, TSDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA1_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA2, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA2_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA3, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA3_dly);
+    $width (posedge DQSW270, 0:0:0);
+    $width (negedge DQSW270, 0:0:0);
+  endspecify
+
+endmodule
+
+module 
+  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
+   ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
+    DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
+  wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
+         TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
+
+  MODDRXN0001 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ 
+    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
+    .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
+    .WRCLK(DQSW270));
+  gnd DRIVEGND( .PWR0(GNDI));
+  MTDDRXN0002 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL_MTDDRXN 
     ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
     .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
 
@@ -2099,20 +2118,20 @@ module
 endmodule
 
 module 
-  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
+  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_16_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
    ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
     DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
   wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
          TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
 
   MODDRXN0001 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ 
     ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
     .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
     .WRCLK(DQSW270));
   gnd DRIVEGND( .PWR0(GNDI));
   MTDDRXN0002 
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL_MTDDRXN 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL_MTDDRXN 
     ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
     .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
 
@@ -2304,47 +2323,6 @@ module
 endmodule
 
 module 
-  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
-   ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
-    DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
-  wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
-         TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
-
-  MODDRXN0001 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ 
-    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
-    .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
-    .WRCLK(DQSW270));
-  gnd DRIVEGND( .PWR0(GNDI));
-  MTDDRXN0002 
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL_MTDDRXN 
-    ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
-    .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
-
-  specify
-    (DQSW270 => DOUT) = (0:0:0,0:0:0);
-    (DQSW270 => TOUT) = (0:0:0,0:0:0);
-    $setuphold 
-      (posedge ECLK, posedge SCLKOUT, 0:0:0, 0:0:0,,,, ECLK_dly, SCLKOUT_dly);
-    $setuphold 
-      (posedge SCLKOUT, TSDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA0_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
-    $setuphold 
-      (posedge SCLKOUT, TSDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA1_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA2, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA2_dly);
-    $setuphold 
-      (posedge SCLKOUT, TXDATA3, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA3_dly);
-    $width (posedge DQSW270, 0:0:0);
-    $width (negedge DQSW270, 0:0:0);
-  endspecify
-
-endmodule
-
-module 
   DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_2__u_DQ_BB_IOL
    ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
     DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
@@ -2386,20 +2364,61 @@ module
 endmodule
 
 module 
-  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
+  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
    ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
     DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
   wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
          TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
 
   MODDRXN0001 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ 
     ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
     .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
     .WRCLK(DQSW270));
   gnd DRIVEGND( .PWR0(GNDI));
   MTDDRXN0002 
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL_MTDDRXN 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL_MTDDRXN 
+    ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
+    .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
+
+  specify
+    (DQSW270 => DOUT) = (0:0:0,0:0:0);
+    (DQSW270 => TOUT) = (0:0:0,0:0:0);
+    $setuphold 
+      (posedge ECLK, posedge SCLKOUT, 0:0:0, 0:0:0,,,, ECLK_dly, SCLKOUT_dly);
+    $setuphold 
+      (posedge SCLKOUT, TSDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
+    $setuphold 
+      (posedge SCLKOUT, TSDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TSDATA1_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA2, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA2_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA3, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA3_dly);
+    $width (posedge DQSW270, 0:0:0);
+    $width (negedge DQSW270, 0:0:0);
+  endspecify
+
+endmodule
+
+module 
+  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_4__u_DQ_BB_IOL
+   ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
+    DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
+  wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
+         TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
+
+  MODDRXN0001 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ 
+    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
+    .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
+    .WRCLK(DQSW270));
+  gnd DRIVEGND( .PWR0(GNDI));
+  MTDDRXN0002 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[4].u_DQ_BB_IOL_MTDDRXN 
     ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
     .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
 
@@ -2468,20 +2487,20 @@ module
 endmodule
 
 module 
-  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_3__u_DQ_BB_IOL
+  DDR_MEM_1_inst_lscc_ddr_mem_inst_DW_8_u1_dq_dqs_dm_unit_DQ_BLOCK_0__u_DQ_BB_IOL
    ( output DOUT, input SCLKOUT, output TOUT, input TSDATA0, TXDATA0, TXDATA1, 
     DQSW270, ECLK, TSDATA1, TXDATA2, TXDATA3 );
   wire   GNDI, SCLKOUT_dly, ECLK_dly, TSDATA0_dly, TXDATA0_dly, TXDATA1_dly, 
          TSDATA1_dly, TXDATA2_dly, TXDATA3_dly;
 
   MODDRXN0001 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ 
     ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
     .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
     .WRCLK(DQSW270));
   gnd DRIVEGND( .PWR0(GNDI));
   MTDDRXN0002 
-    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[3].u_DQ_BB_IOL_MTDDRXN 
+    \DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.DQ_BLOCK[0].u_DQ_BB_IOL_MTDDRXN 
     ( .T0(TSDATA0_dly), .T1(TSDATA1_dly), .ECLK(ECLK_dly), .SCLK(SCLKOUT_dly), 
     .RST(GNDI), .Q(TOUT), .WRCLK(DQSW270));
 
@@ -3187,6 +3206,66 @@ module ODDRXN ( input D0, D1, SCLK, RST, output Q, input D2, D3, ECLK );
   defparam INST1.GSR = "DISABLED";
 endmodule
 
+module dm_dqs1_o_pad_bb_inst_IOL ( output DOUT, input SCLKOUT, TXDATA0, 
+    TXDATA1, DQSW270, ECLK, TXDATA2, TXDATA3 );
+  wire   GNDI, SCLKOUT_dly, ECLK_dly, TXDATA0_dly, TXDATA1_dly, TXDATA2_dly, 
+         TXDATA3_dly;
+
+  MODDRXN0001 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ 
+    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
+    .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
+    .WRCLK(DQSW270));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (DQSW270 => DOUT) = (0:0:0,0:0:0);
+    $setuphold 
+      (posedge ECLK, posedge SCLKOUT, 0:0:0, 0:0:0,,,, ECLK_dly, SCLKOUT_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA2, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA2_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA3, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA3_dly);
+    $width (posedge DQSW270, 0:0:0);
+    $width (negedge DQSW270, 0:0:0);
+  endspecify
+
+endmodule
+
+module dm_dqs0_o_pad_bb_inst_IOL ( output DOUT, input SCLKOUT, TXDATA0, 
+    TXDATA1, DQSW270, ECLK, TXDATA2, TXDATA3 );
+  wire   GNDI, SCLKOUT_dly, ECLK_dly, TXDATA0_dly, TXDATA1_dly, TXDATA2_dly, 
+         TXDATA3_dly;
+
+  MODDRXN0001 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DM_BLOCK.DM_X2.u_DM_ODDRX2DQ 
+    ( .D0(TXDATA0_dly), .D1(TXDATA1_dly), .SCLK(SCLKOUT_dly), .RST(GNDI), 
+    .Q(DOUT), .D2(TXDATA2_dly), .D3(TXDATA3_dly), .ECLK(ECLK_dly), 
+    .WRCLK(DQSW270));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (DQSW270 => DOUT) = (0:0:0,0:0:0);
+    $setuphold 
+      (posedge ECLK, posedge SCLKOUT, 0:0:0, 0:0:0,,,, ECLK_dly, SCLKOUT_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA0, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA0_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA1, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA1_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA2, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA2_dly);
+    $setuphold 
+      (posedge SCLKOUT, TXDATA3, 0:0:0, 0:0:0,,,, SCLKOUT_dly, TXDATA3_dly);
+    $width (posedge DQSW270, 0:0:0);
+    $width (negedge DQSW270, 0:0:0);
+  endspecify
+
+endmodule
+
 module DDR_MEM_1_inst_lscc_ddr_mem_inst_u1_common_logic_u0_DDRDLL_DDRDLL_inst
    ( input FREEZE, CLKIN, RST, UDDCNTL_N, output CODE8, CODE7, CODE6, CODE5, 
     CODE4, CODE3, CODE2, CODE1, CODE0 );
@@ -3334,24 +3413,6 @@ module SEIO18_CORE_B ( input I, DOLP, inout B, output O, INLP, input T,
   defparam INST10.ENADC_IN = "DISABLED";
 endmodule
 
-module dq_dqs1_io_4_ ( input PADDO, PADDT, inout dqdqs1io4 );
-  wire   GNDI;
-
-  SEIO18_CORE_B 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].u_DQ_BB 
-    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs1io4), .O(), .INLP(), .T(PADDT), 
-    .INADC());
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => dqdqs1io4) = (0:0:0,0:0:0);
-    (PADDT => dqdqs1io4) = (0:0:0,0:0:0);
-    $width (posedge dqdqs1io4, 0:0:0);
-    $width (negedge dqdqs1io4, 0:0:0);
-  endspecify
-
-endmodule
-
 module dq_dqs1_io_2_ ( input PADDO, PADDT, inout dqdqs1io2 );
   wire   GNDI;
 
@@ -3370,20 +3431,38 @@ module dq_dqs1_io_2_ ( input PADDO, PADDT, inout dqdqs1io2 );
 
 endmodule
 
-module dq_dqs1_io_0_ ( input PADDO, PADDT, inout dqdqs1io0 );
+module dq_dqs1_io_3_ ( input PADDO, PADDT, inout dqdqs1io3 );
   wire   GNDI;
 
   SEIO18_CORE_B 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].u_DQ_BB 
-    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs1io0), .O(), .INLP(), .T(PADDT), 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].u_DQ_BB 
+    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs1io3), .O(), .INLP(), .T(PADDT), 
     .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (PADDO => dqdqs1io0) = (0:0:0,0:0:0);
-    (PADDT => dqdqs1io0) = (0:0:0,0:0:0);
-    $width (posedge dqdqs1io0, 0:0:0);
-    $width (negedge dqdqs1io0, 0:0:0);
+    (PADDO => dqdqs1io3) = (0:0:0,0:0:0);
+    (PADDT => dqdqs1io3) = (0:0:0,0:0:0);
+    $width (posedge dqdqs1io3, 0:0:0);
+    $width (negedge dqdqs1io3, 0:0:0);
+  endspecify
+
+endmodule
+
+module dq_dqs1_io_4_ ( input PADDO, PADDT, inout dqdqs1io4 );
+  wire   GNDI;
+
+  SEIO18_CORE_B 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[4].u_DQ_BB 
+    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs1io4), .O(), .INLP(), .T(PADDT), 
+    .INADC());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => dqdqs1io4) = (0:0:0,0:0:0);
+    (PADDT => dqdqs1io4) = (0:0:0,0:0:0);
+    $width (posedge dqdqs1io4, 0:0:0);
+    $width (negedge dqdqs1io4, 0:0:0);
   endspecify
 
 endmodule
@@ -3406,20 +3485,20 @@ module dq_dqs1_io_1_ ( input PADDO, PADDT, inout dqdqs1io1 );
 
 endmodule
 
-module dq_dqs1_io_3_ ( input PADDO, PADDT, inout dqdqs1io3 );
+module dq_dqs1_io_0_ ( input PADDO, PADDT, inout dqdqs1io0 );
   wire   GNDI;
 
   SEIO18_CORE_B 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[3].u_DQ_BB 
-    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs1io3), .O(), .INLP(), .T(PADDT), 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_16.u1_dq_dqs_dm_unit/DQ_BLOCK[0].u_DQ_BB 
+    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs1io0), .O(), .INLP(), .T(PADDT), 
     .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (PADDO => dqdqs1io3) = (0:0:0,0:0:0);
-    (PADDT => dqdqs1io3) = (0:0:0,0:0:0);
-    $width (posedge dqdqs1io3, 0:0:0);
-    $width (negedge dqdqs1io3, 0:0:0);
+    (PADDO => dqdqs1io0) = (0:0:0,0:0:0);
+    (PADDT => dqdqs1io0) = (0:0:0,0:0:0);
+    $width (posedge dqdqs1io0, 0:0:0);
+    $width (negedge dqdqs1io0, 0:0:0);
   endspecify
 
 endmodule
@@ -3583,24 +3662,6 @@ module dq_dqs0_io_6_ ( input PADDO, PADDT, inout dqdqs0io6 );
 
 endmodule
 
-module dq_dqs0_io_4_ ( input PADDO, PADDT, inout dqdqs0io4 );
-  wire   GNDI;
-
-  SEIO18_CORE_B 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[4].u_DQ_BB 
-    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs0io4), .O(), .INLP(), .T(PADDT), 
-    .INADC());
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (PADDO => dqdqs0io4) = (0:0:0,0:0:0);
-    (PADDT => dqdqs0io4) = (0:0:0,0:0:0);
-    $width (posedge dqdqs0io4, 0:0:0);
-    $width (negedge dqdqs0io4, 0:0:0);
-  endspecify
-
-endmodule
-
 module dq_dqs0_io_2_ ( input PADDO, PADDT, inout dqdqs0io2 );
   wire   GNDI;
 
@@ -3619,20 +3680,38 @@ module dq_dqs0_io_2_ ( input PADDO, PADDT, inout dqdqs0io2 );
 
 endmodule
 
-module dq_dqs0_io_0_ ( input PADDO, PADDT, inout dqdqs0io0 );
+module dq_dqs0_io_3_ ( input PADDO, PADDT, inout dqdqs0io3 );
   wire   GNDI;
 
   SEIO18_CORE_B 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[0].u_DQ_BB 
-    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs0io0), .O(), .INLP(), .T(PADDT), 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[3].u_DQ_BB 
+    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs0io3), .O(), .INLP(), .T(PADDT), 
     .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (PADDO => dqdqs0io0) = (0:0:0,0:0:0);
-    (PADDT => dqdqs0io0) = (0:0:0,0:0:0);
-    $width (posedge dqdqs0io0, 0:0:0);
-    $width (negedge dqdqs0io0, 0:0:0);
+    (PADDO => dqdqs0io3) = (0:0:0,0:0:0);
+    (PADDT => dqdqs0io3) = (0:0:0,0:0:0);
+    $width (posedge dqdqs0io3, 0:0:0);
+    $width (negedge dqdqs0io3, 0:0:0);
+  endspecify
+
+endmodule
+
+module dq_dqs0_io_4_ ( input PADDO, PADDT, inout dqdqs0io4 );
+  wire   GNDI;
+
+  SEIO18_CORE_B 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[4].u_DQ_BB 
+    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs0io4), .O(), .INLP(), .T(PADDT), 
+    .INADC());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => dqdqs0io4) = (0:0:0,0:0:0);
+    (PADDT => dqdqs0io4) = (0:0:0,0:0:0);
+    $width (posedge dqdqs0io4, 0:0:0);
+    $width (negedge dqdqs0io4, 0:0:0);
   endspecify
 
 endmodule
@@ -3655,20 +3734,20 @@ module dq_dqs0_io_1_ ( input PADDO, PADDT, inout dqdqs0io1 );
 
 endmodule
 
-module dq_dqs0_io_3_ ( input PADDO, PADDT, inout dqdqs0io3 );
+module dq_dqs0_io_0_ ( input PADDO, PADDT, inout dqdqs0io0 );
   wire   GNDI;
 
   SEIO18_CORE_B 
-    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[3].u_DQ_BB 
-    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs0io3), .O(), .INLP(), .T(PADDT), 
+    \DDR_MEM_1_inst/lscc_ddr_mem_inst/DW_8.u1_dq_dqs_dm_unit/DQ_BLOCK[0].u_DQ_BB 
+    ( .I(PADDO), .DOLP(GNDI), .B(dqdqs0io0), .O(), .INLP(), .T(PADDT), 
     .INADC());
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (PADDO => dqdqs0io3) = (0:0:0,0:0:0);
-    (PADDT => dqdqs0io3) = (0:0:0,0:0:0);
-    $width (posedge dqdqs0io3, 0:0:0);
-    $width (negedge dqdqs0io3, 0:0:0);
+    (PADDO => dqdqs0io0) = (0:0:0,0:0:0);
+    (PADDT => dqdqs0io0) = (0:0:0,0:0:0);
+    $width (posedge dqdqs0io0, 0:0:0);
+    $width (negedge dqdqs0io0, 0:0:0);
   endspecify
 
 endmodule
@@ -5826,6 +5905,36 @@ module DDR_MEM_1_ck_o_0_ ( input PADDO, output DDRMEM1cko0 );
 
 endmodule
 
+module dm_dqs1_o ( input PADDO, output dm_dqs1_o );
+  wire   GNDI;
+
+  SEIO18_CORE0006 \dm_dqs1_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
+    .B(dm_dqs1_o), .O(), .INLP(), .T(GNDI), .INADC());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => dm_dqs1_o) = (0:0:0,0:0:0);
+    $width (posedge dm_dqs1_o, 0:0:0);
+    $width (negedge dm_dqs1_o, 0:0:0);
+  endspecify
+
+endmodule
+
+module dm_dqs0_o ( input PADDO, output dm_dqs0_o );
+  wire   GNDI;
+
+  SEIO18_CORE0006 \dm_dqs0_o_pad.bb_inst ( .I(PADDO), .DOLP(GNDI), 
+    .B(dm_dqs0_o), .O(), .INLP(), .T(GNDI), .INADC());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => dm_dqs0_o) = (0:0:0,0:0:0);
+    $width (posedge dm_dqs0_o, 0:0:0);
+    $width (negedge dm_dqs0_o, 0:0:0);
+  endspecify
+
+endmodule
+
 module VCC_cZ ( output Z );
 
   VHI_B VCC_cZ_VHI( .Z(Z));
@@ -5847,126 +5956,126 @@ endmodule
 `pragma protect key_keyname="LSCC_RADIANT_2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-qDQATGbuQy1G31wyulC9GCgeIA8tdy5NprIEJzt+S6YcZKx/HBie+meeIZ8wMjET
-qikG5hmSVrjJbf61PYonngAry5i8Qmw2NN/nwV5cW6OCfv+LwnZW0yvokhMksltw
-wuho/tdrxHNfNRNbqIgxQi2Byez2hYPcWRaX+LyaRZam4i4AV53kxzz0aE7nPCEj
-xjvGkBNvc3wFboXo78nl4Z89bPH+em4x5EA0wz28/uSyPg6xeqltE6kHyL2BM9KA
-Q57j5zv5zcdISXQizOKJoIJ/2u5nZdVKJbjE0mFFVxCh/6JBQ/SRLJ6i48GC97Ed
-uzsHrv5XAs06ngO6nkkiTw==
+GyXozYCguzrsRACRuIkPdONRBHmd19mSw6LfbSMeuVzG5PCB5akphsEmasbmAP7T
+je+irRxphZkfpP/AOcYL6tel8gP3ry6jk1mWbFHnabqqiv4MsN/Sz9Mcu94eO+xE
+ahRK6DGtkUHtxbjIvxaGwsNi+ynjNkNuBo76JizXq4ZWjhNlo1yuFCCIdQrnOlX0
+H90KEIeO9tSd5KJXacC5HB/nHwlMO2tzRbB/k2sm5OMEL1pkf69DYh/x/wq3/9ud
+ULYH0vtyaw2mxsytzxr2Ftx0ZP/QL3XoRvZJPx53UFupFyKGw6zvLQ6ccBSZ6cJ9
+bBHWGJKGIsuLFPrUciVuyA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=384)
 `pragma protect key_keyowner="Lattice Semiconductor"
 `pragma protect key_keyname="LSCC_RADIANT_3"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-cc5MoyG+JlEwgjKzcERAJOCjdhIlBvlglnFGhbStXIUlh9F+nJgg49u5CZiQOCsN
-Ccedl373/sS+64PDfV7Ikw5OymBCK1B5k9sVXmqd7stJfdKGFICPipHhnKmyTaMr
-tz+LchbIIvxPrAG37cTXyzO5OH02udcu5YX9pnJQw5MAvJ/6Rd/3boFtZZhybu19
-lQJaDMa3rg31J/h/U1s/BtCXQIRB3LFaEN1UInVFk8f1y4XCpeJkG8BSc1rIIuRt
-fPupGJBExiaP7O/Lyn5oFrKnwpGYu0Hxkqn3YYsVAZHlF7D0sJOJsLxhU92OrFnk
-/cV+tFKZSDtvhmjYZg0DIKfu9SFZO2fUN+vL79U0Bnbc9Drgit2gXhZYdZyDl0Zx
-Yylbe5FX5sa+rrkmNLpz+j/2eMQKd05x5s5qh45kMyTgYW44ZJneFyaeWdYABo+i
-ileX+J4n/KgID0+u37e1E/cEU6iJDYpErPhFxGQtehqDu9/roTY/JKUTPNcCgpwl
+gAiq4YN8vG77cFhL9Kz6KzRgBaRh3P01FJtViB73P7UrQVsqdwoC+ZMnL3le0Wvx
+8Gk+NgQxMDJr+7CeI6JlRSq5qWh17Adr5giE+X46xOtmEyVtj559QDkw5CrDfqHA
+gIHZJNn/bRdeuK5CPOzgTO1O4wtURD+d3WabQFTBH7iiOpziqtaDCIu7qRFuziMV
+pXqnboitwFCwdKVepBKVFfz6lq+s4xBP7CaK6IonEaC1ra5dn++Mgho9ANPvpUff
+mdN/0x+VSsduRSqCYzGb5G5O5qxwfWR9e2yhgjv98ujDG525G6Ddoq+M2PFjSut7
+WD2fIsdR2KD8ocJMSZiapZuWx8PztGws98D7LgemygqFLhNsver9xqwZB8hAZzHR
+DzimEFaxasAb/Ch3hzGKzFxIj2qK8ZszxPSHo8xqy7fUs2kHi4RSyF1oqLUH+jBj
+PyEQss36oW5SWFa3PJfnkOZfyDE2lE5jyAy3IKiKrvcVQ/+zKLaHMNMyCv8v+Woz
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Mentor Graphics Corporation"
 `pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-R6pPKiUP+4DcNeSM6PU9cPthoHgtv7Mmr6e/+1Uq1vqkFINo0WoSntddV8/TxmWV
-3kENkF+3utqS58np92rUD6mjoC9MIEnuCJjB2QcoulihpaJTXCJ1EkwxcRIQEGJJ
-dQNcFI3KWBRcTARDLi6aJe5IhG9CaxGoYZZTFQ2sT3LFzG/iJtepzXT0bBvPgNjr
-Dgt20U7fG28YP8glJ1MzPWq4as+gjo5BpCVQDTH3ticTYtpX+Wik26wRtqmlKW0K
-n9VEfxsXEWgsUAJ9EC4DGBIzM1RI/yJCPuMkoHMPmot3vy07oG8XBT58grHVu7Fr
-jPapJfvRjSZtGQzd0Q0MkQ==
+oBY/EZFaI5hhNsDaooP5wf/kIQxYwlGa3mpL1cK0FLHj2pn3huJx2G9GO9+Bg8+Z
+eM3szmcGzUIehTS9X+bsmmtcYvjm5GKzweGpUJ/CmocSRHllL2knkmo7EXMRSsBN
+gZSzTwPP6lB2aoBhkYBoIuL5NfSPPyp3Qb+S8iDLlFTPUBbW2m3EDEOpArvvlsV5
+/J2+GvJgV/6Ni9IzpKHqV8x3t23rdGp3EaVd8kK1Tv0xB7b8bSy15RTNE8HSYyT2
+h8pTud4AvCmD9TkpaXQxuXK039zUeSpCXthTg6Muh8Dg1PH6Z6G24GLrgGyYx9D5
+t8JImLW+vsH7Pcx/Nshp5w==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
 `pragma protect key_keyowner="Synopsys"
 `pragma protect key_keyname="SNPS-VCS-RSA-1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-OCeQ3pzpZ4oAQwnGz+JNAQnumgnxLnx5y4UZONHdu/g3uY5DaaL0hdDXSO9n4I/3
-SlfhUVmAzyqUd/RhexIfksM8ts5aLZcOaECM110DzfLtDhnQWAMDZTXtFvez2vZm
-SaeUIunQp9K5mqu2fiDZXwMy7aC2GwhtuSgDlAbj0uA=
+JzNyV7C9kzBldcjD52KZkuyinL7Qoa7hB4ly5lg3TXUGNKRwhpkRzxNSf6Ar11S5
+QGPBU1jFNTq4qsAodNsYK1lZqm6ti240DFh8WQVHwfzBGBkMc6Zsaq5LvNhtktti
+IjUq6YVVeepnV2LCbzTH4tLALnqKA3ohAE9y09701as=
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Aldec"
 `pragma protect key_keyname="ALDEC15_001"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-k+yUAi1x4MYS5AJNP37c9VTzWGpebDLTf6qnooe8BNOKncL7yopezJLErG4dBBid
-ZaYGEEPBoUpkd2PjnGERUKfHDbvukXVl/w4HmD9qYuB/FD/42AYQCJVRO2twhaQd
-hw0NNi0OoB+15/HUSVEyfryHtUOj9lLG4AKGUDwMeDBFB2Bu/DkPciY4q+oAel5N
-xzDh3bDktpclcIaRvvnu9OrU0DjkGKMVrzmn50G+ocnu+gW2IESz21iEkuN5ZI+s
-XFMMacHT6OsOBj9Wp3SsNLr2RwvQbIWZoSvYmS5/MHrWqZLnEmMiBt7Q/YP948+I
-VtUMn+hEYEFxt3op2UEqtQ==
+FMN1rpng9rQEr7ynSn1TwkeXuJCAjxZlzUq7IXd+3NE9EuyxvuvmRcQULXfvGsbj
+NTrMCmvRjj/Md3Qh56xFy/7BSE8C8OvC3qMy55EmPmaIsjPTdimC9orQGBhSIavd
+5HK7mtu/8LWomAbKwZvUje48oYKeh139w9WccxVGbSiXb5AXmm5gn5AM8eGgoJan
+skqOUbleC3MWPOcsU9krSIL103XyN0mbeCiBFTElVMMy6ydtqwGqXe7oEGWA/PiS
+oErEmBiWbdJnKP9Qf7V+rz6Bp1AWEs6dJq6HecrkLiik4kBB2nid6glKhORLjllz
+TdBq8xKfCU4M4hG/L//1LA==
 
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
 `pragma protect key_keyowner="Cadence Design Systems."
 `pragma protect key_keyname="CDS_RSA_KEY_VER_1"
 `pragma protect key_method="rsa"
 `pragma protect key_block
-hDDBczCr5UT5f4U5XZWXYeYJfRP4oK+F3lkLzdvK6DR8/spFnzHdMWCMs7/Z1L+V
-qS2lPIjcpNTNSaoDBMKjFuzFFXgIDY3uqySitPCysjVlhhIc5+3Iu5/YEHuFhhGT
-/7sAkS8PzGL7g18WeRjj60nM+vqn+9MFO0YAlrd2AX/jktCbalREhbWUX+2UEtbL
-dOBQMgG36HkUW3HuMqpbrvaX/URAHS6yvqzkFCRrKJFLLg+WcGkXsjHAiY/Kdlqg
-KOUKMmKdbkiS264XcZtZ3ZAai18PNcKcoazruP+jC7FSyQdVmlASuCV2x61PP7Zi
-9tgC2meW/CfghpL80N5Afg==
+DHudjW8IkuY5saQ8uJFfwpA2Bi1eTpns9dIAVpH0xNu8ZCPBbEJZM6IzZfTAxLrk
+zZcryC5lICEyTY9akjnGm4u7NDUgtuPNkFhYroh+H+05W1BDM/MbZl957AVpV3lv
+NIjZfWL6SYGE7kqXY+3/oYlo8YvlSuhPA7e0XuV0B4KAY+gNYWOOZ3IzmvCFkfKC
+D0mYoIRwC1lVnPauLjonShzrcyF9mSvGR7SkB93lgMSxIjc/bS5LkEJbuJFZi6Up
+v9i0HG/sZgCo5Qc9k0ZOHJuLl9az3iMOHU/AoFYY36aI5Gi5MGVWl/LR8FYsBzJj
+4IUYElAcOW7mUakrS/JU0A==
 
 `pragma protect data_method="aes128-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=2496)
 `pragma protect data_block
-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
+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
 
 `pragma protect end_protected

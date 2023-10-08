@@ -2,13 +2,13 @@
 relcom:../../../../../../lscc/radiant/2023.1/synpbase/bin/m_gen_lattice -prodtype synplify_pro -encrypt -pro -rundir ../../impl_1 -part LIFCL_40 -package CABGA256C -grade -7 -RWCheckOnRam 0 -maxfan 1000 -infer_widefn 1 -pack_rst_largeram 1 -use_rename_in_edif 0 -pipe -infer_seqShift -fixgatedclocks 0 -fixgeneratedclocks 0 -gcc_allow_lat_combloops 0 -gcc_disable_clock_latches 0 -gcc_convert_lats_to_regs 0 -lattice -Write_declared_clocks_only 1 -enable_gcc_in_premap -seqshift_no_replicate 0 -summaryfile ../synlog/report/Lattice_Project_1_impl_1_fpga_mapper.xml -merge_inferred_clocks 0 -top_level_module main -implementation impl_1 -flow mapping -mp 4 -prjfile ../scratchproject.prs -multisrs -ovm ../Lattice_Project_1_impl_1.vm -freq 200.000 -tcl ../Lattice_Project_1_impl_1_cpe.ldc ../synwork/Lattice_Project_1_impl_1_prem.srd -devicelib ../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v -devicelib ../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/pmi_def.v -ologparam Lattice_Project_1_impl_1.plg -osyn ../Lattice_Project_1_impl_1.srm -prjdir ../ -prjname proj_1 -log ../synlog/Lattice_Project_1_impl_1_fpga_mapper.srr -sn 2023.03 -jobname "fpga_mapper"
 rc:1 success:1 runtime:2
 file:../scratchproject.prs|io:o|time:1696554370|size:4439|exec:0|csum:
-file:../Lattice_Project_1_impl_1.vm|io:o|time:1696554377|size:97377|exec:0|csum:
-file:../Lattice_Project_1_impl_1_cpe.ldc|io:i|time:1696554370|size:12464|exec:0|csum:BAF856BAACE487F6ADD56C66DB5A9BE3
-file:../synwork/Lattice_Project_1_impl_1_prem.srd|io:i|time:1696554375|size:1393560|exec:0|csum:4E7E6FBE6F6B5A19D38BF54AA515B1C2
+file:../Lattice_Project_1_impl_1.vm|io:o|time:1696726508|size:98524|exec:0|csum:
+file:../Lattice_Project_1_impl_1_cpe.ldc|io:i|time:1696726501|size:12866|exec:0|csum:AC1A58FA1C751D25C7D1B2680319A488
+file:../synwork/Lattice_Project_1_impl_1_prem.srd|io:i|time:1696726506|size:1393733|exec:0|csum:13A9BA2D9CEC57BC2E899A4C68AAD142
 file:../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v|io:i|time:1686768495|size:1234342|exec:0|csum:C15E719ACBAA5F83EC7C17236C261D98
 file:../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/pmi_def.v|io:i|time:1685539323|size:39414|exec:0|csum:530CC5906D70AB3C6A4AA0861AC94BDF
-file:Lattice_Project_1_impl_1.plg|io:o|time:1696554377|size:1105|exec:0|csum:
-file:../Lattice_Project_1_impl_1.srm|io:o|time:1696554378|size:11550|exec:0|csum:
-file:../synlog/Lattice_Project_1_impl_1_fpga_mapper.srr|io:o|time:1696554377|size:36670|exec:0|csum:
+file:Lattice_Project_1_impl_1.plg|io:o|time:1696726508|size:1105|exec:0|csum:
+file:../Lattice_Project_1_impl_1.srm|io:o|time:1696726509|size:11812|exec:0|csum:
+file:../synlog/Lattice_Project_1_impl_1_fpga_mapper.srr|io:o|time:1696726508|size:36714|exec:0|csum:
 file:../../../../../../lscc/radiant/2023.1/synpbase/linux_a_64/m_gen_lattice|io:i|time:1686571583|size:49549248|exec:1|csum:DE65A2AEED17AFDFB462BC2B4ABDAF4A
 file:../../../../../../lscc/radiant/2023.1/synpbase/bin/m_gen_lattice|io:i|time:1685539309|size:347|exec:1|csum:04851DFC0CBB288ED81DA3E420127D0D

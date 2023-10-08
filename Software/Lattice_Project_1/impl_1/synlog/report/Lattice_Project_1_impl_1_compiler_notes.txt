@@ -64,7 +64,7 @@
 @N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
 @N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":969:25:969:37|Read directive translate_off.
 @N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":975:25:975:36|Read directive translate_on.
-@N: CG347 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
+@N: CG347 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3539:50:3539:62|Read a parallel_case directive.
 @N|stack limit increased to max
 @N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":313:13:313:25|Read directive translate_off.
 @N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":333:13:333:24|Read directive translate_on.
@@ -126,16 +126,16 @@
 @N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
 @N: CG334 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":969:25:969:37|Read directive translate_off.
 @N: CG333 :"/home/timothyjabez/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v":975:25:975:36|Read directive translate_on.
-@N: CG347 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3531:50:3531:62|Read a parallel_case directive.
+@N: CG347 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3539:50:3539:62|Read a parallel_case directive.
 @N|stack limit increased to max
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":3574:7:3574:13|Synthesizing module ECLKDIV in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":3593:7:3593:14|Synthesizing module ECLKSYNC in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1231:7:1231:30|Synthesizing module DDR_MEM_1_ipgen_mem_sync in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1239:7:1239:30|Synthesizing module DDR_MEM_1_ipgen_mem_sync in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1518:7:1518:12|Synthesizing module DDRDLL in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1567:7:1567:34|Synthesizing module DDR_MEM_1_ipgen_common_logic in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2988:7:2988:34|Synthesizing module DDR_MEM_1_ipgen_lscc_ddr_mem in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1575:7:1575:34|Synthesizing module DDR_MEM_1_ipgen_common_logic in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2996:7:2996:34|Synthesizing module DDR_MEM_1_ipgen_lscc_ddr_mem in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":3190:7:3190:12|Synthesizing module DQSBUF in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1744:7:1744:36|Synthesizing module DDR_MEM_1_ipgen_dq_dqs_dm_unit in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1752:7:1752:36|Synthesizing module DDR_MEM_1_ipgen_dq_dqs_dm_unit in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1001:7:1001:8|Synthesizing module BB in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5902:7:5902:15|Synthesizing module ODDRX2DQS in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":11112:7:11112:13|Synthesizing module TSHX2DQ in library work.
@@ -143,11 +143,11 @@
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":1553:7:1553:12|Synthesizing module DELAYB in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":4051:7:4051:14|Synthesizing module IDDRX2DQ in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5915:7:5915:14|Synthesizing module ODDRX2DQ in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2807:7:2807:34|Synthesizing module DDR_MEM_1_ipgen_moshx2_4_csn in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":2815:7:2815:34|Synthesizing module DDR_MEM_1_ipgen_moshx2_4_csn in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":6193:7:6193:11|Synthesizing module OSHX2 in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":761:7:761:47|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":769:7:769:47|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5893:7:5893:12|Synthesizing module ODDRX1 in library work.
-@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":628:7:628:33|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_ck in library work.
+@N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":636:7:636:33|Synthesizing module DDR_MEM_1_ipgen_oddrx2_4_ck in library work.
 @N: CG364 :"/home/timothyjabez/lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v":5928:7:5928:12|Synthesizing module ODDRX2 in library work.
 @N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":11:7:11:15|Synthesizing module DDR_MEM_1 in library work.
 @N: CG364 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5306:7:5306:38|Synthesizing module MIPI_DPHY_1_ipgen_lscc_mipi_dphy in library work.
@@ -285,23 +285,23 @@
 @N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5503:15:5503:25|Input pll_clkop_i is unused.
 @N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5504:15:5504:25|Input pll_clkos_i is unused.
 @N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/MIPI_DPHY_1/rtl/MIPI_DPHY_1.v":5517:15:5517:28|Input txclk_hsgate_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":790:10:790:15|Input eclk_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1794:34:1794:44|Input data_mask_i is unused.
-@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3517:4:3517:9|Trying to extract state machine for register delay_st_r.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3114:10:3114:21|Input pll_refclk_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3115:10:3115:20|Input pll_rst_n_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3128:10:3128:20|Input pause_cmd_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3129:41:3129:44|Input ca_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3151:35:3151:45|Input data_dqs2_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3152:35:3152:45|Input data_dqs3_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3153:35:3153:45|Input data_dqs4_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3154:35:3154:45|Input data_dqs5_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3155:35:3155:45|Input data_dqs6_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3156:35:3156:45|Input data_dqs7_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3157:35:3157:45|Input data_dqs8_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3160:34:3160:49|Input data_mask_dqs2_i is unused.
-@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3161:34:3161:49|Input data_mask_dqs3_i is unused.
-@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Trying to extract state machine for register flag.
-@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1329:4:1329:9|Trying to extract state machine for register cs_memsync.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":798:10:798:15|Input eclk_i is unused.
+@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3525:4:3525:9|Trying to extract state machine for register delay_st_r.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3122:10:3122:21|Input pll_refclk_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3123:10:3123:20|Input pll_rst_n_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3136:10:3136:20|Input pause_cmd_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3137:41:3137:44|Input ca_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3159:35:3159:45|Input data_dqs2_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3160:35:3160:45|Input data_dqs3_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3161:35:3161:45|Input data_dqs4_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3162:35:3162:45|Input data_dqs5_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3163:35:3163:45|Input data_dqs6_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3164:35:3164:45|Input data_dqs7_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3165:35:3165:45|Input data_dqs8_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3168:34:3168:49|Input data_mask_dqs2_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3169:34:3169:49|Input data_mask_dqs3_i is unused.
+@N: CL159 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":3170:34:3170:49|Input data_mask_dqs4_i is unused.
+@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Trying to extract state machine for register flag.
+@N: CL201 :"/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/IP/DDR_MEM_1/DDR_MEM_1/rtl/DDR_MEM_1.v":1337:4:1337:9|Trying to extract state machine for register cs_memsync.
 @N|Running in 64-bit mode
 

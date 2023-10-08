@@ -12,7 +12,7 @@ The file contains the area information from mapper to be displayed as part of th
 <data>0</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
-<data>47</data>
+<data>49</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
 <data>0</data>

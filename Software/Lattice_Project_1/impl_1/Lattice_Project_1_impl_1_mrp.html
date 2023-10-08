@@ -48,7 +48,7 @@ Package: CABGA256
 Performance Grade:  7_High-Performance_1.0V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.1.200.1
-Mapped on: Fri Oct  6 02:08:47 2023
+Mapped on: Sun Oct  8 02:58:37 2023
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -68,24 +68,24 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc /home/timothyjabez/
       Number used as logic LUT4s:                          3
       Number used as distributed RAM:                      0 (6 per 16X4 RAM)
       Number used as ripple logic:                         0 (2 per CCU2)
-   Number of PIOs used/reserved:   58 out of   156 (37%)
-      Number of PIOs reserved:      7 (per sysConfig and/or prohibit constraint)
-      Number of PIOs used:         51
-        Number of PIOs used for single ended IO:        43
+   Number of PIOs used/reserved:   66 out of   156 (42%)
+      Number of PIOs reserved:     13 (per sysConfig and/or prohibit constraint)
+      Number of PIOs used:         53
+        Number of PIOs used for single ended IO:        45
         Number of PIO pairs used for differential IO:    4
         Number allocated to regular speed PIOs:     4 out of   82 (5%)
-        Number allocated to high speed PIOs:       47 out of   74 (64%)
+        Number allocated to high speed PIOs:       49 out of   74 (66%)
    Number of Dedicated IO used for ADC/PCIE/DPHY:   20 out of   32 (63%)
-   Number of IDDR/ODDR/TDDR functions used:     60 out of   386 (16%)
+   Number of IDDR/ODDR/TDDR functions used:     62 out of   386 (16%)
       Number of IDDR functions:                0
-      Number of ODDR functions:               42
+      Number of ODDR functions:               44
                 ODDRX1:          22
-                ODDRX2:          20
+                ODDRX2:          22
       Number of TDDR functions:               18
                 TDDRX2:          18
-   Number of IOs using at least one DDR function: 42 (3 differential)
+   Number of IOs using at least one DDR function: 44 (3 differential)
       Number of IOs using IDDR only:           0 (0 differential)
-      Number of IOs using ODDR only:          24 (1 differential)
+      Number of IOs using ODDR only:          26 (1 differential)
       Number of IOs using ODDR/TDDR:          18 (2 differential)
       Number of IOs using IDDR/ODDR/TDDR:      0 (0 differential)
    Number of Block RAMs:          0 out of 84 (0%)
@@ -135,22 +135,22 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc /home/timothyjabez/
    Number of SED:                 0 out of 1 (0%)
    Number of PCSs:                0 out of 1 (0%)
    Number of Clocks:  9
-      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w: 24 loads, 24 rising, 0
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.eclkout_w: 26 loads, 26 rising, 0
      falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_EC
      LKSYNC.ECLKSYNC_inst/ECLKOUT)
       Net PLL_1_clkos_o: 1 loads, 1 rising, 0 falling (Driver: Pin
      PLL_1_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS)
-      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o: 44 loads, 44 rising, 0
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.sclk_o: 46 loads, 46 rising, 0
      falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.u1_common_logic.u0_EC
      LKDIV.ECLKDIV_inst/DIVOUT)
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.sw270_out_w:
-     8 loads, 8 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.
+     9 loads, 9 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.
      DW_16.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW270)
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_16.u1_dq_dqs_dm_unit.dqswout_w: 1
      loads, 1 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
      _16.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW)
-      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w: 8
-     loads, 8 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
+      Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.sw270_out_w: 9
+     loads, 9 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
      _8.u1_dq_dqs_dm_unit.u0_DQSBUF.DQSBUF_inst/DQSW270)
       Net DDR_MEM_1_inst.lscc_ddr_mem_inst.DW_8.u1_dq_dqs_dm_unit.dqswout_w: 1
      loads, 1 rising, 0 falling (Driver: Pin DDR_MEM_1_inst.lscc_ddr_mem_inst.DW
@@ -202,15 +202,15 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc /home/timothyjabez/
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs1_io[6]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| dq_dqs1_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs1_io[2]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| dq_dqs1_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
+| dq_dqs1_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs1_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs1_io[1]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| dq_dqs1_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
+| dq_dqs1_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs1_io[5]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -221,15 +221,15 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc /home/timothyjabez/
 | dq_dqs0_io[6]       | BIDIR     | SSTL15_II |       | O     |           |
 
 +---------------------+-----------+-----------+-------+-------+-----------+
-| dq_dqs0_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[2]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| dq_dqs0_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
+| dq_dqs0_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dq_dqs0_io[4]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[1]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| dq_dqs0_io[3]       | BIDIR     | SSTL15_II |       | O     |           |
+| dq_dqs0_io[0]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | dq_dqs0_io[5]       | BIDIR     | SSTL15_II |       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -294,6 +294,10 @@ Command line:   map -i Lattice_Project_1_impl_1_syn.udb -pdc /home/timothyjabez/
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DDR_MEM_1_ck_o[0]   | OUTPUT    | SSTL15D_II|       | O     |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| dm_dqs1_o           | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| dm_dqs0_o           | OUTPUT    | SSTL15_II |       | O     |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 
 
 
@@ -334,11 +338,11 @@ PLL 1:                                 Pin/Node Value
   B Post Divider Shift:                         2
   C Post Divider Shift:                         8
   D Post Divider Shift:                         7
+
   E Post Divider Shift:                         7
   F Post Divider Shift:                         7
   A Section VCO Phase Shift:                    0
   B Section VCO Phase Shift:                    0
-
   C Section VCO Phase Shift:                    0
   D Section VCO Phase Shift:                    0
   E Section VCO Phase Shift:                    0
@@ -384,7 +388,7 @@ Instance Name: PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 ------------------
 
-   Total number of constraints: 103
+   Total number of constraints: 108
    Total number of constraints dropped: 0
    Total number of constraints duplicated: 1
 
@@ -394,12 +398,8 @@ Instance Name: PLL_1_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
 -------------------------
 
    Total CPU Time: 1 secs
-   Total REAL Time: 0 secs
+   Total REAL Time: 2 secs
    Peak Memory Usage: 452 MB
-
-
-
-
 
 
 

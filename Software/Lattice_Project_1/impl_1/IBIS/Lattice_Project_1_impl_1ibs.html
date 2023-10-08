@@ -42,8 +42,8 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 |************************************************************************
 | IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.1.200.1
-| Report Generate Date: Oct  6 2023
-| Report Generate Time: 02:09:13
+| Report Generate Date: Oct  8 2023
+| Report Generate Time: 02:59:03
 |************************************************************************
 | IBIS File LibisMaker.ibs
 | Cadence Design Systems, Inc. 2022 
@@ -221,24 +221,24 @@ C_pkg       1.23e-12        7.609e-13       1.567e-12
 R5            dqs1_io+             s2d150m100eaaaaaaaio
 P5            dqs1_io-             s2d150m100eaaaaaaaio
 R7            dq_dqs1_io[6]        ss2150m100eaaaaaaaio
-R3            dq_dqs1_io[4]        ss2150m100eaaaaaaaio
 T5            dq_dqs1_io[2]        ss2150m100eaaaaaaaio
-T6            dq_dqs1_io[0]        ss2150m100eaaaaaaaio
-T3            dq_dqs1_io[1]        ss2150m100eaaaaaaaio
 R1            dq_dqs1_io[3]        ss2150m100eaaaaaaaio
+R3            dq_dqs1_io[4]        ss2150m100eaaaaaaaio
+T3            dq_dqs1_io[1]        ss2150m100eaaaaaaaio
+T6            dq_dqs1_io[0]        ss2150m100eaaaaaaaio
 R2            dq_dqs1_io[5]        ss2150m100eaaaaaaaio
 T2            dq_dqs1_io[7]        ss2150m100eaaaaaaaio
 M9            dqs0_io+             s2d150m100eaaaaaaaio
 M8            dqs0_io-             s2d150m100eaaaaaaaio
-P8            dq_dqs0_io[6]        ss2150m100eaaaaaaaio
+M10           dq_dqs0_io[6]        ss2150m100eaaaaaaaio
+T10           dq_dqs0_io[2]        ss2150m100eaaaaaaaio
+P7            dq_dqs0_io[3]        ss2150m100eaaaaaaaio
 N9            dq_dqs0_io[4]        ss2150m100eaaaaaaaio
-R8            dq_dqs0_io[2]        ss2150m100eaaaaaaaio
+P6            dq_dqs0_io[1]        ss2150m100eaaaaaaaio
 T9            dq_dqs0_io[0]        ss2150m100eaaaaaaaio
-T10           dq_dqs0_io[1]        ss2150m100eaaaaaaaio
-R9            dq_dqs0_io[3]        ss2150m100eaaaaaaaio
-P7            dq_dqs0_io[5]        ss2150m100eaaaaaaaio
+R9            dq_dqs0_io[5]        ss2150m100eaaaaaaaio
 P9            dq_dqs0_io[7]        ss2150m100eaaaaaaaio
-G15           I2C_DPHY_1_scl_io    lvc330m080gaaaaaaaio
+G13           I2C_DPHY_1_scl_io    lvc330m080gaaaaaaaio
 G14           I2C_DPHY_1_sda_io    lvc330m080gaaaaaaaio
 G16           I2C_DPHY_2_scl_io    lvc330m080gaaaaaaaio
 F16           I2C_DPHY_2_sda_io    lvc330m080gaaaaaaaio
@@ -269,6 +269,8 @@ P14           DDR_MEM_1_addr_o[0]  ss2150m100eaaaaaaaou
 P11           DDR_MEM_1_csn_o[0]   ss2150m100eaaaaaaaou
 T12           DDR_MEM_1_ck_o[0]+   s2d150m100eaaaaaaaou
 T11           DDR_MEM_1_ck_o[0]-   s2d150m100eaaaaaaaou
+T4            dm_dqs1_o            ss2150m100eaaaaaaaou
+R8            dm_dqs0_o            ss2150m100eaaaaaaaou
 |************************************************************************
 [Diff pin]  inv_pin  vdiff  tdelay_typ  tdelay_min  tdelay_max
 T12         T11    0.1        0.0s        0.0s        0.0s

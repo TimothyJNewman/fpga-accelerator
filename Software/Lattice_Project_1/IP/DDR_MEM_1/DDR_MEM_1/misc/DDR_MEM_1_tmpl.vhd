@@ -29,6 +29,8 @@ component DDR_MEM_1 is
         dqs_outen_n_dqs1_i: in std_logic_vector(1 downto 0);
         dqs0_i: in std_logic_vector(1 downto 0);
         dqs1_i: in std_logic_vector(1 downto 0);
+        data_mask_dqs0_i: in std_logic_vector(3 downto 0);
+        data_mask_dqs1_i: in std_logic_vector(3 downto 0);
         csn_din0_i: in std_logic_vector(0 to 0);
         csn_din1_i: in std_logic_vector(0 to 0);
         addr_din0_i: in std_logic_vector(13 downto 0);
@@ -51,6 +53,8 @@ component DDR_MEM_1 is
         dq_dqs1_io: inout std_logic_vector(7 downto 0);
         dqs0_io: inout std_logic;
         dqs1_io: inout std_logic;
+        dm_dqs0_o: out std_logic;
+        dm_dqs1_o: out std_logic;
         ck_o: out std_logic_vector(0 to 0);
         csn_o: out std_logic_vector(0 to 0);
         addr_o: out std_logic_vector(13 downto 0);
@@ -93,6 +97,8 @@ __: DDR_MEM_1 port map(
     dqs_outen_n_dqs1_i=>,
     dqs0_i=>,
     dqs1_i=>,
+    data_mask_dqs0_i=>,
+    data_mask_dqs1_i=>,
     csn_din0_i=>,
     csn_din1_i=>,
     addr_din0_i=>,
@@ -115,6 +121,8 @@ __: DDR_MEM_1 port map(
     dq_dqs1_io=>,
     dqs0_io=>,
     dqs1_io=>,
+    dm_dqs0_o=>,
+    dm_dqs1_o=>,
     ck_o=>,
     csn_o=>,
     addr_o=>,

@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE 
-// Netlist written on Fri Oct  6 02:06:06 2023
+// Netlist written on Sun Oct  8 01:54:58 2023
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "/home/timothyjabez/lscc/radiant/2023.1/ip/avant/fifo/rtl/lscc_fifo.v"
@@ -148,11 +148,12 @@ module DDR_MEM_1 (eclk_i, sync_clk_i, sync_rst_i, pll_lock_i, sclk_o,
             burst_detect_dqs0_o, burst_detect_dqs1_o, burst_detect_sclk_dqs0_o, 
             burst_detect_sclk_dqs1_o, data_valid_dqs0_o, data_valid_dqs1_o, 
             dqs_outen_n_dqs0_i, dqs_outen_n_dqs1_i, dqs0_i, dqs1_i, 
-            csn_din0_i, csn_din1_i, addr_din0_i, addr_din1_i, ba_din0_i, 
-            ba_din1_i, casn_din0_i, casn_din1_i, rasn_din0_i, rasn_din1_i, 
-            wen_din0_i, wen_din1_i, odt_din0_i, odt_din1_i, cke_din0_i, 
-            cke_din1_i, dqwl_dqs0_o, dqwl_dqs1_o, dq_dqs0_io, dq_dqs1_io, 
-            dqs0_io, dqs1_io, ck_o, csn_o, addr_o, ba_o, casn_o, 
+            data_mask_dqs0_i, data_mask_dqs1_i, csn_din0_i, csn_din1_i, 
+            addr_din0_i, addr_din1_i, ba_din0_i, ba_din1_i, casn_din0_i, 
+            casn_din1_i, rasn_din0_i, rasn_din1_i, wen_din0_i, wen_din1_i, 
+            odt_din0_i, odt_din1_i, cke_din0_i, cke_din1_i, dqwl_dqs0_o, 
+            dqwl_dqs1_o, dq_dqs0_io, dq_dqs1_io, dqs0_io, dqs1_io, 
+            dm_dqs0_o, dm_dqs1_o, ck_o, csn_o, addr_o, ba_o, casn_o, 
             rasn_o, wen_o, odt_o, cke_o) /* synthesis cpe_box=1 */ ;
     input eclk_i;
     input sync_clk_i;
@@ -183,6 +184,8 @@ module DDR_MEM_1 (eclk_i, sync_clk_i, sync_rst_i, pll_lock_i, sclk_o,
     input [1:0]dqs_outen_n_dqs1_i;
     input [1:0]dqs0_i;
     input [1:0]dqs1_i;
+    input [3:0]data_mask_dqs0_i;
+    input [3:0]data_mask_dqs1_i;
     input [0:0]csn_din0_i;
     input [0:0]csn_din1_i;
     input [13:0]addr_din0_i;
@@ -205,6 +208,8 @@ module DDR_MEM_1 (eclk_i, sync_clk_i, sync_rst_i, pll_lock_i, sclk_o,
     inout [7:0]dq_dqs1_io;
     inout dqs0_io;
     inout dqs1_io;
+    output dm_dqs0_o;
+    output dm_dqs1_o;
     output [0:0]ck_o;
     output [0:0]csn_o;
     output [13:0]addr_o;

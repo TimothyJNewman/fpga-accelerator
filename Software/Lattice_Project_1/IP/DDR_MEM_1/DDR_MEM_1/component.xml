@@ -303,6 +303,32 @@
                 </ipxact:wire>
             </ipxact:port>
             <ipxact:port>
+                <ipxact:name>data_mask_dqs0_i</ipxact:name>
+                <ipxact:displayName>data_mask_dqs0_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>data_mask_dqs1_i</ipxact:name>
+                <ipxact:displayName>data_mask_dqs1_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
                 <ipxact:name>csn_din0_i</ipxact:name>
                 <ipxact:displayName>csn_din0_i</ipxact:displayName>
                 <ipxact:wire>
@@ -541,6 +567,20 @@
                 </ipxact:wire>
             </ipxact:port>
             <ipxact:port>
+                <ipxact:name>dm_dqs0_o</ipxact:name>
+                <ipxact:displayName>dm_dqs0_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>dm_dqs1_o</ipxact:name>
+                <ipxact:displayName>dm_dqs1_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
                 <ipxact:name>ck_o</ipxact:name>
                 <ipxact:displayName>ck_o</ipxact:displayName>
                 <ipxact:wire>
@@ -700,7 +740,7 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2023 10 06 02:05:24</lsccip:createdTimestamp>
+            <lsccip:createdTimestamp>2023 10 08 01:43:46</lsccip:createdTimestamp>
             <lsccip:radiantBuild>&quot;Lattice Radiant Software&quot; (64-bit) 2023.1.1.200.1</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>

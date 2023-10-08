@@ -2,15 +2,15 @@
 relcom:../../../../../../lscc/radiant/2023.1/synpbase/bin/m_gen_lattice -mp 4 -prjfile ../scratchproject.prs -prodtype synplify_pro -encrypt -pro -rundir ../../impl_1 -flow prepass -gcc_prepass -osrd ../synwork/Lattice_Project_1_impl_1_prem.srd -part LIFCL_40 -package CABGA256C -grade -7 -RWCheckOnRam 0 -maxfan 1000 -infer_widefn 1 -pack_rst_largeram 1 -use_rename_in_edif 0 -pipe -infer_seqShift -fixgatedclocks 0 -fixgeneratedclocks 0 -gcc_allow_lat_combloops 0 -gcc_disable_clock_latches 0 -gcc_convert_lats_to_regs 0 -lattice -Write_declared_clocks_only 1 -enable_gcc_in_premap -seqshift_no_replicate 0 -summaryfile ../synlog/report/Lattice_Project_1_impl_1_premap.xml -merge_inferred_clocks 0 -top_level_module main -implementation impl_1 -ovm ../Lattice_Project_1_impl_1.vm -conchk_prepass ../Lattice_Project_1_impl_1_cck.rpt -freq 200.000 -tcl ../Lattice_Project_1_impl_1_cpe.ldc ../synwork/Lattice_Project_1_impl_1_mult.srs -devicelib ../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v -devicelib ../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/pmi_def.v -ologparam Lattice_Project_1_impl_1.plg -osyn ../synwork/Lattice_Project_1_impl_1_prem.srd -prjdir ../ -prjname proj_1 -log ../synlog/Lattice_Project_1_impl_1_premap.srr -sn 2023.03 -jobname "premap"
 rc:1 success:1 runtime:2
 file:../scratchproject.prs|io:o|time:1696554370|size:4439|exec:0|csum:
-file:../synwork/Lattice_Project_1_impl_1_prem.srd|io:o|time:1696554375|size:1393560|exec:0|csum:
+file:../synwork/Lattice_Project_1_impl_1_prem.srd|io:o|time:1696726506|size:1393733|exec:0|csum:
 file:../Lattice_Project_1_impl_1.vm|io:o|time:0|size:-1|exec:0|csum:
-file:../Lattice_Project_1_impl_1_cck.rpt|io:o|time:1696554376|size:9087|exec:0|csum:
-file:../Lattice_Project_1_impl_1_cpe.ldc|io:i|time:1696554370|size:12464|exec:0|csum:BAF856BAACE487F6ADD56C66DB5A9BE3
-file:../synwork/Lattice_Project_1_impl_1_mult.srs|io:i|time:1696554374|size:11174|exec:0|csum:5C246E99EB2B3B0C8D7436C9BC6F88F8
+file:../Lattice_Project_1_impl_1_cck.rpt|io:o|time:1696726507|size:9111|exec:0|csum:
+file:../Lattice_Project_1_impl_1_cpe.ldc|io:i|time:1696726501|size:12866|exec:0|csum:AC1A58FA1C751D25C7D1B2680319A488
+file:../synwork/Lattice_Project_1_impl_1_mult.srs|io:i|time:1696726505|size:11340|exec:0|csum:2525DB2A9A2A3E66F7FDA3120D5A3657
 file:../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/lifcl.v|io:i|time:1686768495|size:1234342|exec:0|csum:C15E719ACBAA5F83EC7C17236C261D98
 file:../../../../../../lscc/radiant/2023.1/synpbase/lib/lucent/pmi_def.v|io:i|time:1685539323|size:39414|exec:0|csum:530CC5906D70AB3C6A4AA0861AC94BDF
-file:Lattice_Project_1_impl_1.plg|io:o|time:1696554374|size:0|exec:0|csum:
-file:../synwork/Lattice_Project_1_impl_1_prem.srd|io:o|time:1696554375|size:1393560|exec:0|csum:
-file:../synlog/Lattice_Project_1_impl_1_premap.srr|io:o|time:1696554376|size:31699|exec:0|csum:
+file:Lattice_Project_1_impl_1.plg|io:o|time:1696726505|size:0|exec:0|csum:
+file:../synwork/Lattice_Project_1_impl_1_prem.srd|io:o|time:1696726506|size:1393733|exec:0|csum:
+file:../synlog/Lattice_Project_1_impl_1_premap.srr|io:o|time:1696726507|size:31657|exec:0|csum:
 file:../../../../../../lscc/radiant/2023.1/synpbase/linux_a_64/m_gen_lattice|io:i|time:1686571583|size:49549248|exec:1|csum:DE65A2AEED17AFDFB462BC2B4ABDAF4A
 file:../../../../../../lscc/radiant/2023.1/synpbase/bin/m_gen_lattice|io:i|time:1685539309|size:347|exec:1|csum:04851DFC0CBB288ED81DA3E420127D0D

@@ -2,6 +2,8 @@ module main (dq_dqs0_io,
 dq_dqs1_io,
 dqs0_io,
 dqs1_io,
+dm_dqs0_o,
+dm_dqs1_o,
 DDR_MEM_1_ck_o,
 DDR_MEM_1_csn_o,
 DDR_MEM_1_addr_o,
@@ -75,11 +77,15 @@ wire [0:0] DDR_MEM_1_cke_din0_i ;
 wire [0:0] DDR_MEM_1_cke_din1_i ; 
 wire [7:0] DDR_MEM_1_dqwl_dqs0_o ; 
 wire [7:0] DDR_MEM_1_dqwl_dqs1_o ; 
+wire [3:0] DDR_MEM_1_data_mask_dqs0_i;
+wire [3:0] DDR_MEM_1_data_mask_dqs1_i;
 
 inout [7:0] dq_dqs0_io ; 
 inout [7:0] dq_dqs1_io ; 
 inout dqs0_io ;
 inout dqs1_io ;
+inout dm_dqs0_o;
+inout dm_dqs1_o;
 output [0:0] DDR_MEM_1_ck_o ;
 output [0:0] DDR_MEM_1_csn_o ; 
 output [13:0] DDR_MEM_1_addr_o ; 
@@ -227,6 +233,8 @@ DDR_MEM_1 DDR_MEM_1_inst (.eclk_i(PLL_1_clkos_o),
 	.dqs_outen_n_dqs1_i(DDR_MEM_1_dqs_outen_n_dqs1_i),
     .dqs0_i(DDR_MEM_1_dqs0_i),
 	.dqs1_i(DDR_MEM_1_dqs1_i),
+	.data_mask_dqs0_i(DDR_MEM_1_data_mask_dqs0_i),
+    .data_mask_dqs1_i(DDR_MEM_1_data_mask_dqs1_i),
     .csn_din0_i(DDR_MEM_1_csn_din0_i),
     .csn_din1_i(DDR_MEM_1_csn_din1_i),
     .addr_din0_i(DDR_MEM_1_addr_din0_i),
@@ -249,6 +257,8 @@ DDR_MEM_1 DDR_MEM_1_inst (.eclk_i(PLL_1_clkos_o),
 	.dq_dqs1_io(dq_dqs1_io),
     .dqs0_io(dqs0_io),
 	.dqs1_io(dqs1_io),
+	.dm_dqs0_o(dm_dqs0_o),
+    .dm_dqs1_o(dm_dqs1_o),
     .ck_o(DDR_MEM_1_ck_o),
     .csn_o(DDR_MEM_1_csn_o),
     .addr_o(DDR_MEM_1_addr_o),

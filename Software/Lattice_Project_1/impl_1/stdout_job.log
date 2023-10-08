@@ -1,35 +1,35 @@
 {
 "Synplify Pro (R) Job Log" : {
-	"Date" : "02:06:18    06-Oct-2023",
+	"Date" : "01:55:09    08-Oct-2023",
 	"Working Directory" : "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1",
 	"CDPL Log file" : "-",
 	"Install" : "/home/timothyjabez/lscc/radiant/2023.1/synpbase"
 },
 "impl_1" :{
-   "Start Time" : "02:06:10",
-   "Runtime" : "08s",
-   "Executable Run Time" : "07s",
+   "Start Time" : "01:55:02",
+   "Runtime" : "07s",
+   "Executable Run Time" : "06s",
    "synthesis" : {
-      "Start Time" : "02:06:10",
-      "Runtime" : "08s",
-      "Executable Run Time" : "07s",
+      "Start Time" : "01:55:02",
+      "Runtime" : "07s",
+      "Executable Run Time" : "06s",
       "compile" : {
-         "Start Time" : "02:06:10",
-         "Runtime" : "06s",
-         "Executable Run Time" : "05s",
+         "Start Time" : "01:55:02",
+         "Runtime" : "05s",
+         "Executable Run Time" : "04s",
          "compile_flow" : {
-            "Start Time" : "02:06:10",
-            "Runtime" : "04s",
-            "Executable Run Time" : "03s",
+            "Start Time" : "01:55:02",
+            "Runtime" : "03s",
+            "Executable Run Time" : "02s",
             "compiler" : {
                "executable" : "bin/c_hdl",
                "Run Directory" : "/home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1",
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "02:06:10",
-               "Run Time" : "04s",
-               "Exe Run Time" : "03s",
+               "Run Start Time" : "01:55:02",
+               "Run Time" : "03s",
+               "Exe Run Time" : "02s",
                "Memory Usage" : "2.892000",
                "CDPL" : "off",
                "Up-to-date (run skipped)" : "no"
@@ -40,7 +40,7 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "02:06:14",
+               "Run Start Time" : "01:55:05",
                "Run Time" : "00s",
                "Exe Run Time" : "00s",
                "Memory Usage" : "2.892000",
@@ -54,7 +54,7 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "02:06:14",
+            "Run Start Time" : "01:55:05",
             "Run Time" : "02s",
             "Exe Run Time" : "02s",
             "Memory Usage" : "2.896000",
@@ -63,7 +63,7 @@
          }
       },
       "map" : {
-         "Start Time" : "02:06:16",
+         "Start Time" : "01:55:07",
          "Runtime" : "02s",
          "Executable Run Time" : "02s",
          "fpga_mapper" : {
@@ -72,7 +72,7 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "02:06:16",
+            "Run Start Time" : "01:55:07",
             "Run Time" : "02s",
             "Exe Run Time" : "02s",
             "Memory Usage" : "2.896000",

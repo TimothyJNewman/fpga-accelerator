@@ -47,6 +47,10 @@ ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[6]}] originating 
 
 ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {dq_dqs1_io[7]}] originating in instance DDR_MEM_1_inst was kept as is.
 
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports dm_dqs0_o] originating in instance DDR_MEM_1_inst was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports dm_dqs1_o] originating in instance DDR_MEM_1_inst was kept as is.
+
 ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {cke_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_cke_o[0]}] and kept.
 
 ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {csn_o[0]}] originating in instance DDR_MEM_1_inst was updated to ldc_set_port -iobuf {IO_TYPE=SSTL15_II} [get_ports {DDR_MEM_1_csn_o[0]}] and kept.

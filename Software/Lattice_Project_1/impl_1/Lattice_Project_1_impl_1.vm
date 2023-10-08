@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "U-2023.03LR-1"
 // Program "Synplify Pro", Mapper "map202303lat, Build 070R"
-// Fri Oct  6 02:06:17 2023
+// Sun Oct  8 01:55:08 2023
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -81,8 +81,8 @@ wire [8:0] dcnt_o_w;
 wire GND ;
 wire lock_w ;
 wire VCC ;
-//@47:4198
-// @47:1621
+//@47:4206
+// @47:1629
   DDRDLL u0_DDRDLL (
 	.CODE(code_w[8:0]),
 	.FREEZE(GND),
@@ -95,14 +95,14 @@ wire VCC ;
 defparam u0_DDRDLL.GSR = "ENABLED";
 defparam u0_DDRDLL.ENA_ROUNDOFF = "ENABLED";
 defparam u0_DDRDLL.FORCE_MAX_DELAY = "CODE_OR_LOCK_FROM_DLL_LOOP";
-// @47:1604
+// @47:1612
   ECLKSYNC u0_ECLKSYNC (
 	.ECLKIN(PLL_1_clkos_o),
 	.ECLKOUT(eclkout_w),
 	.STOP(GND)
 );
 defparam u0_ECLKSYNC.STOP_EN = "ENABLE";
-// @47:1598
+// @47:1606
   ECLKDIV u0_ECLKDIV (
 	.DIVOUT(sclk_o),
 	.DIVRST(GND),
@@ -124,6 +124,7 @@ endmodule /* DDR_MEM_1_ipgen_common_logic_2s_2 */
 module DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 (
   code_w,
   dq_dqs1_io,
+  dm_dqs1_o_c,
   sclk_o,
   eclkout_w,
   dqs1_io
@@ -131,9 +132,11 @@ module DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 (
 ;
 input [8:0] code_w ;
 inout [7:0] dq_dqs1_io /* synthesis syn_tristate = 1 */ ;
+output dm_dqs1_o_c ;
 input sclk_o ;
 input eclkout_w ;
 inout dqs1_io /* synthesis syn_tristate = 1 */ ;
+wire dm_dqs1_o_c ;
 wire sclk_o ;
 wire eclkout_w ;
 wire dqs1_io ;
@@ -157,71 +160,71 @@ wire rd_cout_o ;
 wire sr90_out_w ;
 wire wr_cout_o ;
 wire wrvl_cout_o ;
-// @47:1892
+// @47:1900
   BB \DQS_BLOCK.u_DQS_BB  (
 	.B(dqs1_io),
 	.I(dqs_o_w),
 	.T(dqs_outen_n_w),
 	.O(dqs_bb_out_w)
 );
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[6].u_DQ_BB  (
 	.B(dq_dqs1_io[6]),
 	.I(dout_w[6]),
 	.T(dqts_w),
 	.O(bb_o_di[6])
 );
-// @47:2014
-  BB \DQ_BLOCK[4].u_DQ_BB  (
-	.B(dq_dqs1_io[4]),
-	.I(dout_w[4]),
-	.T(dqts_w),
-	.O(bb_o_di[4])
-);
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[2].u_DQ_BB  (
 	.B(dq_dqs1_io[2]),
 	.I(dout_w[2]),
 	.T(dqts_w),
 	.O(bb_o_di[2])
 );
-// @47:2014
-  BB \DQ_BLOCK[0].u_DQ_BB  (
-	.B(dq_dqs1_io[0]),
-	.I(dout_w[0]),
-	.T(dqts_w),
-	.O(bb_o_di[0])
-);
-// @47:2014
-  BB \DQ_BLOCK[1].u_DQ_BB  (
-	.B(dq_dqs1_io[1]),
-	.I(dout_w[1]),
-	.T(dqts_w),
-	.O(bb_o_di[1])
-);
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[3].u_DQ_BB  (
 	.B(dq_dqs1_io[3]),
 	.I(dout_w[3]),
 	.T(dqts_w),
 	.O(bb_o_di[3])
 );
-// @47:2014
+// @47:2022
+  BB \DQ_BLOCK[4].u_DQ_BB  (
+	.B(dq_dqs1_io[4]),
+	.I(dout_w[4]),
+	.T(dqts_w),
+	.O(bb_o_di[4])
+);
+// @47:2022
+  BB \DQ_BLOCK[1].u_DQ_BB  (
+	.B(dq_dqs1_io[1]),
+	.I(dout_w[1]),
+	.T(dqts_w),
+	.O(bb_o_di[1])
+);
+// @47:2022
+  BB \DQ_BLOCK[0].u_DQ_BB  (
+	.B(dq_dqs1_io[0]),
+	.I(dout_w[0]),
+	.T(dqts_w),
+	.O(bb_o_di[0])
+);
+// @47:2022
   BB \DQ_BLOCK[5].u_DQ_BB  (
 	.B(dq_dqs1_io[5]),
 	.I(dout_w[5]),
 	.T(dqts_w),
 	.O(bb_o_di[5])
 );
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[7].u_DQ_BB  (
 	.B(dq_dqs1_io[7]),
 	.I(dout_w[7]),
 	.T(dqts_w),
 	.O(bb_o_di[7])
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ  (
+// @47:2116
+  ODDRX2DQ \DM_BLOCK.DM_X2.u_DM_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
 	.D2(GND),
@@ -230,21 +233,9 @@ wire wrvl_cout_o ;
 	.ECLK(eclkout_w),
 	.SCLK(sclk_o),
 	.RST(GND),
-	.Q(dout_w[1])
+	.Q(dm_dqs1_o_c)
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ  (
-	.D0(GND),
-	.D1(GND),
-	.D2(GND),
-	.D3(GND),
-	.DQSW270(sw270_out_w),
-	.ECLK(eclkout_w),
-	.SCLK(sclk_o),
-	.RST(GND),
-	.Q(dout_w[5])
-);
-// @47:2044
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -256,8 +247,8 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[2])
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ  (
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
 	.D2(GND),
@@ -266,9 +257,9 @@ wire wrvl_cout_o ;
 	.ECLK(eclkout_w),
 	.SCLK(sclk_o),
 	.RST(GND),
-	.Q(dout_w[4])
+	.Q(dout_w[5])
 );
-// @47:2044
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -280,8 +271,8 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[7])
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ  (
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
 	.D2(GND),
@@ -290,9 +281,9 @@ wire wrvl_cout_o ;
 	.ECLK(eclkout_w),
 	.SCLK(sclk_o),
 	.RST(GND),
-	.Q(dout_w[0])
+	.Q(dout_w[4])
 );
-// @47:2044
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -304,7 +295,31 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[3])
 );
-// @47:2044
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ  (
+	.D0(GND),
+	.D1(GND),
+	.D2(GND),
+	.D3(GND),
+	.DQSW270(sw270_out_w),
+	.ECLK(eclkout_w),
+	.SCLK(sclk_o),
+	.RST(GND),
+	.Q(dout_w[1])
+);
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ  (
+	.D0(GND),
+	.D1(GND),
+	.D2(GND),
+	.D3(GND),
+	.DQSW270(sw270_out_w),
+	.ECLK(eclkout_w),
+	.SCLK(sclk_o),
+	.RST(GND),
+	.Q(dout_w[0])
+);
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -316,7 +331,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[6])
 );
-// @47:1965
+// @47:1973
   TSHX2DQS \TS_BLOCK.TS_X2.u_TSHX2DQS  (
 	.T0(GND),
 	.T1(GND),
@@ -326,7 +341,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dqs_outen_n_w)
 );
-// @47:1952
+// @47:1960
   TSHX2DQ \TS_BLOCK.TS_X2.u_TSHX2DQ  (
 	.T0(GND),
 	.T1(GND),
@@ -336,7 +351,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dqts_w)
 );
-// @47:1903
+// @47:1911
   ODDRX2DQS \DQS_BLOCK.DQS_X2.u_ODDRX2DQS  (
 	.D0(GND),
 	.D1(GND),
@@ -348,7 +363,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dqs_o_w)
 );
-// @47:1853
+// @47:1861
   DQSBUF u0_DQSBUF (
 	.BTDETECT(burst_detect_o),
 	.BURSTDETECT(burst_detect_sclk_o),
@@ -416,6 +431,7 @@ endmodule /* DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 */
 module DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0 (
   code_w,
   dq_dqs0_io,
+  dm_dqs0_o_c,
   sclk_o,
   eclkout_w,
   dqs0_io
@@ -423,9 +439,11 @@ module DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0 (
 ;
 input [8:0] code_w ;
 inout [7:0] dq_dqs0_io /* synthesis syn_tristate = 1 */ ;
+output dm_dqs0_o_c ;
 input sclk_o ;
 input eclkout_w ;
 inout dqs0_io /* synthesis syn_tristate = 1 */ ;
+wire dm_dqs0_o_c ;
 wire sclk_o ;
 wire eclkout_w ;
 wire dqs0_io ;
@@ -449,71 +467,71 @@ wire rd_cout_o ;
 wire sr90_out_w ;
 wire wr_cout_o ;
 wire wrvl_cout_o ;
-// @47:1892
+// @47:1900
   BB \DQS_BLOCK.u_DQS_BB  (
 	.B(dqs0_io),
 	.I(dqs_o_w),
 	.T(dqs_outen_n_w),
 	.O(dqs_bb_out_w)
 );
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[6].u_DQ_BB  (
 	.B(dq_dqs0_io[6]),
 	.I(dout_w[6]),
 	.T(dqts_w),
 	.O(bb_o_di[6])
 );
-// @47:2014
-  BB \DQ_BLOCK[4].u_DQ_BB  (
-	.B(dq_dqs0_io[4]),
-	.I(dout_w[4]),
-	.T(dqts_w),
-	.O(bb_o_di[4])
-);
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[2].u_DQ_BB  (
 	.B(dq_dqs0_io[2]),
 	.I(dout_w[2]),
 	.T(dqts_w),
 	.O(bb_o_di[2])
 );
-// @47:2014
-  BB \DQ_BLOCK[0].u_DQ_BB  (
-	.B(dq_dqs0_io[0]),
-	.I(dout_w[0]),
-	.T(dqts_w),
-	.O(bb_o_di[0])
-);
-// @47:2014
-  BB \DQ_BLOCK[1].u_DQ_BB  (
-	.B(dq_dqs0_io[1]),
-	.I(dout_w[1]),
-	.T(dqts_w),
-	.O(bb_o_di[1])
-);
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[3].u_DQ_BB  (
 	.B(dq_dqs0_io[3]),
 	.I(dout_w[3]),
 	.T(dqts_w),
 	.O(bb_o_di[3])
 );
-// @47:2014
+// @47:2022
+  BB \DQ_BLOCK[4].u_DQ_BB  (
+	.B(dq_dqs0_io[4]),
+	.I(dout_w[4]),
+	.T(dqts_w),
+	.O(bb_o_di[4])
+);
+// @47:2022
+  BB \DQ_BLOCK[1].u_DQ_BB  (
+	.B(dq_dqs0_io[1]),
+	.I(dout_w[1]),
+	.T(dqts_w),
+	.O(bb_o_di[1])
+);
+// @47:2022
+  BB \DQ_BLOCK[0].u_DQ_BB  (
+	.B(dq_dqs0_io[0]),
+	.I(dout_w[0]),
+	.T(dqts_w),
+	.O(bb_o_di[0])
+);
+// @47:2022
   BB \DQ_BLOCK[5].u_DQ_BB  (
 	.B(dq_dqs0_io[5]),
 	.I(dout_w[5]),
 	.T(dqts_w),
 	.O(bb_o_di[5])
 );
-// @47:2014
+// @47:2022
   BB \DQ_BLOCK[7].u_DQ_BB  (
 	.B(dq_dqs0_io[7]),
 	.I(dout_w[7]),
 	.T(dqts_w),
 	.O(bb_o_di[7])
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ  (
+// @47:2116
+  ODDRX2DQ \DM_BLOCK.DM_X2.u_DM_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
 	.D2(GND),
@@ -522,21 +540,9 @@ wire wrvl_cout_o ;
 	.ECLK(eclkout_w),
 	.SCLK(sclk_o),
 	.RST(GND),
-	.Q(dout_w[1])
+	.Q(dm_dqs0_o_c)
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ  (
-	.D0(GND),
-	.D1(GND),
-	.D2(GND),
-	.D3(GND),
-	.DQSW270(sw270_out_w),
-	.ECLK(eclkout_w),
-	.SCLK(sclk_o),
-	.RST(GND),
-	.Q(dout_w[5])
-);
-// @47:2044
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[2].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -548,8 +554,8 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[2])
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ  (
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[5].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
 	.D2(GND),
@@ -558,9 +564,9 @@ wire wrvl_cout_o ;
 	.ECLK(eclkout_w),
 	.SCLK(sclk_o),
 	.RST(GND),
-	.Q(dout_w[4])
+	.Q(dout_w[5])
 );
-// @47:2044
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[7].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -572,8 +578,8 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[7])
 );
-// @47:2044
-  ODDRX2DQ \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ  (
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[4].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
 	.D2(GND),
@@ -582,9 +588,9 @@ wire wrvl_cout_o ;
 	.ECLK(eclkout_w),
 	.SCLK(sclk_o),
 	.RST(GND),
-	.Q(dout_w[0])
+	.Q(dout_w[4])
 );
-// @47:2044
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[3].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -596,7 +602,31 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[3])
 );
-// @47:2044
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[1].DQ_X2.u_DQ_ODDRX2DQ  (
+	.D0(GND),
+	.D1(GND),
+	.D2(GND),
+	.D3(GND),
+	.DQSW270(sw270_out_w),
+	.ECLK(eclkout_w),
+	.SCLK(sclk_o),
+	.RST(GND),
+	.Q(dout_w[1])
+);
+// @47:2052
+  ODDRX2DQ \DQ_BLOCK[0].DQ_X2.u_DQ_ODDRX2DQ  (
+	.D0(GND),
+	.D1(GND),
+	.D2(GND),
+	.D3(GND),
+	.DQSW270(sw270_out_w),
+	.ECLK(eclkout_w),
+	.SCLK(sclk_o),
+	.RST(GND),
+	.Q(dout_w[0])
+);
+// @47:2052
   ODDRX2DQ \DQ_BLOCK[6].DQ_X2.u_DQ_ODDRX2DQ  (
 	.D0(GND),
 	.D1(GND),
@@ -608,7 +638,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dout_w[6])
 );
-// @47:1965
+// @47:1973
   TSHX2DQS \TS_BLOCK.TS_X2.u_TSHX2DQS  (
 	.T0(GND),
 	.T1(GND),
@@ -618,7 +648,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dqs_outen_n_w)
 );
-// @47:1952
+// @47:1960
   TSHX2DQ \TS_BLOCK.TS_X2.u_TSHX2DQ  (
 	.T0(GND),
 	.T1(GND),
@@ -628,7 +658,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dqts_w)
 );
-// @47:1903
+// @47:1911
   ODDRX2DQS \DQS_BLOCK.DQS_X2.u_ODDRX2DQS  (
 	.D0(GND),
 	.D1(GND),
@@ -640,7 +670,7 @@ wire wrvl_cout_o ;
 	.RST(GND),
 	.Q(dqs_o_w)
 );
-// @47:1853
+// @47:1861
   DQSBUF u0_DQSBUF (
 	.BTDETECT(burst_detect_o),
 	.BURSTDETECT(burst_detect_sclk_o),
@@ -720,7 +750,7 @@ wire eclkout_w ;
 wire [0:0] q_out_csn_w;
 wire GND ;
 wire VCC ;
-// @47:2850
+// @47:2858
   OSHX2 \DDR_CSN[0].DDR_CSN_X2.u_CSN_OSHX2  (
 	.D0(GND),
 	.D1(GND),
@@ -729,7 +759,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(q_out_csn_w[0])
 );
-// @47:2844
+// @47:2852
   DELAYB \DDR_CSN[0].u_DELAYB  (
 	.A(q_out_csn_w[0]),
 	.Z(DDR_MEM_1_csn_o_c_0)
@@ -774,7 +804,7 @@ wire DDR_MEM_1_wen_o_c ;
 wire sclk_o ;
 wire GND ;
 wire VCC ;
-// @47:1041
+// @47:1049
   ODDRX1 \DDR_CKE[0].DDR_CKE_X2.u_CKE_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -782,7 +812,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_cke_o_c_0)
 );
-// @47:1004
+// @47:1012
   ODDRX1 \DDR_ODT[0].DDR_ODT_X2.u_ODT_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -790,7 +820,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_odt_o_c_0)
 );
-// @47:967
+// @47:975
   ODDRX1 \DDR_WEN.DDR_WEN_X2.u_WEN_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -798,7 +828,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_wen_o_c)
 );
-// @47:931
+// @47:939
   ODDRX1 \DDR_RASN.DDR_RASN_X2.u_RASN_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -806,7 +836,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_rasn_o_c)
 );
-// @47:895
+// @47:903
   ODDRX1 \DDR_CASN.DDR_CASN_X2.u_CASN_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -814,7 +844,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_casn_o_c)
 );
-// @47:859
+// @47:867
   ODDRX1 \DDR_BA[1].DDR_BA_X2.u_BA_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -822,7 +852,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_ba_o_c[1])
 );
-// @47:859
+// @47:867
   ODDRX1 \DDR_BA[2].DDR_BA_X2.u_BA_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -830,7 +860,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_ba_o_c[2])
 );
-// @47:859
+// @47:867
   ODDRX1 \DDR_BA[0].DDR_BA_X2.u_BA_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -838,7 +868,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_ba_o_c[0])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[12].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -846,7 +876,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[12])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[4].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -854,7 +884,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[4])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[10].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -862,7 +892,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[10])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[3].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -870,7 +900,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[3])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[0].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -878,7 +908,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[0])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[6].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -886,7 +916,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[6])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[1].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -894,7 +924,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[1])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[5].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -902,7 +932,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[5])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[11].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -910,7 +940,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[11])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[8].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -918,7 +948,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[8])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[2].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -926,7 +956,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[2])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[9].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -934,7 +964,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[9])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[7].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -942,7 +972,7 @@ wire VCC ;
 	.RST(GND),
 	.Q(DDR_MEM_1_addr_o_c[7])
 );
-// @47:822
+// @47:830
   ODDRX1 \DDR_ADDR[13].DDR_ADDR_X2.u_ADDR_ODDRX1  (
 	.D0(GND),
 	.D1(GND),
@@ -975,7 +1005,7 @@ wire sclk_o ;
 wire [0:0] q_out_clk_w;
 wire GND ;
 wire VCC ;
-// @47:672
+// @47:680
   ODDRX2 \DDR_CLK[0].DDR_CLK_X2.u_ck_ODDRX2  (
 	.D0(GND),
 	.D1(VCC),
@@ -986,7 +1016,7 @@ wire VCC ;
 	.ECLK(eclkout_w),
 	.Q(q_out_clk_w[0])
 );
-// @47:666
+// @47:674
   DELAYB \DDR_CLK[0].u_DELAYB  (
 	.A(q_out_clk_w[0]),
 	.Z(DDR_MEM_1_ck_o_c_0)
@@ -1017,7 +1047,9 @@ module DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0 (
   DDR_MEM_1_rasn_o_c,
   DDR_MEM_1_casn_o_c,
   dqs0_io,
+  dm_dqs0_o_c,
   dqs1_io,
+  dm_dqs1_o_c,
   PLL_1_clkos_o
 )
 ;
@@ -1033,7 +1065,9 @@ output DDR_MEM_1_wen_o_c ;
 output DDR_MEM_1_rasn_o_c ;
 output DDR_MEM_1_casn_o_c ;
 inout dqs0_io /* synthesis syn_tristate = 1 */ ;
+output dm_dqs0_o_c ;
 inout dqs1_io /* synthesis syn_tristate = 1 */ ;
+output dm_dqs1_o_c ;
 input PLL_1_clkos_o ;
 wire DDR_MEM_1_ck_o_c_0 ;
 wire DDR_MEM_1_cke_o_c_0 ;
@@ -1043,7 +1077,9 @@ wire DDR_MEM_1_wen_o_c ;
 wire DDR_MEM_1_rasn_o_c ;
 wire DDR_MEM_1_casn_o_c ;
 wire dqs0_io ;
+wire dm_dqs0_o_c ;
 wire dqs1_io ;
+wire dm_dqs1_o_c ;
 wire PLL_1_clkos_o ;
 wire [8:0] code_w;
 wire N_34 ;
@@ -1053,43 +1089,45 @@ wire N_31 ;
 wire N_30 ;
 wire N_29 ;
 wire N_28 ;
-wire N_13 ;
-wire N_12 ;
-wire N_11 ;
+wire N_3 ;
+wire N_2 ;
+wire N_1 ;
 wire eclkout_w ;
 wire sclk_o ;
 wire GND ;
 wire VCC ;
-// @47:4198
+// @47:4206
   DDR_MEM_1_ipgen_common_logic_2s_2 u1_common_logic (
 	.code_w(code_w[8:0]),
 	.PLL_1_clkos_o(PLL_1_clkos_o),
 	.eclkout_w(eclkout_w),
 	.sclk_o(sclk_o)
 );
-// @47:4565
+// @47:4573
   DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0 \DW_16.u1_dq_dqs_dm_unit  (
 	.code_w(code_w[8:0]),
 	.dq_dqs1_io(dq_dqs1_io[7:0]),
+	.dm_dqs1_o_c(dm_dqs1_o_c),
 	.sclk_o(sclk_o),
 	.eclkout_w(eclkout_w),
 	.dqs1_io(dqs1_io)
 );
-// @47:4614
+// @47:4622
   DDR_MEM_1_ipgen_dq_dqs_dm_unit_Z2_layer0_0 \DW_8.u1_dq_dqs_dm_unit  (
 	.code_w(code_w[8:0]),
 	.dq_dqs0_io(dq_dqs0_io[7:0]),
+	.dm_dqs0_o_c(dm_dqs0_o_c),
 	.sclk_o(sclk_o),
 	.eclkout_w(eclkout_w),
 	.dqs0_io(dqs0_io)
 );
-// @47:4657
+// @47:4665
   DDR_MEM_1_ipgen_moshx2_4_csn_SSTL15_II_SSTL15D_II_2s_1s_DQS_CMD_CLK \DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_moshx2_4_csn  (
 	.DDR_MEM_1_csn_o_c_0(DDR_MEM_1_csn_o_c_0),
 	.sclk_o(sclk_o),
 	.eclkout_w(eclkout_w)
 );
-// @47:4668
+// @47:4676
   DDR_MEM_1_ipgen_oddrx2_4_addr_cmd_cke_odt_SSTL15_II_14s_2s_2s_3s_1s_1s_ODDRX1_SCLK_3_layer0 \DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_addr_cmd_cke_odt  (
 	.DDR_MEM_1_addr_o_c(DDR_MEM_1_addr_o_c[13:0]),
 	.DDR_MEM_1_ba_o_c(DDR_MEM_1_ba_o_c[2:0]),
@@ -1100,7 +1138,7 @@ wire VCC ;
 	.DDR_MEM_1_wen_o_c(DDR_MEM_1_wen_o_c),
 	.sclk_o(sclk_o)
 );
-// @47:4687
+// @47:4695
   DDR_MEM_1_ipgen_oddrx2_4_ck_SSTL15_II_1s_2s_DQS_CMD_CLK \DDR3_DDR3L_CLK_ADDR_CMD_ENABLE.u1_oddrx2_4_ck  (
 	.DDR_MEM_1_ck_o_c_0(DDR_MEM_1_ck_o_c_0),
 	.eclkout_w(eclkout_w),
@@ -1126,7 +1164,9 @@ module DDR_MEM_1 (
   DDR_MEM_1_cke_o_c_0,
   DDR_MEM_1_ck_o_c_0,
   PLL_1_clkos_o,
+  dm_dqs1_o_c,
   dqs1_io,
+  dm_dqs0_o_c,
   dqs0_io,
   DDR_MEM_1_casn_o_c,
   DDR_MEM_1_rasn_o_c,
@@ -1142,7 +1182,9 @@ output DDR_MEM_1_odt_o_c_0 ;
 output DDR_MEM_1_cke_o_c_0 ;
 output DDR_MEM_1_ck_o_c_0 ;
 input PLL_1_clkos_o ;
+output dm_dqs1_o_c ;
 inout dqs1_io /* synthesis syn_tristate = 1 */ ;
+output dm_dqs0_o_c ;
 inout dqs0_io /* synthesis syn_tristate = 1 */ ;
 output DDR_MEM_1_casn_o_c ;
 output DDR_MEM_1_rasn_o_c ;
@@ -1152,14 +1194,16 @@ wire DDR_MEM_1_odt_o_c_0 ;
 wire DDR_MEM_1_cke_o_c_0 ;
 wire DDR_MEM_1_ck_o_c_0 ;
 wire PLL_1_clkos_o ;
+wire dm_dqs1_o_c ;
 wire dqs1_io ;
+wire dm_dqs0_o_c ;
 wire dqs0_io ;
 wire DDR_MEM_1_casn_o_c ;
 wire DDR_MEM_1_rasn_o_c ;
 wire DDR_MEM_1_wen_o_c ;
 wire GND ;
 wire VCC ;
-// @47:243
+// @47:251
   DDR_MEM_1_ipgen_lscc_ddr_mem_Z1_layer0 lscc_ddr_mem_inst (
 	.DDR_MEM_1_ck_o_c_0(DDR_MEM_1_ck_o_c_0),
 	.DDR_MEM_1_cke_o_c_0(DDR_MEM_1_cke_o_c_0),
@@ -1173,7 +1217,9 @@ wire VCC ;
 	.DDR_MEM_1_rasn_o_c(DDR_MEM_1_rasn_o_c),
 	.DDR_MEM_1_casn_o_c(DDR_MEM_1_casn_o_c),
 	.dqs0_io(dqs0_io),
+	.dm_dqs0_o_c(dm_dqs0_o_c),
 	.dqs1_io(dqs1_io),
+	.dm_dqs1_o_c(dm_dqs1_o_c),
 	.PLL_1_clkos_o(PLL_1_clkos_o)
 );
 // @51:3291
@@ -2400,83 +2446,83 @@ LfH3WE/uSyyZf6XayG2deXo9Vt4UTJZ5YP9EP7gO6fpQQk2ouVCYbXX06MmF2R8a
 `pragma protect data_method="aes256-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=3680)
 `pragma protect data_block
-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
+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
 `pragma protect end_protected
 module I2C_DPHY_1 (
   I2C_DPHY_1_sda_io,
@@ -2638,83 +2684,83 @@ xX31OG9ZeGadb7EASnGyEDsU3DBDulLLNzsiulFcW8GtcQPepghPjkJpfY53LSf3
 `pragma protect data_method="aes256-cbc"
 `pragma protect encoding=(enctype="base64", line_length=64, bytes=3680)
 `pragma protect data_block
-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
+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
 `pragma protect end_protected
 module I2C_DPHY_2 (
   I2C_DPHY_2_sda_io,
@@ -3002,6 +3048,8 @@ module main (
   dq_dqs1_io,
   dqs0_io,
   dqs1_io,
+  dm_dqs0_o,
+  dm_dqs1_o,
   DDR_MEM_1_ck_o,
   DDR_MEM_1_csn_o,
   DDR_MEM_1_addr_o,
@@ -3030,6 +3078,8 @@ inout [7:0] dq_dqs0_io /* synthesis syn_tristate = 1 */ ;
 inout [7:0] dq_dqs1_io /* synthesis syn_tristate = 1 */ ;
 inout dqs0_io /* synthesis syn_tristate = 1 */ ;
 inout dqs1_io /* synthesis syn_tristate = 1 */ ;
+output dm_dqs0_o ;
+output dm_dqs1_o ;
 output [0:0] DDR_MEM_1_ck_o ;
 output [0:0] DDR_MEM_1_csn_o ;
 output [13:0] DDR_MEM_1_addr_o ;
@@ -3054,6 +3104,8 @@ inout I2C_DPHY_2_sda_io /* synthesis syn_tristate = 1 */ ;
 input PLL_1_clki_i ;
 wire dqs0_io ;
 wire dqs1_io ;
+wire dm_dqs0_o ;
+wire dm_dqs1_o ;
 wire DDR_MEM_1_casn_o ;
 wire DDR_MEM_1_rasn_o ;
 wire DDR_MEM_1_wen_o ;
@@ -3076,6 +3128,8 @@ wire PLL_1_clkos_o ;
 wire PLL_1_clkop_o ;
 wire VCC ;
 wire GND ;
+wire dm_dqs0_o_c ;
+wire dm_dqs1_o_c ;
 wire DDR_MEM_1_casn_o_c ;
 wire DDR_MEM_1_rasn_o_c ;
 wire DDR_MEM_1_wen_o_c ;
@@ -3094,127 +3148,137 @@ wire NC0 ;
 	.CLK(NC0)
 );
 defparam GSR_INST.SYNCMODE="ASYNC";
-// @49:91
+// @49:97
   OB \DDR_MEM_1_cke_o_pad[0]  (
 	.I(DDR_MEM_1_cke_o_c[0]),
 	.O(DDR_MEM_1_cke_o[0])
 );
-// @49:90
+// @49:96
   OB \DDR_MEM_1_odt_o_pad[0]  (
 	.I(DDR_MEM_1_odt_o_c[0]),
 	.O(DDR_MEM_1_odt_o[0])
 );
-// @49:89
+// @49:95
   OB DDR_MEM_1_wen_o_pad (
 	.I(DDR_MEM_1_wen_o_c),
 	.O(DDR_MEM_1_wen_o)
 );
-// @49:88
+// @49:94
   OB DDR_MEM_1_rasn_o_pad (
 	.I(DDR_MEM_1_rasn_o_c),
 	.O(DDR_MEM_1_rasn_o)
 );
-// @49:87
+// @49:93
   OB DDR_MEM_1_casn_o_pad (
 	.I(DDR_MEM_1_casn_o_c),
 	.O(DDR_MEM_1_casn_o)
 );
-// @49:86
+// @49:92
   OB \DDR_MEM_1_ba_o_pad[2]  (
 	.I(DDR_MEM_1_ba_o_c[2]),
 	.O(DDR_MEM_1_ba_o[2])
 );
-// @49:86
+// @49:92
   OB \DDR_MEM_1_ba_o_pad[1]  (
 	.I(DDR_MEM_1_ba_o_c[1]),
 	.O(DDR_MEM_1_ba_o[1])
 );
-// @49:86
+// @49:92
   OB \DDR_MEM_1_ba_o_pad[0]  (
 	.I(DDR_MEM_1_ba_o_c[0]),
 	.O(DDR_MEM_1_ba_o[0])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[13]  (
 	.I(DDR_MEM_1_addr_o_c[13]),
 	.O(DDR_MEM_1_addr_o[13])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[12]  (
 	.I(DDR_MEM_1_addr_o_c[12]),
 	.O(DDR_MEM_1_addr_o[12])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[11]  (
 	.I(DDR_MEM_1_addr_o_c[11]),
 	.O(DDR_MEM_1_addr_o[11])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[10]  (
 	.I(DDR_MEM_1_addr_o_c[10]),
 	.O(DDR_MEM_1_addr_o[10])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[9]  (
 	.I(DDR_MEM_1_addr_o_c[9]),
 	.O(DDR_MEM_1_addr_o[9])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[8]  (
 	.I(DDR_MEM_1_addr_o_c[8]),
 	.O(DDR_MEM_1_addr_o[8])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[7]  (
 	.I(DDR_MEM_1_addr_o_c[7]),
 	.O(DDR_MEM_1_addr_o[7])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[6]  (
 	.I(DDR_MEM_1_addr_o_c[6]),
 	.O(DDR_MEM_1_addr_o[6])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[5]  (
 	.I(DDR_MEM_1_addr_o_c[5]),
 	.O(DDR_MEM_1_addr_o[5])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[4]  (
 	.I(DDR_MEM_1_addr_o_c[4]),
 	.O(DDR_MEM_1_addr_o[4])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[3]  (
 	.I(DDR_MEM_1_addr_o_c[3]),
 	.O(DDR_MEM_1_addr_o[3])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[2]  (
 	.I(DDR_MEM_1_addr_o_c[2]),
 	.O(DDR_MEM_1_addr_o[2])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[1]  (
 	.I(DDR_MEM_1_addr_o_c[1]),
 	.O(DDR_MEM_1_addr_o[1])
 );
-// @49:85
+// @49:91
   OB \DDR_MEM_1_addr_o_pad[0]  (
 	.I(DDR_MEM_1_addr_o_c[0]),
 	.O(DDR_MEM_1_addr_o[0])
 );
-// @49:84
+// @49:90
   OB \DDR_MEM_1_csn_o_pad[0]  (
 	.I(DDR_MEM_1_csn_o_c[0]),
 	.O(DDR_MEM_1_csn_o[0])
 );
-// @49:83
+// @49:89
   OB \DDR_MEM_1_ck_o_pad[0]  (
 	.I(DDR_MEM_1_ck_o_c[0]),
 	.O(DDR_MEM_1_ck_o[0])
 );
-// @49:201
+// @49:88
+  OB dm_dqs1_o_pad (
+	.I(dm_dqs1_o_c),
+	.O(dm_dqs1_o)
+);
+// @49:87
+  OB dm_dqs0_o_pad (
+	.I(dm_dqs0_o_c),
+	.O(dm_dqs0_o)
+);
+// @49:207
   DDR_MEM_1 DDR_MEM_1_inst (
 	.dq_dqs1_io(dq_dqs1_io[7:0]),
 	.dq_dqs0_io(dq_dqs0_io[7:0]),
@@ -3225,13 +3289,15 @@ defparam GSR_INST.SYNCMODE="ASYNC";
 	.DDR_MEM_1_cke_o_c_0(DDR_MEM_1_cke_o_c[0]),
 	.DDR_MEM_1_ck_o_c_0(DDR_MEM_1_ck_o_c[0]),
 	.PLL_1_clkos_o(PLL_1_clkos_o),
+	.dm_dqs1_o_c(dm_dqs1_o_c),
 	.dqs1_io(dqs1_io),
+	.dm_dqs0_o_c(dm_dqs0_o_c),
 	.dqs0_io(dqs0_io),
 	.DDR_MEM_1_casn_o_c(DDR_MEM_1_casn_o_c),
 	.DDR_MEM_1_rasn_o_c(DDR_MEM_1_rasn_o_c),
 	.DDR_MEM_1_wen_o_c(DDR_MEM_1_wen_o_c)
 );
-// @49:262
+// @49:272
   MIPI_DPHY_1 MIPI_DPHY_1_inst (
 	.MIPI_DPHY_1_data_p_io(MIPI_DPHY_1_data_p_io[3:0]),
 	.MIPI_DPHY_1_data_n_io(MIPI_DPHY_1_data_n_io[3:0]),
@@ -3239,7 +3305,7 @@ defparam GSR_INST.SYNCMODE="ASYNC";
 	.MIPI_DPHY_1_clk_n_io(MIPI_DPHY_1_clk_n_io),
 	.PLL_1_clkop_o(PLL_1_clkop_o)
 );
-// @49:284
+// @49:294
   MIPI_DPHY_2 MIPI_DPHY_2_inst (
 	.MIPI_DPHY_2_data_p_io(MIPI_DPHY_2_data_p_io[3:0]),
 	.MIPI_DPHY_2_data_n_io(MIPI_DPHY_2_data_n_io[3:0]),
@@ -3247,19 +3313,19 @@ defparam GSR_INST.SYNCMODE="ASYNC";
 	.MIPI_DPHY_2_clk_n_io(MIPI_DPHY_2_clk_n_io),
 	.PLL_1_clkop_o(PLL_1_clkop_o)
 );
-// @49:316
+// @49:326
   I2C_DPHY_1 I2C_DPHY_1_inst (
 	.I2C_DPHY_1_sda_io(I2C_DPHY_1_sda_io),
 	.I2C_DPHY_1_scl_io(I2C_DPHY_1_scl_io),
 	.PLL_1_clkop_o(PLL_1_clkop_o)
 );
-// @49:329
+// @49:339
   I2C_DPHY_2 I2C_DPHY_2_inst (
 	.I2C_DPHY_2_sda_io(I2C_DPHY_2_sda_io),
 	.I2C_DPHY_2_scl_io(I2C_DPHY_2_scl_io),
 	.PLL_1_clkop_o(PLL_1_clkop_o)
 );
-// @49:342
+// @49:352
   PLL_1 PLL_1_inst (
 	.PLL_1_clkop_o(PLL_1_clkop_o),
 	.PLL_1_clki_i(PLL_1_clki_i),

@@ -19,14 +19,13 @@ Implementation : impl_1
 Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May 29 2023 10:12:46, @4755044
 
 @N|Running in 64-bit mode
-File C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe changed - recompiling
-File C:\Users\timot\Documents\Programming\fpga-accelerator\Software\Lattice_Project_1\impl_1\synwork\Lattice_Project_1_impl_1_comp.srs changed - recompiling
+File /home/timothyjabez/Documents/fpga-accelerator/Software/Lattice_Project_1/impl_1/synwork/Lattice_Project_1_impl_1_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Oct  6 02:06:14 2023
+# Sun Oct  8 01:55:05 2023
 
 ###########################################################]

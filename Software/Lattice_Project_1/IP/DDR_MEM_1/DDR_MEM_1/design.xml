@@ -17,7 +17,7 @@
                     <ipxact:configurableElementValue referenceId="NUM_DQ_PER_DQS">8</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="BUS_WIDTH">16</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="NUM_DQS_GROUP">2</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="DATA_MASK_ENABLE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_MASK_ENABLE">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="CLK_ADDR_CMD_ENABLE">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="DYN_MARGIN_ENABLE">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="CLK_FREQ">400</ipxact:configurableElementValue>
@@ -1827,16 +1827,30 @@
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>DDR_MEM_1.data_mask_dqs0_i</ipxact:name>
-            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs0_i"/>
+                <ipxact:externalPortReference portRef="data_mask_dqs0_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>DDR_MEM_1.data_mask_dqs1_i</ipxact:name>
-            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="data_mask_dqs1_i"/>
+                <ipxact:externalPortReference portRef="data_mask_dqs1_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
@@ -2604,16 +2618,16 @@
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>DDR_MEM_1.dm_dqs0_o</ipxact:name>
-            <ipxact:tiedValue>open</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs0_o"/>
+                <ipxact:externalPortReference portRef="dm_dqs0_o"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
             <ipxact:name>DDR_MEM_1.dm_dqs1_o</ipxact:name>
-            <ipxact:tiedValue>open</ipxact:tiedValue>
             <ipxact:portReferences>
                 <ipxact:internalPortReference componentRef="DDR_MEM_1" portRef="dm_dqs1_o"/>
+                <ipxact:externalPortReference portRef="dm_dqs1_o"/>
             </ipxact:portReferences>
         </ipxact:adHocConnection>
         <ipxact:adHocConnection>
